@@ -6,9 +6,9 @@ const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
-const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261024-publication", appScriptUrl);
-const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261024-publication", appScriptUrl);
-const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261024-publication", appScriptUrl);
+const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261025-holds", appScriptUrl);
+const admin1GeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261025-holds", appScriptUrl);
+const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261025-holds", appScriptUrl);
 const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
 const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 
@@ -25,7 +25,7 @@ const fallbackCountryNames = {
 
 const query = new URLSearchParams(window.location.search);
 const locale = supportedLocale(query.get("lang") ?? localStorage.getItem("parliament-streams-locale") ?? navigator.language);
-const state = { channels: [], supranational: [], geometry: null, admin1Geometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, zoom: null };
+const state = { channels: [], supranational: [], geometry: null, admin1Geometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null };
 const elements = {
   map: document.querySelector("#world-map"),
   detail: document.querySelector("#map-detail"),
@@ -181,6 +181,9 @@ function allCatalogueCoverageCodes() {
 
 function renderLegend() {
   elements.workspace.classList.toggle("is-supranational", state.mode === "supranational");
+  document.querySelector("#legend-location").hidden = !["all", "subnational"].includes(state.mode)
+    || !state.admin1Geometry?.features.some(isInstitutionLocation);
+  document.querySelector("#legend-location-label").textContent = mt("institutionLocation");
   if (state.mode === "supranational") {
     elements.legendDocumented.textContent = mt("memberCovered");
     elements.legendSelected.textContent = mt("selectedMember");
@@ -252,9 +255,13 @@ function renderDetail() {
   if (state.selectedRegion && (state.mode === "all" || state.mode === "subnational")) {
     const regionalChannels = channelsForRegion(state.selectedRegion);
     const parentCode = subnationalParents[state.selectedRegion];
+    const feature = state.admin1Geometry.features.find((item) => item.properties.name === state.selectedRegion);
+    const locationNote = isInstitutionLocation(feature)
+      ? `<div class="map-location-note"><p>${escapeHtml(mt("locationOnly"))}</p><p lang="en">${escapeHtml(feature.properties.scope_note)}</p><a href="${escapeHtml(feature.properties.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("supportingEvidence"))} ↗</a></div>` : "";
     elements.detail.innerHTML = `<p class="map-detail-summary">${escapeHtml(countryName(parentCode))} · ${escapeHtml(levelLabel("subnational"))}</p>
       <h2>${escapeHtml(jurisdictionName(state.selectedRegion))}</h2>
       <p class="map-detail-summary">${escapeHtml(sourceCount(state.locale, regionalChannels.length))}</p>
+      ${locationNote}
       <h3>${escapeHtml(mt("parliamentarySources"))}</h3>
       ${renderSourceList(regionalChannels)}
       <button class="map-parent-button" type="button" data-parent-code="${parentCode}">${escapeHtml(mt("viewAll", { name: countryName(parentCode) }))} →</button>`;
@@ -346,11 +353,57 @@ function mapDimensions() {
   return { width, height: width < 680 ? Math.max(210, Math.round(width * .58)) : 520 };
 }
 
+function isInstitutionLocation(feature) {
+  return feature?.geometry?.type === "Point"
+    && feature.properties.geometry_scope === "institution_location";
+}
+
+function positionInstitutionLocations(svg, scale) {
+  const markers = svg.selectAll(".map-location-marker");
+  const placed = [];
+  const positions = new Map();
+  // Use screen pixels so nearby seats stay separate at every zoom level.
+  // Leader lines retain the actual coordinates when a diamond is displaced.
+  const spacing = 22;
+  const features = markers.data().sort((a, b) => a.properties.name.localeCompare(b.properties.name, "en"));
+  for (const feature of features) {
+    const [x, y] = state.mapProjection(feature.geometry.coordinates);
+    let offset = [0, 0];
+    candidates: for (let ring = 0; ring <= features.length; ring += 1) {
+      const distance = ring * spacing;
+      const candidates = ring === 0 ? [[0, 0]] : [
+        [distance, 0], [-distance, 0], [0, distance], [0, -distance],
+        [distance, distance], [-distance, distance], [distance, -distance], [-distance, -distance],
+      ];
+      for (const candidate of candidates) {
+        const point = [x * scale + candidate[0], y * scale + candidate[1]];
+        if (placed.every(([otherX, otherY]) => Math.hypot(point[0] - otherX, point[1] - otherY) >= spacing)) {
+          offset = candidate;
+          placed.push(point);
+          break candidates;
+        }
+      }
+    }
+    positions.set(feature.properties.name, { x, y, markerX: x + offset[0] / scale, markerY: y + offset[1] / scale, displaced: offset.some(Boolean) });
+  }
+  markers.attr("transform", (feature) => {
+    const { markerX, markerY } = positions.get(feature.properties.name);
+    return `translate(${markerX},${markerY}) scale(${1 / scale})`;
+  });
+  svg.selectAll(".map-location-leader")
+    .attr("x1", (feature) => positions.get(feature.properties.name).x)
+    .attr("y1", (feature) => positions.get(feature.properties.name).y)
+    .attr("x2", (feature) => positions.get(feature.properties.name).markerX)
+    .attr("y2", (feature) => positions.get(feature.properties.name).markerY)
+    .attr("visibility", (feature) => positions.get(feature.properties.name).displaced ? "visible" : "hidden");
+}
+
 function renderMap() {
   const { width, height } = mapDimensions();
   const projection = d3.geoNaturalEarth1().fitExtent([[10, 14], [width - 10, height - 14]], state.geometry);
   const path = d3.geoPath(projection);
   state.mapPath = path;
+  state.mapProjection = projection;
   const covered = coverageCodes();
   const organization = state.mode === "supranational" ? selectedOrganization() : null;
   const members = new Set(organization?.member_country_codes ?? []);
@@ -394,7 +447,8 @@ function renderMap() {
     return Math.max(x1 - x0, y1 - y0) < 4;
   };
   const regionLabel = (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("documented")}, ${levelLabel("subnational")}`;
-  const regions = regionLayer.selectAll("path").data(showRegions ? state.admin1Geometry.features : [], (feature) => feature.properties.name);
+  const areaFeatures = showRegions ? state.admin1Geometry.features.filter((feature) => feature.geometry.type === "MultiPolygon") : [];
+  const regions = regionLayer.selectAll("path.map-region").data(areaFeatures, (feature) => feature.properties.name);
   regions.exit().remove();
   regions.enter().append("path").merge(regions)
     .attr("class", (feature) => [
@@ -403,6 +457,7 @@ function renderMap() {
       feature.properties.name === state.selectedRegion && "is-selected",
     ].filter(Boolean).join(" "))
     .attr("d", path)
+    .attr("data-jurisdiction", (feature) => feature.properties.name)
     .attr("role", (feature) => needsMarker(feature) ? null : "button")
     .attr("tabindex", (feature) => needsMarker(feature) ? null : 0)
     .attr("aria-label", (feature) => needsMarker(feature) ? null : regionLabel(feature))
@@ -413,7 +468,7 @@ function renderMap() {
 
   // Tiny island outlines need a visible location dot at world scale. Their
   // actual boundaries remain in the geometry; the dot is not a larger border.
-  const markerFeatures = showRegions ? state.admin1Geometry.features.filter(needsMarker) : [];
+  const markerFeatures = areaFeatures.filter(needsMarker);
   const markers = regionLayer.selectAll("circle.map-region-marker").data(markerFeatures, (feature) => feature.properties.name);
   markers.join("circle")
     .attr("class", (feature) => ["map-region-marker",
@@ -430,6 +485,29 @@ function renderMap() {
     .on("keydown", (event, feature) => {
       if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature); }
     });
+
+  // Location markers identify an institution's seat, never a territorial extent.
+  // Keep them separate from generalized area outlines and tiny-island dots.
+  const locations = showRegions ? state.admin1Geometry.features.filter(isInstitutionLocation) : [];
+  regionLayer.selectAll("line.map-location-leader").data(locations, (feature) => feature.properties.name)
+    .join("line")
+    .attr("class", "map-location-leader")
+    .attr("data-jurisdiction", (feature) => feature.properties.name)
+    .attr("aria-hidden", "true");
+  regionLayer.selectAll("path.map-location-marker").data(locations, (feature) => feature.properties.name)
+    .join("path")
+    .attr("class", (feature) => ["map-location-marker", feature.properties.name === state.selectedRegion && "is-selected"].filter(Boolean).join(" "))
+    .attr("d", "M0,-5 L4,0 L0,5 L-4,0 Z")
+    .attr("data-jurisdiction", (feature) => feature.properties.name)
+    .attr("data-geometry-scope", "institution_location")
+    .attr("role", "button")
+    .attr("tabindex", 0)
+    .attr("aria-label", (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("institutionLocation")}, ${mt("documented")}`)
+    .on("click", (_, feature) => selectRegion(feature))
+    .on("keydown", (event, feature) => {
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature); }
+    });
+  positionInstitutionLocations(svg, d3.zoomTransform(elements.map).k);
 }
 
 function selectCountry(feature, covered) {
@@ -507,6 +585,7 @@ function setupZoom() {
   const zoom = d3.zoom().scaleExtent([1, 8]).on("zoom", (event) => {
     svg.select("g.map-viewport").attr("transform", event.transform);
     svg.selectAll(".map-region-marker").attr("r", 3.5 / event.transform.k);
+    positionInstitutionLocations(svg, event.transform.k);
   });
   state.zoom = zoom;
   svg.call(zoom);

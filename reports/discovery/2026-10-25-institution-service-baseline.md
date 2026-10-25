@@ -1,0 +1,38 @@
+# Eligible institution service baseline — 25 October 2026
+
+[Research status](../../docs/research-status.md) · [Per-record queue](2026-10-25-institution-service-baseline.json)
+
+The maintained inventory remains 940 eligible identity records across 71 country
+groups, with eight separate authority holds. These include umbrellas, chambers
+and distinct organs; counts are not interchangeable with jurisdictions or streams.
+
+| Measure | Records | Interpretation |
+| --- | ---: | --- |
+| Eligible identities | 940 | Authority-cleared service queue |
+| Exact catalogue matches | 222 | 246 distinct catalogue IDs; no automatic parent/chamber inheritance |
+| Without exact documented match | 718 | Crosswalk or service-evidence gap, not proof of no broadcast |
+| Renewed partial source follow-ups | 308 | Specific recorded findings and unresolved questions |
+| Earlier service checks only | 632 | Dated evidence, not a fresh replay in this batch |
+| Expanded identities with no individual disposition | 0 | Evidence coverage, not universal validation |
+| Catalogue sources | 269 | 13 new scoped official viewing links |
+| Sources with implemented guide parsers | 33 | No parser or IPTV admission added |
+
+[This continuation](2026-10-25-held-source-publication-decisions.json) adds thirteen
+sources, documents six missing exact chamber crosswalks and deepens Finland's
+existing-source evidence. The [25 individual follow-ups](2026-10-25-service-review-continued-held-sources.json)
+retain primary identity/provider evidence, selected substantive recordings and
+separate programme/reuse gaps. Retained older samples are explicitly distinguished
+from new frames. Full current live, all-room, actual audio/accessibility and
+independent media reuse are not certified.
+
+Six new generalized outlines and three labelled institution-location markers
+reconcile the additions with map/search/schedule navigation. A locator is not an
+autonomous or linguistic boundary. Thirteen neutral flag marks retain explicit
+design/adoption gaps; no fictional or parent flags are substituted.
+
+The earlier [24 October baseline](2026-10-24-institution-service-baseline.md)
+remains a dated snapshot. The historical 652-body service cohort is unchanged;
+the current register has exact identities and dated evidence across all 940.
+The builder intentionally does not assign universal `all_dimensions_validated`
+clearance; that guardrail does not prevent a scoped official link from being
+published while independent guide/rebroadcast questions remain open.

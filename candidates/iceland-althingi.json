@@ -1,34 +1,43 @@
 {
   "candidate_version": 1,
-  "status": "researching",
+  "status": "promoted",
   "created_on": "2026-10-22",
-  "updated_on": "2026-10-23",
+  "updated_on": "2026-10-25",
   "decision_notes": [
     "The official broadcast guide documents plenary and open-committee coverage and permits distribution of the Althingi channel. Chromium received a 403 challenge. Keep researching until a current normal-browser player and supported stream route can be checked; do not restore a historical watchlist HLS URL solely because it existed.",
     "Evidence: reports/health/2026-10-22-expansion-browser.json and reports/discovery/2026-10-22-expansion-decisions.json.",
     "Follow-up 2026-10-22: Homepage, held broadcast URL and official mobile live page all returned 403 security challenges in Chromium. Official broadcast guide indexed by search explicitly permits distribution of Althingi channel on other networks.",
     "Evidence and exact next action: reports/discovery/2026-10-22-authority-followup.json; access outcomes: reports/health/2026-10-22-held-candidate-recheck.json.",
-    "23 October local / 24 October UTC recheck: HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved. Evidence: reports/health/2026-10-24-national-formal-browser.json"
+    "23 October local / 24 October UTC recheck: HTTP access failure/challenge at the selected institutional route. No challenge, authentication or alternate endpoint workaround was used; substantive content remains unresolved. Evidence: reports/health/2026-10-24-national-formal-browser.json",
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
   ],
   "channel": {
     "id": "iceland-althingi",
-    "name": "Iceland Althingi Broadcasts",
+    "name": "Iceland Althingi Historical Committee Archive",
     "jurisdiction_level": "national",
     "country_or_region": "Iceland",
-    "legislature": "Althingi",
+    "legislature": "Alþingi",
     "external_ids": {
       "wikidata_qid": "Q131279",
-      "ipu_country_code": null,
-      "ipu_parliament_code": null,
-      "ipu_chamber_code": null
+      "ipu_country_code": "IS",
+      "ipu_parliament_code": "IS",
+      "ipu_chamber_code": "IS-LC01"
     },
     "identity_sources": [
       {
         "source": "wikidata",
         "url": "https://www.wikidata.org/wiki/Q131279",
-        "checked_on": "2026-10-22",
+        "checked_on": "2026-10-25",
         "confidence": "high",
-        "notes": "Institutional name and jurisdiction matched; promotion remains blocked by the documented source/player review, not by a playback assumption."
+        "notes": "Exact unicameral legislature, own institutional website and national jurisdiction match the independently read own-site/IPU evidence. Does not certify service playback or reuse."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/IS/IS-LC01/",
+        "checked_on": "2026-10-25",
+        "confidence": "high",
+        "notes": "Exact national unicameral chamber and own institutional website independently matched."
       }
     ],
     "language": "Icelandic",
@@ -36,8 +45,8 @@
     "source_kind": "official_page",
     "playback_url": null,
     "playback_policy": "link_out",
-    "official_url": "https://www.althingi.is/utsendingar/netvarp/",
-    "provenance_note": "The official broadcast guide documents plenary and open-committee coverage and permits distribution of the Althingi channel. Chromium received a 403 challenge. Keep researching until a current normal-browser player and supported stream route can be checked; do not restore a historical watchlist HLS URL solely because it existed.",
+    "official_url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg",
+    "provenance_note": "The official Alþingi broadcast guide designates this YouTube channel for proceedings. A selected historical 2023 economic and trade committee hearing concerning competition law shows substantive committee speech and advances at 1202.81 seconds in Chromium. The title says 9 October 2023, while the camera overlay says 10.10.2023; no exact EPG date or current/live coverage is claimed. A challenge on the institution’s own site remains a separate access limitation. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
     "technical_status": "link_only",
     "stability_risk": "unknown",
     "availability": "event_based",
@@ -46,17 +55,25 @@
       "caption_languages": [],
       "sign_language": "unknown",
       "audio_description": "unknown",
-      "notes": null
+      "notes": "Selected native-player video evidence only. Source-labelled language is retained; audible languages, caption accuracy, signing and audio-description coverage remain unverified."
     },
-    "epg_sources": [],
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg/streams",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
     "permission": {
       "status": "personal_use_pending_review",
-      "summary": "Official broadcast guidance expressly permits distribution of the Althingi channel on other networks. This source-specific statement was reviewed through the search index; the current player remains inaccessible in this check.",
+      "summary": "The official guide permits distribution of Alþingisrásin on distributors’ own networks and designates this YouTube archive. That live-channel statement is not automatically a grant for third-party extraction, editing, downloading or redistribution of every historical YouTube recording. Only an official viewing link is proposed.",
       "evidence": [
-        "https://www.althingi.is/utsendingar/netvarp/",
-        "https://www.althingi.is/utsendingar"
+        "https://www.althingi.is/utsendingar/",
+        "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg"
       ],
-      "recommendation": "Retain the conservative pending status until a current supported player and its relationship to the permitted parliamentary channel are verified. Do not infer blanket reuse rights for website assets or recordings."
+      "recommendation": "Use the institution-designated public viewing page for the stated recorded scope. Do not extract provider manifests or infer an embed, live-relay, download/editing or programme-data grant."
     }
   }
 }

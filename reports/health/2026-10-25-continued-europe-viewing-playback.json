@@ -1,0 +1,259 @@
+{
+  "checked_on": "2026-10-25",
+  "method": "Selected source-native recordings with decoded frames and visual frame inspection; audio and whole-service coverage not certified. All media sessions subsequently closed at user request.",
+  "samples": [
+    {
+      "sample_id": "liberec-oct",
+      "observations": [
+        {
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=IOVH8S_q6tU&t=1200s",
+          "title": "9. zasedání Zastupitelstva Libereckého kraje z 20. 10. 2026. - YouTube",
+          "before": {
+            "time": 0,
+            "duration": 9098,
+            "ready": 0,
+            "frames": 0
+          },
+          "after": {
+            "time": 1203.509476,
+            "duration": 9098.041,
+            "ready": 4,
+            "frames": 44,
+            "width": 426,
+            "height": 240,
+            "paused": false
+          },
+          "advertisement_visible": false
+        },
+        {
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=IOVH8S_q6tU&t=1200s",
+          "title": "9. zasedání Zastupitelstva Libereckého kraje z 20. 10. 2026. - YouTube",
+          "before": {
+            "time": 0,
+            "duration": 9098,
+            "ready": 0,
+            "frames": 0
+          },
+          "after": {
+            "time": 1203.511865166,
+            "duration": 9098.041,
+            "ready": 4,
+            "frames": 53,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false
+        }
+      ],
+      "screenshots_visually_reviewed": true
+    },
+    {
+      "sample_id": "liberec-sep",
+      "observations": [
+        {
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=Pji2GupIBPE&t=1200s",
+          "title": "8. zasedání Zastupitelstva Libereckého kraje z 29. 9. 2026. - YouTube",
+          "before": {
+            "time": 0,
+            "duration": 5000.081,
+            "ready": 0,
+            "frames": 0
+          },
+          "after": {
+            "time": 1203.510039,
+            "duration": 5000.081,
+            "ready": 4,
+            "frames": 32,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false
+        },
+        {
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=Pji2GupIBPE&t=1200s",
+          "title": "8. zasedání Zastupitelstva Libereckého kraje z 29. 9. 2026. - YouTube",
+          "before": {
+            "time": 1200,
+            "duration": 5000.081,
+            "ready": 1,
+            "frames": 0
+          },
+          "after": {
+            "time": 1203.524973703,
+            "duration": 5000.081,
+            "ready": 4,
+            "frames": 34,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false
+        }
+      ],
+      "screenshots_visually_reviewed": true
+    },
+    {
+      "sample_id": "zlin-oct",
+      "observations": [
+        {
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=LN6mFAg-Juo&t=1200s",
+          "title": "Zasedání Zastupitelstva Zlínského kraje 12. října 2026 - YouTube",
+          "before": {
+            "time": 0,
+            "duration": 2096,
+            "ready": 0,
+            "frames": 0
+          },
+          "after": {
+            "time": 1203.51314,
+            "duration": 2096.321,
+            "ready": 4,
+            "frames": 89,
+            "width": 1276,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false
+        },
+        {
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=LN6mFAg-Juo&t=1200s",
+          "title": "Zasedání Zastupitelstva Zlínského kraje 12. října 2026 - YouTube",
+          "before": {
+            "time": 1200,
+            "duration": 2096.321,
+            "ready": 4,
+            "frames": 6
+          },
+          "after": {
+            "time": 1203.528795991,
+            "duration": 2096.321,
+            "ready": 4,
+            "frames": 91,
+            "width": 1276,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false
+        }
+      ],
+      "screenshots_visually_reviewed": true
+    },
+    {
+      "sample_id": "pfwb-budget",
+      "observations": [
+        {
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=sqOsSRrZawg&t=1200s",
+          "title": "Commission du Budget du 19/10/26 à 13:30 - YouTube",
+          "before": {
+            "time": 0,
+            "duration": 21940,
+            "ready": 0,
+            "frames": 0
+          },
+          "after": {
+            "time": 1203.509054,
+            "duration": 21940.021,
+            "ready": 4,
+            "frames": 110,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false
+        },
+        {
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=sqOsSRrZawg&t=1200s",
+          "title": "Commission du Budget du 19/10/26 à 13:30 - YouTube",
+          "before": {
+            "time": 0,
+            "duration": 21940,
+            "ready": 0,
+            "frames": 0
+          },
+          "after": {
+            "time": 1200.245820166,
+            "duration": 21940.021,
+            "ready": 4,
+            "frames": 6,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "seek_advance_timeout": true
+        }
+      ],
+      "screenshots_visually_reviewed": true
+    },
+    {
+      "sample_id": "madeira-bureau",
+      "observations": [
+        {
+          "engine": "chromium",
+          "url": "https://www.youtube.com/watch?v=b8ON_7MG7WU&t=1200s",
+          "title": "Sessão Plenária Nº 1 - Eleição da Mesa da Assembleia Legislativa da Madeira - YouTube",
+          "before": {
+            "time": 1200.015043,
+            "duration": 3655.121,
+            "ready": 4,
+            "frames": 52
+          },
+          "after": {
+            "time": 1203.517265,
+            "duration": 3655.121,
+            "ready": 4,
+            "frames": 141,
+            "width": 854,
+            "height": 480,
+            "paused": false
+          },
+          "advertisement_visible": false
+        },
+        {
+          "engine": "webkit",
+          "url": "https://www.youtube.com/watch?v=b8ON_7MG7WU&t=1200s",
+          "title": "Sessão Plenária Nº 1 - Eleição da Mesa da Assembleia Legislativa da Madeira - YouTube",
+          "before": {
+            "time": 1200,
+            "duration": 3655.121,
+            "ready": 4,
+            "frames": 55
+          },
+          "after": {
+            "time": 1203.514700962,
+            "duration": 3655.121,
+            "ready": 4,
+            "frames": 135,
+            "width": 854,
+            "height": 480,
+            "paused": false
+          },
+          "advertisement_visible": false
+        }
+      ],
+      "screenshots_visually_reviewed": true
+    }
+  ],
+  "retained_evidence": [
+    {
+      "inventory_id": "switzerland--zug",
+      "finding": "Fresh identity follow-up only; selected 24 September and 27 August 2026 substantive recorded proceedings and both-engine checks remain attributed to the retained 24 October reports. No fresh playback claimed.",
+      "source_report": "reports/discovery/2026-10-24-swiss-held-service-dispositions.json"
+    },
+    {
+      "inventory_id": "belgium--parlement-de-la-federation-wallonie-bruxelles",
+      "finding": "Retained 20 October committee-speaker checks remain independent of the new 19 October budget sample. The new WebKit budget decode stalls shortly after the seek.",
+      "source_report": "reports/discovery/2026-10-24-remaining-positive-current-dispositions.json"
+    }
+  ]
+}

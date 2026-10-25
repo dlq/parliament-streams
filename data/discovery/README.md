@@ -4,7 +4,7 @@
 71-country research baseline. Start the next institution-level work from this
 file, rather than assuming the older 652-body service cohort is the complete list.
 
-The [service baseline and queue](../../reports/discovery/2026-10-24-institution-service-baseline.md)
+The [service baseline and queue](../../reports/discovery/2026-10-25-institution-service-baseline.md)
 now reconcile all 940 eligible identity records with exact catalogue matches,
 the earlier service evidence and new individual source follow-ups. Keep a new
 review keyed to the exact inventory ID, with dated source observations and

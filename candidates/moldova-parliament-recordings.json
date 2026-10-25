@@ -1,0 +1,75 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "moldova-parliament-recordings",
+    "name": "Moldova Parliament Recordings",
+    "jurisdiction_level": "national",
+    "country_or_region": "Moldova",
+    "legislature": "Parlamentul Republicii Moldova",
+    "external_ids": {
+      "wikidata_qid": "Q555809",
+      "ipu_country_code": "MD",
+      "ipu_parliament_code": "MD",
+      "ipu_chamber_code": "MD-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q555809",
+        "checked_on": "2026-10-25",
+        "confidence": "high",
+        "notes": "Exact unicameral legislature, own institutional website and national jurisdiction match the independently read own-site/IPU evidence. Does not certify service playback or reuse."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/MD/MD-LC01/",
+        "checked_on": "2026-10-25",
+        "confidence": "high",
+        "notes": "Exact national unicameral chamber and own institutional website independently matched."
+      }
+    ],
+    "language": "Romanian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw",
+    "provenance_note": "The Parliament’s own Galerie video route redirects to this exact institutional YouTube channel. The 22 October 2026 plenary decodes substantive presiding-dais speech and advances at 1202.82 seconds in Chromium (1280 × 720 pixels). Committee entries are visible, but the selected committee test was interrupted before substantive playback. Current live coverage, coverage of every room, audible tracks and accessibility remain unverified. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected native-player video evidence only. Source-labelled language is retained; audible languages, caption accuracy, signing and audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw/streams",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Institutional ownership and designated public viewing are confirmed. No source-specific independent audiovisual-reuse or programme-data grant was established from the reviewed homepage/gallery/channel surfaces. Link-out only; offered provider controls or visible video do not establish a general embed, extraction or rebroadcast licence.",
+      "evidence": [
+        "https://www.parlament.md/",
+        "https://www.parlament.md/galerie-video.nspx",
+        "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw"
+      ],
+      "recommendation": "Use the institution-designated public viewing page for the stated recorded scope. Do not extract provider manifests or infer an embed, live-relay, download/editing or programme-data grant."
+    }
+  }
+}

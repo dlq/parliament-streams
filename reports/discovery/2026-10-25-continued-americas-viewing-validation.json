@@ -1,0 +1,1045 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Exact Argentine chamber crosswalks and selected official recorded-business follow-ups. This report does not certify source-wide live, guide or media-reuse completion.",
+  "method": [
+    "Browser plugin not available; installed Playwright Chromium/WebKit and official web-reader pages used.",
+    "Official archive samples must show actual legislative business; short clips, title cards, historic films and ads are not silently treated as full proceedings.",
+    "No public pages modified, no requests sent to source owners, no challenges bypassed and no extracted manifests stored."
+  ],
+  "records": [
+    {
+      "id": "argentina--catamarca--organ--camara-de-diputados",
+      "name": "Cámara de Diputados de la Provincia de Catamarca",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "institutional_url": "https://diputadoscatamarca.gob.ar/",
+        "specific_chamber_qid": "Q54889411",
+        "identity_scope": "Exact provincial legislative chamber, not province, national legislature or sibling chamber."
+      },
+      "official_media": {
+        "official_url": "https://tv.diputadoscatamarca.gob.ar/",
+        "provider_page": "https://www.youtube.com/@canaloficialdiputadoscat",
+        "confirmed_scope": "The owned Chamber homepage designates its own Canal Parlamentario and the exact official YouTube handle. Its archive-labelled 15th and 14th ordinary-session videos both decode and advance beyond 1800 seconds in Chromium and WebKit. Inspected frames show a member discussing an expropriation bill at the chamber desk and the presiding chair conducting House business. TV wrapper dates are publication metadata: the main House news index dates its 15th sitting differently, so exact occurrence dates remain unreconciled.",
+        "decoded_samples": [
+          {
+            "key": "catamarca-15",
+            "engine": "chromium",
+            "url": "https://www.youtube.com/watch?v=hN6eweKiA-c&t=1800s",
+            "http_status": 200,
+            "title": "15° Sesión Ordinaria - YouTube",
+            "initial": {
+              "time": 1800,
+              "duration": 7764.161,
+              "ready": 1,
+              "frames": 0,
+              "width": 854,
+              "paused": false
+            },
+            "target_offset": 1800,
+            "after": {
+              "time": 1801.014784,
+              "duration": 7764.161,
+              "ready": 4,
+              "frames": 61,
+              "width": 854,
+              "height": 480,
+              "paused": false
+            },
+            "advertisement_visible": false
+          },
+          {
+            "key": "catamarca-14",
+            "engine": "chromium",
+            "url": "https://www.youtube.com/watch?v=NM0bmqyoPSQ&t=1800s",
+            "http_status": 200,
+            "title": "14° Sesión Ordinaria - YouTube",
+            "initial": {
+              "time": 1800.021333,
+              "duration": 5383.641,
+              "ready": 4,
+              "frames": 48,
+              "width": 854,
+              "paused": false
+            },
+            "target_offset": 1800,
+            "after": {
+              "time": 1801.007191,
+              "duration": 5383.641,
+              "ready": 4,
+              "frames": 127,
+              "width": 854,
+              "height": 480,
+              "paused": false
+            },
+            "advertisement_visible": false
+          },
+          {
+            "key": "catamarca-15",
+            "engine": "webkit",
+            "url": "https://www.youtube.com/watch?v=hN6eweKiA-c&t=1800s",
+            "http_status": 200,
+            "title": "15° Sesión Ordinaria - YouTube",
+            "initial": {
+              "time": 1800,
+              "duration": 7764.161,
+              "ready": 1,
+              "frames": 0,
+              "width": 854,
+              "paused": false
+            },
+            "target_offset": 1800,
+            "after": {
+              "time": 1801.030584375,
+              "duration": 7764.161,
+              "ready": 4,
+              "frames": 61,
+              "width": 854,
+              "height": 480,
+              "paused": false
+            },
+            "advertisement_visible": false
+          },
+          {
+            "key": "catamarca-14",
+            "engine": "webkit",
+            "url": "https://www.youtube.com/watch?v=NM0bmqyoPSQ&t=1800s",
+            "http_status": 200,
+            "title": "14th Ordinary Session - YouTube",
+            "initial": {
+              "time": 1800,
+              "duration": 5383.641,
+              "ready": 1,
+              "frames": 0,
+              "width": 0,
+              "paused": false
+            },
+            "target_offset": 1800,
+            "after": {
+              "time": 1801.035068635,
+              "duration": 5383.641,
+              "ready": 4,
+              "frames": 72,
+              "width": 854,
+              "height": 480,
+              "paused": false
+            },
+            "advertisement_visible": false
+          }
+        ],
+        "visually_inspected_findings": [
+          "15th ordinary session: member at desk/microphone; lower third identifies expropriation bill on properties in Paclín.",
+          "14th ordinary session: presiding woman reading and conducting chamber business between officials, with Deputies lower third and institutional set."
+        ],
+        "native_playback_or_iptv_added": false
+      },
+      "epg": {
+        "planned_source": "https://tv.diputadoscatamarca.gob.ar/",
+        "parser_added": false,
+        "current_timed_broadcast_guide_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputadoscatamarca.gob.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_Catamarca",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q54889411"
+        },
+        {
+          "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+          "reviewed_on": "2026-10-25",
+          "method": "ordinary_bounded_HTTPS_GET",
+          "http_status": 200,
+          "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+          "video_ids": [
+            "hN6eweKiA-c",
+            "upe-KJPdxuo"
+          ],
+          "title": "15° Sesión Ordinaria &#8211; Canal Parlamentario"
+        },
+        {
+          "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+          "reviewed_on": "2026-10-25",
+          "method": "ordinary_bounded_HTTPS_GET",
+          "http_status": 200,
+          "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+          "video_ids": [
+            "NM0bmqyoPSQ"
+          ],
+          "title": "14° Sesión Ordinaria &#8211; Canal Parlamentario"
+        }
+      ],
+      "unresolved": [
+        "Exact occurrence dates are not reconciled between TV publication wrappers and the House news index; do not use wrapper dates as EPG times.",
+        "Current live, every committee/room, complete recordings, audible tracks and source-wide accessibility remain unverified.",
+        "Independent embedding, direct playback, recording, rebroadcast, audiovisual reuse and programme-data permissions remain unresolved."
+      ],
+      "publication_decision": "ready_scoped_official_link",
+      "catalogue_proposal_id": "argentina-catamarca-deputies-recordings",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--san-luis--organ--camara-de-diputados",
+      "name": "Cámara de Diputados de la Provincia de San Luis",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "institutional_url": "https://diputados.sanluis.gov.ar/",
+        "specific_chamber_qid": "Q41143524",
+        "identity_scope": "Exact provincial legislative chamber, not province, national legislature or sibling chamber."
+      },
+      "official_media": {
+        "official_url": "https://diputados.sanluis.gov.ar/",
+        "provider_page": "https://www.youtube.com/@dipusanluis",
+        "confirmed_scope": "Normal HTTPS now returns the owned Chamber homepage, which designates @dipusanluis and links the archived 28th ordinary session of 21 October 2026. Chromium decodes and advances beyond 1800 seconds. The inspected frame shows Silvia Sosa Araújo at the House dais, matching chamber branding, named lower third and on-video 21 October timestamp. This is one recorded sitting, not current-live or complete service validation; no WebKit playback is asserted for this new sample.",
+        "decoded_samples": [
+          {
+            "key": "san-luis-session",
+            "engine": "chromium",
+            "url": "https://www.youtube.com/watch?v=1uJCg-8pv7Y&t=1800s",
+            "http_status": 200,
+            "title": "28th Ordinary Session October 21, 2026 - YouTube",
+            "initial": {
+              "time": 0,
+              "duration": 5373.741,
+              "ready": 0,
+              "frames": 0,
+              "width": 0,
+              "paused": false
+            },
+            "target_offset": 1800,
+            "after": {
+              "time": 1801.016189,
+              "duration": 5373.741,
+              "ready": 4,
+              "frames": 52,
+              "width": 854,
+              "height": 480,
+              "paused": false
+            },
+            "advertisement_visible": false
+          }
+        ],
+        "visually_inspected_findings": [
+          "At 1801 seconds, Silvia Sosa Araújo speaks/conducts business at the House dais; on-video timestamp is 10-21-2026 11:57:41."
+        ],
+        "native_playback_or_iptv_added": false
+      },
+      "epg": {
+        "planned_source": "https://diputados.sanluis.gov.ar/inicio/diario-de-sesiones/",
+        "parser_added": false,
+        "current_timed_broadcast_guide_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputados.sanluis.gov.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_San_Luis",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q41143524"
+        }
+      ],
+      "unresolved": [
+        "One dated ordinary-session sample in Chromium; WebKit, a second sitting, all committee rooms, audible tracks and service-wide accessibility remain unverified.",
+        "The own navigation label says live, but its currently linked sample is an archived recording; continuous/current-live coverage is not certified.",
+        "No independent audiovisual reuse grant, complete timed guide or new XMLTV parser is established."
+      ],
+      "publication_decision": "ready_scoped_official_link",
+      "catalogue_proposal_id": "argentina-san-luis-deputies-recordings",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--salta--organ--camara-de-senadores",
+      "name": "Cámara de Senadores de la Provincia de Salta",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "metadata": {
+        "institutional_url": "https://senadosalta.gob.ar/",
+        "specific_chamber_qid": "Q40323546",
+        "identity_scope": "Exact provincial legislative chamber, not province, national legislature or sibling chamber."
+      },
+      "official_media": {
+        "official_url": "https://senadosalta.gob.ar/",
+        "provider_page": "https://www.youtube.com/channel/UCtAVTuWAKFw8tUrcjHz57Yw",
+        "confirmed_scope": "The owned Senate homepage designates its ordinary Senate video channel, separate from the Constituent Convention channel. Its 15 October 2026 report of the 27th ordinary sitting directly embeds the Alejandra Navarro municipal-charter and Juan Cruz Curá C14/C15 railway speeches. Both source clips decode and advance from 30 to 31 seconds in process-muted Chromium; inspected images show actual chamber-floor debate and a senator addressing the chamber. These are two short segments of one sitting, not two meeting dates or full-session validation.",
+        "decoded_samples": [
+          {
+            "key": "salta-charter",
+            "url": "https://www.youtube.com/watch?v=0ULNRhuPBWM&t=30s",
+            "engine": "Chromium",
+            "audio_suppression": "Chromium --mute-audio plus pre-navigation HTMLMediaElement mute/zero-volume enforcement",
+            "status": 200,
+            "actual_url": "https://www.youtube.com/watch?v=0ULNRhuPBWM&t=30s",
+            "title": "SENATOR ALEJANDRA NAVARRO - ORGANIC CHARTER OF APOLINARIO SARAVIA - YouTube",
+            "media": {
+              "time": 31.015062,
+              "duration": 120.061,
+              "ready": 4,
+              "frames": 44,
+              "width": 640,
+              "height": 360,
+              "muted": true,
+              "volume": 0
+            },
+            "advertisement_visible": false
+          },
+          {
+            "key": "salta-rail",
+            "url": "https://www.youtube.com/watch?v=WWrik_QtoCQ&t=30s",
+            "engine": "Chromium",
+            "audio_suppression": "Chromium --mute-audio plus pre-navigation HTMLMediaElement mute/zero-volume enforcement",
+            "status": 200,
+            "actual_url": "https://www.youtube.com/watch?v=WWrik_QtoCQ&t=30s",
+            "title": "SENATOR JUAN CRUZ CURA - C14 / C15 RAIL BRANCHES - YouTube",
+            "media": {
+              "time": 31.012544,
+              "duration": 106.421,
+              "ready": 4,
+              "frames": 40,
+              "width": 640,
+              "height": 360,
+              "muted": true,
+              "volume": 0
+            },
+            "advertisement_visible": false
+          }
+        ],
+        "visually_inspected_findings": [
+          "Municipal charter clip: Alejandra Navarro at front-left chamber desk, addressing the sitting with other members present.",
+          "Rail project clip: standing member addressing the chamber under the raised dais; legislative room and member desks visible."
+        ],
+        "native_playback_or_iptv_added": false
+      },
+      "epg": {
+        "planned_source": "https://senadosalta.gob.ar/prensa/informe-de-sesiones/informe-de-sesiones-2026/informe-de-sesiones-2026/",
+        "parser_added": false,
+        "current_timed_broadcast_guide_certified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false,
+          "finding": "The owned viewing/navigation surfaces designate public viewing. No source-specific independent media or programme-data grant is established by this scoped review."
+        }
+      },
+      "sources": [
+        {
+          "url": "https://senadosalta.gob.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Senadores_de_la_Provincia_de_Salta",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q40323546"
+        },
+        {
+          "url": "https://senadosalta.gob.ar/prensa/partes-de-prensa/27-sesion-ordinaria-15-de-octubre/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_sitting_report_with_exact_embedded_video_ids",
+          "video_ids": [
+            "0ULNRhuPBWM",
+            "WWrik_QtoCQ"
+          ]
+        }
+      ],
+      "unresolved": [
+        "One sitting represented by two short source-generated clips; no full-session continuity, second date, current-live or all-committee claim.",
+        "The earlier 120-second test reached an end/auto-transition and did not establish substantive playback; only the later bounded 30-second samples support this decision.",
+        "WebKit playback was not completed for these clips; audible track quality and complete accessibility remain unverified.",
+        "Exact broadcast start/end mapping, machine-readable guide and independent reuse permissions remain unresolved."
+      ],
+      "publication_decision": "ready_scoped_official_link",
+      "catalogue_proposal_id": "argentina-salta-senate-recordings",
+      "all_dimensions_validated": false
+    }
+  ],
+  "crosswalks": [
+    {
+      "institution_id": "argentina--buenos-aires--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-buenos-aires-deputies-webcasts"
+      ],
+      "reviewed_on": "2026-10-25",
+      "decision": "document_exact_existing_service_match",
+      "institution": "Honorable Cámara de Diputados de la Provincia de Buenos Aires",
+      "specific_institution_qid": "Q4985544",
+      "official_url": "https://www.hcdiputados-ba.gov.ar/",
+      "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber.",
+      "retained_playback_scope": "Own legislature website explicitly designates the video provider. Two ordinary Deputies sittings, 20 October and 29 September 2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json",
+        "reports/health/2026-10-23-argentina-eleven-review-followup.json"
+      ],
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "institution_id": "argentina--catamarca--organ--camara-de-senadores",
+      "catalogue_ids": [
+        "argentina-catamarca-senate-recordings"
+      ],
+      "reviewed_on": "2026-10-25",
+      "decision": "document_exact_existing_service_match",
+      "institution": "Cámara de Senadores de la Provincia de Catamarca",
+      "specific_institution_qid": "Q56248161",
+      "official_url": "https://senadodecatamarca.gob.ar/",
+      "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber.",
+      "retained_playback_scope": "Own legislature website explicitly designates the video provider. 23rd and 22nd ordinary Senate sittings in 2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later sample at 6000 seconds shows the chair reading into a microphone. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json",
+        "reports/health/2026-10-23-argentina-eleven-review-followup.json"
+      ],
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "institution_id": "argentina--corrientes--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-corrientes-deputies-webcasts"
+      ],
+      "reviewed_on": "2026-10-25",
+      "decision": "document_exact_existing_service_match",
+      "institution": "Honorable Cámara de Diputados de la Provincia de Corrientes",
+      "specific_institution_qid": "Q56316686",
+      "official_url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+      "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber.",
+      "retained_playback_scope": "The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated.",
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json",
+        "reports/health/2026-10-23-corrientes-validation.json"
+      ],
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "institution_id": "argentina--corrientes--organ--camara-de-senadores",
+      "catalogue_ids": [
+        "argentina-corrientes-senate-recordings"
+      ],
+      "reviewed_on": "2026-10-25",
+      "decision": "document_exact_existing_service_match",
+      "institution": "Honorable Cámara de Senadores de la Provincia de Corrientes",
+      "specific_institution_qid": "Q40323796",
+      "official_url": "https://www.youtube.com/channel/UCG53mcv5LYAOzJrLGnGTy-A/streams",
+      "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber.",
+      "retained_playback_scope": "The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated.",
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json",
+        "reports/health/2026-10-23-corrientes-validation.json"
+      ],
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "institution_id": "argentina--mendoza--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-mendoza-deputies-recordings"
+      ],
+      "reviewed_on": "2026-10-25",
+      "decision": "document_exact_existing_service_match",
+      "institution": "Cámara de Diputados de la Provincia de Mendoza",
+      "specific_institution_qid": "Q97369212",
+      "official_url": "https://www.hcdmza.gob.ar/site/",
+      "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber.",
+      "retained_playback_scope": "Own legislature website explicitly designates the video provider. Deputies sittings on 21 and 14 October 2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json",
+        "reports/health/2026-10-23-argentina-eleven-review-followup.json"
+      ],
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "institution_id": "argentina--salta--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-salta-deputies-recordings"
+      ],
+      "reviewed_on": "2026-10-25",
+      "decision": "document_exact_existing_service_match",
+      "institution": "Cámara de Diputados de la Provincia de Salta",
+      "specific_institution_qid": "Q40323582",
+      "official_url": "https://www.diputadosalta.gob.ar/",
+      "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber.",
+      "retained_playback_scope": "Own legislature website explicitly designates the video provider. 25th and 24th ordinary sittings of the 128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-regional-chamber-gaps.json",
+        "reports/health/2026-10-23-argentina-eleven-review-followup.json"
+      ],
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    }
+  ],
+  "promotions": [
+    {
+      "institution_id": "argentina--catamarca--organ--camara-de-diputados",
+      "channel": {
+        "id": "argentina-catamarca-deputies-recordings",
+        "name": "Catamarca Deputies Recordings",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Catamarca",
+        "legislature": "Cámara de Diputados de la Provincia de Catamarca",
+        "external_ids": {
+          "wikidata_qid": "Q54889411",
+          "ipu_country_code": null,
+          "ipu_parliament_code": null,
+          "ipu_chamber_code": null
+        },
+        "identity_sources": [
+          {
+            "source": "wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54889411",
+            "checked_on": "2026-10-25",
+            "confidence": "medium",
+            "notes": "Exact standing-chamber item recovered from its correspondingly named Spanish article Wikidata sitelink, independently matched to the owned institution and province. This is not the territorial or generic chamber-class item. Fresh API claims retrieval is not asserted; see the source-specific identity observations in reports/discovery/2026-10-25-continued-americas-viewing-validation.json."
+          }
+        ],
+        "language": "Spanish",
+        "source_type": "official_page",
+        "source_kind": "official_page",
+        "playback_url": null,
+        "playback_policy": "link_out",
+        "official_url": "https://tv.diputadoscatamarca.gob.ar/",
+        "provenance_note": "The owned Chamber homepage designates its own Canal Parlamentario and the exact official YouTube handle. Its archive-labelled 15th and 14th ordinary-session videos both decode and advance beyond 1800 seconds in Chromium and WebKit. Inspected frames show a member discussing an expropriation bill at the chamber desk and the presiding chair conducting House business. TV wrapper dates are publication metadata: the main House news index dates its 15th sitting differently, so exact occurrence dates remain unreconciled.",
+        "technical_status": "link_only",
+        "stability_risk": "unknown",
+        "availability": "event_based",
+        "accessibility": {
+          "captions": "unknown",
+          "caption_languages": [],
+          "sign_language": "unknown",
+          "audio_description": "unknown",
+          "notes": "Selected video samples establish only the described legislative-business scope. Spanish source metadata and automatic provider translations/dubbing do not certify original audible tracks, caption quality, every language or complete sign/audio-description coverage."
+        },
+        "epg_sources": [
+          {
+            "scraper": "planned",
+            "scraper_status": "planned",
+            "url": "https://tv.diputadoscatamarca.gob.ar/",
+            "method": "GET",
+            "kind": "official_recording_or_event_navigation"
+          }
+        ],
+        "permission": {
+          "status": "personal_use_pending_review",
+          "summary": "Official viewing link only. The reviewed owned institutional/recording navigation designates public viewing; no independent audiovisual or programme-data reuse grant was established. No provider embed, extracted endpoint, recording, retransmission or IPTV admission is enabled.",
+          "evidence": [
+            "https://diputadoscatamarca.gob.ar/",
+            "https://tv.diputadoscatamarca.gob.ar/"
+          ],
+          "recommendation": "Use the official source for the recorded-business scope. Recheck item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+        }
+      },
+      "geometry_iso": null,
+      "candidate_decision_notes": [
+        "The owned Chamber homepage designates its own Canal Parlamentario and the exact official YouTube handle. Its archive-labelled 15th and 14th ordinary-session videos both decode and advance beyond 1800 seconds in Chromium and WebKit. Inspected frames show a member discussing an expropriation bill at the chamber desk and the presiding chair conducting House business. TV wrapper dates are publication metadata: the main House news index dates its 15th sitting differently, so exact occurrence dates remain unreconciled.",
+        "Scoped official-viewing readiness only; unresolved guide, accessibility, continuity and independent reuse findings remain. Evidence: reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "sources": [
+        {
+          "url": "https://diputadoscatamarca.gob.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_Catamarca",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q54889411"
+        },
+        {
+          "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+          "reviewed_on": "2026-10-25",
+          "method": "ordinary_bounded_HTTPS_GET",
+          "http_status": 200,
+          "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+          "video_ids": [
+            "hN6eweKiA-c",
+            "upe-KJPdxuo"
+          ],
+          "title": "15° Sesión Ordinaria &#8211; Canal Parlamentario"
+        },
+        {
+          "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+          "reviewed_on": "2026-10-25",
+          "method": "ordinary_bounded_HTTPS_GET",
+          "http_status": 200,
+          "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+          "video_ids": [
+            "NM0bmqyoPSQ"
+          ],
+          "title": "14° Sesión Ordinaria &#8211; Canal Parlamentario"
+        }
+      ],
+      "unresolved": [
+        "Exact occurrence dates are not reconciled between TV publication wrappers and the House news index; do not use wrapper dates as EPG times.",
+        "Current live, every committee/room, complete recordings, audible tracks and source-wide accessibility remain unverified.",
+        "Independent embedding, direct playback, recording, rebroadcast, audiovisual reuse and programme-data permissions remain unresolved."
+      ]
+    },
+    {
+      "institution_id": "argentina--san-luis--organ--camara-de-diputados",
+      "channel": {
+        "id": "argentina-san-luis-deputies-recordings",
+        "name": "San Luis Deputies Recordings",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "San Luis",
+        "legislature": "Cámara de Diputados de la Provincia de San Luis",
+        "external_ids": {
+          "wikidata_qid": "Q41143524",
+          "ipu_country_code": null,
+          "ipu_parliament_code": null,
+          "ipu_chamber_code": null
+        },
+        "identity_sources": [
+          {
+            "source": "wikidata",
+            "url": "https://www.wikidata.org/wiki/Q41143524",
+            "checked_on": "2026-10-25",
+            "confidence": "medium",
+            "notes": "Exact standing-chamber item recovered from its correspondingly named Spanish article Wikidata sitelink, independently matched to the owned institution and province. This is not the territorial or generic chamber-class item. Fresh API claims retrieval is not asserted; see the source-specific identity observations in reports/discovery/2026-10-25-continued-americas-viewing-validation.json."
+          }
+        ],
+        "language": "Spanish",
+        "source_type": "official_page",
+        "source_kind": "official_page",
+        "playback_url": null,
+        "playback_policy": "link_out",
+        "official_url": "https://diputados.sanluis.gov.ar/",
+        "provenance_note": "Normal HTTPS now returns the owned Chamber homepage, which designates @dipusanluis and links the archived 28th ordinary session of 21 October 2026. Chromium decodes and advances beyond 1800 seconds. The inspected frame shows Silvia Sosa Araújo at the House dais, matching chamber branding, named lower third and on-video 21 October timestamp. This is one recorded sitting, not current-live or complete service validation; no WebKit playback is asserted for this new sample.",
+        "technical_status": "link_only",
+        "stability_risk": "unknown",
+        "availability": "event_based",
+        "accessibility": {
+          "captions": "unknown",
+          "caption_languages": [],
+          "sign_language": "unknown",
+          "audio_description": "unknown",
+          "notes": "Selected video samples establish only the described legislative-business scope. Spanish source metadata and automatic provider translations/dubbing do not certify original audible tracks, caption quality, every language or complete sign/audio-description coverage."
+        },
+        "epg_sources": [
+          {
+            "scraper": "planned",
+            "scraper_status": "planned",
+            "url": "https://diputados.sanluis.gov.ar/inicio/diario-de-sesiones/",
+            "method": "GET",
+            "kind": "official_recording_or_event_navigation"
+          }
+        ],
+        "permission": {
+          "status": "personal_use_pending_review",
+          "summary": "Official viewing link only. The reviewed owned institutional/recording navigation designates public viewing; no independent audiovisual or programme-data reuse grant was established. No provider embed, extracted endpoint, recording, retransmission or IPTV admission is enabled.",
+          "evidence": [
+            "https://diputados.sanluis.gov.ar/"
+          ],
+          "recommendation": "Use the official source for the recorded-business scope. Recheck item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+        }
+      },
+      "geometry_iso": "AR-D",
+      "candidate_decision_notes": [
+        "Normal HTTPS now returns the owned Chamber homepage, which designates @dipusanluis and links the archived 28th ordinary session of 21 October 2026. Chromium decodes and advances beyond 1800 seconds. The inspected frame shows Silvia Sosa Araújo at the House dais, matching chamber branding, named lower third and on-video 21 October timestamp. This is one recorded sitting, not current-live or complete service validation; no WebKit playback is asserted for this new sample.",
+        "Scoped official-viewing readiness only; unresolved guide, accessibility, continuity and independent reuse findings remain. Evidence: reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "sources": [
+        {
+          "url": "https://diputados.sanluis.gov.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_San_Luis",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q41143524"
+        }
+      ],
+      "unresolved": [
+        "One dated ordinary-session sample in Chromium; WebKit, a second sitting, all committee rooms, audible tracks and service-wide accessibility remain unverified.",
+        "The own navigation label says live, but its currently linked sample is an archived recording; continuous/current-live coverage is not certified.",
+        "No independent audiovisual reuse grant, complete timed guide or new XMLTV parser is established."
+      ]
+    },
+    {
+      "institution_id": "argentina--salta--organ--camara-de-senadores",
+      "channel": {
+        "id": "argentina-salta-senate-recordings",
+        "name": "Salta Senate Legislative Clips",
+        "jurisdiction_level": "subnational",
+        "country_or_region": "Salta",
+        "legislature": "Cámara de Senadores de la Provincia de Salta",
+        "external_ids": {
+          "wikidata_qid": "Q40323546",
+          "ipu_country_code": null,
+          "ipu_parliament_code": null,
+          "ipu_chamber_code": null
+        },
+        "identity_sources": [
+          {
+            "source": "wikidata",
+            "url": "https://www.wikidata.org/wiki/Q40323546",
+            "checked_on": "2026-10-25",
+            "confidence": "medium",
+            "notes": "Exact standing-chamber item recovered from its correspondingly named Spanish article Wikidata sitelink, independently matched to the owned institution and province. This is not the territorial or generic chamber-class item. Fresh API claims retrieval is not asserted; see the source-specific identity observations in reports/discovery/2026-10-25-continued-americas-viewing-validation.json."
+          }
+        ],
+        "language": "Spanish",
+        "source_type": "official_page",
+        "source_kind": "official_page",
+        "playback_url": null,
+        "playback_policy": "link_out",
+        "official_url": "https://senadosalta.gob.ar/",
+        "provenance_note": "The owned Senate homepage designates its ordinary Senate video channel, separate from the Constituent Convention channel. Its 15 October 2026 report of the 27th ordinary sitting directly embeds the Alejandra Navarro municipal-charter and Juan Cruz Curá C14/C15 railway speeches. Both source clips decode and advance from 30 to 31 seconds in process-muted Chromium; inspected images show actual chamber-floor debate and a senator addressing the chamber. These are two short segments of one sitting, not two meeting dates or full-session validation.",
+        "technical_status": "link_only",
+        "stability_risk": "unknown",
+        "availability": "event_based",
+        "accessibility": {
+          "captions": "unknown",
+          "caption_languages": [],
+          "sign_language": "unknown",
+          "audio_description": "unknown",
+          "notes": "Selected video samples establish only the described legislative-business scope. Spanish source metadata and automatic provider translations/dubbing do not certify original audible tracks, caption quality, every language or complete sign/audio-description coverage."
+        },
+        "epg_sources": [
+          {
+            "scraper": "planned",
+            "scraper_status": "planned",
+            "url": "https://senadosalta.gob.ar/prensa/informe-de-sesiones/informe-de-sesiones-2026/informe-de-sesiones-2026/",
+            "method": "GET",
+            "kind": "official_recording_or_event_navigation"
+          }
+        ],
+        "permission": {
+          "status": "personal_use_pending_review",
+          "summary": "Official viewing link only. The reviewed owned institutional/recording navigation designates public viewing; no independent audiovisual or programme-data reuse grant was established. No provider embed, extracted endpoint, recording, retransmission or IPTV admission is enabled.",
+          "evidence": [
+            "https://senadosalta.gob.ar/"
+          ],
+          "recommendation": "Use the official source for the recorded-business scope. Recheck item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+        }
+      },
+      "geometry_iso": null,
+      "candidate_decision_notes": [
+        "The owned Senate homepage designates its ordinary Senate video channel, separate from the Constituent Convention channel. Its 15 October 2026 report of the 27th ordinary sitting directly embeds the Alejandra Navarro municipal-charter and Juan Cruz Curá C14/C15 railway speeches. Both source clips decode and advance from 30 to 31 seconds in process-muted Chromium; inspected images show actual chamber-floor debate and a senator addressing the chamber. These are two short segments of one sitting, not two meeting dates or full-session validation.",
+        "Scoped official-viewing readiness only; unresolved guide, accessibility, continuity and independent reuse findings remain. Evidence: reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "sources": [
+        {
+          "url": "https://senadosalta.gob.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Senadores_de_la_Provincia_de_Salta",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q40323546"
+        },
+        {
+          "url": "https://senadosalta.gob.ar/prensa/partes-de-prensa/27-sesion-ordinaria-15-de-octubre/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_sitting_report_with_exact_embedded_video_ids",
+          "video_ids": [
+            "0ULNRhuPBWM",
+            "WWrik_QtoCQ"
+          ]
+        }
+      ],
+      "unresolved": [
+        "One sitting represented by two short source-generated clips; no full-session continuity, second date, current-live or all-committee claim.",
+        "The earlier 120-second test reached an end/auto-transition and did not establish substantive playback; only the later bounded 30-second samples support this decision.",
+        "WebKit playback was not completed for these clips; audible track quality and complete accessibility remain unverified.",
+        "Exact broadcast start/end mapping, machine-readable guide and independent reuse permissions remain unresolved."
+      ]
+    }
+  ],
+  "holds": [
+    {
+      "institution_id": "argentina--entre-rios--organ--camara-de-senadores",
+      "institution": "Cámara de Senadores de Entre Ríos",
+      "decision": "retain_playback_scope_hold",
+      "specific_qid": "Q5795791",
+      "primary_url": "https://www.senadoer.gob.ar/",
+      "confirmed": "Owned current homepage designates the exact Senate channel and 15th-session clip. The 50-second clip decodes, but the inspected 16-second frame is a reporter interview with Senator Juan Conti, not chamber proceedings.",
+      "unresolved": [
+        "Locate and decode an actual floor/committee recording in the designated channel; the title of the 50-second news item is not proof of full proceedings.",
+        "Own more-videos route presents a verification page; no challenge bypass used. Guide and independent reuse remain separate."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "institution_id": "argentina--santa-fe--organ--camara-de-diputados",
+      "institution": "Cámara de Diputadas y Diputados de Santa Fe",
+      "decision": "retain_substantive_recording_hold",
+      "specific_qid": "Q20022012",
+      "primary_url": "https://diputadossantafe.gov.ar/web/",
+      "confirmed": "Owned homepage designates the exact @diputadossantafe channel and the institution’s report on the 17th session, dated 15 October. Its sampled cvR3IrOpM7A link decodes but is a historical tour of the chamber room, not proceedings.",
+      "unresolved": [
+        "Find a source-designated ordinary sitting recording and validate actual business, rather than the home-page history film.",
+        "Owned session summaries are useful planned guide leads but do not establish a timed broadcast feed."
+      ],
+      "all_dimensions_validated": false
+    }
+  ],
+  "identity_checks": [
+    {
+      "name": "catamarca",
+      "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_Catamarca",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Cámara de Diputados de la Provincia de Catamarca - Wikipedia, la enciclopedia libre",
+      "wikidata_links": [
+        "https://www.wikidata.org/wiki/Special:EntityPage/Q54889411"
+      ],
+      "item_links": [
+        "https://www.wikidata.org/wiki/Q54889411"
+      ]
+    },
+    {
+      "name": "san-luis",
+      "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_San_Luis",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Cámara de Diputados de la Provincia de San Luis - Wikipedia, la enciclopedia libre",
+      "wikidata_links": [
+        "https://www.wikidata.org/wiki/Special:EntityPage/Q41143524"
+      ],
+      "item_links": [
+        "https://www.wikidata.org/wiki/Q41143524"
+      ]
+    },
+    {
+      "name": "salta",
+      "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Senadores_de_la_Provincia_de_Salta",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Cámara de Senadores de la Provincia de Salta - Wikipedia, la enciclopedia libre",
+      "wikidata_links": [
+        "https://www.wikidata.org/wiki/Special:EntityPage/Q40323546"
+      ],
+      "item_links": [
+        "https://www.wikidata.org/wiki/Q40323546"
+      ]
+    },
+    {
+      "name": "entre-rios",
+      "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Senadores_de_Entre_R%C3%ADos",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Cámara de Senadores de Entre Ríos - Wikipedia, la enciclopedia libre",
+      "wikidata_links": [
+        "https://www.wikidata.org/wiki/Special:EntityPage/Q5795791"
+      ],
+      "item_links": [
+        "https://www.wikidata.org/wiki/Q5795791"
+      ]
+    },
+    {
+      "name": "santa-fe",
+      "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_Santa_Fe",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Cámara de Diputados de la Provincia de Santa Fe - Wikipedia, la enciclopedia libre",
+      "wikidata_links": [
+        "https://www.wikidata.org/wiki/Special:EntityPage/Q20022012"
+      ],
+      "item_links": [
+        "https://www.wikidata.org/wiki/Q20022012"
+      ]
+    }
+  ],
+  "primary_checks": [
+    {
+      "key": "entre-rios",
+      "url": "https://www.senadoer.gob.ar/",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "SENADO ENTRE RÍOS – Vicegobernación de la provincia de Entre Ríos",
+      "end_url": "https://www.senadoer.gob.ar/"
+    },
+    {
+      "key": "salta",
+      "url": "https://senadosalta.gob.ar/",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Cámara de Senadores - Bienvenidos al sitio oficial de la Cámara de Senadores de la Provincia de Salta",
+      "end_url": "https://senadosalta.gob.ar/"
+    },
+    {
+      "key": "santa-fe",
+      "url": "https://diputadossantafe.gov.ar/web/",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Diputados de Santa Fe: Pages",
+      "end_url": "https://diputadossantafe.gov.ar/web/"
+    },
+    {
+      "key": "catamarca",
+      "url": "https://diputadoscatamarca.gob.ar/",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "DIPUTADOS CATAMARCA – PODER LEGISLATIVO",
+      "end_url": "https://diputadoscatamarca.gob.ar/"
+    },
+    {
+      "key": "san-luis",
+      "url": "https://diputados.sanluis.gov.ar/",
+      "checked_on": "2026-10-25",
+      "status": 200,
+      "title": "Cámara de Diputados de la provincia de San Luis",
+      "end_url": "https://diputados.sanluis.gov.ar/"
+    }
+  ],
+  "archive_link_checks": [
+    {
+      "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+      "reviewed_on": "2026-10-25",
+      "method": "ordinary_bounded_HTTPS_GET",
+      "http_status": 200,
+      "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+      "video_ids": [
+        "hN6eweKiA-c",
+        "upe-KJPdxuo"
+      ],
+      "title": "15° Sesión Ordinaria &#8211; Canal Parlamentario"
+    },
+    {
+      "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+      "reviewed_on": "2026-10-25",
+      "method": "ordinary_bounded_HTTPS_GET",
+      "http_status": 200,
+      "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+      "video_ids": [
+        "NM0bmqyoPSQ"
+      ],
+      "title": "14° Sesión Ordinaria &#8211; Canal Parlamentario"
+    }
+  ],
+  "summary": {
+    "new_ready_official_viewing_sources": 3,
+    "exact_existing_chamber_crosswalks": 6,
+    "remaining_bounded_new_source_holds": 2,
+    "native_players_or_iptv_added": 0,
+    "new_xmltv_parsers": 0
+  },
+  "audio_method_note": "Media browsers from the initial batch were terminated. Final Salta observations use Chromium --mute-audio and pre-navigation mute/zero-volume enforcement; no later WebKit playback resumed. Audible track quality was not assessed."
+}

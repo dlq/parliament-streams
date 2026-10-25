@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "switzerland-zug-recordings",
+    "name": "Zug Parliamentary Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Zug",
+    "legislature": "Kantonsrat des Kantons Zug",
+    "external_ids": {
+      "wikidata_qid": "Q1948527",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1948527",
+        "checked_on": "2026-10-25",
+        "confidence": "high",
+        "notes": "Fresh public item review identifies the eighty-seat cantonal parliament and specific member class, with GND 4694239-7, matching the current own institution page. The sparse Q113162956 generic cantonal authority is not substituted. P856 is an old institutional route; the current primary route is separately observed."
+      }
+    ],
+    "language": "German",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://zg.ch/de/kantonsrat/livestream-kantonsratssitzung",
+    "provenance_note": "The current own parliamentary site designates its livestream and archive. Selected 24 September and 27 August 2026 recorded chamber/chair proceedings were visually confirmed in Chromium and WebKit in the retained 24 October review; the 25 October follow-up resolves the exact parliament identity and does not replay those clips. The first link is a planned 29 October sitting, not observed current live.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "The own page says live captions have been offered through the CC control since 18 December 2025. Actual track/accuracy and coverage were not assessed; captions and caption languages remain unknown. Selected recorded visual checks do not certify audio, signing or audio description."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://zg.ch/de/kantonsrat",
+        "method": "GET",
+        "kind": "official_session_calendar"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The legislature designates a public institutional viewing service. No independent third-party audiovisual playback, embedding, recording, rebroadcast or reuse grant was established. Website ownership, publication/redaction rules and general information-licence pages are not treated as audiovisual permission. Programme-data republication is separately unresolved.",
+      "evidence": [
+        "https://zg.ch/de/impressum",
+        "https://zg.ch/de/kantonsrat/livestream-kantonsratssitzung"
+      ],
+      "recommendation": "Open the official viewing source. Resolve each intended media or programme-data use separately before implementing it."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-25T06:03:33Z",
+        "report_path": "reports/health/2026-10-25-continued-europe-viewing-playback.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Scoped institutional viewing-source review; selected video and retained evidence limits documented in reports/discovery/2026-10-25-continued-europe-viewing-validation.json. No current-live, whole-service or independent reuse certification."
+      }
+    ]
+  }
+}

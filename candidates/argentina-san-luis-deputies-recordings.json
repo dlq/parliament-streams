@@ -1,0 +1,66 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "argentina-san-luis-deputies-recordings",
+    "name": "San Luis Deputies Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "San Luis",
+    "legislature": "Cámara de Diputados de la Provincia de San Luis",
+    "external_ids": {
+      "wikidata_qid": "Q41143524",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q41143524",
+        "checked_on": "2026-10-25",
+        "confidence": "medium",
+        "notes": "Exact standing-chamber item recovered from its correspondingly named Spanish article Wikidata sitelink, independently matched to the owned institution and province. This is not the territorial or generic chamber-class item. Fresh API claims retrieval is not asserted; see the source-specific identity observations in reports/discovery/2026-10-25-continued-americas-viewing-validation.json."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://diputados.sanluis.gov.ar/",
+    "provenance_note": "Normal HTTPS now returns the owned Chamber homepage, which designates @dipusanluis and links the archived 28th ordinary session of 21 October 2026. Chromium decodes and advances beyond 1800 seconds. The inspected frame shows Silvia Sosa Araújo at the House dais, matching chamber branding, named lower third and on-video 21 October timestamp. This is one recorded sitting, not current-live or complete service validation; no WebKit playback is asserted for this new sample.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected video samples establish only the described legislative-business scope. Spanish source metadata and automatic provider translations/dubbing do not certify original audible tracks, caption quality, every language or complete sign/audio-description coverage."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://diputados.sanluis.gov.ar/inicio/diario-de-sesiones/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official viewing link only. The reviewed owned institutional/recording navigation designates public viewing; no independent audiovisual or programme-data reuse grant was established. No provider embed, extracted endpoint, recording, retransmission or IPTV admission is enabled.",
+      "evidence": [
+        "https://diputados.sanluis.gov.ar/"
+      ],
+      "recommendation": "Use the official source for the recorded-business scope. Recheck item-specific conditions before embedding, direct playback, copying, rebroadcast or other reuse."
+    }
+  }
+}

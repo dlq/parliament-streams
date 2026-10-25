@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "indonesia-kepulauan-riau-recordings",
+    "name": "Kepulauan Riau Legislative Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Kepulauan Riau",
+    "legislature": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Riau",
+    "external_ids": {
+      "wikidata_qid": "Q25461939",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q25461939",
+        "checked_on": "2026-10-25",
+        "confidence": "medium",
+        "notes": "Exact institution item is matched to the named primary institution; identity and source-player evidence remain separate."
+      }
+    ],
+    "language": "Indonesian",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/@dprdkepri",
+    "provenance_note": "The retained own-site designation of @dprdkepri is independently matched to the current assembly secretariat and the named DPRD KEPRI uploader. Its 2026 revised-APBD budget-body final-report recording decodes and advances past 1200 seconds in Chromium and WebKit. Inspected frames show a member reading the budget report at the provincial assembly lectern under a matching plenary ticker. The anniversary recitation is ceremonial and is excluded as ordinary-business evidence.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected visual source-player samples only. Actual audio language/quality, caption accuracy, signing and audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.youtube.com/@dprdkepri/streams",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled.",
+      "evidence": [
+        "https://dprd.kepriprov.go.id/",
+        "https://www.youtube.com/@dprdkepri"
+      ],
+      "recommendation": "Use the designated official viewing page for the stated recording scope. Check applicable source and item conditions before embedding or any media reuse."
+    }
+  }
+}

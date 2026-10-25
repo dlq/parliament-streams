@@ -1,0 +1,144 @@
+{
+  "checked_at": "2026-10-25T06:28:22.269Z",
+  "method": "local_ui_integration",
+  "scope": {
+    "catalogue_sources": 269,
+    "new_official_viewing_sources": 13,
+    "engine": "Chromium (Playwright)",
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 320,
+        "height": 844
+      },
+      {
+        "width": 390,
+        "height": 900
+      },
+      {
+        "width": 320,
+        "height": 900
+      }
+    ],
+    "local_server_only": true,
+    "external_requests": 0,
+    "media_playback": false,
+    "audio_suppression": "Chromium launched with --mute-audio; pre-navigation media mute/zero-volume enforcement. All external requests blocked."
+  },
+  "checks": [
+    {
+      "check": "catalogue identity and all 269 source rows",
+      "status": "passed"
+    },
+    {
+      "check": "all 13 new sources are clear official link-outs with local flags or explicit neutral marks",
+      "status": "passed"
+    },
+    {
+      "check": "catalogue country searches include every new subnational source",
+      "status": "passed"
+    },
+    {
+      "check": "mobile catalogue selection at 390 and 320px",
+      "status": "passed"
+    },
+    {
+      "check": "map269 sources and 3 explicit locations only",
+      "status": "passed"
+    },
+    {
+      "check": "colliding institution diamonds remain individually pointer-selectable at world and selected zoom on desktop/mobile",
+      "status": "passed"
+    },
+    {
+      "check": "all new subnational map links and parent country searches",
+      "status": "passed"
+    },
+    {
+      "check": "French localized real marker on390 and 320px mobile",
+      "status": "passed"
+    },
+    {
+      "check": "new programme-navigation links appear without invented guide rows",
+      "status": "passed"
+    },
+    {
+      "check": "mobile schedule links at 390 and 320px",
+      "status": "passed"
+    },
+    {
+      "check": "inventory exact crosswalks render all 13 new sources and 6 existing Argentine chambers",
+      "status": "passed"
+    },
+    {
+      "check": "all navigation stayed local and no media loaded",
+      "status": "passed"
+    },
+    {
+      "check": "Final npm run check:site (HTML and accessibility, including real Point clicks and shared-zoom Chakma–Lai pointer regression)",
+      "status": "passed",
+      "exit_code": 0,
+      "execution": "Europe QA agent; muted Chromium with local-only/external-request guard; browser and server closed."
+    }
+  ],
+  "map_location_points": [
+    "French Community",
+    "Chakma Autonomous District",
+    "Lai Autonomous District"
+  ],
+  "location_marker_resolution": {
+    "issue": "Chakma and Lai institution diamonds originally overlapped at world scale.",
+    "resolution": "Separate colliding diamonds by at least 22 screen pixels and connect displaced markers to their unchanged true projected coordinates with thin, non-interactive leader lines. Recalculate on zoom.",
+    "pointer_verification": "Actual clicks and center hit tests distinguish both seats at default and selected zoom on desktop and both mobile widths. Enter/Space and search/list selection pass.",
+    "coordinates_and_scope_unchanged": true
+  },
+  "new_source_flags": {
+    "local_flag_assets": 10,
+    "neutral_institution_marks": [
+      "indonesia-kepulauan-riau-recordings",
+      "india-chakma-council-recordings",
+      "india-lai-council-recordings"
+    ],
+    "note": "All flag assets decoded locally. Neutral marks are explicit jurisdiction-labelled fallback symbols; they do not imply a flag was verified. French Community uses its shared official French Community/Wallonia flag asset."
+  },
+  "crosswalks": {
+    "matching_public_rows": 24,
+    "unique_source_ids": 19,
+    "scope": "All 13 new sources and 6 already catalogued Argentine chamber sources have exact public inventory links. No source copies added for these 6 crosswalks."
+  },
+  "schedule_scope": "All 13 new sources appear in official programme/recording-navigation disclosure and jurisdiction filters. They do not receive invented now/next guide rows; their parsers remain planned.",
+  "findings": [],
+  "runtime": {
+    "page_errors": [],
+    "console_errors_excluding_expected_local_data_fallback_404": [],
+    "external_requests": []
+  },
+  "evidence": {
+    "full_local_report": "/tmp/integrated-holds-ui-qa.json",
+    "screenshots": [
+      "/tmp/integrated-catalogue-desktop.png",
+      "/tmp/integrated-catalogue-mobile.png",
+      "/tmp/integrated-real-location-desktop.png",
+      "/tmp/integrated-separated-locations-desktop.png",
+      "/tmp/integrated-separated-locations-mobile.png",
+      "/tmp/integrated-real-location-mobile.png",
+      "/tmp/integrated-schedule-desktop.png",
+      "/tmp/integrated-schedule-mobile.png"
+    ],
+    "regression_test_setup": "Reset world view before pointer clicks on geographically distant Points; select Chakma through search before shared-zoom Chakma–Lai clicks. This avoids testing an intentionally off-screen marker after a Brussels fit."
+  },
+  "limitations": [
+    "Local integration and rendered UI only; no external source navigation, source playback, broadcaster availability, rights, EPG accuracy or new media-validation claim.",
+    "Chromium only; Safari/WebKit and Firefox were not exercised in this pass.",
+    "No authenticated, third-party network, or deployment verification.",
+    "Some layout screenshots use a different scroll position to expose the selected mobile sheet or map."
+  ],
+  "final_required_check_completed_at": "2026-10-25T06:34:11.653107Z"
+}

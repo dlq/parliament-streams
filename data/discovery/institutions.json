@@ -1,6 +1,6 @@
 {
   "inventory_version": 1,
-  "reviewed_on": "2026-10-24",
+  "reviewed_on": "2026-10-25",
   "scope": {
     "country_baseline": "EIU Democracy Index2024, published2025:25Tier1+46Tier2; associated territories grouped for research, not sovereignty claims.",
     "countries": [
@@ -5661,13 +5661,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--buenos-aires"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--buenos-aires--organ--camara-de-diputados"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--buenos-aires--organ--camara-de-diputados"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-buenos-aires-deputies-webcasts"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--buenos-aires--organ--camara-de-diputados",
+        "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber."
+      }
     },
     {
       "id": "argentina--buenos-aires--organ--camara-de-senadores",
@@ -5765,13 +5782,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--catamarca"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--catamarca--organ--camara-de-diputados"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--catamarca--organ--camara-de-diputados"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-catamarca-deputies-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--catamarca--organ--camara-de-diputados",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      }
     },
     {
       "id": "argentina--catamarca--organ--camara-de-senadores",
@@ -5803,13 +5837,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--catamarca"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--catamarca--organ--camara-de-senadores"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--catamarca--organ--camara-de-senadores"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-catamarca-senate-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--catamarca--organ--camara-de-senadores",
+        "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber."
+      }
     },
     {
       "id": "argentina--chaco",
@@ -5988,13 +6039,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--corrientes"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--corrientes--organ--camara-de-diputados"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--corrientes--organ--camara-de-diputados"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-corrientes-deputies-webcasts"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--corrientes--organ--camara-de-diputados",
+        "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber."
+      }
     },
     {
       "id": "argentina--corrientes--organ--camara-de-senadores",
@@ -6026,13 +6094,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--corrientes"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--corrientes--organ--camara-de-senadores"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--corrientes--organ--camara-de-senadores"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-corrientes-senate-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--corrientes--organ--camara-de-senadores",
+        "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber."
+      }
     },
     {
       "id": "argentina--entre-rios",
@@ -6308,13 +6393,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--mendoza"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--mendoza--organ--camara-de-diputados"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--mendoza--organ--camara-de-diputados"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-mendoza-deputies-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--mendoza--organ--camara-de-diputados",
+        "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber."
+      }
     },
     {
       "id": "argentina--mendoza--organ--camara-de-senadores",
@@ -6498,13 +6600,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--salta"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--salta--organ--camara-de-diputados"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--salta--organ--camara-de-diputados"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-salta-deputies-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--salta--organ--camara-de-diputados",
+        "basis": "The separately named chamber matches the published source institution, exact legislative item and source-specific official provider designation. This resolves a missing split-chamber crosswalk without adding a duplicate service or inheriting a sibling chamber."
+      }
     },
     {
       "id": "argentina--salta--organ--camara-de-senadores",
@@ -6536,13 +6655,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--salta"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--salta--organ--camara-de-senadores"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--salta--organ--camara-de-senadores"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-salta-senate-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--salta--organ--camara-de-senadores",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      }
     },
     {
       "id": "argentina--san-juan",
@@ -6630,13 +6766,30 @@
         {
           "report": "reports/discovery/2026-10-24-inventory-reconciliation-a.json",
           "record_id": "argentina--san-luis"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+          "record_id": "argentina--san-luis--organ--camara-de-diputados"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "argentina--san-luis--organ--camara-de-diputados"
         }
       ],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "argentina-san-luis-deputies-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "argentina--san-luis--organ--camara-de-diputados",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      }
     },
     {
       "id": "argentina--san-luis--organ--camara-de-senadores",
@@ -8245,13 +8398,31 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "belgium--parlement-de-la-federation-wallonie-bruxelles"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+          "record_id": "belgium--parlement-de-la-federation-wallonie-bruxelles"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "belgium--parlement-de-la-federation-wallonie-bruxelles"
         }
       ],
       "existing_catalogue_ids": [],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "belgium-french-community-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "belgium--parlement-de-la-federation-wallonie-bruxelles",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "belgium--parlement-de-wallonie",
@@ -13641,6 +13812,14 @@
         {
           "report": "reports/discovery/2026-10-24-regional-scope-consistency.json",
           "record_id": "czech-higher-territorial-assemblies-consistency"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+          "record_id": "czech-republic--liberecky-kraj"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "czech-republic--liberecky-kraj"
         }
       ],
       "existing_catalogue_ids": [],
@@ -13652,7 +13831,17 @@
         "report": "reports/discovery/2026-10-24-regional-scope-consistency.json",
         "class_id": "czech-higher-territorial-assemblies-consistency",
         "historical_authority_status": "eligible_legislature"
-      }
+      },
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "czech-republic-liberec-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "czech-republic--liberecky-kraj",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "czech-republic--moravskoslezsky-kraj",
@@ -14024,6 +14213,14 @@
         {
           "report": "reports/discovery/2026-10-24-regional-scope-consistency.json",
           "record_id": "czech-higher-territorial-assemblies-consistency"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+          "record_id": "czech-republic--zlinsky-kraj"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "czech-republic--zlinsky-kraj"
         }
       ],
       "existing_catalogue_ids": [],
@@ -14035,7 +14232,17 @@
         "report": "reports/discovery/2026-10-24-regional-scope-consistency.json",
         "class_id": "czech-higher-territorial-assemblies-consistency",
         "historical_authority_status": "eligible_legislature"
-      }
+      },
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "czech-republic-zlin-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "czech-republic--zlinsky-kraj",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "national--cz-lc01",
@@ -15657,6 +15864,10 @@
         {
           "report": "reports/discovery/2026-10-24-national-chamber-inventory.json",
           "record_id": "national--fi-lc01"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+          "record_id": "national--fi-lc01"
         }
       ],
       "service_validation_register": null,
@@ -15664,7 +15875,16 @@
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
       "relationships": [],
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "finland-eduskunta-webcasts"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "national--fi-lc01",
+        "basis": "Exact existing Finnish national chamber/source; selected source-native recording evidence refreshed without a duplicate service."
+      }
     },
     {
       "id": "france--auvergne-rhone-alpes",
@@ -19048,6 +19268,14 @@
         {
           "report": "reports/discovery/2026-10-24-national-chamber-inventory.json",
           "record_id": "national--is-lc01"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+          "record_id": "national--is-lc01"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "national--is-lc01"
         }
       ],
       "service_validation_register": null,
@@ -19055,7 +19283,16 @@
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
       "relationships": [],
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "iceland-althingi"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "national--is-lc01",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      }
     },
     {
       "id": "india--andhra-pradesh",
@@ -19294,13 +19531,30 @@
         {
           "report": "reports/discovery/2026-10-24-scope-resolution-india.json",
           "record_id": "scope-review--india--chakma-autonomous-district-council"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+          "record_id": "india--chakma-autonomous-district-council"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "india--chakma-autonomous-district-council"
         }
       ],
       "aliases": [],
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "india-chakma-council-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "india--chakma-autonomous-district-council",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      }
     },
     {
       "id": "india--chhattisgarh",
@@ -19901,6 +20155,14 @@
         {
           "report": "reports/discovery/2026-10-24-scope-resolution-india.json",
           "record_id": "scope-review--india--lai-autonomous-district-council"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+          "record_id": "india--lai-autonomous-district-council"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "india--lai-autonomous-district-council"
         }
       ],
       "aliases": [
@@ -19909,7 +20171,16 @@
       "service_validation_register": null,
       "catalogue_service_crosswalk_complete": false,
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "india-lai-council-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "india--lai-autonomous-district-council",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      }
     },
     {
       "id": "india--madhya-pradesh",
@@ -21147,13 +21418,31 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "indonesia--kepulauan-riau"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+          "record_id": "indonesia--kepulauan-riau"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "indonesia--kepulauan-riau"
         }
       ],
       "existing_catalogue_ids": [],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "indonesia-kepulauan-riau-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "indonesia--kepulauan-riau",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "indonesia--lampung",
@@ -27533,6 +27822,14 @@
         {
           "report": "reports/discovery/2026-10-24-national-chamber-inventory.json",
           "record_id": "national--md-lc01"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+          "record_id": "national--md-lc01"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "national--md-lc01"
         }
       ],
       "service_validation_register": null,
@@ -27540,7 +27837,16 @@
       "automatic_catalogue_promotion": false,
       "metadata_stream_epg_rights_validation_complete": false,
       "relationships": [],
-      "aliases": []
+      "aliases": [],
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "moldova-parliament-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "national--md-lc01",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      }
     },
     {
       "id": "mongolia--arkhangai",
@@ -34750,13 +35056,31 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+          "record_id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira"
         }
       ],
       "existing_catalogue_ids": [],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "portugal-madeira-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "national--rs-lc01",
@@ -39003,13 +39327,31 @@
         {
           "report": "reports/discovery/2026-10-22-subnational-research.json",
           "record_id": "switzerland--zug"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+          "record_id": "switzerland--zug"
+        },
+        {
+          "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+          "record_id": "switzerland--zug"
         }
       ],
       "existing_catalogue_ids": [],
       "service_validation_register": "reports/discovery/2026-10-24-current-validation-register.json",
       "service_register_scope": "Historical 652-entry cohort only; authority clearance is not service validation.",
       "automatic_catalogue_promotion": false,
-      "metadata_stream_epg_rights_validation_complete": false
+      "metadata_stream_epg_rights_validation_complete": false,
+      "catalogue_crosswalk": {
+        "catalogue_ids": [
+          "switzerland-zug-recordings"
+        ],
+        "reviewed_on": "2026-10-25",
+        "report": "reports/discovery/2026-10-25-held-source-publication-decisions.json",
+        "record_id": "switzerland--zug",
+        "basis": "Exact named eligible institution and officially designated viewing service; source-specific recorded-business scope and remaining gates retained."
+      },
+      "catalogue_service_crosswalk_complete": false
     },
     {
       "id": "switzerland--zurich",

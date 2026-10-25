@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "portugal-madeira-recordings",
+    "name": "Madeira Legislative Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Madeira",
+    "legislature": "Assembleia Legislativa da Região Autónoma da Madeira",
+    "external_ids": {
+      "wikidata_qid": "Q2867080",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q2867080",
+        "checked_on": "2026-10-25",
+        "confidence": "high",
+        "notes": "Exact standing institution, country and jurisdiction claims retained in the 24 October complete claim report and reconciled with the current own parliamentary identity and provider designation. No new API fetch asserted."
+      }
+    ],
+    "language": "Portuguese",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/@AssembleiaLegislativadaMadeira",
+    "provenance_note": "The owned assembly homepage designates this exact YouTube handle. A recording titled Sessão Plenária Nº1 - Eleição da Mesa da Assembleia Legislativa da Madeira decodes and advances in Chromium and WebKit; inspected frames show bureau-election parliamentary business and an interpreter inset. The exact sitting date is unresolved: upload age is not a meeting date, and the separate official 10 April 2025 first-plenary article was not conclusively joined to this recording. This is one selected historical recording, with no current-live or source-wide coverage claim.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "An interpreter inset is visible in the selected bureau-election recording. Signing language, accuracy and source-wide availability remain unverified; caption and audio-description coverage are unknown."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.alram.pt/pt/inicio/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The legislature designates a public institutional viewing service. No independent third-party audiovisual playback, embedding, recording, rebroadcast or reuse grant was established. Website ownership, publication/redaction rules and general information-licence pages are not treated as audiovisual permission. Programme-data republication is separately unresolved.",
+      "evidence": [
+        "https://www.alram.pt/pt/inicio/",
+        "https://www.youtube.com/@AssembleiaLegislativadaMadeira"
+      ],
+      "recommendation": "Open the official viewing source. Resolve each intended media or programme-data use separately before implementing it."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-25T06:03:33Z",
+        "report_path": "reports/health/2026-10-25-continued-europe-viewing-playback.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Scoped institutional viewing-source review; selected video and retained evidence limits documented in reports/discovery/2026-10-25-continued-europe-viewing-validation.json. No current-live, whole-service or independent reuse certification."
+      }
+    ]
+  }
+}

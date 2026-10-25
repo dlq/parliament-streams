@@ -1,0 +1,1823 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Continued individual held-source, exact existing-crosswalk and scoped official-link review. Retained earlier playback is explicitly distinguished from newly sampled frames.",
+  "method": [
+    "Exact eligible identities only; no automatic parent/chamber inheritance.",
+    "Source-specific individual reports retain primary ownership, selected business and separate guide/rights findings.",
+    "Video-only observations do not certify audible tracks. Process-wide audio muting is required before any further media navigation."
+  ],
+  "records": [
+    {
+      "id": "argentina--buenos-aires--organ--camara-de-diputados",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "document_exact_existing_service_match",
+      "metadata": {
+        "institutional_url": "https://www.hcdiputados-ba.gov.ar/"
+      },
+      "official_media": {
+        "official_url": "https://www.hcdiputados-ba.gov.ar/",
+        "scope": "Own legislature website explicitly designates the video provider. Two ordinary Deputies sittings, 20 October and 29 September 2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.hcdiputados-ba.gov.ar/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, complete rooms, actual audible tracks, full media accessibility, timed guide mapping and independent audiovisual reuse remain separate source-specific checks."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--catamarca--organ--camara-de-diputados",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://tv.diputadoscatamarca.gob.ar/"
+      },
+      "official_media": {
+        "official_url": "https://tv.diputadoscatamarca.gob.ar/",
+        "scope": "The owned Chamber homepage designates its own Canal Parlamentario and the exact official YouTube handle. Its archive-labelled 15th and 14th ordinary-session videos both decode and advance beyond 1800 seconds in Chromium and WebKit. Inspected frames show a member discussing an expropriation bill at the chamber desk and the presiding chair conducting House business. TV wrapper dates are publication metadata: the main House news index dates its 15th sitting differently, so exact occurrence dates remain unreconciled.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputadoscatamarca.gob.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_Catamarca",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q54889411"
+        },
+        {
+          "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+          "reviewed_on": "2026-10-25",
+          "method": "ordinary_bounded_HTTPS_GET",
+          "http_status": 200,
+          "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/10/14/15-sesion-ordinaria/",
+          "video_ids": [
+            "hN6eweKiA-c",
+            "upe-KJPdxuo"
+          ],
+          "title": "15° Sesión Ordinaria &#8211; Canal Parlamentario"
+        },
+        {
+          "url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+          "reviewed_on": "2026-10-25",
+          "method": "ordinary_bounded_HTTPS_GET",
+          "http_status": 200,
+          "final_url": "https://tv.diputadoscatamarca.gob.ar/index.php/2026/09/25/14-sesion-ordinaria/",
+          "video_ids": [
+            "NM0bmqyoPSQ"
+          ],
+          "title": "14° Sesión Ordinaria &#8211; Canal Parlamentario"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Exact occurrence dates are not reconciled between TV publication wrappers and the House news index; do not use wrapper dates as EPG times.",
+        "Current live, every committee/room, complete recordings, audible tracks and source-wide accessibility remain unverified.",
+        "Independent embedding, direct playback, recording, rebroadcast, audiovisual reuse and programme-data permissions remain unresolved."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--catamarca--organ--camara-de-senadores",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "document_exact_existing_service_match",
+      "metadata": {
+        "institutional_url": "https://senadodecatamarca.gob.ar/"
+      },
+      "official_media": {
+        "official_url": "https://senadodecatamarca.gob.ar/",
+        "scope": "Own legislature website explicitly designates the video provider. 23rd and 22nd ordinary Senate sittings in 2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later sample at 6000 seconds shows the chair reading into a microphone. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://senadodecatamarca.gob.ar/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, complete rooms, actual audible tracks, full media accessibility, timed guide mapping and independent audiovisual reuse remain separate source-specific checks."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--corrientes--organ--camara-de-diputados",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "document_exact_existing_service_match",
+      "metadata": {
+        "institutional_url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/"
+      },
+      "official_media": {
+        "official_url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+        "scope": "The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://hcdcorrientes.gov.ar/sesiones/sesiones-en-vivo/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, complete rooms, actual audible tracks, full media accessibility, timed guide mapping and independent audiovisual reuse remain separate source-specific checks."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--corrientes--organ--camara-de-senadores",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "document_exact_existing_service_match",
+      "metadata": {
+        "institutional_url": "https://www.youtube.com/channel/UCG53mcv5LYAOzJrLGnGTy-A/streams"
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/channel/UCG53mcv5LYAOzJrLGnGTy-A/streams",
+        "scope": "The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.youtube.com/channel/UCG53mcv5LYAOzJrLGnGTy-A/streams",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, complete rooms, actual audible tracks, full media accessibility, timed guide mapping and independent audiovisual reuse remain separate source-specific checks."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--entre-rios--organ--camara-de-senadores",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "retain_playback_scope_hold",
+      "metadata": {
+        "institutional_url": "https://www.senadoer.gob.ar/"
+      },
+      "official_media": {
+        "official_url": "https://www.senadoer.gob.ar/",
+        "scope": "Owned current homepage designates the exact Senate channel and 15th-session clip. The 50-second clip decodes, but the inspected 16-second frame is a reporter interview with Senator Juan Conti, not chamber proceedings.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.senadoer.gob.ar/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Locate and decode an actual floor/committee recording in the designated channel; the title of the 50-second news item is not proof of full proceedings.",
+        "Own more-videos route presents a verification page; no challenge bypass used. Guide and independent reuse remain separate."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--mendoza--organ--camara-de-diputados",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "document_exact_existing_service_match",
+      "metadata": {
+        "institutional_url": "https://www.hcdmza.gob.ar/site/"
+      },
+      "official_media": {
+        "official_url": "https://www.hcdmza.gob.ar/site/",
+        "scope": "Own legislature website explicitly designates the video provider. Deputies sittings on 21 and 14 October 2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.hcdmza.gob.ar/site/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, complete rooms, actual audible tracks, full media accessibility, timed guide mapping and independent audiovisual reuse remain separate source-specific checks."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--salta--organ--camara-de-diputados",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "document_exact_existing_service_match",
+      "metadata": {
+        "institutional_url": "https://www.diputadosalta.gob.ar/"
+      },
+      "official_media": {
+        "official_url": "https://www.diputadosalta.gob.ar/",
+        "scope": "Own legislature website explicitly designates the video provider. 25th and 24th ordinary sittings of the 128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.diputadosalta.gob.ar/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, complete rooms, actual audible tracks, full media accessibility, timed guide mapping and independent audiovisual reuse remain separate source-specific checks."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--salta--organ--camara-de-senadores",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://senadosalta.gob.ar/"
+      },
+      "official_media": {
+        "official_url": "https://senadosalta.gob.ar/",
+        "scope": "The owned Senate homepage designates its ordinary Senate video channel, separate from the Constituent Convention channel. Its 15 October 2026 report of the 27th ordinary sitting directly embeds the Alejandra Navarro municipal-charter and Juan Cruz Curá C14/C15 railway speeches. Both source clips decode and advance from 30 to 31 seconds in process-muted Chromium; inspected images show actual chamber-floor debate and a senator addressing the chamber. These are two short segments of one sitting, not two meeting dates or full-session validation.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://senadosalta.gob.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Senadores_de_la_Provincia_de_Salta",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q40323546"
+        },
+        {
+          "url": "https://senadosalta.gob.ar/prensa/partes-de-prensa/27-sesion-ordinaria-15-de-octubre/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_sitting_report_with_exact_embedded_video_ids",
+          "video_ids": [
+            "0ULNRhuPBWM",
+            "WWrik_QtoCQ"
+          ]
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "One sitting represented by two short source-generated clips; no full-session continuity, second date, current-live or all-committee claim.",
+        "The earlier 120-second test reached an end/auto-transition and did not establish substantive playback; only the later bounded 30-second samples support this decision.",
+        "WebKit playback was not completed for these clips; audible track quality and complete accessibility remain unverified.",
+        "Exact broadcast start/end mapping, machine-readable guide and independent reuse permissions remain unresolved."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--san-luis--organ--camara-de-diputados",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://diputados.sanluis.gov.ar/"
+      },
+      "official_media": {
+        "official_url": "https://diputados.sanluis.gov.ar/",
+        "scope": "Normal HTTPS now returns the owned Chamber homepage, which designates @dipusanluis and links the archived 28th ordinary session of 21 October 2026. Chromium decodes and advances beyond 1800 seconds. The inspected frame shows Silvia Sosa Araújo at the House dais, matching chamber branding, named lower third and on-video 21 October timestamp. This is one recorded sitting, not current-live or complete service validation; no WebKit playback is asserted for this new sample.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputados.sanluis.gov.ar/",
+          "reviewed_on": "2026-10-25",
+          "method": "owned_HTTPS_navigation_in_normal_Chromium",
+          "status": 200
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/C%C3%A1mara_de_Diputados_de_la_Provincia_de_San_Luis",
+          "reviewed_on": "2026-10-25",
+          "method": "exact_article_Wikidata_sitelink",
+          "wikidata_qid": "Q41143524"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "One dated ordinary-session sample in Chromium; WebKit, a second sitting, all committee rooms, audible tracks and service-wide accessibility remain unverified.",
+        "The own navigation label says live, but its currently linked sample is an archived recording; continuous/current-live coverage is not certified.",
+        "No independent audiovisual reuse grant, complete timed guide or new XMLTV parser is established."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--santa-fe--organ--camara-de-diputados",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "retain_substantive_recording_hold",
+      "metadata": {
+        "institutional_url": "https://diputadossantafe.gov.ar/web/"
+      },
+      "official_media": {
+        "official_url": "https://diputadossantafe.gov.ar/web/",
+        "scope": "Owned homepage designates the exact @diputadossantafe channel and the institution’s report on the 17th session, dated 15 October. Its sampled cvR3IrOpM7A link decodes but is a historical tour of the chamber room, not proceedings.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://diputadossantafe.gov.ar/web/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-americas-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Find a source-designated ordinary sitting recording and validate actual business, rather than the home-page history film.",
+        "Owned session summaries are useful planned guide leads but do not establish a timed broadcast feed."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "belgium--parlement-de-la-federation-wallonie-bruxelles",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link_with_explicit_institution_location",
+      "metadata": {
+        "institutional_url": "https://www.youtube.com/channel/UCSBM3MV5XxHxG96_85POSaw"
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/channel/UCSBM3MV5XxHxG96_85POSaw",
+        "scope": [
+          "The fresh owned homepage directly links the exact channel and names the 20 October 2026 Sports, Childhood and Culture committees and the 19 October Budget committee.",
+          "Retained 20 October Sports and Childhood samples already show substantive committee speakers in both engines. Fresh 19 October budget sample advances in Chromium; WebKit decodes a brief post-seek frame but then stalls. The inspected frame shows a budget presentation rather than a plenary inference.",
+          "The own institution says it serves French speakers in Brussels and Wallonia. Its jurisdiction is not simply the geographic Wallonia region.",
+          "The owned building page confirms the Brussels seat established by decree of 10 May 1984. Hôtel de Ligne at Rue Royale 72 houses the hemicycle and committees; Hôtel du Greffe at Rue de la Loi 6 houses administrative offices."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.pfwb.be/",
+          "status": "official_page_read"
+        },
+        {
+          "url": "https://www.pfwb.be/les-batiments-du-parlement",
+          "status": "official_page_read"
+        },
+        {
+          "url": "https://www.pfwb.be/la-federation-wallonie-bruxelles-0",
+          "status": "official_scope_read"
+        },
+        {
+          "url": "https://www.pfwb.be/agenda",
+          "status": "official_agenda_read"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sqOsSRrZawg&t=1200s",
+          "status": "selected_video_decoded"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Integrator must corroborate/transform the primary building locator; the Commons category coordinate conflicts with the Rue Royale 72 address. No jurisdiction polygon is asserted.",
+        "The fresh budget sample advances after a 1200-second seek in Chromium; WebKit decodes only a brief post-seek frame at 1200.246 seconds and then stalls. Retained 20 October committee-speaker samples in both engines remain independent evidence. Actual audio, caption quality, every room and current live are unverified.",
+        "Third-party media and programme-data reuse conditions remain unverified."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "czech-republic--liberecky-kraj",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo/online-prenos-zasedani-zastupitelstva"
+      },
+      "official_media": {
+        "official_url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo/online-prenos-zasedani-zastupitelstva",
+        "scope": [
+          "The owned archive links 20 October and 29 September 2026; both decode beyond 1200 seconds in Chromium and WebKit. Visually inspected frames show the assembly room, presiding dais, members at microphones and dated proceedings overlays; the September sample includes the agenda display and a uniformed speaker at the lectern.",
+          "The exact standing-institution identifier and country/type match are retained in the 24 October alias-claim dispositions, independently reconciled with the owned assembly page; no new API claim fetch is asserted."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo/online-prenos-zasedani-zastupitelstva",
+          "status": "official_designation_and_dates_read"
+        },
+        {
+          "url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo",
+          "status": "official_institution_route"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q10857285",
+          "status": "retained_exact_item_evidence"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, committee-room completeness, audible tracks and full language/caption/accessibility coverage remain unverified.",
+        "No broadcast-guide parser, precise start/end mapping or programme-data reuse licence is established.",
+        "Only an owned archive link is proposed; third-party embedding, independent media playback, copying, recording and rebroadcast are not authorized by this review."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "czech-republic--zlinsky-kraj",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva"
+      },
+      "official_media": {
+        "official_url": "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva",
+        "scope": [
+          "The owned archive labels 12 October 2026 and embeds LN6mFAg-Juo. Both engines advance beyond 1200 seconds. The inspected frame shows Michaela Blahová at a microphone under agenda item 5: additional social-services financial support for 2026, ordinary regional assembly business.",
+          "The exact standing-institution identifier and country/type match are retained in the 24 October alias-claim dispositions, independently reconciled with the owned assembly page; no new API claim fetch is asserted."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva",
+          "status": "official_designation_and_dates_read"
+        },
+        {
+          "url": "https://zlinskykraj.cz/zastupitelstvo",
+          "status": "official_institution_route"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q27923823",
+          "status": "retained_exact_item_evidence"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, committee-room completeness, audible tracks and full language/caption/accessibility coverage remain unverified.",
+        "No broadcast-guide parser, precise start/end mapping or programme-data reuse licence is established.",
+        "Only an owned archive link is proposed; third-party embedding, independent media playback, copying, recording and rebroadcast are not authorized by this review."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "hungary--budapest",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "official_provider_found_selected_recording_hold",
+      "metadata": {
+        "institutional_url": "https://onkormanyzati.tv/videoanyagok/kozgyules-2026-09-25/"
+      },
+      "official_media": {
+        "official_url": "https://onkormanyzati.tv/videoanyagok/kozgyules-2026-09-25/",
+        "scope": [
+          "The owned 24 September 2026 assembly notice designates onkormanyzati.tv for 25 September coverage. The provider has an exact dated recording page; the official session system exposes agenda, speaker and vote navigation.",
+          "Q1006850 is labelled General Assembly of Budapest and legislator of Budapest, with Hungary and Budapest claims and matching root website. Its local-government type and Hungarian whole-metropolitan-government sitelink make its exact standing-assembly grain a remaining reconciliation point; no automatic whole-government substitution."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://budapest.hu/hirek/2026/09/24/ezekkel-az-eloterjesztesekkel-es-temakkal-foglalkozik-a-2026-szeptemberi-kozgyules",
+          "status": "official_provider_designation_read"
+        },
+        {
+          "url": "https://einfoszab.budapest.hu/session?key=fovarosi-kozgyules-nyilvanos-ulesei&type=1",
+          "status": "official_session_navigation_read"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q1006850",
+          "status": "public_item_read"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Selected ordinary-business media was not decoded; no fresh playback started after the user requested silence.",
+        "Reconcile Q1006850 exact institution grain. Current live, room coverage, audio/accessibility, timed programme export and per-use rights remain unresolved."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "india--chakma-autonomous-district-council",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://www.cadc.gov.in/",
+        "preferred_name": "Chakma Autonomous District Council",
+        "spoken_language_verified": false
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/@CADCOfficial/videos",
+        "official_media_urls": [
+          "https://www.youtube.com/@CADCOfficial/videos"
+        ],
+        "provider_designation_confirmed": true,
+        "selected_substantive_video_confirmed": true,
+        "scope": "The council-owned RTI handbook and homepage designate CADC Official, including the same exact channel ID as the source-native @CADCOfficial page. The recording labelled Vote of Confidence (Floor Test), 9 July 2026, decodes and advances past 1200 seconds in Chromium and WebKit after advertisements are excluded. Inspected frames show the chairman conducting chamber business with council officers and member nameplates. Cultural films, oath ceremonies and celebrations are not used as legislative-business samples."
+      },
+      "epg": {
+        "status": "planned_retrospective_or_legislative_navigation",
+        "url": "https://www.cadc.gov.in/releases/governance/legislature/",
+        "implemented_parser": false,
+        "broadcast_timings_verified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_link_only_pending_separate_media_terms",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.cadc.gov.in/",
+          "accessed_on": "2026-10-25",
+          "finding": "Own institutional route; currentness/access limits retained in the source-specific record."
+        },
+        {
+          "url": "https://www.youtube.com/@CADCOfficial/videos",
+          "accessed_on": "2026-10-25",
+          "finding": "Designated named video provider and selected legislative recordings inspected."
+        },
+        {
+          "url": "https://www.cadc.gov.in/wp-content/uploads/rti-2022-2023/RTI%20Handbook%20Information%20%26%20Public%20Relations%202022-2023.pdf",
+          "accessed_on": "2026-10-25",
+          "finding": "Retained own-source handbook explicitly designates @CADCOfficial; homepage Official Youtube Channel points to the same CADC provider."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chakma_Autonomous_District_Council",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact named council article has Wikidata sitelink Q5068372; used for identifier recovery only, not legal-authority or playback certification."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-asian-viewing-validation.json"
+      ],
+      "unresolved": [
+        "One dated confidence proceeding is sampled; ordinary budget sittings, current live service and all room coverage remain unverified.",
+        "Broadcast language and actual audible tracks are not certified. English video titles/nameplates do not establish the spoken language.",
+        "Current officeholder terms contain mixed dates on the homepage; no officeholder metadata is published here.",
+        "A verified district outline is not bundled; the map uses an explicitly approximate Kamalanagar location marker, not the whole Lawngtlai district.",
+        "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "india--lai-autonomous-district-council",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://ladc.mizoram.gov.in/",
+        "preferred_name": "Lai Autonomous District Council",
+        "spoken_language_verified": false
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/@IPRLADC/streams",
+        "official_media_urls": [
+          "https://www.youtube.com/@IPRLADC/streams"
+        ],
+        "provider_designation_confirmed": true,
+        "selected_substantive_video_confirmed": true,
+        "scope": "The retained council-owned government homepage designates I&PR LADC; the source channel reciprocally links ladc.mizoram.gov.in. Selected 29 July 2026 monsoon and 2 April 2026 budget recordings both decode and advance past 600 seconds in Chromium and WebKit after advertisements/title cards are excluded. Inspected frames show the presiding chair in the monsoon session and member C. Ngunlianthunga speaking from his chamber desk in budget business. Two dates are supported by source titles; complete sitting continuity is not certified."
+      },
+      "epg": {
+        "status": "planned_retrospective_or_legislative_navigation",
+        "url": "https://www.youtube.com/@IPRLADC/streams",
+        "implemented_parser": false,
+        "broadcast_timings_verified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_link_only_pending_separate_media_terms",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "sources": [
+        {
+          "url": "https://ladc.mizoram.gov.in/",
+          "accessed_on": "2026-10-25",
+          "finding": "Own institutional route; currentness/access limits retained in the source-specific record."
+        },
+        {
+          "url": "https://www.youtube.com/@IPRLADC/streams",
+          "accessed_on": "2026-10-25",
+          "finding": "Designated named video provider and selected legislative recordings inspected."
+        },
+        {
+          "url": "https://ladc.mizoram.gov.in/page/brief-history-of-ladc",
+          "accessed_on": "2026-10-25",
+          "finding": "Own-site institutional name, autonomous lawmaking powers and headquarters at Lawngtlai; source text read through web index."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Lai_Autonomous_District_Council",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact named council article has Wikidata sitelink Q6473546; identifier recovery only."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-asian-viewing-validation.json"
+      ],
+      "unresolved": [
+        "The council homepage currently times out through the web reader; the dated designation and the accessible named channel retain separate access scopes.",
+        "Spoken languages, audible tracks, caption accuracy, current live operation and all committee rooms remain unverified.",
+        "Channel date labels are retrospective navigation, not a verified start/end broadcast guide or XMLTV parser.",
+        "A verified district outline is not bundled; the map uses an explicitly approximate Lawngtlai headquarters-town location marker, not the whole administrative district.",
+        "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "indonesia--kepulauan-riau",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://dprd.kepriprov.go.id/",
+        "preferred_name": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Riau",
+        "spoken_language_verified": false
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/@dprdkepri",
+        "official_media_urls": [
+          "https://www.youtube.com/@dprdkepri"
+        ],
+        "provider_designation_confirmed": true,
+        "selected_substantive_video_confirmed": true,
+        "scope": "The retained own-site designation of @dprdkepri is independently matched to the current assembly secretariat and the named DPRD KEPRI uploader. Its 2026 revised-APBD budget-body final-report recording decodes and advances past 1200 seconds in Chromium and WebKit. Inspected frames show a member reading the budget report at the provincial assembly lectern under a matching plenary ticker. The anniversary recitation is ceremonial and is excluded as ordinary-business evidence."
+      },
+      "epg": {
+        "status": "planned_retrospective_or_legislative_navigation",
+        "url": "https://www.youtube.com/@dprdkepri/streams",
+        "implemented_parser": false,
+        "broadcast_timings_verified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_link_only_pending_separate_media_terms",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "sources": [
+        {
+          "url": "https://dprd.kepriprov.go.id/",
+          "accessed_on": "2026-10-25",
+          "finding": "Own institutional route; currentness/access limits retained in the source-specific record."
+        },
+        {
+          "url": "https://www.youtube.com/@dprdkepri",
+          "accessed_on": "2026-10-25",
+          "finding": "Designated named video provider and selected legislative recordings inspected."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-asian-viewing-validation.json"
+      ],
+      "unresolved": [
+        "One substantive budget-report recording is sampled; its exact occurrence date is not independently established from upload age.",
+        "Current live operation, all committees/rooms, audible language and caption quality remain unverified.",
+        "The current redesigned institutional gallery is empty; the dated own-site provider designation is retained separately from the currently readable homepage.",
+        "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "national--fi-lc01",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "retain_existing_service_and_refresh_provenance",
+      "metadata": {
+        "institutional_url": "https://verkkolahetys.eduskunta.fi/"
+      },
+      "official_media": {
+        "official_url": "https://verkkolahetys.eduskunta.fi/",
+        "scope": "The selected 23 October recording of sitting 104/2026 shows a member speaking from the parliamentary floor under the Eduskunta/Riksdagen watermark at 1202.81 seconds. The frame matches Ben Zyskowicz, named by the source speech table at 19:16. The 600-second sample passed the observation deadline before advancing to 601.82 seconds; do not relabel that timeout as immediate success.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "explicit_links_permitted",
+          "source": "https://verkkolahetys.eduskunta.fi/fi/kayttoehdot"
+        },
+        "embedding": {
+          "status": "not_separately_closed_by_this_followup"
+        },
+        "direct_playback": {
+          "status": "no_stable_channel_route_validated"
+        },
+        "rebroadcast": {
+          "status": "conditional_source_signal_permission_scope_and_compliance_unresolved"
+        },
+        "copying_recording": {
+          "status": "source_grant_with_conditions",
+          "conditions": [
+            "Source credit; YLE credit where it produces the live image, otherwise Parliament.",
+            "No content alteration or removal from context, no parliamentary marks or graphic identity, and no implied endorsement."
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_source_grant",
+          "conditions": [
+            "Unaltered institution-produced/covered material with attribution and context safeguards.",
+            "Third-party contributions and intended use still need case-specific review."
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot/taysistunto-104-2026",
+          "accessed_on": "2026-10-25",
+          "finding": "The institution’s recording page for sitting 104/2026 includes seven named speech links and item-specific agenda navigation."
+        },
+        {
+          "url": "https://verkkolahetys.eduskunta.fi/fi/kayttoehdot",
+          "accessed_on": "2026-10-25",
+          "finding": "Free links and unaltered parliamentary material under attribution, context and no-endorsement/marks conditions. Specific YLE producer credit condition."
+        },
+        {
+          "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot/taysistunto-104-2026?start=1156&end=1374",
+          "accessed_on": "2026-10-25",
+          "finding": "The source-generated Katso link identifies a Ben Zyskowicz speech segment. The link target was inspected; it was not independently played as a new sample."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-national-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Observed low-resolution adaptive video at 284 × 160 pixels in the later samples; full-quality continuity is unverified.",
+        "The publisher’s event title shows 13:00, while speech times rendered in Toronto show 06:xx. These are different clocks; this run does not certify a timed EPG mapping.",
+        "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+        "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+        "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "national--is-lc01",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "publish_scoped_official_archive_link",
+      "metadata": {
+        "institutional_url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg"
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg",
+        "scope": "At 1202.81 seconds, decoded and advancing video shows Oddný G. Harðardóttir speaking into a committee microphone, with an Alþingi watermark and an economic and trade committee caption concerning competition law and competition supervision. The title dates the open meeting to 9 October 2023, but the on-camera overlay says 10.10.2023; the date conflict remains unresolved.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_provider_designated_public_viewing_link",
+          "limitation": "A viewing-link decision is distinct from rights to reproduce the audiovisual material."
+        },
+        "embedding": {
+          "status": "unresolved_for_independent_use"
+        },
+        "direct_playback": {
+          "status": "unresolved_for_independent_use"
+        },
+        "rebroadcast": {
+          "status": "specific_altingisrasin_distribution_permission_published",
+          "limitation": "Not applied as a blanket licence to every historical YouTube archive item."
+        },
+        "copying_recording": {
+          "status": "unresolved_for_independent_use"
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved_for_independent_use"
+        },
+        "programme_data": {
+          "status": "unresolved_for_independent_use"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.althingi.is/utsendingar/",
+          "accessed_on": "2026-10-25",
+          "finding": "Official guide directly designates YouTube for parliamentary/open-committee recordings; ordinary webpage challenge and official indexed reading are distinct."
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg/streams",
+          "accessed_on": "2026-10-25",
+          "finding": "The channel designated by the institution’s guide is accessible, including an economic and trade committee hearing on competition law titled 9 October 2023. Current and live coverage remain unverified."
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q131279",
+          "accessed_on": "2026-10-25",
+          "finding": "The specific unicameral Parliament of Iceland, its own Alþingi website, 63 seats and distinct relationship to the parliament building match the institutional identity."
+        },
+        {
+          "url": "https://data.ipu.org/parliament/IS/IS-LC01/",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact unicameral Althingi and official own parliamentary site."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-national-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Exact sitting date mismatch: the title says 9 October 2023, while the camera overlay says 10 October 2023. Publish only the clearly historical 2023 committee scope; do not emit an EPG entry with an exact date.",
+        "Current and live parliamentary broadcasts and newer archive availability are not validated by this historical YouTube sample.",
+        "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+        "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+        "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established.",
+        "External embedding, direct playback, copying/recording, redistribution, other audiovisual reuse and programme-data republication retain source-specific permissions questions."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "national--md-lc01",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "publish_scoped_official_archive_link",
+      "metadata": {
+        "institutional_url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw"
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw",
+        "scope": "The 22 October 2026 plenary recording advances to 1202.82 seconds, with 239 decoded frames at 1280 × 720 pixels. The inspected frame shows a woman speaking from the presiding dais under the Parliament of Moldova watermark. The 21 October committee player was opened but interrupted before a substantive sample; it is listed in service navigation, without confirmed committee playback.",
+        "selected_media_report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_provider_designated_public_viewing_link",
+          "limitation": "A viewing-link decision is distinct from rights to reproduce the audiovisual material."
+        },
+        "embedding": {
+          "status": "unresolved_for_independent_use"
+        },
+        "direct_playback": {
+          "status": "unresolved_for_independent_use"
+        },
+        "rebroadcast": {
+          "status": "unresolved_for_independent_use"
+        },
+        "copying_recording": {
+          "status": "unresolved_for_independent_use"
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved_for_independent_use"
+        },
+        "programme_data": {
+          "status": "unresolved_for_independent_use"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.parlament.md/galerie-video.nspx",
+          "accessed_on": "2026-10-25",
+          "finding": "The institution’s Galerie video route redirects to the exact channel UCRfMRKU9POyEX5GYapAZJUw."
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw/streams",
+          "accessed_on": "2026-10-25",
+          "finding": "The channel lists the 22 October 2026 plenary and a 21 October 2026 economy, budget and finance committee recording."
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q555809",
+          "accessed_on": "2026-10-25",
+          "finding": "The specific unicameral legislature, 101 seats, parlament.md and the exact designated YouTube channel independently match the institution’s own site and IPU evidence."
+        },
+        {
+          "url": "https://data.ipu.org/parliament/MD/MD-LC01/",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact current unicameral Parliament and own parliamentary website."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-national-viewing-validation.json"
+      ],
+      "unresolved": [
+        "One 22 October 2026 plenary sample was confirmed; playback of the 21 October committee recording was stopped before a substantive sample. This does not establish coverage of every room, party, committee or language variant.",
+        "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+        "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+        "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established.",
+        "External embedding, direct playback, copying/recording, redistribution, other audiovisual reuse and programme-data republication retain source-specific permissions questions."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_archive_without_exact_sitting_date",
+      "metadata": {
+        "institutional_url": "https://www.youtube.com/@AssembleiaLegislativadaMadeira"
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/@AssembleiaLegislativadaMadeira",
+        "scope": [
+          "The owned assembly homepage directly designates the exact YouTube handle. This is independent provider designation, rather than an inference from the small subscriber count or a similarly named account.",
+          "The selected recording is titled Sessão Plenária Nº1 - Eleição da Mesa da Assembleia Legislativa da Madeira. Both engines decode and advance beyond 1200 seconds; inspected frames show the parliamentary dais, members, regional arms and an interpreter inset. Bureau election is parliamentary business; the separately found solemn regional-day ceremony is not counted as a second ordinary-business sitting.",
+          "Retained Wikidata revision 2531478857 identifies the Legislative Assembly of Madeira as a Portuguese autonomous-region legislature; its country and jurisdiction claims match the current own institutional identity."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.alram.pt/pt/inicio/",
+          "status": "official_provider_designation_read"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=b8ON_7MG7WU&t=1200s",
+          "status": "selected_bureau_election_recording_decoded"
+        },
+        {
+          "url": "https://www.alram.pt/pt/noticias/xv-legislatura/i-sessao-legislativa/2025/abril/rubina-leal-eleita-a-primeira-presidente-da-assembleia-legislativa-da-madeira/",
+          "status": "dated_official_context_not_proven_exact_video_join"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q2867080",
+          "status": "retained_exact_item_evidence"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "The watch-page relative upload age is not a sitting date. The official 10 April 2025 first-plenary article provides historical context, but no exact join from this video to that date was established. Do not attribute that date to the recording.",
+        "Only one substantive recording has been sampled. Current live delivery, every room, audible tracks, caption coverage, signing quality and audiovisual/programme-data reuse remain unverified.",
+        "Visible interpreter inset supports only source-dependent signing for the selected recording; it is not a service-wide guarantee."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "switzerland--basel-stadt",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "retained_selected_recording_hold",
+      "metadata": {
+        "institutional_url": "https://grosserrat.bs.ch/"
+      },
+      "official_media": {
+        "official_url": "https://grosserrat.bs.ch/",
+        "scope": [
+          "Retained 24 October review reconciles the exact parliament and official archive designation. The index exposes dated video sessions and conditional audiovisual terms."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://grosserrat.bs.ch/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Selected ordinary-business recording and session identity were not independently confirmed. A player shell alone is insufficient.",
+        "No fresh media was started after the user requested silence. The hold is an unresolved validation gap, not a finding that the legislature lacks a public service."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "switzerland--valais-wallis",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "retained_selected_substantive_segment_hold",
+      "metadata": {
+        "institutional_url": "https://vs.recapp.ch/"
+      },
+      "official_media": {
+        "official_url": "https://vs.recapp.ch/",
+        "scope": [
+          "Retained 24 October review reconciles the exact parliament and own Recapp designation. The 8 September 2026 dog-law link decodes in Chromium, but its initial visual frame retains prior judicial-fees graphics, a transition boundary."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://vs.recapp.ch/",
+          "finding": "Reference and exact access/playback limits retained in the linked individual source report; no fresh media claim inferred."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Actual substantive speech in the intended segment, a second date and the WebKit sample remain unresolved. Transition frames do not prove the intended agenda business.",
+        "No fresh media was started after the user requested silence; current live, accessibility and independent reuse remain unverified."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "switzerland--zug",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "metadata": {
+        "institutional_url": "https://zg.ch/de/kantonsrat/livestream-kantonsratssitzung"
+      },
+      "official_media": {
+        "official_url": "https://zg.ch/de/kantonsrat/livestream-kantonsratssitzung",
+        "scope": [
+          "Fresh own institution page identifies the eighty-member Cantonal Council and links its named livestream/archive page.",
+          "Fresh normal-browser Q1948527 identifies the cantonal parliament, eighty seats, specific member class and GND 4694239-7; the alternative Q113162956 only describes a generic cantonal authority. The duplicate does not prevent exact primary identification.",
+          "The retained 24 October report confirms substantive 24 September and 27 August 2026 chamber/chair recordings in Chromium and WebKit. Those clips were not freshly replayed in this 25 October identity follow-up."
+        ],
+        "selected_media_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      },
+      "epg": {
+        "status": "separate_broadcast_mapping_and_parser_gates_retained",
+        "implemented_parser_added": false
+      },
+      "rights": {
+        "linking": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "embedding": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "direct_playback": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "rebroadcast": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "copying_recording": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "audiovisual_reuse": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        },
+        "programme_data": {
+          "status": "not_fully_certified_in_this_followup",
+          "source_specific_terms_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://zg.ch/de/kantonsrat",
+          "status": "official_page_read"
+        },
+        {
+          "url": "https://zg.ch/de/kantonsrat/livestream-kantonsratssitzung",
+          "status": "official_page_read"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q1948527",
+          "status": "normal_browser_item_read"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q113162956",
+          "status": "normal_browser_alternative_item_read"
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-25-continued-europe-viewing-validation.json"
+      ],
+      "unresolved": [
+        "Current live operation, all rooms, audible tracks and full accessibility have not been certified.",
+        "Direct playback, third-party embedding, recording, rebroadcast, audiovisual and programme-data reuse require their separate applicable terms checks."
+      ],
+      "all_dimensions_validated": false
+    }
+  ]
+}

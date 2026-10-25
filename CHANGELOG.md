@@ -1,5 +1,22 @@
 # Changelog
 
+## 25 October — Continued Official Viewing Sources
+
+Added 13 scoped official viewing links, bringing the catalogue to 269 sources.
+Six existing Argentine chamber matches are documented and Finland's existing
+source receives further evidence without duplication. Selected historical,
+single-sitting, clip and browser limitations remain explicit. Renewed partial
+service follow-ups cover 308 of the 940 eligible identities; 632 retain earlier
+checks. No complete-service certification, IPTV admission or guide parser is added.
+
+Added six regional map outlines, three labelled institution-location markers,
+seven sourced flags and the French Community's verified reuse of its adopted
+flag. Search, programme links and public institution crosswalks include the
+additions. Location markers explain their scope rather than imply a territorial
+boundary. Research browser launches now suppress audio before navigation.
+Nearby location markers are separated with leader lines to retain pointer access.
+[Publication decisions](reports/discovery/2026-10-25-held-source-publication-decisions.json).
+
 ## 24 October — Scoped Publication And Monitoring Coverage
 
 Added 13 official viewing sources, exact legislature crosswalks, 11 regional map

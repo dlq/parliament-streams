@@ -1,0 +1,220 @@
+{
+  "reviewed_on": "2026-10-25",
+  "purpose": "Continued candidate-specific validation and scoped official viewing publication; no claim of fresh media checks for all 940 eligible identities.",
+  "summary": {
+    "new_official_viewing_sources": 13,
+    "exact_existing_crosswalks_documented": 6,
+    "existing_sources_with_deepened_playback_evidence": 1,
+    "new_native_or_iptv_sources": 0,
+    "new_implemented_epg_parsers": 0
+  },
+  "records": [
+    {
+      "id": "national--is-lc01",
+      "catalogue_id": "iceland-althingi",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+      "official_url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg",
+      "confirmed_scope": "The official Alþingi broadcast guide designates this YouTube channel for proceedings. A selected historical 2023 economic and trade committee hearing concerning competition law shows substantive committee speech and advances at 1202.81 seconds in Chromium. The title says 9 October 2023, while the camera overlay says 10.10.2023; no exact EPG date or current/live coverage is claimed. A challenge on the institution’s own site remains a separate access limitation. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "national--md-lc01",
+      "catalogue_id": "moldova-parliament-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+      "official_url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw",
+      "confirmed_scope": "The Parliament’s own Galerie video route redirects to this exact institutional YouTube channel. The 22 October 2026 plenary decodes substantive presiding-dais speech and advances at 1202.82 seconds in Chromium (1280 × 720 pixels). Committee entries are visible, but the selected committee test was interrupted before substantive playback. Current live coverage, coverage of every room, audible tracks and accessibility remain unverified. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--catamarca--organ--camara-de-diputados",
+      "catalogue_id": "argentina-catamarca-deputies-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "official_url": "https://tv.diputadoscatamarca.gob.ar/",
+      "confirmed_scope": "The owned Chamber homepage designates its own Canal Parlamentario and the exact official YouTube handle. Its archive-labelled 15th and 14th ordinary-session videos both decode and advance beyond 1800 seconds in Chromium and WebKit. Inspected frames show a member discussing an expropriation bill at the chamber desk and the presiding chair conducting House business. TV wrapper dates are publication metadata: the main House news index dates its 15th sitting differently, so exact occurrence dates remain unreconciled.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--san-luis--organ--camara-de-diputados",
+      "catalogue_id": "argentina-san-luis-deputies-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "official_url": "https://diputados.sanluis.gov.ar/",
+      "confirmed_scope": "Normal HTTPS now returns the owned Chamber homepage, which designates @dipusanluis and links the archived 28th ordinary session of 21 October 2026. Chromium decodes and advances beyond 1800 seconds. The inspected frame shows Silvia Sosa Araújo at the House dais, matching chamber branding, named lower third and on-video 21 October timestamp. This is one recorded sitting, not current-live or complete service validation; no WebKit playback is asserted for this new sample.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--salta--organ--camara-de-senadores",
+      "catalogue_id": "argentina-salta-senate-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "official_url": "https://senadosalta.gob.ar/",
+      "confirmed_scope": "The owned Senate homepage designates its ordinary Senate video channel, separate from the Constituent Convention channel. Its 15 October 2026 report of the 27th ordinary sitting directly embeds the Alejandra Navarro municipal-charter and Juan Cruz Curá C14/C15 railway speeches. Both source clips decode and advance from 30 to 31 seconds in process-muted Chromium; inspected images show actual chamber-floor debate and a senator addressing the chamber. These are two short segments of one sitting, not two meeting dates or full-session validation.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "switzerland--zug",
+      "catalogue_id": "switzerland-zug-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+      "official_url": "https://zg.ch/de/kantonsrat/livestream-kantonsratssitzung",
+      "confirmed_scope": "The current own parliamentary site designates its livestream and archive. Selected 24 September and 27 August 2026 recorded chamber/chair proceedings were visually confirmed in Chromium and WebKit in the retained 24 October review; the 25 October follow-up resolves the exact parliament identity and does not replay those clips. The first link is a planned 29 October sitting, not observed current live.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "belgium--parlement-de-la-federation-wallonie-bruxelles",
+      "catalogue_id": "belgium-french-community-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+      "official_url": "https://www.youtube.com/channel/UCSBM3MV5XxHxG96_85POSaw",
+      "confirmed_scope": "The owned parliament homepage directly designates this exact channel. Selected 20 October 2026 Sports and Childhood committee-speaker recordings were confirmed in both engines. A fresh 19 October Budget committee sample advances in Chromium; WebKit briefly decodes its budget slide and then stalls. These are committee recordings, not an assertion of complete plenary/live coverage. The parliament represents the French Community across Wallonia and Brussels; its Brussels map marker is an institutional location, not a jurisdiction outline.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "czech-republic--liberecky-kraj",
+      "catalogue_id": "czech-republic-liberec-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+      "official_url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo/online-prenos-zasedani-zastupitelstva",
+      "confirmed_scope": "The owned assembly archive directly links 20 October and 29 September 2026 sittings. Both source recordings decode and advance beyond twenty minutes in Chromium and WebKit. Inspected frames show the assembly room, presiding dais, members at microphones and dated proceedings overlays. This establishes selected recorded business, not current live or every room.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "czech-republic--zlinsky-kraj",
+      "catalogue_id": "czech-republic-zlin-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+      "official_url": "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva",
+      "confirmed_scope": "The owned assembly archive embeds the 12 October 2026 sitting. Both engines decode and advance beyond twenty minutes. The visually inspected sample shows Michaela Blahová speaking at a microphone on additional social-services financing for 2026. Only one sitting date was sampled; current live and complete committee coverage remain unverified. The source anonymizes portions of its own recordings under its publication rules.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira",
+      "catalogue_id": "portugal-madeira-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+      "official_url": "https://www.youtube.com/@AssembleiaLegislativadaMadeira",
+      "confirmed_scope": "The owned assembly homepage designates this exact YouTube handle. A recording titled Sessão Plenária Nº1 - Eleição da Mesa da Assembleia Legislativa da Madeira decodes and advances in Chromium and WebKit; inspected frames show bureau-election parliamentary business and an interpreter inset. The exact sitting date is unresolved: upload age is not a meeting date, and the separate official 10 April 2025 first-plenary article was not conclusively joined to this recording. This is one selected historical recording, with no current-live or source-wide coverage claim.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "indonesia--kepulauan-riau",
+      "catalogue_id": "indonesia-kepulauan-riau-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+      "official_url": "https://www.youtube.com/@dprdkepri",
+      "confirmed_scope": "The retained own-site designation of @dprdkepri is independently matched to the current assembly secretariat and the named DPRD KEPRI uploader. Its 2026 revised-APBD budget-body final-report recording decodes and advances past 1200 seconds in Chromium and WebKit. Inspected frames show a member reading the budget report at the provincial assembly lectern under a matching plenary ticker. The anniversary recitation is ceremonial and is excluded as ordinary-business evidence.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "india--chakma-autonomous-district-council",
+      "catalogue_id": "india-chakma-council-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+      "official_url": "https://www.youtube.com/@CADCOfficial/videos",
+      "confirmed_scope": "The council-owned RTI handbook and homepage designate CADC Official, including the same exact channel ID as the source-native @CADCOfficial page. The recording labelled Vote of Confidence (Floor Test), 9 July 2026, decodes and advances past 1200 seconds in Chromium and WebKit after advertisements are excluded. Inspected frames show the chairman conducting chamber business with council officers and member nameplates. Cultural films, oath ceremonies and celebrations are not used as legislative-business samples.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "india--lai-autonomous-district-council",
+      "catalogue_id": "india-lai-council-recordings",
+      "decision": "publish_scoped_official_viewing_link",
+      "source_report": "reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+      "official_url": "https://www.youtube.com/@IPRLADC/streams",
+      "confirmed_scope": "The retained council-owned government homepage designates I&PR LADC; the source channel reciprocally links ladc.mizoram.gov.in. Selected 29 July 2026 monsoon and 2 April 2026 budget recordings both decode and advance past 600 seconds in Chromium and WebKit after advertisements/title cards are excluded. Inspected frames show the presiding chair in the monsoon session and member C. Ngunlianthunga speaking from his chamber desk in budget business. Two dates are supported by source titles; complete sitting continuity is not certified.",
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--buenos-aires--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-buenos-aires-deputies-webcasts"
+      ],
+      "decision": "document_exact_existing_service_crosswalk",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "confirmed_scope": "Own legislature website explicitly designates the video provider. Two ordinary Deputies sittings, 20 October and 29 September 2026; Monica Schlotthauer and Facundo Tignanelli speaking at chamber desks, named captions and inset interpreters. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--catamarca--organ--camara-de-senadores",
+      "catalogue_ids": [
+        "argentina-catamarca-senate-recordings"
+      ],
+      "decision": "document_exact_existing_service_crosswalk",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "confirmed_scope": "Own legislature website explicitly designates the video provider. 23rd and 22nd ordinary Senate sittings in 2026; presiding officials conducting chamber business. Second video’s earlier star-field/presentation material is not the accepted business sample; later sample at 6000 seconds shows the chair reading into a microphone. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--corrientes--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-corrientes-deputies-webcasts"
+      ],
+      "decision": "document_exact_existing_service_crosswalk",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "confirmed_scope": "The provincial Chamber’s official sitting index and homepage designate the exact YouTube channel UCaKzoDdrgujAXRX83vAukqw and individual recordings. The 17th ordinary sitting on 14 October 2026 and 16th on 23 September 2026 match the official sitting/agenda indexes and play after 30 minutes in Chromium and WebKit. Chamber members, session lower thirds, institutional branding and an interpreter inset were visually checked. This is the provincial lower chamber, not Corrientes municipal council. Current live and all committee rooms remain unvalidated.",
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--corrientes--organ--camara-de-senadores",
+      "catalogue_ids": [
+        "argentina-corrientes-senate-recordings"
+      ],
+      "decision": "document_exact_existing_service_crosswalk",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "confirmed_scope": "The official provincial Senate homepage and archive pages designate channel UCG53mcv5LYAOzJrLGnGTy-A. Two own-Senate sittings play after 30 minutes in Chromium and WebKit, with chamber business and Senate branding visually checked. Provider publication timestamps are 21 March 2024 for the second ordinary sitting and 30 November 2023 for the sixteenth; these are publication dates, not newly reconciled event dates. Its latest regional conference and cultural videos are not counted as Senate sittings. Current live and complete committee coverage remain unvalidated.",
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--mendoza--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-mendoza-deputies-recordings"
+      ],
+      "decision": "document_exact_existing_service_crosswalk",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "confirmed_scope": "Own legislature website explicitly designates the video provider. Deputies sittings on 21 and 14 October 2026; Lucas Ilardo and Beatriz Martínez speaking at chamber microphones under named party captions. Logo animation at an earlier sample is not accepted as business. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "argentina--salta--organ--camara-de-diputados",
+      "catalogue_ids": [
+        "argentina-salta-deputies-recordings"
+      ],
+      "decision": "document_exact_existing_service_crosswalk",
+      "source_report": "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+      "confirmed_scope": "Own legislature website explicitly designates the video provider. 25th and 24th ordinary sittings of the 128th session period; Gerónimo Arjona speaking at a chamber microphone with named captions and matching Deputies branding. Selected recorded video was decoded and visually reviewed in Chromium and WebKit at the documented offsets; current live, complete rooms/committees and audible track quality are not certified by these muted samples.",
+      "fresh_replay_claimed": false,
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "national--fi-lc01",
+      "catalogue_ids": [
+        "finland-eduskunta-webcasts"
+      ],
+      "decision": "deepen_existing_source_evidence",
+      "source_report": "reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+      "unresolved": [
+        "Observed low-resolution adaptive video at 284 × 160 pixels in the later samples; full-quality continuity is unverified.",
+        "The publisher’s event title shows 13:00, while speech times rendered in Toronto show 06:xx. These are different clocks; this run does not certify a timed EPG mapping.",
+        "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+        "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+        "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established."
+      ],
+      "all_dimensions_validated": false
+    }
+  ],
+  "source_reports": [
+    "reports/discovery/2026-10-25-continued-americas-viewing-validation.json",
+    "reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+    "reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+    "reports/discovery/2026-10-25-continued-national-viewing-validation.json"
+  ],
+  "unresolved_scope": "Source-specific holds remain in the individual reports. Do not treat an official archive link as full current-live, EPG or media-reuse clearance.",
+  "playback_safety": "All active research players were closed at user request. Any future playback must disable audio at browser-process level before navigation; setting muted only after a page loads is insufficient."
+}

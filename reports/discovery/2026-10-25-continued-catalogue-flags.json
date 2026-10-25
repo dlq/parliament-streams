@@ -1,0 +1,431 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Flag assets for the continued national, subnational and autonomous-territory viewing-source publication batch. Seven new full flags, one independently verified Community flag reuse, and three explicit neutral marks.",
+  "method": "Checked primary flag-design descriptions and current Commons metadata, downloaded with a shared cache/serialized two-second pacing and increasing rate-limit backoff. Verified source SHA1, original and sanitized SHA256, XML safety and identical parsed artwork trees. Visually inspected a static side-by-side original/local contact sheet. No media playback was used. Copyright and official-symbol conditions are recorded separately.",
+  "summary": {
+    "jurisdictions_reviewed": 11,
+    "assets_added": 7,
+    "existing_asset_reused": 1,
+    "neutral_retained": 3,
+    "new_svg_safety_passed": 7,
+    "new_assets_source_hashes_verified": 7,
+    "new_assets_artwork_preserved": 7,
+    "new_assets_visual_qa_passed": 7
+  },
+  "records": [
+    {
+      "jurisdiction": "Iceland",
+      "outcome": "asset_added",
+      "asset_filename": "is.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg",
+      "creator": "Matthías Þórðarson; vector Árni Dagur and Magasjukur2",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-25",
+      "source_download_sha256": "225f2c249cb0ae48bb954cc768c49f3f7143ae6150c0a44f58cedbb6a9a995b4",
+      "source_sha1": "4fcd6e0f507312e9c58cf342abc97569a6d6af0e",
+      "sha256": "8b32af3b59d7d7d75fcf086e20e75c28aae05dbd5c4e587becc5d2ec85e1ce82",
+      "bytes": 281,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "Parsed XML; no scripts, handlers, active external resources, foreign content, media, animation or DTD/entities."
+      },
+      "use_scope": "Respectful informational depiction of a full jurisdiction flag, not project branding or endorsement. Artwork copyright status does not remove separate official-symbol rules.",
+      "source_sha1_matches_commons_metadata": true,
+      "sanitization_artwork_tree_identical": true,
+      "catalogue_id": "iceland-althingi",
+      "inventory_id": "national--is-lc01",
+      "key": "is",
+      "finding": "Current own law describes the general national flag as a blue field with a white cross and narrower red cross, with height:length 18:25. The ordinary rectangular national flag is used here, rather than the restricted swallowtail institutional flag.",
+      "symbol_use_note": "The law requires correct proportions/colours and distinguishes respectful depiction from use as a private or business mark.",
+      "sources": [
+        {
+          "url": "https://www.althingi.is/lagas/nuna/1944034.html",
+          "finding": "Current own law describes the general national flag as a blue field with a white cross and narrower red cross, with height:length 18:25. The ordinary rectangular national flag is used here, rather than the restricted swallowtail institutional flag."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg",
+          "finding": "Current file identity, creator/licence metadata and source SHA1 verified; rendered original and sanitized local asset have identical visible artwork."
+        }
+      ],
+      "visual_qa": {
+        "passed": true,
+        "source_and_sanitized_comparison": "Side-by-side static Chromium screenshot inspected; all images decode, preserve natural aspect ratios and match. No source-video playback.",
+        "natural_dimensions": [
+          1250,
+          900
+        ]
+      }
+    },
+    {
+      "jurisdiction": "Moldova",
+      "outcome": "asset_added",
+      "asset_filename": "md.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Moldova.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg",
+      "creator": "Gheorghe Vrabie",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-25",
+      "source_download_sha256": "62bbaadca7fc4ce2e7a6d98b3344c6c86e2120f75d8a3cf812c03f0b984b9439",
+      "source_sha1": "73e7c6b8814a5f6e42e121f82f0ace68cf847de7",
+      "sha256": "4510d4a0cad1ca1e2585291e1bba5b3619de2c36a508e576ccef85b6f25bab6a",
+      "bytes": 58025,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "Parsed XML; no scripts, handlers, active external resources, foreign content, media, animation or DTD/entities."
+      },
+      "use_scope": "Respectful informational depiction of a full jurisdiction flag, not project branding or endorsement. Artwork copyright status does not remove separate official-symbol rules.",
+      "source_sha1_matches_commons_metadata": true,
+      "sanitization_artwork_tree_identical": true,
+      "catalogue_id": "moldova-parliament-recordings",
+      "inventory_id": "national--md-lc01",
+      "key": "md",
+      "finding": "The Presidency identifies the national flag as equal vertical blue, yellow and red strips with the state arms centred on yellow and height:length 1:2. Rendered artwork matches those features.",
+      "symbol_use_note": "The own page requires depictions to preserve the established proportions, colours and graphic representation.",
+      "sources": [
+        {
+          "url": "https://presedinte.md/eng/flag",
+          "finding": "The Presidency identifies the national flag as equal vertical blue, yellow and red strips with the state arms centred on yellow and height:length 1:2. Rendered artwork matches those features."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Moldova.svg",
+          "finding": "Current file identity, creator/licence metadata and source SHA1 verified; rendered original and sanitized local asset have identical visible artwork."
+        }
+      ],
+      "visual_qa": {
+        "passed": true,
+        "source_and_sanitized_comparison": "Side-by-side static Chromium screenshot inspected; all images decode, preserve natural aspect ratios and match. No source-video playback.",
+        "natural_dimensions": [
+          2000,
+          1000
+        ]
+      }
+    },
+    {
+      "jurisdiction": "San Luis",
+      "outcome": "asset_added",
+      "asset_filename": "san-luis.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_San_Luis.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Bandera_de_la_Provincia_de_San_Luis.svg",
+      "creator": "SVG by Hurfer",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-25",
+      "source_download_sha256": "1805235c9a1a01de4092f0ca2465d75cae9752e1db366dba493afb4d628d902a",
+      "source_sha1": "4db2f348f7d0255204723eee9cd6e348bef918b8",
+      "sha256": "1805235c9a1a01de4092f0ca2465d75cae9752e1db366dba493afb4d628d902a",
+      "bytes": 151850,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "Parsed XML; no scripts, handlers, active external resources, foreign content, media, animation or DTD/entities."
+      },
+      "use_scope": "Respectful informational depiction of a full jurisdiction flag, not project branding or endorsement. Artwork copyright status does not remove separate official-symbol rules.",
+      "source_sha1_matches_commons_metadata": true,
+      "sanitization_artwork_tree_identical": true,
+      "catalogue_id": "argentina-san-luis-deputies-recordings",
+      "inventory_id": "argentina--san-luis--organ--camara-de-diputados",
+      "key": "san-luis",
+      "finding": "The provincial government news agency identifies the flag as adopted under Law 4810 in 1988: white field, central oval arms, laurel branches, mountains, rising sun and two deer. These full-flag features are present in the asset.",
+      "symbol_use_note": "Informational identification of the province; no claim that the flag is a private project emblem.",
+      "sources": [
+        {
+          "url": "https://agenciasanluis.com/2026/08/08/1194202-la-bandera-de-san-luis-el-emblema-que-abraza-432-anos-de-historia-identidad-y-orgullo/",
+          "finding": "The provincial government news agency identifies the flag as adopted under Law 4810 in 1988: white field, central oval arms, laurel branches, mountains, rising sun and two deer. These full-flag features are present in the asset."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_San_Luis.svg",
+          "finding": "Current file identity, creator/licence metadata and source SHA1 verified; rendered original and sanitized local asset have identical visible artwork."
+        }
+      ],
+      "visual_qa": {
+        "passed": true,
+        "source_and_sanitized_comparison": "Side-by-side static Chromium screenshot inspected; all images decode, preserve natural aspect ratios and match. No source-video playback.",
+        "natural_dimensions": [
+          600,
+          400
+        ]
+      }
+    },
+    {
+      "jurisdiction": "Zug",
+      "outcome": "asset_added",
+      "asset_filename": "zug.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Zug.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Canton_of_Zug.svg",
+      "creator": "Unknown original author; Commons contributors",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-25",
+      "source_download_sha256": "c5a92265664f0d5b559c1185009d0e782cda2fd44192969ca000ddd32e52d261",
+      "source_sha1": "e32dda807d6164b5553922046c66a21ffb739c73",
+      "sha256": "78e5c2477cd64fb1eb200779cedb02e2473f354c28e77c4e80fd1274bed54bb8",
+      "bytes": 201,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "Parsed XML; no scripts, handlers, active external resources, foreign content, media, animation or DTD/entities."
+      },
+      "use_scope": "Respectful informational depiction of a full jurisdiction flag, not project branding or endorsement. Artwork copyright status does not remove separate official-symbol rules.",
+      "source_sha1_matches_commons_metadata": true,
+      "sanitization_artwork_tree_identical": true,
+      "catalogue_id": "switzerland-zug-recordings",
+      "inventory_id": "switzerland--zug",
+      "key": "zug",
+      "finding": "The Swiss Army flag regulation section on Zug describes white-blue-white and requires the blue band to run horizontally. The square asset shows that complete cantonal flag.",
+      "symbol_use_note": "Cantonal flag used for jurisdiction identification; the city arms and private branding are not substituted.",
+      "sources": [
+        {
+          "url": "https://www.vtg.admin.ch/dam/de/sd-web/gCN93U9irCnR/250101%20Der%20Umgang%20mit%20Fahnen%2C%20Standarten%20und%20Fanions%20%28Fahnenreglement%29%2C%2051.340_d.pdf",
+          "finding": "The Swiss Army flag regulation section on Zug describes white-blue-white and requires the blue band to run horizontally. The square asset shows that complete cantonal flag."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Zug.svg",
+          "finding": "Current file identity, creator/licence metadata and source SHA1 verified; rendered original and sanitized local asset have identical visible artwork."
+        }
+      ],
+      "visual_qa": {
+        "passed": true,
+        "source_and_sanitized_comparison": "Side-by-side static Chromium screenshot inspected; all images decode, preserve natural aspect ratios and match. No source-video playback.",
+        "natural_dimensions": [
+          600,
+          600
+        ]
+      }
+    },
+    {
+      "jurisdiction": "Liberec Region",
+      "outcome": "asset_added",
+      "asset_filename": "liberec.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Liberec_Region.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Liberec_Region.svg",
+      "creator": "Zirland",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-25",
+      "source_download_sha256": "23242a12f7f74f9a20e895102f4ac8bf94a578c1aa5185bafe61a0c8a98edf92",
+      "source_sha1": "0e2f6fdc6e96d5a2c6b4944c35d004e7c732d7c6",
+      "sha256": "1ca3a09cb6c77106173778f2886b59768d7bd84029e77a3bc3d9b90c4788e876",
+      "bytes": 240367,
+      "modifications": "Removed legacy SVG DOCTYPE declaration; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "Parsed XML; no scripts, handlers, active external resources, foreign content, media, animation or DTD/entities."
+      },
+      "use_scope": "Respectful informational depiction of a full jurisdiction flag, not project branding or endorsement. Artwork copyright status does not remove separate official-symbol rules.",
+      "source_sha1_matches_commons_metadata": true,
+      "sanitization_artwork_tree_identical": true,
+      "catalogue_id": "czech-republic-liberec-recordings",
+      "inventory_id": "czech-republic--liberecky-kraj",
+      "key": "liberec",
+      "finding": "The Chamber of Deputies symbol register identifies the 8 October 2001 adopted 2:3 flag: red/blue quarters, Czech lions upper hoist/lower fly, white eight-spoked wheel upper fly and white concave-sided upward triangle lower hoist. Rendered asset matches.",
+      "symbol_use_note": "The region separately states that use of its flag does not require its consent; its arms and logo have different conditions.",
+      "sources": [
+        {
+          "url": "https://rekos.psp.cz/symboly-libereckeho-kraje",
+          "finding": "The Chamber of Deputies symbol register identifies the 8 October 2001 adopted 2:3 flag: red/blue quarters, Czech lions upper hoist/lower fly, white eight-spoked wheel upper fly and white concave-sided upward triangle lower hoist. Rendered asset matches."
+        },
+        {
+          "url": "https://www.kraj-lbc.cz/aktuality/informace-tykajici-se-symbolu-lk-n480204.htm",
+          "finding": "Own regional rules explicitly distinguish flag use without prior consent from consent requirements for the regional arms."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Liberec_Region.svg",
+          "finding": "Current file identity, creator/licence metadata and source SHA1 verified; rendered original and sanitized local asset have identical visible artwork."
+        }
+      ],
+      "visual_qa": {
+        "passed": true,
+        "source_and_sanitized_comparison": "Side-by-side static Chromium screenshot inspected; all images decode, preserve natural aspect ratios and match. No source-video playback.",
+        "natural_dimensions": [
+          1800,
+          1200
+        ]
+      }
+    },
+    {
+      "jurisdiction": "Zlín Region",
+      "outcome": "asset_added",
+      "asset_filename": "zlin.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Zlin_Region.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Zlin_Region.svg",
+      "creator": "Zirland",
+      "licence": "Public domain",
+      "licence_url": null,
+      "reviewed_on": "2026-10-25",
+      "source_download_sha256": "624970a69091de5245dc4d1b2023c063c6dba8ee02632779b018947a68d72a81",
+      "source_sha1": "08b9dd07bb0869d23230d172179940b95a6d3372",
+      "sha256": "624970a69091de5245dc4d1b2023c063c6dba8ee02632779b018947a68d72a81",
+      "bytes": 95850,
+      "modifications": "None",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "Parsed XML; no scripts, handlers, active external resources, foreign content, media, animation or DTD/entities."
+      },
+      "use_scope": "Respectful informational depiction of a full jurisdiction flag, not project branding or endorsement. Artwork copyright status does not remove separate official-symbol rules.",
+      "source_sha1_matches_commons_metadata": true,
+      "sanitization_artwork_tree_identical": true,
+      "catalogue_id": "czech-republic-zlin-recordings",
+      "inventory_id": "czech-republic--zlinsky-kraj",
+      "key": "zlin",
+      "finding": "The region identifies the assembly-approved 2001 flag and shows/describes blue/gold quarters with Moravian eagle, book/cross, crossed tools with grape and an eight-point star. Rendered full flag matches the symbol design, rather than the separate black-square brand.",
+      "symbol_use_note": "The own page distinguishes restrictions for the coat of arms and brand from flag display; do not repurpose either restricted symbol as project branding.",
+      "sources": [
+        {
+          "url": "https://zlinskykraj.cz/symboly-kraje",
+          "finding": "The region identifies the assembly-approved 2001 flag and shows/describes blue/gold quarters with Moravian eagle, book/cross, crossed tools with grape and an eight-point star. Rendered full flag matches the symbol design, rather than the separate black-square brand."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Zlin_Region.svg",
+          "finding": "Current file identity, creator/licence metadata and source SHA1 verified; rendered original and sanitized local asset have identical visible artwork."
+        }
+      ],
+      "visual_qa": {
+        "passed": true,
+        "source_and_sanitized_comparison": "Side-by-side static Chromium screenshot inspected; all images decode, preserve natural aspect ratios and match. No source-video playback.",
+        "natural_dimensions": [
+          1800,
+          1200
+        ]
+      }
+    },
+    {
+      "jurisdiction": "Madeira",
+      "outcome": "asset_added",
+      "asset_filename": "madeira.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Madeira.svg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Madeira.svg",
+      "creator": "Original Brian Boru; vector Nuno Tavares",
+      "licence": "CC BY-SA 1.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/1.0",
+      "reviewed_on": "2026-10-25",
+      "source_download_sha256": "0ffdf650a6de625bb8a10ba0f50ebd162e337b288a3d1d97eb036ab74129c7b2",
+      "source_sha1": "bba273bae9cefaea82b3d83bbe3607c3f49d1b0f",
+      "sha256": "7112bedec35058981fb90538449b8214528db6f15767136b2c6d361579adff8a",
+      "bytes": 382,
+      "modifications": "Normalized XML line endings and trailing whitespace; artwork unchanged.",
+      "svg_safety": {
+        "passed": true,
+        "issues": [],
+        "check_scope": "Parsed XML; no scripts, handlers, active external resources, foreign content, media, animation or DTD/entities."
+      },
+      "use_scope": "Respectful informational depiction of a full jurisdiction flag, not project branding or endorsement. Artwork copyright status does not remove separate official-symbol rules.",
+      "source_sha1_matches_commons_metadata": true,
+      "sanitization_artwork_tree_identical": true,
+      "catalogue_id": "portugal-madeira-recordings",
+      "inventory_id": "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira",
+      "key": "madeira",
+      "finding": "The Legislative Assembly identifies Regional Decree 30/78/M and the 2:3 full flag with equal vertical blue/gold/blue panels and the Order of Christ cross in the centre. Rendered asset matches, without the separate heraldic helmet or seal.",
+      "symbol_use_note": "The assembly describes official symbol protocol separately; the Commons artwork licence does not confer affiliation or endorsement.",
+      "sources": [
+        {
+          "url": "https://www.alram.pt/pt/artigos/assembleia/simbolos-da-autonomia/",
+          "finding": "The Legislative Assembly identifies Regional Decree 30/78/M and the 2:3 full flag with equal vertical blue/gold/blue panels and the Order of Christ cross in the centre. Rendered asset matches, without the separate heraldic helmet or seal."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Madeira.svg",
+          "finding": "Current file identity, creator/licence metadata and source SHA1 verified; rendered original and sanitized local asset have identical visible artwork."
+        }
+      ],
+      "visual_qa": {
+        "passed": true,
+        "source_and_sanitized_comparison": "Side-by-side static Chromium screenshot inspected; all images decode, preserve natural aspect ratios and match. No source-video playback.",
+        "natural_dimensions": [
+          1200,
+          800
+        ]
+      }
+    },
+    {
+      "jurisdiction": "French Community",
+      "catalogue_id": "belgium-french-community-recordings",
+      "inventory_id": "belgium--parlement-de-la-federation-wallonie-bruxelles",
+      "key": "wallonia",
+      "outcome": "existing_asset_reused",
+      "asset_filename": "wallonia.svg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Flag_of_Wallonia.svg",
+      "licence": "CC0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "finding": "The own Parliament history confirms that the French Community adopted its own gold flag with a red rooster by decree on 20 July 1975, from the Pierre Paulus design. Reuse of the existing full-flag asset therefore identifies the Community in its own right, not a presumed parent-territory fallback.",
+      "sources": [
+        {
+          "url": "https://www.pfwb.be/de-la-communaute-culturelle-de-langue-francaise-a-la-federation-wallonie-bruxelles",
+          "finding": "Own institution states the adoption date, red rooster on yellow field and raised right leg, while distinguishing later institutional logos."
+        },
+        {
+          "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Wallonia.svg",
+          "finding": "Existing bundled full-flag artwork and CC0 attribution retained; this pass does not assert a fresh download or relicense the file."
+        }
+      ],
+      "sha256": "0d8dd085216df49082c3bb1d54df043f916ebbe8d155dd1774206d6c73e2c076",
+      "bytes": 21572,
+      "modifications": "None; existing asset reused.",
+      "visual_qa": {
+        "passed": true,
+        "finding": "Static local image inspected: red rooster on yellow rectangular field, matching the own institutional flag description."
+      },
+      "symbol_use_note": "Full adopted flag for informational identification only; no replacement with a current institutional logo and no claim that Community jurisdiction equals Wallonia territory."
+    },
+    {
+      "jurisdiction": "Kepulauan Riau",
+      "catalogue_id": "indonesia-kepulauan-riau-recordings",
+      "inventory_id": "indonesia--kepulauan-riau",
+      "outcome": "neutral_retained",
+      "asset_filename": null,
+      "finding": "An adopted complete jurisdiction flag was not verified in this publication pass. Official institutional branding/arms alone are insufficient proof of a flag design; do not substitute a parent flag, ethnic flag, emblem or invented banner. This finding does not claim that no flag exists.",
+      "sources": [
+        {
+          "url": "https://dprd.kepriprov.go.id/",
+          "finding": "Official institutional route retained as a lead; ownership or an emblem does not establish an adopted complete flag."
+        }
+      ],
+      "unresolved": "Primary adoption/design evidence and a suitable artwork source, including reuse conditions, remain to be established."
+    },
+    {
+      "jurisdiction": "Chakma Autonomous District",
+      "catalogue_id": "india-chakma-council-recordings",
+      "inventory_id": "india--chakma-autonomous-district-council",
+      "outcome": "neutral_retained",
+      "asset_filename": null,
+      "finding": "An adopted complete jurisdiction flag was not verified in this publication pass. Official institutional branding/arms alone are insufficient proof of a flag design; do not substitute a parent flag, ethnic flag, emblem or invented banner. This finding does not claim that no flag exists.",
+      "sources": [
+        {
+          "url": "https://www.cadc.gov.in/",
+          "finding": "Official institutional route retained as a lead; ownership or an emblem does not establish an adopted complete flag."
+        }
+      ],
+      "unresolved": "Primary adoption/design evidence and a suitable artwork source, including reuse conditions, remain to be established."
+    },
+    {
+      "jurisdiction": "Lai Autonomous District",
+      "catalogue_id": "india-lai-council-recordings",
+      "inventory_id": "india--lai-autonomous-district-council",
+      "outcome": "neutral_retained",
+      "asset_filename": null,
+      "finding": "An adopted complete jurisdiction flag was not verified in this publication pass. Official institutional branding/arms alone are insufficient proof of a flag design; do not substitute a parent flag, ethnic flag, emblem or invented banner. This finding does not claim that no flag exists.",
+      "sources": [
+        {
+          "url": "https://ladc.mizoram.gov.in/",
+          "finding": "Official institutional route retained as a lead; ownership or an emblem does not establish an adopted complete flag."
+        }
+      ],
+      "unresolved": "Primary adoption/design evidence and a suitable artwork source, including reuse conditions, remain to be established."
+    }
+  ],
+  "verification": {
+    "static_contact_sheet": "Temporary local screenshot /tmp/continued-flags-visual-qa.png; not a durable publication dependency.",
+    "audio_safety": "Only headless static local SVG rendering with Chromium --mute-audio, HTMLMediaElement.play blocked, media muted/zero-volume before page content, network requests blocked and restrictive content security policy. Browser and context closed after screenshot. No official broadcast players opened or replayed.",
+    "svg_safety": "No scripts, event handlers, DTD/entities, foreign content, media, animation or active external resources in the seven new SVGs. Only legacy DTD/whitespace cleanup where listed; artwork trees are identical.",
+    "canonical_integration": "Catalogue, inventory, flags.js and map/schedule integration are owned by the coordinating agent; this report supplies exact catalogue/inventory IDs and asset names."
+  }
+}

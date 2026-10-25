@@ -25,6 +25,7 @@
 .map-legend i { display: block; width: 12px; height: 12px; border: 1px solid #c5d0d5; background: #e8eef0; }
 .map-legend .legend-documented { border-color: #0d4f3d; background: #0d4f3d; }
 .map-legend .legend-selected { border-color: var(--red); background: var(--red); }
+.map-legend .legend-location { width: 9px; height: 9px; margin: 1px 2px; transform: rotate(45deg); border: 2px solid #0d4f3d; background: var(--white); }
 .map-workspace.is-supranational .map-legend .legend-undocumented { border-color: #8fb8a8; background: #b9d8cb; }
 #world-map { display: block; width: 100%; height: auto; min-height: 490px; touch-action: none; }
 .map-country { fill: #e8eef0; stroke: #fff; stroke-width: .6; vector-effect: non-scaling-stroke; }
@@ -44,6 +45,13 @@
 .map-region-marker { fill: #218064; stroke: #fff; stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
 .map-region-marker:hover, .map-region-marker:focus { fill: #2b9877; stroke: var(--ink); outline: none; }
 .map-region-marker.is-selected, .map-region-marker.is-parent-selected { fill: var(--red); }
+.map-location-leader { stroke: var(--ink); stroke-width: .75; vector-effect: non-scaling-stroke; pointer-events: none; }
+.map-location-marker { fill: var(--white); stroke: #0d4f3d; stroke-width: 1.6; cursor: pointer; }
+.map-location-marker:hover, .map-location-marker:focus { stroke: var(--ink); stroke-width: 2.4; outline: none; }
+.map-location-marker.is-selected { stroke: var(--red); }
+.map-location-note { margin: .8rem 0; padding: .65rem .8rem; border-left: 3px solid #0d4f3d; background: var(--wash); font-size: .76rem; line-height: 1.5; }
+.map-location-note p { margin: 0 0 .45rem; }
+.map-location-note a { color: var(--red); overflow-wrap: anywhere; }
 .map-zoom { display: grid; position: absolute; bottom: 3.5rem; left: 0; border: 1px solid var(--control-border); background: var(--white); }
 .map-zoom button { display: grid; width: 34px; height: 34px; place-items: center; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
 .map-zoom button + button { border-top: 1px solid var(--faint); }

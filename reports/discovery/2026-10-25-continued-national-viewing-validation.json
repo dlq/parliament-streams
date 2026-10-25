@@ -1,0 +1,610 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Continued exact national chamber viewing-service checks: current recorded samples are distinct from complete live, EPG, audio or reuse certification. Finland is an existing catalogue service, not a new source.",
+  "method": [
+    "Fresh official institutional pages and designated channels inspected without signing in or bypassing challenges.",
+    "Selected muted native-player samples require decoded ordinary legislative content and inspected frames. Advertisements/title cards are not accepted as proceedings."
+  ],
+  "records": [
+    {
+      "id": "national--fi-lc01",
+      "name": "Eduskunta / Riksdagen",
+      "existing_catalogue_id": "finland-eduskunta-webcasts",
+      "status": "existing_catalogue_source_revalidated",
+      "sources": [
+        {
+          "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot/taysistunto-104-2026",
+          "accessed_on": "2026-10-25",
+          "finding": "The institution’s recording page for sitting 104/2026 includes seven named speech links and item-specific agenda navigation."
+        },
+        {
+          "url": "https://verkkolahetys.eduskunta.fi/fi/kayttoehdot",
+          "accessed_on": "2026-10-25",
+          "finding": "Free links and unaltered parliamentary material under attribution, context and no-endorsement/marks conditions. Specific YLE producer credit condition."
+        },
+        {
+          "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot/taysistunto-104-2026?start=1156&end=1374",
+          "accessed_on": "2026-10-25",
+          "finding": "The source-generated Katso link identifies a Ben Zyskowicz speech segment. The link target was inspected; it was not independently played as a new sample."
+        }
+      ],
+      "playback_samples": [
+        {
+          "key": "fi-104",
+          "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot/taysistunto-104-2026",
+          "engine": "chromium",
+          "reviewed_on": "2026-10-25",
+          "muted": true,
+          "scope": "Selected archived proceedings only; not live or full service/audio/caption/reuse certification.",
+          "http_status": 200,
+          "title": "Täysistunto 23.10.2026 klo 13 - Eduskunnan verkkolähetykset",
+          "initial": {
+            "time": 0.947004,
+            "duration": 1681.88,
+            "width": 1920,
+            "height": 1080,
+            "paused": false,
+            "ready": 4,
+            "frames": 27
+          },
+          "samples": [
+            {
+              "offset": 600,
+              "advanced": false,
+              "media": {
+                "time": 601.815483,
+                "duration": 1681.88,
+                "width": 284,
+                "height": 160,
+                "paused": false,
+                "ready": 4,
+                "frames": 78
+              },
+              "screenshot": "/tmp/national-continuation/fi-104-chromium-600.png"
+            },
+            {
+              "offset": 1200,
+              "advanced": true,
+              "media": {
+                "time": 1202.809978,
+                "duration": 1681.88,
+                "width": 284,
+                "height": 160,
+                "paused": false,
+                "ready": 4,
+                "frames": 157
+              },
+              "screenshot": "/tmp/national-continuation/fi-104-chromium-1200.png"
+            }
+          ],
+          "advertisement_visible": false,
+          "screenshots_visually_inspected": true,
+          "initial_muting_is_not_a_pre_navigation_silence_guarantee": true
+        }
+      ],
+      "decision": "retain_existing_service_and_refresh_provenance",
+      "visual_finding": "The selected 23 October recording of sitting 104/2026 shows a member speaking from the parliamentary floor under the Eduskunta/Riksdagen watermark at 1202.81 seconds. The frame matches Ben Zyskowicz, named by the source speech table at 19:16. The 600-second sample passed the observation deadline before advancing to 601.82 seconds; do not relabel that timeout as immediate success.",
+      "unresolved": [
+        "Observed low-resolution adaptive video at 284 × 160 pixels in the later samples; full-quality continuity is unverified.",
+        "The publisher’s event title shows 13:00, while speech times rendered in Toronto show 06:xx. These are different clocks; this run does not certify a timed EPG mapping.",
+        "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+        "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+        "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established."
+      ],
+      "all_metadata_stream_epg_rights_validated": false,
+      "rights": {
+        "linking": {
+          "status": "explicit_links_permitted",
+          "source": "https://verkkolahetys.eduskunta.fi/fi/kayttoehdot"
+        },
+        "embedding": {
+          "status": "not_separately_closed_by_this_followup"
+        },
+        "direct_playback": {
+          "status": "no_stable_channel_route_validated"
+        },
+        "rebroadcast": {
+          "status": "conditional_source_signal_permission_scope_and_compliance_unresolved"
+        },
+        "copying_recording": {
+          "status": "source_grant_with_conditions",
+          "conditions": [
+            "Source credit; YLE credit where it produces the live image, otherwise Parliament.",
+            "No content alteration or removal from context, no parliamentary marks or graphic identity, and no implied endorsement."
+          ]
+        },
+        "audiovisual_reuse": {
+          "status": "conditional_source_grant",
+          "conditions": [
+            "Unaltered institution-produced/covered material with attribution and context safeguards.",
+            "Third-party contributions and intended use still need case-specific review."
+          ]
+        },
+        "programme_data": {
+          "status": "unresolved"
+        }
+      }
+    },
+    {
+      "id": "national--is-lc01",
+      "name": "Alþingi",
+      "status": "scoped_historical_official_archive_ready",
+      "sources": [
+        {
+          "url": "https://www.althingi.is/utsendingar/",
+          "accessed_on": "2026-10-25",
+          "finding": "Official guide directly designates YouTube for parliamentary/open-committee recordings; ordinary webpage challenge and official indexed reading are distinct."
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg/streams",
+          "accessed_on": "2026-10-25",
+          "finding": "The channel designated by the institution’s guide is accessible, including an economic and trade committee hearing on competition law titled 9 October 2023. Current and live coverage remain unverified."
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q131279",
+          "accessed_on": "2026-10-25",
+          "finding": "The specific unicameral Parliament of Iceland, its own Alþingi website, 63 seats and distinct relationship to the parliament building match the institutional identity."
+        },
+        {
+          "url": "https://data.ipu.org/parliament/IS/IS-LC01/",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact unicameral Althingi and official own parliamentary site."
+        }
+      ],
+      "playback_samples": [
+        {
+          "key": "is-competition-2023",
+          "url": "https://www.youtube.com/watch?v=OP5nYqGuOQc&t=1200s",
+          "engine": "chromium",
+          "reviewed_on": "2026-10-25",
+          "muted": true,
+          "scope": "Selected archived proceedings only; not live or full service/audio/caption/reuse certification.",
+          "http_status": 200,
+          "title": "Opinn fundur í efnahags- og viðskiptanefnd 9. október 2023 um framkvæmd samkeppnislaga - YouTube",
+          "initial": {
+            "time": 0,
+            "duration": 6605.381,
+            "width": 1280,
+            "height": 720,
+            "paused": false,
+            "ready": 1,
+            "frames": 0
+          },
+          "samples": [
+            {
+              "offset": 1200,
+              "advanced": true,
+              "media": {
+                "time": 1202.813847,
+                "duration": 6605.381,
+                "width": 1280,
+                "height": 720,
+                "paused": false,
+                "ready": 4,
+                "frames": 218
+              },
+              "screenshot": "/tmp/national-continuation/is-competition-2023-chromium-1200.png"
+            }
+          ],
+          "advertisement_visible": false,
+          "screenshots_visually_inspected": true,
+          "initial_muting_is_not_a_pre_navigation_silence_guarantee": true
+        }
+      ],
+      "decision": "publish_scoped_official_archive_link",
+      "visual_finding": "At 1202.81 seconds, decoded and advancing video shows Oddný G. Harðardóttir speaking into a committee microphone, with an Alþingi watermark and an economic and trade committee caption concerning competition law and competition supervision. The title dates the open meeting to 9 October 2023, but the on-camera overlay says 10.10.2023; the date conflict remains unresolved.",
+      "unresolved": [
+        "Exact sitting date mismatch: the title says 9 October 2023, while the camera overlay says 10 October 2023. Publish only the clearly historical 2023 committee scope; do not emit an EPG entry with an exact date.",
+        "Current and live parliamentary broadcasts and newer archive availability are not validated by this historical YouTube sample.",
+        "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+        "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+        "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established.",
+        "External embedding, direct playback, copying/recording, redistribution, other audiovisual reuse and programme-data republication retain source-specific permissions questions."
+      ],
+      "all_metadata_stream_epg_rights_validated": false,
+      "rights": {
+        "linking": {
+          "status": "official_provider_designated_public_viewing_link",
+          "limitation": "A viewing-link decision is distinct from rights to reproduce the audiovisual material."
+        },
+        "embedding": {
+          "status": "unresolved_for_independent_use"
+        },
+        "direct_playback": {
+          "status": "unresolved_for_independent_use"
+        },
+        "rebroadcast": {
+          "status": "specific_altingisrasin_distribution_permission_published",
+          "limitation": "Not applied as a blanket licence to every historical YouTube archive item."
+        },
+        "copying_recording": {
+          "status": "unresolved_for_independent_use"
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved_for_independent_use"
+        },
+        "programme_data": {
+          "status": "unresolved_for_independent_use"
+        }
+      }
+    },
+    {
+      "id": "national--md-lc01",
+      "name": "Parlamentul Republicii Moldova",
+      "status": "scoped_official_recording_service_ready",
+      "sources": [
+        {
+          "url": "https://www.parlament.md/galerie-video.nspx",
+          "accessed_on": "2026-10-25",
+          "finding": "The institution’s Galerie video route redirects to the exact channel UCRfMRKU9POyEX5GYapAZJUw."
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw/streams",
+          "accessed_on": "2026-10-25",
+          "finding": "The channel lists the 22 October 2026 plenary and a 21 October 2026 economy, budget and finance committee recording."
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q555809",
+          "accessed_on": "2026-10-25",
+          "finding": "The specific unicameral legislature, 101 seats, parlament.md and the exact designated YouTube channel independently match the institution’s own site and IPU evidence."
+        },
+        {
+          "url": "https://data.ipu.org/parliament/MD/MD-LC01/",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact current unicameral Parliament and own parliamentary website."
+        }
+      ],
+      "playback_samples": [
+        {
+          "key": "md-plenary-22oct",
+          "url": "https://www.youtube.com/watch?v=IKcG1Ysjr4U&t=1200s",
+          "engine": "chromium",
+          "reviewed_on": "2026-10-25",
+          "muted": true,
+          "scope": "Selected archived proceedings only; not live or full service/audio/caption/reuse certification.",
+          "http_status": 200,
+          "title": "Ședința plenară a Parlamentului - 22 octombrie 2026 - YouTube",
+          "initial": {
+            "time": 0,
+            "duration": 31855.021,
+            "width": 0,
+            "height": 0,
+            "paused": false,
+            "ready": 0,
+            "frames": 0
+          },
+          "samples": [
+            {
+              "offset": 1200,
+              "advanced": true,
+              "media": {
+                "time": 1202.817285,
+                "duration": 31855.021,
+                "width": 1280,
+                "height": 720,
+                "paused": false,
+                "ready": 4,
+                "frames": 239
+              },
+              "screenshot": "/tmp/national-continuation/md-plenary-22oct-chromium-1200.png"
+            }
+          ],
+          "advertisement_visible": false,
+          "screenshots_visually_inspected": true,
+          "initial_muting_is_not_a_pre_navigation_silence_guarantee": true
+        },
+        {
+          "key": "md-committee-21oct",
+          "url": "https://www.youtube.com/watch?v=QTyjJ39jDcA&t=1200s",
+          "engine": "chromium",
+          "reviewed_on": "2026-10-25",
+          "muted": true,
+          "scope": "Selected archived proceedings only; not live or full service/audio/caption/reuse certification.",
+          "http_status": 200,
+          "title": "Ședința Comisiei pentru economie, buget și finanțe - 21 octombrie 2026 - YouTube",
+          "initial": {
+            "time": 0,
+            "duration": 17840,
+            "width": 0,
+            "height": 0,
+            "paused": false,
+            "ready": 0,
+            "frames": 0
+          },
+          "samples": [],
+          "error": "Error: page.waitForTimeout: Target page, context or browser has been closed",
+          "screenshots_visually_inspected": false,
+          "initial_muting_is_not_a_pre_navigation_silence_guarantee": true
+        }
+      ],
+      "decision": "publish_scoped_official_archive_link",
+      "visual_finding": "The 22 October 2026 plenary recording advances to 1202.82 seconds, with 239 decoded frames at 1280 × 720 pixels. The inspected frame shows a woman speaking from the presiding dais under the Parliament of Moldova watermark. The 21 October committee player was opened but interrupted before a substantive sample; it is listed in service navigation, without confirmed committee playback.",
+      "unresolved": [
+        "One 22 October 2026 plenary sample was confirmed; playback of the 21 October committee recording was stopped before a substantive sample. This does not establish coverage of every room, party, committee or language variant.",
+        "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+        "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+        "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established.",
+        "External embedding, direct playback, copying/recording, redistribution, other audiovisual reuse and programme-data republication retain source-specific permissions questions."
+      ],
+      "all_metadata_stream_epg_rights_validated": false,
+      "rights": {
+        "linking": {
+          "status": "official_provider_designated_public_viewing_link",
+          "limitation": "A viewing-link decision is distinct from rights to reproduce the audiovisual material."
+        },
+        "embedding": {
+          "status": "unresolved_for_independent_use"
+        },
+        "direct_playback": {
+          "status": "unresolved_for_independent_use"
+        },
+        "rebroadcast": {
+          "status": "unresolved_for_independent_use"
+        },
+        "copying_recording": {
+          "status": "unresolved_for_independent_use"
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved_for_independent_use"
+        },
+        "programme_data": {
+          "status": "unresolved_for_independent_use"
+        }
+      }
+    }
+  ],
+  "playback_safety_followup": "User requested no audio. All active playback and child browser processes were terminated immediately on receipt of that instruction. No further playback was performed. The completed samples above are retained with their original scopes; future checks require process-level Chromium --mute-audio and pre-navigation media guards.",
+  "summary": {
+    "new_ready_official_sources": 2,
+    "existing_sources_revalidated": 1,
+    "new_native_or_iptv_sources": 0,
+    "new_implemented_xmltv_parsers": 0,
+    "universal_validation_claim": false
+  },
+  "publication_proposals": {
+    "new_sources": [
+      {
+        "body_id": "national--is-lc01",
+        "existing_candidate_path": "candidates/iceland-althingi.json",
+        "decision": "promote_existing_candidate_as_scoped_historical_archive",
+        "channel": {
+          "id": "iceland-althingi",
+          "name": "Iceland Althingi Historical Committee Archive",
+          "jurisdiction_level": "national",
+          "country_or_region": "Iceland",
+          "legislature": "Alþingi",
+          "external_ids": {
+            "wikidata_qid": "Q131279",
+            "ipu_country_code": "IS",
+            "ipu_parliament_code": "IS",
+            "ipu_chamber_code": "IS-LC01"
+          },
+          "identity_sources": [
+            {
+              "source": "wikidata",
+              "url": "https://www.wikidata.org/wiki/Q131279",
+              "checked_on": "2026-10-25",
+              "confidence": "high",
+              "notes": "Exact unicameral legislature, own institutional website and national jurisdiction match the independently read own-site/IPU evidence. Does not certify service playback or reuse."
+            },
+            {
+              "source": "ipu_parline",
+              "url": "https://data.ipu.org/parliament/IS/IS-LC01/",
+              "checked_on": "2026-10-25",
+              "confidence": "high",
+              "notes": "Exact national unicameral chamber and own institutional website independently matched."
+            }
+          ],
+          "language": "Icelandic",
+          "source_type": "official_page",
+          "source_kind": "official_page",
+          "playback_url": null,
+          "playback_policy": "link_out",
+          "official_url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg",
+          "provenance_note": "The official Alþingi broadcast guide designates this YouTube channel for proceedings. A selected historical 2023 economic and trade committee hearing concerning competition law shows substantive committee speech and advances at 1202.81 seconds in Chromium. The title says 9 October 2023, while the camera overlay says 10.10.2023; no exact EPG date or current/live coverage is claimed. A challenge on the institution’s own site remains a separate access limitation. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+          "technical_status": "link_only",
+          "stability_risk": "unknown",
+          "availability": "event_based",
+          "accessibility": {
+            "captions": "unknown",
+            "caption_languages": [],
+            "sign_language": "unknown",
+            "audio_description": "unknown",
+            "notes": "Selected native-player video evidence only. Source-labelled language is retained; audible languages, caption accuracy, signing and audio-description coverage remain unverified."
+          },
+          "epg_sources": [
+            {
+              "scraper": "planned",
+              "scraper_status": "planned",
+              "url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg/streams",
+              "method": "GET",
+              "kind": "official_recording_or_event_navigation"
+            }
+          ],
+          "permission": {
+            "status": "personal_use_pending_review",
+            "summary": "The official guide permits distribution of Alþingisrásin on distributors’ own networks and designates this YouTube archive. That live-channel statement is not automatically a grant for third-party extraction, editing, downloading or redistribution of every historical YouTube recording. Only an official viewing link is proposed.",
+            "evidence": [
+              "https://www.althingi.is/utsendingar/",
+              "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg"
+            ],
+            "recommendation": "Use the institution-designated public viewing page for the stated recorded scope. Do not extract provider manifests or infer an embed, live-relay, download/editing or programme-data grant."
+          }
+        },
+        "unresolved": [
+          "Exact sitting date mismatch: the title says 9 October 2023, while the camera overlay says 10 October 2023. Publish only the clearly historical 2023 committee scope; do not emit an EPG entry with an exact date.",
+          "Current and live parliamentary broadcasts and newer archive availability are not validated by this historical YouTube sample.",
+          "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+          "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+          "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established.",
+          "External embedding, direct playback, copying/recording, redistribution, other audiovisual reuse and programme-data republication retain source-specific permissions questions."
+        ]
+      },
+      {
+        "body_id": "national--md-lc01",
+        "candidate_path": "candidates/moldova-parliament-recordings.json",
+        "decision": "publish_scoped_official_recordings",
+        "channel": {
+          "id": "moldova-parliament-recordings",
+          "name": "Moldova Parliament Recordings",
+          "jurisdiction_level": "national",
+          "country_or_region": "Moldova",
+          "legislature": "Parlamentul Republicii Moldova",
+          "external_ids": {
+            "wikidata_qid": "Q555809",
+            "ipu_country_code": "MD",
+            "ipu_parliament_code": "MD",
+            "ipu_chamber_code": "MD-LC01"
+          },
+          "identity_sources": [
+            {
+              "source": "wikidata",
+              "url": "https://www.wikidata.org/wiki/Q555809",
+              "checked_on": "2026-10-25",
+              "confidence": "high",
+              "notes": "Exact unicameral legislature, own institutional website and national jurisdiction match the independently read own-site/IPU evidence. Does not certify service playback or reuse."
+            },
+            {
+              "source": "ipu_parline",
+              "url": "https://data.ipu.org/parliament/MD/MD-LC01/",
+              "checked_on": "2026-10-25",
+              "confidence": "high",
+              "notes": "Exact national unicameral chamber and own institutional website independently matched."
+            }
+          ],
+          "language": "Romanian",
+          "source_type": "official_page",
+          "source_kind": "official_page",
+          "playback_url": null,
+          "playback_policy": "link_out",
+          "official_url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw",
+          "provenance_note": "The Parliament’s own Galerie video route redirects to this exact institutional YouTube channel. The 22 October 2026 plenary decodes substantive presiding-dais speech and advances at 1202.82 seconds in Chromium (1280 × 720 pixels). Committee entries are visible, but the selected committee test was interrupted before substantive playback. Current live coverage, coverage of every room, audible tracks and accessibility remain unverified. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+          "technical_status": "link_only",
+          "stability_risk": "unknown",
+          "availability": "event_based",
+          "accessibility": {
+            "captions": "unknown",
+            "caption_languages": [],
+            "sign_language": "unknown",
+            "audio_description": "unknown",
+            "notes": "Selected native-player video evidence only. Source-labelled language is retained; audible languages, caption accuracy, signing and audio-description coverage remain unverified."
+          },
+          "epg_sources": [
+            {
+              "scraper": "planned",
+              "scraper_status": "planned",
+              "url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw/streams",
+              "method": "GET",
+              "kind": "official_recording_or_event_navigation"
+            }
+          ],
+          "permission": {
+            "status": "personal_use_pending_review",
+            "summary": "Institutional ownership and designated public viewing are confirmed. No source-specific independent audiovisual-reuse or programme-data grant was established from the reviewed homepage/gallery/channel surfaces. Link-out only; offered provider controls or visible video do not establish a general embed, extraction or rebroadcast licence.",
+            "evidence": [
+              "https://www.parlament.md/",
+              "https://www.parlament.md/galerie-video.nspx",
+              "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw"
+            ],
+            "recommendation": "Use the institution-designated public viewing page for the stated recorded scope. Do not extract provider manifests or infer an embed, live-relay, download/editing or programme-data grant."
+          }
+        },
+        "unresolved": [
+          "One 22 October 2026 plenary sample was confirmed; playback of the 21 October committee recording was stopped before a substantive sample. This does not establish coverage of every room, party, committee or language variant.",
+          "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+          "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+          "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established.",
+          "External embedding, direct playback, copying/recording, redistribution, other audiovisual reuse and programme-data republication retain source-specific permissions questions."
+        ]
+      }
+    ],
+    "existing_source_updates": [
+      {
+        "body_id": "national--fi-lc01",
+        "decision": "retain_existing_source_refresh_provenance",
+        "channel": {
+          "id": "finland-eduskunta-webcasts",
+          "name": "Finland Eduskunta Webcasts",
+          "jurisdiction_level": "national",
+          "country_or_region": "Finland",
+          "legislature": "Parliament of Finland",
+          "external_ids": {
+            "wikidata_qid": "Q643412",
+            "ipu_country_code": "FI",
+            "ipu_parliament_code": "FI",
+            "ipu_chamber_code": "FI-LC01"
+          },
+          "identity_sources": [
+            {
+              "source": "wikidata",
+              "url": "https://www.wikidata.org/wiki/Q643412",
+              "checked_on": "2026-10-22",
+              "confidence": "high",
+              "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+            },
+            {
+              "source": "ipu_parline",
+              "url": "https://data.ipu.org/parliament/FI/FI-LC01/",
+              "checked_on": "2026-10-22",
+              "confidence": "high",
+              "notes": "Matched to the named national legislature; identity evidence only, not stream or reuse permission."
+            }
+          ],
+          "language": "Finnish / Swedish",
+          "source_type": "official_page",
+          "source_kind": "official_page",
+          "playback_url": null,
+          "playback_policy": "link_out",
+          "official_url": "https://verkkolahetys.eduskunta.fi/",
+          "provenance_note": "The official parliamentary live and archived video portal was checked on 2026-10-22. It is retained as an official-page link because the audit did not establish a permanent channel-level HLS route; individual event and recording manifests must not be substituted for a live channel. Follow-up in the source’s own player on 25 October 2026: the existing 23 October recording of sitting 104/2026 shows substantive parliamentary floor debate at 1202.81 seconds in Chromium, with source-listed speaker Ben Zyskowicz visible. The later adaptive resolution of 284 × 160 pixels, the 600-second observation timeout and unverified live coverage, audio and complete continuity remain explicit limits. Evidence: reports/discovery/2026-10-25-continued-national-viewing-validation.json",
+          "technical_status": "link_only",
+          "stability_risk": "low",
+          "availability": "event_based",
+          "accessibility": {
+            "captions": "unknown",
+            "caption_languages": [],
+            "sign_language": "unknown",
+            "audio_description": "unknown",
+            "notes": "Live-feed caption, sign-language, and audio-description coverage was not established during this audit; unknown does not mean unavailable."
+          },
+          "epg_sources": [
+            {
+              "scraper": "planned",
+              "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot",
+              "method": "GET",
+              "kind": "official_event_video_directory",
+              "scraper_status": "planned"
+            }
+          ],
+          "permission": {
+            "status": "explicit_reuse_with_conditions",
+            "summary": "Official webcast terms allow free links and unaltered use subject to source credit and context restrictions. Credit YLE when it produces the live image, otherwise Parliament; do not reuse Parliament marks or imply endorsement. This record uses official-page link-out only.",
+            "evidence": [
+              "https://verkkolahetys.eduskunta.fi/fi/kayttoehdot",
+              "https://verkkolahetys.eduskunta.fi/"
+            ],
+            "recommendation": "Use the official webcast portal with clear institutional attribution. Respect source-specific conditions; do not infer a permanent HLS channel from event or archive manifests."
+          },
+          "validation_history": [
+            {
+              "checked_at": "2026-10-22T13:59:38Z",
+              "report_path": "reports/health/2026-10-22-promoted-sources-health.json",
+              "method": "static_http",
+              "status": "ok",
+              "note": "Official page/link reachable."
+            }
+          ]
+        },
+        "unresolved": [
+          "Observed low-resolution adaptive video at 284 × 160 pixels in the later samples; full-quality continuity is unverified.",
+          "The publisher’s event title shows 13:00, while speech times rendered in Toronto show 06:xx. These are different clocks; this run does not certify a timed EPG mapping.",
+          "Selected Chromium samples only; no WebKit confirmation in this completed batch. Further playback was stopped at the user’s request.",
+          "Current live service, complete chamber/committee coverage, audio tracks, captions and signing/audio description are unverified.",
+          "No stable channel-level HLS, broadcast-mapped programme feed, end times or XMLTV parser is established."
+        ]
+      }
+    ],
+    "canonical_integration_pending": false
+  },
+  "audio_method_note": "Player-level muting did not guarantee silent page startup. Research browsers were closed after the user requested that audio stop. Future playback requires audio suppression before navigation. Audible-track quality was not assessed."
+}

@@ -1,0 +1,67 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-asian-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "india-chakma-council-recordings",
+    "name": "Chakma Council Recordings (Mizoram)",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Chakma Autonomous District",
+    "legislature": "Chakma Autonomous District Council",
+    "external_ids": {
+      "wikidata_qid": "Q5068372",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q5068372",
+        "checked_on": "2026-10-25",
+        "confidence": "medium",
+        "notes": "Exact corresponding English article Wikidata sitelink recovered and independently matched to the council-owned institution and government authority evidence. No fresh API claims review is asserted under the shared backoff; this is the named council, not an unrelated state or generic council class."
+      }
+    ],
+    "language": "Not yet verified",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.youtube.com/@CADCOfficial/videos",
+    "provenance_note": "The council-owned RTI handbook and homepage designate CADC Official, including the same exact channel ID as the source-native @CADCOfficial page. The recording labelled Vote of Confidence (Floor Test), 9 July 2026, decodes and advances past 1200 seconds in Chromium and WebKit after advertisements are excluded. Inspected frames show the chairman conducting chamber business with council officers and member nameplates. Cultural films, oath ceremonies and celebrations are not used as legislative-business samples.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected visual source-player samples only. Actual audio language/quality, caption accuracy, signing and audio-description coverage remain unverified."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.cadc.gov.in/releases/governance/legislature/",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled.",
+      "evidence": [
+        "https://www.cadc.gov.in/",
+        "https://www.youtube.com/@CADCOfficial/videos"
+      ],
+      "recommendation": "Use the designated official viewing page for the stated recording scope. Check applicable source and item conditions before embedding or any media reuse."
+    }
+  }
+}

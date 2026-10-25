@@ -55,8 +55,8 @@
   which records Wikimedia/Wikipedia public-domain provenance: California,
   Florida, Minnesota, New York, Oregon, Rhode Island, Texas, Utah, and
   Washington.
-- The remaining national, devolved-jurisdiction, European Union, and United
-  Nations flag SVGs are from
+- Except where a file is attributed separately in this document, national,
+  devolved-jurisdiction, European Union, and United Nations flag SVGs are from
   [flag-icons v7.3.2](https://github.com/lipis/flag-icons/tree/v7.3.2), under
   the MIT licence reproduced in `LICENSE-flag-icons.txt`.
 
@@ -225,3 +225,27 @@ as branding. Copyright licences apply to the named artwork.
 | [South Tyrol — `south-tyrol.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_South_Tyrol.svg>) | F l a n k e r | [CC BY 3.0](<https://creativecommons.org/licenses/by/3.0>) | None |
 | [Campania — `campania.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Campania.svg>) | F l a n k e r | Public domain | None |
 | [Kinmen — `kinmen.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Kinmen_County.svg>) | Hairy35061; revisions Akira123 | [CC BY-SA 3.0](<https://creativecommons.org/licenses/by-sa/3.0>) | Removed one nonrendering off-canvas image element referencing an obsolete local file; visible vector artwork unchanged. Normalized XML line endings and trailing whitespace; artwork unchanged. |
+
+## Continued publication flags — 25 October 2026
+
+Seven complete jurisdiction flags were added for the continued viewing-source
+publication batch. Primary design evidence, file hashes, SVG safety checks and
+visual comparisons are retained in the [flag review](../../../reports/discovery/2026-10-25-continued-catalogue-flags.json).
+These are informational depictions of jurisdictions; artwork licences do not
+make official symbols project branding or imply endorsement.
+
+| Jurisdiction / asset source | Creator / credit | Licence | File changes |
+| --- | --- | --- | --- |
+| [Iceland — `is.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Iceland.svg>) | Matthías Þórðarson; vector Árni Dagur and Magasjukur2 | Public domain | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [Moldova — `md.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Moldova.svg>) | Gheorghe Vrabie | Public domain | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [San Luis — `san-luis.svg`](<https://commons.wikimedia.org/wiki/File:Bandera_de_la_Provincia_de_San_Luis.svg>) | SVG by Hurfer | Public domain | None |
+| [Zug — `zug.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Zug.svg>) | Unknown original author; Commons contributors | Public domain | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+| [Liberec Region — `liberec.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Liberec_Region.svg>) | Zirland | Public domain | Removed legacy SVG DOCTYPE declaration; artwork unchanged. |
+| [Zlín Region — `zlin.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Zlin_Region.svg>) | Zirland | Public domain | None |
+| [Madeira — `madeira.svg`](<https://commons.wikimedia.org/wiki/File:Flag_of_Madeira.svg>) | Original Brian Boru; vector Nuno Tavares | [CC BY-SA 1.0](<https://creativecommons.org/licenses/by-sa/1.0>) | Normalized XML line endings and trailing whitespace; artwork unchanged. |
+
+The French Community uses the existing `wallonia.svg` (CC0). Its own Parliament
+confirms that the Community adopted the red-rooster-on-yellow flag in 1975; this
+is independently verified Community flag use. Kepulauan Riau, Chakma and Lai
+retain a neutral legislature mark until a complete adopted flag and usable
+artwork are verified. Details and primary sources are in the flag review.

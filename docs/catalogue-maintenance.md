@@ -132,6 +132,20 @@ review. Ceremonies, introductory films and youth competitions are not ordinary
 legislative business. Selected muted playback does not establish current live,
 every room, audible tracks, complete accessibility or permission to redistribute.
 
+Suppress audio before navigating to any source or player. Chromium research
+launches must use `--mute-audio`, with an initialization guard that sets media
+elements muted and volume to zero before playback. Muting after page load is too
+late for autoplay, advertisements or provider volume changes. Do not run media
+playback in another engine unless silence is guaranteed before navigation.
+
+When a defensible territorial outline is unavailable, a sourced Point may be
+tagged `geometry_scope: institution_location`. Include a source URL and an
+explicit scope note: the map renders a hollow diamond and explains that it is
+a location, not a territorial boundary. Headquarters-town coordinates must be
+labelled approximate rather than represented as surveyed legislative buildings.
+Nearby diamonds are separated in screen pixels, with thin leader lines back to
+their unchanged source coordinates so each marker remains selectable.
+
 The map combines the main regional collection with the separately licensed
 `site/assets/maps/lienchiang-odbl.geojson`. Preserve that dataset's ODbL notice,
 source/year, visible attribution and winding; do not silently relabel it as

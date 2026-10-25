@@ -145,6 +145,16 @@ async function inspectPage(browser, target, pageUrl) {
     ignoreHTTPSErrors: true,
     viewport: { width: 1440, height: 1000 },
   });
+  // Silence startup/autoplay before navigation; the process flag also covers
+  // provider scripts that change media volume or use Web Audio.
+  await context.addInitScript(() => {
+    const play = HTMLMediaElement.prototype.play;
+    HTMLMediaElement.prototype.play = function (...args) {
+      this.muted = true;
+      this.volume = 0;
+      return play.apply(this, args);
+    };
+  });
   const page = await context.newPage();
   const discovered = new Map();
   const responses = [];
@@ -221,7 +231,7 @@ async function main() {
   const { chromium } = loadPlaywright();
   const targets = await collectTargets(args.inputs, args.maxPages);
   const deadline = args.budgetSeconds ? Date.now() + args.budgetSeconds * 1000 : Infinity;
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: true, args: ["--mute-audio"] });
   const pageTasks = [];
   for (const target of targets) {
     for (const pageUrl of target.official_pages) {

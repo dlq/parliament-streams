@@ -85,12 +85,110 @@ for (const [locale, values] of Object.entries(rows)) {
 for (const [locale, pack] of Object.entries(window.ParliamentStreamsExtraLocales ?? {})) {
   translations[locale] = pack.map;
 }
+const locationKeys = ["institutionLocation", "locationOnly"];
+const locationRows = {
+  "en": [
+    "Institution location",
+    "This marker locates the institution. It does not show its jurisdiction’s boundaries."
+  ],
+  "fr": [
+    "Siège de l’institution",
+    "Ce repère situe l’institution. Il ne représente pas les limites de sa juridiction."
+  ],
+  "es": [
+    "Sede de la institución",
+    "Este marcador sitúa la institución. No muestra los límites de su jurisdicción."
+  ],
+  "pt-BR": [
+    "Sede da instituição",
+    "Este marcador localiza a instituição. Ele não mostra os limites da sua jurisdição."
+  ],
+  "da": [
+    "Institutionens placering",
+    "Markøren viser institutionens placering. Den viser ikke jurisdiktionens grænser."
+  ],
+  "de": [
+    "Standort der Institution",
+    "Diese Markierung zeigt den Standort der Institution, nicht die Grenzen ihres Zuständigkeitsgebiets."
+  ],
+  "et": [
+    "Asutuse asukoht",
+    "See märk näitab asutuse asukohta. See ei näita tema jurisdiktsiooni piire."
+  ],
+  "el": [
+    "Έδρα του θεσμού",
+    "Αυτός ο δείκτης δείχνει την έδρα του θεσμού. Δεν δείχνει τα όρια της δικαιοδοσίας του."
+  ],
+  "hi": [
+    "संस्था का स्थान",
+    "यह चिह्न संस्था का स्थान दिखाता है। यह उसके अधिकार क्षेत्र की सीमाएँ नहीं दिखाता।"
+  ],
+  "ga": [
+    "Suíomh na hinstitiúide",
+    "Léiríonn an marcóir seo suíomh na hinstitiúide. Ní léiríonn sé teorainneacha a dlínse."
+  ],
+  "it": [
+    "Sede dell’istituzione",
+    "Questo indicatore mostra la sede dell’istituzione. Non mostra i confini della sua giurisdizione."
+  ],
+  "lb": [
+    "Standuert vun der Institutioun",
+    "Dës Markéierung weist de Standuert vun der Institutioun. Si weist net d’Grenze vun hirem Zoustännegkeetsgebitt."
+  ],
+  "nl": [
+    "Locatie van de instelling",
+    "Deze markering toont de locatie van de instelling. Ze toont niet de grenzen van haar rechtsgebied."
+  ],
+  "nb": [
+    "Institusjonens plassering",
+    "Denne markøren viser institusjonens plassering. Den viser ikke grensene for dens myndighetsområde."
+  ],
+  "sk": [
+    "Sídlo inštitúcie",
+    "Táto značka zobrazuje sídlo inštitúcie. Nezobrazuje hranice jej pôsobnosti."
+  ],
+  "th": [
+    "ที่ตั้งของสถาบัน",
+    "เครื่องหมายนี้แสดงที่ตั้งของสถาบัน ไม่ได้แสดงขอบเขตเขตอำนาจของสถาบัน"
+  ],
+  "zh-Hans": [
+    "机构所在地",
+    "此标记显示机构所在地，不表示其管辖范围的边界。"
+  ],
+  "iu-Cans": [
+    "ᐱᓕᕆᕕᐅᑉ ᐃᓂᖓ",
+    "ᐱᓕᕆᕕᐅᑉ ᐃᓂᖓ ᓇᓗᓇᐃᖅᑕᐅᔪᖅ. ᑭᒡᓕᖏᑦ ᑕᑯᒃᓴᐅᑎᑕᐅᙱᑦᑐᑦ."
+  ],
+  "mi": [
+    "Te wāhi o te rōpū",
+    "E tohu ana tēnei i te wāhi o te rōpū. Kāore ngā rohenga o tōna mana whakahaere e whakaaturia."
+  ],
+  "cs": [
+    "Sídlo instituce",
+    "Tato značka zobrazuje sídlo instituce. Nezobrazuje hranice její působnosti."
+  ],
+  "fi": [
+    "Toimielimen sijainti",
+    "Tämä merkki osoittaa toimielimen sijainnin. Se ei näytä toimivalta-alueen rajoja."
+  ],
+  "sv": [
+    "Institutionens plats",
+    "Den här markören visar institutionens plats. Den visar inte gränserna för dess jurisdiktion."
+  ],
+  "zh-Hant": [
+    "機構所在地",
+    "此標記顯示機構所在地，不表示其管轄範圍的邊界。"
+  ]
+};
+for (const [locale, values] of Object.entries(locationRows)) {
+  Object.assign(translations[locale], Object.fromEntries(locationKeys.map((key, index) => [key, values[index]])));
+}
 function message(locale, key, values = {}) {
   const value = translations[locale]?.[key] ?? translations.en[key] ?? key;
   return value.replace(/\{(\w+)\}/g, (_, name) => values[name] ?? "");
 }
 function coverage(locale) {
-  const missing = [...keys, ...extraKeys].filter((key) => !Object.hasOwn(translations[locale] ?? {}, key));
+  const missing = [...keys, ...extraKeys, ...locationKeys].filter((key) => !Object.hasOwn(translations[locale] ?? {}, key));
   if (!sourceCountForms[locale] && !window.ParliamentStreamsExtraLocales?.[locale]?.sourceCount) missing.push("sourceCount");
   return missing;
 }
@@ -114,6 +212,16 @@ function sourceCount(locale, count) {
   return forms[index].replace("{count}", new Intl.NumberFormat(locale).format(count));
 }
 const subnationalParents = {
+  "Zug": "CH",
+  "French Community": "BE",
+  "Liberec Region": "CZ",
+  "Zlín Region": "CZ",
+  "Madeira": "PT",
+  "San Luis": "AR",
+  "Kepulauan Riau": "ID",
+  "Chakma Autonomous District": "IN",
+  "Lai Autonomous District": "IN",
+
   "Álava": "ES",
   "Bizkaia": "ES",
   "Gipuzkoa": "ES",

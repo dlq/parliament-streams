@@ -53,7 +53,7 @@ These entries need either written clarification or a future dated terms review.
 
 ## Current Open Queue
 
-As of 2026-10-24 (local working tree):
+As of 2026-10-25 (local working tree):
 
 - France's National Assembly now has `no_third_party_reuse`: its current notice
   distinguishes conditionally reusable official documents from multimedia that
@@ -78,8 +78,8 @@ As of 2026-10-24 (local working tree):
   `no_third_party_reuse`, while retaining its official viewing link. A legislature's
   provider designation is separate from the provider's audiovisual rights.
   [Current provider conditions](../reports/discovery/2026-10-24-service-review-us-chambers-c.json).
-- 181 of 256 catalogue entries remain permission-pending: 16 official-vendor
-  HLS, three first-party HLS, 161 official pages and one DASH research record.
+- 194 of 269 catalogue entries remain permission-pending: 16 official-vendor
+  HLS, three first-party HLS, 174 official pages and one DASH research record.
 - The previous 28-entry review queue remains classified in the dated report;
   it is a historical subset, not the current total.
 - Later official-page additions retain source-specific terms notes in the

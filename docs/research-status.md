@@ -2,13 +2,65 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Continued Held-Source Review — 25 October 2026
+
+Thirteen further scoped official viewing links bring the local catalogue to
+**269 sources**: Iceland, Moldova, Catamarca Deputies, San Luis Deputies, Salta
+Senate, Zug, the French Community, Liberec, Zlín, Madeira, Kepulauan Riau, Chakma
+and Lai. Iceland's confirmed sample is a historical committee archive; other
+date, live-service and browser limitations remain explicit in each record.
+Six existing Argentine chamber crosswalks are resolved without duplicate sources.
+Finland already had a catalogue record; its evidence is updated rather than
+adding another entry.
+[Publication decisions](../reports/discovery/2026-10-25-held-source-publication-decisions.json).
+
+The [current baseline](../reports/discovery/2026-10-25-institution-service-baseline.md)
+has **222 exact eligible identity matches**, linking 246 distinct catalogue IDs.
+The [25 individual follow-ups](../reports/discovery/2026-10-25-service-review-continued-held-sources.json)
+bring renewed partial checks to **308**, with **632 earlier-only service checks**.
+This continuation does not freshly replay every eligible institution. Retained
+older playback, new substantive frames, programme-data gaps and seven separate
+rights questions remain distinguishable. No IPTV admission or implemented XMLTV
+parser is added.
+
+Basel-Stadt, Valais and Budapest retain specific source/content holds.
+Entre Ríos's inspected clip was an interview and Santa Fe's was a history/room
+tour; neither establishes ordinary recorded legislative business. France Senate,
+Chile Sala IV and Rivera remain the three researching formal candidates.
+
+Six new regional outlines and three explicitly labelled institution-location
+markers cover the new jurisdictions on the map. The French Community, Chakma
+and Lai markers do not claim linguistic or autonomous territorial boundaries.
+Seven new flag assets and the French Community's documented reuse of its adopted
+flag bring flag coverage to **256 records**, with **13 neutral marks** retaining
+their design/adoption gaps.
+[Flag evidence](../reports/discovery/2026-10-25-continued-catalogue-flags.json).
+
+The monthly discovery plan now has **1,462 unique check targets**, including all
+269 catalogue records. Of 940 eligible identities, 938 have ordinary page routes;
+Ngäbe–Buglé's General Congress and Sri Lanka's North Central province retain
+document-only route gaps. Inventory monitoring validates **1,743 deduplicated
+evidence sources**. These are offline input checks; the updated scheduled jobs
+have not run against these uncommitted additions.
+
+Local desktop, 390px and 320px checks cover all new catalogue links, exact public
+crosswalks, country searches, flags, map locations and planned programme links.
+Nearby council locators are separated with leader lines to their source
+coordinates. These checks load no external source or media and do not certify
+broadcaster availability or programme accuracy.
+[Integration evidence](../reports/health/2026-10-25-held-source-integration-ui.json).
+
+All research playback was stopped following the audio request. Future browser
+media checks must suppress audio before navigation, using process-level muting
+and pre-playback guards; muting only after a player loads is insufficient.
+
 ## Resumed Metadata, Media, EPG And Rights Review — 24 October 2026
 
 The service phase now starts from **all 940 eligible identity records** in the
 reconciled inventory. The default public list's other eight entries are specific
 legal holds. Umbrellas, chambers and organs remain separate record grains.
 
-The [current service baseline](../reports/discovery/2026-10-24-institution-service-baseline.md)
+The [24 October service baseline](../reports/discovery/2026-10-24-institution-service-baseline.md)
 and [per-record queue](../reports/discovery/2026-10-24-institution-service-baseline.json)
 document **203 exact catalogue matches and 737 without a documented match**.
 The renewed pass now has **302 individual partial source follow-ups**, including
@@ -153,33 +205,34 @@ human review. These observations do not clear legal holds or certify that the
 inventory is exhaustive. The public list changes only after a reviewed inventory
 update and regeneration.
 
-## Current Local State — 2026-10-24
+## Current Local State — 2026-10-25
 
 These counts describe the working tree. They do not assert that local changes
 are committed or deployed. `data/channels.json` is the canonical catalogue.
 
-- **256 sources**: 76 national, 174 regional/territorial and six supranational.
-- **154 mapped regional jurisdictions**; every published regional entry has geometry.
-- 246 catalogue records have sourced jurisdiction flags; ten remain neutral with
-  documented design/adoption gaps. Four former holds and ten new regional flags
-  are resolved; two new national records reuse existing assets.
+- **269 sources**: 78 national, 185 regional/territorial and six supranational.
+- **163 mapped regional jurisdictions**: 160 outlines and three explicitly
+  labelled institution-location markers.
+- 256 catalogue records have sourced jurisdiction flags; 13 remain neutral with
+  documented design/adoption gaps. This continuation adds seven assets and
+  documents the French Community's reuse of its adopted flag.
   [Flag coverage and source reports](../reports/discovery/2026-10-24-catalogue-flag-coverage.json).
-- 38 native-player sources, three provider embeds, 206 official link-outs and
+- 38 native-player sources, three provider embeds, 219 official link-outs and
   nine research-only records. Strict IPTV exports retain their separate gates.
 - 33 records have implemented schedule metadata, covering 17 unique source URLs.
-  Another 228 unique schedule/event URLs remain planned and filterable on the
+  Another 241 unique schedule/event URLs remain planned and filterable on the
   schedule page, even if generated guide data is temporarily unavailable.
-- 181 records remain permission-pending. Selected muted playback does not certify
+- 194 records remain permission-pending. Selected muted playback does not certify
   audible tracks or source-wide media accessibility.
-- 163 formal candidates: 158 promoted, four researching and one rejected.
-  The four holds are France Senate, Iceland Althingi, Chile Sala IV and Rivera;
+- 175 formal candidates: 171 promoted, three researching and one rejected.
+  The three holds are France Senate, Chile Sala IV and Rivera;
   Skåne remains excluded by the legislative-authority review.
-- **151 of the earlier 652-body cohort have exact catalogue matches; 501 do not.** This
+- **157 of the earlier 652-body cohort have exact catalogue matches; 495 do not.** This
   cohort does not include the newly reconciled institutions/chambers. National
-  catalogue coverage reaches 56 of the 71 target countries; 15 national gaps remain.
+  catalogue coverage reaches 58 of the 71 target countries; 13 national gaps remain.
 
-The [current per-body and candidate register](../reports/discovery/2026-10-24-current-validation-register.json)
-reconciles the earlier 652-body cohort and all 150 formal candidates. It preserves historical
+The [dated per-body and candidate register](../reports/discovery/2026-10-24-current-validation-register.json)
+reconciles the earlier 652-body cohort and its then-current 150 formal candidates. It preserves historical
 checks, source-specific confirmations and unresolved gates. It is not a fresh
 website/player inspection of every row or complete service certification.
 [Readable findings](../reports/discovery/2026-10-24-current-validation-register.md).

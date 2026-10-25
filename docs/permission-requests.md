@@ -10,7 +10,7 @@ public catalogue.
 
 ## Current Status
 
-Drafts last prepared: 2026-08-24. Catalogue queue reconciled: 2026-10-24.
+Drafts last prepared: 2026-08-24. Catalogue queue reconciled: 2026-10-25.
 The dated review buckets below are retained preparation evidence; contact
 routes and source terms need rechecking before eventual outreach.
 
@@ -29,9 +29,9 @@ The eventual communications push should do two jobs:
 
 Current rights queue:
 
-- 181 of 256 catalogue entries use a permission status ending in
+- 194 of 269 catalogue entries use a permission status ending in
   `pending_review`: 16 official-vendor HLS, three first-party HLS,
-  161 official pages and one DASH research record. Later official-link
+  174 official pages and one DASH research record. Later official-link
   promotions have dated source-condition notes but are not all assigned to
   the older outreach buckets. See [research status](research-status.md).
 - 16 entries in the historical August queue likely need written clarification.

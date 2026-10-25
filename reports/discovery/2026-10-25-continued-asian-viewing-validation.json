@@ -1,0 +1,594 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Three Asian autonomous/provincial legislatures: source-specific official recording publication review, with distinct identity, playback, programme and per-use rights findings.",
+  "method": [
+    "Normal source-player video frames inspected; advertisements/title cards do not count as legislative content.",
+    "Audio was not assessed. All playback was stopped at user request; subsequent checks require browser-process audio suppression before navigation.",
+    "No live/full-service, complete metadata or independent reuse certification is inferred."
+  ],
+  "records": [
+    {
+      "id": "indonesia--kepulauan-riau",
+      "name": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Riau",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "catalogue_id": "indonesia-kepulauan-riau-recordings",
+      "metadata": {
+        "institutional_url": "https://dprd.kepriprov.go.id/",
+        "preferred_name": "Dewan Perwakilan Rakyat Daerah Provinsi Kepulauan Riau",
+        "spoken_language_verified": false
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/@dprdkepri",
+        "official_media_urls": [
+          "https://www.youtube.com/@dprdkepri"
+        ],
+        "provider_designation_confirmed": true,
+        "selected_substantive_video_confirmed": true,
+        "scope": "The retained own-site designation of @dprdkepri is independently matched to the current assembly secretariat and the named DPRD KEPRI uploader. Its 2026 revised-APBD budget-body final-report recording decodes and advances past 1200 seconds in Chromium and WebKit. Inspected frames show a member reading the budget report at the provincial assembly lectern under a matching plenary ticker. The anniversary recitation is ceremonial and is excluded as ordinary-business evidence."
+      },
+      "epg": {
+        "status": "planned_retrospective_or_legislative_navigation",
+        "url": "https://www.youtube.com/@dprdkepri/streams",
+        "implemented_parser": false,
+        "broadcast_timings_verified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_link_only_pending_separate_media_terms",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "sources": [
+        {
+          "url": "https://dprd.kepriprov.go.id/",
+          "accessed_on": "2026-10-25",
+          "finding": "Own institutional route; currentness/access limits retained in the source-specific record."
+        },
+        {
+          "url": "https://www.youtube.com/@dprdkepri",
+          "accessed_on": "2026-10-25",
+          "finding": "Designated named video provider and selected legislative recordings inspected."
+        }
+      ],
+      "playback_samples": [
+        {
+          "key": "riau-budget",
+          "body_id": "indonesia--kepulauan-riau",
+          "engine": "chromium",
+          "checked_at": "2026-10-25T05:56:16.878Z",
+          "url": "https://www.youtube.com/watch?v=4SfQJhidzO8&t=1200s",
+          "offset": 1200,
+          "http_status": 200,
+          "title": "Rapat Paripurna Laphir Banggar DPRD Prov. Kepri terhadap Ranperda tentang APBDP T.A 2026 - YouTube",
+          "before": {
+            "time": 1200,
+            "duration": 3109.821,
+            "ready": 1,
+            "frames": 0
+          },
+          "after": {
+            "time": 1201.014155,
+            "duration": 3109.821,
+            "ready": 4,
+            "frames": 41,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@dprdkepri",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@dprdkepri",
+              "label": "DPRD KEPRI"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        },
+        {
+          "key": "riau-budget",
+          "body_id": "indonesia--kepulauan-riau",
+          "engine": "webkit",
+          "checked_at": "2026-10-25T05:56:36.063Z",
+          "url": "https://www.youtube.com/watch?v=4SfQJhidzO8&t=1200s",
+          "offset": 1200,
+          "http_status": 200,
+          "title": "Rapat Paripurna Laphir Banggar DPRD Prov. Kepri terhadap Ranperda tentang APBDP T.A 2026 - YouTube",
+          "before": {
+            "time": 1200,
+            "duration": 3109.821,
+            "ready": 1,
+            "frames": 0
+          },
+          "after": {
+            "time": 1201.358171708,
+            "duration": 3109.821,
+            "ready": 4,
+            "frames": 41,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@dprdkepri",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@dprdkepri",
+              "label": "DPRD KEPRI"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-22-subnational-research.json",
+        "reports/discovery/2026-10-24-alias-claim-dispositions.json",
+        "reports/health/2026-10-25-asian-viewing-playback.json"
+      ],
+      "unresolved": [
+        "One substantive budget-report recording is sampled; its exact occurrence date is not independently established from upload age.",
+        "Current live operation, all committees/rooms, audible language and caption quality remain unverified.",
+        "The current redesigned institutional gallery is empty; the dated own-site provider designation is retained separately from the currently readable homepage.",
+        "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "india--chakma-autonomous-district-council",
+      "name": "Chakma Autonomous District Council",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "catalogue_id": "india-chakma-council-recordings",
+      "metadata": {
+        "institutional_url": "https://www.cadc.gov.in/",
+        "preferred_name": "Chakma Autonomous District Council",
+        "spoken_language_verified": false
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/@CADCOfficial/videos",
+        "official_media_urls": [
+          "https://www.youtube.com/@CADCOfficial/videos"
+        ],
+        "provider_designation_confirmed": true,
+        "selected_substantive_video_confirmed": true,
+        "scope": "The council-owned RTI handbook and homepage designate CADC Official, including the same exact channel ID as the source-native @CADCOfficial page. The recording labelled Vote of Confidence (Floor Test), 9 July 2026, decodes and advances past 1200 seconds in Chromium and WebKit after advertisements are excluded. Inspected frames show the chairman conducting chamber business with council officers and member nameplates. Cultural films, oath ceremonies and celebrations are not used as legislative-business samples."
+      },
+      "epg": {
+        "status": "planned_retrospective_or_legislative_navigation",
+        "url": "https://www.cadc.gov.in/releases/governance/legislature/",
+        "implemented_parser": false,
+        "broadcast_timings_verified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_link_only_pending_separate_media_terms",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.cadc.gov.in/",
+          "accessed_on": "2026-10-25",
+          "finding": "Own institutional route; currentness/access limits retained in the source-specific record."
+        },
+        {
+          "url": "https://www.youtube.com/@CADCOfficial/videos",
+          "accessed_on": "2026-10-25",
+          "finding": "Designated named video provider and selected legislative recordings inspected."
+        },
+        {
+          "url": "https://www.cadc.gov.in/wp-content/uploads/rti-2022-2023/RTI%20Handbook%20Information%20%26%20Public%20Relations%202022-2023.pdf",
+          "accessed_on": "2026-10-25",
+          "finding": "Retained own-source handbook explicitly designates @CADCOfficial; homepage Official Youtube Channel points to the same CADC provider."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chakma_Autonomous_District_Council",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact named council article has Wikidata sitelink Q5068372; used for identifier recovery only, not legal-authority or playback certification."
+        }
+      ],
+      "playback_samples": [
+        {
+          "key": "chakma-floor",
+          "body_id": "india--chakma-autonomous-district-council",
+          "engine": "chromium",
+          "checked_at": "2026-10-25T05:56:21.687Z",
+          "url": "https://www.youtube.com/watch?v=jp0nU3OfQQY&t=1200s",
+          "offset": 1200,
+          "http_status": 200,
+          "title": "YouTube",
+          "before": {
+            "time": 1200,
+            "duration": 5790.821,
+            "ready": 1,
+            "frames": 0
+          },
+          "after": {
+            "time": 1201.006646,
+            "duration": 5790.821,
+            "ready": 4,
+            "frames": 144,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@CADCOfficial",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@CADCOfficial",
+              "label": "CADC Official"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        },
+        {
+          "key": "chakma-floor",
+          "body_id": "india--chakma-autonomous-district-council",
+          "engine": "webkit",
+          "checked_at": "2026-10-25T05:56:41.106Z",
+          "url": "https://www.youtube.com/watch?v=jp0nU3OfQQY&t=1200s",
+          "offset": 1200,
+          "http_status": 200,
+          "title": "Vote of Confidence (Floor Test) of Shri Nirupam Chakma on 9 July 2026 - YouTube",
+          "before": {
+            "time": 1200,
+            "duration": 5790.821,
+            "ready": 4,
+            "frames": 122
+          },
+          "after": {
+            "time": 1201.094057833,
+            "duration": 5790.821,
+            "ready": 4,
+            "frames": 137,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@CADCOfficial",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@CADCOfficial",
+              "label": "CADC Official"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-india-autonomous.json",
+        "reports/discovery/2026-10-24-scope-resolution-india.json",
+        "reports/health/2026-10-25-asian-viewing-playback.json"
+      ],
+      "unresolved": [
+        "One dated confidence proceeding is sampled; ordinary budget sittings, current live service and all room coverage remain unverified.",
+        "Broadcast language and actual audible tracks are not certified. English video titles/nameplates do not establish the spoken language.",
+        "Current officeholder terms contain mixed dates on the homepage; no officeholder metadata is published here.",
+        "A verified district outline is not bundled; the map uses an explicitly approximate Kamalanagar location marker, not the whole Lawngtlai district.",
+        "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled."
+      ],
+      "all_dimensions_validated": false
+    },
+    {
+      "id": "india--lai-autonomous-district-council",
+      "name": "Lai Autonomous District Council",
+      "reviewed_on": "2026-10-25",
+      "review_status": "partial_source_followup",
+      "decision": "ready_scoped_official_link",
+      "catalogue_id": "india-lai-council-recordings",
+      "metadata": {
+        "institutional_url": "https://ladc.mizoram.gov.in/",
+        "preferred_name": "Lai Autonomous District Council",
+        "spoken_language_verified": false
+      },
+      "official_media": {
+        "official_url": "https://www.youtube.com/@IPRLADC/streams",
+        "official_media_urls": [
+          "https://www.youtube.com/@IPRLADC/streams"
+        ],
+        "provider_designation_confirmed": true,
+        "selected_substantive_video_confirmed": true,
+        "scope": "The retained council-owned government homepage designates I&PR LADC; the source channel reciprocally links ladc.mizoram.gov.in. Selected 29 July 2026 monsoon and 2 April 2026 budget recordings both decode and advance past 600 seconds in Chromium and WebKit after advertisements/title cards are excluded. Inspected frames show the presiding chair in the monsoon session and member C. Ngunlianthunga speaking from his chamber desk in budget business. Two dates are supported by source titles; complete sitting continuity is not certified."
+      },
+      "epg": {
+        "status": "planned_retrospective_or_legislative_navigation",
+        "url": "https://www.youtube.com/@IPRLADC/streams",
+        "implemented_parser": false,
+        "broadcast_timings_verified": false
+      },
+      "rights": {
+        "linking": {
+          "status": "official_link_only_pending_separate_media_terms",
+          "permission_confirmed": false
+        },
+        "embedding": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "direct_playback": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "rebroadcast": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "copying_recording": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "audiovisual_reuse": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        },
+        "programme_data": {
+          "status": "unresolved",
+          "permission_confirmed": false
+        }
+      },
+      "sources": [
+        {
+          "url": "https://ladc.mizoram.gov.in/",
+          "accessed_on": "2026-10-25",
+          "finding": "Own institutional route; currentness/access limits retained in the source-specific record."
+        },
+        {
+          "url": "https://www.youtube.com/@IPRLADC/streams",
+          "accessed_on": "2026-10-25",
+          "finding": "Designated named video provider and selected legislative recordings inspected."
+        },
+        {
+          "url": "https://ladc.mizoram.gov.in/page/brief-history-of-ladc",
+          "accessed_on": "2026-10-25",
+          "finding": "Own-site institutional name, autonomous lawmaking powers and headquarters at Lawngtlai; source text read through web index."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Lai_Autonomous_District_Council",
+          "accessed_on": "2026-10-25",
+          "finding": "Exact named council article has Wikidata sitelink Q6473546; identifier recovery only."
+        }
+      ],
+      "playback_samples": [
+        {
+          "key": "lai-monsoon",
+          "body_id": "india--lai-autonomous-district-council",
+          "engine": "chromium",
+          "checked_at": "2026-10-25T05:56:25.868Z",
+          "url": "https://www.youtube.com/watch?v=U2maX1S9c-I&t=600s",
+          "offset": 600,
+          "http_status": 200,
+          "title": "12th LADC MONSOON SESSION 29/07/2026 (Wednesday) Chawhnu - YouTube",
+          "before": {
+            "time": 600,
+            "duration": 8050.301,
+            "ready": 4,
+            "frames": 70
+          },
+          "after": {
+            "time": 601.010952,
+            "duration": 8050.301,
+            "ready": 4,
+            "frames": 101,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": "I&PR LADC"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        },
+        {
+          "key": "lai-budget",
+          "body_id": "india--lai-autonomous-district-council",
+          "engine": "chromium",
+          "checked_at": "2026-10-25T05:56:30.300Z",
+          "url": "https://www.youtube.com/watch?v=WI0bPVxACgA&t=600s",
+          "offset": 600,
+          "http_status": 200,
+          "title": "12th LADC BUDGET SESSION 2026-2027 ( 02/04/2026) Thursday II Chawhma - YouTube",
+          "before": {
+            "time": 0,
+            "duration": 9615,
+            "ready": 0,
+            "frames": 0
+          },
+          "after": {
+            "time": 601.022703,
+            "duration": 9615.361,
+            "ready": 4,
+            "frames": 184,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": "I&PR LADC"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        },
+        {
+          "key": "lai-monsoon",
+          "body_id": "india--lai-autonomous-district-council",
+          "engine": "webkit",
+          "checked_at": "2026-10-25T05:56:45.554Z",
+          "url": "https://www.youtube.com/watch?v=U2maX1S9c-I&t=600s",
+          "offset": 600,
+          "http_status": 200,
+          "title": "12th LADC MONSOON SESSION 29/07/2026 (Wednesday) Chawhnu - YouTube",
+          "before": {
+            "time": 600,
+            "duration": 8050.301,
+            "ready": 1,
+            "frames": 0
+          },
+          "after": {
+            "time": 601.048103791,
+            "duration": 8050.301,
+            "ready": 4,
+            "frames": 102,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": "I&PR LADC"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        },
+        {
+          "key": "lai-budget",
+          "body_id": "india--lai-autonomous-district-council",
+          "engine": "webkit",
+          "checked_at": "2026-10-25T05:56:50.520Z",
+          "url": "https://www.youtube.com/watch?v=WI0bPVxACgA&t=600s",
+          "offset": 600,
+          "http_status": 200,
+          "title": "12th LADC BUDGET SESSION 2026-2027 ( 02/04/2026) Thursday II Chawhma - YouTube",
+          "before": {
+            "time": 600,
+            "duration": 9615.361,
+            "ready": 1,
+            "frames": 0
+          },
+          "after": {
+            "time": 601.350513291,
+            "duration": 9615.361,
+            "ready": 4,
+            "frames": 184,
+            "width": 1280,
+            "height": 720,
+            "paused": false
+          },
+          "advertisement_visible": false,
+          "owner_links": [
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": ""
+            },
+            {
+              "url": "https://www.youtube.com/@IPRLADC",
+              "label": "I&PR LADC"
+            }
+          ],
+          "screenshot_captured": true,
+          "visual_review": "Substantive council/chamber business is visually inspected at the stated offset; advertisements and opening cards excluded."
+        }
+      ],
+      "evidence_reports": [
+        "reports/discovery/2026-10-24-service-review-india-autonomous.json",
+        "reports/discovery/2026-10-24-scope-resolution-india.json",
+        "reports/health/2026-10-25-asian-viewing-playback.json"
+      ],
+      "unresolved": [
+        "The council homepage currently times out through the web reader; the dated designation and the accessible named channel retain separate access scopes.",
+        "Spoken languages, audible tracks, caption accuracy, current live operation and all committee rooms remain unverified.",
+        "Channel date labels are retrospective navigation, not a verified start/end broadcast guide or XMLTV parser.",
+        "A verified district outline is not bundled; the map uses an explicitly approximate Lawngtlai headquarters-town location marker, not the whole administrative district.",
+        "Official viewing links only. Provider designation and public recordings do not establish independent playback, embedding, copying/recording, retransmission, audiovisual editing/reuse or programme-data licensing. No new native player, IPTV admission or XMLTV parser is enabled."
+      ],
+      "all_dimensions_validated": false
+    }
+  ],
+  "summary": {
+    "ready_sources": 3,
+    "new_native_or_iptv_sources": 0,
+    "new_implemented_epg_parsers": 0
+  }
+}

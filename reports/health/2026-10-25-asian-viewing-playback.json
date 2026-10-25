@@ -1,0 +1,310 @@
+{
+  "checked_on": "2026-10-25",
+  "scope": "Normal source-player muted samples; no current-live, all-room, audio, accessibility or reuse certification. Advertisements are excluded from substantive playback evidence; visual disposition is recorded separately.",
+  "results": [
+    {
+      "key": "riau-budget",
+      "body_id": "indonesia--kepulauan-riau",
+      "engine": "chromium",
+      "checked_at": "2026-10-25T05:56:16.878Z",
+      "url": "https://www.youtube.com/watch?v=4SfQJhidzO8&t=1200s",
+      "offset": 1200,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "Rapat Paripurna Laphir Banggar DPRD Prov. Kepri terhadap Ranperda tentang APBDP T.A 2026 - YouTube",
+      "before": {
+        "time": 1200,
+        "duration": 3109.821,
+        "ready": 1,
+        "frames": 0
+      },
+      "after": {
+        "time": 1201.014155,
+        "duration": 3109.821,
+        "ready": 4,
+        "frames": 41,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@dprdkepri",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@dprdkepri",
+          "label": "DPRD KEPRI"
+        }
+      ],
+      "screenshot_captured": true
+    },
+    {
+      "key": "chakma-floor",
+      "body_id": "india--chakma-autonomous-district-council",
+      "engine": "chromium",
+      "checked_at": "2026-10-25T05:56:21.687Z",
+      "url": "https://www.youtube.com/watch?v=jp0nU3OfQQY&t=1200s",
+      "offset": 1200,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "YouTube",
+      "before": {
+        "time": 1200,
+        "duration": 5790.821,
+        "ready": 1,
+        "frames": 0
+      },
+      "after": {
+        "time": 1201.006646,
+        "duration": 5790.821,
+        "ready": 4,
+        "frames": 144,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@CADCOfficial",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@CADCOfficial",
+          "label": "CADC Official"
+        }
+      ],
+      "screenshot_captured": true
+    },
+    {
+      "key": "lai-monsoon",
+      "body_id": "india--lai-autonomous-district-council",
+      "engine": "chromium",
+      "checked_at": "2026-10-25T05:56:25.868Z",
+      "url": "https://www.youtube.com/watch?v=U2maX1S9c-I&t=600s",
+      "offset": 600,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "12th LADC MONSOON SESSION 29/07/2026 (Wednesday) Chawhnu - YouTube",
+      "before": {
+        "time": 600,
+        "duration": 8050.301,
+        "ready": 4,
+        "frames": 70
+      },
+      "after": {
+        "time": 601.010952,
+        "duration": 8050.301,
+        "ready": 4,
+        "frames": 101,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": "I&PR LADC"
+        }
+      ],
+      "screenshot_captured": true
+    },
+    {
+      "key": "lai-budget",
+      "body_id": "india--lai-autonomous-district-council",
+      "engine": "chromium",
+      "checked_at": "2026-10-25T05:56:30.300Z",
+      "url": "https://www.youtube.com/watch?v=WI0bPVxACgA&t=600s",
+      "offset": 600,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "12th LADC BUDGET SESSION 2026-2027 ( 02/04/2026) Thursday II Chawhma - YouTube",
+      "before": {
+        "time": 0,
+        "duration": 9615,
+        "ready": 0,
+        "frames": 0
+      },
+      "after": {
+        "time": 601.022703,
+        "duration": 9615.361,
+        "ready": 4,
+        "frames": 184,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": "I&PR LADC"
+        }
+      ],
+      "screenshot_captured": true
+    },
+    {
+      "key": "riau-budget",
+      "body_id": "indonesia--kepulauan-riau",
+      "engine": "webkit",
+      "checked_at": "2026-10-25T05:56:36.063Z",
+      "url": "https://www.youtube.com/watch?v=4SfQJhidzO8&t=1200s",
+      "offset": 1200,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "Rapat Paripurna Laphir Banggar DPRD Prov. Kepri terhadap Ranperda tentang APBDP T.A 2026 - YouTube",
+      "before": {
+        "time": 1200,
+        "duration": 3109.821,
+        "ready": 1,
+        "frames": 0
+      },
+      "after": {
+        "time": 1201.358171708,
+        "duration": 3109.821,
+        "ready": 4,
+        "frames": 41,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@dprdkepri",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@dprdkepri",
+          "label": "DPRD KEPRI"
+        }
+      ],
+      "screenshot_captured": true
+    },
+    {
+      "key": "chakma-floor",
+      "body_id": "india--chakma-autonomous-district-council",
+      "engine": "webkit",
+      "checked_at": "2026-10-25T05:56:41.106Z",
+      "url": "https://www.youtube.com/watch?v=jp0nU3OfQQY&t=1200s",
+      "offset": 1200,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "Vote of Confidence (Floor Test) of Shri Nirupam Chakma on 9 July 2026 - YouTube",
+      "before": {
+        "time": 1200,
+        "duration": 5790.821,
+        "ready": 4,
+        "frames": 122
+      },
+      "after": {
+        "time": 1201.094057833,
+        "duration": 5790.821,
+        "ready": 4,
+        "frames": 137,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@CADCOfficial",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@CADCOfficial",
+          "label": "CADC Official"
+        }
+      ],
+      "screenshot_captured": true
+    },
+    {
+      "key": "lai-monsoon",
+      "body_id": "india--lai-autonomous-district-council",
+      "engine": "webkit",
+      "checked_at": "2026-10-25T05:56:45.554Z",
+      "url": "https://www.youtube.com/watch?v=U2maX1S9c-I&t=600s",
+      "offset": 600,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "12th LADC MONSOON SESSION 29/07/2026 (Wednesday) Chawhnu - YouTube",
+      "before": {
+        "time": 600,
+        "duration": 8050.301,
+        "ready": 1,
+        "frames": 0
+      },
+      "after": {
+        "time": 601.048103791,
+        "duration": 8050.301,
+        "ready": 4,
+        "frames": 102,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": "I&PR LADC"
+        }
+      ],
+      "screenshot_captured": true
+    },
+    {
+      "key": "lai-budget",
+      "body_id": "india--lai-autonomous-district-council",
+      "engine": "webkit",
+      "checked_at": "2026-10-25T05:56:50.520Z",
+      "url": "https://www.youtube.com/watch?v=WI0bPVxACgA&t=600s",
+      "offset": 600,
+      "status": "unresolved",
+      "http_status": 200,
+      "title": "12th LADC BUDGET SESSION 2026-2027 ( 02/04/2026) Thursday II Chawhma - YouTube",
+      "before": {
+        "time": 600,
+        "duration": 9615.361,
+        "ready": 1,
+        "frames": 0
+      },
+      "after": {
+        "time": 601.350513291,
+        "duration": 9615.361,
+        "ready": 4,
+        "frames": 184,
+        "width": 1280,
+        "height": 720,
+        "paused": false
+      },
+      "advertisement_visible": false,
+      "owner_links": [
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": ""
+        },
+        {
+          "url": "https://www.youtube.com/@IPRLADC",
+          "label": "I&PR LADC"
+        }
+      ],
+      "screenshot_captured": true
+    }
+  ]
+}

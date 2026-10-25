@@ -1,9 +1,27 @@
 # Parliament Streams Plans
 
+## 25 October — Continue Specific Service And Rights Gaps
+
+The local catalogue has **269 sources**, with 222 exact eligible identity matches
+linking 246 distinct catalogue IDs. Thirteen further official viewing links and
+six resolved chamber crosswalks are integrated into catalogue, map, search and
+planned programme navigation. The map has 160 regional outlines and three
+explicit institution-location markers. Flag coverage is 256 records; 13 neutral
+marks retain documented design/adoption gaps.
+
+Continue the named source/content holds and incomplete current-live, room,
+metadata, programme-mapping and per-use rights questions. Renewed partial
+follow-ups cover 308 of the 940 eligible identities; 632 retain earlier service
+checks. France Senate, Chile Sala IV and Rivera are the three researching formal
+candidates. No universal service validation, new IPTV admission or guide parser
+is implied. All media checks must be silent before navigation.
+[Current baseline](reports/discovery/2026-10-25-institution-service-baseline.md)
+· [Publication decisions](reports/discovery/2026-10-25-held-source-publication-decisions.json).
+
 ## 24 October — Metadata, Media, EPG And Rights Review Resumed
 
 The service queue now uses all **940 eligible identity records**, with the eight
-legal holds kept separate. The [current baseline and individual findings](reports/discovery/2026-10-24-institution-service-baseline.md)
+legal holds kept separate. The [dated baseline and individual findings](reports/discovery/2026-10-24-institution-service-baseline.md)
 reconcile exact catalogue matches, the historical 652-body cohort and renewed
 source reviews. Continue institution by institution, retaining what each source
 confirms and the remaining metadata, playback, schedule and per-use rights gates.
@@ -39,7 +57,7 @@ service validation is claimed. The older 652-body stream register remains its
 original cohort. [Findings and holds](reports/discovery/2026-10-24-inventory-reconciliation.md)
 · [Operational register](data/discovery/README.md).
 
-## Current Individual Follow-up — 24 October
+## Earlier Individual Follow-up — 24 October
 
 Local catalogue: **243 sources / 143 mapped regional jurisdictions**. Within the earlier 652-body cohort, **143 have catalogue records / 509 lack a published service**; **23 institutional-reference/route gaps** remain. Thirteen further regional recording services are added in this follow-up, with same-sitting parts, historical footage and browser limits explicitly scoped. All 490 first searches, 123 alias searches and 19 further full-name searches completed; identifier leads still require individual primary crosschecks. The service-evidence register reconciles that original 652-body cohort and 150 formal candidates without treating recorded checks as full validation. [Current evidence and unresolved claims](docs/research-status.md).
 
@@ -94,7 +112,7 @@ is retained as the pre-reconciliation snapshot.
 
 ## 23 October — Legislative Priority And Full-Queue Follow-Up
 
-The local catalogue now contains 243 sources (74 national, 163 regional/territorial,
+At this dated stage the local catalogue contained 243 sources (74 national, 163 regional/territorial,
 six supranational) and 143 mapped regional jurisdictions. Earlier validation passes added 30
 validated official viewing links after the Cook Islands/Guernsey additions; Chubut adds one further service;
 189 sources are link-outs. This is local work, not a deployment assertion.

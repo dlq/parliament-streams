@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "czech-republic-liberec-recordings",
+    "name": "Liberec Regional Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Liberec Region",
+    "legislature": "Zastupitelstvo Libereckého kraje",
+    "external_ids": {
+      "wikidata_qid": "Q10857285",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q10857285",
+        "checked_on": "2026-10-25",
+        "confidence": "high",
+        "notes": "Exact standing institution, country and jurisdiction claims retained in the 24 October complete claim report and reconciled with the current own parliamentary identity and provider designation. No new API fetch asserted."
+      }
+    ],
+    "language": "Czech",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo/online-prenos-zasedani-zastupitelstva",
+    "provenance_note": "The owned assembly archive directly links 20 October and 29 September 2026 sittings. Both source recordings decode and advance beyond twenty minutes in Chromium and WebKit. Inspected frames show the assembly room, presiding dais, members at microphones and dated proceedings overlays. This establishes selected recorded business, not current live or every room.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected visual samples do not establish audible quality, all spoken languages, caption accuracy, signing or audio description across the service."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo",
+        "method": "GET",
+        "kind": "official_recording_or_event_navigation"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The legislature designates a public institutional viewing service. No independent third-party audiovisual playback, embedding, recording, rebroadcast or reuse grant was established. Website ownership, publication/redaction rules and general information-licence pages are not treated as audiovisual permission. Programme-data republication is separately unresolved.",
+      "evidence": [
+        "https://www.kraj-lbc.cz/urad/informace-zverejnovane-podle-zakona-c-106-1999-sb/13-licencni-smlouvy",
+        "https://www.kraj-lbc.cz/samosprava/zastupitelstvo/online-prenos-zasedani-zastupitelstva"
+      ],
+      "recommendation": "Open the official viewing source. Resolve each intended media or programme-data use separately before implementing it."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-25T06:03:33Z",
+        "report_path": "reports/health/2026-10-25-continued-europe-viewing-playback.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Scoped institutional viewing-source review; selected video and retained evidence limits documented in reports/discovery/2026-10-25-continued-europe-viewing-validation.json. No current-live, whole-service or independent reuse certification."
+      }
+    ]
+  }
+}

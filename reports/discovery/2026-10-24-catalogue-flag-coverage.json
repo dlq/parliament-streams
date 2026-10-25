@@ -1,17 +1,17 @@
 {
-  "reviewed_on": "2026-10-24",
+  "reviewed_on": "2026-10-25",
   "scope": "Original63 neutral catalogue jurisdictions plus the13 newly published viewing sources. Every currently neutral jurisdiction has a named disposition. Previous baseline243sources is retained separately from expanded runtime totals.",
   "summary": {
-    "catalogue_sources": 256,
+    "catalogue_sources": 269,
     "initial_flagged": 180,
     "initial_neutral": 63,
-    "flags_added": 64,
-    "current_flagged": 246,
-    "current_neutral": 10,
+    "flags_added": 71,
+    "current_flagged": 256,
+    "current_neutral": 13,
     "all_missing_jurisdictions_have_recorded_dispositions": true,
     "initial_catalogue_sources": 243,
-    "new_catalogue_sources": 13,
-    "new_sources_using_existing_flag_assets": 2
+    "new_catalogue_sources": 26,
+    "new_sources_using_existing_flag_assets": 5
   },
   "records": [
     {
@@ -551,6 +551,110 @@
       "asset": "cz.svg",
       "source_report": "site/assets/flags/ATTRIBUTION.md",
       "finding": "Existing bundled national flag now covers the new national viewing source."
+    },
+    {
+      "catalogue_id": "iceland-althingi",
+      "jurisdiction": "Iceland",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/is.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "moldova-parliament-recordings",
+      "jurisdiction": "Moldova",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/md.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "argentina-catamarca-deputies-recordings",
+      "jurisdiction": "Catamarca",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/catamarca.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "argentina-san-luis-deputies-recordings",
+      "jurisdiction": "San Luis",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/san-luis.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "argentina-salta-senate-recordings",
+      "jurisdiction": "Salta",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/salta.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "switzerland-zug-recordings",
+      "jurisdiction": "Zug",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/zug.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "belgium-french-community-recordings",
+      "jurisdiction": "French Community",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/wallonia.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "czech-republic-liberec-recordings",
+      "jurisdiction": "Liberec Region",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/liberec.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "czech-republic-zlin-recordings",
+      "jurisdiction": "Zlín Region",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/zlin.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "portugal-madeira-recordings",
+      "jurisdiction": "Madeira",
+      "outcome": "sourced_flag",
+      "asset": "assets/flags/madeira.svg",
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "indonesia-kepulauan-riau-recordings",
+      "jurisdiction": "Kepulauan Riau",
+      "outcome": "neutral_pending_confirmed_flag_design",
+      "asset": null,
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "india-chakma-council-recordings",
+      "jurisdiction": "Chakma Autonomous District",
+      "outcome": "neutral_pending_confirmed_flag_design",
+      "asset": null,
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
+    },
+    {
+      "catalogue_id": "india-lai-council-recordings",
+      "jurisdiction": "Lai Autonomous District",
+      "outcome": "neutral_pending_confirmed_flag_design",
+      "asset": null,
+      "report": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+      "reviewed_on": "2026-10-25"
     }
   ],
   "followup_report": "reports/discovery/2026-10-24-catalogue-flags-followup.json",
@@ -560,5 +664,9 @@
     "new_subnational_neutral": 1,
     "new_national_sources_using_existing_flags": 2,
     "report": "reports/discovery/2026-10-24-catalogue-flags-followup.json"
-  }
+  },
+  "latest_followup": "reports/discovery/2026-10-25-continued-catalogue-flags.json",
+  "followup_reports": [
+    "reports/discovery/2026-10-25-continued-catalogue-flags.json"
+  ]
 }

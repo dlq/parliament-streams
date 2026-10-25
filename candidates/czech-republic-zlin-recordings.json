@@ -1,0 +1,76 @@
+{
+  "candidate_version": 1,
+  "status": "promoted",
+  "created_on": "2026-10-25",
+  "updated_on": "2026-10-25",
+  "decision_notes": [
+    "2026-10-25: Ready for a scoped official viewing link on source-specific identity, provider and substantive legislative-video evidence. Current live, complete rooms, audible tracks, guide timings and independent reuse retain separate unresolved findings. Evidence: reports/discovery/2026-10-25-continued-europe-viewing-validation.json",
+    "Promoted to the canonical catalogue on 2026-10-25."
+  ],
+  "channel": {
+    "id": "czech-republic-zlin-recordings",
+    "name": "Zlín Regional Assembly Recordings",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Zlín Region",
+    "legislature": "Zastupitelstvo Zlínského kraje",
+    "external_ids": {
+      "wikidata_qid": "Q27923823",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q27923823",
+        "checked_on": "2026-10-25",
+        "confidence": "high",
+        "notes": "Exact standing institution, country and jurisdiction claims retained in the 24 October complete claim report and reconciled with the current own parliamentary identity and provider designation. No new API fetch asserted."
+      }
+    ],
+    "language": "Czech",
+    "source_type": "official_page",
+    "source_kind": "official_page",
+    "playback_url": null,
+    "playback_policy": "link_out",
+    "official_url": "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva",
+    "provenance_note": "The owned assembly archive embeds the 12 October 2026 sitting. Both engines decode and advance beyond twenty minutes. The visually inspected sample shows Michaela Blahová speaking at a microphone on additional social-services financing for 2026. Only one sitting date was sampled; current live and complete committee coverage remain unverified. The source anonymizes portions of its own recordings under its publication rules.",
+    "technical_status": "link_only",
+    "stability_risk": "unknown",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": "Selected visual samples do not establish audible quality, all spoken languages, caption accuracy, signing or audio description across the service."
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "scraper_status": "planned",
+        "url": "https://zlinskykraj.cz/terminy-zasedani",
+        "method": "GET",
+        "kind": "official_session_calendar"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "The legislature designates a public institutional viewing service. No independent third-party audiovisual playback, embedding, recording, rebroadcast or reuse grant was established. Website ownership, publication/redaction rules and general information-licence pages are not treated as audiovisual permission. Programme-data republication is separately unresolved.",
+      "evidence": [
+        "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva",
+        "https://zlinskykraj.cz/zaznam-jednani-zastupitelstva"
+      ],
+      "recommendation": "Open the official viewing source. Resolve each intended media or programme-data use separately before implementing it."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-25T06:03:33Z",
+        "report_path": "reports/health/2026-10-25-continued-europe-viewing-playback.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "Scoped institutional viewing-source review; selected video and retained evidence limits documented in reports/discovery/2026-10-25-continued-europe-viewing-validation.json. No current-live, whole-service or independent reuse certification."
+      }
+    ]
+  }
+}

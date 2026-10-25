@@ -1,5 +1,19 @@
 # Source Rights And Permissions
 
+## Continued official viewing review — 25 October 2026
+
+Thirteen new scoped official viewing links remain permission-pending. Identity,
+institutional provider designation and selected recorded legislative business
+support those links; independent embedding, direct playback, rebroadcast,
+recording, audiovisual reuse and programme-data licensing remain separately
+documented questions. Iceland's Alþingisrásin distribution statement is not
+assumed to license the historical committee YouTube recording being listed.
+No extracted source, provider embed, IPTV admission or implemented guide parser
+is added in this batch. Finland's existing source receives additional evidence
+without duplication.
+[Individual findings](../reports/discovery/2026-10-25-service-review-continued-held-sources.json)
+· [Publication decisions](../reports/discovery/2026-10-25-held-source-publication-decisions.json).
+
 ## Renewed institution-level review — 24 October 2026
 
 The [940-record service baseline](../reports/discovery/2026-10-24-institution-service-baseline.md)

@@ -183,7 +183,7 @@ def main() -> int:
     parser.add_argument(
         "--output",
         type=Path,
-        default=ROOT / "reports/discovery/2026-10-24-institution-service-baseline.json",
+        default=ROOT / "reports/discovery/2026-10-25-institution-service-baseline.json",
     )
     parser.add_argument("--review", action="append", type=Path, default=None)
     parser.add_argument("--check", action="store_true", help="fail if the saved baseline is stale")

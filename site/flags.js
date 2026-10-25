@@ -1,6 +1,16 @@
 // Shared jurisdiction flags for catalogue and schedule.
 // Provenance: assets/flags/ATTRIBUTION.md; uncertain flags remain neutral.
 window.ParliamentStreamsFlags = Object.freeze({
+  // Further 25 October source-backed additions; see continued-catalogue-flags report.
+  "Iceland": "assets/flags/is.svg",
+  "Moldova": "assets/flags/md.svg",
+  "San Luis": "assets/flags/san-luis.svg",
+  "Zug": "assets/flags/zug.svg",
+  "Liberec Region": "assets/flags/liberec.svg",
+  "Zlín Region": "assets/flags/zlin.svg",
+  "Madeira": "assets/flags/madeira.svg",
+  "French Community": "assets/flags/wallonia.svg",
+
   Belgium: "assets/flags/be.svg",
   // Publication and resolved flag holds: 2026-10-24-catalogue-flags-followup.json
   "Tokushima": "assets/flags/tokushima.svg",

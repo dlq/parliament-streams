@@ -25,7 +25,18 @@ const expectedRegionalNames = new Set(canonicalCatalogue.channels
   .map((channel) => channel.country_or_region));
 assert.equal(documentedAdmin1.features.length, expectedRegionalNames.size);
 assert.deepEqual(new Set(documentedAdmin1.features.map((feature) => feature.properties.name)), expectedRegionalNames);
-assert(documentedAdmin1.features.every((feature) => feature.geometry.type === "MultiPolygon"));
+const institutionLocations = documentedAdmin1.features.filter((feature) => feature.geometry.type === "Point");
+for (const feature of documentedAdmin1.features) {
+  if (feature.geometry.type === "MultiPolygon") continue;
+  assert.equal(feature.geometry.type, "Point", "Map geometry must be a territorial outline or an explicit institution location");
+  assert.equal(feature.properties.geometry_scope, "institution_location");
+  assert(feature.properties.scope_note?.trim(), "Institution locations need an explanation of their limited scope");
+  assert.match(feature.properties.source_url ?? "", /^https?:\/\//);
+  assert.equal(feature.geometry.coordinates.length, 2);
+  assert(feature.geometry.coordinates.every(Number.isFinite));
+  assert(Math.abs(feature.geometry.coordinates[0]) <= 180);
+  assert(Math.abs(feature.geometry.coordinates[1]) <= 90);
+}
 const expectedPlayableCount = canonicalCatalogue.channels.filter((channel) => {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
 }).length;
@@ -238,7 +249,7 @@ await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const address = server.address();
 assert(address && typeof address === "object");
 const baseUrl = `http://127.0.0.1:${address.port}/site/`;
-const browser = await chromium.launch();
+const browser = await chromium.launch({ args: ["--mute-audio"] });
 
 try {
   const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
@@ -805,7 +816,8 @@ try {
     await mapPage.locator(".map-country.is-documented").count(),
     expectedDocumentedCountryCodes.size,
   );
-  assert.equal(await mapPage.locator(".map-region").count(), expectedRegionalNames.size);
+  assert.equal(await mapPage.locator(".map-region").count(), expectedRegionalNames.size - institutionLocations.length);
+  assert.equal(await mapPage.locator(".map-location-marker").count(), institutionLocations.length);
   const canadianRegionalNames = new Set(documentedAdmin1.features
     .filter((feature) => feature.properties.parent_code === "CA")
     .map((feature) => feature.properties.name));
@@ -819,6 +831,32 @@ try {
       .evaluate((element) => getComputedStyle(element).fill),
     "rgb(182, 41, 58)",
   );
+  // Nearby institution seats must remain distinct pointer targets while zooming.
+  for (const feature of institutionLocations) {
+    const name = feature.properties.name;
+    // A preceding seat may be on another continent; return to the overview
+    // before exercising its pointer target rather than clicking off-screen.
+    await mapPage.locator("#zoom-reset").click();
+    await mapPage.waitForTimeout(300);
+    const marker = mapPage.locator(`.map-location-marker[data-jurisdiction="${name}"]`);
+    await marker.click();
+    await mapPage.waitForTimeout(300);
+    assert.equal(await mapPage.locator("#map-detail h2").innerText(), name);
+    assert.equal(await mapPage.locator('.map-location-note p[lang="en"]').innerText(), feature.properties.scope_note);
+    assert.equal(await mapPage.locator(`path.map-region[data-jurisdiction="${name}"]`).count(), 0);
+  }
+  if (institutionLocations.some((feature) => feature.properties.name === "Chakma Autonomous District")
+      && institutionLocations.some((feature) => feature.properties.name === "Lai Autonomous District")) {
+    // The two Mizoram seats must also remain separately clickable at shared zoom.
+    await mapPage.locator("#map-search").fill("Chakma Autonomous District");
+    await mapPage.locator("#map-search").press("Enter");
+    await mapPage.waitForTimeout(300);
+    for (const name of ["Chakma Autonomous District", "Lai Autonomous District"]) {
+      await mapPage.locator(`.map-location-marker[data-jurisdiction="${name}"]`).click();
+      await mapPage.waitForTimeout(300);
+      assert.equal(await mapPage.locator("#map-detail h2").innerText(), name);
+    }
+  }
   await mapPage.getByRole("button", { name: "National", exact: true }).click();
   await mapPage.getByRole("button", { name: "Brazil, Documented", exact: true }).click();
   assert.equal(
@@ -929,6 +967,68 @@ try {
   assert((await mapPage.locator("#world-map").boundingBox()).height <= 220);
   await assertNoAxeViolations(mapPage, "Mobile coverage map");
   await mapPage.close();
+
+  // A controlled location fixture exercises the distinction even when the
+  // catalogue has no location-only geometry. It must never become an area.
+  const locationMapPage = await context.newPage();
+  const locationScopeNote = "Test fixture: institution marker, not a territorial outline.";
+  await locationMapPage.route("**/assets/maps/documented-admin1.geojson*", async (route) => {
+    const fixture = structuredClone(primaryAdmin1);
+    const alberta = fixture.features.find((feature) => feature.properties.name === "Alberta");
+    assert(alberta);
+    alberta.geometry = { type: "Point", coordinates: [-113.4938, 53.5402] };
+    Object.assign(alberta.properties, {
+      geometry_scope: "institution_location",
+      scope_note: locationScopeNote,
+      source_url: "https://www.assembly.ab.ca/",
+    });
+    await route.fulfill({ json: fixture });
+  });
+  await locationMapPage.goto(`${baseUrl}map.html?lang=en`);
+  const locationMarker = locationMapPage.locator('.map-location-marker[data-jurisdiction="Alberta"]');
+  await locationMarker.waitFor();
+  assert.equal(await locationMapPage.locator('path.map-region[data-jurisdiction="Alberta"]').count(), 0);
+  assert.equal(await locationMapPage.locator("#legend-location").isVisible(), true);
+  assert.equal(await locationMapPage.locator("#legend-location-label").innerText(), "Institution location");
+  assert.equal(await locationMarker.getAttribute("aria-label"), "Alberta, Institution location, Documented");
+  await locationMarker.focus();
+  const initialMarkerBounds = await locationMarker.boundingBox();
+  assert(initialMarkerBounds);
+  await locationMarker.press("Enter");
+  await locationMapPage.waitForTimeout(300);
+  assert.match(await locationMapPage.locator("#map-detail").innerText(), /Alberta/);
+  assert.match(await locationMapPage.locator(".map-location-note").innerText(), /This marker locates the institution/);
+  assert.equal(await locationMapPage.locator('.map-location-note p[lang="en"]').innerText(), locationScopeNote);
+  assert.equal(await locationMapPage.locator(".map-location-note a").getAttribute("href"), "https://www.assembly.ab.ca/");
+  const selectedMarkerBounds = await locationMarker.boundingBox();
+  assert(selectedMarkerBounds);
+  assert(Math.abs(selectedMarkerBounds.width - initialMarkerBounds.width) < .1, "Location marker width must stay constant while zooming");
+  assert(Math.abs(selectedMarkerBounds.height - initialMarkerBounds.height) < .1, "Location marker height must stay constant while zooming");
+  await locationMapPage.getByRole("button", { name: "National", exact: true }).click();
+  assert.equal(await locationMapPage.locator(".map-location-marker").count(), 0);
+  assert.equal(await locationMapPage.locator("#legend-location").isVisible(), false);
+  await locationMapPage.getByRole("button", { name: "Subnational", exact: true }).click();
+  await locationMapPage.locator("#map-search").fill("Alberta");
+  await locationMapPage.locator("#map-search").press("Enter");
+  assert.equal(await locationMapPage.locator(".map-location-marker.is-selected").count(), 1);
+  assert.equal(await locationMapPage.locator('#jurisdiction-list button[data-jurisdiction="subnational:Alberta"]').getAttribute("aria-pressed"), "true");
+  await assertNoAxeViolations(locationMapPage, "Institution location coverage map");
+  await locationMapPage.goto(`${baseUrl}map.html?lang=fr`);
+  await locationMapPage.locator('.map-location-marker[data-jurisdiction="Alberta"]').waitFor();
+  await locationMapPage.locator('.map-location-marker[data-jurisdiction="Alberta"]').focus();
+  await locationMapPage.locator('.map-location-marker[data-jurisdiction="Alberta"]').press(" ");
+  assert.equal(await locationMapPage.locator("#legend-location-label").innerText(), "Siège de l’institution");
+  assert.match(await locationMapPage.locator(".map-location-note").innerText(), /Ce repère situe l’institution/);
+  assert.equal(await locationMapPage.locator('.map-location-note p[lang="en"]').innerText(), locationScopeNote);
+  await locationMapPage.setViewportSize({ width: 320, height: 800 });
+  await locationMapPage.reload();
+  await locationMapPage.locator('.map-location-marker[data-jurisdiction="Alberta"]').waitFor();
+  await locationMapPage.locator('.map-location-marker[data-jurisdiction="Alberta"]').focus();
+  await locationMapPage.locator('.map-location-marker[data-jurisdiction="Alberta"]').press("Enter");
+  await locationMapPage.waitForTimeout(300);
+  assert.equal(await locationMapPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+  await assertNoAxeViolations(locationMapPage, "Mobile localized institution location map");
+  await locationMapPage.close();
 
   const institutionsPage = await context.newPage();
   const institutionErrors = [];
