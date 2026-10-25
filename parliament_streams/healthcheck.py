@@ -12,9 +12,10 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import UTC, datetime
 from http.client import HTTPException, HTTPResponse
 from pathlib import Path
+from string import punctuation
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import urljoin
+from urllib.parse import quote, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
 from .catalogue import load_catalogue
@@ -29,10 +30,39 @@ def _response_headers(response: HTTPResponse | HTTPError) -> dict[str, str]:
     return {key.lower(): value for key, value in response.headers.items()}
 
 
+def _request_url(url: str) -> str:
+    """Encode international URLs for HTTP without changing existing escapes."""
+    parts = urlsplit(url)
+    if url.isascii():
+        return url
+    netloc = parts.netloc
+    if not netloc.isascii():
+        hostname = (parts.hostname or "").encode("idna").decode("ascii")
+        netloc = f"[{hostname}]" if ":" in hostname else hostname
+        if parts.port is not None:
+            netloc += f":{parts.port}"
+        userinfo, separator, _ = parts.netloc.rpartition("@")
+        if separator:
+            netloc = f"{quote(userinfo, safe=':%')}@{netloc}"
+    return urlunsplit(
+        (
+            parts.scheme,
+            netloc,
+            quote(parts.path, safe=punctuation),
+            quote(parts.query, safe=punctuation),
+            quote(parts.fragment, safe=punctuation),
+        )
+    )
+
+
 def _fetch_once(url: str, timeout: int) -> tuple[int | None, dict[str, str], bytes, str | None]:
-    request = Request(url, headers={"User-Agent": USER_AGENT})
     try:
-        with urlopen(request, timeout=timeout) as response:
+        try:
+            request = Request(_request_url(url), headers={"User-Agent": USER_AGENT})
+            response = urlopen(request, timeout=timeout)
+        except ValueError as error:
+            return None, {}, str(error).encode("utf-8", errors="replace"), None
+        with response:
             return (
                 response.status,
                 _response_headers(response),

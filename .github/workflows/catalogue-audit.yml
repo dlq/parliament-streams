@@ -225,16 +225,32 @@ jobs:
       - name: Write audit summary
         if: always()
         run: |
+          write_counts() {
+            local path="$1" label="$2"
+            if [[ -f "$path" ]]; then
+              jq -r --arg label "$label" '$label + ": " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' "$path"
+            else
+              echo "$label: not produced (the audit step failed or was skipped)."
+            fi
+          }
           {
             echo "## Catalogue audit"
             echo
-            [[ -f reports/automated/catalogue-health.json ]] && jq -r '"Primary sources: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/catalogue-health.json
-            [[ -f reports/automated/epg-audit.json ]] && jq -r '"Schedule endpoints: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/epg-audit.json
-            [[ -f reports/automated/links-audit.json ]] && jq -r '"Supporting links: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/links-audit.json
-            [[ -f reports/automated/schedules.json ]] && jq -r '"Parsed schedules: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/schedules.json
-            [[ -f reports/automated/schedule-quality.json ]] && jq -r '"Schedule quality: " + (.counts | to_entries | map("\(.key)=\(.value)") | join(", "))' reports/automated/schedule-quality.json
-            [[ -f reports/automated/stable-health-diff.json ]] && jq -r '"Stable-stream regressions: \(.regressions | length); recoveries: \(.recoveries | length)"' reports/automated/stable-health-diff.json
-            [[ -f reports/automated/catalogue-health.json ]] && jq -r '"High-risk source results: " + ([.results[] | select(.stability_risk == "high") | .status] | group_by(.) | map("\(.[0])=\(length)") | join(", "))' reports/automated/catalogue-health.json
+            write_counts reports/automated/catalogue-health.json "Primary sources"
+            write_counts reports/automated/epg-audit.json "Schedule endpoints"
+            write_counts reports/automated/links-audit.json "Supporting links"
+            write_counts reports/automated/schedules.json "Parsed schedules"
+            write_counts reports/automated/schedule-quality.json "Schedule quality"
+            if [[ -f reports/automated/stable-health-diff.json ]]; then
+              jq -r '"Stable-stream regressions: \(.regressions | length); recoveries: \(.recoveries | length)"' reports/automated/stable-health-diff.json
+            else
+              echo "Stable-stream regressions: not produced (the audit step failed or was skipped)."
+            fi
+            if [[ -f reports/automated/catalogue-health.json ]]; then
+              jq -r '"High-risk source results: " + ([.results[] | select(.stability_risk == "high") | .status] | group_by(.) | map("\(.[0])=\(length)") | join(", "))' reports/automated/catalogue-health.json
+            else
+              echo "High-risk source results: not produced (the audit step failed or was skipped)."
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Preserve current audit baselines

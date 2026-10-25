@@ -4,9 +4,9 @@ import json
 import tempfile
 import unittest
 from datetime import UTC, datetime
-from http.client import RemoteDisconnected
+from http.client import HTTPConnection, RemoteDisconnected
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 from parliament_streams import healthcheck
 from parliament_streams.scrapers import __main__ as scraper_cli
@@ -501,6 +501,102 @@ class ParserTests(unittest.TestCase):
 
 
 class HealthcheckTests(unittest.TestCase):
+    def test_fetch_once_encodes_international_urls_for_http(self):
+        urls = [
+            (
+                "https://www.parlament.gov.rs/преноси/архива.2082.html",
+                "https://www.parlament.gov.rs/"
+                "%D0%BF%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%B8/"
+                "%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B0.2082.html",
+            ),
+            (
+                "https://例え.テスト:8443/議会?q=råd&next=%2Fwatch%3Fx%3D1#章",
+                "https://xn--r8jz45g.xn--zckzah:8443/%E8%AD%B0%E4%BC%9A"
+                "?q=r%C3%A5d&next=%2Fwatch%3Fx%3D1#%E7%AB%A0",
+            ),
+            (
+                "http://[::1]:8080/議会?next=%2Fwatch+now",
+                "http://[::1]:8080/%E8%AD%B0%E4%BC%9A?next=%2Fwatch+now",
+            ),
+            (
+                "https://例え.テスト/a?x[]=1&signature=A%2BB#章",
+                "https://xn--r8jz45g.xn--zckzah/a?x[]=1&signature=A%2BB#%E7%AB%A0",
+            ),
+        ]
+        for original, encoded in urls:
+            with self.subTest(url=original):
+
+                def open_request(request, *, timeout, expected=encoded):
+                    # Exercise the real HTTP request encoder without opening a socket.
+                    connection = HTTPConnection(request.host)
+                    try:
+                        connection.putrequest(request.get_method(), request.selector)
+                    finally:
+                        connection.close()
+                    self.assertEqual(request.full_url, expected)
+                    response = MagicMock()
+                    response.__enter__.return_value = response
+                    response.status = 200
+                    response.headers = {"Content-Type": "text/html"}
+                    response.read.return_value = b"proceedings"
+                    response.geturl.return_value = expected
+                    return response
+
+                with patch.object(healthcheck, "urlopen", side_effect=open_request):
+                    result = healthcheck._fetch_once(original, timeout=1)
+                self.assertEqual(result[0], 200)
+                self.assertEqual(result[3], encoded)
+
+    def test_fetch_once_preserves_already_encoded_urls(self):
+        for url in [
+            "https://example.test/%D0%BF?next=%2Fwatch%3Fx%3D1+now&x=1",
+            "https://example.test/a?x[]=1&signature=A%2BB",
+            "https://example.test/a?",
+        ]:
+            with self.subTest(url=url), patch.object(healthcheck, "urlopen") as open_request:
+                healthcheck._fetch_once(url, timeout=1)
+            self.assertEqual(open_request.call_args.args[0].full_url, url)
+
+    def test_fetch_once_does_not_hide_response_processing_errors(self):
+        response = MagicMock()
+        response.status = 200
+        with (
+            patch.object(healthcheck, "urlopen", return_value=response),
+            patch.object(healthcheck, "_response_headers", side_effect=ValueError("bug")),
+            self.assertRaisesRegex(ValueError, "bug"),
+        ):
+            healthcheck._fetch_once("https://example.test", timeout=1)
+
+    def test_healthcheck_retains_other_results_when_one_url_is_invalid(self):
+        channels = [
+            {"id": "invalid", "source_type": "official_page", "official_url": "https://[bad"},
+            {"id": "valid", "source_type": "official_page", "official_url": "https://example.test"},
+        ]
+        response = MagicMock()
+        response.__enter__.return_value = response
+        response.status = 200
+        response.headers = {}
+        response.read.return_value = b"proceedings"
+        response.geturl.return_value = "https://example.test"
+        with (
+            patch.object(healthcheck, "load_catalogue", return_value={"channels": channels}),
+            patch.object(healthcheck, "urlopen", return_value=response),
+        ):
+            report = healthcheck.run_healthcheck(Path("unused.json"), 1, 0, workers=2)
+        self.assertEqual(report["total"], 2)
+        self.assertEqual(report["counts"], {"error": 1, "ok": 1})
+        self.assertIn("Invalid IPv6 URL", report["results"][0]["note"])
+
+    def test_fetch_once_records_redirect_encoding_failures(self):
+        with patch.object(
+            healthcheck,
+            "urlopen",
+            side_effect=UnicodeEncodeError("ascii", "GET /議会", 5, 7, "not ASCII"),
+        ):
+            result = healthcheck._fetch_once("https://example.test", timeout=1)
+        self.assertIsNone(result[0])
+        self.assertIn(b"ascii", result[2])
+
     def test_fetch_once_reads_successful_response(self):
         class Response:
             status = 200

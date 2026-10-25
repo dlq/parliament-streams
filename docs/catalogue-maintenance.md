@@ -193,6 +193,11 @@ The identity audit verifies catalogue coherence; it does not claim that an
 external entity match is substantively correct. Live health checks establish
 technical reachability, not permission to reuse a source.
 
+The shared HTTP checker encodes international URL paths, queries and hostnames
+for transport while retaining the recorded source URL. URL construction or
+encoding failures become individual error results, so the report can still
+include the other sources.
+
 Audit all unique supporting links recorded across channel metadata:
 
 ```sh
@@ -224,6 +229,9 @@ reports without committing transient results. Its Sunday job generates a full
 catalogue seed and runs Chromium against every official page. The workflow
 compares only `always_on` stream health with the preceding run so event-based
 feeds do not cause false regression failures outside sitting hours.
+The Actions summary explicitly identifies reports that were not produced after
+a failed or skipped step. Missing reports do not add a second summary failure;
+malformed report JSON and the original audit failure remain visible failures.
 
 ## Schedule And EPG Sources
 

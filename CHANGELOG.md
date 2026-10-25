@@ -1,5 +1,15 @@
 # Changelog
 
+## 25 October — Repair International URL Audits
+
+The scheduled catalogue audit crashed on the Serbian Parliament archive's
+Cyrillic URL before writing its report. Encode international URLs for HTTP,
+preserve existing escapes and query separators, and retain malformed URL or
+encoding failures as individual source results. The workflow summary now names
+missing reports without adding a second failure; invalid JSON still fails.
+Regression tests reproduce the original HTTP encoder error, international
+host/path/query handling and a mixed-source audit with one invalid URL.
+
 ## 25 October — Continued Official Viewing Sources
 
 Added 13 scoped official viewing links, bringing the catalogue to 269 sources.
