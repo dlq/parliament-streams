@@ -1,5 +1,17 @@
 # Parliamentary open-stream research
 
+This is a **historical working research log**, not the current catalogue or an
+endorsed directory. Dated counts, access observations and unresolved questions
+below preserve what was recorded at that stage; later evidence may supersede
+them. Retained notes are not proof of current availability or reuse permission.
+
+Start with [current research status](docs/research-status.md), the
+[active roadmap](PLANS.md), [canonical catalogue](data/channels.json) and
+[operational institution register](data/discovery/README.md). Source-rights
+evidence is maintained in [the rights matrix](docs/source-rights-and-permissions.md).
+Use the dated material below as evidence and background, and revalidate it before
+publication, downstream use or advocacy.
+
 ## 24 October — Eleven Legal Holds Reviewed
 
 All 11 starting cases have further primary-source findings. Three French cases
@@ -142,10 +154,6 @@ See [full-queue decisions](reports/discovery/2026-10-23-full-queue-decisions.md)
 and [legislative priorities/exclusions](reports/discovery/2026-10-23-legislative-priority.md).
 No direct HLS, strict IPTV or implemented XMLTV parser eligibility is added.
 
-
-This is a working research log, not an endorsed stream directory or legal assessment. It includes successful checks, failed checks, stale candidates, third-party references, and notes that require revalidation before reuse in a public catalogue, downstream product, or advocacy material.
-
-Use this file as evidence and background. The current catalogue lives in `data/channels.json`, the live project roadmap is `PLANS.md`, and source rights evidence is maintained in `docs/source-rights-and-permissions.md`.
 
 ## 2026-10-23 Territorial Validation
 

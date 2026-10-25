@@ -5,6 +5,11 @@
 Run these commands from the repository root. Local checks use the working
 catalogue; live audits separately contact third-party sources.
 
+Use a repository checkout for development and the Python CLI. Catalogue commands
+resolve resources in `schema/` and `data/` from that checkout. The packaged
+page-lead rules JSON supports its Python module; it does not make a standalone
+wheel a complete installation of the catalogue, schemas or maintenance tools.
+
 ## Setup And Verification
 
 Development uses two deliberately separate toolchains:
@@ -12,7 +17,7 @@ Development uses two deliberately separate toolchains:
 | Tooling | Responsibility |
 | --- | --- |
 | Python 3.11+ and `uv` | Catalogue CLI and mutations, JSON Schema and business-rule validation, site-data generation, scrapers, HTTP health checks, unit tests and coverage, Ruff formatting/linting, and mypy type checking. |
-| Node.js 24+ and npm | Locked HLS.js/D3 browser-asset assembly, static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
+| Node.js 24+ and npm | Locked HLS.js/D3 browser-asset assembly, JavaScript unit tests, static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
 | Make | Stable command entry points that compose the Python and Node checks without hiding which toolchain runs them. |
 | Playwright Chromium | The downloaded browser used to test rendered desktop, intermediate-width, mobile, keyboard, and accessibility behavior. |
 
@@ -29,21 +34,45 @@ npm ci
 npx playwright install chromium
 ```
 
-```sh
-make verify
-```
-
 The Makefile uses `uv run --locked --extra dev`, so contributors get a Python
 3.11+ environment and pinned development tools from `uv.lock` instead of
 relying on a system Python.
 
+## Test Commands
+
+| Command | What it runs |
+| --- | --- |
+| `make test-python` | Python unit and offline workflow integration tests. |
+| `make test-js` or `npm test` | JavaScript unit tests using Node's test runner; no browser is launched. |
+| `make test-browser` or `npm run test:browser` | Static HTML validation and the local Playwright/Axe interaction and accessibility suite. |
+| `make test` | All three test suites above, once each. |
+| `make coverage` | The Python suite with branch coverage and a 90% minimum for `parliament_streams/`. |
+| `make verify` | Full data and code validation, Python coverage, JavaScript unit tests and local browser checks. |
+
+`npm run test:unit` explicitly selects the JavaScript unit suite.
+`npm run check:site` and `make accessibility-check` remain compatible names for
+the HTML/browser checks. JavaScript tests have their own target rather than
+running implicitly under `make discovery-plan-validate`.
+
+The local browser runner, `tools/check_accessibility.mjs`, runs the whole suite
+and has no command-line filtering or `--help` mode. Run it through the commands
+above without extra arguments. Its Chromium process is launched with audio muted.
+This local suite is separate from the live third-party browser audit below.
+
+For complete verification:
+
+```sh
+make verify
+```
+
 This runs JSON syntax plus schema/business-rule validation, checks that the
 direct-file site snapshot is current, checks Ruff formatting and linting, runs
 strict mypy over production Python and Python tools, compiles Python modules,
-and runs the unit suite with a 90% minimum coverage gate for
-`parliament_streams/`, with branch measurement enabled. It also validates the HTML and runs Axe plus browser
+and runs Python tests through the coverage gate. It runs JavaScript unit tests
+once, validates the HTML and runs Axe plus browser
 assertions for desktop and mobile semantics, keyboard focus, reflow, control
-contrast, and reduced-motion support.
+contrast, and reduced-motion support. It does not rerun the Python suite without
+coverage or repeat the browser suite.
 
 After changing `data/channels.json`, refresh the direct-file snapshot with:
 
@@ -113,48 +142,34 @@ hours, authentication prompts, and player behavior.
 
 ### Candidate discovery audit
 
-GitHub Actions runs `.github/workflows/candidate-discovery.yml` on the first
-day of each month and on manual dispatch. It checks 25 maintained Tier 1 and 46
-Tier 2 targets statically, inspects official players in Chromium, validates
-discovered HLS/DASH manifests, and compares validated URLs with the catalogue.
-The workflow uploads 90-day evidence artifacts and writes uncatalogued results
-to the run summary. When review findings exist, it creates or updates the
-`Candidate discovery review queue` GitHub issue; it closes that issue when a
-later monthly run has no findings. It never adds or promotes catalogue records
-automatically.
+The monthly/manual [Candidate Discovery workflow](../.github/workflows/candidate-discovery.yml)
+builds its input plan from eligible legislature inventory routes, maintained
+Tier 1/Tier 2 targets and the current catalogue. It records source and access
+gaps, checks discovered manifest formats, and queues unverified viewing,
+archive, recording and programme-page leads. It never promotes catalogue
+records automatically. See [GitHub Actions](github-actions.md) for review queues,
+evidence limits and the conditions for retaining or closing an issue.
 
-Run the same stages locally:
+To validate or build the maintained plan locally:
 
 ```sh
-uv run python tools/validate_discovery_targets.py \
-  data/discovery/tier1.json data/discovery/tier2.json
-uv run python tools/validate_discovery_decisions.py
-uv run python tools/validate_democracy_tier_static.py \
-  --input data/discovery/tier1.json \
-  --output reports/discovery/tier1-static.json
-uv run python tools/validate_democracy_tier_static.py \
-  --input data/discovery/tier2.json \
-  --output reports/discovery/tier2-static.json
-node tools/deep_validate_browser.mjs \
-  --input data/discovery/tier1.json \
-  --input data/discovery/tier2.json \
-  --output reports/discovery/browser-validation.json
-uv run python tools/summarize_discovery_audit.py \
-  --static reports/discovery/tier1-static.json \
-  --static reports/discovery/tier2-static.json \
-  --browser reports/discovery/browser-validation.json \
-  --output reports/discovery/findings.json
+make discovery-plan-validate
+uv run --locked python tools/build_discovery_targets.py \
+  --output-dir reports/automated/candidate-discovery/targets
 ```
 
-This is repeatable discovery against a maintained institutional watchlist, not
-an internet-wide search. Add newly confirmed official legislature/player pages
-to the appropriate target file so subsequent runs cover them. Evidence-backed
-rejections belong in `data/discovery/reviewed-manifests.json`; they remain in
-the report but do not reopen the candidate issue on every monthly run.
+Plan validation is separate from the JavaScript unit tests. The workflow's
+static/browser stages are live third-party audits with explicit time budgets;
+retain its evidence-sanitization steps before sharing reports. These network
+stages are separate from `make test` and `make verify`.
 
-The separate U.S. inventory covers six federal candidates and all 50 state
-legislatures. It is schema-validated but is not yet part of the monthly browser
-discovery workflow:
+Evidence-backed decisions belong in
+`data/discovery/reviewed-manifests.json` or
+`data/discovery/reviewed-page-leads.json`. They preserve why a lead was reviewed
+without treating ownership, playback, schedules or rights as interchangeable.
+
+The separate U.S. inventory records six federal candidates and all 50 state
+legislatures. Validate this additional maintained research resource with:
 
 ```sh
 uv run python tools/validate_us_candidates.py

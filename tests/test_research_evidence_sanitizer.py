@@ -11,13 +11,13 @@ from pathlib import Path
 from unittest.mock import patch
 from urllib.parse import parse_qs, quote, unquote, urlsplit
 
-from tools.sanitize_research_evidence import (
+from parliament_streams.research_evidence import (
     REDACTED,
-    main,
     sanitize_url,
     sanitize_value,
     secret_matches,
 )
+from tools.sanitize_research_evidence import main
 
 
 def synthetic_keys() -> list[str]:

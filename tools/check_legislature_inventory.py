@@ -23,9 +23,9 @@ from urllib.parse import urldefrag, urlsplit
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from tools.build_institution_site_data import exact_chamber_catalogue_ids  # noqa: E402
-from tools.institution_inventory_fetch import HostGate, fetch_source  # noqa: E402
-from tools.institution_inventory_sources import (  # noqa: E402
+from parliament_streams.inventory.projection import exact_chamber_catalogue_ids  # noqa: E402
+from parliament_streams.inventory.reviews import load_reviews, reviewed_routes  # noqa: E402
+from parliament_streams.inventory.sources import (  # noqa: E402
     derive_directory_sources,
     extract_directory_links,
     ipu_api_url,
@@ -33,8 +33,8 @@ from tools.institution_inventory_sources import (  # noqa: E402
     safe_public_url,
     source_fingerprint,
 )
-from tools.institution_service_sources import load_reviews, reviewed_routes  # noqa: E402
-from tools.sanitize_research_evidence import sanitize_value  # noqa: E402
+from parliament_streams.research_evidence import sanitize_value  # noqa: E402
+from tools.institution_inventory_fetch import HostGate, fetch_source  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY = ROOT / "data/discovery/institutions.json"

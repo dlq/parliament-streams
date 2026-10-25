@@ -7,12 +7,12 @@ import unittest
 from pathlib import Path
 from typing import Any
 
+from parliament_streams.inventory.projection import load_object
 from tools.build_institution_service_baseline import (
     DIRECTORY,
     HISTORICAL,
     build_baseline,
 )
-from tools.build_institution_site_data import load_object
 
 ROOT = Path(__file__).resolve().parents[1]
 REVIEWED_ON = "2026-10-24"

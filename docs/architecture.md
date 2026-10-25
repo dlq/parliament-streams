@@ -1,10 +1,20 @@
 # Architecture
 
-This repository is a catalogue and evidence project, not a streaming service.
-The code exists to keep the catalogue reliable, inspectable, and publishable as
-a static website.
+This repository maintains legislative-institution records, official viewing
+sources and their evidence, and publishes them as a static website.
 
-## Source Of Truth
+## Two Canonical Lists
+
+| List | Canonical file | Public view | A record means |
+| --- | --- | --- | --- |
+| Legislature inventory | [data/discovery/institutions.json](../data/discovery/institutions.json) | [Legislatures](../site/institutions.html) | An institution or retained research identity with its authority decision, relationships, provenance and unresolved questions. |
+| Stream catalogue | [data/channels.json](../data/channels.json) | [Catalogue](../site/index.html), coverage map and schedule links | A reviewed viewing source with a documented technical and permission posture. It can be an official page, archive, channel or direct stream. |
+
+Inventory entries include eligible legislatures, specific authority holds,
+exclusions and historical predecessors. Records have different grains, including
+umbrella legislatures and individual chambers. Their total is not a count of
+usable streams. One institution may have several catalogue sources; inventory
+membership alone does not publish one.
 
 `data/channels.json` is the canonical published catalogue. Every channel record
 contains:
@@ -24,13 +34,25 @@ technical-status coherence.
 
 Eligibility follows [catalogue scope](catalogue-scope.md): substantive
 legislative authority, not the presence of a council webcast. The wider
-country/territory ledgers under `reports/discovery/` retain excluded and
-unresolved bodies; their discovery totals are not public-catalogue totals.
+country/territory evidence supports the decisions recorded in the inventory.
+Historical discovery totals are not public-catalogue totals.
 
-Discovery data is maintained separately from published channels:
+## Supporting Inputs And Review Decisions
 
-- `data/discovery/tier1.json` and `tier2.json` drive the monthly democracy-tier
-  static and browser audit;
+The [data directory guide](../data/README.md) identifies maintained inputs,
+decision ledgers and generated files. Discovery data has separate roles:
+
+- `data/discovery/tier1.json` and `tier2.json` maintain research priorities and
+  seed routes. The monthly discovery plan combines these with all maintained
+  eligible identities, registered service evidence and current catalogue sources;
+- [service-review-inputs.json](../data/discovery/service-review-inputs.json)
+  explicitly lists the dated individual service reports consumed by inventory
+  projections, service baselines and discovery planning. Its versioned `reports`
+  array contains unique repository-relative JSON paths. An unlisted report stays
+  retained evidence; its filename does not opt it into maintenance;
+- `data/discovery/inventory-review-decisions.json` records human dispositions of
+  automated inventory findings. Accepting a finding still requires a separate
+  source-backed inventory edit;
 - `data/discovery/reviewed-manifests.json` retains evidence-backed dispositions
   so rejected manifest findings do not repeatedly reopen review work;
 - `data/discovery/reviewed-page-leads.json` separately retains dispositions of
@@ -40,6 +62,17 @@ Discovery data is maintained separately from published channels:
   50 state legislatures for manual U.S. expansion research. Its
   `verified_official_video_surface` status confirms an official video surface,
   not a stable channel, playback permission, or catalogue readiness.
+
+`data/fallbacks.json` maintains supplemental official event platforms and player
+pages with conservative playback claims. `data/supranational.json` maintains
+membership and participation context for international sources on the map.
+These support the catalogue without becoming another institution inventory.
+
+Some retained reports remain maintenance inputs: the national chamber directory,
+the historical service crosswalk and explicitly registered individual reviews.
+Health reports also feed compact validation-history references. Preserve their
+paths and provenance when maintaining them. The [reports guide](../reports/README.md)
+distinguishes these roles from generated workflow observations.
 
 ## Generated And Local Files
 
@@ -64,6 +97,26 @@ preview, not a current live snapshot; Pages publishes newly collected schedules.
 Do not edit it independently; run
 `make site-data` or use the catalogue manager.
 
+The Legislatures page has its own generation path:
+
+```mermaid
+flowchart TD
+  I["Legislature inventory: institutions.json"] --> B["make institution-site-data"]
+  C["Stream catalogue: channels.json"] --> B
+  E["Retained chamber/service crosswalks and registered service reviews"] --> B
+  B --> S["site/institutions-data.js"]
+  S --> P["site/institutions.html + institutions.js"]
+```
+
+The builder projects the full maintained inventory into a compact external
+script, joining exact catalogue IDs and dated evidence. It preserves exclusions,
+holds and historical records; the public page applies status, country and search
+filters. Its default view is a subset of the retained records. A country's or
+parent legislature's viewing source is never automatically copied to a chamber.
+`make institution-site-data-check` detects drift; edit the inputs and regenerate
+the script instead of editing it directly. The same script supports hosted and
+direct-file previews.
+
 `data/schedules.json` is a local generated now/next snapshot and is ignored by
 Git. GitHub Pages generates its own schedule snapshot during deployment.
 
@@ -80,27 +133,34 @@ playlists. Parser-level inferred ends and assumed dates carry explicit
 provenance and are disclosed in XMLTV descriptions. Daily audits also retain
 the quality report without failing the entire collection for partial coverage.
 
-`data/fallbacks.json` records official event platforms, live pages, broadcaster
-pages, and provider-managed embeds that can support link-out or fallback UI
-without claiming a stable direct stream. It is validated separately from the
-channel catalogue so event-specific sources do not become misleading permanent
-channel records. The site may display now/next text for a fallback when one of
-its related channel IDs has a collected schedule record, but this is metadata
-reuse rather than playback resolution.
+`make validation-history` summarizes retained per-channel health checks back into
+`data/channels.json`; `make validation-history-check` verifies that those compact
+references have not drifted. The browser reads the published summaries rather
+than scanning the report directories.
 
-`reports/health/` contains dated research and validation reports. These are
-evidence artifacts, not runtime inputs. `make validation-history` summarizes
-the latest retained per-channel checks back into `data/channels.json`; `make
-validation-history-check` verifies those compact references have not drifted.
+## Code Boundaries
+
+`parliament_streams/` contains reusable validation, catalogue, discovery,
+schedule and export logic. Its `inventory/` package separates directory/source
+adapters (`sources.py`), registered service evidence (`reviews.py`) and exact
+identity/projection logic (`projection.py`). `research_evidence.py` supplies shared
+evidence sanitization. Schedule adapters live in the explicit `scrapers/` registry.
+
+`tools/` provides repository-maintenance commands, renderers, browser checks and
+asset assembly. For example, `tools/build_institution_site_data.py` renders the
+inventory projection into the public script; the monitor and service-baseline
+builder reuse the package's projection logic. The Makefile and workflow commands
+remain stable entry points. [Development](development.md) covers setup and checks.
 
 ## Runtime Shape
 
 The public site is static:
 
-1. GitHub Pages serves files from `site/`.
-2. The page fetches `data/channels.json`.
-3. It optionally fetches `data/schedules.json`.
-4. It fetches `data/fallbacks.json` for related fallback links and the fallback
+1. GitHub Pages serves the assembled static publication artifact.
+2. Catalogue, map and schedule surfaces load the published catalogue data;
+   the Legislatures page loads `institutions-data.js`.
+3. Schedule-aware pages optionally fetch the freshly published `data/schedules.json`.
+4. Catalogue surfaces fetch `data/fallbacks.json` for related fallback links and the fallback
    directory.
 5. It renders catalogue rows, source details, latest retained validation
    evidence, rights notes, and official links.
@@ -209,6 +269,9 @@ drive the low-noise always-on regression issue workflow.
 
 - To understand the published data model: read `schema/channels.schema.json`
   and `schema/fallbacks.schema.json`, then `parliament_streams/models.py`.
+- To understand the institution pipeline: start with the
+  [inventory guide](../data/discovery/README.md) and
+  `parliament_streams/inventory/projection.py`.
 - To understand discovery watchlists: read
   `schema/discovery-targets.schema.json` and
   `schema/us-legislature-candidates.schema.json`.

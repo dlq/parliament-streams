@@ -9,14 +9,14 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from tools.build_discovery_targets import build_targets
-from tools.institution_service_sources import (
+from parliament_streams.inventory.reviews import (
     ROOT,
     load_reviews,
     maintained_page_url,
     review_notes_by_id,
     reviewed_routes,
 )
+from tools.build_discovery_targets import build_targets
 from tools.summarize_discovery_audit import network_coverage
 from tools.validate_democracy_tier_static import check_country, run
 

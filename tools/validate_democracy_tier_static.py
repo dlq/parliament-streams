@@ -21,7 +21,7 @@ if __package__ in {None, ""}:
 
 from parliament_streams.healthcheck import fetch_url  # noqa: E402
 from parliament_streams.page_discovery import extract_page_leads  # noqa: E402
-from tools.sanitize_research_evidence import sanitize_value  # noqa: E402
+from parliament_streams.research_evidence import sanitize_value  # noqa: E402
 
 USER_AGENT = "parliament-streams-tier-refresh/0.1 (+https://github.com/dlq/parliament-streams)"
 TIMEOUT_SECONDS = 8

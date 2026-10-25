@@ -464,7 +464,12 @@ make discovery-plan-validate service-baseline-check institution-site-data-check
 ```
 
 The baseline check reconciles the saved eligible-ID/service-report snapshot
-against the current catalogue and all maintained individual review reports.
+against the current catalogue and the individual reviews explicitly listed in
+`data/discovery/service-review-inputs.json`. To make a reviewed report a maintained
+input, add its repository-relative JSON path to the registry's sorted, unique
+`reports` list. Missing, malformed or unsafe registered inputs fail the offline
+checks. An unlisted report remains evidence without changing discovery planning
+or the public snapshot. See the [report role guide](../reports/README.md).
 It checks consistency; it never requires or infers that every validation
 dimension is complete. After reviewing new evidence or promoting a service,
 regenerate both the baseline and public institution snapshot:

@@ -8,15 +8,16 @@ from __future__ import annotations
 
 import json
 import re
-from pathlib import Path
+from datetime import date
+from pathlib import Path, PurePosixPath
 from typing import Any
 from urllib.parse import urlsplit
 
-from tools.institution_inventory_sources import safe_public_url
-from tools.sanitize_research_evidence import REDACTED, sanitize_url, sanitize_value
+from parliament_streams.inventory.sources import safe_public_url
+from parliament_streams.research_evidence import REDACTED, sanitize_url, sanitize_value
 
-ROOT = Path(__file__).resolve().parents[1]
-REVIEW_GLOB = "*-service-review-*.json"
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW_REGISTRY = "data/discovery/service-review-inputs.json"
 INSTITUTION_FIELDS = {
     "institution_url",
     "institution_urls",
@@ -71,14 +72,67 @@ def maintained_page_url(value: Any) -> str | None:
     return url
 
 
+def _valid_review_date(value: Any) -> bool:
+    if not isinstance(value, str):
+        return False
+    try:
+        return date.fromisoformat(value).isoformat() == value
+    except ValueError:
+        return False
+
+
 def load_reviews(root: Path = ROOT) -> list[tuple[str, dict[str, Any]]]:
-    """Discover dated individual reviews; malformed review inputs fail the preflight."""
+    """Load explicitly maintained reviews; unrelated evidence never changes the plan.
+
+    Missing or malformed inputs fail the preflight rather than silently removing
+    reviewed routes from discovery, baselines or the public inventory snapshot.
+    """
+    registry_path = root / REVIEW_REGISTRY
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    if (
+        not isinstance(registry, dict)
+        or type(registry.get("registry_version")) is not int
+        or registry["registry_version"] != 1
+        or not isinstance(registry.get("reports"), list)
+        or any(not isinstance(path, str) for path in registry["reports"])
+    ):
+        raise ValueError(f"{registry_path}: expected a version-1 service-review input registry")
+    reports = registry["reports"]
+    if reports != sorted(set(reports)):
+        raise ValueError(f"{registry_path}: report paths must be unique and sorted")
     result = []
-    for path in sorted((root / "reports/discovery").glob(REVIEW_GLOB)):
+    for report in reports:
+        relative = PurePosixPath(report)
+        if (
+            relative.is_absolute()
+            or ".." in relative.parts
+            or relative.parts[:2] != ("reports", "discovery")
+            or relative.suffix != ".json"
+            or relative.as_posix() != report
+            or any(char in report for char in "\\?#")
+            or any(ord(char) < 32 or ord(char) == 127 for char in report)
+        ):
+            raise ValueError(f"{registry_path}: expected repository-relative discovery JSON paths")
+        path = root / report
+        if not path.resolve().is_relative_to(root.resolve()) or not path.is_file():
+            raise ValueError(
+                f"{registry_path}: registered review is missing or outside the repository"
+            )
         document = json.loads(path.read_text(encoding="utf-8"))
-        if not isinstance(document, dict) or not isinstance(document.get("records"), list):
-            raise ValueError(f"{path}: expected individual service-review records")
-        result.append((path.relative_to(root).as_posix(), document))
+        if (
+            not isinstance(document, dict)
+            or not _valid_review_date(document.get("reviewed_on"))
+            or not isinstance(document.get("records"), list)
+            or any(
+                not isinstance(row, dict)
+                or not isinstance(row.get("id"), str)
+                or not row["id"]
+                or ("reviewed_on" in row and not _valid_review_date(row["reviewed_on"]))
+                for row in document["records"]
+            )
+        ):
+            raise ValueError(f"{path}: expected individual service-review records with ISO dates")
+        result.append((report, document))
     return result
 
 

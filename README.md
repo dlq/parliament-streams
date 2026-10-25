@@ -93,7 +93,10 @@ npx playwright install chromium
 make verify
 ```
 
-See [development and validation](docs/development.md) for individual checks and
+Use a repository checkout: the Python CLI uses its `schema/` and `data/`
+resources. `make test` runs Python, JavaScript unit and local browser tests;
+`make verify` also checks data, formatting, types and Python coverage. See
+[development and validation](docs/development.md) for individual commands and
 live audits. [CONTRIBUTING.md](CONTRIBUTING.md) explains evidence requirements.
 
 ## Maintain And Explore
@@ -106,6 +109,8 @@ independently. Start with [catalogue maintenance](docs/catalogue-maintenance.md)
 | Topic | Guide |
 | --- | --- |
 | Documentation index | [All guides](docs/README.md) |
+| Data files and generated snapshots | [Data guide](data/README.md) |
+| Research reports and evidence limits | [Reports guide](reports/README.md) |
 | Data model, files and runtime | [Architecture](docs/architecture.md) |
 | Automated checks, review queues and deployment | [GitHub Actions](docs/github-actions.md) |
 | Scope and eligibility | [What counts as a parliament](docs/catalogue-scope.md) |

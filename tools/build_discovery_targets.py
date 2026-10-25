@@ -18,13 +18,13 @@ from typing import Any
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from tools.institution_service_sources import (  # noqa: E402
+from parliament_streams.inventory.reviews import (  # noqa: E402
     ROOT,
     load_reviews,
     maintained_page_url,
     reviewed_routes,
 )
-from tools.sanitize_research_evidence import REDACTED, sanitize_url  # noqa: E402
+from parliament_streams.research_evidence import REDACTED, sanitize_url  # noqa: E402
 
 
 def build_targets(

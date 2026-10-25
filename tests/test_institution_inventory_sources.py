@@ -5,7 +5,7 @@ import hashlib
 import unittest
 from urllib.parse import parse_qs, urlsplit
 
-from tools.institution_inventory_sources import (
+from parliament_streams.inventory.sources import (
     derive_directory_sources,
     extract_directory_links,
     ipu_api_url,

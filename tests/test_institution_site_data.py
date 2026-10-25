@@ -12,6 +12,15 @@ from contextlib import redirect_stderr
 from pathlib import Path
 from typing import Any
 
+from parliament_streams.inventory.projection import (
+    REPORT_BASE_URL,
+    build_payload,
+    countries_for_scope,
+    http_urls,
+    load_object,
+    report_urls,
+)
+from parliament_streams.inventory.reviews import load_reviews
 from tools.build_institution_site_data import (
     ASSIGNMENT,
     DEFAULT_CATALOGUE_PATH,
@@ -19,16 +28,9 @@ from tools.build_institution_site_data import (
     DEFAULT_INVENTORY_PATH,
     DEFAULT_SERVICE_REGISTER_PATH,
     DEFAULT_TARGET_PATH,
-    REPORT_BASE_URL,
-    build_payload,
-    countries_for_scope,
-    http_urls,
-    load_object,
     main,
     render_site_data,
-    report_urls,
 )
-from tools.institution_service_sources import load_reviews
 
 
 def institution(institution_id: str, **changes: Any) -> dict[str, Any]:

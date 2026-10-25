@@ -5,6 +5,9 @@
   "scripts": {
     "postinstall": "npm run build:vendor",
     "build:vendor": "node tools/build_vendor_assets.mjs",
+    "test": "npm run test:unit",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test:browser": "npm run check:site",
     "check:html": "html-validate site/index.html site/institutions.html site/map.html site/schedule.html",
     "check:a11y": "node tools/check_accessibility.mjs",
     "check:site": "npm run check:html && npm run check:a11y"

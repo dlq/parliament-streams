@@ -1,5 +1,19 @@
 # Changelog
 
+## 25 October — Repository Navigation And Maintenance Boundaries
+
+Document the catalogue and legislature inventory as separate maintained lists,
+with short data/report role guides and an explicit registry of service-review
+reports consumed by maintenance. Existing evidence paths and generated public
+snapshots are preserved. Shared inventory adapters, crosswalks and projections
+now live in `parliament_streams/inventory/`; evidence sanitization helpers live
+in the package while their command entry points remain under `tools/`.
+
+Separate the current roadmap from its retained history, label historical
+research links, refresh the candidate overview and clarify the checkout-based
+development contract. Add explicit Python, JavaScript and browser test commands;
+`make test` runs all three, and CI/full verification retain each suite once.
+
 ## 25 October — Reviewable Discovery And Verified Deployments
 
 Monthly discovery now reports viewing, archive, channel, recording and programme

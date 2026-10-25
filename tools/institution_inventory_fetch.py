@@ -18,7 +18,7 @@ from urllib.request import HTTPRedirectHandler, HTTPSHandler, Request, build_ope
 import certifi
 
 from parliament_streams.healthcheck import request_url
-from tools.institution_inventory_sources import safe_public_url
+from parliament_streams.inventory.sources import safe_public_url
 
 USER_AGENT = "ParliamentStreamsInventoryReview/1.0 (+https://github.com/dlq/parliament-streams)"
 PAUSE_STATUSES = frozenset({401, 403, 429, 503})

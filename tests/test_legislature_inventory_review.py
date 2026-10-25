@@ -7,6 +7,8 @@ from datetime import date
 from typing import Any
 from unittest.mock import patch
 
+from parliament_streams.inventory.sources import ipu_api_url
+from parliament_streams.research_evidence import secret_matches
 from tools.check_legislature_inventory import (
     IPU_ID,
     build_report,
@@ -21,8 +23,6 @@ from tools.check_legislature_inventory import (
     review_dates,
     validate_baseline,
 )
-from tools.institution_inventory_sources import ipu_api_url
-from tools.sanitize_research_evidence import secret_matches
 
 TODAY = date(2026, 11, 1)
 CHECKED_AT = "2026-11-01T07:00:00+00:00"

@@ -9,8 +9,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from tools.build_institution_site_data import build_payload, load_object, safe_http_url
-from tools.institution_service_sources import load_reviews
+from parliament_streams.inventory.projection import build_payload, load_object, safe_http_url
+from parliament_streams.inventory.reviews import load_reviews
 
 ROOT = Path(__file__).resolve().parents[1]
 HISTORICAL = "reports/discovery/2026-10-24-current-validation-register.json"

@@ -9,20 +9,50 @@ status while reviewing it. Only a `ready` candidate that passes the complete
 published-catalogue contract can be promoted. The promotion command records the
 terminal `promoted` state; it cannot be set through `candidate-status`.
 
-As of 2026-10-24, 145 candidates are promoted and four candidates remain `researching`:
+## Current Review Queue
+
+As of **25 October 2026**, the 175 candidate files contain **171 promoted**,
+**three researching** and **one rejected** record. This is a dated directory
+snapshot, not the catalogue's total source count; the JSON status fields govern
+each candidate's current state.
 
 - Chile Chamber Sala IV: room identity, schedule mapping and rights scope need
   review despite official-page discovery and sample media checks.
-- Iceland Althingi: official guidance permits redistribution of its parliamentary
-  channel, but current desktop and mobile player routes returned access challenges.
 - France's Senate: the live service opened, but published hyperlink conditions
   include prior webmaster notification. No notification has been sent.
 - Rivera Departmental Board: official channel and October proceedings validated,
   but a separate institutional Wikidata ID has not been established.
 
+Iceland Alþingi is now `promoted` as a **historical committee archive**. Its
+selected 2023 recording supports that narrow scope; the title/camera date
+conflict, current-player challenges and independent reuse questions remain
+explicit. See the [25 October national review](../reports/discovery/2026-10-25-continued-national-viewing-validation.json).
+
 Skåne is retained as `rejected`: official authority evidence places it outside
 the current regional-legislature scope. Its browser access failure is a separate
 finding. See the [held-candidate and authority follow-up](../reports/discovery/2026-10-22-authority-followup.md).
+
+## Review And Promotion
+
+Apply the [catalogue scope rule](../docs/catalogue-scope.md) before promotion.
+Ordinary councils are not eligible merely because they broadcast meetings.
+Broad discovery watchlists are not candidate records: the authority inventory
+is `data/discovery/institutions.json`, while the older U.S. federal/50-state
+watchlist remains in `data/discovery/us-legislatures.json`. Create a candidate
+only when research identifies a distinct source for normal evidence review.
+
+Event, official-player and provider fallback ideas can start in
+`data/fallbacks.json` when they lack a distinct channel identity. A published
+candidate needs a supportable playback or link-out posture. See
+[catalogue maintenance](../docs/catalogue-maintenance.md) and
+[contributing](../CONTRIBUTING.md) for the workflow and evidence requirements.
+
+## Historical Promotion Evidence
+
+The following dated findings preserve earlier review stages, including source
+limitations observed then. They are not a second current candidate queue; use
+[research status](../docs/research-status.md) and the canonical JSON for later
+decisions.
 
 The Czech chamber feed
 passed active live-media and browser-decode checks and was promoted; Sweden
@@ -34,22 +64,7 @@ viewing services and Bern's official
 Online-Tagblatt archive. Bern's cantonal-parliament identity is Q664547; the
 archive promotion does not assert validated live coverage. See the
 [current research status](../docs/research-status.md);
-`data/channels.json` governs their current published status. Event,
-official-player, and provider fallback ideas should normally start in
-`data/fallbacks.json` instead of becoming channel candidates unless they have a
-stable channel identity and a supportable playback or link-out posture.
-
-Apply the [catalogue scope rule](../docs/catalogue-scope.md) before promotion.
-Ordinary councils are not eligible merely because they broadcast meetings.
-
-Broad discovery watchlists are not candidate records. The U.S. federal and
-50-state research inventory remains in `data/discovery/us-legislatures.json`;
-move an entry here only after research identifies a distinct source that can
-pass the normal catalogue evidence review.
-
-See [the catalogue maintenance guide](../docs/catalogue-maintenance.md) and
-[the contribution guide](../CONTRIBUTING.md) for the workflow and evidence
-requirements.
+`data/channels.json` governs their current published status.
 
 Drenthe, Limburg and Noord-Brabant were promoted after recording playback checks.
 Nine other Dutch provincial services remain discovery leads with access blockers,

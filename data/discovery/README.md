@@ -4,6 +4,11 @@
 71-country research baseline. Start the next institution-level work from this
 file, rather than assuming the older 652-body service cohort is the complete list.
 
+This is the **Legislature inventory**. The **Stream catalogue** is maintained
+separately in [channels.json](../channels.json). An eligible inventory identity
+may have no viewing source, and one institution may have several catalogue
+records. The [data guide](../README.md) explains the supporting files and ledgers.
+
 The [service baseline and queue](../../reports/discovery/2026-10-25-institution-service-baseline.md)
 now reconcile all 940 eligible identity records with exact catalogue matches,
 the earlier service evidence and new individual source follow-ups. Keep a new
@@ -32,6 +37,28 @@ counts after an edit. Run `make institution-inventory-validate`; `make verify`
 also runs this check. The validator checks identities, country coverage, chamber
 crosswalks, authority overrides and counts; it does not revalidate legal texts or
 network services.
+
+The public page is a generated projection of the full inventory, enriched with
+exact catalogue matches, retained national-chamber/service crosswalks and
+registered service reviews:
+
+`institutions.json` + reviewed supporting inputs → `make institution-site-data`
+→ [site/institutions-data.js](../../site/institutions-data.js)
+→ [Legislatures page](../../site/institutions.html).
+
+The generated file preserves all authority statuses; the page's default filter
+shows a subset. Keep aliases, relationships, exclusions and historical entries
+in the maintained inventory. `make institution-site-data-check` checks the
+projection for drift. Do not edit the generated script independently.
+
+[service-review-inputs.json](service-review-inputs.json) explicitly enrolls
+individual dated service reports as maintenance inputs. Its
+`{"registry_version": 1, "reports": [...]}` structure uses sorted, unique
+repository-relative paths under `reports/discovery/`. Add a reviewed report to
+the registry when its observations should feed planning, the service baseline
+and the public projection. Filename patterns do not enroll reports; missing,
+unsafe or malformed registered inputs fail validation. The
+[reports guide](../../reports/README.md) identifies the other retained inputs.
 
 The monthly `Legislature Inventory Review` GitHub Action checks the current IPU
 directory and retained institutional/country evidence for proposed additions,
