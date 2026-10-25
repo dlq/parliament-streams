@@ -55,37 +55,75 @@ def _request_url(url: str) -> str:
     )
 
 
-def _fetch_once(url: str, timeout: int) -> tuple[int | None, dict[str, str], bytes, str | None]:
+def request_url(url: str) -> str:
+    """Encode a URL for HTTP transport without treating it as an access decision.
+
+    Callers with public-host or redirect restrictions must apply those separately.
+    """
+    return _request_url(url)
+
+
+def _fetch_once(
+    url: str,
+    timeout: int,
+    *,
+    headers: Mapping[str, str] | None = None,
+    max_response_bytes: int = MAX_RESPONSE_BYTES,
+    max_error_bytes: int = 16 * 1024,
+) -> tuple[int | None, dict[str, str], bytes, str | None]:
     try:
         try:
-            request = Request(_request_url(url), headers={"User-Agent": USER_AGENT})
-            response = urlopen(request, timeout=timeout)
-        except ValueError as error:
-            return None, {}, str(error).encode("utf-8", errors="replace"), None
-        with response:
-            return (
-                response.status,
-                _response_headers(response),
-                response.read(MAX_RESPONSE_BYTES),
-                response.geturl(),
-            )
-    except HTTPError as error:
-        return error.code, _response_headers(error), error.read(16 * 1024), error.geturl()
-    except (TimeoutError, URLError, ssl.SSLError, HTTPException) as error:
+            try:
+                request = Request(
+                    request_url(url), headers={"User-Agent": USER_AGENT, **(headers or {})}
+                )
+                response = urlopen(request, timeout=timeout)
+            except ValueError as error:
+                return None, {}, str(error).encode("utf-8", errors="replace"), None
+            with response:
+                return (
+                    response.status,
+                    _response_headers(response),
+                    response.read(max_response_bytes),
+                    response.geturl(),
+                )
+        except HTTPError as error:
+            return error.code, _response_headers(error), error.read(max_error_bytes), error.geturl()
+    except (TimeoutError, ConnectionError, URLError, ssl.SSLError, HTTPException) as error:
         return None, {}, str(error).encode("utf-8", errors="replace"), None
 
 
 def fetch_url(
-    url: str, timeout: int, retries: int
+    url: str,
+    timeout: int,
+    retries: int,
+    *,
+    headers: Mapping[str, str] | None = None,
+    max_response_bytes: int | None = None,
+    max_error_bytes: int | None = None,
 ) -> tuple[int | None, dict[str, str], bytes, str | None, int]:
+    """Fetch a bounded response with URL encoding and isolated transport failures.
+
+    Optional request headers and byte limits let other bounded probes share this
+    handling while retaining their own request identity and response contracts.
+    """
     attempts = max(1, retries + 1)
     last_status: int | None = None
     last_headers: dict[str, str] = {}
     last_body = b""
     last_final_url: str | None = None
+    request_options: dict[str, Any] = {}
+    if headers is not None:
+        request_options["headers"] = headers
+    if max_response_bytes is not None:
+        request_options["max_response_bytes"] = max_response_bytes
+    if max_error_bytes is not None:
+        request_options["max_error_bytes"] = max_error_bytes
 
     for attempt in range(1, attempts + 1):
-        last_status, last_headers, last_body, last_final_url = _fetch_once(url, timeout)
+        last_status, last_headers, last_body, last_final_url = _fetch_once(
+            url, timeout, **request_options
+        )
         if last_status is not None and last_status < 400:
             return last_status, last_headers, last_body, last_final_url, attempt
         if attempt < attempts:

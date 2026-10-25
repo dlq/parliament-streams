@@ -68,7 +68,14 @@ class DiscoveryFindingsTests(unittest.TestCase):
 
         self.assertEqual(
             report["counts"],
-            {"validated": 3, "catalogued": 1, "reviewed": 0, "review": 2},
+            {
+                "validated": 3,
+                "page_leads": 0,
+                "total": 3,
+                "catalogued": 1,
+                "reviewed": 0,
+                "review": 2,
+            },
         )
         self.assertEqual(
             {item["url"] for item in report["findings"] if item["status"] == "review"},

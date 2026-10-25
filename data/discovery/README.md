@@ -53,8 +53,19 @@ comparison snapshots, while resolved access failures clear after recovery.
 
 `tier1.json` and `tier2.json` maintain the agreed EIU 2024 baseline, published in
 2025. `us-legislatures.json` retains the earlier US discovery targets.
-`reviewed-manifests.json` records source-specific manifest decisions. These files
-have different roles and should not be summed as institution inventories.
+`reviewed-manifests.json` records source-specific manifest decisions.
+`reviewed-page-leads.json` separately records human dispositions of observed
+viewing, archive, channel, recording and programme-page leads. Both use
+`decision_version: 1` and a `decisions` list, with `country`, exactly one of
+`url`/`url_prefix`, `disposition`, `reviewed_on`, `reason` and evidence URLs per
+decision. Page decisions can additionally identify `not_legislative_content` or
+`not_a_viewing_or_programme_source`. A page observation does not certify official
+ownership, legislative content, playback, EPG or rights; media is not played to
+certify leads. Reviewed decisions suppress repeat intake, not the evidence.
+No ledger entry automatically publishes a source or changes inventory membership.
+These files have different roles and should not be summed as institution inventories.
+See [GitHub Actions and review queues](../../docs/github-actions.md) for cadence,
+caps, artifacts and the manual handoff between inventory and catalogue work.
 
 [Readable reconciliation](../../reports/discovery/2026-10-24-inventory-reconciliation.md)
 · [Public scope rule](../../docs/catalogue-scope.md)

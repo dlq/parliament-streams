@@ -1,4 +1,4 @@
-"""Validate the durable manifest-review decision ledger."""
+"""Validate a durable manifest or page-lead review decision ledger."""
 
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ def main() -> int:
         decisions = parse_discovery_decisions(load_json_object(args.path))
     except (OSError, ValueError) as error:
         parser.error(str(error))
-    print(f"Discovery decisions valid: {len(decisions)} reviewed manifest(s)")
+    print(f"Discovery decisions valid: {len(decisions)} reviewed source lead(s)")
     return 0
 
 

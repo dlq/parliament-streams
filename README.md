@@ -67,7 +67,7 @@ localized VLC desktop instructions:
 
 These UTF-8 channel lists link to the original streams. Official viewing links
 and calendar pages do not automatically qualify for IPTV or XMLTV. Pages
-regenerates exports every six hours; details and local commands are in
+schedules export refreshes every six hours; details and local commands are in
 [schedules, IPTV and XMLTV](docs/schedules-and-iptv.md).
 
 ## Run Locally
@@ -107,6 +107,7 @@ independently. Start with [catalogue maintenance](docs/catalogue-maintenance.md)
 | --- | --- |
 | Documentation index | [All guides](docs/README.md) |
 | Data model, files and runtime | [Architecture](docs/architecture.md) |
+| Automated checks, review queues and deployment | [GitHub Actions](docs/github-actions.md) |
 | Scope and eligibility | [What counts as a parliament](docs/catalogue-scope.md) |
 | Current coverage and research leads | [Research status and evidence](docs/research-status.md) |
 | Rights and attribution evidence | [Source rights](docs/source-rights-and-permissions.md) |

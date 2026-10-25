@@ -45,6 +45,7 @@ jobs:
           restore-keys: catalogue-audit-
 
       - name: Validate catalogue structure and identity metadata
+        id: validate
         run: |
           mkdir -p reports/automated
           uv run --locked parliament-streams validate
@@ -52,6 +53,7 @@ jobs:
             --output reports/automated/identity-audit.json
 
       - name: Audit every primary playback or official URL
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
         run: >-
           uv run --locked parliament-streams health-check
           --timeout 12
@@ -60,6 +62,8 @@ jobs:
           --output reports/automated/catalogue-health.json
 
       - name: Audit stable streams for regressions
+        id: stable-health
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
         run: |
           mapfile -t stable_ids < <(jq -r '.channels[] | select(.availability == "always_on" and .stability_risk != "high") | .id' data/channels.json)
           args=()
@@ -75,6 +79,7 @@ jobs:
 
       - name: Compare stable streams with the preceding run
         id: health-diff
+        if: ${{ !cancelled() && steps.stable-health.outcome == 'success' }}
         continue-on-error: true
         run: |
           if [[ -f .audit-baseline/stable-health.json ]]; then
@@ -88,7 +93,7 @@ jobs:
           fi
 
       - name: Update stable-stream regression issues
-        if: always() && hashFiles('reports/automated/stable-health-diff.json') != ''
+        if: ${{ !cancelled() && hashFiles('reports/automated/stable-health-diff.json') != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -145,39 +150,49 @@ jobs:
             fi
           done < <(jq -r '.recoveries[].id' reports/automated/stable-health-diff.json)
 
-      - name: Audit schedule endpoints and parsers
-        run: |
-          uv run --locked parliament-streams epg-audit \
-            --timeout 12 \
-            --retries 0 \
-            --workers 8 \
-            --output reports/automated/epg-audit.json
-          uv run --locked parliament-streams schedules-collect \
-            --timeout 15 \
-            --retries 1 \
-            --previous .audit-baseline/schedules.json \
-            --stale-ttl-hours 24 \
-            --minimum-successful-sources 1 \
-            --output reports/automated/schedules.json
+      - name: Audit schedule endpoints
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
+        run: >-
+          uv run --locked parliament-streams epg-audit
+          --timeout 12
+          --retries 0
+          --workers 8
+          --output reports/automated/epg-audit.json
+
+      - name: Collect parsed schedules
+        id: schedules
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
+        run: >-
+          uv run --locked parliament-streams schedules-collect
+          --timeout 15
+          --retries 1
+          --previous .audit-baseline/schedules.json
+          --stale-ttl-hours 24
+          --minimum-successful-sources 1
+          --output reports/automated/schedules.json
 
       - name: Audit schedule quality and linear guide eligibility
+        if: ${{ !cancelled() && steps.schedules.outcome == 'success' }}
         run: >-
           uv run --locked parliament-streams schedules-audit
           --schedules reports/automated/schedules.json
           --output reports/automated/schedule-quality.json
 
       - name: Update repeated schedule-source failure issues
-        if: always() && hashFiles('reports/automated/schedules.json') != ''
+        if: ${{ !cancelled() && hashFiles('reports/automated/schedules.json') != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
+          uv run --locked python tools/build_audit_issue_plan.py \
+            --schedules reports/automated/schedules.json \
+            --output reports/automated/schedule-issue-plan.json
           gh label create schedule-regression \
             --color d97706 \
             --description "Repeated failure in a schedule source" \
             --force
-          while IFS=$'\t' read -r source_id status failures error; do
+          while IFS=$'\t' read -r action source_id status failures error; do
             title="Schedule source regression: $source_id"
             number=$(gh issue list \
               --state all \
@@ -185,7 +200,7 @@ jobs:
               --limit 100 \
               --json number,title | \
               jq -r --arg title "$title" '.[] | select(.title == $title) | .number')
-            if [[ "$status" == "error" && "$failures" -ge 3 ]]; then
+            if [[ "$action" == "open" ]]; then
               {
                 echo "The schedule collector has failed for \`$source_id\` in $failures consecutive runs."
                 echo
@@ -197,24 +212,27 @@ jobs:
               if [[ -n "$number" ]]; then
                 gh issue edit "$number" --body-file schedule-regression-issue.md
                 state=$(gh issue view "$number" --json state --jq '.state')
-                [[ "$state" == "CLOSED" ]] && gh issue reopen "$number"
+                if [[ "$state" == "CLOSED" ]]; then
+                  gh issue reopen "$number"
+                fi
               else
                 gh issue create \
                   --title "$title" \
                   --label schedule-regression \
                   --body-file schedule-regression-issue.md
               fi
-            elif [[ -n "$number" ]]; then
+            elif [[ "$action" == "close" && -n "$number" ]]; then
               state=$(gh issue view "$number" --json state --jq '.state')
               if [[ "$state" == "OPEN" ]]; then
                 gh issue close "$number" \
                   --reason completed \
-                  --comment "The schedule source recovered or no longer meets the repeated-failure threshold. Evidence: $RUN_URL"
+                  --comment "The schedule collector successfully parsed current data for this source. Evidence: $RUN_URL"
               fi
             fi
-          done < <(jq -r '.sources | to_entries[] | [.key, .value.status, .value.consecutive_failures, (.value.error // "none")] | @tsv' reports/automated/schedules.json)
+          done < <(jq -r '.actions[] | [.action, .source_id, .status, .consecutive_failures, (.error // "none")] | @tsv' reports/automated/schedule-issue-plan.json)
 
       - name: Audit official, rights, identity, and embed links
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
         run: >-
           uv run --locked parliament-streams links-audit
           --timeout 12
@@ -284,7 +302,7 @@ jobs:
           retention-days: 30
 
       - name: Fail on new stable-stream regressions
-        if: steps.health-diff.outcome == 'failure'
+        if: ${{ !cancelled() && steps.health-diff.outcome == 'failure' }}
         run: exit 1
 
   deep-audit:
@@ -327,8 +345,19 @@ jobs:
           --input reports/automated/catalogue-seed.json
           --output reports/automated/deep-browser-validation.json
 
+      - name: Sanitize and check weekly browser evidence
+        id: deep-evidence-safety
+        if: ${{ !cancelled() && hashFiles('reports/automated/*.json') != '' }}
+        run: |
+          for report in reports/automated/*.json; do
+            if [[ -f "$report" ]]; then
+              uv run --locked python tools/sanitize_research_evidence.py --sanitize "$report"
+            fi
+          done
+          uv run --locked python tools/sanitize_research_evidence.py --check reports/automated
+
       - name: Upload weekly deep-audit reports
-        if: always()
+        if: ${{ !cancelled() && steps.deep-evidence-safety.outcome == 'success' }}
         uses: actions/upload-artifact@v7
         with:
           name: catalogue-deep-audit-${{ github.run_id }}

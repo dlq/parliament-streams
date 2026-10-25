@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "provider_hosts": ["youtube.com", "youtu.be", "youtube-nocookie.com", "vimeo.com", "livestream.com"],
+  "media_terms": ["video", "watch", "live", "livestream", "webcast", "broadcast", "streaming", "tv", "player", "transmis", "en direct", "directo", "direto", "vivo", "diffusion", "webtv", "пренос", "трансляц", "中継", "配信", "直播", "방송"],
+  "archive_terms": ["archive", "archiv", "recording", "recorded", "replay", "on demand", "on-demand", "ondemand", "mediathek", "videoteca", "videoteka", "enregistr", "záznam", "zaznam", "архив", "録画", "點播", "点播", "다시보기"],
+  "programme_terms": ["schedule", "calendar", "calendrier", "calendario", "agenda", "programme", "programación", "programacao", "sitting dates", "ordre du jour", "tagesordnung", "расписан", "календар", "日程", "議事日程", "일정"]
+}

@@ -684,6 +684,21 @@ class ManagementTests(unittest.TestCase):
         self.assertIn("stability_risk", output.getvalue().splitlines()[0])
         self.assertIn("cpac-ca", output.getvalue())
 
+    def test_health_recovery_requires_a_confirmed_ok_result(self):
+        for previous in ("error", "warning", "skipped"):
+            for current in ("error", "warning", "skipped", "ok"):
+                with self.subTest(previous=previous, current=current):
+                    report = compare_health_reports(
+                        {"results": [{"id": "stream", "status": previous}]},
+                        {"results": [{"id": "stream", "status": current}]},
+                    )
+                    self.assertEqual(bool(report["recoveries"]), current == "ok")
+        unchanged = compare_health_reports(
+            {"results": [{"id": "stream", "status": "ok"}]},
+            {"results": [{"id": "stream", "status": "ok"}]},
+        )
+        self.assertEqual(unchanged["recoveries"], [])
+
 
 class CliTests(unittest.TestCase):
     def setUp(self):

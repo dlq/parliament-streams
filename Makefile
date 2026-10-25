@@ -37,6 +37,7 @@ us-candidates-validate:
 
 discovery-decisions-validate:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_discovery_decisions.py
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_discovery_decisions.py data/discovery/reviewed-page-leads.json
 
 institution-inventory-validate:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_institution_inventory.py

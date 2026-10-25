@@ -93,10 +93,16 @@ HTML references to JavaScript and CSS by file content to avoid stale-script
 failures such as the Safari catalogue-loading issue. Map geometry URLs also
 carry explicit versions.
 It runs after relevant pushes, on demand, and every six hours at 17 minutes
-past the hour. To enable it once
+past the hour. Publication requires successful CI and CodeQL for the exact
+current `main` SHA, checked before assembly and again immediately before
+deployment. Both jobs pin their checkout to that SHA; a failed or missing check,
+an unavailable verification API or an advanced `main` blocks publication.
+Scheduled builds use the same gate without falling back to an older commit.
+Normal pushes remain allowed. See [GitHub Actions and review queues](github-actions.md).
+To enable Pages once
 on GitHub, set **Settings → Pages → Build and deployment → Source** to
 **GitHub Actions**. Thereafter pushes affecting `site/` or `data/channels.json`
-publish the updated page. The scheduled collection is a batch build; the
+trigger a checked publication of the updated page. The scheduled collection is a batch build; the
 deployed site remains static and has no request-time backend.
 
 The separate `.github/workflows/catalogue-audit.yml` runs a complete catalogue
@@ -106,9 +112,12 @@ endpoint, exercises implemented schedule parsers, and checks deduplicated
 official, rights, Wikidata/IPU, and embed links. Reports are retained as GitHub
 Actions artifacts for 30 days. On Sundays the workflow also uses Chromium to
 load every recorded official page, discover dynamically exposed HLS/DASH
-manifests, and retain that report for 90 days. Only newly degraded `always_on`
-streams fail the workflow; event-based feeds remain recorded without generating
-routine failures when a legislature is not sitting.
+manifests, and retain that report for 90 days. Independent probes continue after
+another probe or issue API fails, while command failures remain visible.
+Newly degraded `always_on` streams explicitly fail the audit; event-based source
+results remain recorded without triggering that regression rule. Stable-stream
+and schedule-source alerts close only on `ok` results, not empty data, warnings
+or reset counters.
 
 For a quick local preview, run `npm ci` once to prepare the browser libraries,
 then open `site/index.html` directly. The checked-in

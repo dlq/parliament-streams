@@ -4,23 +4,23 @@ from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import contextlib
 import html as html_lib
 import json
 import re
-import ssl
 import sys
 import time
 from collections.abc import Iterable
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
-from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlparse
-from urllib.request import Request, urlopen
 
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from parliament_streams.healthcheck import fetch_url  # noqa: E402
+from parliament_streams.page_discovery import extract_page_leads  # noqa: E402
 from tools.sanitize_research_evidence import sanitize_value  # noqa: E402
 
 USER_AGENT = "parliament-streams-tier-refresh/0.1 (+https://github.com/dlq/parliament-streams)"
@@ -38,36 +38,28 @@ def utc_timestamp() -> str:
 
 
 def fetch(url: str, timeout: int) -> dict[str, Any]:
-    request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"})
     started = time.time()
-    try:
-        with urlopen(request, timeout=timeout) as response:
-            body = response.read(MAX_RESPONSE_BYTES)
-            return {
-                "http_status": response.status,
-                "content_type": response.headers.get("content-type"),
-                "final_url": response.geturl(),
-                "body": body,
-                "elapsed_seconds": round(time.time() - started, 3),
-            }
-    except HTTPError as error:
-        body = error.read(80_000)
-        return {
-            "http_status": error.code,
-            "content_type": error.headers.get("content-type") if error.headers else None,
-            "final_url": error.geturl(),
-            "error": f"HTTP {error.code}",
-            "body": body,
-            "elapsed_seconds": round(time.time() - started, 3),
-        }
-    except (TimeoutError, URLError, ssl.SSLError) as error:
-        return {
-            "http_status": None,
-            "content_type": None,
-            "final_url": None,
-            "error": f"{type(error).__name__}: {error}",
-            "elapsed_seconds": round(time.time() - started, 3),
-        }
+    status, headers, body, final_url, _attempts = fetch_url(
+        url,
+        timeout,
+        retries=0,
+        headers={"User-Agent": USER_AGENT, "Accept": "*/*"},
+        max_response_bytes=MAX_RESPONSE_BYTES,
+        max_error_bytes=80_000,
+    )
+    result: dict[str, Any] = {
+        "http_status": status,
+        "content_type": headers.get("content-type"),
+        "final_url": final_url,
+        "elapsed_seconds": round(time.time() - started, 3),
+    }
+    if status is None:
+        result["error"] = body.decode("utf-8", errors="replace")
+    else:
+        result["body"] = body
+        if status >= 400:
+            result["error"] = f"HTTP {status}"
+    return result
 
 
 def manifest_kind(url: str) -> str:
@@ -113,6 +105,11 @@ def validate_candidate(kind: str, url: str, timeout: int) -> dict[str, Any]:
         raw = html_lib.unescape(raw).strip("\"'")
         found.append(urljoin(fetched.get("final_url") or url, raw))
     result.update(status="page_ok", note="Official/discovery page reachable")
+    page_leads, omitted = extract_page_leads(
+        page_html, url, base_url=fetched.get("final_url") or url
+    )
+    result["page_leads"] = page_leads
+    result["page_leads_omitted_by_cap"] = omitted
     if found:
         result["discovered_manifests"] = sorted(dict.fromkeys(found))[:10]
     return result
@@ -126,7 +123,9 @@ def iter_seed_candidates(country: dict[str, Any]) -> Iterable[dict[str, str]]:
         if kind not in {"hls", "dash", "official_page", "discovered_manifest"} or not url:
             continue
         if kind == "discovered_manifest":
-            kind = manifest_kind(url)
+            # The shared fetcher will retain an invalid URL as an error.
+            with contextlib.suppress(ValueError):
+                kind = manifest_kind(url)
         key = (kind, url)
         if key not in seen:
             seen.add(key)

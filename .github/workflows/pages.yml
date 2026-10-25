@@ -17,27 +17,56 @@ on:
       - "package-lock.json"
       - "tools/build_vendor_assets.mjs"
       - "tools/version_site_assets.mjs"
+      - "tools/check_pages_verification.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  actions: read
+
+env:
+  DEPLOY_SHA: ${{ github.sha }}
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
+  verify_revision:
+    name: Verify exact deployment revision
+    timeout-minutes: 25
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Require successful CI and CodeQL for current main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/check_pages_verification.py --sha "$DEPLOY_SHA"
+
   deploy:
+    needs: verify_revision
     timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
@@ -52,12 +81,9 @@ jobs:
       - name: Install npm dependencies and assemble browser assets
         # npm's postinstall also assembles the locked browser assets for scheduled deploys.
         run: npm ci
-      - name: Install accessibility test browser
-        if: github.event_name != 'schedule'
-        run: npx playwright install --with-deps chromium
-      - name: Verify catalogue, site data, and accessibility
-        if: github.event_name != 'schedule'
-        run: make catalogue-validate site-data-check accessibility-check
+      # Full tests/accessibility are required by the exact-SHA CI gate above.
+      - name: Verify catalogue and assembled data snapshots
+        run: make catalogue-validate site-data-check institution-site-data-check
       - name: Restore the preceding schedule snapshot
         uses: actions/cache/restore@v6
         with:
@@ -104,5 +130,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+      - name: Recheck exact revision and successful checks before publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/check_pages_verification.py --sha "$DEPLOY_SHA" --wait-seconds 0
       - id: deployment
         uses: actions/deploy-pages@v5

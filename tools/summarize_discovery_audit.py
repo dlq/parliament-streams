@@ -9,6 +9,7 @@ from typing import Any
 from parliament_streams.catalogue import load_catalogue, load_json_object
 from parliament_streams.discovery import build_discovery_findings, parse_discovery_decisions
 from parliament_streams.management import write_json
+from parliament_streams.page_discovery import classify_page_links
 
 
 def network_coverage(
@@ -42,6 +43,25 @@ def network_coverage(
             page.get("manifests_omitted_by_cap", 0)
             for item in browser
             for page in item.get("pages", [])
+        ),
+        "static_page_leads_omitted_by_cap": sum(
+            row.get("page_leads_omitted_by_cap", 0)
+            for report in static
+            for country in report.get("countries", [])
+            for row in country.get("results", [])
+        ),
+        "browser_page_links_omitted_by_cap": sum(
+            page.get("page_links_omitted_by_cap", 0)
+            for report in browser
+            for page in report.get("pages", [])
+        ),
+        "browser_page_leads_omitted_by_cap": sum(
+            classify_page_links(
+                page["page_url"], page.get("page_links", []), base_url=page.get("final_url")
+            )[1]
+            for report in browser
+            for page in report.get("pages", [])
+            if isinstance(page.get("page_url"), str)
         ),
     }
     by_identity: dict[str, set[str]] = {}
@@ -91,6 +111,9 @@ def main() -> int:
     )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--coverage", type=Path)
+    parser.add_argument(
+        "--page-decisions", type=Path, default=Path("data/discovery/reviewed-page-leads.json")
+    )
     args = parser.parse_args()
 
     decisions = parse_discovery_decisions(load_json_object(args.decisions))
@@ -99,6 +122,7 @@ def main() -> int:
         [(str(path), load_json_object(path)) for path in args.static],
         [(str(path), load_json_object(path)) for path in args.browser],
         decisions=decisions,
+        page_decisions=parse_discovery_decisions(load_json_object(args.page_decisions)),
     )
     output = dict(report)
     if args.coverage:
@@ -107,9 +131,17 @@ def main() -> int:
         browser = [load_json_object(path) for path in args.browser]
         coverage = network_coverage(coverage, static, browser)
         output["coverage"] = coverage
+        identities: dict[str, set[str]] = {}
+        for source in coverage["sources"]:
+            identities.setdefault(source["url"], set()).update(source["record_ids"])
+        for finding in report["findings"]:
+            finding["institution_ids"] = sorted(
+                identities.get(finding.get("source_page", finding["url"]), set())
+            )
     write_json(args.output, output)
     print(
-        f"Validated {report['counts']['validated']} manifest(s); "
+        f"Format-checked {report['counts']['validated']} manifest(s); "
+        f"{report['counts']['page_leads']} unverified page lead(s); "
         f"{report['counts']['reviewed']} previously reviewed; "
         f"{report['counts']['review']} need review"
     )

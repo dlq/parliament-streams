@@ -93,6 +93,7 @@ def _sensitive_name(name: str) -> bool:
             break
         name = decoded
     name = re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", name)
+    name = re.sub(r"[\[\].]", "_", name)
     compact = re.sub(r"[^a-z0-9]", "", name.lower())
     return bool(SENSITIVE_PART.search(name) or compact in SENSITIVE_NAMES)
 

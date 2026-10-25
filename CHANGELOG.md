@@ -1,5 +1,21 @@
 # Changelog
 
+## 25 October — Reviewable Discovery And Verified Deployments
+
+Monthly discovery now reports viewing, archive, channel, recording and programme
+page leads alongside format-checked manifests, with separate review ledgers,
+bounded observations and explicit skipped/capped work. These are research leads;
+no source, candidate or legislature is published automatically. Shared HTTP
+handling protects monthly checks and inventory monitoring from international URL
+encoding failures while preserving their request limits and safety checks.
+
+Independent catalogue probes continue after another probe or issue API fails,
+while failures remain visible. Stable-stream and schedule alerts close only on
+an `ok` result. Pages requires successful CI and CodeQL for the exact current
+`main` commit, with a pinned checkout and a final pre-publication check; normal
+pushes remain allowed. [Workflow and review guide](docs/github-actions.md).
+The catalogue remains at 269 sources and the inventory at 940 eligible identities.
+
 ## 25 October — Repair International URL Audits
 
 The scheduled catalogue audit crashed on the Serbian Parliament archive's

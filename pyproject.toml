@@ -49,3 +49,6 @@ strict = true
 
 [tool.setuptools.packages.find]
 include = ["parliament_streams*"]
+
+[tool.setuptools.package-data]
+parliament_streams = ["page_lead_rules.json"]

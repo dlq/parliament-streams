@@ -32,7 +32,10 @@ Discovery data is maintained separately from published channels:
 - `data/discovery/tier1.json` and `tier2.json` drive the monthly democracy-tier
   static and browser audit;
 - `data/discovery/reviewed-manifests.json` retains evidence-backed dispositions
-  so rejected findings do not repeatedly reopen review work; and
+  so rejected manifest findings do not repeatedly reopen review work;
+- `data/discovery/reviewed-page-leads.json` separately retains dispositions of
+  observed viewing, archive, recording, channel and programme-page leads, using
+  the same dated decision fields; and
 - `data/discovery/us-legislatures.json` records six federal candidates and all
   50 state legislatures for manual U.S. expansion research. Its
   `verified_official_video_surface` status confirms an official video surface,
@@ -49,7 +52,10 @@ cache keys. See `site/assets/vendor/README.md` for the maintenance workflow.
 
 Pages assembly also runs `tools/version_site_assets.mjs` to fingerprint HTML
 references to site JavaScript and CSS. Dynamically fetched map geometry has
-explicit URL versions. [Public-site behaviour](public-site.md) covers caching,
+explicit URL versions. Publication pins the triggering SHA and requires the
+latest trusted CI and CodeQL runs to succeed for that exact current `main`
+revision, with another gate immediately before deployment. Scheduled runs do not
+fall back to an older passing revision. [Public-site behaviour](public-site.md) covers caching,
 map/search relationships, deployment and localization.
 
 `site/catalogue-data.js` is generated from `data/channels.json` so `site/index.html`
@@ -187,8 +193,14 @@ compilation, unit tests with coverage, HTML validation, and Playwright/Axe
 accessibility checks.
 
 Daily and monthly GitHub Actions workflows repeat catalogue audits, link checks,
-health checks, schedule audits, and browser-based candidate discovery. Automated
-reports help identify issues; they do not grant permission to reuse a stream.
+health checks, schedule audits, and static/rendered-page candidate discovery.
+After structure validation, independent daily probes continue after another
+probe or issue API failure, while failures remain visible. Recovery alerts
+require a current `ok` result. Discovery distinguishes format-checked manifests
+from unverified page leads; observed links do not establish media playback or
+rights. Automated reports do not change either canonical list or promote sources.
+See [GitHub Actions and review queues](github-actions.md) for cadences, caps,
+review ledgers and the deployment gate.
 Stable-stream regression checks use `availability` and `stability_risk` to keep
 alerts focused: high-risk sources remain in the full health report, but do not
 drive the low-noise always-on regression issue workflow.

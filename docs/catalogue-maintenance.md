@@ -15,7 +15,8 @@ The active [Protect main history ruleset](https://github.com/dlq/parliament-stre
 targets `refs/heads/main` and blocks **deletion** and **force pushes**. The
 24 October 2026 follow-up API check confirms both effective rules. Ordinary
 pushes remain available; there is no bypass list and no pull-request or
-status-check requirement. Normal deployment and maintenance can continue.
+status-check requirement for pushes. Pages publication separately requires
+successful CI and CodeQL for the exact current `main` commit, as described below.
 
 The scheduled workflows read repository contents and produce deployment/report
 artifacts or review issues; they do not commit or push to `main`. These two
@@ -25,6 +26,19 @@ A later stricter mode can require a pull request and the
 `Verify catalogue and scrapers` check, with zero required approvals for solo
 maintenance. Do not require the Pages deployment as a pre-merge check: it runs
 after changes reach `main`. [Dated review and activation follow-up](../reports/health/2026-10-24-branch-protection-review.json).
+
+## Deploy Reviewed Changes
+
+Relevant pushes, manual runs and the six-hour schedule trigger Pages. Its
+checkout is pinned to the triggering SHA. Before assembly, the workflow requires
+the latest trusted CI and CodeQL runs for that exact current `main` revision to
+succeed; it repeats the revision/check gate immediately before publication.
+Missing or failed checks, an unavailable verification API or an advanced `main`
+blocks the deployment. A scheduled build does not select an older passing commit.
+
+After fixing a failed check, rerun the checks for the current revision and then
+Pages if needed. Normal pushes remain available. The complete cadence, recovery
+rules and review handoffs are in [GitHub Actions and review queues](github-actions.md).
 
 ## Which File Should I Edit?
 
@@ -196,7 +210,10 @@ technical reachability, not permission to reuse a source.
 The shared HTTP checker encodes international URL paths, queries and hostnames
 for transport while retaining the recorded source URL. URL construction or
 encoding failures become individual error results, so the report can still
-include the other sources.
+include the other sources. Monthly static discovery uses this same handling
+with its own headers, timeout and 300,000-byte response limit. The inventory
+monitor reuses URL encoding after its public-host/DNS checks, preserving its
+redirect, conditional-request and response-size protections.
 
 Audit all unique supporting links recorded across channel metadata:
 
@@ -229,6 +246,11 @@ reports without committing transient results. Its Sunday job generates a full
 catalogue seed and runs Chromium against every official page. The workflow
 compares only `always_on` stream health with the preceding run so event-based
 feeds do not cause false regression failures outside sitting hours.
+Once structure validation passes, the primary, stable, schedule-endpoint,
+schedule-collection and supporting-link checks run independently. A probe or
+issue API failure does not suppress the other checks; command failures still
+remain visible. Schedule-quality checks depend on successful collection, and
+stable comparison depends on a successfully produced stable-health report.
 The Actions summary explicitly identifies reports that were not produced after
 a failed or skipped step. Missing reports do not add a second summary failure;
 malformed report JSON and the original audit failure remain visible failures.
@@ -415,14 +437,21 @@ references, not a maintained institutional viewing page. Planning coverage does
 not mean that every route loaded or every player decoded.
 
 Static checks revisit known manifests and inspect official-page HTML; Chromium
-checks capture player-loaded HLS/DASH requests. Each of three static batches has
+checks capture player-loaded HLS/DASH requests and rendered links/media elements.
+Both paths can identify unverified viewing pages, video archives, YouTube
+channels, recordings and programme sources. Page observations do not certify
+target ownership, legislative content, playback, programme mapping,
+accessibility or rights; media is not played to certify these leads.
+Each of three static batches has
 a 360-second network budget; the browser phase has 1,800 seconds. The monthly
 run removes the old four-page-per-country cap. Work ordering rotates by month
 so budget exhaustion does not continually omit the same tail. Unattempted URLs,
 page caps and the ten-manifest-per-page limit remain explicit in the evidence.
-The findings report deduplicates validated URLs against catalogue playback and
-embed URLs. This is manifest discovery, not source-wide playback, accessibility,
-EPG or rights certification.
+The browser retains at most 100 link/media observations per page; classification
+retains at most 20 page leads per page. Cap omissions remain visible. The findings
+report distinguishes format-checked manifests from unverified page leads and
+deduplicates them against the relevant published routes and reviewed decisions.
+Neither class is source-wide playback, accessibility, EPG or rights certification.
 
 Generated plans, network results and findings are retained in
 `reports/automated/candidate-discovery/`. Network evidence is sanitized before
@@ -452,29 +481,40 @@ exact identities. A parent's catalogue match or source notes do not propagate to
 its chambers.
 
 Treat every `review` finding as research intake, not as an approved source.
-Confirm that it represents the intended legislature and a stable channel,
-record its official provenance, schedule behavior, accessibility evidence, and
-rights posture, then create a candidate record. Scheduled discovery does not
+Confirm the intended legislature, official provenance and stated viewing scope.
+For direct feeds, also verify endpoint stability. Record schedule behavior,
+accessibility evidence and rights posture, then create a candidate record. Scheduled discovery does not
 edit `data/channels.json` or `candidates/`.
 
-When a validated manifest is deliberately rejected, record the outcome in
-`data/discovery/reviewed-manifests.json`. The monthly workflow retains those
-findings in its report but does not reopen them as candidates. Use this only
-for evidence-backed dispositions such as a third-party relay, an executive
-broadcaster outside the catalogue scope, an insecure legacy endpoint, or a
-timestamped event manifest.
+Keep deliberately reviewed manifest outcomes in
+`data/discovery/reviewed-manifests.json`, and reviewed page-lead outcomes in the
+separate `data/discovery/reviewed-page-leads.json`. Both ledgers use the same
+decision fields: `country`, exactly one of `url`/`url_prefix`, `disposition`,
+`reviewed_on`, `reason` and evidence URLs. The document has
+`decision_version: 1` and a `decisions` list. Existing dispositions cover
+event-specific, insecure legacy, out-of-scope and third-party sources; page
+leads also support `not_legislative_content` and
+`not_a_viewing_or_programme_source`. Use these only for evidence-backed decisions.
+The monthly report retains matching findings as reviewed rather than repeatedly
+opening the same work. A disposition does not publish a new source.
 
 The workflow mirrors the current findings into one persistent
 `candidate-discovery` issue so the queue remains visible after artifacts expire.
 Reruns update that issue rather than creating duplicates. A zero-finding run
 with unchecked or capped work preserves the existing issue; incomplete scanning
-must not be described as a clean review.
+must not be described as a clean review. The issue shows the first 50 review
+rows and the Actions summary the first 20; the artifact retains the complete
+bounded findings and coverage report.
 
 The daily catalogue audit separately opens one `stream-regression` issue for
 each newly degraded `always_on` stream and closes it only when the health diff
-records a recovery. Event-based sources, isolated EPG failures, blocked
-supporting links, and browser-only noise stay in artifacts until the project
-has repeated-failure evidence strong enough to avoid notification churn.
+records `status: ok`. A warning, skipped/error result or missing baseline does
+not establish recovery. A `schedule-regression` issue opens after three
+consecutive source errors and closes only on that source's `status: ok` parsed
+result. An empty result or reset failure counter does not close an existing
+alert. Event-based sources, isolated EPG failures, blocked supporting links and
+browser-only findings remain documented without being treated as always-on
+stream regressions.
 CodeQL and Dependabot continue to use their native alerts and pull requests.
 
 The watchlist itself requires maintenance. General web search, new official

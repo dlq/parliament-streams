@@ -8,6 +8,7 @@ from the repository root unless stated otherwise.
 | [Catalogue scope](catalogue-scope.md) | Legislative authority, exclusions and borderline institutions |
 | [Architecture](architecture.md) | Canonical data, generated files and runtime responsibilities |
 | [Catalogue maintenance](catalogue-maintenance.md) | Candidate intake, edits, promotions and audit commands |
+| [GitHub Actions and review queues](github-actions.md) | Inventory versus catalogue checks, schedules, deployment gates and human review handoffs |
 | [Development and validation](development.md) | Setup, verification and live discovery tools |
 | [Public site and languages](public-site.md) | Playback, deployment, caching, localization and local previews |
 | [Public Legislatures page](https://dlq.ca/parliament-streams/institutions.html) | Working institution inventory, authority decisions, research gaps and ways to contribute evidence |

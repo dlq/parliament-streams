@@ -496,11 +496,7 @@ def compare_health_reports(before: dict[str, Any], after: dict[str, Any]) -> Hea
             for item in changed
             if STATUS_RANK.get(item["after"] or "", 1) > STATUS_RANK.get(item["before"] or "", 1)
         ],
-        "recoveries": [
-            item
-            for item in changed
-            if STATUS_RANK.get(item["after"] or "", 1) < STATUS_RANK.get(item["before"] or "", 1)
-        ],
+        "recoveries": [item for item in changed if item["after"] == "ok"],
     }
 
 

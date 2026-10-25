@@ -4,7 +4,7 @@ import io
 import socket
 import unittest
 from email.message import Message
-from http.client import IncompleteRead, RemoteDisconnected
+from http.client import HTTPConnection, IncompleteRead, RemoteDisconnected
 from typing import Any
 from unittest.mock import MagicMock, patch
 from urllib.error import HTTPError, URLError
@@ -88,6 +88,43 @@ class InstitutionInventoryFetchTests(unittest.TestCase):
         self.opener.open.return_value.read.assert_called_once_with(1001)
         self.assertIn("cafile", self.ssl.call_args.kwargs)
         self.dns.assert_called_with("www.parliament.ca", 443, type=socket.SOCK_STREAM)
+
+    def test_international_path_uses_http_encoding_after_public_host_checks(self) -> None:
+        original = "https://www.parlament.gov.rs/преноси/архива.2082.html"
+        encoded = (
+            "https://www.parlament.gov.rs/"
+            "%D0%BF%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%B8/"
+            "%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B0.2082.html"
+        )
+        item = source(original)
+
+        def open_request(request, *, timeout):
+            self.dns.assert_called_with("www.parlament.gov.rs", 443, type=socket.SOCK_STREAM)
+            self.assertEqual(request.full_url, encoded)
+            self.assertEqual(timeout, 5.0)
+            connection = HTTPConnection(request.host)
+            try:
+                connection.putrequest(request.get_method(), request.selector)
+            finally:
+                connection.close()
+            return response(url=encoded)
+
+        self.opener.open.side_effect = open_request
+        result = self.fetch(item)
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["source_id"], item["id"])
+        self.assertEqual(item["url"], original)
+        self.assertEqual(result["final_url"], encoded)
+
+        previous = {**prior(original), "final_url": encoded}
+        self.opener.open.side_effect = http_error(304, encoded)
+        result = self.fetch(item, previous)
+        self.assertTrue(result["ok"])
+        self.assertTrue(result["not_modified"])
+        self.assertEqual(result["source_id"], item["id"])
+        request = self.opener.open.call_args.args[0]
+        self.assertEqual(request.full_url, encoded)
+        self.assertEqual(request.get_header("If-none-match"), '"previous-version"')
 
     def test_initial_url_safety_is_rechecked_even_if_plan_claims_safe(self) -> None:
         for url in ("file:///private/data", "http://localhost/", "https://u:p@parl.ca/"):

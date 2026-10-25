@@ -21,6 +21,59 @@ const PAGE_TIMEOUT_MS = 20_000;
 const SETTLE_MS = 5_000;
 const MAX_PAGES_PER_COUNTRY = 4;
 const MAX_CONCURRENT_PAGES = 4;
+const MAX_PAGE_LINKS = 100;
+
+function foldHint(value) {
+  return value.normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase().replaceAll("ß", "ss").replaceAll("ς", "σ");
+}
+
+function pageLeadObservations(observations, { baseUrl, pageUrl, rules, limit = MAX_PAGE_LINKS }) {
+  if (!Number.isInteger(limit) || limit < 0) throw new Error("Page-link limit must be a nonnegative integer.");
+  const cap = Math.min(MAX_PAGE_LINKS, limit);
+  const terms = [rules.media_terms, rules.archive_terms, rules.programme_terms].flat().map(foldHint);
+  const providers = rules.provider_hosts.map((host) => host.toLowerCase());
+  const candidates = new Map();
+  for (const observation of observations) {
+    const tag = typeof observation.tag === "string" ? observation.tag.toLowerCase() : "";
+    if (!["a", "iframe", "video", "source", "link"].includes(tag)) continue;
+    const rawUrl = typeof observation.url === "string" ? observation.url.trim() : "";
+    if (rawUrl.startsWith("#") || (!rawUrl && tag !== "video")) continue;
+    let url;
+    try {
+      url = new URL(rawUrl || pageUrl, baseUrl);
+    } catch {
+      continue;
+    }
+    if (!["http:", "https:"].includes(url.protocol) || url.username || url.password) continue;
+    const text = (value) => typeof value === "string" ? value.replace(/\s+/gu, " ").trim() : "";
+    const label = text(observation.label).slice(0, 240);
+    const type = text(observation.type);
+    const rel = text(observation.rel);
+    if (tag === "link" && !rel.toLowerCase().split(/\s+/).includes("alternate")) continue;
+    let hintUrl = url.href;
+    try {
+      hintUrl = decodeURIComponent(hintUrl);
+    } catch {
+      // Malformed escapes should not discard an otherwise observable HTTP link.
+    }
+    const hint = foldHint(`${hintUrl} ${label} ${type} ${rel}`);
+    const knownProvider = providers.some((host) => url.hostname === host || url.hostname.endsWith(`.${host}`));
+    const recording = /\.(?:mp4|m4v|webm|mov|mp3|m4a|ogg|ogv|m3u8?|mpd)$/i.test(url.pathname);
+    const programme = /\.(?:xml(?:\.gz)?|xmltv(?:\.gz)?|ics|rss|atom)$/i.test(url.pathname);
+    const mediaType = /(?:video|audio)\/|mpegurl|dash\+xml|xmltv|rss\+xml|atom\+xml|text\/calendar/i.test(type);
+    const alternateData = tag === "link" && /xml|rss|atom|calendar/i.test(type);
+    if (!["video", "source"].includes(tag) && !knownProvider && !recording && !programme
+      && !mediaType && !alternateData && !terms.some((term) => term && hint.includes(term))) continue;
+    const candidate = { url: url.href, label, tag, type, rel };
+    const key = JSON.stringify([candidate.url, tag, type, rel]);
+    if (!candidates.has(key) || (!candidates.get(key).label && label)) candidates.set(key, candidate);
+  }
+  const rows = [...candidates.values()];
+  return {
+    page_links: rows.slice(0, cap),
+    page_links_omitted_by_cap: Math.max(0, rows.length - cap),
+  };
+}
 
 function parseArgs(argv) {
   const args = { inputs: [], output: null, maxPages: MAX_PAGES_PER_COUNTRY, budgetSeconds: 0 };
@@ -139,7 +192,7 @@ async function validateManifest(url) {
   }
 }
 
-async function inspectPage(browser, target, pageUrl) {
+async function inspectPage(browser, target, pageUrl, rules) {
   const context = await browser.newContext({
     userAgent: USER_AGENT,
     ignoreHTTPSErrors: true,
@@ -184,6 +237,7 @@ async function inspectPage(browser, target, pageUrl) {
   let pageStatus = null;
   let finalUrl = null;
   let loadNote = null;
+  let pageLinks = { page_links: [], page_links_omitted_by_cap: 0 };
   try {
     const response = await page.goto(pageUrl, {
       waitUntil: "domcontentloaded",
@@ -192,6 +246,22 @@ async function inspectPage(browser, target, pageUrl) {
     pageStatus = response?.status() ?? null;
     finalUrl = page.url();
     await page.waitForTimeout(SETTLE_MS);
+    const dom = await page.evaluate(() => ({
+      baseUrl: document.baseURI,
+      observations: [...document.querySelectorAll('a[href], iframe[src], video, video source[src], audio source[src], link[rel]')].map((element) => {
+        const tag = element.tagName.toLowerCase();
+        return {
+          url: element.getAttribute(tag === "a" || tag === "link" ? "href" : "src"),
+          label: (tag === "a" ? element.innerText || element.textContent : "")
+            || element.getAttribute("aria-label") || element.getAttribute("title") || "",
+          tag,
+          type: element.getAttribute("type") || "",
+          rel: element.getAttribute("rel") || "",
+        };
+      }),
+    }));
+    // These are source-page observations only. Do not navigate or validate them.
+    pageLinks = pageLeadObservations(dom.observations, { baseUrl: dom.baseUrl, pageUrl, rules });
     const html = await page.content();
     const staticMatches = html.match(/https?:\\?\/\\?\/[^"'<>\\s]+?\.(?:m3u8|mpd)(?:\?[^"'<>\\s]*)?|\/[^"'<>\\s]+?\.(?:m3u8|mpd)(?:\?[^"'<>\\s]*)?/gi) ?? [];
     for (const raw of staticMatches) {
@@ -223,11 +293,13 @@ async function inspectPage(browser, target, pageUrl) {
     responses,
     validations,
     page_errors: errors.slice(0, 5),
+    ...pageLinks,
   };
 }
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  const rules = await readJson(new URL("../parliament_streams/page_lead_rules.json", import.meta.url));
   const { chromium } = loadPlaywright();
   const targets = await collectTargets(args.inputs, args.maxPages);
   const deadline = args.budgetSeconds ? Date.now() + args.budgetSeconds * 1000 : Infinity;
@@ -249,11 +321,12 @@ async function main() {
         pageResults[taskIndex] = {
           country: target.country, tier_report: target.tier_report, page_url: pageUrl,
           status: "unattempted", load_note: "Network budget exhausted", validations: [],
+          page_links: [], page_links_omitted_by_cap: 0,
         };
         continue;
       }
       console.log(`INSPECT ${target.country} page ${taskIndex + 1}/${pageTasks.length}`);
-      pageResults[taskIndex] = await inspectPage(browser, target, pageUrl);
+      pageResults[taskIndex] = await inspectPage(browser, target, pageUrl, rules);
     }
   }
   const workerCount = Math.min(MAX_CONCURRENT_PAGES, pageTasks.length);
@@ -298,9 +371,9 @@ async function main() {
 
   const report = {
     checked_at: new Date().toISOString().replace(/\.\d{3}Z$/, "Z"),
-    scope: "Deep browser validation of Tier 1 and Tier 2 official/discovery pages from static reports.",
+    scope: "Browser manifest checks and unverified page-link observations for maintained institutional and catalogue routes.",
     method:
-      "Headless Chromium loads official/discovery pages, waits for scripts/player requests, captures .m3u8/.mpd network and DOM references, then validates discovered manifests. This does not solve authenticated, geo-blocked, DRM, or interaction-gated players.",
+      "Muted Chromium loads maintained pages, records bounded DOM link/media observations separately, captures .m3u8/.mpd network references, and checks discovered manifest formats. Observed links are not followed to establish ownership, legislative content, programme mapping or rights. Authenticated, geo-blocked, DRM and interaction-gated players remain unresolved.",
     inputs: args.inputs,
     countries: [...countries.values()],
     pages: pageResults,
@@ -324,5 +397,5 @@ async function main() {
   console.log(`REPORT ${args.output}`);
 }
 
-export { collectTargets, parseArgs };
+export { collectTargets, pageLeadObservations, parseArgs };
 if (process.argv[1] && new URL(import.meta.url).pathname === process.argv[1]) await main();

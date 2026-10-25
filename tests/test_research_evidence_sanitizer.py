@@ -32,6 +32,20 @@ def synthetic_keys() -> list[str]:
 
 
 class ResearchEvidenceSanitizerTests(unittest.TestCase):
+    def test_array_and_dotted_credential_parameters_are_redacted(self) -> None:
+        for name in ["token[]", "token%5B%5D", "access_token[]", "auth.token", "refreshToken[]"]:
+            with self.subTest(name=name):
+                value = sanitize_value(
+                    {
+                        "page_links": [
+                            {"url": f"https://example.org/video?{name}=dummy-private&lang=fr"}
+                        ]
+                    }
+                )
+                text = json.dumps(value)
+                self.assertNotIn("dummy-private", text)
+                self.assertIn(REDACTED, text)
+
     def test_google_maps_query_is_redacted_without_losing_context(self) -> None:
         url = "https://www.google.com/maps/embed/v1/place?key=" + synthetic_keys()[0]
         url += "&q=Legislature&language=en#map"

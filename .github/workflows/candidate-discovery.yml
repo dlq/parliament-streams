@@ -43,6 +43,7 @@ jobs:
           uv run --locked python tools/validate_discovery_targets.py \
             data/discovery/tier1.json data/discovery/tier2.json
           uv run --locked python tools/validate_discovery_decisions.py
+          uv run --locked python tools/validate_discovery_decisions.py data/discovery/reviewed-page-leads.json
           jq -e '.target_version == 1 and .tier == "tier1" and (.countries | length) == 25' data/discovery/tier1.json
           jq -e '.target_version == 1 and .tier == "tier2" and (.countries | length) == 46' data/discovery/tier2.json
 
@@ -80,7 +81,7 @@ jobs:
             fi
           done
 
-      - name: Identify uncatalogued validated manifests
+      - name: Identify new manifests and viewing or programme page leads
         run: |
           uv run --locked python tools/summarize_discovery_audit.py \
             --static reports/automated/candidate-discovery/tier1-static.json \
@@ -125,7 +126,7 @@ jobs:
               if [[ "$state" == "OPEN" ]]; then
                 gh issue close "$number" \
                   --reason completed \
-                  --comment "The latest monthly discovery run found no uncatalogued validated manifests. Evidence: $RUN_URL"
+                  --comment "The latest complete monthly discovery run found no new manifest or viewing/programme-page leads requiring review. Evidence: $RUN_URL"
               fi
             fi
             exit 0
@@ -133,17 +134,18 @@ jobs:
           {
             echo "## Automated candidate discovery"
             echo
-            echo "The latest monthly Tier 1 and Tier 2 audit found **$review_count** validated manifest(s) that are not represented by a catalogue playback or embed URL."
+            echo "The latest monthly scan found **$review_count** manifests or viewing/programme-page leads requiring review."
+            jq -r '.counts | "Manifest formats checked: \(.validated); unverified page leads: \(.page_leads). Page observations do not establish official ownership, legislative content, playback, schedules or rights."' reports/automated/candidate-discovery/findings.json
             echo
             echo "Coverage: $(jq -r '.coverage.counts | "\(.eligible_identities) eligible identities; \(.identities_with_page_routes) with page routes; \(.identities_without_page_routes) source gaps; \(.catalogue_records_with_page_routes)/\(.catalogue_records) published sources included"' reports/automated/candidate-discovery/findings.json). Source, access, skipped or capped gaps: $incomplete."
             echo
             echo "These are research leads, not approved catalogue records. Confirm institutional identity, official provenance, channel stability, schedule semantics, accessibility, and rights before promotion."
             echo
-            echo "| Tier | Country | Type | URL |"
-            echo "| --- | --- | --- | --- |"
-            jq -r '.findings[] | select(.status == "review") | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/automated/candidate-discovery/findings.json
+            echo "| Tier | Country | Type | URL excerpt | Observed on |"
+            echo "| --- | --- | --- | --- | --- |"
+            jq -r 'def short: gsub("[`|]"; "_") | if length > 120 then .[0:117] + "…" else . end; [.findings[] | select(.status == "review")][0:50][] | "| \(.tier) | \(.country) | \(.kind) | `\(.url | short)` | `\(.source_page // "manifest check" | short)` |"' reports/automated/candidate-discovery/findings.json
             echo
-            echo "[Workflow evidence and downloadable reports]($RUN_URL)"
+            echo "First 50 leads shown with bounded URL excerpts; complete findings and explicit skipped/capped checks: [workflow reports]($RUN_URL)."
           } > candidate-discovery-issue.md
           if [[ -n "$number" ]]; then
             gh issue edit "$number" --body-file candidate-discovery-issue.md
@@ -167,17 +169,18 @@ jobs:
             echo "This is review evidence. No catalogue records were changed automatically."
             echo
             if [[ -f reports/automated/candidate-discovery/findings.json ]]; then
-              jq -r '"Validated manifests: \(.counts.validated); already catalogued: \(.counts.catalogued); previously reviewed: \(.counts.reviewed); requiring review: \(.counts.review)"' reports/automated/candidate-discovery/findings.json
+              jq -r '"Manifest formats checked: \(.counts.validated); unverified page leads: \(.counts.page_leads); already catalogued: \(.counts.catalogued); previously reviewed: \(.counts.reviewed); requiring review: \(.counts.review)"' reports/automated/candidate-discovery/findings.json
               echo
               jq -r '.coverage.counts | "Eligible identities: \(.eligible_identities); with page routes: \(.identities_with_page_routes); explicit source gaps: \(.identities_without_page_routes); published sources: \(.catalogue_records_with_page_routes)/\(.catalogue_records)"' reports/automated/candidate-discovery/findings.json
               jq -r '.coverage.network_checks | "Unchecked static targets: \(.static_unattempted); unchecked browser pages: \(.browser_unattempted); omitted by page cap: \(.browser_pages_omitted_by_cap); omitted by manifest cap: \(.browser_manifests_omitted_by_cap)"' reports/automated/candidate-discovery/findings.json
+              jq -r '.coverage.network_checks | "Page leads omitted by static cap: \(.static_page_leads_omitted_by_cap); rendered links omitted: \(.browser_page_links_omitted_by_cap); rendered leads omitted: \(.browser_page_leads_omitted_by_cap)"' reports/automated/candidate-discovery/findings.json
               echo "Plans include all maintained eligible identities; successful access, media validation and promotions remain separate. Month-based ordering rotates budget-limited checks."
               echo
               echo "### Review queue"
               echo
               echo "| Tier | Country | Type | URL |"
               echo "| --- | --- | --- | --- |"
-              jq -r '[.findings[] | select(.status == "review")][0:20][] | "| \(.tier) | \(.country) | \(.kind) | `\(.url)` |"' reports/automated/candidate-discovery/findings.json
+              jq -r 'def short: gsub("[`|]"; "_") | if length > 120 then .[0:117] + "…" else . end; [.findings[] | select(.status == "review")][0:20][] | "| \(.tier) | \(.country) | \(.kind) | `\(.url | short)` |"' reports/automated/candidate-discovery/findings.json
             else
               echo "The discovery run did not produce a findings report. Inspect the job log."
             fi
