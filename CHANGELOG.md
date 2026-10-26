@@ -1,12 +1,88 @@
 # Changelog
 
+## 25 October — Accessible Map Navigation And Shared Data Explanation
+
+Expose native map search results beside the field, with announced counts and
+explicit selection. Replace hundreds of graphic Tab stops with one entry and
+arrow/Home/End browsing; preserve selection and focus through the detail heading,
+and distinguish selection with a dashed boundary. National/international index
+selection resets a previous regional zoom. Mobile details remain reachable.
+
+Add a localized Data and method page with the inventory → catalogue → checks →
+generated products explanation, stable asset links, coverage/rights limits and
+contribution paths. All five pages share Data and method, Contribute and Code
+utilities. Narrow navigation uses two readable rows, and introductory utilities
+remain compact on phones. New interface copy covers all 23 locales; fluent review
+and physical assistive-technology/device checks remain follow-up work.
+
+Remove the visitor-facing XML sitemap links and align the shared footer order
+across all five pages. The XML sitemap remains available for search engines.
+
+Align secondary-page title sizes, top padding, introductory spacing and section
+heading scales through shared responsive tokens. Add a pale green wash to the
+shared Data and method strip, contribution areas and map location explanations.
+Preserve the catalogue hero, compact list rows and existing red action links.
+
+Separate viewing/checks from reuse permissions, omit duplicate source-kind labels,
+clarify the parser-connected schedule metric and global IPTV download scope.
+Schedule gaps distinguish missing automation, source errors, empty windows and
+unavailable products, exposing official links and clear-filter recovery. Retained
+listings show their last successful collection; guide-quality labels require a
+matching publication timestamp. No catalogue admission or source rights change.
+
+HTML validation, the muted browser/Axe regression suite, eight JavaScript unit
+tests and generated-data/publication checks pass. Browser coverage includes all
+23 Data-page locales at 320px, map keyboard/search recovery, schedule gap states,
+local-file navigation and the existing viewer-timezone/bidirectional text cases.
+The heading/colour follow-up also checks all 23 locales on all five pages at
+320px, with no horizontal overflow, and verifies text contrast on the pale green.
+
+## 25 October — Public Pages UI/UX Audit
+
+Review the catalogue, legislature inventory, coverage map and schedule on
+desktop/mobile, with keyboard, empty-state and narrow translated-layout checks.
+Save 25 original screenshots, observed focus evidence and prioritized
+[audit findings](reports/ui/2026-10-25-audit.md). Record implementation and manual
+accessibility follow-up in the plans; preserve the compact lists and visual
+identity. This audit does not implement a redesign or certify WCAG conformance.
+
+## 25 October — Second EPG Pass And Honest Empty Results
+
+Add scoped Knesset Channel 99 and Brazil TV Senado programme collectors, plus
+start-only Czech Chamber and Estonian plenary parsers with exact feed mappings.
+Knesset midnight continuation requires an explicit connected end; named source
+zones and unresolved DST clocks retain their existing safeguards. New Zealand's
+unrendered Blazor calendar now reports a source error while rendered calendars,
+House status and genuine empty months remain compatible.
+
+The measured local preview at 21:04 UTC on 25 October, **not yet a completed
+deployment**, has 598 events, 474 with ends and 270 XMLTV programmes across six
+channels, including 129 Knesset and 59 TV Senado programmes. TV Senado infers ends
+only within each dated daily linear table. The earlier second-pass preview had
+272; one CPAC and one Knesset programme elapsed before this collection.
+The first-pass checkpoint remains 83 programmes across four channels. There are
+41 parser-connected catalogue entries, 20 collectors,
+24 implemented URLs and 12 reviewed mappings; 229 entries retain planned
+extraction. The catalogue remains at 270 sources. Playlists remain four stable /
+38 broader entries, with guides on three broader feeds; 42 XMLTV definitions
+do not imply 42 populated guides or new playback rights.
+
+Document Greece's non-programme GRNET alternative, unavailable current Sansad
+indexes, EBS end-time placeholders, Thailand's monthly PDF timing conflicts and
+other access/mapping holds. No claim is made that every planned URL was fetched.
+All 427 Python tests and eight Node tests pass; strict mypy checks 65 Python
+source files, and combined runtime statement/branch coverage is 93.28%.
+[Second-pass results](reports/epg/2026-10-25-second-pass-coverage.md) and
+[measured coverage](reports/epg/2026-10-25-second-pass-coverage.json).
+
 ## 25 October — Broader, Feed-Specific EPG Coverage
 
 Add official Dutch room agendas, a dated Spain Canal Parlamento collector and
 Quebec's separately identified linear Canal de l'Assemblée. The new Quebec
 official viewing-page entry brings the catalogue to 270 sources and retains its
 exact inventory crosswalk, existing map/flag/search support and conservative
-playback policy. Thirty-seven catalogue entries now have implemented parsers.
+playback policy. At this first-pass checkpoint, 37 catalogue entries have
+implemented parsers.
 
 Recover published Canadian event ends, retain EBS fractional durations and
 official identities, require the Italian Senate's exact WebTV1/13440 feed, and
@@ -15,7 +91,7 @@ mappings remain unresolved. UTC serialization rejects naive clocks and source
 localization rejects unresolved DST gaps/folds; browser checks verify actual
 catalogue/schedule times in Toronto, Amsterdam and Auckland.
 
-The fresh local export validates 83 programmes across four channels, compared
+The first-pass local export validates 83 programmes across four channels, compared
 with the preceding checked deployment's 51 across two; 31 programmes belong to
 the newly covered Dutch and Quebec feeds. Playlist admission remains unchanged.
 EPG quality now reports every catalogue entry's parser/collection/mapping/guide

@@ -25,7 +25,7 @@ const fallbackCountryNames = {
 
 const query = new URLSearchParams(window.location.search);
 const locale = supportedLocale(query.get("lang") ?? readLocalePreference() ?? navigator.language);
-const state = { channels: [], supranational: [], geometry: null, subnationalGeometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null };
+const state = { channels: [], supranational: [], geometry: null, subnationalGeometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null, mapFocusKey: null };
 const elements = {
   map: document.querySelector("#world-map"),
   detail: document.querySelector("#map-detail"),
@@ -38,7 +38,11 @@ const elements = {
   workspace: document.querySelector(".map-workspace"),
   locale: document.querySelector("#locale-select"),
   modes: document.querySelectorAll("[data-mode]"),
+  index: document.querySelector("#jurisdiction-index"),
+  layout: document.querySelector(".map-layout"),
 };
+const indexPosition = document.createComment("jurisdiction index home");
+elements.index.before(indexPosition);
 
 function t(key, values) {
   return message(state.locale, key, values);
@@ -99,6 +103,9 @@ function applyStaticTranslations() {
   elements.modes.forEach((button) => { button.textContent = modeLabels[button.dataset.mode]; });
   document.querySelector("#map-search-label").textContent = mt("find");
   elements.search.placeholder = mt("find");
+  document.querySelector("#map-search-help").textContent = mt("searchHelp");
+  document.querySelector("#map-keyboard-help").textContent = mt("keyboardHelp");
+  document.querySelector("#map-index-link").textContent = `${mt("browseJurisdictions")} ↓`;
   elements.workspace.setAttribute("aria-label", mt("mapLabel"));
   document.querySelector("#world-map-title").textContent = mt("mapLabel");
   document.querySelector("#world-map-description").textContent = mt("mapDescription");
@@ -220,6 +227,27 @@ function renderSourceList(channels) {
 }
 
 function renderDetail() {
+  renderDetailContent();
+  const heading = elements.detail.querySelector("h2");
+  if (heading) {
+    heading.id = "map-detail-title";
+    heading.tabIndex = -1;
+  }
+}
+
+function revealSelectedDetail() {
+  elements.detail.querySelector("h2")?.focus({ preventScroll: true });
+  elements.detail.scrollIntoView({
+    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+    block: "nearest",
+  });
+}
+
+function revealMapSelection(event) {
+  if (event?.type === "keydown" || window.matchMedia("(max-width: 900px)").matches) revealSelectedDetail();
+}
+
+function renderDetailContent() {
   if (state.mode === "supranational") {
     const organization = selectedOrganization();
     const members = new Set(organization.member_country_codes);
@@ -240,6 +268,7 @@ function renderDetail() {
         state.selectedSupranationalCountry = null;
         renderMap();
         renderDetail();
+        revealSelectedDetail();
       });
       return;
     }
@@ -268,6 +297,7 @@ function renderDetail() {
     elements.detail.querySelector("[data-parent-code]").addEventListener("click", () => {
       state.selectedRegion = null;
       render();
+      revealSelectedDetail();
     });
     return;
   }
@@ -293,17 +323,26 @@ function modeIncludes(group) {
   return state.mode === "all" || group.level === state.mode;
 }
 
+function jurisdictionDisplayName(group) {
+  const organization = group.level === "supranational" ? state.supranational.find((candidate) => candidate.catalogue_jurisdiction === group.name) : null;
+  return organization ? organizationName(organization) : group.level === "national" ? countryName(nationalCode(group.channels[0])) : jurisdictionName(group.name);
+}
+
 function visibleJurisdictions() {
   const needle = normalizeSearchText(state.search.trim());
   return groupedJurisdictions()
     .filter(modeIncludes)
     .filter((group) => {
-      const organization = group.level === "supranational" ? state.supranational.find((candidate) => candidate.catalogue_jurisdiction === group.name) : null;
-      const displayName = organization ? organizationName(organization) : group.level === "national" ? countryName(nationalCode(group.channels[0])) : jurisdictionName(group.name);
+      const displayName = jurisdictionDisplayName(group);
       const countryNames = group.channels.map((channel) => countrySearchTerms(state.locale, channel)).join(" ");
       return !needle || normalizeSearchText(`${displayName} ${countryNames} ${group.name} ${group.channels.map((channel) => `${channel.name} ${channel.legislature}`).join(" ")}`).includes(needle);
     })
-    .sort((a, b) => jurisdictionName(a.name).localeCompare(jurisdictionName(b.name), state.locale));
+    .sort((a, b) => {
+      const exactA = needle && [a.name, jurisdictionDisplayName(a)].some((name) => normalizeSearchText(name) === needle);
+      const exactB = needle && [b.name, jurisdictionDisplayName(b)].some((name) => normalizeSearchText(name) === needle);
+      return Number(Boolean(exactB)) - Number(Boolean(exactA))
+        || jurisdictionDisplayName(a).localeCompare(jurisdictionDisplayName(b), state.locale);
+    });
 }
 
 function selectJurisdiction(group) {
@@ -313,6 +352,7 @@ function selectJurisdiction(group) {
     state.selectedCode = subnationalParents[group.name];
     state.selectedRegion = group.name;
   }
+  state.mapFocusKey = group.level === "subnational" ? `region:${group.name}` : `country:${state.selectedCode}`;
   if (group.level === "supranational") {
     state.mode = "supranational";
     const organization = state.supranational.find((candidate) => candidate.catalogue_jurisdiction === group.name);
@@ -320,23 +360,34 @@ function selectJurisdiction(group) {
     state.selectedSupranationalCountry = null;
   }
   render();
-  focusSelectedFeature();
-  document.querySelector("#map-detail").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  if (group.level === "subnational") focusSelectedFeature();
+  else resetMapView();
+  revealSelectedDetail();
 }
 
 function renderJurisdictionList() {
   const groups = visibleJurisdictions();
-  elements.visibleCount.textContent = `${formatNumber(groups.length)} / ${formatNumber(groupedJurisdictions().length)}`;
+  const focusedKey = elements.list.contains(document.activeElement) ? document.activeElement.dataset.jurisdiction : null;
+  const searching = Boolean(state.search.trim());
+  elements.index.classList.toggle("is-search-results", searching);
+  document.querySelector("#map-search-help").hidden = !searching;
+  if (searching && elements.index.parentElement !== elements.workspace) elements.layout.before(elements.index);
+  else if (!searching && elements.index.parentNode !== indexPosition.parentNode) indexPosition.after(elements.index);
+  const count = `${formatNumber(groups.length)} / ${formatNumber(groupedJurisdictions().length)}`;
+  if (elements.visibleCount.dataset.count !== count) {
+    elements.visibleCount.dataset.count = count;
+    elements.visibleCount.innerHTML = `<span class="visually-hidden">${escapeHtml(mt("jurisdictions"))}: </span>${count}`;
+  }
   elements.list.innerHTML = groups.map((group) => {
     const selected = groupIsSelected(group);
-    const organization = group.level === "supranational" ? state.supranational.find((candidate) => candidate.catalogue_jurisdiction === group.name) : null;
-    const displayName = organization ? organizationName(organization) : group.level === "national" ? countryName(nationalCode(group.channels[0])) : jurisdictionName(group.name);
+    const displayName = jurisdictionDisplayName(group);
     return `<li><button type="button" data-jurisdiction="${escapeHtml(group.level)}:${escapeHtml(group.name)}" class="${selected ? "is-selected" : ""}" aria-pressed="${selected}"><strong>${escapeHtml(displayName)}</strong><small>${escapeHtml(levelLabel(group.level))} · ${escapeHtml(sourceCount(state.locale, group.channels.length))}</small></button></li>`;
-  }).join("");
+  }).join("") || `<li class="map-search-empty">${escapeHtml(mt("noMatches"))}</li>`;
   elements.list.querySelectorAll("[data-jurisdiction]").forEach((button) => button.addEventListener("click", () => {
     const group = groups.find((candidate) => `${candidate.level}:${candidate.name}` === button.dataset.jurisdiction);
     if (group) selectJurisdiction(group);
   }));
+  if (focusedKey) [...elements.list.querySelectorAll("button")].find((button) => button.dataset.jurisdiction === focusedKey)?.focus({ preventScroll: true });
 }
 
 function groupIsSelected(group) {
@@ -398,7 +449,42 @@ function positionInstitutionLocations(svg, scale) {
     .attr("visibility", (feature) => positions.get(feature.properties.name).displaced ? "visible" : "hidden");
 }
 
+function mapButtons() {
+  return [...elements.map.querySelectorAll('[data-map-key][role="button"]')]
+    .sort((left, right) => left.getAttribute("aria-label").localeCompare(right.getAttribute("aria-label"), state.locale));
+}
+
+function updateMapTabStops() {
+  const buttons = mapButtons();
+  const current = buttons.find((button) => button.dataset.mapKey === state.mapFocusKey)
+    ?? buttons.find((button) => button.getAttribute("aria-pressed") === "true")
+    ?? buttons[0];
+  state.mapFocusKey = current?.dataset.mapKey ?? null;
+  buttons.forEach((button) => { button.tabIndex = button === current ? 0 : -1; });
+}
+
+function navigateMap(event) {
+  if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"].includes(event.key)) return;
+  const current = event.target.closest('[data-map-key][role="button"]');
+  if (!current) return;
+  const buttons = mapButtons();
+  if (!buttons.length) return;
+  event.preventDefault();
+  const index = buttons.indexOf(current);
+  const next = event.key === "Home" ? 0 : event.key === "End" ? buttons.length - 1
+    : (index + (["ArrowLeft", "ArrowUp"].includes(event.key) ? -1 : 1) + buttons.length) % buttons.length;
+  // Browsing may cross continents. A zoomed viewport must not hide the next
+  // keyboard target; overview navigation leaves selection unchanged.
+  if (state.zoom && d3.zoomTransform(elements.map).k !== 1) {
+    d3.select(elements.map).interrupt().call(state.zoom.transform, d3.zoomIdentity);
+  }
+  state.mapFocusKey = buttons[next].dataset.mapKey;
+  updateMapTabStops();
+  buttons[next].focus({ preventScroll: true });
+}
+
 function renderMap() {
+  const mapHadFocus = elements.map.contains(document.activeElement);
   const { width, height } = mapDimensions();
   const projection = d3.geoNaturalEarth1().fitExtent([[10, 14], [width - 10, height - 14]], state.geometry);
   const path = d3.geoPath(projection);
@@ -425,17 +511,23 @@ function renderMap() {
     })
     .attr("d", path)
     .attr("role", (feature) => (state.mode === "supranational" ? members : covered).has(canonicalFeatureCode(feature)) ? "button" : null)
-    .attr("tabindex", (feature) => (state.mode === "supranational" ? members : covered).has(canonicalFeatureCode(feature)) ? 0 : null)
+    .attr("tabindex", (feature) => (state.mode === "supranational" ? members : covered).has(canonicalFeatureCode(feature)) ? -1 : null)
+    .attr("data-map-key", (feature) => `country:${canonicalFeatureCode(feature)}`)
+    .attr("aria-pressed", (feature) => {
+      const code = canonicalFeatureCode(feature);
+      if (!(state.mode === "supranational" ? members : covered).has(code)) return null;
+      return String(state.mode === "supranational" ? code === state.selectedSupranationalCountry : code === state.selectedCode && !state.selectedRegion);
+    })
     .attr("aria-label", (feature) => {
       const code = canonicalFeatureCode(feature);
       if (state.mode === "supranational" && members.has(code)) return `${countryName(code)}, ${relationshipLabel(organization)}`;
       return covered.has(code) ? `${countryName(code)}, ${mt("documented")}` : null;
     })
-    .on("click", (_, feature) => selectCountry(feature, state.mode === "supranational" ? members : covered))
+    .on("click", (event, feature) => selectCountry(feature, state.mode === "supranational" ? members : covered, event))
     .on("keydown", (event, feature) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
-        selectCountry(feature, state.mode === "supranational" ? members : covered);
+        selectCountry(feature, state.mode === "supranational" ? members : covered, event);
       }
     });
 
@@ -459,11 +551,13 @@ function renderMap() {
     .attr("d", path)
     .attr("data-jurisdiction", (feature) => feature.properties.name)
     .attr("role", (feature) => needsMarker(feature) ? null : "button")
-    .attr("tabindex", (feature) => needsMarker(feature) ? null : 0)
+    .attr("tabindex", (feature) => needsMarker(feature) ? null : -1)
+    .attr("data-map-key", (feature) => `region:${feature.properties.name}`)
+    .attr("aria-pressed", (feature) => needsMarker(feature) ? null : String(feature.properties.name === state.selectedRegion))
     .attr("aria-label", (feature) => needsMarker(feature) ? null : regionLabel(feature))
-    .on("click", (_, feature) => selectRegion(feature))
+    .on("click", (event, feature) => selectRegion(feature, event))
     .on("keydown", (event, feature) => {
-      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature); }
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature, event); }
     });
 
   // Tiny island outlines need a visible location dot at world scale. Their
@@ -479,11 +573,13 @@ function renderMap() {
     .attr("cy", (feature) => projection(d3.geoCentroid(feature))[1])
     .attr("r", 3.5 / d3.zoomTransform(elements.map).k)
     .attr("role", "button")
-    .attr("tabindex", 0)
+    .attr("tabindex", -1)
+    .attr("data-map-key", (feature) => `region:${feature.properties.name}`)
+    .attr("aria-pressed", (feature) => String(feature.properties.name === state.selectedRegion))
     .attr("aria-label", regionLabel)
-    .on("click", (_, feature) => selectRegion(feature))
+    .on("click", (event, feature) => selectRegion(feature, event))
     .on("keydown", (event, feature) => {
-      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature); }
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature, event); }
     });
 
   // Location markers identify an institution's seat, never a territorial extent.
@@ -501,23 +597,33 @@ function renderMap() {
     .attr("data-jurisdiction", (feature) => feature.properties.name)
     .attr("data-geometry-scope", "institution_location")
     .attr("role", "button")
-    .attr("tabindex", 0)
+    .attr("tabindex", -1)
+    .attr("data-map-key", (feature) => `region:${feature.properties.name}`)
+    .attr("aria-pressed", (feature) => String(feature.properties.name === state.selectedRegion))
     .attr("aria-label", (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("institutionLocation")}, ${mt("documented")}`)
-    .on("click", (_, feature) => selectRegion(feature))
+    .on("click", (event, feature) => selectRegion(feature, event))
     .on("keydown", (event, feature) => {
-      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature); }
+      if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature, event); }
     });
   positionInstitutionLocations(svg, d3.zoomTransform(elements.map).k);
+  updateMapTabStops();
+  // Resizing can replace a tiny area's outline with its location dot. Keep
+  // keyboard focus on the same jurisdiction when its SVG representation changes.
+  if (mapHadFocus && !document.activeElement?.matches('[data-map-key][role="button"]')) {
+    elements.map.querySelector('[role="button"][tabindex="0"]')?.focus({ preventScroll: true });
+  }
 }
 
-function selectCountry(feature, covered) {
+function selectCountry(feature, covered, event) {
   const code = canonicalFeatureCode(feature);
   if (!covered.has(code)) return;
+  state.mapFocusKey = `country:${code}`;
   if (state.mode === "supranational") {
     state.selectedSupranationalCountry = code;
     renderMap();
     renderDetail();
     renderJurisdictionList();
+    revealMapSelection(event);
     return;
   }
   state.selectedCode = code;
@@ -526,15 +632,18 @@ function selectCountry(feature, covered) {
   renderDetail();
   renderJurisdictionList();
   if (state.mode === "subnational") zoomToFeature(feature, 5);
+  revealMapSelection(event);
 }
 
-function selectRegion(feature) {
+function selectRegion(feature, event) {
   state.selectedCode = feature.properties.parent_code;
   state.selectedRegion = feature.properties.name;
+  state.mapFocusKey = `region:${feature.properties.name}`;
   renderMap();
   renderDetail();
   renderJurisdictionList();
   zoomToFeature(feature, 8);
+  revealMapSelection(event);
 }
 
 function zoomToFeature(feature, maximumScale) {
@@ -648,8 +757,19 @@ async function init() {
   elements.search.addEventListener("input", () => { state.search = elements.search.value; renderJurisdictionList(); });
   elements.search.addEventListener("keydown", (event) => {
     if (event.key !== "Enter") return;
-    const first = visibleJurisdictions()[0];
-    if (first) selectJurisdiction(first);
+    event.preventDefault();
+    (elements.list.querySelector("button") ?? document.querySelector("#jurisdiction-index-title")).focus();
+  });
+  document.querySelector("#map-index-link").addEventListener("click", (event) => {
+    event.preventDefault();
+    document.querySelector("#jurisdiction-index-title").focus();
+  });
+  elements.map.addEventListener("keydown", navigateMap);
+  elements.map.addEventListener("focusin", (event) => {
+    const button = event.target.closest('[data-map-key][role="button"]');
+    if (!button) return;
+    state.mapFocusKey = button.dataset.mapKey;
+    updateMapTabStops();
   });
   setupZoom();
   render();
@@ -661,6 +781,6 @@ async function init() {
 }
 
 init().catch((error) => {
-  elements.detail.innerHTML = `<h2>${escapeHtml(mt("mapUnavailable"))}</h2><p class="map-detail-empty">${escapeHtml(error.message)}</p>`;
+  elements.detail.innerHTML = `<h2 id="map-detail-title" tabindex="-1">${escapeHtml(mt("mapUnavailable"))}</h2><p class="map-detail-empty">${escapeHtml(error.message)}</p>`;
 });
 })();

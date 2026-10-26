@@ -11,7 +11,8 @@ schedules and evidence about source access, accessibility and reuse.
 **[Catalogue](https://dlq.ca/parliament-streams/)** ·
 **[Legislatures](https://dlq.ca/parliament-streams/institutions.html)** ·
 **[Coverage map](https://dlq.ca/parliament-streams/map.html)** ·
-**[Programme guide](https://dlq.ca/parliament-streams/schedule.html)**
+**[Programme guide](https://dlq.ca/parliament-streams/schedule.html)** ·
+**[Data and method](https://dlq.ca/parliament-streams/data.html)**
 
 ## Help Improve The Catalogue
 

@@ -152,6 +152,13 @@ async function assertPlaybackColumnAlignment(page) {
   }
 }
 
+async function selectMapSearchResult(page, query) {
+  await page.locator("#map-search").fill(query);
+  const results = page.locator("#jurisdiction-list button");
+  assert.equal(await results.count(), 1, `${query}: expected an explicit unique map result`);
+  await results.first().click();
+}
+
 async function assertPageMetadata(page, path = '') {
   const canonical = `https://dlq.ca/parliament-streams/${path}`;
   assert.match(await page.title(), /Parliament Streams/);
@@ -182,6 +189,7 @@ async function assertIptvDisclosure(page) {
   assert.equal(await disclosure.getAttribute('open'), null);
   await disclosure.locator(':scope > summary').click();
   const paths = ['stable-hls.m3u', 'validated-hls.m3u', 'epg.xml'];
+  assert.match(await disclosure.locator('.iptv-scope').innerText(), /global.*filters do not change/);
   await page.evaluate(() => {
     Object.defineProperty(navigator, 'clipboard', {
       configurable: true,
@@ -228,6 +236,8 @@ async function assertIptvLocales(page, localeSelect) {
     assert.equal(await disclosure.locator('.iptv-vlc li').count(), 3);
     assert.equal(await disclosure.locator('.iptv-vlc a').getAttribute('hreflang'), 'en');
     if (locale !== 'en') assert.doesNotMatch(await disclosure.locator('.iptv-vlc > summary').innerText(), /VLC desktop instructions/);
+    assert((await disclosure.locator('.iptv-scope').innerText()).trim());
+    if (locale !== 'en') assert.doesNotMatch(await disclosure.locator('.iptv-scope').innerText(), /These playlists are global/);
     await page.evaluate(() => {
       Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async (url) => { window.__iptvCopied = url; } } });
     });
@@ -293,6 +303,11 @@ async function assertViewerTimezones(browser, baseUrl) {
     ["cpac-ca", "Toronto DST", "2026-11-01T05:30:00Z", "2026-11-01T06:30:00Z", "America/Toronto"],
     ["new-zealand-parliament", "Auckland DST", "2026-09-26T13:30:00Z", "2026-09-26T14:30:00Z", "Pacific/Auckland"],
   ];
+  const hebrew = {
+    id: "israel-knesset-channel",
+    titles: ["דיון בתקציב 2027 (Finance)", "ועדת הכנסת – <b>תקציב</b> & חקיקה"],
+    rooms: ["חדר ועדה 2 (קומה 1)", "אולם המליאה – <עדכון>"],
+  };
   const snapshot = {
     generated_at: "2026-09-01T12:00:00Z",
     channels: Object.fromEntries(fixtures.map(([id, title, start, next, sourceTimezone]) => [id, {
@@ -306,6 +321,18 @@ async function assertViewerTimezones(browser, baseUrl) {
       events: [{ start, source_timezone: sourceTimezone }, { start: next, source_timezone: sourceTimezone }],
     }])),
   };
+  snapshot.channels[hebrew.id] = {
+    current_event_title: hebrew.titles[0],
+    current_event_language: "he",
+    current_event_location: hebrew.rooms[0],
+    current_event_url: "https://www.knesset.tv/",
+    current_event_start: fixtures[0][2],
+    next_event_title: hebrew.titles[1],
+    next_event_language: "he",
+    next_event_location: hebrew.rooms[1],
+    next_event_start: fixtures[0][3],
+    fetched_at: snapshot.generated_at,
+  };
   // Independently specified civil days, clocks and offset names. Computing the
   // expected values with the same Intl formatter would hide timezone mistakes.
   const cases = [
@@ -317,6 +344,7 @@ async function assertViewerTimezones(browser, baseUrl) {
         [["Sep 26", "9:30 AM", "EDT", "GMT-4"], ["Sep 26", "10:30 AM", "EDT", "GMT-4"]],
       ],
       dutchClocks: ["9:30", "10:30"],
+      hebrewDutchClocks: ["20:30", "21:30"],
     },
     {
       timezoneId: "Europe/Amsterdam",
@@ -326,6 +354,7 @@ async function assertViewerTimezones(browser, baseUrl) {
         [["Sep 26", "3:30 PM", "GMT+2", "CEST"], ["Sep 26", "4:30 PM", "GMT+2", "CEST"]],
       ],
       dutchClocks: ["15:30", "16:30"],
+      hebrewDutchClocks: ["2:30", "2:30"],
     },
     {
       timezoneId: "Pacific/Auckland",
@@ -335,6 +364,7 @@ async function assertViewerTimezones(browser, baseUrl) {
         [["Sep 27", "1:30 AM", "GMT+12", "NZST"], ["Sep 27", "3:30 AM", "GMT+13", "NZDT"]],
       ],
       dutchClocks: ["1:30", "3:30"],
+      hebrewDutchClocks: ["13:30", "14:30"],
     },
   ];
   const token = (value) => new RegExp(`(?:^|\\W)${value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:$|\\W)`);
@@ -350,7 +380,27 @@ async function assertViewerTimezones(browser, baseUrl) {
       assert(!text.includes("SOURCE CLOCK"), `${label}: source fallback must not replace UTC conversion`);
     });
   };
-  for (const { timezoneId, expected, dutchClocks } of cases) {
+  const checkBidi = async (page, container) => {
+    assert.equal(await page.locator("html").evaluate((node) => getComputedStyle(node).direction), "ltr");
+    for (const text of [...hebrew.titles, ...hebrew.rooms]) {
+      const isolated = container.locator('bdi[dir="auto"]').filter({ hasText: text });
+      assert.equal(await isolated.count(), 1, "Each source title/room needs independent direction isolation");
+      assert.equal(await isolated.innerText(), text, "Source markup must remain escaped literal text");
+      const style = await isolated.evaluate((node) => ({
+        direction: getComputedStyle(node).direction,
+        unicodeBidi: getComputedStyle(node).unicodeBidi,
+        language: node.closest("[lang]")?.getAttribute("lang"),
+      }));
+      assert.equal(style.direction, "rtl");
+      assert.match(style.unicodeBidi, /isolate/);
+      if (hebrew.titles.includes(text)) assert.equal(style.language, "he");
+    }
+    for (const time of await container.locator('bdi[dir="ltr"]').all()) {
+      assert.equal(await time.evaluate((node) => getComputedStyle(node).direction), "ltr");
+    }
+    assert.equal(await container.locator("bdi b, bdi img, bdi script").count(), 0);
+  };
+  for (const { timezoneId, expected, dutchClocks, hebrewDutchClocks } of cases) {
     const context = await newLocalContext(browser, { timezoneId, locale: "en", viewport: { width: 1280, height: 900 } });
     try {
       await context.route("**/data/schedules.json", (route) => route.fulfill({
@@ -388,6 +438,38 @@ async function assertViewerTimezones(browser, baseUrl) {
         for (const [index, clock] of dutchClocks.entries()) {
           const text = (await times.nth(index).innerText()).replace(/\s+/g, " ");
           assert.match(text, new RegExp(`\\b0?${clock}\\b`), `${timezoneId}: language change must retain viewer local time`);
+        }
+      }
+      await catalogue.locator("#locale-select").selectOption("en");
+      await catalogue.locator(`[data-channel-id="${hebrew.id}"]`).click();
+      await schedule.locator("#locale-select").selectOption("en");
+      for (const locale of ["en", "nl"]) {
+        for (const page of [catalogue, schedule]) {
+          await page.locator("#locale-select").selectOption(locale);
+          const container = page === catalogue
+            ? page.locator(".programme-record")
+            : page.locator("#schedule-list tr").filter({ hasText: hebrew.titles[0] });
+          await checkBidi(page, container);
+          const times = container.locator('.programme-time bdi[dir="ltr"]');
+          if (locale === "en") await checkTimes(times, expected[0], `${timezoneId} Hebrew ${page === catalogue ? "catalogue" : "schedule"}`);
+          else for (const [index, clock] of hebrewDutchClocks.entries()) {
+            assert.match(await times.nth(index).innerText(), new RegExp(`\\b0?${clock}\\b`));
+          }
+          if (timezoneId === "America/Toronto" && locale === "en") {
+            await page.screenshot({ path: join(tmpdir(), `parliament-rtl-${page === catalogue ? "catalogue" : "schedule"}-desktop.png`), fullPage: page === schedule });
+          }
+        }
+      }
+      if (timezoneId === "America/Toronto") {
+        for (const page of [catalogue, schedule]) {
+          await page.setViewportSize({ width: 390, height: 844 });
+          if (page === catalogue) await page.locator(`[data-channel-id="${hebrew.id}"]`).click();
+          const container = page === catalogue
+            ? page.locator(".programme-record")
+            : page.locator("#schedule-list tr").filter({ hasText: hebrew.titles[0] });
+          await checkBidi(page, container);
+          assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+          await page.screenshot({ path: join(tmpdir(), `parliament-rtl-${page === catalogue ? "catalogue" : "schedule"}-mobile.png`), fullPage: page === schedule });
         }
       }
       assert.deepEqual(errors, [], `${timezoneId}: timezone rendering must not raise page errors`);
@@ -630,14 +712,14 @@ try {
     "SOURCE",
     "JURISDICTION",
     "LANGUAGE",
-    "PLAYBACK",
+    "VIEWING METHOD",
   ]);
-  assert.equal(await page.locator("#sort-mode").innerText(), "PLAYBACK");
+  assert.equal(await page.locator("#sort-mode").innerText(), "VIEWING METHOD");
   await page.locator("#sort-mode").click();
-  assert.match(await page.locator("#sort-status").innerText(), /Playback: ascending/);
+  assert.match(await page.locator("#sort-status").innerText(), /Viewing method: ascending/);
   assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Watch here/);
   await page.locator("#sort-mode").click();
-  assert.match(await page.locator("#sort-status").innerText(), /Playback: descending/);
+  assert.match(await page.locator("#sort-status").innerText(), /Viewing method: descending/);
   assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Research entry/);
   const researchChannel = canonicalCatalogue.channels.find((channel) => channel.playback_policy === "research_only");
   assert(researchChannel);
@@ -669,7 +751,11 @@ try {
   assert.equal(await youtubeRow.locator(".row-tag").count(), 0);
   assert.equal(await page.locator(".source-documentation[open]").count(), 0);
   await page.locator(".source-documentation").first().locator("summary").click();
-  assert.match(await page.locator(".source-documentation .detail-grid").innerText(), /PLAYBACK\s+Provider embed/);
+  assert.match(await page.locator(".source-documentation").first().locator(".detail-grid").first().innerText(), /VIEWING METHOD\s+Provider embed/);
+  assert.equal(await page.locator(".source-documentation > summary").first().innerText(), "Viewing and checks");
+  assert.equal(await page.locator(".source-documentation > summary").nth(1).innerText(), "Reuse and permissions");
+  assert.equal(await page.locator(".source-documentation").first().locator(".permission-record").count(), 0);
+  assert.equal(await page.locator(".source-documentation").nth(1).locator(".permission-record").count(), 1);
 
   await page.locator('[data-channel-id="canada-house-of-commons-parlvu"]').click();
   await page.locator(".source-documentation > summary").first().click();
@@ -684,7 +770,7 @@ try {
   assert.match(await page.locator(".fallback-record > dd > .fallback-list > li > a").first().getAttribute("href"), /parlvu\.parl\.gc\.ca\/Harmony\/en/);
   assert.match(await page.locator(".fallback-schedule a").first().getAttribute("href"), /PowerBrowserV2\/20260819\/-1\/15441/);
   assert.match(await page.locator(".validation-record").innerText(), /LATEST VALIDATION/);
-  assert.match(await page.locator(".validation-record").innerText(), /Access status OK/);
+  assert.match(await page.locator(".validation-record").innerText(), /Technical checks OK/);
 
   const europarlRow = page.locator('[data-channel-id="european-parliament-multimedia-centre"]');
   await europarlRow.click();
@@ -757,7 +843,7 @@ try {
   await page.locator(".source-documentation > summary").first().click();
   await page.locator(".source-documentation > summary").nth(1).click();
   const detailTerms = await page.locator(".detail-grid dt").allTextContents();
-  assert(detailTerms.includes("访问状态"));
+  assert(detailTerms.includes("技术检查"));
   assert.equal(detailTerms.includes("所需署名"), false);
   assert.equal(detailTerms.includes("当前节目记录"), false);
   assert(detailTerms.includes("媒体无障碍"));
@@ -795,7 +881,7 @@ try {
   assert.equal(await page.locator(".official-button").isVisible(), true);
   await page.locator(".source-documentation > summary").first().click();
   const intermediatePanel = await page.locator("#detail-panel").boundingBox();
-  const intermediateGrid = await page.locator(".detail-grid").boundingBox();
+  const intermediateGrid = await page.locator(".source-documentation").first().locator(".detail-grid").boundingBox();
   assert(intermediateGrid.width <= intermediatePanel.width);
   await assertNoAxeViolations(page, "Open intermediate-width source details");
   await page.locator("#detail-title").press("Escape");
@@ -895,7 +981,7 @@ try {
   await schedulePage.locator("#schedule-jurisdiction").selectOption("Fukushima");
   assert.equal(await schedulePage.locator("#schedule-list tr").count(), 0);
   assert.equal(await schedulePage.locator("#official-schedules").isVisible(), true);
-  await schedulePage.locator("#official-schedules > summary").click();
+  assert.equal(await schedulePage.locator("#official-schedules").evaluate((element) => element.open), true);
   assert.equal(await schedulePage.locator("#official-schedules-list > li").count(), 1);
   assert.match(await schedulePage.locator("#official-schedules-list").innerText(), /Fukushima/);
   assert.equal(new URL(schedulePage.url()).searchParams.get("jurisdiction"), "Fukushima");
@@ -945,6 +1031,57 @@ try {
   assert.equal(await schedulePage.locator("#schedule-list tr").count(), 0);
   assert.equal(await schedulePage.locator("#official-schedules").isVisible(), true);
   assert.match(await schedulePage.locator("#schedule-updated").innerText(), /Not available/);
+  assert.match(await schedulePage.locator("#schedule-coverage").innerText(), /Programme data is unavailable/);
+
+  // Publication outcomes must remain distinct from filter mismatches. Quality
+  // labels are used only for the exact same generated schedule window.
+  const coverageDate = "2026-10-25T21:04:12Z";
+  const coverageSnapshot = {
+    schema_version: 3,
+    generated_at: coverageDate,
+    sources: {
+      "new-zealand-parliament": { status: "error" },
+      "czech-chamber-plenary": { status: "empty" },
+    },
+    channels: {
+      "cpac-ca": { current_event_title: "Current programme", current_event_start: coverageDate, fetched_at: coverageDate },
+      "estonia-riigikogu-live-1": { next_event_title: "Plenary sitting", next_event_start: "2026-10-26T13:00:00Z", fetched_at: coverageDate },
+      "canada-house-of-commons-parlvu": { next_event_title: "Committee meeting", next_event_start: "2026-10-26T15:00:00Z", fetched_at: coverageDate, last_success_at: "2026-10-25T15:00:00Z", stale: true },
+    },
+  };
+  let qualityDate = coverageDate;
+  await schedulePage.unroute("**/data/schedules.json");
+  await schedulePage.route("**/data/schedules.json", (route) => route.fulfill({ contentType: "application/json", body: JSON.stringify(coverageSnapshot) }));
+  await schedulePage.route("**/data/epg-quality.json", (route) => route.fulfill({ contentType: "application/json", body: JSON.stringify({
+    schema_version: 1, generated_at: qualityDate, coverage: { channels: {
+      "cpac-ca": { state: "guide_available" },
+      "estonia-riigikogu-live-1": { state: "quality_hold" },
+      "canada-house-of-commons-parlvu": { state: "mapping_unverified" },
+    } },
+  }) }));
+  await schedulePage.goto(`${baseUrl}schedule.html?lang=en&jurisdiction=New+Zealand&listings=current`);
+  await schedulePage.locator("#schedule-coverage").filter({ hasText: "could not be collected" }).waitFor();
+  assert.equal(await schedulePage.locator("#schedule-empty").isVisible(), false);
+  assert.equal(await schedulePage.locator("#official-schedules").isVisible(), true);
+  assert.equal(await schedulePage.locator("#official-schedules").evaluate((element) => element.open), true);
+  assert.equal(await schedulePage.locator(".schedule-table-wrap").isVisible(), false);
+  await schedulePage.locator("#schedule-jurisdiction").selectOption("Alberta");
+  assert.match(await schedulePage.locator("#schedule-coverage").innerText(), /No automated listings yet/);
+  await schedulePage.locator("#schedule-jurisdiction").selectOption("Czechia");
+  assert.match(await schedulePage.locator("#schedule-coverage").innerText(), /checked window/);
+  await schedulePage.locator("#schedule-clear").click();
+  assert.equal(await schedulePage.locator("#schedule-jurisdiction").evaluate((element) => document.activeElement === element), true);
+  assert.equal(new URL(schedulePage.url()).searchParams.has("listings"), false);
+  assert.equal(new URL(schedulePage.url()).searchParams.has("jurisdiction"), false);
+  assert.equal(await schedulePage.locator("#schedule-list tr").count(), 3);
+  assert.match(await schedulePage.locator("#schedule-list").innerText(), /Event listings/);
+  assert.match(await schedulePage.locator("#schedule-list").innerText(), /Not included in XMLTV/);
+  assert.match(await schedulePage.locator(".schedule-channel-stale").innerText(), /last successful collection/);
+  assert(await schedulePage.locator(".schedule-official").count() > 0, "External viewing sources need a direct official link");
+  qualityDate = "2026-10-25T15:00:00Z";
+  await schedulePage.reload();
+  await schedulePage.locator("#schedule-list tr").first().waitFor();
+  assert.equal(await schedulePage.locator(".schedule-kind").count(), 0, "Mismatched quality snapshots cannot describe the current guide");
   await schedulePage.close();
 
   const mapPage = await context.newPage();
@@ -983,6 +1120,46 @@ try {
       .evaluate((element) => getComputedStyle(element).fill),
     "rgb(182, 41, 58)",
   );
+  // Search feedback stays beside the field. Enter moves to explicit results
+  // rather than silently selecting the first match, and activation keeps focus.
+  const previousDetail = await mapPage.locator("#map-detail h2").innerText();
+  await mapPage.locator("#map-search").fill("Alberta");
+  assert.equal(await mapPage.locator("#jurisdiction-index").evaluate((element) =>
+    Boolean(element.compareDocumentPosition(document.querySelector(".map-layout")) & Node.DOCUMENT_POSITION_FOLLOWING)), true);
+  assert.equal(await mapPage.locator("#jurisdiction-visible-count").getAttribute("role"), "status");
+  await mapPage.locator("#map-search").press("Enter");
+  assert.equal(await mapPage.locator('#jurisdiction-list button[data-jurisdiction="subnational:Alberta"]').evaluate((element) => document.activeElement === element), true);
+  assert.equal(await mapPage.locator("#map-detail h2").innerText(), previousDetail);
+  await mapPage.locator('#jurisdiction-list button[data-jurisdiction="subnational:Alberta"]').press("Enter");
+  assert.equal(await mapPage.locator("#map-detail-title").evaluate((element) => document.activeElement === element), true);
+  assert.equal(await mapPage.locator('#world-map [role="button"][tabindex="0"]').count(), 1);
+  const selectedShape = mapPage.getByRole("button", { name: "Alberta, Documented, Subnational", exact: true });
+  assert.equal(await selectedShape.getAttribute("aria-pressed"), "true");
+  await selectedShape.press("ArrowRight");
+  assert.equal(await selectedShape.evaluate((element) => document.activeElement === element), false);
+  const focusedShape = mapPage.locator('#world-map [role="button"][tabindex="0"]');
+  assert.equal(await focusedShape.evaluate((element) => document.activeElement === element), true);
+  assert.notEqual(await focusedShape.evaluate((element) => getComputedStyle(element).outlineStyle), "none");
+  assert.equal(await mapPage.locator("#map-detail h2").innerText(), "Alberta", "Arrow browsing must not change the selection");
+  await focusedShape.press("Home");
+  assert.equal(await mapPage.locator('#world-map [role="button"][tabindex="0"]').evaluate((element) => document.activeElement === element), true);
+  await mapPage.locator("#map-search").fill("no-such-jurisdiction-xyz");
+  assert.equal(await mapPage.locator("#jurisdiction-list button").count(), 0);
+  assert(await mapPage.locator(".map-search-empty").isVisible());
+  await mapPage.locator("#map-search").fill("");
+  assert.equal(await mapPage.locator("#jurisdiction-list button").count(), expectedJurisdictionCount);
+  assert.equal(await mapPage.locator("#jurisdiction-index").evaluate((element) =>
+    Boolean(element.compareDocumentPosition(document.querySelector(".map-layout")) & Node.DOCUMENT_POSITION_PRECEDING)), true);
+  await mapPage.locator("#map-search").fill("Japan");
+  await mapPage.locator('#jurisdiction-list button[data-jurisdiction="national:Japan"]').click();
+  await mapPage.waitForTimeout(300);
+  assert.equal(await mapPage.locator("#map-detail h2").innerText(), "Japan");
+  assert.match(await mapPage.locator(".map-viewport").getAttribute("transform"), /scale\(1\)/, "Country selection resets the former regional zoom");
+  await selectMapSearchResult(mapPage, "European Union");
+  await mapPage.waitForTimeout(300);
+  assert.match(await mapPage.locator("#map-detail").innerText(), /Member States/i);
+  assert.match(await mapPage.locator(".map-viewport").getAttribute("transform"), /scale\(1\)/);
+  await mapPage.getByRole("button", { name: "All coverage", exact: true }).click();
   // Nearby institution seats must remain distinct pointer targets while zooming.
   for (const feature of institutionLocationFeatures) {
     const name = feature.properties.name;
@@ -1000,8 +1177,7 @@ try {
   if (institutionLocationFeatures.some((feature) => feature.properties.name === "Chakma Autonomous District")
       && institutionLocationFeatures.some((feature) => feature.properties.name === "Lai Autonomous District")) {
     // The two Mizoram seats must also remain separately clickable at shared zoom.
-    await mapPage.locator("#map-search").fill("Chakma Autonomous District");
-    await mapPage.locator("#map-search").press("Enter");
+    await selectMapSearchResult(mapPage, "Chakma Autonomous District");
     await mapPage.waitForTimeout(300);
     for (const name of ["Chakma Autonomous District", "Lai Autonomous District"]) {
       await mapPage.locator(`.map-location-marker[data-jurisdiction="${name}"]`).click();
@@ -1053,12 +1229,11 @@ try {
     await mapPage.locator(".map-viewport").getAttribute("transform"),
     transformBeforeSubnational,
   );
-  await mapPage.locator("#map-search").fill("Scotland");
-  await mapPage.locator("#map-search").press("Enter");
+  await selectMapSearchResult(mapPage, "Scotland");
   await mapPage.waitForTimeout(300);
   assert.match(await mapPage.locator("#map-detail").innerText(), /United Kingdom.*Scotland/s);
   assert.equal(
-    await mapPage.locator("#jurisdiction-visible-count").innerText(),
+    await mapPage.locator("#jurisdiction-visible-count").evaluate((element) => element.dataset.count),
     `1 / ${expectedJurisdictionCount}`,
   );
   assert.equal(await mapPage.locator(".map-region.is-selected").count(), 1);
@@ -1101,8 +1276,7 @@ try {
   assert.equal(await mapPage.locator("#map-title").innerText(), "Carte de couverture");
   assert.equal(await mapPage.getByRole("button", { name: "International", exact: true }).count(), 1);
   await mapPage.getByRole("button", { name: "Infranational", exact: true }).click();
-  await mapPage.locator("#map-search").fill("Écosse");
-  await mapPage.locator("#map-search").press("Enter");
+  await selectMapSearchResult(mapPage, "Écosse");
   assert.match(await mapPage.locator("#map-detail").innerText(), /Royaume-Uni.*Écosse/s);
   assert.equal(await mapPage.getByRole("button", { name: "Zoom avant", exact: true }).count(), 1);
   await assertNoAxeViolations(mapPage, "Localized coverage map");
@@ -1144,8 +1318,15 @@ try {
   assert.equal(await locationMapPage.locator("#legend-location").isVisible(), true);
   assert.equal(await locationMapPage.locator("#legend-location-label").innerText(), "Institution location");
   assert.equal(await locationMarker.getAttribute("aria-label"), "Alberta, Institution location, Documented");
+  const markerGeometrySize = (element) => {
+    const bounds = element.getBBox();
+    const matrix = element.getScreenCTM();
+    return { width: bounds.width * Math.hypot(matrix.a, matrix.b), height: bounds.height * Math.hypot(matrix.c, matrix.d) };
+  };
   await locationMarker.focus();
-  const initialMarkerBounds = await locationMarker.boundingBox();
+  // Compare geometry, excluding the deliberately different focus/selection
+  // outlines. Those paint cues must be allowed to change when focus moves.
+  const initialMarkerBounds = await locationMarker.evaluate(markerGeometrySize);
   assert(initialMarkerBounds);
   await locationMarker.press("Enter");
   await locationMapPage.waitForTimeout(300);
@@ -1153,7 +1334,7 @@ try {
   assert.match(await locationMapPage.locator(".map-location-note").innerText(), /This marker locates the institution/);
   assert.equal(await locationMapPage.locator('.map-location-note p[lang="en"]').innerText(), locationScopeNote);
   assert.equal(await locationMapPage.locator(".map-location-note a").getAttribute("href"), "https://www.assembly.ab.ca/");
-  const selectedMarkerBounds = await locationMarker.boundingBox();
+  const selectedMarkerBounds = await locationMarker.evaluate(markerGeometrySize);
   assert(selectedMarkerBounds);
   assert(Math.abs(selectedMarkerBounds.width - initialMarkerBounds.width) < .1, "Location marker width must stay constant while zooming");
   assert(Math.abs(selectedMarkerBounds.height - initialMarkerBounds.height) < .1, "Location marker height must stay constant while zooming");
@@ -1161,8 +1342,7 @@ try {
   assert.equal(await locationMapPage.locator(".map-location-marker").count(), 0);
   assert.equal(await locationMapPage.locator("#legend-location").isVisible(), false);
   await locationMapPage.getByRole("button", { name: "Subnational", exact: true }).click();
-  await locationMapPage.locator("#map-search").fill("Alberta");
-  await locationMapPage.locator("#map-search").press("Enter");
+  await selectMapSearchResult(locationMapPage, "Alberta");
   assert.equal(await locationMapPage.locator(".map-location-marker.is-selected").count(), 1);
   assert.equal(await locationMapPage.locator('#jurisdiction-list button[data-jurisdiction="subnational:Alberta"]').getAttribute("aria-pressed"), "true");
   await assertNoAxeViolations(locationMapPage, "Institution location coverage map");
@@ -1275,6 +1455,54 @@ try {
   assert.deepEqual(institutionErrors, []);
   await institutionsPage.close();
 
+  const dataPage = await context.newPage();
+  const dataErrors = [];
+  dataPage.on("pageerror", (error) => dataErrors.push(error.message));
+  await dataPage.goto(`${baseUrl}data.html?lang=en`);
+  await dataPage.locator("#data-title").waitFor();
+  await assertPageMetadata(dataPage, "data.html");
+  assert.equal(await dataPage.locator(".data-stage").count(), 4);
+  assert.equal(await dataPage.locator(".data-assets > div").count(), 7);
+  assert.equal(await dataPage.locator(".data-asset-links a").count(), 9);
+  assert.match(await dataPage.locator(".data-limits").innerText(), /parser.*not populated guides/i);
+  assert.match(await dataPage.locator(".data-limits").innerText(), /rights.*separate|licensing is separate/i);
+  const dataLocales = await dataPage.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
+  for (const code of dataLocales) {
+    await dataPage.locator("#locale-select").selectOption(code);
+    assert.deepEqual(await dataPage.evaluate((locale) => window.ParliamentStreamsProjectI18n.coverage(locale).missing, code), []);
+    assert.equal(await dataPage.locator("html").getAttribute("lang"), code);
+    assert.equal(new URL(dataPage.url()).searchParams.get("lang"), code);
+    assert.equal(new URL(await dataPage.locator("#data-nav-catalogue").getAttribute("href")).searchParams.get("lang"), code);
+    assert.equal(new URL(await dataPage.locator('[data-project-links="intro"] a').first().getAttribute("href")).searchParams.get("lang"), code);
+    if (code !== "en") assert.notEqual(await dataPage.locator("#data-title").innerText(), "Data and method");
+    await assertPageMetadata(dataPage, "data.html");
+    await dataPage.setViewportSize({ width: 320, height: 800 });
+    assert.equal(await dataPage.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${code}: translated data page fits a narrow screen`);
+  }
+  for (const code of ["en", "de", "fr"]) {
+    await dataPage.locator("#locale-select").selectOption(code);
+    for (const width of [1280, 390, 320]) {
+      await dataPage.setViewportSize({ width, height: 900 });
+      assert.equal(await dataPage.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${code}: data page reflows at ${width}px`);
+      const navigation = await dataPage.locator("#data-primary-navigation > a:visible").evaluateAll((links) => links.map((link) => {
+        const bounds = link.getBoundingClientRect();
+        return { text: link.textContent.trim(), width: bounds.width, height: bounds.height };
+      }));
+      assert(navigation.every((link) => width <= 420 ? link.height >= 40 && link.width >= 60 : link.width > 0 && link.height > 0), `${code}: navigation remains usable at ${width}px`);
+    }
+    await assertNoAxeViolations(dataPage, `${code}: Data and method`);
+  }
+  assert.deepEqual(dataErrors, []);
+  const dataFileUrl = new URL("../site/data.html", import.meta.url);
+  dataFileUrl.search = "?lang=fr";
+  await dataPage.goto(dataFileUrl.href);
+  await dataPage.locator("#data-title").waitFor();
+  const localHome = new URL(await dataPage.locator("#data-brand-home").getAttribute("href"));
+  assert.equal(localHome.protocol, "file:");
+  assert(localHome.pathname.endsWith("/site/index.html"));
+  assert.equal(localHome.searchParams.get("lang"), "fr");
+  await dataPage.close();
+
   const filePage = await context.newPage();
   const fileUrl = new URL("../site/index.html", import.meta.url);
   fileUrl.searchParams.set("lang", "fr");
@@ -1335,8 +1563,7 @@ try {
   await storagePage.locator("#locale-select").selectOption("fr");
   await storagePage.waitForURL(/lang=fr/);
   await storagePage.locator(".map-country.is-documented").first().waitFor();
-  await storagePage.locator("#map-search").fill("Alberta");
-  await storagePage.locator("#map-search").press("Enter");
+  await selectMapSearchResult(storagePage, "Alberta");
   assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
   assert.match(await storagePage.locator("#map-detail").innerText(), /Alberta/);
   assert.deepEqual(storageErrors, []);

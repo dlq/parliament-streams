@@ -37,6 +37,10 @@ helps select further work. Refresh it through the maintenance builder and use
 - `health/` retains HTTP, manifest and browser observations. Reachable HTML,
   decoded recorded video, current live operation and reuse permission are
   separate findings. A successful old observation does not certify today's service.
+- `ui/` retains dated usability/accessibility audits and original screenshot
+  evidence. The [25 October Pages audit](ui/2026-10-25-audit.md) covers all four
+  public views; its recommendations are human review inputs, not deployment gates
+  or claims of complete WCAG conformance.
 - Older reports directly in this directory retain their original paths so
   existing references remain meaningful.
 - Workflows write fresh observations under `reports/automated/` and upload

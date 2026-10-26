@@ -25,7 +25,7 @@ const en = {
   lede: "Find official parliamentary video from around the world.",
   browse: "Browse sources", catalogue: "Catalogue", json: "View source JSON", search: "Search country, legislature, or channel", filters: "Filters", close: "Close source details",
   catalogueCoverage: "Catalogue coverage",
-  metricSources: "Sources", metricPlayable: "Playable here", metricSchedules: "Schedule sources", metricUpdated: "Catalogue updated",
+  metricSources: "Sources", metricPlayable: "Playable here", metricSchedules: "Automated schedules", metricUpdated: "Catalogue updated",
   evidenceDates: "Evidence dates", notAvailable: "Not available",
   principlesLabel: "Open stream principles", principleDelivery: "Open delivery", principleAccess: "Open access", principleReuse: "Open reuse", principleSchedules: "Open schedules", principleAccessibility: "Open accessibility",
   allJur: "All jurisdictions", allTypes: "All source types",
@@ -36,7 +36,7 @@ const en = {
   openStreams: "Open stream principles",
   openVideoCopy: "Open parliamentary video requires direct, interoperable streams such as HLS, with clear terms that permit embedding, rebroadcasting, preservation, and independent monitoring.",
   openStreamsCopy: "Open parliamentary video also needs open schedule data. Legislatures should publish timely, machine-readable programme and event feeds at stable URLs, with clear reuse terms, persistent identifiers, time zones, and prompt corrections.",
-  sourceType: "Source type", sourceKind: "Source kind", accessStatus: "Access status", stabilityRisk: "Stability risk", playbackPolicy: "Playback", useGuidance: "Use guidance", availability: "Availability",
+  sourceType: "Source type", sourceKind: "Source kind", accessStatus: "Technical checks", stabilityRisk: "Stability risk", playbackPolicy: "Viewing method", useGuidance: "Reuse and permissions", availability: "Availability",
   accessValidatedDescription: "Latest retained validation succeeded.",
   accessNeedsReviewDescription: "Technical access needs review or the latest check was not clean.",
   accessLinkOnlyDescription: "No native playback URL is recorded; use the official page.",
@@ -62,6 +62,7 @@ const en = {
   a11yAvailable: "Available", a11ySourceDependent: "Varies by source or event", a11yUnavailable: "Unavailable", a11yUnknown: "Not yet verified",
   scheduleApi: "Schedule API", openScheduleData: "Open schedule data", calendarAgenda: "Calendar / agenda", liveSchedulePage: "Live schedule page", schedulePage: "Schedule page",
   officialEvidence: "Official watch page", streamEvidence: "Recorded stream endpoint", rightsEvidence: "Rights / source terms", privacyEvidence: "Privacy policy", supportingEvidence: "Supporting source",
+  viewingChecks: "Viewing and checks", permissionStatus: "Permission status",
   sourceDetails: "Source details", evidenceSources: "Evidence sources.", englishResearchNotes: "Catalogue research notes",
   nowProgramme: "Now:", nextProgramme: "Next:", scheduleCollected: "Schedule collected {date}",
   reuse: "Catalogue rights summary.", recommendation: "Catalogue recommendation.", watch: "Watch here", official: "Watch on official site",
@@ -809,6 +810,31 @@ const sourceDetailLabels = {
   "mi": "Ngā taipitopito pūtake"
 };
 Object.entries(sourceDetailLabels).forEach(([locale, text]) => { shared[locale].sourceDetails = text; });
+
+const catalogueClarityKeys = ["metricSchedules", "viewingChecks", "useGuidance", "permissionStatus", "playbackPolicy", "accessStatus"];
+const catalogueClarityLabels = {
+  "fr": ["Horaires automatisés", "Visionnement et vérifications", "Réutilisation et autorisations", "État des autorisations", "Mode de visionnement", "Vérifications techniques"],
+  "es": ["Programación automatizada", "Visualización y comprobaciones", "Reutilización y permisos", "Estado de los permisos", "Modo de visualización", "Comprobaciones técnicas"],
+  "pt-BR": ["Programação automatizada", "Visualização e verificações", "Reutilização e permissões", "Status das permissões", "Forma de visualização", "Verificações técnicas"],
+  "da": ["Automatiske programdata", "Visning og kontroller", "Genbrug og tilladelser", "Tilladelsesstatus", "Visningsmetode", "Tekniske kontroller"],
+  "de": ["Automatische Programmpläne", "Wiedergabe und Prüfungen", "Nachnutzung und Genehmigungen", "Genehmigungsstatus", "Wiedergabeart", "Technische Prüfungen"],
+  "et": ["Automaatsed saatekavad", "Vaatamine ja kontrollid", "Taaskasutus ja load", "Lubade olek", "Vaatamisviis", "Tehnilised kontrollid"],
+  "el": ["Αυτόματα προγράμματα μεταδόσεων", "Προβολή και έλεγχοι", "Επαναχρησιμοποίηση και άδειες", "Κατάσταση αδειών", "Τρόπος προβολής", "Τεχνικοί έλεγχοι"],
+  "hi": ["स्वचालित कार्यक्रम सूची", "देखना और जाँच", "पुनः उपयोग और अनुमतियाँ", "अनुमति की स्थिति", "देखने का तरीका", "तकनीकी जाँच"],
+  "ga": ["Sceidil uathoibríocha", "Féachaint agus seiceálacha", "Athúsáid agus ceadanna", "Stádas ceada", "Modh féachana", "Seiceálacha teicniúla"],
+  "it": ["Programmazione automatica", "Visione e verifiche", "Riuso e autorizzazioni", "Stato delle autorizzazioni", "Modalità di visione", "Verifiche tecniche"],
+  "lb": ["Automatesch Programmpläng", "Kucken an Iwwerpréiwungen", "Weiderbenotzung an Erlaabnesser", "Erlaabnesstatus", "Method fir ze kucken", "Technesch Iwwerpréiwungen"],
+  "nl": ["Automatische programmagidsen", "Kijken en controles", "Hergebruik en toestemmingen", "Toestemmingsstatus", "Manier van kijken", "Technische controles"],
+  "nb": ["Automatiske programoversikter", "Visning og kontroller", "Gjenbruk og tillatelser", "Tillatelsesstatus", "Visningsmåte", "Tekniske kontroller"],
+  "sk": ["Automatické programové údaje", "Sledovanie a kontroly", "Opätovné použitie a povolenia", "Stav povolení", "Spôsob sledovania", "Technické kontroly"],
+  "th": ["ตารางรายการอัตโนมัติ", "การรับชมและการตรวจสอบ", "การใช้ซ้ำและการอนุญาต", "สถานะการอนุญาต", "วิธีรับชม", "การตรวจสอบทางเทคนิค"],
+  "zh-Hans": ["自动节目表", "观看与检查", "再利用与许可", "许可状态", "观看方式", "技术检查"],
+  "iu-Cans": ["ᐃᒻᒥᓂᒃ ᐊᐅᓚᔪᑦ ᐅᓪᓗᖅᓯᐅᑏᑦ", "ᑕᑯᓐᓇᕐᓂᖅ ᐊᒻᒪ ᖃᐅᔨᓴᕐᓂᖅ", "ᐊᑐᒃᑲᓐᓂᕐᓂᖅ ᐊᒻᒪ ᐊᖏᖅᑕᐅᓯᒪᓂᖅ", "ᐊᖏᖅᑕᐅᓯᒪᓂᖅ", "ᑕᑯᓐᓇᕈᑎ", "ᐊᐅᓚᓂᖓᓄᑦ ᖃᐅᔨᓴᕐᓂᖅ"],
+  "mi": ["Ngā hōtaka aunoa", "Te mātaki me ngā arowhai", "Te whakamahi anō me ngā whakaaetanga", "Tūnga whakaaetanga", "Ara mātaki", "Ngā arowhai hangarau"],
+};
+Object.entries(catalogueClarityLabels).forEach(([locale, values]) => {
+  catalogueClarityKeys.forEach((key, index) => { shared[locale][key] = values[index]; });
+});
 
 function translationCoverage(locale) {
   const localeMessages = locale === "en" ? en : shared[locale];

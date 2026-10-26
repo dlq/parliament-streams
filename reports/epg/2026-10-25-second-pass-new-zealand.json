@@ -1,0 +1,84 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-25",
+  "source_id": "new-zealand-parliament",
+  "channel_id": "new-zealand-parliament",
+  "scope": "Targeted current-input and empty-result diagnosis of the existing collector; not broad New Zealand source research or a new programme-guide mapping.",
+  "official_input_url": "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
+  "probe": {
+    "source_id": "new-zealand-parliament",
+    "url": "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
+    "checked_at": "2026-10-25T20:58:45Z",
+    "user_agent": "parliament-streams-schedule-collector/0.1 (+https://github.com/dlq/parliament-streams)",
+    "maximum_response_bytes": 5242880,
+    "retries": 0,
+    "http_status": 200,
+    "final_url": "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 18909,
+    "sha256": "cbbd6ecdc926b6233849f839cf5b9f0834d11554763e59678bd650c9ae1cba71",
+    "pre_fix_parsed_schedule": {}
+  },
+  "source_local_check_time": "2026-10-26T09:58:45+13:00",
+  "source_shape": {
+    "http_success": true,
+    "blazor_web_script": true,
+    "blazor_webassembly_marker": true,
+    "loading_spinner": true,
+    "calendar_heading_present": false,
+    "house_session_status_present": false,
+    "displayed_months": [],
+    "sitting_day_matches": 0,
+    "next_meeting_phrase_present": false
+  },
+  "classification": "unrendered_javascript_loading_shell",
+  "confirmed": [
+    "The current official input is HTTP 200 HTML, so the collector can reach the endpoint.",
+    "The fetched main content is a Blazor loading spinner, without a displayed calendar month, sitting-day buttons, House session status or next-meeting sentence.",
+    "The current parser returns an empty mapping for this unrecognized loading shell. That is not evidence of a legitimate no-events window, a recess or dissolution.",
+    "No programme dates or start/end times are present in the fetched input for the existing parser to recover. Asynchronous client data has not been collected in this targeted check."
+  ],
+  "date_window_notes": [
+    "The request carries lang=en but no explicit month/date parameter. The parser interprets the displayed calendar month and compares dates in Pacific/Auckland.",
+    "At collection time Auckland is already on 26 October; the lack of any rendered month prevents verification of the source window. This check does not establish a separate month-window defect."
+  ],
+  "proposed_fix": {
+    "status": "implemented_after_root_approval",
+    "change": "Detect the recognizable unrendered Blazor/loading shell and raise a source-specific ValueError instead of treating it as an empty calendar.",
+    "compatibility": "Preserve recognized current calendar/status input and established saved-text fixtures; no date/hour synthesis or linear-guide admission.",
+    "regressions_to_add": [
+      "Current sanitized Blazor/spinner shape raises rather than producing empty.",
+      "A recognized dated calendar without sitting days still represents a legitimate empty window.",
+      "Recognized next-meeting and current-sitting fixtures keep their existing behavior."
+    ]
+  },
+  "decision": "The current unrendered response now produces a truthful collection error. Recognized SSR calendar/status content and explicit empty calendars remain compatible. No supported programme API or new linear-guide mapping is claimed.",
+  "runtime_code_changed": true,
+  "media_downloaded_or_played": false,
+  "verification": {
+    "json_decodes": true,
+    "focused_unittest_cases_passed": 51,
+    "unittest_modules": [
+      "tests.test_new_zealand_calendar",
+      "tests.test_parsers_and_healthcheck",
+      "tests.test_scraper_contract",
+      "tests.test_schedule_collection"
+    ],
+    "strict_mypy": "Passed for new_zealand_parliament.py",
+    "ruff_lint_and_format": "Passed for the changed adapter and dedicated test file.",
+    "sanitized_evidence_scan": "Passed: 0 recognized secret occurrences."
+  },
+  "post_fix_saved_input_result": {
+    "error_type": "ValueError",
+    "message": "official calendar returned an unrendered Blazor loading shell"
+  },
+  "post_fix_collector_result": {
+    "source_status": "error",
+    "counts": {
+      "error": 1,
+      "empty": 0,
+      "channels": 0
+    },
+    "method": "Offline replay of the fetched official input through the normal collector; not an additional HTTP request."
+  }
+}

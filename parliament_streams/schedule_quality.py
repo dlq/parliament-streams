@@ -24,6 +24,10 @@ LINEAR_GUIDE_CHANNELS_BY_SCRAPER: dict[str, set[str]] = {
     },
     "spain-canal-parlamento-weekly": {"spain-canal-parlamento"},
     "quebec-canal-assemblee": {"quebec-canal-assemblee"},
+    "brazil-tv-senado-grid": {"brazil-tv-senado-official"},
+    "czech-chamber-plenary": {"czech-chamber-of-deputies"},
+    "estonia-riigikogu-plenary": {"estonia-riigikogu-live-1"},
+    "knesset-tv-guide": {"israel-knesset-channel"},
 }
 SOURCE_SCOPES = {
     "europarl-webstreaming": "event_directory",

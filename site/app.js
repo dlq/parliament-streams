@@ -476,7 +476,7 @@ function contentLanguageTag(channel) {
   const firstLanguage = channel.language.split(" / ")[0];
   return firstLanguage === "Multilingual" ? "" : languageCodes[firstLanguage] ?? "";
 }
-function languageAttribute(language) { return language ? ` lang="${language}"` : ""; }
+function languageAttribute(language) { return language ? ` lang="${escapeHtml(language)}"` : ""; }
 function sentenceCase(value) {
   const phrase = value.replaceAll("_", " ");
   return phrase.charAt(0).toUpperCase() + phrase.slice(1);
@@ -662,14 +662,26 @@ function localEventTime(start, fallback) {
   if (!sameDay) Object.assign(options, { weekday: "short", month: "short", day: "numeric" });
   return new Intl.DateTimeFormat(state.locale, options).format(date);
 }
+function programmeTitleMarkup(title, url, language = "") {
+  const text = `<bdi dir="auto"${languageAttribute(language)}>${escapeHtml(title)}</bdi>`;
+  return url
+    ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${text} ↗</a>`
+    : text;
+}
+function programmeMetadataMarkup(start, fallback, language, location) {
+  const time = localEventTime(start, fallback);
+  return [
+    time ? `<bdi dir="ltr">${escapeHtml(time)}</bdi>` : "",
+    escapeHtml(languageDisplayName(language)),
+    location ? `<bdi dir="auto">${escapeHtml(location)}</bdi>` : "",
+  ].filter(Boolean).join(" · ");
+}
 function programmeMarkup(channel) {
   const schedule = state.schedules[channel.id];
   if (!schedule) return "";
   const programmeLine = (labelKey, title, time, start, url, language, location) => {
-    const titleMarkup = url
-      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer"${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)} ↗</a>`
-      : `<span${languageAttribute(contentLanguageTag(channel))}>${escapeHtml(title)}</span>`;
-    const metadata = [localEventTime(start, time), languageDisplayName(language), location].filter(Boolean).map(escapeHtml).join(" · ");
+    const titleMarkup = programmeTitleMarkup(title, url, language || contentLanguageTag(channel));
+    const metadata = programmeMetadataMarkup(start, time, language, location);
     return `<span class="programme-line"><strong lang="${state.locale}">${t(labelKey)}</strong> ${titleMarkup}${metadata ? ` <span class="programme-time">· ${metadata}</span>` : ""}</span>`;
   };
   const current = schedule.current_event_title
@@ -706,10 +718,8 @@ function fallbackScheduleMarkup(fallback) {
     .find(Boolean);
   if (!relatedSchedule) return "";
   const eventLine = (labelKey, title, url, time, start, language, location) => {
-    const titleMarkup = url
-      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(title)} ↗</a>`
-      : escapeHtml(title);
-    const metadata = [localEventTime(start, time), languageDisplayName(language), location].filter(Boolean).map(escapeHtml).join(" · ");
+    const titleMarkup = programmeTitleMarkup(title, url, language);
+    const metadata = programmeMetadataMarkup(start, time, language, location);
     return `<span><strong>${t(labelKey)}</strong> ${titleMarkup}${metadata ? ` <em>${metadata}</em>` : ""}</span>`;
   };
   const current = relatedSchedule.current_event_title
@@ -937,6 +947,8 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       ? t("optOutPlaybackPolicy")
       : channel.permission.recommendation;
   const programme = programmeMarkup(channel);
+  const sourceType = label(channel.source_type);
+  const sourceKind = label(channel.source_kind);
   elements.detail.setAttribute("aria-labelledby", "detail-title");
   elements.detail.innerHTML = `
     <div class="mobile-sheet-controls">
@@ -955,14 +967,13 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     </div>
     ${programme ? `<dl class="detail-grid"><div class="full"><dt>${t("programme")}</dt><dd>${programme}</dd></div></dl>` : ""}
     <details class="source-documentation">
-    <summary>${t("sourceDetails")}</summary>
+    <summary>${t("viewingChecks")}</summary>
     <dl class="detail-grid">
-      <div title="${t("sourceType")}: ${label(channel.source_type)}"><dt>${t("sourceType")}</dt><dd>${label(channel.source_type)}</dd></div>
-      <div title="${t("sourceKind")}: ${label(channel.source_kind)}"><dt>${t("sourceKind")}</dt><dd>${label(channel.source_kind)}</dd></div>
+      <div title="${t("sourceType")}: ${sourceType}"><dt>${t("sourceType")}</dt><dd>${sourceType}</dd></div>
+      ${sourceKind === sourceType ? "" : `<div title="${t("sourceKind")}: ${sourceKind}"><dt>${t("sourceKind")}</dt><dd>${sourceKind}</dd></div>`}
       <div title="${t("playbackPolicy")}: ${label(channel.playback_policy)}"><dt>${t("playbackPolicy")}</dt><dd><span class="status status-${slug(channel.playback_policy)}">${label(channel.playback_policy)}</span></dd></div>
       <div title="${t("accessStatus")}: ${label(channel.technical_status)}"><dt>${t("accessStatus")}</dt><dd><span class="status status-${slug(channel.technical_status)}">${label(channel.technical_status)}</span></dd></div>
       <div title="${t("stabilityRisk")}: ${label(channel.stability_risk)}"><dt>${t("stabilityRisk")}</dt><dd><span class="status status-${slug(channel.stability_risk)}">${label(channel.stability_risk)}</span></dd></div>
-      <div title="${t("useGuidance")}: ${label(channel.permission.status)}"><dt>${t("useGuidance")}</dt><dd><span class="status status-${slug(channel.permission.status)}">${label(channel.permission.status)}</span></dd></div>
       <div title="${t("availability")}: ${label(channel.availability)}"><dt>${t("availability")}</dt><dd>${label(channel.availability)}</dd></div>
       ${accessibilityMarkup(channel)}
       ${identityMarkup(channel)}
@@ -974,6 +985,9 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     </details>
     <details class="source-documentation">
       <summary>${t("useGuidance")}</summary>
+      <dl class="detail-grid permission-record">
+        <div title="${t("permissionStatus")}: ${label(channel.permission.status)}"><dt>${t("permissionStatus")}</dt><dd><span class="status status-${slug(channel.permission.status)}">${label(channel.permission.status)}</span></dd></div>
+      </dl>
       ${researchNotesMarkup(channel, playbackMessage, usesLocalizedPlaybackGuidance)}
     </details>`;
   elements.detail.classList.toggle("is-open", state.detailSheetOpen);

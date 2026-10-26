@@ -10,19 +10,43 @@ ones. The coverage map includes all published subnational jurisdictions, with
 location dots for tiny outlines. Shared search associations preserve territorial
 relationships without presenting Crown Dependencies as UK subdivisions.
 
+The [Data and method page](https://dlq.ca/parliament-streams/data.html) explains
+four separate stages: the legislature research inventory, viewing-source
+catalogue, checks and review, and generated products. It groups nine stable
+download links into seven products: catalogue JSON, inventory JSON, schedules,
+guide quality and coverage, the two HLS playlists (each in M3U and M3U8 form),
+and XMLTV. Inventory inclusion, technical access, feed mapping and reuse rights
+remain separate findings. Automation proposes changes for human review; it
+does not automatically approve or promote a source.
+
+All five pages share localized **Data and method**, **Contribute** and **Code**
+utility links. At widths up to 420px, the four primary page links use a two by
+two layout so long translations can wrap at word boundaries. The shared
+project explanation stays on the Data page on mobile, keeping the catalogue
+and other lists compact.
+
+The four secondary pages share responsive title sizes, introductory spacing and
+top padding. The catalogue retains its image hero and compact section heading.
+A pale green wash identifies the shared Data and method strip and contribution
+areas; lists retain white backgrounds and their existing row spacing. These
+shared rules and colour/spacing tokens live in `site/styles.css`.
+
 The [Legislatures page](https://dlq.ca/parliament-streams/institutions.html)
 opens the working institution inventory, including authority decisions and
 remaining research gaps. It is broader than the video catalogue: an eligible
 legislature does not automatically have a verified stream, programme guide or
-reuse permission. Its interface supports all 23 locales; institution names and
+reuse permission. An entry can identify a legislative body or one of its
+chambers; **Within research scope** describes that research decision rather
+than approval of a viewing source. Its interface supports all 23 locales; institution names and
 English research notes retain their recorded language. Use the page's
 contribution links to suggest a missing body or provide official evidence for
 a correction, including unresolved legislative-authority questions.
 
 Its dedicated programme guide presents the latest
 six-hourly schedule snapshot as compact Now/Next channel listings, with
-jurisdiction and listing-status filters, source-published times, explicit
-freshness warnings, and playback handoff for eligible channels.
+jurisdiction and listing-status filters, viewer-local times, explicit
+freshness warnings, and playback handoff for eligible channels. Entries that
+link out also offer the recorded official viewing page directly.
 
 The number of catalogue entries with an `epg_sources` link is deliberately
 larger than the number shown in the programme guide. A linked sitting calendar,
@@ -32,6 +56,26 @@ inside the current collection window. It does not publish generic placeholders
 as programmes. A separate collapsed calendar/agenda list exposes useful
 official event and calendar pages whose automated guide collection is still
 pending; machine-only API/download inputs stay in the catalogue metadata.
+Per-selection explanations distinguish a pending parser, a collection error,
+an empty checked window and unavailable programme data. A failed collection is
+not evidence that the institution has no events. Retained listings show the
+last successful collection time. Optional quality labels are used only when
+the quality report and schedule snapshot have exactly matching generation
+timestamps; event listings without a reviewed channel mapping remain distinct
+from listings held back from XMLTV on quality grounds.
+
+The catalogue's always-visible **Automated schedules** metric counts catalogue
+entries connected to an implemented parser. It does not count populated
+programme guides or promise that a collector returned events in this window.
+The IPTV playlists are global; catalogue and schedule filters do not change
+their contents.
+
+On the map, a search query keeps the native HTML jurisdiction index visible.
+Enter moves focus to its first result without selecting it. The SVG map has
+one Tab stop among its jurisdiction controls; arrow keys, Home and End move
+within those controls. Selecting a jurisdiction reveals its detail heading and
+moves focus there. Selection has an announced pressed state and a border as
+well as color.
 
 The page enables in-page playback where `data/channels.json` records
 `playback_policy` as `native_playback` for a direct feed or `provider_embed`
@@ -69,7 +113,10 @@ extract YouTube manifests.
 Every native player includes the recorded source attribution and direct links
 to relevant supporting sources. Its detail view also presents the latest
 retained validation evidence and the catalogue's recorded media-accessibility
-status. `explicit_reuse_with_conditions` means the project has recorded
+status. **Viewing and checks** groups viewing method and technical evidence;
+**Reuse and permissions** groups the recorded permission status and supporting
+terms. Repeated Source type/Source kind values are shown once when their
+translated labels are identical. `explicit_reuse_with_conditions` means the project has recorded
 affirmative official terms. `personal_use_pending_review` and
 `noncommercial_pending_review` mean that the player is offered under this
 opt-out policy, not that permission has been granted. `no_third_party_reuse`
@@ -162,6 +209,11 @@ Legislatures and IPTV/VLC messages are checked for complete key coverage. Czech
 source counts use the locale's plural categories. Dates, numbers, and sorting
 use `Intl`.
 
+The Data page and shared utility links have a separate 23-locale message table
+in `site/project-i18n.js`; `site/project-info.js` renders the shared links and
+`site/data-page.js` translates the Data page. New scope, schedule-coverage,
+permission and playlist explanations follow the same locale selection.
+
 IPTV setup, copy feedback, and VLC desktop instructions follow the selected
 language on both the catalogue and schedule pages. The external VideoLAN
 documentation link is labelled as English. Exact VLC menu wording can vary
@@ -180,3 +232,9 @@ speaker. It must not be treated as an authoritative translation.
 The Czech, Finnish, Swedish, and Traditional Chinese additions also need native
 speaker review. Automated coverage and accessibility checks verify interface
 behavior, not linguistic accuracy or the completeness of source-language video.
+
+Keyboard, responsive-layout and automated accessibility checks support this
+implementation, but do not establish WCAG conformance. Manual testing with
+real assistive technology, browser zoom and text resizing, forced colors, and
+physical mobile devices remains pending. Third-party player accessibility
+also depends on the provider and the particular recording or live event.

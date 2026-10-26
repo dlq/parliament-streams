@@ -77,6 +77,12 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     )
     next_text = next_text or first_match(body, r"The\s+House next meets\s+(?:on\s+)?([^\.]+\.?)")
     next_text = next_text or first_match(body, r"House next meets\s+(?:on\s+)?([^\.]+\.?)")
+    lowered_html = html.casefold()
+    is_blazor_shell = (
+        "_framework/blazor.web.js" in lowered_html or "blazor-webassembly" in lowered_html
+    ) and "spinner-container" in lowered_html
+    if is_blazor_shell and MONTH_PATTERN.search(html) is None and not status_text and not next_text:
+        raise ValueError("official calendar returned an unrendered Blazor loading shell")
     if next_sitting:
         next_text = f"{next_sitting:%A}, {next_sitting.day} {next_sitting:%B %Y}"
     if not status and not next_text and not current_sitting:

@@ -4,12 +4,16 @@ from types import ModuleType
 
 from . import (
     brazil_tv_camara,
+    brazil_tv_senado,
     canada_harmony,
     cpac,
+    czech_chamber,
     dutch_debat_direct,
     ebs,
+    estonia_riigikogu,
     european_parliament,
     italian_senate,
+    knesset_tv,
     new_zealand_parliament,
     ontario_calendar,
     portugal_agenda,
@@ -23,6 +27,10 @@ from . import (
 
 SCRAPERS: dict[str, ModuleType] = {
     cpac.SOURCE["id"]: cpac,
+    brazil_tv_senado.SOURCE["id"]: brazil_tv_senado,
+    czech_chamber.SOURCE["id"]: czech_chamber,
+    estonia_riigikogu.SOURCE["id"]: estonia_riigikogu,
+    knesset_tv.SOURCE["id"]: knesset_tv,
     dutch_debat_direct.SOURCE["id"]: dutch_debat_direct,
     spain_canal_parlamento.SOURCE["id"]: spain_canal_parlamento,
     quebec_canal_assemblee.SOURCE["id"]: quebec_canal_assemblee,

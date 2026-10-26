@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles.css?v=20261024-legislature-inventory">
     <link rel="stylesheet" href="institutions.css?v=20261024-aligned-chambers">
   </head>
-  <body class="institutions-page">
+  <body class="institutions-page secondary-page">
     <a class="skip-link" id="institutions-skip" href="#institution-list">Skip to legislatures</a>
     <header class="site-header">
       <div class="header-inner">
@@ -45,11 +45,13 @@
       </div>
     </header>
     <main>
-      <div class="institutions-intro">
+      <div class="institutions-intro page-intro">
         <h1 id="institutions-title">Legislatures</h1>
         <p class="lede" id="institutions-lede">Explore the institutions in our research, and help fill the gaps.</p>
         <p class="institutions-reviewed" id="institutions-reviewed"></p>
       </div>
+      <div data-project-links="intro"></div>
+
       <details class="institutions-contribute">
         <summary id="contribute-title">Help improve this list</summary>
         <p id="contribute-copy">Missing an institution or an official broadcast? Have a correction, translation, accessibility finding or another idea? Contributions of any size are welcome.</p>
@@ -87,9 +89,9 @@
       <noscript><p>This research inventory needs JavaScript to filter its entries. <a href="https://github.com/dlq/parliament-streams/blob/main/data/discovery/institutions.json">Read the inventory on GitHub</a> or <a href="https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml">suggest a contribution</a>.</p></noscript>
     </main>
     <footer class="site-footer">
+      <div data-project-links="footer"></div>
       <span id="institutions-footer">Parliament Streams is an independent research catalogue.</span>
       <a href="https://github.com/dlq/parliament-streams">GitHub</a>
-      <a href="sitemap.xml" lang="en">Sitemap</a>
     </footer>
     <script defer src="seo.js?v=20261024-legislature-inventory"></script>
     <script defer src="extra-locales.js?v=20261025-holds"></script>
@@ -99,5 +101,7 @@
     <script defer src="institutions-i18n.js?v=20261024-legislature-inventory"></script>
     <script defer src="institutions-data.js?v=20261025-holds"></script>
     <script defer src="institutions.js?v=20261025-holds"></script>
+    <script defer src="project-i18n.js?v=20261025-data-method"></script>
+    <script defer src="project-info.js?v=20261025-data-method"></script>
   </body>
 </html>

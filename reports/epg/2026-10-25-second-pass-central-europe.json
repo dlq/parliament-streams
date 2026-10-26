@@ -1,0 +1,201 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-25",
+  "scope": "Second EPG pass for existing Czech Chamber Stream1, Slovakia TV NR SR and Estonia Riigikogu feeds; official page/API metadata only, no media requests or playback.",
+  "publication_limit": "The two implemented parsers supply source-dated starts only. No event end, current-live state or XMLTV programme is invented from those starts. Runtime fetch results are distinct from parser reference checks.",
+  "sources": [
+    {
+      "country": "Czech Republic",
+      "status": "implemented_valid_empty_current_collection_window",
+      "module": "parliament_streams.scrapers.czech_chamber",
+      "source": {
+        "id": "czech-chamber-plenary",
+        "channel_ids": [
+          "czech-chamber-of-deputies"
+        ],
+        "url": "https://www.psp.cz/sqw/hp.sqw?k=203",
+        "method": "GET",
+        "notes": "Only dated schuze Poslanecke snemovny blocks with official sitting links map to Stream1. Committee/social events are excluded; source supplies starts, with no invented ends."
+      },
+      "evidence_urls": [
+        "https://www.psp.cz/stream/1",
+        "https://www.psp.cz/sqw/hp.sqw?k=203",
+        "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=43",
+        "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=44"
+      ],
+      "confirmed": [
+        "The official Stream 1 title explicitly identifies Chamber sittings and publishes the same permanent CRA stream1 player address already recorded in the catalogue.",
+        "The weekly plan is a mixed institutional calendar, so only the bold numbered Chamber-sitting table with its official /schuze/term/session link qualifies. Committee invitations, receptions, seminars and generic mentions of Chamber sittings are excluded.",
+        "Weekday headings contain explicit Czech day, month and year. Current and next ISO-week links are observed official navigation; request date and ISO week year are computed in Europe/Prague.",
+        "The current week contains four source-dated starts on 20–23 October. They are already past at the live collection time. The following dated weekly page has no Chamber-sitting blocks, so the current result is genuinely empty."
+      ],
+      "runtime": {
+        "scraper": "czech-chamber-plenary",
+        "collected_at": "2026-10-25T20:39:18.104523+00:00",
+        "probes": [
+          {
+            "url": "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=43",
+            "characters": 36138,
+            "status": "success"
+          },
+          {
+            "url": "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=44",
+            "characters": 29767,
+            "status": "success"
+          }
+        ],
+        "channel_ids": [],
+        "events": 0,
+        "events_with_end": 0,
+        "next_event_start": null
+      },
+      "reference_parse": {
+        "purpose": "Exercise nonempty observed markup against a historical test clock only; not current published data.",
+        "test_clock": "2026-10-19T00:00:00Z",
+        "events": 4,
+        "events_with_end": 0,
+        "starts_utc": [
+          "2026-10-20T12:00:00Z",
+          "2026-10-21T07:00:00Z",
+          "2026-10-22T07:00:00Z",
+          "2026-10-23T07:00:00Z"
+        ]
+      },
+      "integration": {
+        "catalogue_ids": [
+          "czech-chamber-of-deputies"
+        ],
+        "scraper_id": "czech-chamber-plenary",
+        "epg_source_url": "https://www.psp.cz/sqw/hp.sqw?k=203",
+        "epg_source_kind": "dated_chamber_sitting_starts",
+        "method": "GET",
+        "scraper_status": "implemented",
+        "reviewed_feed_mapping": "Stream1 Chamber sittings only; no other stream/committee mapping.",
+        "xmltv_hold": "All ends unknown; no XMLTV programme can be emitted without a later separately evidenced complete time range."
+      },
+      "time_semantics": {
+        "source_timezone": "Europe/Prague",
+        "start_basis": "source",
+        "serialization": "Whole-second UTC RFC3339 plus source_timezone.",
+        "dst_policy": "Ambiguous/nonexistent source-local clock raises a collection error through common.localize_source_time.",
+        "overnight_policy": "A dated00:15 is that source day and may serialize to the previous UTC date; no cross-day end or arbitrary midnight boundary is inferred.",
+        "date_validation": "Weekday must match explicit date and the requested local ISO week. Wrong/stale weeks, missing main-content/day labels or an unresolved recognized sitting start fail rather than report empty."
+      },
+      "remaining_gaps": [
+        "No source end timestamps were present.",
+        "The calendar does not establish broadcast plans for Stream 2–5 or unrelated event-room feeds."
+      ]
+    },
+    {
+      "country": "Estonia",
+      "status": "implemented_five_upcoming_dated_starts",
+      "module": "parliament_streams.scrapers.estonia_riigikogu",
+      "source": {
+        "id": "estonia-riigikogu-plenary",
+        "channel_ids": [
+          "estonia-riigikogu-live-1"
+        ],
+        "url": "https://api.riigikogu.ee/api/agenda/plenary",
+        "method": "GET",
+        "notes": "Dated plenary and question-time starts for the officially designated Session Hall feed. Does not map other rooms/Live2, infer ends or infer a live state from a past start."
+      },
+      "evidence_urls": [
+        "https://www.riigikogu.ee/en/news-and-publications/live-broadcast/",
+        "https://www.riigikogu.ee/live/1/en",
+        "https://api.riigikogu.ee/swagger-ui/index.html",
+        "https://api.riigikogu.ee/v3/api-docs",
+        "https://api.riigikogu.ee/api/agenda/plenary?startDate=2026-10-25&endDate=2026-11-01&lang=ET&querySteno=false",
+        "https://www.riigikogu.ee/wp-json/riigikogu/v1/live-status?channel=0"
+      ],
+      "confirmed": [
+        "The own Session Hall page explicitly binds its Session Hall player to channel-index 0 and rk_live_1, matching existing Riigikogu Live 1.",
+        "The official documented plenary API supplies explicit response date bounds and sitting UUID, title, sittingDateTime and volumeType. Plenary and question-time volumes qualify; committee/other volumes are held.",
+        "The current official response provides five upcoming starts for 26–29 October 2026. Source clocks are naive local Tallinn times, not UTC; the first 15:00 on 26 October is 13:00Z after the autumn DST transition.",
+        "The same API response and schema expose no sitting end. A following day or following question-time/plenary start is not used to invent an end.",
+        "The public current-status endpoint says offline/no_plenary_today on 25 October; this is not a future programme listing and is not used to label past starts live."
+      ],
+      "runtime": {
+        "scraper": "estonia-riigikogu-plenary",
+        "collected_at": "2026-10-25T20:39:18.104523+00:00",
+        "probes": [
+          {
+            "url": "https://api.riigikogu.ee/api/agenda/plenary?startDate=2026-10-25&endDate=2026-11-01&lang=ET&querySteno=false",
+            "characters": 111558,
+            "status": "success"
+          }
+        ],
+        "channel_ids": [
+          "estonia-riigikogu-live-1"
+        ],
+        "events": 5,
+        "events_with_end": 0,
+        "next_event_start": "2026-10-26T13:00:00Z"
+      },
+      "integration": {
+        "catalogue_ids": [
+          "estonia-riigikogu-live-1"
+        ],
+        "scraper_id": "estonia-riigikogu-plenary",
+        "epg_source_url": "https://api.riigikogu.ee/api/agenda/plenary",
+        "epg_source_kind": "dated_session_hall_plenary_starts_api",
+        "method": "GET",
+        "scraper_status": "implemented",
+        "reviewed_feed_mapping": "Session Hall / channel-index0 / rk_live_1 only.",
+        "xmltv_hold": "All five ends unknown; no new XMLTV programmes from these starts."
+      },
+      "time_semantics": {
+        "source_timezone": "Europe/Tallinn",
+        "start_basis": "source",
+        "identity": "Official per-sitting UUID, rejecting repeated identities.",
+        "request_window": "Source-local today through seven days ahead, explicit startDate/endDate; response bounds must cover the requested local date.",
+        "serialization": "Whole-second UTC RFC3339 plus source_timezone; explicit source offsets are respected.",
+        "dst_policy": "Naive local clocks use common.localize_source_time and ambiguous/nonexistent clocks raise a collection error.",
+        "overnight_policy": "A dated local midnight start can belong to the previous UTC day; no inferred end or recurrence schedule is generated."
+      },
+      "remaining_gaps": [
+        "No end-time source established.",
+        "Live 2 has an own player but no equivalent dated room/feed attribution in the examined primary programme data; do not mirror Session Hall programmes to it."
+      ]
+    },
+    {
+      "country": "Slovakia",
+      "status": "hold_challenge_and_unproven_specific_feed_schedule",
+      "catalogue_ids": [
+        "slovakia-tv-nrsr"
+      ],
+      "evidence_urls": [
+        "https://tv.nrsr.sk/",
+        "https://www.nrsr.sk/web/default.aspx?sid=schodze%2Fzoznam"
+      ],
+      "probe_results": {
+        "tv_homepage": {
+          "http_status": 200,
+          "final_path": "/challenge",
+          "page_title": "Bot Detection",
+          "interpretation": "Challenge shell, not schedule availability or an empty programme result."
+        },
+        "national_session_listing": "Web text fetch returned403."
+      },
+      "confirmed": [
+        "The existing catalogue lists both the official TV page and general National Council meeting programme as planned sources. Neither is a proven current programme payload in this run."
+      ],
+      "remaining_gaps": [
+        "No challenge bypass, cookies, browser playback or follow-up media request was attempted.",
+        "Need a reachable official dated broadcast payload and explicit mapping to the already recorded native playback feed before applying an EPG source.",
+        "A general meeting list cannot establish the TV feed content or complete broadcast intervals."
+      ],
+      "parser_added": false,
+      "linear_mapping_enabled": false
+    }
+  ],
+  "checks": {
+    "unit_module": "tests.test_central_europe_schedules",
+    "test_methods": 13,
+    "unit_tests": "passed",
+    "ruff": "passed",
+    "strict_mypy_sources": 2,
+    "strict_mypy": "passed",
+    "shared_runtime_fetch": "Both new modules fetched and parsed successfully using schedule_collection.fetch_text; no user-agent workaround required.",
+    "fixtures": "Focused synthetic day/table and plenary JSON fixtures only. No challenge scripts/values, full pages, media or API private material are committed."
+  }
+}

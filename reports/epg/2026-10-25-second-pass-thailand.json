@@ -1,0 +1,109 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-25",
+  "country": "Thailand",
+  "catalogue_channel_id": "thailand-parliament-tv",
+  "scope": "Primary inspection of the official monthly television schedule only; no radio mapping, runtime parser, media playback or rights certification.",
+  "official_index_url": "https://tpchannel.org/schedule/tv",
+  "catalogue_official_viewing_url": "https://tpchannel.org/broadcasts/tv",
+  "source_record": {
+    "id": 106,
+    "title": "ประจำเดือน ตุลาคม 2569",
+    "year": 2026,
+    "month": 10,
+    "startdate": "2026-09-30",
+    "update_date": "2026-10-02",
+    "checked_at": "2026-10-25T20:45:04Z",
+    "index_payload_sha256": "9ee41bb1fe60f0f8fe18df7bc3a4c1fa8248552192786ccdcae52c6ead4be7a5"
+  },
+  "attachment": {
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "bytes": 281373,
+    "sha256": "b6f400ef870bb22d5b001c149bd26b403fc91449e745a3fced9e192f1a1d9bc7",
+    "pages": 4,
+    "page_size_points": [
+      841.8,
+      595.2
+    ],
+    "page_orientation": "landscape A4",
+    "text_bearing": true,
+    "encrypted": false,
+    "javascript": false,
+    "creator": "Microsoft Excel 2021",
+    "source_url_policy": "Resolve the current PDF from the stable public index in memory. Expiring download URLs and query credentials are deliberately omitted."
+  },
+  "method": {
+    "skill": "PDF",
+    "inspection": "All four pages rendered with Poppler at 140 dpi and visually inspected; pdfplumber text extraction used only as a secondary check.",
+    "maximum_download_bytes": 12582912,
+    "transient_url_handling": "Selected the public index record in memory and followed its supplied PDF link; only safe metadata, stable index URL and content hashes are retained in repository evidence.",
+    "media_downloaded_or_played": false,
+    "runtime_dependencies_changed": false
+  },
+  "readiness": {
+    "official_tv_identity_confirmed": true,
+    "current_month_scope_confirmed": true,
+    "individually_dated_programme_rows": false,
+    "source_ready_for_parser_design": true,
+    "runtime_parser_ready": false,
+    "linear_mapping_enabled": false,
+    "new_programmes_claimed": 0
+  },
+  "confirmed": [
+    "The television index record is id 106, labelled October 2569, with numeric year 2026 and month 10 and update date 2 October 2026.",
+    "The PDF header independently identifies the parliamentary television station, October 2569 and an open-parliamentary-session schedule.",
+    "The content is a monthly recurring weekday template, not a dated daily listing. Month/year provide scope, but individual dates would have to be projected from weekday recurrence.",
+    "Page 1 contains the main linear TV grid, with separate weekday and weekend clock columns, merged cells, stacked programme titles, explicit duration labels and some repetition/accessibility markers.",
+    "Page 2 continues the legend/footer; page 3 contains production notes, including older show-start references; page 4 is blank.",
+    "Text extraction is possible; the main grid is not an image-only scan. Nevertheless, plain extracted text interleaves the two time axes and loses merged-cell associations."
+  ],
+  "timing_holds": [
+    {
+      "issue": "Open-ended parliamentary blocks",
+      "observation": "The large live Senate/House cells state that transmission starts at 09:00 and continues onward. A later grid boundary is not an explicit sitting end.",
+      "policy": "Retain unknown ends; do not impose 16:30, 18:00 or a fixed sitting duration."
+    },
+    {
+      "issue": "Conflicting overnight closure",
+      "observation": "The footer prints 00:00–06:59 for the closed-station page, while the same grid starts programmes at 06:00.",
+      "policy": "Do not silently change the closure to 05:59 or move the morning programmes. Hold the conflicting interval pending clarification."
+    },
+    {
+      "issue": "Unlabelled first weekday column",
+      "observation": "The first programme column in the rendered header has no visible weekday name; subsequent columns identify Tuesday through Friday.",
+      "policy": "Do not assign the missing label solely from column position; confirm the weekday mapping before recurrence expansion."
+    },
+    {
+      "issue": "Merged and stacked programme cells",
+      "observation": "Several source cells contain multiple short programmes, durations and shared time labels; not every title has its own unambiguous start and end.",
+      "policy": "Export only intervals whose column, source clock and end/duration relationship are established. Do not turn every extracted title into a timed programme."
+    },
+    {
+      "issue": "Historical notes and month boundary",
+      "observation": "The notes page includes older programme-start references, and index startdate is 2026-09-30 despite explicit October month/year metadata.",
+      "policy": "Do not reinterpret recording/production notes as October air dates or expand recurrence from the unqualified startdate. Verify any future expansion within the explicit month and stated session context."
+    }
+  ],
+  "safe_timing_example_for_future_design": {
+    "weekday": "Saturday",
+    "programme": "SENATE CORNER",
+    "source_start_clock": "16:05",
+    "printed_duration_minutes": 55,
+    "next_source_time_row": "17:00",
+    "interpretation": "This visually associated slot is a promising bounded case for a future coordinate-aware fixture. It is not exported or treated as an individually dated event in this pass."
+  },
+  "next_step": [
+    "Design a bounded current-index resolver that never persists presigned URLs, rejects stale or contradictory month/year records and detects a changed PDF layout.",
+    "Verify weekday column identity and merged-cell extraction against rendered samples from more than one month before adding a runtime PDF dependency or parser.",
+    "Project only validated recurrences to dates within the declared month, with documented recurrence provenance and Asia/Bangkok origin-time handling.",
+    "Keep live-ended blocks, ambiguous stacked titles, the unlabelled weekday and contradictory overnight closure outside XMLTV until resolved."
+  ],
+  "decision": "Hold automated guide publication. The official current-month TV source is confirmed and useful, but its recurring layout and timing exceptions require deliberate parser design and additional validation.",
+  "verification": {
+    "json_decodes": true,
+    "pdf_pages_visually_inspected": 4,
+    "sanitized_evidence_scan": "Passed: 0 recognized secret occurrences.",
+    "runtime_code_changed": false
+  }
+}

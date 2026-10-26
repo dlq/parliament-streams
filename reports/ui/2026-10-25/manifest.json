@@ -1,0 +1,141 @@
+{
+  "reviewed_on": "2026-10-25",
+  "capture_window_utc": {
+    "start": "2026-10-25T21:06:58.461015+00:00",
+    "end": "2026-10-25T21:13:46.266408+00:00"
+  },
+  "source": "https://dlq.ca/parliament-streams/",
+  "surface": "Codex in-app browser",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 320,
+      "height": 800
+    }
+  ],
+  "ui_languages": [
+    "en",
+    "de"
+  ],
+  "publication_base_commit": "50d6fa3d0375f72cb316adc721994ffba55401b3",
+  "local_epg_second_pass_in_screenshots": false,
+  "media_playback": "No player was opened or played. Audited flows contained no media elements.",
+  "notes": [
+    "Map initial loading capture rejected and replaced by settled map screenshot09.",
+    "Normal source data changes independently of the publication commit.",
+    "Screenshots are original browser bytes; no visual reconstruction or image editing."
+  ],
+  "screenshots": [
+    {
+      "file": "screenshots/01-catalogue-desktop.jpg",
+      "sha256": "b4f40f9ee2c370576da3991d1694140ec2b457de87768c252e69f47efad65e39"
+    },
+    {
+      "file": "screenshots/02-canada-search.jpg",
+      "sha256": "900baef132f6d90e887e9710b49bde2d60fe59e8496acb7efc1fa693304e873e"
+    },
+    {
+      "file": "screenshots/03-alberta-details.jpg",
+      "sha256": "b74b1b5c238e368c74f940bae96af017351f61950942759e967d854c3bef180d"
+    },
+    {
+      "file": "screenshots/04-source-evidence.jpg",
+      "sha256": "4c33b94c393adde60c6183e273f687f4e957439f0c8cec5409c8835c37e5a64d"
+    },
+    {
+      "file": "screenshots/05-iptv-links.jpg",
+      "sha256": "06b46788536f944aa595bcc918dfb5efce770f8c5c9195a695518582f019446a"
+    },
+    {
+      "file": "screenshots/05b-vlc-and-copy.jpg",
+      "sha256": "60dbe76987d7d4df7a70db932dc2d60a322cde3b86c356de67684f91a8b01dee"
+    },
+    {
+      "file": "screenshots/06-legislatures-desktop.jpg",
+      "sha256": "8ff69f0d47065ba7c7e7a9f62e3dbe6e9727f81f04f3c1527519494baaf6f04a"
+    },
+    {
+      "file": "screenshots/07-scope-and-method.jpg",
+      "sha256": "aa1f2d1c1c6718984d03fb18cd0ee121ffb94ea59941d01af2bfa6bdac0f35f3"
+    },
+    {
+      "file": "screenshots/08-argentina-inventory.jpg",
+      "sha256": "efecf06c5a095c1326defbaf77dd5dc05e2cf1f0bac7d74bf0a1a219644de11c"
+    },
+    {
+      "file": "screenshots/09-map-desktop.jpg",
+      "sha256": "39b1527e58fd9bae5d670651f6b2c5084b040f8f9bf413c56d4abe9713a368b6"
+    },
+    {
+      "file": "screenshots/10-map-search.jpg",
+      "sha256": "73e8a55f834331b1e2138837ba30627efe18ca07a7a8de34f3d9ad5edab4e18d"
+    },
+    {
+      "file": "screenshots/11-map-alberta.jpg",
+      "sha256": "fddcf790de2d72e18fb106a776dce4b4e426da8b952a99fddfce55329beb3cef"
+    },
+    {
+      "file": "screenshots/12-schedule-desktop.jpg",
+      "sha256": "cfe5b6e49536e8b8c7f5f99a50c0849275482c0bd7d8e8a864fcc2211243bee1"
+    },
+    {
+      "file": "screenshots/13-schedule-empty.jpg",
+      "sha256": "ea0321d3c6ddbd951b46837c6e0043820288b8a8efd8b65e87862ea04ef6e412"
+    },
+    {
+      "file": "screenshots/14-catalogue-mobile.jpg",
+      "sha256": "67ed466939df9d92b396997861b30b5985dc077947b6aa045122cd5b1247b0ad"
+    },
+    {
+      "file": "screenshots/15-mobile-details.jpg",
+      "sha256": "8f5aacfca6a5dab297711ad5fa9cc7b44006eb4e1d85af67a8be2ac74ab196cb"
+    },
+    {
+      "file": "screenshots/16-legislatures-mobile.jpg",
+      "sha256": "e13f687d66bf059958d36e20f28f487a042176645c5fb6366ec713e214ce7fa6"
+    },
+    {
+      "file": "screenshots/17-inventory-mobile-results.jpg",
+      "sha256": "8edeb5ac370b35cb8cb3e242dce2d20f5c88dbc5d3d42494eb4d27f3bf618216"
+    },
+    {
+      "file": "screenshots/18-map-mobile.jpg",
+      "sha256": "0d516481d7a586030b04a370d986292aa86b4d25bb6f85f230e2077b1f2004b0"
+    },
+    {
+      "file": "screenshots/19-schedule-mobile.jpg",
+      "sha256": "038aecfdd81938aa97f04fdb225f0d061b3f057b329d3ad6ecede9e474b60acb"
+    },
+    {
+      "file": "screenshots/20-schedule-320.jpg",
+      "sha256": "a62395f79144cf83ac96c24713b5c07da8d016649f9c84e5da7eaa1965a1ae63"
+    },
+    {
+      "file": "screenshots/21-german-320.jpg",
+      "sha256": "abf5c79cba6032d88b975c65bcc583540c1f7c89ef0b1124d65067c7e656110d"
+    },
+    {
+      "file": "screenshots/22-german-header-320.jpg",
+      "sha256": "d511fcf9d87fd25c7a7867a49e356823d91503e5ded4730023cb7cab99858184"
+    },
+    {
+      "file": "screenshots/23-catalogue-empty-mobile.jpg",
+      "sha256": "42f410414f328735b5a89ad980e66e11936f226fdc9f87491273b42796981d80"
+    },
+    {
+      "file": "screenshots/24-map-keyboard.jpg",
+      "sha256": "52b0aa4856c035b6728858bb5b57eb8eb43183ffd4ace6f70d9809b7d14ae1bf"
+    }
+  ],
+  "supplementary_observations": [
+    "map-keyboard-observation.json",
+    "map-selected-focus.json"
+  ]
+}

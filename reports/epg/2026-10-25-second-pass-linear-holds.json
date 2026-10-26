@@ -1,0 +1,306 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-25",
+  "scope": "Second pass: primary official alternatives for Greece Hellenic Parliament TV, India Sansad TV1/TV2 and authoritative EBS future programme ends.",
+  "method": {
+    "maximum_text_response_bytes": 1048576,
+    "request_timeout_seconds": 18,
+    "request_spacing_seconds": 2,
+    "media_downloaded_or_played": false,
+    "challenge_or_auth_bypass": false,
+    "maximum_application_script_bytes": 5242880,
+    "public_metadata_only": "Primary app code was inspected solely to identify public metadata routes. No authentication headers, challenge responses or media requests were supplied."
+  },
+  "sources": [
+    {
+      "country": "Greece",
+      "channel_ids": [
+        "greece-hellenic-parliament-tv"
+      ],
+      "status": "hold_no_collectable_programme_ranges",
+      "official_programme_page": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/programma/",
+      "primary_links": [
+        "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/",
+        "https://www.hellenicparliament.gr/opendata/",
+        "https://new.diavlos.grnet.gr/el/embed/room/6017/event/6022",
+        "https://diavlos.grnet.gr/api/event/6022",
+        "https://diavlos.grnet.gr/api/schedule/2026-10-25--2026-10-31",
+        "https://diavlos.grnet.gr/api/epresence-schedule/2026-10-25--2026-10-31"
+      ],
+      "confirmed": [
+        "Primary indexed archive pages expose explicit 25 October broadcast dates and clock ranges, but fresh raw television-home and dated-archive requests both return HTTP 403.",
+        "The programme page distinguishes linear television transmission from WebTV1/2/3; those signals cannot be combined.",
+        "The official open-data documentation advertises laws/taxonomies, not a television-guide method.",
+        "The Parliament-designated GRNET embed is reachable and declares public event and date-filtered schedule metadata routes.",
+        "GRNET event 6022 describes continuous parliamentary web television, not one programme: the event spans 2024–2028 and all six room sessions span multiple years.",
+        "The inspected schedule component passes YYYY-MM-DD calendar-date strings to its public range endpoints.",
+        "The 25–31 October ordinary schedule returns 3 entries and the epresence schedule 15; neither contains event 6022 or a Parliament-named programme."
+      ],
+      "indexed_example": {
+        "date": "2026-10-25",
+        "start_clock": "14:00",
+        "end_clock": "15:00",
+        "title": "@υτοδιοίκηση",
+        "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/Tv-History/?d=25%2F10%2F2026&p=a42b8296-8df9-495a-b9d1-ac4101011816&tv=fb9af42f-0ee4-4a8c-bf35-b4e500f0f5a1",
+        "use": "Discovery evidence only; not fetched programme input for a scheduled collector."
+      },
+      "non_programme_metadata_example": {
+        "url": "https://diavlos.grnet.gr/api/event/6022",
+        "nid": "6022",
+        "title": "Συνεχής μετάδοση των προγραμμάτων διαδικτυακής τηλεόρασης της Βουλής των Ελλήνων",
+        "field_event_start": "2024-06-25T09:00:00 - 2028-09-25T22:00:00",
+        "session_sample": {
+          "nid": "6020",
+          "field_session_time_start": "2024-06-25T09:00:00",
+          "field_session_time_end": "2028-09-25T22:00:00"
+        },
+        "interpretation": "Permanent service/session bounds. Not current programme starts or ends; no timezone or guide inference is made."
+      },
+      "decision": "Do not add a parser or map the multi-year streaming sessions into XMLTV. The raw dated broadcast programme collection route remains inaccessible, while the reachable alternative supplies no corresponding individual programme guide.",
+      "parser_added": false,
+      "linear_mapping_enabled": false,
+      "follow_up": "Recheck a successful public raw /programma response or an officially linked programme-specific payload when source access changes; preserve separation of television and WebTV rooms."
+    },
+    {
+      "country": "India",
+      "channel_ids": [
+        "india-sansad-tv-1",
+        "india-sansad-tv-2"
+      ],
+      "status": "hold_current_index_unreachable",
+      "official_programme_page": "https://sansadtv.nic.in/program-schedule",
+      "primary_alternatives": [
+        "https://sansadtv.nic.in/fpc-ls",
+        "https://sansadtv.nic.in/fpc-rs"
+      ],
+      "confirmed": [
+        "Separate official FPC indexes exist for the legacy Lok Sabha and Rajya Sabha channel routes; the TV2 index explicitly labels its rows Sansad TV2.",
+        "The TV2 index links XLSX schedule attachments, providing a more specific extraction lead than the previously identified historical PDF.",
+        "A search snapshot lists dates through 3 July 2026, while another cached open lists 11 September 2025. These differently dated primary snapshots are not a live October schedule.",
+        "One bounded raw request to each newly found FPC index times out. No current attachment URL was guessed or downloaded."
+      ],
+      "historical_attachment_example": {
+        "index": "https://sansadtv.nic.in/fpc-rs",
+        "label": "11-09-2025 Sansad TV2",
+        "linked_url": "https://sansadtv.nic.in/wp-content/uploads/2025/09/FPC-SANSADTV-2-11.09.2025-Thursday.xlsx",
+        "web_fetch_result": "503 Service Unavailable",
+        "use": "Historical format/discovery lead only; not current EPG and not TV1 mapping evidence."
+      },
+      "decision": "Do not publish a parser based on unavailable current indexes or stale PDF/XLSX filenames. Channel-specific current date and payload extraction must be demonstrated separately for TV1 and TV2.",
+      "unresolved": [
+        "Current dated TV1 and TV2 schedule attachments and successful raw index collection.",
+        "Actual spreadsheet column/date/end semantics; a filename is insufficient to validate a programme layout."
+      ],
+      "parser_added": false,
+      "linear_mapping_enabled": false,
+      "follow_up": "When reachable, follow actual FPC index attachment links, verify explicit channel/date headers and implement bounded document extraction without replacing unknown programme ends."
+    },
+    {
+      "channel_ids": [
+        "eu-audiovisual-ebs"
+      ],
+      "status": "hold_future_end_absent",
+      "confirmed": [
+        "The previously retrieved 26–27 October grid contains 13 future programmes with duration zero.",
+        "All nested future transmission/media durations in that payload are also zero.",
+        "Nested media start/end clocks are equal midnight placeholders and can differ from programme broadcast dates.",
+        "Fresh public application-script inspection did not establish another authoritative future programme-end contract.",
+        "An asset or clipping date is not a channel broadcast time; future transmission placeholders must not override the programme start."
+      ],
+      "decision": "Retain the existing positive source-duration policy and exact EBS channel scope. No safe future end alternative was established; no next-start inference, nested asset-date substitution or fixed-length padding.",
+      "country": "European Union",
+      "prior_evidence_report": "reports/epg/2026-10-25-existing-source-times.json",
+      "reused_grid_payload": {
+        "url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261026&dateTo=20261027&withCompleteThesaurusData=false",
+        "bytes": 26153,
+        "sha256": "2922b562f80ac6e62e679eb5fb6e5e810968cf6df4cac1fc089dc8115fae433b",
+        "provenance": "Retrieved earlier on 25 October during the first pass; inspected again locally, not presented as a fresh grid collection."
+      },
+      "nested_timing_sample": {
+        "programme_id": "6ad4998a4cda7d4921eb1ed1",
+        "programme_startDatetime": "2026-10-26T11:00:00.000Z",
+        "programme_duration": 0,
+        "transmission_duration": 0,
+        "media_reference": "I-296473",
+        "media_startDateTime": "2026-10-25T23:00:00.000Z",
+        "media_endDateTime": "2026-10-25T23:00:00.000Z",
+        "media_duration": 0
+      },
+      "parser_changed": false
+    }
+  ],
+  "implementation_status": "Research complete for this pass: no alternative met the end-to-end publication bar, so no parser, source registration, mapping, quality rule or catalogue change was made.",
+  "probe_results": [
+    {
+      "name": "ebs-main-script",
+      "url": "https://audiovisual.ec.europa.eu/main-B7RSPJQF.js",
+      "checked_at": "2026-10-25T20:32:02Z",
+      "status": 200,
+      "final_url": "https://audiovisual.ec.europa.eu/main-B7RSPJQF.js",
+      "content_type": "application/javascript; charset=UTF-8",
+      "bytes": 285471,
+      "sha256": "c7539d7fbba27425b94c98e203aaeedbf38c3a0d13f720cc9002891b65b5eba3"
+    },
+    {
+      "name": "sansad-fpc-ls",
+      "url": "https://sansadtv.nic.in/fpc-ls",
+      "checked_at": "2026-10-25T20:32:05Z",
+      "error": "URLError: <urlopen error timed out>"
+    },
+    {
+      "name": "grnet-event-6022",
+      "url": "https://diavlos.grnet.gr/api/event/6022",
+      "checked_at": "2026-10-25T20:37:09Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/api/event/6022",
+      "content_type": "application/json",
+      "bytes": 28154,
+      "sha256": "494ddd3f577741e3c6e129d332b5329198ecfb6f8c01a625d8d289e1b73ecead"
+    },
+    {
+      "name": "grnet-secondary-channels",
+      "url": "https://diavlos.grnet.gr/api/secondary-channels",
+      "checked_at": "2026-10-25T20:37:12Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/api/secondary-channels",
+      "content_type": "application/json",
+      "bytes": 654,
+      "sha256": "aad06e605e75479de30cf9ee1f5590ea6a71ca3641c3f7b57acee918417f0294"
+    },
+    {
+      "name": "grnet-localized-main-script-full",
+      "url": "https://diavlos.grnet.gr/el/main-4LCJ5YJQ.js",
+      "checked_at": "2026-10-25T20:34:59Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/el/main-4LCJ5YJQ.js",
+      "content_type": "application/javascript",
+      "bytes": 1133280,
+      "sha256": "926f42ff17177d62db817f7282414476351a39f3335008c0030dd5006b2cf011"
+    },
+    {
+      "name": "grnet-public-config-chunk",
+      "url": "https://diavlos.grnet.gr/el/chunk-Q2JYD7K5.js",
+      "checked_at": "2026-10-25T20:36:01Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/el/chunk-Q2JYD7K5.js",
+      "content_type": "application/javascript",
+      "bytes": 227,
+      "sha256": "c636a0de44196ba5352f64137e7ce069d487933726069363750e4d5d68477297"
+    },
+    {
+      "name": "grnet-public-event-service",
+      "url": "https://diavlos.grnet.gr/el/chunk-EMO5W7AO.js",
+      "checked_at": "2026-10-25T20:36:28Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/el/chunk-EMO5W7AO.js",
+      "content_type": "application/javascript",
+      "bytes": 717,
+      "sha256": "bed64784792283cf415de0efaac7f741aa22302c3045ebace07a704d847c09dc"
+    },
+    {
+      "name": "grnet-localized-main-script",
+      "url": "https://diavlos.grnet.gr/el/main-4LCJ5YJQ.js",
+      "checked_at": "2026-10-25T20:34:04Z",
+      "error": "ValueError: Text response exceeds 1 MiB"
+    },
+    {
+      "name": "greece-designated-embed",
+      "url": "https://new.diavlos.grnet.gr/el/embed/room/6017/event/6022",
+      "checked_at": "2026-10-25T20:32:51Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/el/embed/room/6017/event/6022",
+      "content_type": "text/html",
+      "bytes": 6469,
+      "sha256": "a3223b97d2ac5a0e1bfb70b63a97dc3eea7d19d23247c83cadd98741cbdd1da3"
+    },
+    {
+      "name": "grnet-program-component",
+      "url": "https://diavlos.grnet.gr/el/chunk-E2BDGE24.js",
+      "checked_at": "2026-10-25T20:37:53Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/el/chunk-E2BDGE24.js",
+      "content_type": "application/javascript",
+      "bytes": 89485,
+      "sha256": "74b27b530b9caa7e5bc7c28f2f7187c7f7aba0013c89cc502e6cda22a4938818"
+    },
+    {
+      "name": "grnet-program-module",
+      "url": "https://diavlos.grnet.gr/el/chunk-HX7Z5KVP.js",
+      "checked_at": "2026-10-25T20:37:20Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/el/chunk-HX7Z5KVP.js",
+      "content_type": "application/javascript",
+      "bytes": 759,
+      "sha256": "d9d792990c5e7f846a70923d7042db30cdaa49e0e19822dbb29c884bfa40a953"
+    },
+    {
+      "name": "grnet-schedule-25-31oct",
+      "url": "https://diavlos.grnet.gr/api/schedule/2026-10-25--2026-10-31",
+      "checked_at": "2026-10-25T20:38:32Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/api/schedule/2026-10-25--2026-10-31",
+      "content_type": "application/json",
+      "bytes": 2616,
+      "sha256": "5bc1402ef0928cc5fd6639f67336062f38a3186612395eace27a84c3c0fad45d"
+    },
+    {
+      "name": "grnet-epresence-schedule-25-31oct",
+      "url": "https://diavlos.grnet.gr/api/epresence-schedule/2026-10-25--2026-10-31",
+      "checked_at": "2026-10-25T20:38:34Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/api/epresence-schedule/2026-10-25--2026-10-31",
+      "content_type": "application/json",
+      "bytes": 10566,
+      "sha256": "a1fafb341ebae6d314bbc5420aaeb217c6f5b9d3dada91db3a6b287d86da3650"
+    },
+    {
+      "name": "grnet-main-script",
+      "url": "https://diavlos.grnet.gr/main-4LCJ5YJQ.js",
+      "checked_at": "2026-10-25T20:33:26Z",
+      "status": 200,
+      "final_url": "https://diavlos.grnet.gr/main-4LCJ5YJQ.js",
+      "content_type": "text/html",
+      "bytes": 6469,
+      "sha256": "a3223b97d2ac5a0e1bfb70b63a97dc3eea7d19d23247c83cadd98741cbdd1da3"
+    },
+    {
+      "name": "greece-tv-home",
+      "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/",
+      "checked_at": "2026-10-25T20:31:03Z",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "status": 403
+    },
+    {
+      "name": "greece-current-archive",
+      "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/Tv-History/?d=25%2F10%2F2026&p=a42b8296-8df9-495a-b9d1-ac4101011816&tv=fb9af42f-0ee4-4a8c-bf35-b4e500f0f5a1",
+      "checked_at": "2026-10-25T20:31:05Z",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "status": 403
+    },
+    {
+      "name": "sansad-fpc-rs",
+      "url": "https://sansadtv.nic.in/fpc-rs",
+      "checked_at": "2026-10-25T20:31:07Z",
+      "error": "URLError: <urlopen error timed out>"
+    }
+  ],
+  "summary": {
+    "new_ready_parsers": 0,
+    "new_guide_programmes_claimed": 0,
+    "new_official_alternative_routes_documented": [
+      "Greek Parliament-designated GRNET event and date-filtered schedule APIs",
+      "Sansad channel-specific FPC indexes with historical XLSX attachments"
+    ],
+    "holds_preserved": [
+      "Greece raw broadcast timetable inaccessible; reachable metadata describes permanent sessions or other events",
+      "Sansad current channel-specific indexes unreachable",
+      "EBS future source durations absent; nested asset dates are not broadcast ranges"
+    ]
+  },
+  "verification": {
+    "json_decodes": true,
+    "network_scope": "Bounded official text and unauthenticated JSON only; no media downloaded or played.",
+    "tests": "No runtime changes; no new parser tests or broad suite rerun required.",
+    "evidence_secret_scan": "Passed: 0 recognized secret occurrences."
+  }
+}

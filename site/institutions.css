@@ -1,9 +1,7 @@
-.institutions-page main { padding: 2.5rem 0 4rem; }
-.institutions-intro h1 { font-size: clamp(2.35rem, 4vw, 3.25rem); line-height: 1.05; overflow-wrap: anywhere; hyphens: auto; }
-.institutions-intro .lede { max-width: 850px; margin-top: .75rem; font-size: 1rem; }
+.institutions-page main { padding-bottom: 4rem; }
 .institutions-reviewed, .institutions-hint { color: var(--muted); font-size: .76rem; line-height: 1.5; }
-.institutions-reviewed { margin: .7rem 0 1.5rem; }
-.institutions-contribute { padding: .4rem 1.1rem; border-left: 3px solid var(--green); background: var(--wash); }
+.institutions-reviewed { margin: .7rem 0 0; }
+.institutions-contribute { padding: .4rem 1.1rem; border-inline-start: 3px solid var(--green); background: var(--green-wash); }
 .institutions-contribute > summary { min-height: 44px; padding: .65rem 0; font-size: .9rem; font-weight: 700; line-height: 1.4; cursor: pointer; }
 .institutions-contribute[open] { padding-bottom: .85rem; }
 .institutions-contribute p { max-width: 950px; margin: .4rem 0 .5rem; color: var(--muted); font-size: .84rem; line-height: 1.5; }
@@ -69,9 +67,6 @@
   .institution-children .institution-viewing { padding-inline-start: var(--institution-indent); }
 }
 @media (max-width: 680px) {
-  .institutions-page main { padding-top: 1.4rem; }
-  .institutions-intro h1 { font-size: 2.25rem; }
-  .institutions-intro .lede { font-size: .93rem; }
   .institutions-contribute { padding: .2rem .85rem; }
   .institutions-links { gap: .1rem 1rem; }
   .institutions-links a { min-height: 40px; }

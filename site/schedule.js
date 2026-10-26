@@ -8,9 +8,11 @@ const catalogueUrl = new URL("./data/channels.json", scriptUrl);
 const localCatalogueUrl = new URL("../data/channels.json", scriptUrl);
 const schedulesUrl = new URL("./data/schedules.json", scriptUrl);
 const localSchedulesUrl = new URL("../data/schedules.json", scriptUrl);
+const qualityUrl = new URL("./data/epg-quality.json", scriptUrl);
+const localQualityUrl = new URL("../data/epg-quality.json", scriptUrl);
 const query = new URLSearchParams(window.location.search);
 const locale = supportedLocale(query.get("lang") ?? readLocalePreference() ?? navigator.language);
-const state = { channels: [], schedules: {}, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", listingFilter: "" };
+const state = { channels: [], schedules: {}, sources: {}, quality: {}, hasSnapshot: false, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", listingFilter: query.get("listings") ?? "" };
 
 const flagAssets = window.ParliamentStreamsFlags;
 
@@ -22,6 +24,8 @@ const elements = {
   empty: document.querySelector("#schedule-empty"),
   updated: document.querySelector("#schedule-updated"),
   locale: document.querySelector("#locale-select"),
+  coverage: document.querySelector("#schedule-coverage"),
+  clear: document.querySelector("#schedule-clear"),
 };
 
 function t(key, values) { return message(state.locale, key, values); }
@@ -78,6 +82,11 @@ function detailsUrl(channel, play = false) {
   return `index.html?${params.toString()}#catalogue`;
 }
 
+function officialLink(channel) {
+  if (channel.playback_policy !== "link_out" || !/^https?:\/\//i.test(channel.official_url ?? "")) return "";
+  return `<a class="schedule-official" href="${escapeHtml(channel.official_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("official"))} ↗</a>`;
+}
+
 function eventMarkup(schedule, position) {
   const current = position === "current";
   const title = schedule[`${position}_event_title`];
@@ -89,20 +98,21 @@ function eventMarkup(schedule, position) {
   );
   const location = schedule[`${position}_event_location`];
   const language = schedule[`${position}_event_language`];
-  const metadata = [location].filter(Boolean).join(" · ");
+  const metadata = location ? `<bdi dir="auto">${escapeHtml(location)}</bdi>` : "";
   const languageAttribute = language ? ` lang="${escapeHtml(language)}"` : "";
   return `${current && isScheduleMarkedLive(schedule) ? `<span class="programme-live">${escapeHtml(st("now"))}</span>` : ""}
-    ${time ? `<span class="programme-time">${escapeHtml(time)}</span>` : ""}
-    <strong class="programme-title"${languageAttribute}>${escapeHtml(title)}</strong>
-    ${metadata ? `<span class="programme-meta">${escapeHtml(metadata)}</span>` : ""}`;
+    ${time ? `<span class="programme-time"><bdi dir="ltr">${escapeHtml(time)}</bdi></span>` : ""}
+    <strong class="programme-title"${languageAttribute}><bdi dir="auto">${escapeHtml(title)}</bdi></strong>
+    ${metadata ? `<span class="programme-meta">${metadata}</span>` : ""}`;
 }
 
-function visibleRows() {
+function visibleRows(applyListingFilter = true) {
   return Object.entries(state.schedules)
     .map(([id, schedule]) => ({ channel: state.channels.find((item) => item.id === id), schedule }))
     .filter(({ channel }) => channel)
     .filter(({ channel }) => !state.jurisdiction || channel.country_or_region === state.jurisdiction)
     .filter(({ channel, schedule }) => {
+      if (!applyListingFilter) return true;
       if (state.listingFilter === "current") return hasCurrent(schedule);
       if (state.listingFilter === "next") return hasNext(schedule);
       if (state.listingFilter === "playable") return isPlaybackEnabled(channel);
@@ -120,21 +130,49 @@ function render() {
   const rows = visibleRows();
   elements.results.textContent = st("results", { count: new Intl.NumberFormat(state.locale).format(rows.length) });
   elements.empty.hidden = rows.length !== 0;
+  document.querySelector(".schedule-table-wrap").hidden = rows.length === 0;
+  elements.clear.hidden = !state.jurisdiction && !state.listingFilter;
+  renderCoverage(rows, visibleRows(false));
   elements.list.innerHTML = rows.map(({ channel, schedule }) => {
     const flag = flagAssets[channel.country_or_region];
+    const quality = state.quality[channel.id];
+    const kind = quality?.state === "mapping_unverified" ? "eventListings" : quality?.state === "quality_hold" ? "notInGuide" : null;
+    const retainedAt = schedule.last_success_at ?? schedule.fetched_at;
+    const retained = schedule.stale && retainedAt
+      ? st("retained", { date: new Date(retainedAt).toLocaleString(state.locale) }) : "";
     return `<tr>
-      <td><div class="schedule-channel${flag ? "" : " schedule-channel--no-flag"}">${flag ? `<img class="schedule-flag" src="${flag}" alt="">` : ""}<div><strong>${escapeHtml(channel.name)}</strong><span>${escapeHtml(jurisdictionName(channel))} · ${escapeHtml(channel.legislature)}</span>${schedule.stale ? `<span class="schedule-channel-stale">${escapeHtml(st("stale"))}</span>` : ""}</div></div></td>
+      <td><div class="schedule-channel${flag ? "" : " schedule-channel--no-flag"}">${flag ? `<img class="schedule-flag" src="${flag}" alt="">` : ""}<div><strong>${escapeHtml(channel.name)}</strong><span>${escapeHtml(jurisdictionName(channel))} · ${escapeHtml(channel.legislature)}</span>${kind ? `<span class="schedule-kind">${escapeHtml(st(kind))}</span>` : ""}${retained ? `<span class="schedule-channel-stale">${escapeHtml(retained)}</span>` : ""}</div></div></td>
       <td data-label="${escapeHtml(st("now"))}">${eventMarkup(schedule, "current")}</td>
       <td data-label="${escapeHtml(st("next"))}">${eventMarkup(schedule, "next")}</td>
-      <td><div class="schedule-actions">${isPlaybackEnabled(channel) ? `<a class="schedule-watch" href="${detailsUrl(channel, true)}">${escapeHtml(t("watch"))}</a>` : ""}<a class="schedule-details" href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></div></td>
+      <td><div class="schedule-actions">${isPlaybackEnabled(channel) ? `<a class="schedule-watch" href="${detailsUrl(channel, true)}">${escapeHtml(t("watch"))}</a>` : officialLink(channel)}<a class="schedule-details" href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></div></td>
     </tr>`;
   }).join("");
   renderUnparsedScheduleLinks();
 }
 
+function renderCoverage(rows, unfilteredRows) {
+  const channels = state.channels.filter((channel) => !state.jurisdiction || channel.country_or_region === state.jurisdiction);
+  const parsers = [...new Set(channels.flatMap((channel) => channel.epg_sources
+    .filter((source) => source.scraper_status === "implemented").map((source) => source.scraper)))];
+  const statuses = parsers.map((id) => state.sources[id]?.status);
+  let key = "summary";
+  if (!state.hasSnapshot) key = "dataUnavailable";
+  else if (!unfilteredRows.length) {
+    if (!parsers.length) key = "noParser";
+    else if (statuses.includes("error")) key = "collectionError";
+    else if (statuses.length && statuses.every((status) => status === "empty")) key = "emptyWindow";
+    else key = "coverageUnknown";
+  }
+  elements.coverage.textContent = st(key);
+  // A coverage gap is not a filter mismatch. Keep the specific explanation
+  // beside the filters, without a second contradictory empty-table message.
+  elements.empty.hidden = rows.length !== 0 || key !== "summary";
+}
+
 function unparsedScheduleSources(channel) {
   return channel.epg_sources.filter((source) => source.method === "GET"
-    && source.scraper_status === "planned" && !/api|json|zip/i.test(source.kind));
+    && source.scraper_status === "planned" && !/api|json|zip/i.test(source.kind)
+    && /^https?:\/\//i.test(source.url));
 }
 
 function renderUnparsedScheduleLinks() {
@@ -143,13 +181,25 @@ function renderUnparsedScheduleLinks() {
   const links = new Map();
   for (const channel of state.channels) {
     if (state.jurisdiction && channel.country_or_region !== state.jurisdiction) continue;
-    for (const source of unparsedScheduleSources(channel)) {
+    const missing = !state.hasSnapshot || !Object.hasOwn(state.schedules, channel.id);
+    const sources = missing && state.jurisdiction
+      ? channel.epg_sources.filter((source) => source.method === "GET" && !/api|json|zip/i.test(source.kind) && /^https?:\/\//i.test(source.url))
+      : unparsedScheduleSources(channel);
+    for (const source of sources) {
       if (!links.has(source.url)) links.set(source.url, { channel, url: source.url });
+    }
+    if (missing && state.jurisdiction && !sources.length && /^https?:\/\//i.test(channel.official_url ?? "")) {
+      if (!links.has(channel.official_url)) links.set(channel.official_url, { channel, url: channel.official_url });
     }
   }
   const entries = [...links.values()].sort((a, b) => jurisdictionName(a.channel).localeCompare(jurisdictionName(b.channel), state.locale)
     || a.channel.name.localeCompare(b.channel.name, state.locale));
-  document.querySelector("#official-schedules").hidden = !entries.length;
+  const disclosure = document.querySelector("#official-schedules");
+  disclosure.hidden = !entries.length;
+  if (disclosure.dataset.selection !== state.jurisdiction) {
+    disclosure.open = Boolean(state.jurisdiction && !visibleRows(false).length && entries.length);
+    disclosure.dataset.selection = state.jurisdiction;
+  }
   setText("official-schedules-label", `${t("calendarAgenda")} · ${sourceCount(state.locale, entries.length)}`);
   document.querySelector("#official-schedules-list").innerHTML = entries.map(({ channel, url }) =>
     `<li><a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(channel.name)} ↗</a> · <a href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></li>`
@@ -158,7 +208,7 @@ function renderUnparsedScheduleLinks() {
 
 function renderFilters() {
   const jurisdictions = [...new Set(state.channels
-    .filter((channel) => Object.hasOwn(state.schedules, channel.id) || unparsedScheduleSources(channel).length)
+    .filter((channel) => Object.hasOwn(state.schedules, channel.id) || channel.epg_sources.length)
     .map((channel) => channel.country_or_region))]
     .sort((a, b) => localizedJurisdictionName(state.locale, a).localeCompare(localizedJurisdictionName(state.locale, b), state.locale));
   elements.jurisdiction.innerHTML = `<option value="">${escapeHtml(t("allJur"))}</option>${jurisdictions.map((name) => {
@@ -193,6 +243,7 @@ function applyTranslations() {
   setText("schedule-next-heading", st("next"));
   setText("schedule-actions-heading", st("actions"));
   setText("schedule-empty", st("noResults"));
+  elements.clear.textContent = st("clearFilters");
   setText("schedule-footer-copy", t("footer"));
   setText("schedule-data-footer-link", st("data"));
 }
@@ -206,9 +257,22 @@ function renderFreshness() {
 }
 
 async function fetchJson(primary, fallback) {
-  let response = await fetch(primary, { cache: "no-store" });
-  if (!response.ok) response = await fetch(fallback, { cache: "no-store" });
-  return response.ok ? response.json() : null;
+  for (const url of [primary, fallback]) {
+    try {
+      const response = await fetch(url, { cache: "no-store" });
+      if (response.ok) return await response.json();
+    } catch { /* A missing optional publication product must not hide official links. */ }
+  }
+  return null;
+}
+
+function updateFilterUrl() {
+  const url = new URL(window.location.href);
+  for (const [key, value] of [["jurisdiction", state.jurisdiction], ["listings", state.listingFilter]]) {
+    if (value) url.searchParams.set(key, value);
+    else url.searchParams.delete(key);
+  }
+  history.replaceState({}, "", url);
 }
 
 async function init() {
@@ -237,22 +301,40 @@ async function init() {
   }
   if (!catalogue) throw new Error(t("sourceError"));
   // Official calendars remain usable if generated programme data is unavailable.
+  state.hasSnapshot = Boolean(snapshot && typeof snapshot.channels === "object" && snapshot.channels !== null);
   snapshot ??= {};
   state.channels = catalogue.channels;
   state.schedules = snapshot.channels ?? {};
+  state.sources = snapshot.sources ?? {};
   state.generatedAt = snapshot.generated_at ?? Object.values(state.schedules).map((item) => item.fetched_at).filter(Boolean).sort().at(-1) ?? null;
+  if (snapshot.schema_version === 3) {
+    const quality = window.PARLIAMENT_STREAMS_EPG_QUALITY
+      ?? (window.location.protocol !== "file:" ? await fetchJson(qualityUrl, localQualityUrl) : null);
+    // Do not combine coverage from a different scheduled publication window.
+    if (quality?.schema_version === 1 && quality.generated_at === state.generatedAt) {
+      state.quality = quality.coverage?.channels ?? {};
+    }
+  }
   renderFilters();
+  if (!["", "current", "next", "playable"].includes(state.listingFilter)) state.listingFilter = "";
+  elements.listingFilter.value = state.listingFilter;
   renderFreshness();
   render();
   elements.jurisdiction.addEventListener("change", () => {
     state.jurisdiction = elements.jurisdiction.value;
-    const url = new URL(window.location.href);
-    if (state.jurisdiction) url.searchParams.set("jurisdiction", state.jurisdiction);
-    else url.searchParams.delete("jurisdiction");
-    history.replaceState({}, "", url);
+    updateFilterUrl();
     render();
   });
-  elements.listingFilter.addEventListener("change", () => { state.listingFilter = elements.listingFilter.value; render(); });
+  elements.listingFilter.addEventListener("change", () => { state.listingFilter = elements.listingFilter.value; updateFilterUrl(); render(); });
+  elements.clear.addEventListener("click", () => {
+    state.jurisdiction = "";
+    state.listingFilter = "";
+    elements.jurisdiction.value = "";
+    elements.listingFilter.value = "";
+    updateFilterUrl();
+    render();
+    elements.jurisdiction.focus();
+  });
 }
 
 init().catch((error) => {

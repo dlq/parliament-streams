@@ -55,16 +55,24 @@ older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
 
 ## Scraper Work
 
-The [25 October coverage pass](reports/epg/2026-10-25-coverage-pass.md) adds Dutch
-room broadcasts, Quebec's separate linear channel and Spain's dated weekly
-parser. The quality report now tracks every catalogue entry through parser,
-collection, mapping and programme availability states. Named holds remain below.
+The [second 25 October pass](reports/epg/2026-10-25-second-pass-coverage.md)
+and [measured data](reports/epg/2026-10-25-second-pass-coverage.json) record a local
+preview at 21:04 UTC, not a completed deployment: 41 parser-connected entries,
+20 collectors and 270 programmes across six channels. Knesset adds explicit
+broadcast ranges; TV Senado uses bounded daily next-listing ends. Czech and
+Estonian plenary starts retain unknown ends.
+The [first-pass checkpoint](reports/epg/2026-10-25-coverage-pass.md) remains
+historical evidence. The quality report tracks every catalogue entry through
+parser, collection, mapping and programme availability states.
 
 - [ ] Verify feed/room mappings for event platforms; institutional agendas and
   parallel event directories must not become a fictional linear TV guide.
-- [ ] Improve Brazil's source-date/inferred-end handling and investigate official
-  schedules for Greece, Sansad TV and Denmark. Prefer documented structured sources, then
-  add narrowly scoped parsers and saved-response fixtures.
+- [ ] Resolve EBS/Italian and Czech/Estonian end-time gaps, TV Camara's assumed
+  broadcast dates, and Greece/Sansad/Denmark/Slovakia access or mapping holds.
+  Validate Thailand's monthly PDF recurrence and timing conflicts before parser
+  work; keep Chile/Jalisco signal mappings separate from institutional agendas.
+- [ ] Restore a supported New Zealand calendar-data contract. Its current Blazor
+  loading shell now reports an error rather than a false empty result.
 - [ ] Cover empty/off-session responses, changed markup, cancellations, rescheduling,
   overnight events, timezones and daylight-saving transitions. Preserve valid
   partial results and explain exclusions without manufacturing programme times.
@@ -92,11 +100,31 @@ source's presentation.
   Outreach remains deferred until a coordinated communications package and messages
   have been reviewed; recording this plan does not authorize sending them.
 
-## Future UI/UX Review
+## UI/UX Follow-up
 
 Keep the current visual identity, compact density and straightforward watch
 handoff. Revisit broader product direction after another data-stability round.
 A hosted television-view application remains a later product decision.
+
+The [25 October Pages audit](reports/ui/2026-10-25-audit.md) is complete for the
+documented journeys, with 25 original captures. The first implementation pass
+is present locally; publication is a separate step:
+
+- [x] Repair map search feedback, keyboard tab order, selection/focus state and
+  the mobile route to selected details and the textual jurisdiction index.
+- [x] Explain the inventory → catalogue → reviewed checks → generated products
+  relationship through a shared Data and method route, consistent code/data/
+  contribution utilities and clearly defined coverage counts.
+- [x] Connect schedule empty/error/stale/mapping states to specific explanations
+  and official-source actions; simplify detail and reuse-permission wording.
+  State explicitly that IPTV downloads are global and independent of page filters.
+- [x] Repair narrow translated navigation, retain always-visible catalogue
+  coverage and tighten secondary spacing and repeated labels.
+- [x] Align secondary-page headings and introductory spacing; use a restrained
+  green wash for shared explanations and contribution areas, retaining compact
+  white list rows.
+- [ ] Verify real screen-reader, zoom/text-resize, forced-colour and physical
+  mobile behaviour. Obtain fluent-speaker review of the new translated copy.
 
 ### Group Subnational Sources In The Catalogue
 
@@ -106,6 +134,9 @@ A hosted television-view application remains a later product decision.
   links; search and filters should reveal matches inside their groups.
 - [ ] Add dated schedule browsing and shareable filter state when event identifiers
   and timestamps support it. Missing coverage must remain distinct from no events.
+  Jurisdiction/listing filters are now shareable. Review how Now/Next summaries
+  age between scheduled collections before expanding dated browsing; distinguish
+  publisher-reported live status from a programme inferred from its time range.
 
 ### Language Coverage And Review
 

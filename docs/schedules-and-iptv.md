@@ -45,6 +45,10 @@ Current scraper ids:
 - `dutch-debat-direct`
 - `spain-canal-parlamento-weekly`
 - `quebec-canal-assemblee`
+- `brazil-tv-senado-grid`
+- `czech-chamber-plenary`
+- `estonia-riigikogu-plenary`
+- `knesset-tv-guide`
 
 They parse supplied HTML/JSON strings. Network fetching remains in the shared
 collector rather than inside parser functions, so every run records what was
@@ -55,10 +59,12 @@ parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
 As of 2026-10-25, all 270 catalogue source records have at least one official
-schedule, agenda, meeting or dated video-event surface recorded. Thirty-seven
-records use implemented parsers across 20 unique URLs; 241 other unique URLs
-remain planned. These are source-discovery counts, not populated programme-guide
-coverage or proof that every surface describes a broadcast. The jurisdiction filter
+schedule, agenda, meeting or dated video-event surface recorded. Forty-one
+records use implemented parsers across 24 unique URLs and 20 collectors; 229
+catalogue entries still have planned extraction. These are source-discovery
+counts, not populated programme-guide coverage or proof that every surface
+describes a broadcast. This pass did not freshly fetch every planned URL. The
+jurisdiction filter
 includes both parsed-guide records and planned official calendar/navigation links.
 These official links remain available if generated programme data cannot load.
 Catalogue and schedule use the same sourced jurisdiction-flag registry. The earlier
@@ -210,9 +216,13 @@ pending, and no recording or catch-up permission is asserted.
 
 The guide requires a reviewed mapping from the schedule source to a particular
 broadcast feed, plus valid timezone-aware start/end times. The reviewed sources
-are Brazil TV Camara, CPAC, EBS, the Italian Senate's identified WebTV1/13440 feed,
+are Brazil TV Camara and TV Senado, CPAC, EBS, the Italian Senate's identified
+WebTV1/13440 feed,
 the Dutch plenary and Aletta Jacobs rooms, Spain Canal Parlamento, and Quebec's
-separate Canal de l'Assemblée (canal17). Other sources
+separate Canal de l'Assemblée (canal17), plus Czech Chamber Stream 1, Estonia
+Riigikogu Live 1 and Knesset Channel 99. These are 12 reviewed feed mappings;
+an implemented parser or reviewed mapping does not guarantee populated programmes.
+Other sources
 default to excluded until their feed mapping is reviewed. European Parliament's
 parallel event directory remains in the website schedule JSON, with room labels,
 but is not exported as a single XMLTV channel. Institutional agendas and other
@@ -224,8 +234,11 @@ is arbitrarily chosen to represent that timeslot. Channel definitions cover
 playlist entries and reviewed broadcast feeds, including CPAC/EBS metadata;
 guide availability does not imply IPTV playback rights.
 
-Brazil and CPAC infer end times from the next listing; Brazil currently assumes
-the programme date from the collection date. These assumptions are recorded as
+CPAC, Brazil TV Camara, TV Senado and Spain Canal Parlamento infer end times from
+the next listing. TV Senado and Spain keep inference within a validated dated
+daily table and leave terminal ends unknown. TV Camara currently assumes the
+programme date from collection and verifies the active source weekday. These
+assumptions are recorded as
 `end_basis`/`start_basis` in schedule JSON and disclosed in XMLTV descriptions.
 Legacy cached records from those parsers receive the same disclosures. Missing
 or nonpositive EBS durations remain unknown instead of creating zero-length
@@ -245,14 +258,36 @@ Pages includes the coverage totals in its Actions summary, and publication
 validation checks the coverage against the catalogue and collected events.
 Older quality reports without the optional coverage section remain readable.
 
-The [25 October EPG pass](../reports/epg/2026-10-25-coverage-pass.md) records
-the new parsers and the remaining named holds. Dutch agendas use exact room IDs;
+The [first 25 October pass](../reports/epg/2026-10-25-coverage-pass.md) remains a
+historical checkpoint: 83 programmes across four channels, 37 parser-connected
+entries and 16 collectors. The [second-pass results](../reports/epg/2026-10-25-second-pass-coverage.md)
+and [measured data](../reports/epg/2026-10-25-second-pass-coverage.json) describe a
+verified **local preview at 21:04 UTC on 25 October**, not a completed deployment:
+598 events, 474 with ends, and **270 XMLTV programmes across six populated channels**,
+including 129 Knesset and 59 TV Senado programmes. An earlier second-pass preview
+had 272; one CPAC and one Knesset programme elapsed before this collection.
+There are 42 XMLTV channel definitions, distinct from six populated guides.
+The playlists remain four stable / 38 broader entries; three broader entries
+have populated guides. No new independent playback or reuse permission is implied.
+Collection records 12 successful sources, seven empty sources, one New Zealand
+error and no retained stale channels.
+
+Dutch agendas use exact room IDs;
 the Actualiteitenkanaal retains its mapping hold. Quebec's linear programme
 belongs to the separately catalogued canal17 service, never the canal01–14 event
 webcasts. Recovered ParlVU/SenVu end times improve website event data while those
 mixed-room directories remain outside the linear guide. Spain's current dated
-view can legitimately be empty. Greece and Denmark retain automated access
-holds, and Sansad TV needs a current accessible programme source.
+view can legitimately be empty. Czech and Estonian plenary parsers preserve
+starts without inventing ends. New Zealand's current Blazor loading shell is
+now a collection error, not evidence of an empty calendar.
+
+EBS future durations and Italian WebTV1 ends remain unknown. Greece's reachable
+GRNET metadata describes permanent streaming sessions rather than programmes;
+the dated television timetable remains inaccessible. Sansad TV's current
+channel-specific indexes time out. Thailand's current monthly TV PDF is a
+recurring grid with unresolved timing/layout conflicts, while Denmark, Slovakia,
+Chile and Jalisco retain access or feed-mapping holds. Details and bounded
+source checks are linked from the second-pass report.
 
 ## Source And Viewer Timezones
 
@@ -263,6 +298,8 @@ runner's date. A naive timestamp cannot be silently converted using the runner's
 timezone. Ambiguous autumn clocks and nonexistent spring clocks without an
 explicit resolving offset remain unresolved. Printed overnight ends are resolved
 on the correct next calendar date before timezone conversion.
+Knesset's broadcast-day sequence advances after midnight only through an
+explicitly connected preceding end; a bare clock rollback is not enough.
 
 Catalogue and schedule pages display these instants in the viewer's browser
 timezone using the selected UI language; changing language does not change the

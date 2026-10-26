@@ -25,7 +25,7 @@ window.ParliamentStreamsExtraLocales = {
       "catalogueCoverage": "Pokrytí katalogu",
       "metricSources": "Zdroje",
       "metricPlayable": "Lze přehrát zde",
-      "metricSchedules": "Zdroje programu",
+      "metricSchedules": "Automatické programové údaje",
       "metricUpdated": "Katalog aktualizován",
       "evidenceDates": "Data ověření",
       "notAvailable": "Není k dispozici",
@@ -53,10 +53,10 @@ window.ParliamentStreamsExtraLocales = {
       "openStreamsCopy": "Otevřené parlamentní video potřebuje také otevřená programová data. Parlamenty by měly včas zveřejňovat strojově čitelné programy a události na stálých URL s jasnými podmínkami použití, trvalými identifikátory, časovými pásmy a rychlými opravami.",
       "sourceType": "Typ zdroje",
       "sourceKind": "Druh zdroje",
-      "accessStatus": "Stav přístupu",
+      "accessStatus": "Technické kontroly",
       "stabilityRisk": "Riziko nestability",
-      "playbackPolicy": "Přehrávání",
-      "useGuidance": "Pokyny k použití",
+      "playbackPolicy": "Způsob sledování",
+      "useGuidance": "Opětovné použití a oprávnění",
       "availability": "Dostupnost",
       "accessValidatedDescription": "Poslední uložené ověření bylo úspěšné.",
       "accessNeedsReviewDescription": "Technický přístup vyžaduje kontrolu nebo poslední ověření nebylo bez chyb.",
@@ -179,7 +179,9 @@ window.ParliamentStreamsExtraLocales = {
         "warning": "Varování",
         "error": "Chyba",
         "skipped": "Přeskočeno"
-      }
+      },
+      "viewingChecks": "Sledování a kontroly",
+      "permissionStatus": "Stav oprávnění"
     },
     "map": {
       "section": "Geografie katalogu",
@@ -269,7 +271,8 @@ window.ParliamentStreamsExtraLocales = {
       "vlcOpen": "Ve VLC vyberte Média → Otevřít síťový proud (Windows/Linux) nebo Soubor → Otevřít síť (macOS).",
       "vlcPlay": "Vložte URL, vyberte Přehrát nebo Otevřít a poté kanál v seznamu VLC.",
       "vlcGuide": "Pro přehrávání ve VLC použijte URL seznamu. URL XMLTV poskytuje samostatného průvodce pro kompatibilní aplikace; tyto kroky nenastavují průvodce XMLTV ve VLC.",
-      "vlcDocs": "Oficiální dokumentace VLC od VideoLAN (anglicky)"
+      "vlcDocs": "Oficiální dokumentace VLC od VideoLAN (anglicky)",
+      "filterScope": "Tyto seznamy jsou celosvětové; filtry stránky je nemění."
     },
     "sourceCount": {
       "one": "{count} zdroj",
@@ -301,7 +304,7 @@ window.ParliamentStreamsExtraLocales = {
       "catalogueCoverage": "Luettelon kattavuus",
       "metricSources": "Lähteet",
       "metricPlayable": "Toistettavissa täällä",
-      "metricSchedules": "Ohjelmatietolähteet",
+      "metricSchedules": "Automaattiset ohjelmatiedot",
       "metricUpdated": "Luettelo päivitetty",
       "evidenceDates": "Todennusten päivämäärät",
       "notAvailable": "Ei saatavilla",
@@ -329,10 +332,10 @@ window.ParliamentStreamsExtraLocales = {
       "openStreamsCopy": "Avoin parlamenttivideo tarvitsee myös avoimia ohjelmatietoja. Parlamenttien tulisi julkaista ajantasaisia, koneluettavia ohjelma- ja tapahtumatietoja pysyvissä osoitteissa sekä selkeät jatkokäyttöehdot, pysyvät tunnisteet, aikavyöhykkeet ja viipymättömät korjaukset.",
       "sourceType": "Lähteen tyyppi",
       "sourceKind": "Lähteen laji",
-      "accessStatus": "Pääsyn tila",
+      "accessStatus": "Tekniset tarkistukset",
       "stabilityRisk": "Vakausriski",
-      "playbackPolicy": "Toisto",
-      "useGuidance": "Käyttöohjeet",
+      "playbackPolicy": "Katselutapa",
+      "useGuidance": "Uudelleenkäyttö ja luvat",
       "availability": "Saatavuus",
       "accessValidatedDescription": "Viimeisin tallennettu tarkistus onnistui.",
       "accessNeedsReviewDescription": "Tekninen pääsy vaatii tarkistusta tai viimeisin tarkistus ei onnistunut virheittä.",
@@ -455,7 +458,9 @@ window.ParliamentStreamsExtraLocales = {
         "warning": "Varoitus",
         "error": "Virhe",
         "skipped": "Ohitettu"
-      }
+      },
+      "viewingChecks": "Katselu ja tarkistukset",
+      "permissionStatus": "Lupien tila"
     },
     "map": {
       "section": "Luettelon maantiede",
@@ -545,7 +550,8 @@ window.ParliamentStreamsExtraLocales = {
       "vlcOpen": "Valitse VLC:ssä Media → Avaa verkkovirta (Windows/Linux) tai Tiedosto → Avaa verkko (macOS).",
       "vlcPlay": "Liitä URL, valitse Toista tai Avaa ja valitse sitten kanava VLC:n soittolistasta.",
       "vlcGuide": "Käytä soittolistan URL-osoitetta VLC-toistoon. XMLTV-URL tarjoaa erillisen ohjelmaoppaan sitä tukeville sovelluksille; nämä vaiheet eivät määritä XMLTV-opasta VLC:hen.",
-      "vlcDocs": "VideoLANin virallinen VLC-dokumentaatio (englanniksi)"
+      "vlcDocs": "VideoLANin virallinen VLC-dokumentaatio (englanniksi)",
+      "filterScope": "Nämä soittolistat ovat maailmanlaajuisia; sivun suodattimet eivät muuta niitä."
     },
     "sourceCount": {
       "one": "{count} lähde",
@@ -576,7 +582,7 @@ window.ParliamentStreamsExtraLocales = {
       "catalogueCoverage": "Katalogens täckning",
       "metricSources": "Källor",
       "metricPlayable": "Kan spelas här",
-      "metricSchedules": "Tablåkällor",
+      "metricSchedules": "Automatiska programtablåer",
       "metricUpdated": "Katalogen uppdaterad",
       "evidenceDates": "Datum för belägg",
       "notAvailable": "Inte tillgängligt",
@@ -604,10 +610,10 @@ window.ParliamentStreamsExtraLocales = {
       "openStreamsCopy": "Öppen parlamentsvideo behöver också öppna tablådata. Parlament bör publicera aktuella, maskinläsbara program- och händelseflöden på stabila webbadresser med tydliga återanvändningsvillkor, beständiga identifierare, tidszoner och snabba rättelser.",
       "sourceType": "Källtyp",
       "sourceKind": "Typ av källa",
-      "accessStatus": "Åtkomststatus",
+      "accessStatus": "Tekniska kontroller",
       "stabilityRisk": "Stabilitetsrisk",
-      "playbackPolicy": "Uppspelning",
-      "useGuidance": "Användningsvägledning",
+      "playbackPolicy": "Visningssätt",
+      "useGuidance": "Återanvändning och tillstånd",
       "availability": "Tillgänglighet",
       "accessValidatedDescription": "Den senaste sparade verifieringen lyckades.",
       "accessNeedsReviewDescription": "Teknisk åtkomst behöver granskas eller den senaste kontrollen var inte felfri.",
@@ -730,7 +736,9 @@ window.ParliamentStreamsExtraLocales = {
         "warning": "Varning",
         "error": "Fel",
         "skipped": "Överhoppad"
-      }
+      },
+      "viewingChecks": "Visning och kontroller",
+      "permissionStatus": "Tillståndsstatus"
     },
     "map": {
       "section": "Katalogens geografi",
@@ -820,7 +828,8 @@ window.ParliamentStreamsExtraLocales = {
       "vlcOpen": "Välj Media → Öppna nätverksström (Windows/Linux) eller Arkiv → Öppna nätverk (macOS) i VLC.",
       "vlcPlay": "Klistra in adressen, välj Spela upp eller Öppna och välj sedan en kanal i VLC:s spellista.",
       "vlcGuide": "Använd spellisteadressen för uppspelning i VLC. XMLTV-adressen ger en separat programguide för appar som stöder XMLTV; dessa steg ställer inte in en XMLTV-guide i VLC.",
-      "vlcDocs": "VideoLANs officiella VLC-dokumentation (på engelska)"
+      "vlcDocs": "VideoLANs officiella VLC-dokumentation (på engelska)",
+      "filterScope": "Dessa spellistor är globala; sidans filter ändrar dem inte."
     },
     "sourceCount": {
       "one": "{count} källa",
@@ -841,7 +850,7 @@ window.ParliamentStreamsExtraLocales = {
       "search": "搜尋國家、議會或頻道",
       "jurisdiction": "管轄區",
       "sourceType": "來源型別",
-      "useGuidance": "使用說明",
+      "useGuidance": "再利用與許可",
       "source": "來源",
       "format": "格式",
       "contentLanguage": "語言",
@@ -907,7 +916,7 @@ window.ParliamentStreamsExtraLocales = {
       "catalogueCoverage": "目錄覆蓋範圍",
       "metricSources": "來源",
       "metricPlayable": "可在此播放",
-      "metricSchedules": "節目表來源",
+      "metricSchedules": "自動節目表",
       "metricUpdated": "目錄更新時間",
       "evidenceDates": "證據日期",
       "notAvailable": "暫無",
@@ -917,7 +926,7 @@ window.ParliamentStreamsExtraLocales = {
       "principleReuse": "開放再利用",
       "principleSchedules": "開放節目表",
       "principleAccessibility": "開放無障礙",
-      "accessStatus": "訪問狀態",
+      "accessStatus": "技術檢查",
       "availability": "可用時間",
       "attribution": "所需署名",
       "programme": "當前節目記錄",
@@ -933,7 +942,7 @@ window.ParliamentStreamsExtraLocales = {
       "a11yUnavailable": "不可用",
       "a11yUnknown": "尚未驗證",
       "sourceKind": "來源類別",
-      "playbackPolicy": "播放方式",
+      "playbackPolicy": "觀看方式",
       "stabilityRisk": "穩定性風險",
       "scheduleApi": "節目表 API",
       "openScheduleData": "開放節目表資料",
@@ -1005,7 +1014,9 @@ window.ParliamentStreamsExtraLocales = {
       "fallbackScheduleSource": "Schedule source",
       "fallbackNowNext": "Now/next possible",
       "fallbackNoSchedule": "No schedule role",
-      "sourceDetails": "來源詳情"
+      "sourceDetails": "來源詳情",
+      "viewingChecks": "觀看與檢查",
+      "permissionStatus": "許可狀態"
     },
     "map": {
       "section": "目錄地理",
@@ -1095,7 +1106,8 @@ window.ParliamentStreamsExtraLocales = {
       "vlcOpen": "在 VLC 中，選擇「媒體 → 開啟網路串流」（Windows/Linux）或「檔案 → 開啟網路」（macOS）。",
       "vlcPlay": "貼上 URL，選擇「播放」或「開啟」，然後在 VLC 播放清單中選擇頻道。",
       "vlcGuide": "使用播放清單 URL 在 VLC 中播放。XMLTV URL 為支援 XMLTV 的應用程式提供獨立的節目指南；以上步驟不會在 VLC 中設定 XMLTV 指南。",
-      "vlcDocs": "VideoLAN 官方 VLC 文件（英文）"
+      "vlcDocs": "VideoLAN 官方 VLC 文件（英文）",
+      "filterScope": "這些播放清單涵蓋全球；頁面篩選不會改變它們。"
     },
     "sourceCount": {
       "other": "{count} 個來源"

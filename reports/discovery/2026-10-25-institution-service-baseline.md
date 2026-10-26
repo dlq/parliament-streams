@@ -15,7 +15,7 @@ and distinct organs; counts are not interchangeable with jurisdictions or stream
 | Earlier service checks only | 632 | Dated evidence, not a fresh replay in this batch |
 | Expanded identities with no individual disposition | 0 | Evidence coverage, not universal validation |
 | Catalogue sources | 270 | Includes the separate Quebec Canal de l'Assemblée official viewing page |
-| Sources with implemented guide parsers | 37 | Parser coverage is separate from current programmes and IPTV admission |
+| Sources with implemented guide parsers | 41 | Parser coverage is separate from current programmes and IPTV admission |
 
 [This continuation](2026-10-25-held-source-publication-decisions.json) adds thirteen
 sources, documents six missing exact chamber crosswalks and deepens Finland's
@@ -30,10 +30,22 @@ reconcile the additions with map/search/schedule navigation. A locator is not an
 autonomous or linguistic boundary. Thirteen neutral flag marks retain explicit
 design/adoption gaps; no fictional or parent flags are substituted.
 
-The [subsequent EPG pass](../epg/2026-10-25-coverage-pass.md) adds Quebec's separate
+The [first EPG pass](../epg/2026-10-25-coverage-pass.md) adds Quebec's separate
 linear viewing source and exact crosswalk without changing the eligible identity
 count. Dutch, Spanish and Quebec parser additions are scoped to their reviewed
 feeds; institutional event directories retain their guide-mapping holds.
+
+The [second-pass report](../epg/2026-10-25-second-pass-coverage.md) and
+[measured coverage](../epg/2026-10-25-second-pass-coverage.json) describe a verified
+local preview at 21:04 UTC on 25 October, not a completed deployment: 598 events,
+474 with ends and 270 XMLTV programmes across six populated channels. Knesset and
+TV Senado contribute 129 and 59 programmes respectively; TV Senado's ends are
+inferred within dated daily tables. Czech and Estonian starts have no invented
+ends. The 41 parser-connected entries use 24 URLs and 20 collectors; 229 entries
+retain planned extraction. Twelve reviewed mappings and 42 XMLTV definitions
+remain separate from programme availability and unchanged four stable / 38 broader
+IPTV admission. New Zealand's loading shell now reports the preview's one source
+error. Planned URLs have not all been freshly fetched.
 
 The earlier [24 October baseline](2026-10-24-institution-service-baseline.md)
 remains a dated snapshot. The historical 652-body service cohort is unchanged;

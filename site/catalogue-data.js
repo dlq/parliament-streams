@@ -673,6 +673,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://www.ft.dk/da/Aktuelt/webtv/TV_kanalen_folketinget",
+          "method": "GET",
+          "kind": "linear_television_programme_page"
+        },
+        {
+          "scraper": "planned",
           "url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget",
           "method": "GET",
           "kind": "upcoming_broadcasts_page",
@@ -1618,11 +1625,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "url": "https://www.knesset.tv/live/",
+          "scraper": "knesset-tv-guide",
+          "url": "https://www.knesset.tv/%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%9E%D7%A0%D7%92%D7%9F-%D7%91%D7%A2%D7%A8%D7%95%D7%A5/",
           "method": "GET",
-          "kind": "live_page",
-          "scraper_status": "planned"
+          "kind": "dated_linear_broadcast_guide",
+          "scraper_status": "implemented"
         },
         {
           "scraper": "planned",
@@ -1803,7 +1810,7 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
-          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/program",
+          "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/programma/",
           "method": "GET",
           "kind": "television_programme_page",
           "scraper_status": "planned"
@@ -1981,6 +1988,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
           "method": "GET",
           "kind": "live_broadcast_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "estonia-riigikogu-plenary",
+          "url": "https://api.riigikogu.ee/api/agenda/plenary",
+          "method": "GET",
+          "kind": "dated_plenary_schedule_api",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -2328,6 +2342,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://sansadtv.nic.in/fpc-rs",
+          "method": "GET",
+          "kind": "programme_spreadsheet_index"
+        },
+        {
+          "scraper": "planned",
           "url": "https://sansadtv.nic.in/program-schedule",
           "method": "GET",
           "kind": "programme_schedule_page",
@@ -2414,6 +2435,13 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
         "notes": null
       },
       "epg_sources": [
+        {
+          "scraper": "planned",
+          "scraper_status": "planned",
+          "url": "https://tpchannel.org/schedule/tv",
+          "method": "GET",
+          "kind": "monthly_television_grid_pdf_index"
+        },
         {
           "scraper": "planned",
           "url": "https://www.parliament.go.th/view/457/%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B8%E0%B8%A1/TH-TH",
@@ -8544,11 +8572,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
+          "scraper": "czech-chamber-plenary",
           "url": "https://www.psp.cz/sqw/hp.sqw?k=203",
           "method": "GET",
-          "kind": "weekly_parliamentary_programme",
-          "scraper_status": "planned"
+          "kind": "dated_plenary_weekly_plan",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -11380,11 +11408,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "scraper_status": "planned",
-          "url": "https://www12.senado.leg.br/tv/",
+          "scraper": "brazil-tv-senado-grid",
+          "url": "https://www12.senado.leg.br/tv/programacao",
           "method": "GET",
-          "kind": "official_event_or_recording_index"
+          "kind": "dated_linear_daily_grid",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {

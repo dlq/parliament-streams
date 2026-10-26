@@ -1,0 +1,199 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Targeted follow-up of Chile Cámara TV and Jalisco Canal Parlamento, plus the already-recorded Brazil TV Senado linear programme lead.",
+  "method": "Bounded official HTML/JSON/JavaScript requests and primary-page text verification. No media requests, browser/player execution, playback, third-party guide imports or broad catalogue audit.",
+  "records": [
+    {
+      "catalogue_id": "chile-camara-tv",
+      "status": "held",
+      "source_url": "https://www.camara.cl/prensa/television.aspx",
+      "checks": {
+        "current_direct_http": "403 Forbidden",
+        "current_web_fetch": "403 Forbidden",
+        "cached_primary_reader_observation": "A cached official television page contains a separate Programación grid as well as commission listings, but its sample dates were July/August2026 and it is not a current schedule payload."
+      },
+      "remaining_holds": [
+        "Obtain the current official linear programme payload and its explicit broadcast-date contract when normal text access is available.",
+        "Do not treat the parallel commission listings as the television sequence.",
+        "Do not derive current programme dates from recording dates, historical cached pages, or a third-party TV guide."
+      ],
+      "xmltv_decision": "No parser or allowlist addition from unavailable current source data."
+    },
+    {
+      "catalogue_id": "jalisco-canal-parlamento",
+      "status": "held",
+      "evidence": [
+        {
+          "url": "https://www.congresojal.gob.mx/trabajo/transmisiones_en_vivo",
+          "checked_on": "2026-10-25",
+          "sha256": "3ffdc371e4fa8dc2310a152ba82c491bf7561c5f2e3ff529dfff8696e0c2601a",
+          "method": "HTTP text only"
+        },
+        {
+          "url": "https://www.congresojal.gob.mx/agenda-parlamentaria/mes",
+          "checked_on": "2026-10-25",
+          "sha256": "74a3aad2ade3e56891b7b7dc1b8dae6dd8043a4d1436257c66cd81c0cc95f30e",
+          "method": "HTTP text only"
+        },
+        {
+          "url": "https://conceptoweb-studio.com/radio/video/srtc/",
+          "checked_on": "2026-10-25",
+          "sha256": "9e16a7947273278c1280faa477cc166200682bf19af8d4a098678d3d10213684",
+          "method": "HTTP text only"
+        }
+      ],
+      "confirmed": "The official live page identifies a Canal Parlamento player separately from its commission/forum/event YouTube coverage. The maintained month agenda lists concurrent institutional activities, not a dated linear TV grid.",
+      "remaining_holds": [
+        "Several different activities share10:00 on1October2026, so next-agenda-start durations would falsely merge parallel events.",
+        "No dated single-feed TV programme intervals were found in the maintained agenda or official embedded player text.",
+        "The currently embedded player references a different stream host/path from the catalogue; this is metadata drift only, not a fresh stream validation or instruction to replace playback."
+      ],
+      "source_integrity_observation": "Unrelated external spam links were present in navigation/footer HTML on both maintained government pages. They were not followed or used as evidence; this does not establish the cause or scope of the website issue.",
+      "player_mismatch": {
+        "catalogue_host": "60417ddeaf0d9.streamlock.net",
+        "catalogue_path": "/srtc/smil:srtc.smil/playlist.m3u8",
+        "observed_player_host": "5ca3e84a76d30.streamlock.net",
+        "observed_player_path": "/srtc/videosrtc/playlist.m3u8",
+        "media_requested": false,
+        "catalogue_changed": false
+      },
+      "xmltv_decision": "No parser or linear allowlist addition; institutional agenda remains separate from broadcast timing."
+    },
+    {
+      "catalogue_id": "brazil-tv-senado-official",
+      "status": "ready",
+      "parser_module": "parliament_streams/scrapers/brazil_tv_senado.py",
+      "scraper_id": "brazil-tv-senado-grid",
+      "evidence": [
+        {
+          "url": "https://www12.senado.leg.br/tv/",
+          "checked_on": "2026-10-25",
+          "sha256": "9a2947d986c29513f4e8a01b5519562abccd82defcd30591a4b4debf7f493ba9",
+          "method": "HTTP text only"
+        },
+        {
+          "url": "https://www12.senado.leg.br/tv/programacao",
+          "checked_on": "2026-10-25",
+          "sha256": "6ab1f8722c19586d8d0085fd135ec339751c4aa4a38f184cd0bace320460e54b",
+          "method": "HTTP text only"
+        },
+        {
+          "url": "https://www12.senado.leg.br/tv/++plone++senado_tv/js/programacao.js",
+          "checked_on": "2026-10-25",
+          "sha256": "10e9ffd89be6a8c2d8e4b44f11e90bafffe87ffd24f57a853926e19418767244",
+          "method": "HTTP text only"
+        },
+        {
+          "url": "https://www12.senado.leg.br/tv/programacaoAjax?date=25-10-2026",
+          "checked_on": "2026-10-25",
+          "sha256": "f5e5c34a482b58c2a03d2d7c95170f37ed11f11c8a4ba13258139a1819a5863a",
+          "method": "HTTP text only"
+        },
+        {
+          "url": "https://www12.senado.leg.br/tv/programacaoAjax?date=26-10-2026",
+          "checked_on": "2026-10-25",
+          "sha256": "8e70459264339cf37c919598967df21d50b4fd467d3ab935d97b127d4eab3f80",
+          "method": "HTTP text only"
+        },
+        {
+          "url": "https://www12.senado.leg.br/tv/programacaoAjax?date=27-10-2026",
+          "checked_on": "2026-10-25",
+          "sha256": "bc9b3ba08071fb4a7ffa736f2211df31c55d1eccb42a0cdf70d71512ba2dfd16",
+          "method": "HTTP text only"
+        }
+      ],
+      "mapping": "Only the existing designated on-air TV Senado record receives the official complete linear TV Senado grid. Parallel Senate event webcasts receive no copied programmes. Existing link-out/media/rights policy remains unchanged.",
+      "date_contract": {
+        "official_client_date_format": "d-m-Y",
+        "official_request": "GET /tv/programacaoAjax?date=DD-MM-YYYY",
+        "observed_rows_by_requested_date": {
+          "2026-10-25": 23,
+          "2026-10-26": 17,
+          "2026-10-27": 22
+        },
+        "date_provenance": "Explicit source request dates documented by the official date-picker/AJAX client; the observed API row lists do not echo a separate date field. Different requested dates returned different programme grids.",
+        "changed_response_rule": "HTML, changed JSON wrappers, missing renderer fields, invalid clocks, empty titles, duplicate/backwards clock ordering and unanchored payload counts raise errors rather than become empty schedules."
+      },
+      "source_clock": {
+        "zone": "America/Sao_Paulo",
+        "basis": "Brasília broadcast clock, corroborated by the official25October election-coverage announcement and the matching14:00 Especial Eleições2026 grid slot. No timezone field is exposed in the observed JSON.",
+        "corroborating_primary_source": "https://www12.senado.leg.br/noticias/materias/2026/10/23/veiculos-de-senado-e-camara-farao-cobertura-integrada-do-segundo-turno",
+        "rules": [
+          "Use the source-zone calendar date for the explicit request, including UTC/new-year rollover.",
+          "Use named-zone resolution; ambiguous/nonexistent local clocks raise source errors.",
+          "Publish UTC instants with source_timezone; do not depend on the runner or viewer timezone."
+        ]
+      },
+      "end_contract": {
+        "basis": "next_listing_start",
+        "justification": "The official programme page labels this a complete TV Senado schedule and renders each requested date as one strictly ordered Horário/Programa/Episódio/Sinopse table. Adjoining slots within that same complete daily linear table establish the sequential boundary.",
+        "limits": [
+          "Never cross the terminal slot into a following date, even if the following date has listings.",
+          "Never bridge an empty/missing day or an invalid/missing middle row.",
+          "No fixed duration, arbitrary event-directory sequence or next-room inference.",
+          "Keep each daily terminal end unknown; no source-end provenance is claimed for inferred boundaries."
+        ]
+      },
+      "collector_evidence": {
+        "request_count": 3,
+        "requested_urls": [
+          "https://www12.senado.leg.br/tv/programacaoAjax?date=25-10-2026",
+          "https://www12.senado.leg.br/tv/programacaoAjax?date=26-10-2026",
+          "https://www12.senado.leg.br/tv/programacaoAjax?date=27-10-2026"
+        ],
+        "source_status": "ok",
+        "events": 62,
+        "complete_ranges": 59,
+        "quality": {
+          "source": "brazil-tv-senado-grid",
+          "scope": "broadcast_schedule",
+          "linear_guide_eligible": true,
+          "events": 62,
+          "exportable": 59,
+          "overlap_pairs": 0,
+          "inferred_ends": 59,
+          "assumed_dates": 0,
+          "stale": false,
+          "exclusions": {
+            "missing_time_range": 3
+          }
+        },
+        "publication_validation": {
+          "catalogue_sources": 270,
+          "scheduled_sources": 1,
+          "stable_channels": 4,
+          "validated_channels": 38,
+          "xmltv_channels": 42,
+          "programmes": 59
+        },
+        "method": "Actual three-day HTTP responses replayed through the real collector, exporter and publication validator. Pending registry/allowlist/catalogue-source metadata were applied only in the isolated test process."
+      },
+      "integration": {
+        "registry": "brazil-tv-senado-grid -> brazil_tv_senado",
+        "exact_linear_allowlist": {
+          "brazil-tv-senado-grid": [
+            "brazil-tv-senado-official"
+          ]
+        },
+        "epg_source": {
+          "scraper": "brazil-tv-senado-grid",
+          "url": "https://www12.senado.leg.br/tv/programacao",
+          "method": "GET",
+          "kind": "dated_linear_daily_grid",
+          "scraper_status": "implemented"
+        },
+        "canonical_changes_by_this_review": false,
+        "proposal_prepared": "/tmp/parliament-brazil-tv-senado-epg-source.json"
+      }
+    }
+  ],
+  "verification": {
+    "new_focused_tests": 10,
+    "focused_suite_tests": 28,
+    "results": "passed",
+    "ruff": "passed",
+    "mypy": "passed for new parser",
+    "publication_validator": "passed on isolated generated ten-product bundle",
+    "limitations": "Current input evidence establishes dated guide metadata and a single on-air mapping, not media uptime, decoded playback or broader redistribution rights."
+  }
+}

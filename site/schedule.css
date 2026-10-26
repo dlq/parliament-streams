@@ -1,7 +1,4 @@
-.schedule-page main { padding-top: 3.25rem; }
-.schedule-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, auto); align-items: end; gap: 3rem; padding-bottom: 2.25rem; }
-.schedule-intro h1 { font-size: clamp(2.8rem, 5vw, 4.2rem); }
-.schedule-intro .lede { max-width: 700px; margin-top: .8rem; font-size: 1rem; }
+.schedule-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, auto); align-items: end; gap: 3rem; }
 .schedule-freshness { max-width: 430px; padding-left: 1.25rem; border-left: 3px solid var(--green); color: var(--muted); font-size: .72rem; line-height: 1.5; }
 .schedule-freshness p { margin: 0; }
 .schedule-freshness p + p { margin-top: .25rem; }
@@ -9,9 +6,11 @@
 
 .programme-guide { padding-bottom: 5rem; border-top: 1px solid var(--ink); }
 .guide-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; padding: 1.25rem 0 1rem; }
-.guide-heading h2 { font-size: 2rem; }
+.guide-heading h2 { font-size: var(--section-title-size); }
 .schedule-filters { display: grid; grid-template-columns: repeat(2, minmax(210px, 310px)); gap: .65rem; padding: 1rem 0; border-top: 1px solid var(--faint); border-bottom: 1px solid var(--faint); }
 .schedule-filters select { width: 100%; height: 40px; padding: 0 .65rem; border: 1px solid var(--control-border); border-radius: 2px; background: var(--white); color: var(--ink); font-size: .8rem; }
+.schedule-filters button { width: fit-content; min-height: 40px; padding: .45rem .65rem; border: 0; background: transparent; color: var(--red); font-size: .8rem; text-decoration: underline; cursor: pointer; }
+.schedule-coverage { max-width: 780px; margin: .6rem 0; color: var(--muted); font-size: .8rem; line-height: 1.5; }
 .schedule-results { min-height: 1.4em; margin: .85rem 0 .45rem; color: var(--muted); font-size: .75rem; }
 .schedule-table-wrap { overflow-x: auto; border-bottom: 1px solid var(--faint); }
 .schedule-table { width: 100%; min-width: 900px; border-collapse: collapse; table-layout: fixed; }
@@ -33,19 +32,15 @@
 .programme-live::before { width: 7px; height: 7px; border-radius: 50%; background: currentColor; content: ""; }
 .programme-unavailable { color: var(--muted); font-size: .76rem; line-height: 1.4; }
 .schedule-actions { display: flex; flex-wrap: wrap; justify-content: end; gap: .4rem .75rem; }
-.schedule-watch, .schedule-details { display: inline-flex; align-items: center; min-height: 32px; color: var(--red); font-size: .72rem; font-weight: 700; text-decoration: none; }
+.schedule-watch, .schedule-official, .schedule-details { display: inline-flex; align-items: center; min-height: 32px; color: var(--red); font-size: .72rem; font-weight: 700; text-decoration: none; }
 .schedule-watch::before { margin-right: .3rem; content: "▶"; font-size: .55rem; }
-.schedule-watch:hover, .schedule-details:hover { text-decoration: underline; }
+.schedule-watch:hover, .schedule-official:hover, .schedule-details:hover { text-decoration: underline; }
 .schedule-empty { padding: 3rem 0; color: var(--muted); text-align: center; }
 
 @media (max-width: 760px) {
-  .schedule-page main { padding-top: 1.75rem; }
-  .schedule-intro { grid-template-columns: 1fr; gap: 1.25rem; padding-bottom: 1.5rem; }
-  .schedule-intro h1 { font-size: 2.6rem; }
-  .schedule-intro .lede { font-size: .92rem; line-height: 1.5; }
+  .schedule-intro { grid-template-columns: 1fr; gap: 1rem; }
   .schedule-freshness { max-width: none; padding-left: .75rem; }
   .guide-heading { align-items: start; flex-direction: column; gap: .45rem; }
-  .guide-heading h2 { font-size: 1.7rem; }
   .schedule-filters { grid-template-columns: 1fr; gap: .5rem; padding: .75rem 0; }
   .schedule-table-wrap { overflow: visible; }
   .schedule-table { min-width: 0; table-layout: auto; }
@@ -61,4 +56,6 @@
   .schedule-flag { width: 26px; height: 18px; }
   .schedule-channel strong, .programme-title { font-size: .78rem; }
   .schedule-actions { justify-content: start; border-top: 1px dotted var(--faint); }
+  .programme-live { display: none; }
+  .schedule-table td[data-label]:has(.programme-live)::before { color: var(--red); }
 }

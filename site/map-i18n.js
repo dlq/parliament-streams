@@ -183,12 +183,42 @@ const locationRows = {
 for (const [locale, values] of Object.entries(locationRows)) {
   Object.assign(translations[locale], Object.fromEntries(locationKeys.map((key, index) => [key, values[index]])));
 }
+const navigationKeys = ["browseJurisdictions", "keyboardHelp", "searchHelp", "noMatches"];
+const navigationRows = {
+  en: ["Browse jurisdictions", "Arrow keys browse map areas alphabetically; Enter or Space opens details.", "Choose a jurisdiction below. Enter in search moves focus to the results.", "No matching jurisdictions."],
+  fr: ["Parcourir les juridictions", "Les flèches parcourent les zones par ordre alphabétique ; Entrée ou Espace ouvre les détails.", "Choisissez une juridiction ci-dessous. Entrée dans la recherche place le focus sur les résultats.", "Aucune juridiction correspondante."],
+  es: ["Explorar jurisdicciones", "Las flechas recorren las áreas por orden alfabético; Intro o Espacio abre los detalles.", "Elija una jurisdicción abajo. Intro en la búsqueda lleva el foco a los resultados.", "No hay jurisdicciones coincidentes."],
+  "pt-BR": ["Explorar jurisdições", "As setas percorrem as áreas em ordem alfabética; Enter ou Espaço abre os detalhes.", "Escolha uma jurisdição abaixo. Enter na busca move o foco para os resultados.", "Nenhuma jurisdição correspondente."],
+  da: ["Se jurisdiktioner", "Piletasterne gennemser kortområder alfabetisk; Enter eller mellemrum åbner detaljer.", "Vælg en jurisdiktion nedenfor. Enter i søgefeltet flytter fokus til resultaterne.", "Ingen matchende jurisdiktioner."],
+  de: ["Zuständigkeiten durchsuchen", "Pfeiltasten durchlaufen Kartengebiete alphabetisch; Eingabe oder Leertaste öffnet Details.", "Wählen Sie unten eine Zuständigkeit. Eingabe im Suchfeld setzt den Fokus auf die Ergebnisse.", "Keine passenden Zuständigkeiten."],
+  et: ["Sirvi jurisdiktsioone", "Nooleklahvid sirvivad kaardialasid tähestiku järjekorras; Enter või tühik avab üksikasjad.", "Vali alt jurisdiktsioon. Enter otsinguväljal viib fookuse tulemustele.", "Vastavaid jurisdiktsioone ei leitud."],
+  el: ["Περιήγηση στις δικαιοδοσίες", "Τα βέλη περιηγούνται στις περιοχές αλφαβητικά· Enter ή διάστημα ανοίγει τις λεπτομέρειες.", "Επιλέξτε δικαιοδοσία παρακάτω. Το Enter στην αναζήτηση μεταφέρει την εστίαση στα αποτελέσματα.", "Δεν βρέθηκαν αντίστοιχες δικαιοδοσίες."],
+  hi: ["क्षेत्राधिकार देखें", "तीर कुंजियाँ मानचित्र के क्षेत्रों को वर्णानुक्रम में दिखाती हैं; Enter या Space से विवरण खुलता है।", "नीचे कोई क्षेत्राधिकार चुनें। खोज में Enter दबाने से फ़ोकस परिणामों पर जाता है।", "कोई मिलता-जुलता क्षेत्राधिकार नहीं मिला।"],
+  ga: ["Brabhsáil dlínsí", "Brabhsálann na saigheadeochracha limistéir in ord aibítre; osclaíonn Enter nó Spás na sonraí.", "Roghnaigh dlínse thíos. Bogann Enter sa chuardach an fócas chuig na torthaí.", "Níor aimsíodh aon dlínse mheaitseála."],
+  it: ["Esplora le giurisdizioni", "Le frecce scorrono le aree in ordine alfabetico; Invio o Spazio apre i dettagli.", "Scegli una giurisdizione qui sotto. Invio nella ricerca sposta il focus sui risultati.", "Nessuna giurisdizione corrispondente."],
+  lb: ["Jurisdiktiounen duerchsichen", "D'Feiltaste ginn alphabetesch duerch d'Kaartgebidder; Enter oder d'Spacetast mécht Detailer op.", "Wielt hei drënner eng Jurisdiktioun. Enter am Sichfeld setzt de Fokus op d'Resultater.", "Keng passend Jurisdiktioune fonnt."],
+  nl: ["Jurisdicties bekijken", "Pijltjestoetsen doorlopen kaartgebieden alfabetisch; Enter of Spatie opent de details.", "Kies hieronder een jurisdictie. Enter in het zoekveld verplaatst de focus naar de resultaten.", "Geen overeenkomende jurisdicties."],
+  nb: ["Bla gjennom jurisdiksjoner", "Piltastene blar alfabetisk gjennom kartområder; Enter eller mellomrom åpner detaljer.", "Velg en jurisdiksjon nedenfor. Enter i søkefeltet flytter fokus til resultatene.", "Ingen samsvarende jurisdiksjoner."],
+  sk: ["Prehľad jurisdikcií", "Šípky prechádzajú oblasti mapy abecedne; Enter alebo medzerník otvorí podrobnosti.", "Vyberte jurisdikciu nižšie. Enter vo vyhľadávaní presunie zameranie na výsledky.", "Žiadne zodpovedajúce jurisdikcie."],
+  th: ["ดูเขตอำนาจ", "ปุ่มลูกศรเลื่อนดูพื้นที่ตามตัวอักษร กด Enter หรือ Space เพื่อเปิดรายละเอียด", "เลือกเขตอำนาจด้านล่าง กด Enter ในช่องค้นหาเพื่อย้ายโฟกัสไปยังผลลัพธ์", "ไม่พบเขตอำนาจที่ตรงกัน"],
+  "zh-Hans": ["浏览辖区", "方向键按字母顺序浏览地图区域；Enter 或空格键打开详情。", "在下方选择辖区。在搜索框中按 Enter 将焦点移至结果。", "没有匹配的辖区。"],
+  "iu-Cans": ["ᓄᓇᐃᑦ ᑕᑯᓗᒋᑦ", "← ↑ → ↓: ᓄᓇᐃᑦ. Enter / Space: ᓂᕈᐊᕆᑦ.", "ᓄᓇᒥᒃ ᓂᕈᐊᕆᑦ. Enter: ᓄᓇᐃᑦ ᑕᑯᓗᒋᑦ.", "ᓄᓇᒃ ᓇᓂᔭᐅᙱᑦᑐᖅ."],
+  mi: ["Tirohia ngā mana ā-rohe", "Mā ngā pere ka tiro haere i ngā wāhi o te mahere i te raupapa pū; mā Enter, mā Mokowā rānei ka huaki ngā taipitopito.", "Kōwhiria he mana ā-rohe i raro nei. Mā Enter i te rapunga ka neke te arotahi ki ngā hua.", "Kāore he mana ā-rohe e ōrite ana."],
+  cs: ["Procházet jurisdikce", "Šipky procházejí oblasti mapy abecedně; Enter nebo mezerník otevře podrobnosti.", "Vyberte jurisdikci níže. Enter ve vyhledávání přesune zaměření na výsledky.", "Žádné odpovídající jurisdikce."],
+  fi: ["Selaa lainkäyttöalueita", "Nuolinäppäimet selaavat kartta-alueita aakkosjärjestyksessä; Enter tai välilyönti avaa tiedot.", "Valitse alue alta. Enter hakukentässä siirtää kohdistuksen tuloksiin.", "Vastaavia alueita ei löytynyt."],
+  sv: ["Bläddra bland jurisdiktioner", "Piltangenterna bläddrar mellan kartområden alfabetiskt; Enter eller mellanslag öppnar detaljer.", "Välj en jurisdiktion nedan. Enter i sökfältet flyttar fokus till resultaten.", "Inga matchande jurisdiktioner."],
+  "zh-Hant": ["瀏覽轄區", "方向鍵依字母順序瀏覽地圖區域；Enter 或空白鍵開啟詳細資訊。", "在下方選擇轄區。在搜尋框中按 Enter 將焦點移至結果。", "沒有相符的轄區。"],
+};
+for (const [locale, values] of Object.entries(navigationRows)) {
+  if (values.length !== navigationKeys.length) throw new Error(`Map navigation translations incomplete for ${locale}`);
+  Object.assign(translations[locale], Object.fromEntries(navigationKeys.map((key, index) => [key, values[index]])));
+}
 function message(locale, key, values = {}) {
   const value = translations[locale]?.[key] ?? translations.en[key] ?? key;
   return value.replace(/\{(\w+)\}/g, (_, name) => values[name] ?? "");
 }
 function coverage(locale) {
-  const missing = [...keys, ...extraKeys, ...locationKeys].filter((key) => !Object.hasOwn(translations[locale] ?? {}, key));
+  const missing = [...keys, ...extraKeys, ...locationKeys, ...navigationKeys].filter((key) => !Object.hasOwn(translations[locale] ?? {}, key));
   if (!sourceCountForms[locale] && !window.ParliamentStreamsExtraLocales?.[locale]?.sourceCount) missing.push("sourceCount");
   return missing;
 }

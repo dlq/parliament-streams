@@ -1,0 +1,70 @@
+{
+  "reviewed_on": "2026-10-25",
+  "scope": "Existing israel-knesset-channel linear Channel99 programme guide; no committee-room mixing or playback/rights change",
+  "primary_evidence": [
+    {
+      "url": "https://www.knesset.tv/faq/",
+      "finding": "The broadcaster identifies Channel99 and its separately published linear programme guide, alongside independently selected committee streams."
+    },
+    {
+      "url": "https://main.knesset.gov.il/News/Broadcast/pages/default.aspx?pos=tv",
+      "finding": "The parliamentary broadcast page identifies the TV channel separately from plenary and committee broadcasts."
+    }
+  ],
+  "inputs": [
+    {
+      "url": "https://www.knesset.tv/live/",
+      "status": 200,
+      "retrieved_on": "2026-10-25",
+      "sha256": "ea66c077e2cf10de1d25c8a4c1dcb9bf3050b3f8e990434c70bfdf2514c10a37"
+    },
+    {
+      "url": "https://www.knesset.tv/%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%9E%D7%A0%D7%92%D7%9F-%D7%91%D7%A2%D7%A8%D7%95%D7%A5/",
+      "status": 200,
+      "retrieved_on": "2026-10-25",
+      "sha256": "a2a8d00516b29db691e440561573be3d931668356c3c1ad02f5d3f67f39aa4ad"
+    },
+    {
+      "url": "https://www.knesset.tv/scripts/broadcastsList.js",
+      "status": 200,
+      "retrieved_on": "2026-10-25",
+      "sha256": "7b60680b43b3af8a3021c7c3ab7a90a962266e908a6a4b3f6d054809e346ddfb"
+    }
+  ],
+  "mapping": {
+    "scraper_id": "knesset-tv-guide",
+    "catalogue_id": "israel-knesset-channel",
+    "current_live_page_repeats_catalogued_primary_hls_path": true,
+    "media_requested": false
+  },
+  "programme_contract": {
+    "identity": "data-rowrid",
+    "broadcast_date": "data-programdate",
+    "range": "data-programtime",
+    "title": "data-programname",
+    "programme_rows": 130,
+    "desktop_mobile_duplicates": 130,
+    "complete_ranges": 130,
+    "overlap_pairs": 0,
+    "source_timezone": "Asia/Jerusalem",
+    "first_utc_start": "2026-10-25T21:00:00Z",
+    "last_utc_stop": "2026-11-01T21:59:00Z"
+  },
+  "timing_rules": [
+    "Dates belong to the broadcaster day. Advance to the next calendar date only when a decreasing start clock exactly matches the preceding explicitly printed overnight end.",
+    "The31October22:00–00:00 row establishes1November for its following00:00 row; subsequent early-morning slots retain the advanced calendar date.",
+    "Do not infer programme ends or assign arbitrary DST folds. Missing/zero/ambiguous ends remain absent.",
+    "Source guide bounds remain source facts: do not create a seven-day rolling duration from channel-level availability."
+  ],
+  "language": "Original titles are preserved. Programme audio language is not inferred from the script of the title.",
+  "validation": [
+    "Real saved payloads and the shared scheduled HTTP transport both yield130 unique timed programmes, all accepted by quality assessment.",
+    "Official duplicate cards are collapsed only when metadata agrees; conflicts, stale calendars and malformed start clocks fail.",
+    "Source dates, Hebrew entity escaping, midnight continuity, DST gap/fold rejection, explicit source ends, missing ends and genuine empty tables have regression tests.",
+    "An independent read-only review reproduced130 programmes with0 overlaps."
+  ],
+  "remaining_holds": [
+    "Separate committee-room feeds are not represented by this linear schedule.",
+    "This review does not change the existing permission status, media playback policy or IPTV admission rules."
+  ]
+}

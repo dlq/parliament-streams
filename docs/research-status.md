@@ -4,20 +4,37 @@
 
 ## EPG Coverage Improvements — 25 October 2026
 
-The local catalogue now has **270 sources**, including Quebec's separate Canal
-de l'Assemblée official viewing page. **37 entries** have implemented parsers
-across **20 unique URLs**. The [EPG coverage pass](../reports/epg/2026-10-25-coverage-pass.md)
-records a fresh validated export with **83 programmes across four channels**,
-up from the preceding checked deployment's 51 across two. Dutch and Quebec guide
-additions, 65 recovered Canadian event end times, source-date guards and exact
-Italian WebTV1 filtering keep broadcast claims distinct from institutional
-agendas. IPTV playlists remain at four stable / 38 broader entries.
+The catalogue remains at **270 sources**, including Quebec's separate Canal
+de l'Assemblée official viewing page. **41 entries** have implemented parsers
+across **24 unique URLs and 20 collectors**; 229 entries retain planned extraction.
+The [second-pass report](../reports/epg/2026-10-25-second-pass-coverage.md) and
+[measured data](../reports/epg/2026-10-25-second-pass-coverage.json) describe a
+verified **local preview at 21:04 UTC on 25 October, not a completed deployment**:
+598 events, 474 with ends, and **270 XMLTV programmes across six populated channels**.
+Knesset contributes 129 explicit ranges; Brazil TV Senado contributes 59 with
+ends inferred only inside its dated daily linear tables. Czech and Estonian
+plenary parsers add exact-feed start metadata without fabricated ends.
+The earlier 272-programme preview differs because one CPAC and one Knesset
+programme elapsed before the final collection.
+
+There are 12 reviewed guide mappings and 42 XMLTV channel definitions; neither
+count means a populated guide. IPTV playlists remain four stable / 38 broader
+entries, with programme data for three broader entries. The [first-pass checkpoint](../reports/epg/2026-10-25-coverage-pass.md)
+retains its historical 83 programmes, four populated channels, 37 parser-connected
+entries and 16 collectors. Media playback and reuse admission remain separate.
+
+New Zealand's unrendered Blazor calendar now reports a collection error instead
+of a false empty result; this preview has one source error. EBS and Italian
+WebTV1 ends, Greece/Sansad access, Thailand's recurring monthly PDF layout,
+Slovak access and Chile/Jalisco feed mappings retain explicit holds. Source dates,
+UTC instants and viewer-local display remain separate, including midnight and
+DST checks. This pass does not claim every planned URL was freshly fetched.
 
 The current baseline links 247 catalogue IDs to 222 exact eligible identities;
 the eligible inventory remains 940. The quality report classifies every catalogue
 ID by parser, collection, mapping and programme state. Missing parsers and named
-access/time/mapping holds remain explicit. All-source checks, UTC/source-zone
-regressions and muted viewer-timezone/browser tests are documented with the pass.
+access/time/mapping holds remain explicit. Measured collection and verification
+results are documented with each pass.
 
 ## Earlier Held-Source Review — 25 October 2026
 
@@ -239,9 +256,10 @@ are committed or deployed. `data/channels.json` is the canonical catalogue.
   [Flag coverage and source reports](../reports/discovery/2026-10-24-catalogue-flag-coverage.json).
 - 38 native-player sources, three provider embeds, 220 official link-outs and
   nine research-only records. Strict IPTV exports retain their separate gates.
-- 37 records have implemented schedule metadata, covering 20 unique source URLs.
-  Another 241 unique schedule/event URLs remain planned and filterable on the
-  schedule page, even if generated guide data is temporarily unavailable.
+- 41 records have implemented schedule metadata across 24 unique source URLs and
+  20 collectors; 229 entries retain planned extraction and official source links.
+  The final second-pass local preview has 270 XMLTV programmes across six channels,
+  with one New Zealand source error rather than a falsely healthy empty result.
 - 194 records remain permission-pending. Selected muted playback does not certify
   audible tracks or source-wide media accessibility.
 - 175 formal candidates: 171 promoted, three researching and one rejected.

@@ -16,7 +16,8 @@ from the repository root unless stated otherwise.
 | [Development and validation](development.md) | Setup, verification and live discovery tools |
 | [Naming and compatibility](naming-conventions.md) | Domain vocabulary, operation names and stable data/command interfaces |
 | [Data validation and coverage](data-validation.md) | Product schemas, cross-format checks, static-type scope and coverage measurements |
-| [Public site and languages](public-site.md) | Playback, deployment, caching, localization and local previews |
+| [Public site and languages](public-site.md) | Page roles, keyboard controls, schedule states, playback, deployment, localization and local previews |
+| [Public Data and method page](https://dlq.ca/parliament-streams/data.html) | Research-to-publication stages, stable data downloads, coverage limits and contribution paths |
 | [Public Legislatures page](https://dlq.ca/parliament-streams/institutions.html) | Working institution inventory, authority decisions, research gaps and ways to contribute evidence |
 | [Help with translation](translating.md) | Phrase-level suggestions, supported locales and translation files |
 | [Schedules, IPTV and XMLTV](schedules-and-iptv.md) | Collection, exports, guide eligibility and quality limits |
