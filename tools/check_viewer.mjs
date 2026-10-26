@@ -26,7 +26,25 @@ export async function assertPersistentViewer(page, baseUrl) {
     await continuity();
     assert.equal(await page.locator(heading).evaluate((node) => document.activeElement === node), true);
   };
-  await go("map.html", "#map-title");
+  let releaseCss;
+  let cssRequested;
+  const cssGate = new Promise((resolve) => { releaseCss = resolve; });
+  const requested = new Promise((resolve) => { cssRequested = resolve; });
+  await page.route("**/map.css*", async (route) => { cssRequested(); await cssGate; await route.continue(); });
+  const mapNavigation = go("map.html", "#map-title");
+  await requested;
+  assert.equal(await page.locator('#page-title').isVisible(), true, "Keep the styled current page until destination CSS is ready");
+  await continuity();
+  releaseCss();
+  await mapNavigation;
+  await page.unroute("**/map.css*");
+  await page.route("**/schedule.css*", (route) => route.fulfill({ status: 503, body: "Unavailable" }));
+  await page.locator('#map-nav-schedule').click();
+  await page.locator('.navigation-error').waitFor();
+  assert.match(page.url(), /map.html/);
+  assert.equal(await page.locator('#map-title').isVisible(), true);
+  await continuity();
+  await page.unroute("**/schedule.css*");
   await go("schedule.html", "#schedule-title");
   await go("institutions.html", "#institutions-title");
   await go("data.html", "#data-title");
@@ -116,6 +134,48 @@ export async function assertPersistentViewer(page, baseUrl) {
   await page.locator("#locale-select").selectOption("en");
 }
 
+export async function assertNavigationStyles(page, baseUrl) {
+  await page.goto(`${baseUrl}index.html?lang=en`);
+  await page.locator('.channel-button').first().waitFor();
+  await page.locator('#locale-select').selectOption('en');
+  const pages = [
+    ["institutions.html", "#institutions-title", [".institutions-filters", "#institution-search", ".institution-country > summary"]],
+    ["map.html", "#map-title", [".map-summary", ".map-toolbar", "#world-map"]],
+    ["schedule.html", "#schedule-title", [".schedule-intro", ".schedule-filters", ".schedule-table"]],
+    ["data.html", "#data-title", [".page-intro", "#data-title"]],
+    ["index.html", "#page-title", [".channel-table", "#search"]],
+  ];
+  const layout = async (selectors) => page.evaluate((targets) => ({
+    locale: document.documentElement.lang,
+    stylesheets: [...document.querySelectorAll('link[rel="stylesheet"]')]
+      .filter((node) => node.media !== "not all")
+      .map((node) => new URL(node.href).pathname).sort(),
+    layout: targets.map((selector) => {
+      const style = getComputedStyle(document.querySelector(selector));
+      return Object.fromEntries(["display", "gridTemplateColumns", "fontSize", "padding", "borderTopWidth", "width"].map((key) => [key, style[key]]));
+    }),
+    overflow: document.documentElement.scrollWidth > innerWidth,
+  }), selectors);
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    const expected = new Map();
+    for (const [file, , selectors] of pages) {
+      await page.goto(`${baseUrl}${file}?lang=en`);
+      await page.waitForFunction(() => window.ParliamentStreamsViewer);
+      await page.evaluate(async () => { await window.ParliamentStreamsPageReady; await window.ParliamentStreamsViewer.ready; });
+      await page.locator(selectors.at(-1)).first().waitFor({ state: "attached" });
+      expected.set(file, await layout(selectors));
+    }
+    for (const [file, heading, selectors] of pages) {
+      const link = file === "index.html" ? '#data-nav-catalogue' : `.site-header nav a[href*="${file}"]`;
+      await page.locator(link).click();
+      await page.locator(heading).waitFor();
+      await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
+      assert.deepEqual(await layout(selectors), expected.get(file), `${file} at ${width}px must match a fresh load without refreshing`);
+    }
+  }
+}
+
 export async function assertProviderViewer(page, baseUrl) {
   await page.route("https://www.youtube-nocookie.com/embed/**", (route) => route.fulfill({ contentType: "text/html", body: "<!doctype html><html lang='en'><title>Local provider fixture</title><body>Silent local provider fixture</body></html>" }));
   await page.goto(`${baseUrl}index.html?lang=en`);
@@ -139,6 +199,7 @@ export async function assertProviderViewer(page, baseUrl) {
   assert.equal(await page.evaluate(() => window.__providerViewer.frame === document.querySelector("#media-frame iframe")), true);
   assert.equal(await page.evaluate(() => window.__providerViewer.loads), originalLoads, "Provider iframe must not reload on navigation or translation");
   // Open a different source from the map in-place, without another catalogue route.
+  await page.locator('[data-minimize-viewer]').click();
   await page.locator('#map-search').fill('Alberta');
   await page.locator('#jurisdiction-list button').first().click();
   const source = page.locator('#map-detail [data-viewer-source="alberta-assembly-online"]');

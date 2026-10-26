@@ -5,6 +5,7 @@
   const pages = new Set(["", "index.html", "map.html", "schedule.html", "institutions.html", "data.html"]);
   const controllers = new Set(["map.js", "schedule.js", "institutions.js", "data-page.js", "iptv.js", "institutions-nav.js", "project-info.js"]);
   const loaded = new Set([...document.scripts].filter((script) => script.src).map((script) => new URL(script.src).pathname));
+  const styles = new Map([...document.querySelectorAll('link[rel="stylesheet"]')].map((node) => [node.href, { node, ready: Promise.resolve() }]));
   const positions = new Map();
   let lifecycle = new AbortController();
   let request;
@@ -38,6 +39,37 @@
     });
   }
 
+  async function prepareStyles(next) {
+    const desired = [...next.querySelectorAll('link[rel="stylesheet"]')].map((link) => ({
+      href: new URL(link.getAttribute("href"), base).href,
+      media: link.getAttribute("media") ?? "all",
+    }));
+    await Promise.all(desired.map(({ href }) => {
+      if (!styles.has(href)) {
+        const node = document.createElement("link");
+        node.rel = "stylesheet";
+        node.href = href;
+        // Fetch before replacing content, without styling the current page.
+        node.media = "not all";
+        const ready = new Promise((resolve, reject) => {
+          node.onload = resolve;
+          node.onerror = () => { styles.delete(href); node.remove(); reject(new Error("Page stylesheet unavailable")); };
+        });
+        styles.set(href, { node, ready });
+        document.head.append(node);
+      }
+      return styles.get(href).ready;
+    }));
+    return () => {
+      for (const { node } of styles.values()) node.media = "not all";
+      for (const { href, media } of desired) {
+        const { node } = styles.get(href);
+        node.media = media;
+        document.head.append(node);
+      }
+    };
+  }
+
   function scrollToTarget(url, back) {
     const saved = positions.get(url.href);
     const target = url.hash && document.getElementById(decodeURIComponent(url.hash.slice(1)));
@@ -67,6 +99,7 @@
       const next = new DOMParser().parseFromString(await response.text(), "text/html");
       const selectors = [".site-header", "main", ".site-footer", ".skip-link"];
       if (selectors.some((selector) => !next.querySelector(selector) || !document.querySelector(selector))) throw new Error("Page structure unavailable");
+      const activateStyles = await prepareStyles(next);
       if (ticket !== revision) return;
       const previousCommit = commits;
       commits = new Promise((resolve) => { finishCommit = resolve; });
@@ -77,6 +110,7 @@
       lifecycle = new AbortController();
       if (!back) history.pushState({}, "", url);
       currentUrl = url.href;
+      activateStyles();
       for (const selector of selectors) document.querySelector(selector).replaceWith(next.querySelector(selector));
       document.body.className = next.body.className;
       document.title = next.title;

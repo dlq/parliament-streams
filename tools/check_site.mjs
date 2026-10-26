@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 
 import AxeBuilder from "@axe-core/playwright";
 import { chromium } from "playwright";
-import { assertPersistentViewer, assertProviderViewer } from "./check_viewer.mjs";
+import { assertNavigationStyles, assertPersistentViewer, assertProviderViewer } from "./check_viewer.mjs";
 
 const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
 const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
@@ -1590,6 +1590,7 @@ try {
   const providerPage = await providerContext.newPage();
   await providerPage.route("**/data/schedules.json", (route) => route.fulfill({ json: { channels: { "new-zealand-parliament": { next_event_title: "House sitting", next_event_start: "2026-11-03T12:00:00Z" } } } }));
   await assertProviderViewer(providerPage, baseUrl);
+  await assertNavigationStyles(providerPage, baseUrl);
   await providerContext.close();
   await assertViewerTimezones(browser, baseUrl);
 } finally {

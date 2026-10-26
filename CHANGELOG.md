@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-26 — Page styles during viewer navigation
+
+- Load and activate each destination page's stylesheets before replacing page
+  content, fixing unstyled Legislatures, Coverage map and Schedule tabs.
+- Keep the current page and playback available when a stylesheet cannot load.
+- Compare tab-navigation layouts with fresh loads on desktop and mobile, and
+  test delayed or failed stylesheet requests with the persistent player.
+
 ## 26 October — Persistent Floating Viewer
 
 Replace the desktop details sidebar with a movable, resizable floating viewer,

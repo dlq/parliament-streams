@@ -54,6 +54,9 @@ their source-specific playback/link-out policy.
 ordinary HTML, updates the URL, title, metadata and page content, and keeps the
 viewer outside that replacement. Back/Forward, language changes, filtering and
 sorting do not recreate an active video, provider iframe or HLS instance.
+Navigation loads the destination's stylesheets before replacing the current
+page, then activates only that page's styles in their original order. A missing
+stylesheet keeps the current page and player available for a retry.
 `site/app.js` owns the existing shared renderer/player and catalogue controller;
 `site/viewer-controls.js` owns desktop geometry, and `site/viewer-i18n.js` covers
 controls and navigation recovery in all 23 locales. Each page remains directly
