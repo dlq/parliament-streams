@@ -1,5 +1,13 @@
 # Changelog
 
+## 26 October — Restore The Homepage Photograph
+
+Give the homepage hero a 300px minimum height on desktop and 220px on phones,
+allowing longer translations to grow naturally. Preserve the photographs’
+proportions, readable overlay and credits. Tune individual focal positions to
+show more of the chambers and architecture, with compact catalogue rows and
+search below.
+
 ## 26 October — Clearer Viewing Holds
 
 Replace “Research entry” with “Viewing not enabled” in catalogue rows and viewing

@@ -26,13 +26,13 @@ const heroImages = [
   },
   {
     file: "assets/hero/south-australia-parliament-1939.jpg",
-    position: "center 48%",
+    position: "center 65%",
     credit: "Parliament House, South Australia, 1939 · State Library of South Australia · CC0",
     source: "https://commons.wikimedia.org/wiki/File:Interior_of_Parliament_House(GN07496).jpg",
   },
   {
     file: "assets/hero/reichstag-berlin-1890s.jpg",
-    position: "center 50%",
+    position: "center 40%",
     credit: "Reichstag, Berlin, ca. 1890s · Library of Congress · Public domain",
     source: "https://commons.wikimedia.org/wiki/File:No_Known_Restrictions_The_Reichstag,_Berlin,_ca._1890s_(LOC)_(461040598).jpg",
   },
@@ -44,13 +44,13 @@ const heroImages = [
   },
   {
     file: "assets/hero/new-south-wales-assembly-1872.jpg",
-    position: "center 48%",
+    position: "center 65%",
     credit: "New South Wales Legislative Assembly chamber, 1872 · State Library of NSW · Public domain",
     source: "https://commons.wikimedia.org/wiki/File:SLNSW_479505_2_Legislative_Assembly_Chamber_Interior_SH_552.jpg",
   },
   {
     file: "assets/hero/austrian-parliament-interior.jpg",
-    position: "center 44%",
+    position: "center 58%",
     credit: "Austrian Parliament interior · Frederic Koberl · CC0",
     source: "https://commons.wikimedia.org/wiki/File:Classical_parliament_interior_(Unsplash).jpg",
   },

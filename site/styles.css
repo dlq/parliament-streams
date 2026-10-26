@@ -38,7 +38,7 @@ nav a, .site-footer a { color: var(--muted); text-decoration: none; }
 nav a:hover, .site-footer a:hover, .text-link:hover { color: var(--red); }
 nav a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: underline; text-decoration-color: var(--green); text-decoration-thickness: 3px; text-underline-offset: 1.28rem; }
 
-.intro { display: flex; position: relative; width: 100vw; max-width: none; min-height: 510px; margin-left: calc(50% - 50vw); overflow: hidden; background: #142d25 var(--hero-image, url("assets/hero/house-of-commons-1890.jpg")) var(--hero-position, center 54%) / cover no-repeat; color: var(--white); }
+.intro { display: flex; position: relative; width: 100vw; max-width: none; min-height: 300px; margin-left: calc(50% - 50vw); overflow: hidden; background: #142d25 var(--hero-image, url("assets/hero/house-of-commons-1890.jpg")) var(--hero-position, center 54%) / cover no-repeat; color: var(--white); }
 .intro::before { content: ""; position: absolute; inset: 0; background: rgba(7, 31, 24, .72); }
 .intro-inner { position: relative; z-index: 1; width: min(1240px, calc(100% - 3rem)); margin: auto; padding: 4.5rem 0 3.5rem; }
 .intro-inner > * { max-width: 760px; }
@@ -125,7 +125,7 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .header-inner, main, .site-footer { width: min(100% - 2rem, 1240px); }
   .header-inner { height: auto; min-height: 94px; grid-template-columns: minmax(0, 1fr) auto; gap: .55rem .75rem; padding-top: .55rem; }.brand { gap: .55rem; font-size: .9rem; }.brand-mark { width: 23px; height: 23px; flex-basis: 23px; } nav { display: grid; grid-column: 1 / -1; grid-row: 2; grid-template-columns: repeat(5, minmax(0, 1fr)); width: 100%; gap: 0; border-top: 1px solid var(--faint); } nav > a { display: flex; align-items: center; justify-content: center; min-height: 40px; padding: .25rem; font-size: .72rem; text-align: center; } nav > a + a { border-left: 1px solid var(--faint); }.locale-control { grid-column: 2; grid-row: 1; }.locale-control select { max-width: 132px; }
   nav a[aria-current="page"] { text-decoration-thickness: 2px; text-underline-offset: .35rem; }
-  .intro { min-height: 320px; background-position: 55% center; }.intro-inner { width: min(100% - 2rem, 1240px); padding: 2rem 0 1.5rem; }.intro .section-label { margin-bottom: .45rem; } h1 { font-size: 2.35rem; line-height: 1; }.lede { margin-top: .8rem; font-size: .92rem; line-height: 1.45; }.catalogue-stats { margin-top: .9rem; }.hero-credit { width: auto; max-width: 100%; margin-top: 1rem; font-size: .62rem; }
+  .intro { min-height: 220px; background-position: var(--hero-position, 55% center); }.intro-inner { width: min(100% - 2rem, 1240px); padding: 2rem 0 1.5rem; }.intro .section-label { margin-bottom: .45rem; } h1 { font-size: 2.35rem; line-height: 1; }.lede { margin-top: .8rem; font-size: .92rem; line-height: 1.45; }.catalogue-stats { margin-top: .9rem; }.hero-credit { width: auto; max-width: 100%; margin-top: 1rem; font-size: .62rem; }
   .catalogue-section { padding: 1.1rem 0 4rem; }.catalogue-heading { align-items: start; flex-direction: column; gap: .7rem; margin-bottom: 1rem; }.catalogue-heading h2 { font-size: 2rem; }
   .catalogue-overview { grid-template-columns: 1fr 1fr; margin-bottom: .8rem; }.catalogue-overview div { padding: .65rem .6rem .7rem 0; }.catalogue-overview div + div { padding-left: .7rem; }.catalogue-overview div:nth-child(3) { border-left: 0; padding-left: 0; }.catalogue-overview div:nth-child(n + 3) { border-top: 1px solid var(--faint); }.catalogue-overview dd { font-size: 1rem; }
   .filters { gap: .55rem; padding: .8rem 0; }.filter-disclosure { border: 1px solid var(--control-border); }.filter-disclosure summary { display: flex; align-items: center; justify-content: space-between; min-height: 42px; padding: 0 .75rem; color: var(--ink); cursor: pointer; font-size: .85rem; font-weight: 700; list-style: none; }.filter-disclosure summary::-webkit-details-marker { display: none; }.filter-summary-icon { color: var(--muted); font-size: 1.1rem; transition: transform .16s ease; }.filter-disclosure[open] .filter-summary-icon { transform: rotate(180deg); }.filter-controls { grid-template-columns: 1fr; gap: .55rem; padding: 0 .75rem .75rem; }.filter-controls label { border-top: 1px solid var(--faint); padding-top: .55rem; }
@@ -136,7 +136,6 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 
 /* Keep browsing compact; source evidence is available when requested. */
 [hidden] { display: none !important; }
-.intro { min-height: 0; }
 .intro-inner { padding: 2rem 0 1.5rem; }
 .intro .section-label, .intro .catalogue-stats { display: none; }
 .intro h1 { max-width: 100%; font-size: clamp(2rem, 3.6vw, 3.1rem); line-height: 1.05; }

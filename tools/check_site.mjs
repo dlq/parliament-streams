@@ -645,7 +645,8 @@ try {
   assert.match(await page.locator("#open-video-copy").innerText(), /streams such as HLS/);
   assert.match(await page.locator("#open-streams-copy").innerText(), /machine-readable programme and event feeds/);
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
-  assert((await page.locator(".channel-button").first().boundingBox()).y < 720);
+  const catalogueSearch = await page.locator("#search").boundingBox();
+  assert(catalogueSearch.y + catalogueSearch.height < page.viewportSize().height, "Catalogue search remains available in the first desktop viewport");
   assert.equal(await page.locator(".catalogue-information summary").count(), 0);
   assert.equal(await page.locator("#catalogue-overview").isVisible(), true);
   assert.equal(await page.locator("#metric-sources").innerText(), String(canonicalCatalogue.channels.length));
