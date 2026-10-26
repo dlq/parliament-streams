@@ -64,11 +64,20 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
 
 ## Scraper Work
 
-The [Nordic continuation](reports/epg/2026-10-26-nordic-coverage.md) brings the
-current 261-source catalogue to 45 parser-connected records and 25 collectors.
+The [WebTV programme continuation](reports/epg/2026-10-26-webtv-programmes.md)
+brings the current 261-source catalogue to 47 parser-connected records and 27
+collectors, with 214 sources still awaiting extraction. It adds Italian Chamber
+featured broadcasts and Taiwan's official two-channel programme API. Keep their
+aggregate portals outside linear XMLTV; resolve separate feed records/mappings
+and dependable broadcast ends before expanding export. Taiwan's iVOD forecast
+still has a modern-TLS access hold; use the supported official programme API
+without weakening TLS checks.
+
+The earlier [Nordic continuation](reports/epg/2026-10-26-nordic-coverage.md) brought
+the catalogue to 45 parser-connected records and 25 collectors.
 Norway and Sweden add source-timezone-aware starts, with official identities and
 explicit calendar-duration, unknown-start and linear-mapping holds. There are
-216 sources with planned extraction; existing XMLTV/playlist admissions stay
+216 sources with planned extraction at that checkpoint; XMLTV/playlist admissions stayed
 unchanged. Finland, Denmark and Greece retain specific fresh source-access/time
 findings for the next pass.
 

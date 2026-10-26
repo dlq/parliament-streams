@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-26",
+  "scope": "Two new supported event/programme collectors; targeted French, Luxembourg and Taiwan iVOD research. Not a fresh audit of every planned source. No media played or downloaded, TLS settings changed, viewing sources promoted, or reuse rights expanded.",
+  "response_evidence": [
+    {
+      "name": "italy-camera",
+      "url": "https://webtv.camera.it/",
+      "retrieved_at": "2026-10-26T21:28:58.346399+00:00",
+      "status": 200,
+      "bytes": 76098,
+      "sha256": "a03114f9421b8d79735fa1d13bc0739c098c9043dff6fba0ad3f94358816b124"
+    },
+    {
+      "name": "france-commissions",
+      "url": "https://event2.assemblee-nationale.fr/programme.php",
+      "retrieved_at": "2026-10-26T21:28:59.928981+00:00",
+      "status": 200,
+      "bytes": 35066,
+      "sha256": "6436f8ec4fc3821313fe3e068e1a4ebe9696d5c2cdde248f573120a7bf716d9e"
+    },
+    {
+      "name": "taiwan-forecast",
+      "url": "https://ivod.ly.gov.tw/index.php/Forecast",
+      "retrieved_at": "2026-10-26T21:29:05.072695+00:00",
+      "status": 200,
+      "bytes": 107891,
+      "sha256": "7f72c54037227493ad25424c873a49c6e00bbfdc3ffcd92a9261dd86856b5773"
+    },
+    {
+      "name": "luxembourg-agenda",
+      "url": "https://www.chd.lu/fr/agenda",
+      "retrieved_at": "2026-10-26T21:29:06.757634+00:00",
+      "status": 200,
+      "bytes": 233618,
+      "sha256": "7c80256f2fa496ff53dc6a74af6d71a7df4adb4a93ba35ed28b0eddddffe09c4"
+    },
+    {
+      "name": "italy-event-32692",
+      "url": "https://webtv.camera.it/evento/32692",
+      "status": 200,
+      "bytes": 36725,
+      "sha256": "3c439f24e56be7e2ad16b5bfd86447fca1cfeb0e222edea43dd530b2ad325227",
+      "retrieved_at": "2026-10-26T21:35:02.666432+00:00"
+    },
+    {
+      "name": "taiwan-meeting-2026102286",
+      "url": "https://ppg.ly.gov.tw/ppg/sittings/2026102286/details?meetingDate=115%2F10%2F28",
+      "status": 200,
+      "bytes": 66533,
+      "sha256": "16ce31239b66d4698f499291ccbc91fb721341d0793fac3eff8b20031ac7b21b",
+      "retrieved_at": "2026-10-26T21:35:04.227317+00:00"
+    },
+    {
+      "name": "taiwan-program-ly1-20261027",
+      "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F27",
+      "status": 200,
+      "bytes": 1128,
+      "sha256": "2406f2a174c84c645f8d3e291b647534873ab42bfd2c11e18978abe601ad7e5e",
+      "retrieved_at": "2026-10-26T21:38:50.390422+00:00",
+      "shape": "list",
+      "rows": 7
+    },
+    {
+      "name": "taiwan-program-ly1-20261028",
+      "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+      "status": 200,
+      "bytes": 495,
+      "sha256": "3a0453204b238f2169ce6731b0652a6891a4a77326696a35e440541d10de300b",
+      "retrieved_at": "2026-10-26T21:38:50.929905+00:00",
+      "shape": "list",
+      "rows": 4
+    },
+    {
+      "name": "taiwan-program-ly2-20261027",
+      "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F27",
+      "status": 200,
+      "bytes": 795,
+      "sha256": "fb105bc19b201a5d102e987006b57a6c1e85854a76619791a20f48fcc00682a1",
+      "retrieved_at": "2026-10-26T21:38:51.228443+00:00",
+      "shape": "list",
+      "rows": 5
+    },
+    {
+      "name": "taiwan-program-ly2-20261028",
+      "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F28",
+      "status": 200,
+      "bytes": 495,
+      "sha256": "28f1ebcf563a282f84377094317b4af9a5095d9cca167500deb8e7cd4e64ddd0",
+      "retrieved_at": "2026-10-26T21:38:51.525223+00:00",
+      "shape": "list",
+      "rows": 4
+    },
+    {
+      "name": "taiwan-ww-index",
+      "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+      "status": 200,
+      "bytes": 16522,
+      "sha256": "9eb9f646269bd4e78e31833e553d45c5f8d87bbd193d9c283a7b4fa6e1b3edf0"
+    },
+    {
+      "name": "taiwan-cts-a",
+      "url": "https://www.cts.com.tw/schedule/?ch=lyA",
+      "status": 200,
+      "bytes": 144234,
+      "sha256": "d80735176ddeff3206acceb0ed264d7857ff9ae4817a50d9870f8d84330ad1c5"
+    },
+    {
+      "name": "taiwan-cts-b",
+      "url": "https://www.cts.com.tw/schedule/?ch=lyB",
+      "status": 200,
+      "bytes": 144234,
+      "sha256": "c1e98252dee842849db4d8566321aace25e4cc904d535d6009ce5fbb23c9c954"
+    },
+    {
+      "name": "taiwan-modern-root",
+      "url": "https://www.parliamentarytv.org.tw/",
+      "bytes": 72459,
+      "sha256": "3d73c910314c66b7537e8190701a31d204d6484815e92be21e8d9eb715cf7e06"
+    },
+    {
+      "name": "italy-listings",
+      "url": "https://webtv.camera.it/sites/all/modules/webtv/in_evidenza/js/in_evidenza_v1.5.js",
+      "bytes": 14802,
+      "sha256": "0831def3dc7dfe9e3f01f20f74bde3e368e877dc035a01873f898c5c852522cb"
+    }
+  ],
+  "publication_preview": {
+    "generated_at": "2026-10-26T21:40:50Z",
+    "counts": {
+      "channels": 24,
+      "complete": 6,
+      "current": 8,
+      "empty": 4,
+      "error": 1,
+      "events": 818,
+      "events_with_end": 584,
+      "events_with_official_id": 294,
+      "events_with_url": 503,
+      "fresh_channels": 23,
+      "ok": 22,
+      "stale_channels": 1,
+      "upcoming": 22
+    },
+    "coverage": {
+      "catalogue_sources": 261,
+      "channels_with_parser": 47,
+      "channels_with_reviewed_mapping": 14,
+      "channels_with_events": 24,
+      "channels_with_programmes": 8
+    },
+    "coverage_states": {
+      "guide_available": 8,
+      "mapping_unverified": 12,
+      "empty": 23,
+      "parser_planned": 214,
+      "quality_hold": 4
+    },
+    "quality_counts": {
+      "events": 818,
+      "exportable": 365,
+      "excluded": 453,
+      "channels_with_events": 24,
+      "excluded_missing_time_range": 234,
+      "excluded_unverified_channel_mapping": 415
+    },
+    "new_sources": {
+      "italy-camera-webtv": {
+        "source": {
+          "channel_count": 1,
+          "channels_expected": 1,
+          "consecutive_failures": 0,
+          "coverage_end": "2026-10-29T14:00:00Z",
+          "coverage_start": "2026-10-27T09:00:00Z",
+          "event_count": 25,
+          "events_with_end": 0,
+          "events_with_official_id": 25,
+          "events_with_url": 25,
+          "fetched_at": "2026-10-26T21:40:50Z",
+          "last_success_at": "2026-10-26T21:40:50Z",
+          "outcome_detail": "events",
+          "status": "ok",
+          "urls": [
+            "https://webtv.camera.it/"
+          ],
+          "used_last_good": false
+        },
+        "scope": "event_directory",
+        "linear_guide_eligible": false,
+        "exportable": 0,
+        "events": 25,
+        "identifier_kinds": {
+          "official": 25
+        },
+        "locations": {
+          "Femminicidio": 2,
+          "VIII Ambiente": 1,
+          "Assemblea": 1,
+          "Covid": 2,
+          "Eventi": 5,
+          "Periferie": 1,
+          "III Affari esteri": 1,
+          "III Affari esteriCongiunte": 1,
+          "Antimafia": 1,
+          "Rischio idrogeologico e sismico": 2,
+          "X Attivita' produttive": 1,
+          "Infanzia": 1,
+          "EventiPresidente": 4,
+          "VII Cultura": 2
+        },
+        "event_times": [
+          {
+            "id": "32670",
+            "start": "2026-10-27T09:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Femminicidio",
+            "has_end": false
+          },
+          {
+            "id": "32672",
+            "start": "2026-10-27T09:50:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "VIII Ambiente",
+            "has_end": false
+          },
+          {
+            "id": "32692",
+            "start": "2026-10-27T10:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Assemblea",
+            "has_end": false
+          },
+          {
+            "id": "32649",
+            "start": "2026-10-27T10:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Covid",
+            "has_end": false
+          },
+          {
+            "id": "32669",
+            "start": "2026-10-27T10:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Eventi",
+            "has_end": false
+          },
+          {
+            "id": "32684",
+            "start": "2026-10-27T10:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Eventi",
+            "has_end": false
+          },
+          {
+            "id": "32673",
+            "start": "2026-10-27T11:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Periferie",
+            "has_end": false
+          },
+          {
+            "id": "32674",
+            "start": "2026-10-27T11:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "III Affari esteri",
+            "has_end": false
+          },
+          {
+            "id": "32664",
+            "start": "2026-10-27T11:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "III Affari esteriCongiunte",
+            "has_end": false
+          },
+          {
+            "id": "32675",
+            "start": "2026-10-27T11:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Antimafia",
+            "has_end": false
+          },
+          {
+            "id": "32662",
+            "start": "2026-10-27T12:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Rischio idrogeologico e sismico",
+            "has_end": false
+          },
+          {
+            "id": "32676",
+            "start": "2026-10-27T12:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "X Attivita' produttive",
+            "has_end": false
+          },
+          {
+            "id": "32677",
+            "start": "2026-10-27T12:15:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Infanzia",
+            "has_end": false
+          },
+          {
+            "id": "32681",
+            "start": "2026-10-27T14:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "EventiPresidente",
+            "has_end": false
+          },
+          {
+            "id": "32682",
+            "start": "2026-10-27T16:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Eventi",
+            "has_end": false
+          },
+          {
+            "id": "32663",
+            "start": "2026-10-28T07:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Rischio idrogeologico e sismico",
+            "has_end": false
+          },
+          {
+            "id": "32671",
+            "start": "2026-10-28T07:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Femminicidio",
+            "has_end": false
+          },
+          {
+            "id": "32679",
+            "start": "2026-10-28T14:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "VII Cultura",
+            "has_end": false
+          },
+          {
+            "id": "32665",
+            "start": "2026-10-28T15:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Eventi",
+            "has_end": false
+          },
+          {
+            "id": "32641",
+            "start": "2026-10-29T08:20:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Eventi",
+            "has_end": false
+          },
+          {
+            "id": "32652",
+            "start": "2026-10-29T09:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "EventiPresidente",
+            "has_end": false
+          },
+          {
+            "id": "32650",
+            "start": "2026-10-29T09:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "Covid",
+            "has_end": false
+          },
+          {
+            "id": "32680",
+            "start": "2026-10-29T12:30:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "VII Cultura",
+            "has_end": false
+          },
+          {
+            "id": "32666",
+            "start": "2026-10-29T14:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "EventiPresidente",
+            "has_end": false
+          },
+          {
+            "id": "32668",
+            "start": "2026-10-29T14:00:00Z",
+            "source_timezone": "Europe/Rome",
+            "location": "EventiPresidente",
+            "has_end": false
+          }
+        ]
+      },
+      "taiwan-parliamentary-tv": {
+        "source": {
+          "channel_count": 1,
+          "channels_expected": 1,
+          "consecutive_failures": 0,
+          "coverage_end": "2026-10-29T10:00:00Z",
+          "coverage_start": "2026-10-26T23:20:00Z",
+          "event_count": 23,
+          "events_with_end": 0,
+          "events_with_official_id": 0,
+          "events_with_url": 23,
+          "fetched_at": "2026-10-26T21:40:50Z",
+          "last_success_at": "2026-10-26T21:40:50Z",
+          "outcome_detail": "events",
+          "status": "ok",
+          "urls": [
+            "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F27",
+            "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F27",
+            "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F28",
+            "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F29",
+            "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F29"
+          ],
+          "used_last_good": false
+        },
+        "scope": "event_directory",
+        "linear_guide_eligible": false,
+        "exportable": 0,
+        "events": 23,
+        "identifier_kinds": {
+          "generated": 23
+        },
+        "locations": {
+          "國會頻道１": 12,
+          "國會頻道２": 11
+        },
+        "event_times": [
+          {
+            "id": "generated-fb6811817379099a4035",
+            "start": "2026-10-26T23:20:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-7680f2c06a16f0bf052e",
+            "start": "2026-10-27T00:47:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-ea5bfc9bf8c059a854b4",
+            "start": "2026-10-27T00:47:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-49f491e48df2ecd02279",
+            "start": "2026-10-27T01:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-bf6e448618985c57afd0",
+            "start": "2026-10-27T01:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-dde0a272b9413e5cf5e9",
+            "start": "2026-10-27T10:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-d89911d743fb632c6261",
+            "start": "2026-10-27T10:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-6f2c76e57a48b2730621",
+            "start": "2026-10-27T21:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-5c8cb87f59b2bd10b04e",
+            "start": "2026-10-27T21:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-2e34b4924047ac8ba100",
+            "start": "2026-10-28T00:47:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-24fab0893ed906860165",
+            "start": "2026-10-28T00:47:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-393e11b47afe64015a5c",
+            "start": "2026-10-28T01:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-82b205bf6414d60aef14",
+            "start": "2026-10-28T01:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-be00dda8c0baab905f54",
+            "start": "2026-10-28T10:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-c431e28fd590a6d6d011",
+            "start": "2026-10-28T10:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-88fd29fd4f4b34c6a128",
+            "start": "2026-10-28T21:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-d798d5e29714ae662142",
+            "start": "2026-10-28T21:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-22dc7bbaa6038b8142f1",
+            "start": "2026-10-29T00:47:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-55462faf1b6d03eefa32",
+            "start": "2026-10-29T00:47:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-edd140d5868fc26133f9",
+            "start": "2026-10-29T01:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-3fed4b990f7a0caba522",
+            "start": "2026-10-29T01:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          },
+          {
+            "id": "generated-718bb308a0a5ab14a1e3",
+            "start": "2026-10-29T10:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道１",
+            "has_end": false
+          },
+          {
+            "id": "generated-3a068cb621a3f9b72d09",
+            "start": "2026-10-29T10:00:00Z",
+            "source_timezone": "Asia/Taipei",
+            "location": "國會頻道２",
+            "has_end": false
+          }
+        ]
+      }
+    },
+    "source_errors": [
+      "knesset-tv-guide"
+    ]
+  },
+  "confirmed": {
+    "italy": [
+      "The official client constructs /evento/{numeric_id} detail URLs from data-id_evento.",
+      "The independently read event 32692 detail says 27 October 2026 11:00; Rome normalization is 10:00 UTC.",
+      "Only future featured cards are retained; VOD/live cards and starts outside the current 30-day window are omitted. This is not an exhaustive calendar.",
+      "Room/category labels and stable official IDs are preserved. Unknown future ends are not taken from archive fields or next starts."
+    ],
+    "taiwan": [
+      "The modern-TLS official portal explicitly identifies ly1 and ly2 as its two channels. Its own client requests api/get_program.php with ch and a YYYY/MM/DD date from the date picker.",
+      "Bounded requests for both feeds on two dates return different dated programme arrays. The collector requests both feeds over three source-local dates.",
+      "A replay subtitle can name a prior sitting date; that date never replaces the requested broadcast day.",
+      "Source clocks are Asia/Taipei, not viewer-local. Feed labels distinguish simultaneous slots and deterministic IDs; the payload has no official event IDs or end fields.",
+      "The separately published iVOD forecast has 17 dated meetings and official detail IDs. One detail independently agrees on 28 October 09:00, but its 17:30 calendar boundary does not prove broadcast end. That TLS-blocked route remains planned."
+    ]
+  },
+  "unresolved": {
+    "taiwan_ivod": "The modern collector rejects unsafe legacy TLS renegotiation. A www alias did not resolve; HTTP redirected into the same TLS failure. No workaround or security downgrade was adopted.",
+    "linear_mapping": "Neither aggregate viewing portal is one uninterrupted feed. Taiwan has two identified programme channels; separate catalogue/feed mapping review is required before any XMLTV admission. Italy covers multiple rooms.",
+    "programme_ends": "No dependable broadcast end is supplied by either active source. Adjacent starts, archive ends and institutional calendar envelopes are not used as substitutes.",
+    "france": "The official commission broadcast table is reachable and contains explicit dated starts. A parser, row identity and exact room/feed mapping remain a next-pass task; no inferred ends or new admission claimed.",
+    "luxembourg": "The official agenda is reachable with dated starts, titles and rooms; embedded calendar summaries also contain date-only entries. Public-broadcast scope, stable event identity and end semantics still need review before a parser is claimed.",
+    "existing_time_holds": {
+      "czech-chamber-of-deputies": {
+        "missing_time_range": 1
+      },
+      "estonia-riigikogu-live-1": {
+        "missing_time_range": 4
+      },
+      "italy-senate": {
+        "missing_time_range": 2
+      },
+      "spain-canal-parlamento": {
+        "missing_time_range": 5
+      }
+    }
+  },
+  "verification": {
+    "focused_tests": 18,
+    "complete_checks": "make verify passed",
+    "product_schema_and_cross_format_validation": "passed",
+    "media_played": false,
+    "tls_settings_relaxed": false,
+    "python_tests": 501,
+    "javascript_unit_tests": 9,
+    "mypy_source_files": 72,
+    "combined_statement_branch_coverage_percent": 93.65711252653928,
+    "ruff_format_lint": "passed",
+    "html_browser_interaction_axe": "passed",
+    "visible_preview": {
+      "url": "http://127.0.0.1:8768/schedule.html?lang=en",
+      "desktop_width": 1280,
+      "mobile_width": 390,
+      "horizontal_overflow": false,
+      "source_times_confirmed": [
+        "Italian 27 October 10:00 Rome / 09:00 UTC / 05:00 EDT",
+        "Taiwan 27 October 07:20 Taipei / 26 October 23:20 UTC / 19:20 EDT"
+      ],
+      "new_preview_origin_console_errors": 0,
+      "older_preview_origin": "Old 8767 origin stalled with missing shared globals; fresh 8768 origin rendered correctly. No production source changes were made for that local state."
+    },
+    "known_ui_followup": "Existing singular-result wording remains: 1 channels with schedule data.",
+    "playlists": {
+      "stable-hls.m3u": {
+        "sha256": "119a80b44e0aaf05fca769fc09747d484b971509f76e69547dbca4baa64b7b55",
+        "matches_preceding_playlist_bytes": true
+      },
+      "stable-hls.m3u8": {
+        "sha256": "119a80b44e0aaf05fca769fc09747d484b971509f76e69547dbca4baa64b7b55",
+        "matches_preceding_playlist_bytes": true
+      },
+      "validated-hls.m3u": {
+        "sha256": "6a5be35499765b25f0fa2f5bd139b06dd810498ed014b7d3881c75f092c6c7a5",
+        "matches_preceding_playlist_bytes": true
+      },
+      "validated-hls.m3u8": {
+        "sha256": "6a5be35499765b25f0fa2f5bd139b06dd810498ed014b7d3881c75f092c6c7a5",
+        "matches_preceding_playlist_bytes": true
+      }
+    }
+  }
+}

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 — Italian and Taiwanese programme listings
+
+- Collect featured upcoming Italian Chamber WebTV broadcasts with official event
+  identities, room labels and Rome source times, excluding archive/live cards.
+- Collect Taiwan Parliamentary TV's dated two-channel programme API over supported
+  modern TLS, preserving feed labels, broadcast dates and Taipei source clocks.
+- Keep unknown ends and aggregate-channel XMLTV mapping holds explicit; retain
+  the separate iVOD legacy-TLS access gap without weakening TLS checks.
+
 ## 2026-10-26 — Page styles during viewer navigation
 
 - Load and activate each destination page's stylesheets before replacing page

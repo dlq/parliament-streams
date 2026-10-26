@@ -4007,6 +4007,13 @@
           "method": "GET",
           "kind": "meeting_forecast_page",
           "scraper_status": "planned"
+        },
+        {
+          "scraper": "taiwan-parliamentary-tv-programmes",
+          "scraper_status": "implemented",
+          "url": "https://www.parliamentarytv.org.tw/api/get_program.php",
+          "method": "GET",
+          "kind": "official_two_channel_programme_api"
         }
       ],
       "permission": {
@@ -8295,8 +8302,8 @@
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "scraper_status": "planned",
+          "scraper": "italy-camera-webtv-events",
+          "scraper_status": "implemented",
           "url": "https://webtv.camera.it/",
           "method": "GET",
           "kind": "official_meeting_or_dated_video_index"

@@ -15,6 +15,7 @@ from . import (
     germany_bundestag,
     ireland_oireachtas,
     italian_senate,
+    italy_camera,
     knesset_tv,
     mauritius_parliament_tv,
     new_zealand_parliament,
@@ -25,12 +26,15 @@ from . import (
     quebec_webdiffusion,
     spain_canal_parlamento,
     sweden_riksdag,
+    taiwan_parliamentary_tv,
     uk_parliament,
     un_webtv,
     youtube_live,
 )
 
 SCRAPERS: dict[str, ModuleType] = {
+    italy_camera.SOURCE["id"]: italy_camera,
+    taiwan_parliamentary_tv.SOURCE["id"]: taiwan_parliamentary_tv,
     norway_stortinget.SOURCE["id"]: norway_stortinget,
     sweden_riksdag.SOURCE["id"]: sweden_riksdag,
     germany_bundestag.SOURCE["id"]: germany_bundestag,

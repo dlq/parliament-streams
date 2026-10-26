@@ -54,6 +54,8 @@ Current scraper ids:
 - `mauritius-parliament-tv-guide`
 - `norway-stortinget-calendar`
 - `sweden-riksdag-calendar`
+- `italy-camera-webtv-events`
+- `taiwan-parliamentary-tv-programmes`
 
 They parse supplied HTML/JSON strings. Network fetching remains in the shared
 collector rather than inside parser functions, so every run records what was
@@ -64,9 +66,9 @@ parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
 As of 2026-10-26, all 261 catalogue source records have at least one official
-schedule, agenda, meeting or dated video-event surface recorded. Forty-five
-records use implemented parsers across 31 recorded metadata URLs and 25 collectors;
-216 catalogue entries still have planned extraction. These are source-discovery
+schedule, agenda, meeting or dated video-event surface recorded. Forty-seven
+records use implemented parsers across 33 recorded metadata URLs and 27 collectors;
+214 catalogue entries still have planned extraction. These are source-discovery
 counts, not populated programme-guide coverage or proof that every surface
 describes a broadcast. This pass did not freshly fetch every planned URL. The
 jurisdiction filter
@@ -83,6 +85,17 @@ are excluded. Both preserve official IDs and convert source clocks to UTC;
 Swedish ambiguous/nonexistent Stockholm times fail rather than selecting an
 offset. Fifteen-minute and one-hour calendar end markers are not programme ends.
 Both remain institutional agendas without a reviewed linear-feed mapping.
+
+The [WebTV programme continuation](../reports/epg/2026-10-26-webtv-programmes.md)
+adds Italy's featured upcoming Chamber broadcasts and Taiwan's two-channel
+programme API. Italy preserves official event IDs and room/category labels;
+archive and already-live cards are not upcoming programmes. Taiwan requests the
+source's local date separately for `ly1` and `ly2`, preserving the channel label
+and broadcast date even when a replay title names an older sitting. Both use
+source-zone UTC conversion and retain unknown ends. Neither aggregate portal
+is mapped to one continuous XMLTV channel. The iVOD forecast remains planned:
+its legacy TLS renegotiation fails under the collector's modern TLS checks;
+no TLS security setting is relaxed.
 
 The [renewed institution review](../reports/discovery/2026-10-25-institution-service-baseline.md)
 tracks source freshness, timezone/event mapping and programme-data rights
