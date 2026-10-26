@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 
 import AxeBuilder from "@axe-core/playwright";
 import { chromium } from "playwright";
+import { assertPersistentViewer, assertProviderViewer } from "./check_viewer.mjs";
 
 const root = normalize(join(fileURLToPath(new URL("..", import.meta.url))));
 const canonicalCatalogue = JSON.parse(await readFile(join(root, "data/channels.json"), "utf8"));
@@ -560,6 +561,11 @@ try {
           return loadSource.call(this, url);
         };
         const attachMedia = value.prototype.attachMedia;
+        const destroy = value.prototype.destroy;
+        value.prototype.destroy = function () {
+          observation.destroyed = (observation.destroyed || 0) + 1;
+          return destroy.call(this);
+        };
         value.prototype.attachMedia = function (media) {
           observation.attachedVideo = media === document.querySelector("#media-frame video");
           this.on(value.Events.MEDIA_ATTACHED, () => { observation.mediaAttached = true; });
@@ -588,6 +594,7 @@ try {
   assert.equal(new URL(hlsLibraryRequests[0]).origin, new URL(baseUrl).origin);
   assert.equal(new URL(hlsLibraryRequests[0]).searchParams.get("v"), hlsRuntime.vendor.sha256);
   assert.deepEqual(externalHlsRequests, [], "HLS playback must not request a CDN or live broadcaster");
+  await assertPersistentViewer(hlsPage, baseUrl);
   await hlsPage.close();
   const page = await context.newPage();
   await page.route("**/data/schedules.json", (route) => route.fulfill({
@@ -1579,6 +1586,11 @@ try {
   assert.match(await storagePage.locator("#map-detail").innerText(), /Alberta/);
   assert.deepEqual(storageErrors, []);
   await storageContext.close();
+  const providerContext = await newLocalContext(browser, { viewport: { width: 1280, height: 900 } });
+  const providerPage = await providerContext.newPage();
+  await providerPage.route("**/data/schedules.json", (route) => route.fulfill({ json: { channels: { "new-zealand-parliament": { next_event_title: "House sitting", next_event_start: "2026-11-03T12:00:00Z" } } } }));
+  await assertProviderViewer(providerPage, baseUrl);
+  await providerContext.close();
   await assertViewerTimezones(browser, baseUrl);
 } finally {
   await browser.close();

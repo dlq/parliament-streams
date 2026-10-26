@@ -1,4 +1,5 @@
 (() => {
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
   const hosts = document.querySelectorAll('[data-iptv]');
   if (!hosts.length) return;
   const keys = ['title', 'intro', 'stable', 'broader', 'guide', 'note', 'copy', 'copied', 'failed', 'filterScope'];

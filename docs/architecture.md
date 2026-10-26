@@ -167,6 +167,19 @@ The public site is static:
 5. It renders catalogue rows, source details, latest retained validation
    evidence, rights notes, and official links.
 6. It enables native playback only when catalogue metadata permits it.
+7. `site/navigation.js` progressively replaces the main/header/footer of the five
+   ordinary HTML pages while a shared viewer remains attached to the document.
+   `site/app.js` rebinds catalogue controls when returning; other page controllers
+   initialize for their current route and use an abortable page lifecycle for
+   global listeners, observers and pending initialization. The desktop move/resize
+   controls are isolated in `site/viewer-controls.js`.
+
+The shared viewer keeps the actual native video/provider iframe and HLS instance
+across internal navigation and translation. It does not save a playback timestamp
+and start a new player. Source selection and Close retain explicit teardown;
+filtering, sorting, resizing, minimising and changing page do not tear down media.
+The mobile sheet uses the same viewer DOM with the existing responsive controls.
+Source URLs, page URLs and programme data keep their existing separate contracts.
 
 There is no server-side proxy, transcoder, database, account system, analytics
 pipeline, or request-time scraper.

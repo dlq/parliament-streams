@@ -1,4 +1,5 @@
 (() => {
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
 const { locales, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
 const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
@@ -144,7 +145,7 @@ function render() {
       <td><div class="schedule-channel${flag ? "" : " schedule-channel--no-flag"}">${flag ? `<img class="schedule-flag" src="${flag}" alt="">` : ""}<div><strong>${escapeHtml(channel.name)}</strong><span>${escapeHtml(jurisdictionName(channel))} · ${escapeHtml(channel.legislature)}</span>${kind ? `<span class="schedule-kind">${escapeHtml(st(kind))}</span>` : ""}${retained ? `<span class="schedule-channel-stale">${escapeHtml(retained)}</span>` : ""}</div></div></td>
       <td data-label="${escapeHtml(st("now"))}">${eventMarkup(schedule, "current")}</td>
       <td data-label="${escapeHtml(st("next"))}">${eventMarkup(schedule, "next")}</td>
-      <td><div class="schedule-actions">${isPlaybackEnabled(channel) ? `<a class="schedule-watch" href="${detailsUrl(channel, true)}">${escapeHtml(t("watch"))}</a>` : officialLink(channel)}<a class="schedule-details" href="${detailsUrl(channel)}">${escapeHtml(t("catalogue"))} →</a></div></td>
+      <td><div class="schedule-actions">${isPlaybackEnabled(channel) ? `<a class="schedule-watch" data-viewer-source="${channel.id}" data-viewer-play="true" href="${detailsUrl(channel, true)}">${escapeHtml(t("watch"))}</a>` : officialLink(channel)}<a class="schedule-details" data-viewer-source="${channel.id}" href="${detailsUrl(channel)}">${escapeHtml(t("sourceDetails"))} →</a></div></td>
     </tr>`;
   }).join("");
   renderUnparsedScheduleLinks();
@@ -315,6 +316,7 @@ async function init() {
       state.quality = quality.coverage?.channels ?? {};
     }
   }
+  if (pageSignal?.aborted) return;
   renderFilters();
   if (!["", "current", "next", "playable"].includes(state.listingFilter)) state.listingFilter = "";
   elements.listingFilter.value = state.listingFilter;
@@ -337,7 +339,8 @@ async function init() {
   });
 }
 
-init().catch((error) => {
+window.ParliamentStreamsPageReady = init().catch((error) => {
+  if (pageSignal?.aborted) return;
   elements.updated.textContent = error.message;
   elements.updated.classList.add("is-stale");
   elements.empty.hidden = false;

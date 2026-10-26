@@ -1,4 +1,5 @@
 (() => {
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
   const shared = window.ParliamentStreamsI18n;
   const project = window.ParliamentStreamsProjectI18n;
   const selector = document.querySelector("#locale-select");
@@ -67,9 +68,10 @@
   const scheduleUpdate = () => queueMicrotask(updateProjectLinks);
   scheduleUpdate();
   selector?.addEventListener("change", scheduleUpdate);
-  window.addEventListener("pageshow", scheduleUpdate);
+  window.addEventListener("pageshow", scheduleUpdate, { signal: pageSignal });
   // Some controllers translate only after their data has loaded. Observe the
   // language signal so their older header names cannot win an async race.
   const languageObserver = new MutationObserver(scheduleUpdate);
+  window.ParliamentStreamsNavigation?.cleanup(() => languageObserver.disconnect());
   languageObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
 })();

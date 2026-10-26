@@ -1,4 +1,5 @@
 (() => {
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
   const links = document.querySelectorAll("#nav-institutions, #map-nav-institutions, #schedule-nav-institutions");
   if (!links.length) return;
 
@@ -21,5 +22,5 @@
 
   updateInstitutionNavigationLinks();
   selector?.addEventListener("change", () => queueMicrotask(updateInstitutionNavigationLinks));
-  window.addEventListener("pageshow", updateInstitutionNavigationLinks);
+  window.addEventListener("pageshow", updateInstitutionNavigationLinks, { signal: pageSignal });
 })();

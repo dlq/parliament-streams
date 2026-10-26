@@ -1,4 +1,5 @@
 (() => {
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
   const shared = window.ParliamentStreamsI18n;
   const project = window.ParliamentStreamsProjectI18n;
   const selector = document.querySelector("#locale-select");

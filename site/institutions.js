@@ -1,4 +1,5 @@
 (() => {
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
   "use strict";
   const shared = window.ParliamentStreamsI18n;
   const translations = window.ParliamentStreamsInstitutionsI18n;
@@ -214,7 +215,11 @@
     status.dataset.status = row.status;
     const viewing = element("div", "institution-viewing");
     if (row.catalogue_ids.length) {
-      for (const [index, id] of row.catalogue_ids.entries()) viewing.append(link(`${message("catalogue")}${row.catalogue_ids.length > 1 ? ` ${index + 1}` : ""}`, `./?lang=${encodeURIComponent(state.locale)}&source=${encodeURIComponent(id)}#catalogue`));
+      for (const [index, id] of row.catalogue_ids.entries()) {
+        const source = link(`${shared.message(state.locale, "sourceDetails")}${row.catalogue_ids.length > 1 ? ` ${index + 1}` : ""}`, `./?lang=${encodeURIComponent(state.locale)}&source=${encodeURIComponent(id)}#catalogue`);
+        source.dataset.viewerSource = id;
+        viewing.append(source);
+      }
     } else {
       viewing.textContent = message("noService");
     }

@@ -20,8 +20,8 @@ remain separate findings. Automation proposes changes for human review; it
 does not automatically approve or promote a source.
 
 All five pages share localized **Data and method**, **Contribute** and **Code**
-utility links. At widths up to 420px, the four primary page links use a two by
-two layout so long translations can wrap at word boundaries. The shared
+utility links. At widths up to 420px, the five primary page links use a balanced
+two-row layout so long translations can wrap at word boundaries. The shared
 project explanation stays on the Data page on mobile, keeping the catalogue
 and other lists compact.
 
@@ -30,6 +30,41 @@ top padding. The catalogue retains its image hero and compact section heading.
 A pale green wash identifies the shared Data and method strip and contribution
 areas; lists retain white backgrounds and their existing row spacing. These
 shared rules and colour/spacing tokens live in `site/styles.css`.
+
+## Shared viewer and navigation
+
+Source details use one shared viewer across Catalogue, Coverage map, Schedule,
+Legislatures and Data and method. Desktop opens it at the bottom right without
+changing list width. Drag its title bar to move it and its upper-left corner to
+resize it. The same controls support arrow keys, with Shift for larger steps;
+Home resets position and size. Minimise keeps the media attached; Close stops
+playback and releases the HLS instance. The window is kept within the viewport.
+
+At widths up to 1100px the existing bottom sheet remains, including its height
+grabber, snap sizes and Escape-to-close behaviour. Switching between desktop and
+mobile preserves the player. Closing returns focus to the originating control
+when it is still available, otherwise to the current page heading.
+
+Map, schedule and inventory source-detail links open that same viewer in place.
+Their HTML links still provide direct catalogue URLs for opening in another tab
+or ordinary navigation without the enhancement. Official viewing links retain
+their source-specific playback/link-out policy.
+
+`site/navigation.js` enhances links between the five site pages: it retrieves
+ordinary HTML, updates the URL, title, metadata and page content, and keeps the
+viewer outside that replacement. Back/Forward, language changes, filtering and
+sorting do not recreate an active video, provider iframe or HLS instance.
+`site/app.js` owns the existing shared renderer/player and catalogue controller;
+`site/viewer-controls.js` owns desktop geometry, and `site/viewer-i18n.js` covers
+controls and navigation recovery in all 23 locales. Each page remains directly
+addressable, with its own HTML and normal script entry points. No framework,
+server, storage of viewing history or browser popup is introduced.
+
+Page controllers clean up their global listeners/observers when leaving a page.
+A failed enhanced navigation leaves the viewer available and displays a retry
+message. Full browser reloads, leaving the site, and opening another browser tab
+are separate documents; uninterrupted playback applies to enhanced navigation
+inside the current tab. Local `file:` previews retain ordinary page navigation.
 
 The [Legislatures page](https://dlq.ca/parliament-streams/institutions.html)
 opens the working institution inventory, including authority decisions and

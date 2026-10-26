@@ -20,6 +20,12 @@ records exact matches and remaining per-body work. These are different units;
 neither total is a count of fully validated live streams. Completed work and
 older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
 
+The desktop [shared viewer](docs/public-site.md#shared-viewer-and-navigation)
+now floats over the unchanged list width, with move/resize keyboard alternatives
+and uninterrupted playback during enhanced navigation between the five pages.
+The existing mobile sheet remains. Keep future page controllers within the
+abortable navigation lifecycle and retain normal HTML links/deep links.
+
 ## Next Milestones
 
 1. Continue the remaining eligible-body metadata, official-service, programme and

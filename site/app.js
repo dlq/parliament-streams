@@ -58,7 +58,8 @@ const heroImages = [
 
 const initialLocale = supportedLocale(new URLSearchParams(window.location.search).get("lang") ?? readLocalePreference() ?? navigator.language);
 const state = { channels: [], fallbacks: [], schedules: {}, selectedId: null, hls: null, generatedOn: "", locale: initialLocale, detailSheetOpen: false, sort: { key: "source", direction: "ascending" } };
-const elements = {
+const elements = {};
+function bindElements() { Object.assign(elements, {
   stats: document.querySelector("#catalogue-stats"),
   list: document.querySelector("#channel-list"),
   detail: document.querySelector("#detail-panel"),
@@ -73,9 +74,11 @@ const elements = {
   sortStatus: document.querySelector("#sort-status"),
   intro: document.querySelector(".intro"),
   heroCredit: document.querySelector(".hero-credit"),
-};
+}); }
+bindElements();
 
 function renderDailyHero() {
+  if (!elements.intro) return;
   const dayIndex = Math.floor(Date.now() / 86_400_000) % heroImages.length;
   const hero = heroImages[dayIndex];
   elements.intro.style.setProperty("--hero-image", `url("${hero.file}")`);
@@ -398,7 +401,7 @@ function setLocale(locale) {
     setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
     setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
     renderList();
-    renderDetail();
+    renderDetail({ preservePlayer: true });
     renderResearchSummary();
     elements.stats.textContent = t("documented", { count: state.channels.length, date: state.generatedOn });
   }
@@ -521,10 +524,6 @@ function renderList() {
   const channels = filteredSources();
   renderSortHeaders();
   elements.count.textContent = t("results", { shown: channels.length, total: state.channels.length });
-  if (!channels.some((channel) => channel.id === state.selectedId)) {
-    state.selectedId = null;
-    state.detailSheetOpen = false;
-  }
   elements.list.innerHTML = channels.length ? channels.map((channel) => {
     const descriptionId = `${channel.id}-description`;
     const status = playbackMode(channel);
@@ -544,12 +543,7 @@ function renderList() {
     </li>`;
   }).join("") : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
-    state.selectedId = button.dataset.channelId;
-    state.detailSheetOpen = window.matchMedia("(max-width: 1100px)").matches;
-    elements.list.querySelectorAll("[data-channel-id]").forEach((candidate) => {
-      candidate.setAttribute("aria-pressed", String(candidate.dataset.channelId === state.selectedId));
-    });
-    renderDetail({ startPlayer: true, focusDetail: state.detailSheetOpen });
+    openSource(button.dataset.channelId, { play: true, trigger: button });
   }));
 }
 function closeDetailSheet() {
@@ -559,18 +553,38 @@ function closeDetailSheet() {
   if (state.hls) { state.hls.destroy(); state.hls = null; }
   elements.detail.classList.remove("is-open");
   elements.detail.hidden = true;
-  document.querySelector(".catalogue-layout").classList.remove("has-selection");
+  state.playbackGeneration = (state.playbackGeneration || 0) + 1;
   elements.detail.style.removeProperty("--mobile-sheet-height");
 }
+let lastTrigger = null;
 function dismissDetail() {
   const selectedId = state.selectedId;
   state.selectedId = null;
   closeDetailSheet();
-  renderList();
-  elements.list.querySelector(`[data-channel-id="${selectedId}"]`)?.focus();
+  if (elements.list?.isConnected) renderList();
+  const target = lastTrigger?.isConnected ? lastTrigger
+    : elements.list?.isConnected ? elements.list.querySelector(`[data-channel-id="${selectedId}"]`)
+    : document.querySelector("main h1");
+  if (target?.matches("h1")) target.setAttribute("tabindex", "-1");
+  target?.focus({ preventScroll: true });
 }
+function openSource(id, { play = false, trigger = null, focus = false } = {}) {
+  if (!state.channels.some((channel) => channel.id === id)) return;
+  const same = state.selectedId === id;
+  lastTrigger = trigger;
+  state.selectedId = id;
+  state.detailSheetOpen = true;
+  elements.detail.classList.remove("is-minimized");
+  if (elements.list?.isConnected) {
+    elements.list.querySelectorAll("[data-channel-id]").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.channelId === id));
+    });
+  }
+  renderDetail({ startPlayer: play, preservePlayer: same, focusDetail: focus || matchMedia("(max-width: 1100px)").matches });
+}
+
 function syncFilterDisclosure(mediaQuery) {
-  elements.filterDisclosure.open = !mediaQuery.matches;
+  if (elements.filterDisclosure?.isConnected) elements.filterDisclosure.open = !mediaQuery.matches;
 }
 function setDetailSheetHeight(height) {
   const minimum = 150;
@@ -930,11 +944,16 @@ function youtubeEmbedUrl(channel) {
   }
   return channel.embed?.url || "";
 }
-function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
-  if (state.hls) { state.hls.destroy(); state.hls = null; }
+function renderDetail({ startPlayer = false, focusDetail = false, preservePlayer = false } = {}) {
+  const frame = elements.detail.querySelector("#media-frame");
+  const keepFrame = preservePlayer && frame?.querySelector("video, iframe") ? frame : null;
+  if (!keepFrame) {
+    state.playbackGeneration = (state.playbackGeneration || 0) + 1;
+    if (state.hls) { state.hls.destroy(); state.hls = null; }
+  }
   const channel = state.channels.find((item) => item.id === state.selectedId);
   elements.detail.hidden = !channel;
-  document.querySelector(".catalogue-layout").classList.toggle("has-selection", Boolean(channel));
+  elements.detail.lang = state.locale;
   if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">${t("selectSource")}</p>`; closeDetailSheet(); return; }
   const allowed = isPlaybackEnabled(channel);
   const viewingReview = playbackMode(channel) === "research"
@@ -953,11 +972,18 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   const sourceType = label(channel.source_type);
   const sourceKind = label(channel.source_kind);
   elements.detail.setAttribute("aria-labelledby", "detail-title");
-  elements.detail.innerHTML = `
-    <div class="mobile-sheet-controls">
+  elements.detail.removeAttribute("aria-label");
+  const viewerText = (key) => window.ParliamentStreamsViewerI18n.message(state.locale, key);
+  const content = document.createElement("template");
+  content.innerHTML = `
+    <div class="mobile-sheet-controls viewer-controls">
+      <button class="viewer-resize" data-resize-viewer type="button" aria-label="${viewerText("resize")}" aria-describedby="viewer-keys">↖</button>
+      <button class="viewer-move" data-move-viewer type="button" aria-label="${viewerText("move")}" aria-describedby="viewer-keys"></button>
+      <button class="viewer-minimize" data-minimize-viewer type="button" aria-label="${viewerText("minimize")}">−</button>
       <button class="detail-grabber" data-resize-detail type="button" aria-label="${t("resizeDetails")}" lang="${state.locale}"><span></span></button>
-      <button class="detail-close" data-close-detail type="button">${t("close")}</button>
+      <button class="detail-close" data-close-detail type="button" aria-label="${t("close")}" title="${t("close")}"><span class="viewer-close-icon" aria-hidden="true">×</span><span class="detail-close-label">${t("close")}</span></button>
     </div>
+    <p class="visually-hidden" id="viewer-keys">${viewerText("keys")}</p>
     <h3 class="detail-title" id="detail-title" tabindex="-1" aria-live="polite">${channel.name}</h3>
     <p class="detail-subtitle">${jurisdictionMark(channel.country_or_region)}${jurisdictionName(channel.country_or_region)} · <span${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></p>
     ${playbackMode(channel) === "research" ? `<p class="detail-subtitle research-playback-note">${t("sourceResearchDescription")}</p>` : ""}
@@ -994,8 +1020,21 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
       </dl>
       ${researchNotesMarkup(channel, playbackMessage, usesLocalizedPlaybackGuidance)}
     </details>`;
+  if (keepFrame) {
+    // Removing/reinserting an iframe can reload it. Keep the actual media node
+    // attached while translating or changing the surrounding source details.
+    for (const child of [...elements.detail.childNodes]) if (child !== keepFrame) child.remove();
+    let beforeFrame = true;
+    for (const child of [...content.content.childNodes]) {
+      if (child.nodeType === 1 && child.id === "media-frame") { beforeFrame = false; continue; }
+      elements.detail.insertBefore(child, beforeFrame ? keepFrame : null);
+    }
+  } else {
+    elements.detail.replaceChildren(content.content);
+  }
+  window.ParliamentStreamsViewerControls.setup(elements.detail);
   elements.detail.classList.toggle("is-open", state.detailSheetOpen);
-  document.querySelectorAll("[data-start-playback]").forEach((button) => button.addEventListener("click", () => startPlayback(channel)));
+  elements.detail.querySelectorAll("[data-start-playback]").forEach((button) => button.addEventListener("click", () => startPlayback(channel)));
   elements.detail.querySelector("[data-close-detail]").addEventListener("click", dismissDetail);
   setupDetailSheetControls();
   if (focusDetail) elements.detail.querySelector("#detail-title").focus();
@@ -1005,7 +1044,9 @@ function loadHlsLibrary() {
   return window.ParliamentStreamsVendor.load("hls");
 }
 async function startPlayback(channel) {
-  const frame = document.querySelector("#media-frame");
+  const frame = elements.detail.querySelector("#media-frame");
+  if (!frame || frame.querySelector("video, iframe")) return;
+  const generation = state.playbackGeneration;
   frame.innerHTML = "";
   if (channel.embed?.provider === "youtube") {
     if (window.location.protocol === "file:") {
@@ -1035,6 +1076,7 @@ async function startPlayback(channel) {
       video.src = channel.playback_url;
     } else {
       await loadHlsLibrary();
+      if (generation !== state.playbackGeneration || !frame.isConnected) return;
       if (!window.Hls?.isSupported()) throw new Error("This browser does not support HLS playback.");
       state.hls = new window.Hls();
       state.hls.loadSource(channel.playback_url);
@@ -1042,25 +1084,12 @@ async function startPlayback(channel) {
     }
     await video.play();
   } catch (error) {
+    if (generation !== state.playbackGeneration || !frame.isConnected) return;
     frame.innerHTML = `<div class="player-placeholder"><p>${t("playbackError")} <a href="${channel.official_url}" target="_blank" rel="noreferrer">${t("official")} ↗</a></p></div>`;
   }
 }
 async function init() {
   try {
-    renderDailyHero();
-    const mobileLayout = window.matchMedia("(max-width: 680px)");
-    const detailSheetLayout = window.matchMedia("(max-width: 1100px)");
-    syncFilterDisclosure(mobileLayout);
-    mobileLayout.addEventListener("change", () => syncFilterDisclosure(mobileLayout));
-    detailSheetLayout.addEventListener("change", () => {
-      if (detailSheetLayout.matches) return;
-      closeDetailSheet();
-      renderDetail();
-    });
-    elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
-    elements.locale.value = state.locale;
-    applyStaticTranslations();
-    elements.locale.addEventListener("change", () => setLocale(elements.locale.value));
     let catalogue = window.PARLIAMENT_STREAMS_CATALOGUE;
     if (window.location.protocol !== "file:") {
       let response = await fetch(catalogueUrl, { cache: "no-store" });
@@ -1099,32 +1128,59 @@ async function init() {
       }
     }
     state.generatedOn = catalogue.generated_on;
-    const pageParameters = new URLSearchParams(window.location.search);
-    const requestedSourceId = pageParameters.get("source");
-    state.selectedId = state.channels.some((channel) => channel.id === requestedSourceId)
-      ? requestedSourceId
-      : null;
-    state.detailSheetOpen = Boolean(requestedSourceId);
-    elements.stats.textContent = t("documented", { count: state.channels.length, date: catalogue.generated_on });
-    setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
-    setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
-    renderResearchSummary();
-    [elements.search, elements.level, elements.format].forEach((input) => input.addEventListener("input", () => { renderList(); renderDetail(); }));
-    elements.sortButtons.forEach((button) => button.addEventListener("click", () => {
-      const key = button.dataset.sort;
-      state.sort = key === state.sort.key
-        ? { key, direction: state.sort.direction === "ascending" ? "descending" : "ascending" }
-        : { key, direction: "ascending" };
-      renderList();
-      renderDetail();
-    }));
-    renderList();
-    renderDetail({ startPlayer: pageParameters.get("play") === "1" });
+    mountPage();
   } catch (error) {
-    elements.stats.textContent = t("sourceError");
+    if (elements.stats) elements.stats.textContent = t("sourceError");
     elements.detail.innerHTML = `<p class="detail-empty">${t("sourceErrorDetail")}</p>`;
   }
 }
 
-init();
+function mountPage() {
+  bindElements();
+  state.locale = supportedLocale(new URLSearchParams(location.search).get("lang") ?? readLocalePreference() ?? navigator.language);
+  if (!elements.list) {
+    if (state.selectedId) renderDetail({ preservePlayer: true });
+    return;
+  }
+  renderDailyHero();
+  syncFilterDisclosure(matchMedia("(max-width: 680px)"));
+  elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
+  elements.locale.value = state.locale;
+  applyStaticTranslations();
+  elements.locale.addEventListener("change", () => setLocale(elements.locale.value));
+  elements.stats.textContent = t("documented", { count: state.channels.length, date: state.generatedOn });
+  setOptionLabel(elements.level, "allJur", optionValues("jurisdiction_level"));
+  setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
+  renderResearchSummary();
+  [elements.search, elements.level, elements.format].forEach((input) => input.addEventListener("input", renderList));
+  elements.sortButtons.forEach((button) => button.addEventListener("click", () => {
+    const key = button.dataset.sort;
+    state.sort = key === state.sort.key
+      ? { key, direction: state.sort.direction === "ascending" ? "descending" : "ascending" }
+      : { key, direction: "ascending" };
+    renderList();
+  }));
+  renderList();
+  const parameters = new URLSearchParams(location.search);
+  const requested = parameters.get("source");
+  if (requested && requested !== state.selectedId) openSource(requested, { play: parameters.get("play") === "1" });
+  else renderDetail({ preservePlayer: true });
+}
+const ready = init();
+window.ParliamentStreamsViewer = {
+  ready,
+  async open(id, options) { await ready; openSource(id, options); },
+  async mount() { await ready; mountPage(); },
+};
+matchMedia("(max-width: 680px)").addEventListener("change", (event) => syncFilterDisclosure(event));
+matchMedia("(max-width: 1100px)").addEventListener("change", () => {
+  // Moving between desktop and mobile must never stop an existing player.
+  if (state.selectedId) { state.detailSheetOpen = true; elements.detail.classList.add("is-open"); }
+});
+new MutationObserver(() => {
+  const locale = supportedLocale(document.documentElement.lang);
+  if (locale === state.locale) return;
+  state.locale = locale;
+  if (state.selectedId) renderDetail({ preservePlayer: true });
+}).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
 })();

@@ -1,4 +1,5 @@
 (() => {
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
 const { locales, localizedLabel, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
 const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount, subnationalParents, countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
@@ -222,7 +223,7 @@ function sourcePosture(channel) {
 function renderSourceList(channels) {
   return `<ul class="map-source-list">${channels.map((channel) => {
     const [posture, className] = sourcePosture(channel);
-    return `<li><a href="${catalogueLink(channel)}"><span>${escapeHtml(channel.name)}</span><span class="map-source-posture ${className}">${posture} →</span></a></li>`;
+    return `<li><a data-viewer-source="${channel.id}" href="${catalogueLink(channel)}"><span>${escapeHtml(channel.name)}</span><span class="map-source-posture ${className}">${posture} →</span></a></li>`;
   }).join("")}</ul>`;
 }
 
@@ -709,6 +710,7 @@ function escapeHtml(value) {
 
 async function init() {
   await window.ParliamentStreamsVendor.load("d3");
+  if (pageSignal?.aborted) return;
   applyStaticTranslations();
   elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
   elements.locale.value = state.locale;
@@ -716,7 +718,9 @@ async function init() {
     writeLocalePreference(elements.locale.value);
     const params = new URLSearchParams(window.location.search);
     params.set("lang", elements.locale.value);
-    window.location.search = params.toString();
+    const url = new URL(location.href); url.search = params.toString();
+    if (window.ParliamentStreamsNavigation) window.ParliamentStreamsNavigation.navigate(url.href);
+    else window.location.search = params.toString();
   });
 
   let catalogue = window.PARLIAMENT_STREAMS_CATALOGUE;
@@ -735,6 +739,7 @@ async function init() {
   const [geometry, primarySubnationalGeometry, lienchiangGeometry] = await Promise.all([
     d3.json(geometryUrl), d3.json(subnationalGeometryUrl), d3.json(lienchiangGeometryUrl),
   ]);
+  if (pageSignal?.aborted) return;
   state.geometry = geometry;
   state.subnationalGeometry = {
     type: "FeatureCollection",
@@ -777,10 +782,12 @@ async function init() {
   window.addEventListener("resize", () => {
     window.clearTimeout(resizeTimer);
     resizeTimer = window.setTimeout(renderMap, 100);
-  });
+  }, { signal: pageSignal });
+  window.ParliamentStreamsNavigation?.cleanup(() => clearTimeout(resizeTimer));
 }
 
-init().catch((error) => {
+window.ParliamentStreamsPageReady = init().catch((error) => {
+  if (pageSignal?.aborted) return;
   elements.detail.innerHTML = `<h2 id="map-detail-title" tabindex="-1">${escapeHtml(mt("mapUnavailable"))}</h2><p class="map-detail-empty">${escapeHtml(error.message)}</p>`;
 });
 })();

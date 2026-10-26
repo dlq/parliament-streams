@@ -1,5 +1,15 @@
 # Changelog
 
+## 26 October — Persistent Floating Viewer
+
+Replace the desktop details sidebar with a movable, resizable floating viewer,
+keeping full-width catalogue rows and the mobile bottom sheet. Share the viewer
+with Map, Schedule and Legislatures. Enhance navigation between the five ordinary
+HTML pages so the same media element and HLS instance survive page, language,
+filter and sort changes. Add keyboard move/resize/reset controls, minimise/restore,
+viewport bounds, focus restoration and visible navigation-error recovery, with
+controls translated across all 23 locales. Close still stops playback.
+
 ## 26 October — Norwegian And Swedish Schedule Starts
 
 Add official Norwegian plenary/public-room iCalendar and Swedish chamber XML
