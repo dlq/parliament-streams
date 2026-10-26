@@ -1,5 +1,14 @@
 # Changelog
 
+## 26 October — Norwegian And Swedish Schedule Starts
+
+Add official Norwegian plenary/public-room iCalendar and Swedish chamber XML
+collectors. Preserve stable source IDs and UTC times with named source zones;
+exclude written submissions and conditional/unknown starts. Calendar end markers
+remain unknown programme ends, and both institutional agendas stay outside
+linear XMLTV mapping. Refresh catalogue projections and current guide coverage
+counts: 45 parser-connected records, 25 collectors and 216 planned records.
+
 ## 26 October — Keep Unready Feeds In The Research Queue
 
 Move nine research-only feeds out of the viewing catalogue into researching

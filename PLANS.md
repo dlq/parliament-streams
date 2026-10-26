@@ -58,7 +58,15 @@ older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
 
 ## Scraper Work
 
-The [26 October continuation](reports/epg/2026-10-26-coverage-pass.md) and
+The [Nordic continuation](reports/epg/2026-10-26-nordic-coverage.md) brings the
+current 261-source catalogue to 45 parser-connected records and 25 collectors.
+Norway and Sweden add source-timezone-aware starts, with official identities and
+explicit calendar-duration, unknown-start and linear-mapping holds. There are
+216 sources with planned extraction; existing XMLTV/playlist admissions stay
+unchanged. Finland, Denmark and Greece retain specific fresh source-access/time
+findings for the next pass.
+
+The earlier [26 October continuation](reports/epg/2026-10-26-coverage-pass.md) and
 [measured data](reports/epg/2026-10-26-coverage-pass.json) record a local publication
 preview at 05:52:28 UTC: 44 parser-connected records, 23 collectors and 396 XMLTV
 programmes across seven channels. Germany and Ireland add 152 explicit ranges;
@@ -69,8 +77,8 @@ measurements; live schedules and exports are regenerated during deployment.
 The [first](reports/epg/2026-10-25-coverage-pass.md) and
 [second](reports/epg/2026-10-25-second-pass-coverage.md) 25 October checkpoints remain
 historical measurements. The quality report tracks every catalogue entry through
-parser, collection, mapping and programme availability states; 226 records retain
-planned extraction.
+parser, collection, mapping and programme availability states; its 226 planned
+records describe that earlier checkpoint.
 
 - [ ] Verify feed/room mappings for event platforms; institutional agendas and
   parallel event directories must not become a fictional linear TV guide.

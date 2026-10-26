@@ -400,6 +400,20 @@
       },
       "epg_sources": [
         {
+          "scraper": "norway-stortinget-calendar",
+          "scraper_status": "implemented",
+          "url": "https://www.stortinget.no/api/kalender/geticalmeetings?languageCode=no",
+          "method": "GET",
+          "kind": "official_plenary_ical_start_only"
+        },
+        {
+          "scraper": "norway-stortinget-calendar",
+          "scraper_status": "implemented",
+          "url": "https://www.stortinget.no/api/kalender/geticalhearings?languageCode=no",
+          "method": "GET",
+          "kind": "official_public_room_ical_start_only"
+        },
+        {
           "scraper": "planned",
           "url": "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Moteprogram/?w=0&yw=all",
           "method": "GET",
@@ -7911,6 +7925,13 @@
         "notes": "Official Webb-TV help says selected archived videos receive AI captions but live broadcasts currently do not. The official portal identifies a sign-language-interpreted party-leaders debate; interpretation is event-dependent, not universal. Audio description remains unknown. Evidence checked 2026-10-22: https://www.riksdagen.se/sv/om-webbplatsen/hjalp-och-support/sa-fungerar-webb-tv/ and https://www.riksdagen.se/sv/webb-tv/ ."
       },
       "epg_sources": [
+        {
+          "scraper": "sweden-riksdag-calendar",
+          "scraper_status": "implemented",
+          "url": "https://data.riksdagen.se/kalender/?org=kamm&utformat=xml",
+          "method": "GET",
+          "kind": "official_chamber_calendar_xml_start_only"
+        },
         {
           "scraper": "planned",
           "url": "https://www.riksdagen.se/sv/webb-tv/",

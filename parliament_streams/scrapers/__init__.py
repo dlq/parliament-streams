@@ -18,17 +18,21 @@ from . import (
     knesset_tv,
     mauritius_parliament_tv,
     new_zealand_parliament,
+    norway_stortinget,
     ontario_calendar,
     portugal_agenda,
     quebec_canal_assemblee,
     quebec_webdiffusion,
     spain_canal_parlamento,
+    sweden_riksdag,
     uk_parliament,
     un_webtv,
     youtube_live,
 )
 
 SCRAPERS: dict[str, ModuleType] = {
+    norway_stortinget.SOURCE["id"]: norway_stortinget,
+    sweden_riksdag.SOURCE["id"]: sweden_riksdag,
     germany_bundestag.SOURCE["id"]: germany_bundestag,
     ireland_oireachtas.SOURCE["id"]: ireland_oireachtas,
     mauritius_parliament_tv.SOURCE["id"]: mauritius_parliament_tv,

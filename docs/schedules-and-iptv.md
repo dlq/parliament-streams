@@ -52,6 +52,8 @@ Current scraper ids:
 - `germany-bundestag-tv1`
 - `ireland-oireachtas-tv-guide`
 - `mauritius-parliament-tv-guide`
+- `norway-stortinget-calendar`
+- `sweden-riksdag-calendar`
 
 They parse supplied HTML/JSON strings. Network fetching remains in the shared
 collector rather than inside parser functions, so every run records what was
@@ -61,10 +63,10 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of 2026-10-26, all 270 catalogue source records have at least one official
-schedule, agenda, meeting or dated video-event surface recorded. Forty-four
-records use implemented parsers across 28 recorded metadata URLs and 23 collectors; 226
-catalogue entries still have planned extraction. These are source-discovery
+As of 2026-10-26, all 261 catalogue source records have at least one official
+schedule, agenda, meeting or dated video-event surface recorded. Forty-five
+records use implemented parsers across 31 recorded metadata URLs and 25 collectors;
+216 catalogue entries still have planned extraction. These are source-discovery
 counts, not populated programme-guide coverage or proof that every surface
 describes a broadcast. This pass did not freshly fetch every planned URL. The
 jurisdiction filter
@@ -73,6 +75,14 @@ These official links remain available if generated programme data cannot load.
 Catalogue and schedule use the same sourced jurisdiction-flag registry. The earlier
 117-record/106-URL snapshot and the source-by-source discovery baseline in
 `reports/epg-discovery-2026-08-24.md` remain historical evidence.
+
+The [Nordic continuation](../reports/epg/2026-10-26-nordic-coverage.md) adds Norway's
+official plenary/public-room iCalendars and Sweden's documented chamber XML.
+Norwegian written-submission deadlines and Swedish conditional/unknown starts
+are excluded. Both preserve official IDs and convert source clocks to UTC;
+Swedish ambiguous/nonexistent Stockholm times fail rather than selecting an
+offset. Fifteen-minute and one-hour calendar end markers are not programme ends.
+Both remain institutional agendas without a reviewed linear-feed mapping.
 
 The [renewed institution review](../reports/discovery/2026-10-25-institution-service-baseline.md)
 tracks source freshness, timezone/event mapping and programme-data rights
@@ -266,7 +276,16 @@ Pages includes the coverage totals in its Actions summary, and publication
 validation checks the coverage against the catalogue and collected events.
 Older quality reports without the optional coverage section remain readable.
 
-The [26 October continuation](../reports/epg/2026-10-26-coverage-pass.md) and
+The [Nordic continuation](../reports/epg/2026-10-26-nordic-coverage.md) records a
+later local preview at **18:56:49 UTC**: 776 events across 21 populated schedules,
+20 fresh and one last-good Knesset schedule after its known HTTP 403. Norway and
+Sweden add 26 identified starts, retaining their calendar-duration and linear-feed
+mapping holds. XMLTV remains at 370 programmes across eight populated guides;
+14 reviewed mappings, 44 definitions and four stable / 38 broader playlist
+entries remain separate from the new event-calendar coverage. These are dated
+preview measurements; deployment collects current source data again.
+
+The earlier [26 October continuation](../reports/epg/2026-10-26-coverage-pass.md) and
 [measured results](../reports/epg/2026-10-26-coverage-pass.json) record a verified
 local publication preview at **05:52:28 UTC**: 787 events, 600 with ends, and
 **396 XMLTV programmes across seven populated channels**. Ireland and Germany
@@ -275,8 +294,8 @@ identity checks. Ireland's 11 terminal daily ends remain unknown. Both viewing
 records remain link-outs, with no admission to the playlists. Mauritius adds a
 dated start-only event guide, not a linear XMLTV channel mapping.
 
-There are 14 reviewed mappings and 44 XMLTV definitions, distinct from the seven
-populated guides. The playlists remain four stable / 38 broader entries. All 18
+That earlier checkpoint had 14 reviewed mappings and 44 XMLTV definitions,
+distinct from its seven populated guides. The playlists remain four stable / 38 broader entries. All 18
 populated channel schedules are fresh; 23 collectors return 17 event collections
 and six healthy empty results, with no errors or last-good retention. These are
 local measurements, not a claim that this pass has been deployed.

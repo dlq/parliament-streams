@@ -35,6 +35,9 @@ legislative eligibility or discarding source evidence.
 
 ## Historical Evidence And Automated Outputs
 
+- The [26 October Nordic continuation](epg/2026-10-26-nordic-coverage.md) records
+  official calendar starts, time/mapping holds and fresh Denmark/Greece/Finland
+  source checks after the catalogue separation.
 - The [26 October EPG continuation](epg/2026-10-26-coverage-pass.md) and its
   [measurements](epg/2026-10-26-coverage-pass.json) retain the latest local guide
   preview, all-catalogue coverage states and linked per-source evidence. Earlier

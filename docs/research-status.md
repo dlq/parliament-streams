@@ -2,6 +2,23 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Nordic EPG Continuation — 26 October 2026
+
+The catalogue remains at 261 usable viewing sources. **45 records** now connect
+to **25 implemented collectors** through 31 recorded metadata URLs; 216 records
+retain planned extraction. Norway adds identified plenary and public-room
+hearing starts; Sweden adds explicit chamber-calendar starts. Written deadlines,
+conditional or unknown starts, distant plans and calendar end placeholders do
+not become programmes. Official times are normalized to UTC with named source
+zones, independently corroborated against public meeting/webcast notices.
+
+These calendars improve schedule discovery without a new linear-feed mapping or
+additional XMLTV programme ranges. The 14 reviewed mappings, 44 XMLTV definitions
+and four stable / 38 broader playlist admissions stay unchanged. Denmark and
+Greece retain freshly reproduced access blocks; Finland's archive timestamps and
+future-plan shell remain unresolved.
+[Evidence, measured preview and remaining gaps](../reports/epg/2026-10-26-nordic-coverage.md).
+
 ## Viewing Catalogue Separation — 26 October 2026
 
 The current catalogue has **261 usable viewing sources**: 38 direct-playback,
@@ -14,7 +31,7 @@ identity and viewing evidence remain in its candidate.
 The inventory still has **940 eligible identities** and eight separate legal holds;
 221 eligible identities have exact catalogue matches covering 239 source IDs.
 
-There are now **43 parser-connected records** and 218 with planned extraction.
+That separation checkpoint had **43 parser-connected records** and 218 with planned extraction.
 The retired Ontario closed-caption variant no longer duplicates House schedule
 coverage. The 23 collectors, four stable / 38 broader playlist admissions and
 44 XMLTV channel definitions remain unchanged. Collection counts vary by build.

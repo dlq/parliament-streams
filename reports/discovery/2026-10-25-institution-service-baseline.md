@@ -15,10 +15,11 @@ and distinct organs; counts are not interchangeable with jurisdictions or stream
 | Earlier service checks only | 632 | Dated evidence, not a fresh replay in this batch |
 | Expanded identities with no individual disposition | 0 | Evidence coverage, not universal validation |
 | Catalogue sources | 261 | Usable viewing routes; nine unready feed records retained in candidates |
-| Sources with implemented guide parsers | 43 | Parser coverage is separate from current programmes and IPTV admission |
+| Sources with implemented guide parsers | 45 | Parser coverage is separate from current programmes and IPTV admission |
 
 The derived counts follow the current catalogue (updated 26 October after the
-[catalogue separation](2026-10-26-catalogue-research-separation.md)).
+[catalogue separation](2026-10-26-catalogue-research-separation.md) and
+[Nordic calendar continuation](../epg/2026-10-26-nordic-coverage.md)).
 Institutional authority and service-review dates remain those of the linked
 evidence; this count refresh is not a new validation of every legislature.
 

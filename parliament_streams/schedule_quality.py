@@ -32,6 +32,8 @@ LINEAR_GUIDE_CHANNELS_BY_SCRAPER: dict[str, set[str]] = {
     "knesset-tv-guide": {"israel-knesset-channel"},
 }
 SOURCE_SCOPES = {
+    "norway-stortinget-calendar": "institutional_agenda",
+    "sweden-riksdag-calendar": "institutional_agenda",
     "mauritius-parliament-tv-guide": "event_directory",
     "europarl-webstreaming": "event_directory",
     "canada-harmony": "event_directory",
