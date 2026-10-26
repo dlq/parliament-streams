@@ -937,6 +937,9 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
   document.querySelector(".catalogue-layout").classList.toggle("has-selection", Boolean(channel));
   if (!channel) { elements.detail.innerHTML = `<p class="detail-empty">${t("selectSource")}</p>`; closeDetailSheet(); return; }
   const allowed = isPlaybackEnabled(channel);
+  const viewingReview = playbackMode(channel) === "research"
+    ? channel.validation_history?.find((entry) => entry.method === "review_followup" && entry.note?.trim())
+    : null;
   elements.detail.classList.toggle("is-link-only", !allowed);
   const usesLocalizedPlaybackGuidance = channel.embed?.provider === "youtube" || allowed;
   const playbackMessage = channel.embed?.provider === "youtube"
@@ -958,6 +961,7 @@ function renderDetail({ startPlayer = false, focusDetail = false } = {}) {
     <h3 class="detail-title" id="detail-title" tabindex="-1" aria-live="polite">${channel.name}</h3>
     <p class="detail-subtitle">${jurisdictionMark(channel.country_or_region)}${jurisdictionName(channel.country_or_region)} · <span${languageAttribute(contentLanguageTag(channel))}>${channel.legislature}</span></p>
     ${playbackMode(channel) === "research" ? `<p class="detail-subtitle research-playback-note">${t("sourceResearchDescription")}</p>` : ""}
+    ${viewingReview ? `<p class="detail-subtitle research-playback-reason">${t(channel.technical_status === "needs_review" ? "viewingFeedUnverified" : "viewingSourceUnresolved")} ${t("validationChecked", { date: formatDate(viewingReview.checked_at) })}</p>` : ""}
     ${allowed ? `<div class="media-frame" id="media-frame">
       <div class="player-placeholder"><button class="placeholder-play-button" data-start-playback type="button" aria-label="${t("watch")}">▶</button><p>${t("ready")}</p></div>
     </div>` : ""}

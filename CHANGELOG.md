@@ -1,5 +1,13 @@
 # Changelog
 
+## 26 October — Clearer Viewing Holds
+
+Replace “Research entry” with “Viewing not enabled” in catalogue rows and viewing
+details across all 23 locales. Explain that the details contain the recorded
+reason and remaining checks. Show a localized explanation of outstanding feed or
+provider checks with the recorded review date. Keep the full retained findings
+under Viewing and checks, with source-language evidence and official-page links.
+
 ## 26 October — Data And Method In Main Navigation
 
 Replace the GitHub header link with Data and method on all five pages, with

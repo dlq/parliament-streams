@@ -182,7 +182,8 @@ France's Assembly, Luxembourg Chamber TV, Nunavut TV and the Swiss National
 Council now link to independently supported official viewing pages. Their old
 extracted endpoints are removed from published records. Nine specific-feed
 research entries retain their own unresolved reasons; the interface calls them
-**Research entry**, distinct from legislative-authority eligibility. The public
+**Viewing not enabled**, distinct from legislative-authority eligibility. Its
+details show the recorded source-specific reason and review date. The public
 Legislatures evidence disclosure now exposes current source follow-ups and their
 separate unresolved findings.
 
