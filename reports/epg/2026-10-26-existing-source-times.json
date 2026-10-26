@@ -1,0 +1,171 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-26",
+  "scope": "Fresh bounded existing-source checks: Portugal agenda fields, EBS durations, Italian Senate room scope and TV Camara source dates.",
+  "method": {
+    "maximum_response_bytes": 1048576,
+    "request_timeout_seconds": 20,
+    "raw_payload_cache": "Temporary local files; source hashes retained here",
+    "media_downloaded_or_played": false
+  },
+  "fetches": [
+    {
+      "name": "camara-weekly",
+      "url": "https://www.camara.leg.br/tv/programacao-semanal",
+      "retrieved_at": "2026-10-26T05:38:40.068038+00:00",
+      "status": 200,
+      "bytes": 53988,
+      "sha256": "c87f7fa1396cdb89a3aa58f590ff6f331e800662a57a191c85e2a70bb2837221",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "italy-0",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-26T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-27T00%3A00%3A00",
+      "retrieved_at": "2026-10-26T05:38:42.155371+00:00",
+      "status": 200,
+      "bytes": 14299,
+      "sha256": "1495c157b6ade68a53b624d455491098c97692cac4774f31e489d92b45b9ffee",
+      "content_type": "application/json",
+      "records": 10,
+      "first_keys": [
+        "nid",
+        "title",
+        "body",
+        "field_date",
+        "field_vevent_id",
+        "view_node",
+        "field_vevent_playback_status",
+        "field_vevent_playback_status_1",
+        "field_vevent_type",
+        "field_vevent_type_1",
+        "field_vevent_meeting_type",
+        "field_vevent_youtube",
+        "field_media_oembed_video",
+        "field_media_oembed_video_1",
+        "field_vevent_location",
+        "field_vevent_pending",
+        "field_number",
+        "field_channel_id",
+        "field_vevent_channel",
+        "field_channel_id_1",
+        "field_vevent_live_channel",
+        "field_vevent_session",
+        "field_vevent_commissions",
+        "field_vevent_sticky",
+        "field_vevent_ready",
+        "field_vevent_palimpsest_play",
+        "field_commission_short_name",
+        "field_commission_name",
+        "field_vevent_meeting_type_1",
+        "field_vevent_archived",
+        "field_commission_code_type",
+        "youtube_live_button_class",
+        "youtube_live_button_url",
+        "youtube_live_button_text",
+        "youtube_live_button_expire"
+      ]
+    },
+    {
+      "name": "italy-1",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-27T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-28T00%3A00%3A00",
+      "retrieved_at": "2026-10-26T05:38:43.742943+00:00",
+      "status": 200,
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "content_type": "application/json",
+      "records": 0,
+      "first_keys": []
+    },
+    {
+      "name": "italy-2",
+      "url": "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-28T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-29T00%3A00%3A00",
+      "retrieved_at": "2026-10-26T05:38:45.069089+00:00",
+      "status": 200,
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "content_type": "application/json",
+      "records": 0,
+      "first_keys": []
+    },
+    {
+      "name": "ebs-grid",
+      "url": "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261026&dateTo=20261027&withCompleteThesaurusData=true",
+      "retrieved_at": "2026-10-26T05:38:46.855588+00:00",
+      "status": 200,
+      "bytes": 28068,
+      "sha256": "ea03dd0bef74c75e845fee916cdf0874c7beee3c7d960b4de79dd1b88c702d93",
+      "content_type": "application/json",
+      "records": 2,
+      "first_keys": [
+        "date",
+        "channel",
+        "programs",
+        "warnings"
+      ]
+    },
+    {
+      "url": "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx",
+      "retrieved_at": "2026-10-26T05:42:03.709068+00:00",
+      "bytes": 351100,
+      "sha256": "f8004c6e9ec8a803a66a499b4d93236c68deb316c4ad95d90119a405a3502d91"
+    },
+    {
+      "url": "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx?t=57465a4a5353424d5a576470633278686448567959513d3d&Path=bbRPH1g3WKwPMvKuSm1SGsLji0v6H3ZKlKTemXmtby3qc3NPY1pRIfXJPV%2FsxJqzvIH5yhCp8a5tIo8b97mJfjZ6LUDJUCSviSAr5gQh%2B6m62yp281V3EuIpP0hH%2B79ZXC8uEcpjFN0lTpM0f1jXhFGAcqfp2YEqag3pk%2B59DkrzH1gNTLkDFQCtuzwT1vcCHNMWIEEShrdCU9OBikntZEPu9Pp3tUzpIc7OIju0zLuF4%2FB5MOpVgkAPg73V5B5lbN9rnT7%2B%2FEXBev1ijrxJ4WPox1o2iydOVxV7b8S3PdUstraRe%2FdcGQ2k8yImn8tsvo08fnkw7D4gQO5%2Fmd6E6w%3D%3D",
+      "retrieved_at": "2026-10-26T05:42:04.751257+00:00",
+      "bytes": 352438,
+      "sha256": "b05069c00e10a304a468a729bcc94631fb8229310e0b368286c3b99cfab0ac61"
+    },
+    {
+      "url": "https://app.parlamento.pt/webutils/docs/doc.txt?path=1nnEUmMwc9kBR%2F27mjDsldV%2B70jeIvLY4t8TCpfJ%2FrX%2BkzDYl4capUooELgp4jdzMv%2FAzWCdlBXVyi03qR9iBiTTrVKpmjjJEgHElBa1SxaJgbvZWv0s%2F0B9xcrW8ZJL%2Btw9G0xEbIMJNSKHdQL5Bm8kHqjGkEQNL36SWF0K4vklrLtRwnBKIadGYxYL1bjHCaGpKdzA35H6JLuYsj29pcrC%2FiI0tUVSY1VbaaXRjVmB972HhuPIqUBVe9B7%2FCOAAPIvCu6p3n0oZ5nYfB%2F0UUfUImc7bqwpWmjKP7Xos0e5T1X80WVupglHHMcAu6TePZIE%2BVvWgiEAeJDiZalhZM7OJk%2BYy4y089SfkeEgta6ztyzZijuE63AQBNCGIwhbw6U7PUr4alSWfEmlUXWcuA%3D%3D&fich=AgendaParlamentar_json.txt&Inline=true",
+      "retrieved_at": "2026-10-26T05:42:06.213554+00:00",
+      "bytes": 88943,
+      "sha256": "ceff517751c507979998d8ec5f3d894bc63e353dd4f73d06afae2cc3797d18ad"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "portugal-open-data-agenda",
+      "raw_records": 50,
+      "eligible_meetings": 20,
+      "official_ids_preserved": 20,
+      "ends_published": 0,
+      "confirmed": [
+        "The source exposes Id, Local, Link, AllDayEvent and separate start/end fields.",
+        "Every sampled eligible meeting has an explicit start and repeats 23:59 as its end. No source evidence establishes those calendar bounds as broadcast ends.",
+        "Missing start clocks no longer default to midnight. All-day rows are omitted; explicit midnight remains valid. Lisbon DST gaps/folds remain unresolved instead of selecting an offset."
+      ],
+      "decision": "Improve calendar metadata and time safety; keep institutional agenda unverified for the linear feed."
+    },
+    {
+      "source_id": "ebs-grid",
+      "future_events": 13,
+      "positive_durations": 0,
+      "decision": "Keep ends unknown. No next-start or nested asset-time inference; the channel guide remains on a time-quality hold."
+    },
+    {
+      "source_id": "italian-senate-palimpsest",
+      "raw_records": 10,
+      "unique_event_ids": 5,
+      "observed_webtv_channels": [
+        "WebTV5",
+        "WebTV7",
+        "WebTV8"
+      ],
+      "webtv1_events": 0,
+      "decision": "The dated replies contain other rooms, not the reviewed WebTV1 feed. Preserve a healthy empty target result; do not copy those events or infer ends."
+    },
+    {
+      "source_id": "brazil-tv-camara",
+      "events": 29,
+      "complete_inferred_ranges": 28,
+      "collection_date_starts": 29,
+      "decision": "The active weekly tab matches the source weekday but carries no calendar date. Existing collection-date provenance remains explicit; no stronger source-date claim or cross-day end inference is added."
+    },
+    {
+      "channel_id": "brazil-santa-catarina-tv-alesc",
+      "method": "Primary official page text read through the web tool; not a raw parser input",
+      "url": "https://www.alesc.sc.gov.br/tv/",
+      "decision": "The current landing page provides news/show highlights, not an established dated broadcast grid. No parser is claimed from that index."
+    }
+  ]
+}

@@ -306,7 +306,14 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "epg_sources": [
         {
           "scraper": "new-zealand-parliament",
-          "url": "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
+          "url": "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting",
+          "method": "GET",
+          "kind": "calendar_api",
+          "scraper_status": "implemented"
+        },
+        {
+          "scraper": "new-zealand-parliament",
+          "url": "https://www.parliament.nz/calendar?lang=en",
           "method": "GET",
           "kind": "calendar_page",
           "scraper_status": "implemented"
@@ -563,8 +570,8 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       "source_type": "official_page",
       "source_kind": "official_page",
       "playback_url": null,
-      "official_url": "https://www.oireachtas.ie/en/oireachtas-tv/",
-      "provenance_note": "Official Oireachtas TV page with live channel, Dail, Seanad, and committee-room embed codes.",
+      "official_url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
+      "provenance_note": "Official Oireachtas TV page with live channel, Dail, Seanad, and committee-room embed codes. Guide review on 2026-10-26 narrows this viewing record to the official linear Oireachtas TV channel (oirtv), whose page pairs the named player with dated Unix start/end guide fields. Dail, Seanad and committee-room streams are separate services. Playback admission and reuse permission are unchanged.",
       "technical_status": "link_only",
       "stability_risk": "unknown",
       "availability": "event_based",
@@ -577,11 +584,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "url": "https://www.oireachtas.ie/en/oireachtas-tv/",
+          "scraper": "ireland-oireachtas-tv-guide",
+          "url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
           "method": "GET",
-          "kind": "tv_guide_and_live_page",
-          "scraper_status": "planned"
+          "kind": "dated_linear_tv_channel_guide",
+          "scraper_status": "implemented"
         },
         {
           "scraper": "planned",
@@ -4802,11 +4809,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
+          "scraper": "germany-bundestag-tv1",
           "url": "https://www.bundestag.de/mediathek",
           "method": "GET",
-          "kind": "mediathek_page",
-          "scraper_status": "planned"
+          "kind": "dated_channel_1_tv_programme",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -9017,11 +9024,11 @@ window.PARLIAMENT_STREAMS_CATALOGUE = {
       },
       "epg_sources": [
         {
-          "scraper": "planned",
-          "scraper_status": "planned",
+          "scraper": "mauritius-parliament-tv-guide",
+          "scraper_status": "implemented",
           "url": "https://parliamenttv.govmu.org/Guide",
           "method": "GET",
-          "kind": "official_meeting_or_dated_video_index"
+          "kind": "dated_event_guide_start_only"
         }
       ],
       "permission": {

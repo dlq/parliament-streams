@@ -1,0 +1,251 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-26",
+  "generated_at": "2026-10-26T05:53:17.818220Z",
+  "scope": "Targeted New Zealand calendar API restoration and Australian official broadcast-schedule follow-up; not a survey of all Oceania sources.",
+  "new_zealand": {
+    "channel_id": "new-zealand-parliament",
+    "source_id": "new-zealand-parliament",
+    "human_calendar_url": "https://www.parliament.nz/calendar?lang=en",
+    "former_input_url": "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
+    "replacement_api_url": "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting",
+    "client_contract_resources": [
+      {
+        "url": "https://prod-win-client-home.azurewebsites.net/_framework/blazor.boot.json",
+        "response_saved_at": "2026-10-26T05:42:08.978783Z",
+        "bytes": 7062,
+        "sha256": "fbc6949f089a1de1200f42e50251821d4a4d1b55cf8d9f6463aaf6b16860b02a"
+      },
+      {
+        "url": "https://prod-win-client-home.azurewebsites.net/_framework/HomeWeb.Client.wasm",
+        "response_saved_at": "2026-10-26T05:42:32.732737Z",
+        "bytes": 608533,
+        "sha256": "5691e0847117bf5164151e9e293c4f33b5a73ca0df72b37d73f570ea17e9b0e3"
+      },
+      {
+        "url": "https://prod-win-client-home.azurewebsites.net/_framework/HomeWeb.Core.Domain.wasm",
+        "response_saved_at": "2026-10-26T05:42:34.011657Z",
+        "bytes": 55573,
+        "sha256": "ac60aede11084352fc54a5ff89f7f43bca648ce8d7257ebbd871f57dc546890b"
+      },
+      {
+        "url": "https://prod-win-client-home.azurewebsites.net/_framework/WebsiteCommonComponents.Client.wasm",
+        "response_saved_at": "2026-10-26T05:42:35.332872Z",
+        "bytes": 75029,
+        "sha256": "7d8c6c001d0064ff611d4aead8396fbcd711ae96240a1286459266c3cd29f091"
+      }
+    ],
+    "public_client_route_strings": [
+      "/api/opendata/calendar/events?startDate=",
+      "/api/opendata/calendar/housesitting?startDate=",
+      "yyyy-MM-dd",
+      "&endDate=",
+      "api/calendar/house-sitting-message"
+    ],
+    "current_house_status_probe": {
+      "url": "https://prod-win-client-home.azurewebsites.net/api/calendar/house-sitting-message",
+      "response_saved_at": "2026-10-26T05:43:07.549511Z",
+      "sha256": "c5fbfc7776d3478d3297a797c997eab8b10394be14f8b13038f6ec7aa0c38b6f",
+      "response_encoding": "JSON string containing a JSON object",
+      "decoded_object": {
+        "currentDayIsSitting": false,
+        "nextDayIsSitting": false,
+        "nextSittingDate": null,
+        "message": null,
+        "status": null
+      }
+    },
+    "live_api_probes": [
+      {
+        "label": "current",
+        "requested_at": "2026-10-26T05:51:14.522207Z",
+        "url": "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting?startDate=2026-10-25&endDate=2026-11-09",
+        "method": "GET",
+        "response_characters": 2,
+        "sha256_utf8": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "source_rows": 0,
+        "meeting_types": [],
+        "bounded_sample": [],
+        "collection_at": "2026-10-26T05:51:14Z",
+        "source_status": "empty",
+        "counts": {
+          "ok": 0,
+          "empty": 1,
+          "error": 0,
+          "channels": 0,
+          "current": 0,
+          "upcoming": 0,
+          "complete": 0,
+          "events": 0,
+          "events_with_official_id": 0,
+          "events_with_url": 0,
+          "events_with_end": 0,
+          "fresh_channels": 0,
+          "stale_channels": 0
+        },
+        "event_time_ranges": 0,
+        "guide_quality": null
+      },
+      {
+        "label": "historical_contract_check",
+        "requested_at": "2026-10-26T05:51:15.516708Z",
+        "url": "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting?startDate=2026-01-25&endDate=2026-02-09",
+        "method": "GET",
+        "response_characters": 613,
+        "sha256_utf8": "5b8db9595a681745cccea50985cc3cb633cf6c97e0dcdb351afc52d526905b1e",
+        "source_rows": 3,
+        "meeting_types": [
+          2
+        ],
+        "bounded_sample": [
+          {
+            "id": "8bbb5b65-e0ce-44aa-4e94-08de3dc4750a",
+            "date": "2026-01-27T00:00:00",
+            "title": "Parliament is meeting",
+            "description": "02:00 PM - 10:00 PM (Normal)",
+            "start": "14:00:00",
+            "end": "22:00:00",
+            "meetingType": 2
+          },
+          {
+            "id": "657d3468-f991-407f-4e95-08de3dc4750a",
+            "date": "2026-01-28T00:00:00",
+            "title": "Parliament is meeting",
+            "description": "02:00 PM - 10:00 PM (Normal)",
+            "start": "14:00:00",
+            "end": "22:00:00",
+            "meetingType": 2
+          }
+        ],
+        "collection_at": "2026-01-26T00:00:00Z",
+        "source_status": "ok",
+        "counts": {
+          "ok": 1,
+          "empty": 0,
+          "error": 0,
+          "channels": 1,
+          "current": 0,
+          "upcoming": 1,
+          "complete": 0,
+          "events": 3,
+          "events_with_official_id": 3,
+          "events_with_url": 3,
+          "events_with_end": 3,
+          "fresh_channels": 1,
+          "stale_channels": 0
+        },
+        "event_time_ranges": 3,
+        "guide_quality": {
+          "source": "new-zealand-parliament",
+          "scope": "institutional_agenda",
+          "linear_guide_eligible": false,
+          "events": 3,
+          "exportable": 0,
+          "overlap_pairs": 0,
+          "inferred_ends": 0,
+          "assumed_dates": 0,
+          "stale": false,
+          "exclusions": {
+            "unverified_channel_mapping": 3
+          },
+          "excluded_events": [
+            {
+              "id": "8bbb5b65-e0ce-44aa-4e94-08de3dc4750a",
+              "reasons": [
+                "unverified_channel_mapping"
+              ]
+            },
+            {
+              "id": "657d3468-f991-407f-4e95-08de3dc4750a",
+              "reasons": [
+                "unverified_channel_mapping"
+              ]
+            },
+            {
+              "id": "535d02ef-9732-4c3d-4e96-08de3dc4750a",
+              "reasons": [
+                "unverified_channel_mapping"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "other_schema_probes": {
+      "whole_2026_house_array": {
+        "url": "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting?startDate=2026-01-01&endDate=2026-12-31",
+        "rows": 88,
+        "meeting_types": [
+          2
+        ],
+        "first_source_date": "2026-01-27T00:00:00",
+        "last_source_date": "2026-09-23T00:00:00",
+        "sha256": "46ae9118938a6ab01ffc46354dab0f877e006c44ea26b9c0b665ec38867bee81",
+        "purpose": "Bounded schema discovery, not the production collection window or current programmes."
+      },
+      "general_august_events": {
+        "url": "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/events?startDate=2026-08-01&endDate=2026-08-31",
+        "rows": 59,
+        "house_rows": 12,
+        "committee_rows": 47,
+        "sha256": "54e556d9648a3428837e11c1237fc4033081927af6f9cb44372303ad65961c28",
+        "decision": "Do not route the generic mixed committee/House endpoint into the House catalogue channel."
+      },
+      "date_format": "ISO yyyy-MM-dd requests return arrays. A tested dd-MM-yyyy request returned HTTP400 and is not used; that format also occurs in client UI resources but is not the API query contract."
+    },
+    "confirmed": [
+      "The former Azure HTML calendar endpoint still returns a Blazor loading shell for direct collection.",
+      "The canonical human calendar is bot-protected for this direct client. No challenge was solved and no credential/session bypass was used.",
+      "The published Blazor boot manifest declares the client assemblies; their public string tables expose the exact calendar API routes.",
+      "The House-only endpoint returns a JSON event array with public UUID, source date, title, start/end clocks and meetingType2. The generic events endpoint also contains type1 committee meetings and is not used.",
+      "The bounded current window genuinely returns an empty array; the independent public House-status message reports no current/next sitting and null next date.",
+      "A bounded historic production-shaped request returns three House events with three official IDs, official URLs and explicit time ranges; normal collection and quality assessment succeed.",
+      "Source wall clocks use Pacific/Auckland; clocks are converted to UTC with DST gaps/folds rejected, and unknown ends remain unknown."
+    ],
+    "unresolved": [
+      "The source is an institutional sitting calendar rather than a verified uninterrupted linear programme grid. The API normal-sitting envelope can span the dinner break documented by the official sitting programme.",
+      "No exact on-air feed identity or between-sitting replay programme schedule is established, so no LINEAR_GUIDE allowlist admission is added.",
+      "No upcoming timed House sitting is currently provided; the restored collector adds a healthy empty result rather than manufacturing programmes."
+    ],
+    "official_timing_context_url": "https://prod-win-client-home.azurewebsites.net/api/Content/media/gn3f4pro/2026-sitting-programme.pdf",
+    "runtime_change": "Use a dated House-only JSON request and strict network response validation; preserve existing saved legacy HTML parse compatibility and clear protection/loading errors."
+  },
+  "australia": {
+    "channel_id": "australia-parliament-youtube",
+    "official_schedule_urls": [
+      "https://www.aph.gov.au/News_and_Events/Watch_Parliament",
+      "https://www.aph.gov.au/watch_read_listen"
+    ],
+    "direct_client_result": "HTTP403 for current public watch/read/listen route; the web retrieval tool also reports access/robots limits.",
+    "official_indexed_context": "Official Watch/Read/Listen results expose dated simultaneous House, Senate, Federation Chamber, committee and press-event schedules, but sampled search renderings are September data and do not prove the current October window.",
+    "confirmed": [
+      "The catalogue already uses the generic official YouTube-live metadata collector.",
+      "An institutional multi-room broadcast directory cannot be assumed to be a single linear YouTube programme feed."
+    ],
+    "unresolved": [
+      "Supported current machine-retrievable schedule payload and its date-window contract.",
+      "Exact event/chamber-to-published-feed mapping for concurrent proceedings."
+    ],
+    "decision": "No new Australian parser, mapping or guessed programme times added from blocked or stale indexed content."
+  },
+  "verification": {
+    "dedicated_unittest_cases_passed": 20,
+    "ruff_lint": "passed",
+    "ruff_format": "passed",
+    "strict_mypy": "passed for new_zealand_parliament.py",
+    "historic_collector_status": "ok",
+    "historic_events": 3,
+    "historic_complete_ranges": 3,
+    "historic_xmltv_exportable": 0,
+    "current_collector_status": "empty",
+    "current_events": 0,
+    "full_repo_checks": "Root integration step; old SOURCE URL assertion and canonical EPG URL/kind need updating."
+  },
+  "privacy": {
+    "media_played": false,
+    "media_downloaded": false,
+    "credentials_used": false,
+    "saved_redirect_query_tokens": false,
+    "challenge_redirects": "Only protection classification is retained; raw signed/tokenized redirect URLs are omitted."
+  }
+}

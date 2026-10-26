@@ -55,15 +55,19 @@ older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
 
 ## Scraper Work
 
-The [second 25 October pass](reports/epg/2026-10-25-second-pass-coverage.md)
-and [measured data](reports/epg/2026-10-25-second-pass-coverage.json) record a local
-preview at 21:04 UTC, not a completed deployment: 41 parser-connected entries,
-20 collectors and 270 programmes across six channels. Knesset adds explicit
-broadcast ranges; TV Senado uses bounded daily next-listing ends. Czech and
-Estonian plenary starts retain unknown ends.
-The [first-pass checkpoint](reports/epg/2026-10-25-coverage-pass.md) remains
-historical evidence. The quality report tracks every catalogue entry through
-parser, collection, mapping and programme availability states.
+The [26 October continuation](reports/epg/2026-10-26-coverage-pass.md) and
+[measured data](reports/epg/2026-10-26-coverage-pass.json) record a local publication
+preview at 05:52:28 UTC: 44 parser-connected records, 23 collectors and 396 XMLTV
+programmes across seven channels. Germany and Ireland add 152 explicit ranges;
+Mauritius adds a start-only event guide. New Zealand's supported House-calendar
+API returns a healthy current empty window. Portugal preserves source IDs and
+metadata without midnight defaults or fabricated ends. These are pre-publication
+measurements; live schedules and exports are regenerated during deployment.
+The [first](reports/epg/2026-10-25-coverage-pass.md) and
+[second](reports/epg/2026-10-25-second-pass-coverage.md) 25 October checkpoints remain
+historical measurements. The quality report tracks every catalogue entry through
+parser, collection, mapping and programme availability states; 226 records retain
+planned extraction.
 
 - [ ] Verify feed/room mappings for event platforms; institutional agendas and
   parallel event directories must not become a fictional linear TV guide.
@@ -71,8 +75,11 @@ parser, collection, mapping and programme availability states.
   broadcast dates, and Greece/Sansad/Denmark/Slovakia access or mapping holds.
   Validate Thailand's monthly PDF recurrence and timing conflicts before parser
   work; keep Chile/Jalisco signal mappings separate from institutional agendas.
-- [ ] Restore a supported New Zealand calendar-data contract. Its current Blazor
-  loading shell now reports an error rather than a false empty result.
+- [x] Restore a supported New Zealand calendar-data contract. House-only public
+  JSON now distinguishes genuine empty windows from source errors; calendar
+  intervals remain outside XMLTV until broadcast continuity is established.
+- [ ] Resolve Ireland's terminal-slot ends and Mauritius's contradictory end clock
+  from authoritative broadcast evidence; keep both unknown in the meantime.
 - [ ] Cover empty/off-session responses, changed markup, cancellations, rescheduling,
   overnight events, timezones and daylight-saving transitions. Preserve valid
   partial results and explain exclusions without manufacturing programme times.
@@ -108,7 +115,7 @@ A hosted television-view application remains a later product decision.
 
 The [25 October Pages audit](reports/ui/2026-10-25-audit.md) is complete for the
 documented journeys, with 25 original captures. The first implementation pass
-is present locally; publication is a separate step:
+was published in release `ae5337e`:
 
 - [x] Repair map search feedback, keyboard tab order, selection/focus state and
   the mobile route to selected details and the textual jurisdiction index.
@@ -125,6 +132,8 @@ is present locally; publication is a separate step:
   white list rows.
 - [ ] Verify real screen-reader, zoom/text-resize, forced-colour and physical
   mobile behaviour. Obtain fluent-speaker review of the new translated copy.
+- [ ] Review singular/plural result-count wording across locales, including
+  the schedule's one-channel filter result.
 
 ### Group Subnational Sources In The Catalogue
 

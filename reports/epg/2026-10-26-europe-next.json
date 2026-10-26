@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-26",
+  "assessment_time_utc": "2026-10-26T05:37:00Z",
+  "scope": "Official Irish linear TV guide and German channel-1 TV preview. No media played. No playback or reuse permissions changed.",
+  "sources": [
+    {
+      "source_url": "https://www.bundestag.de/mediathek",
+      "scraper_id": "germany-bundestag-tv1",
+      "channel_id": "germany-bundestag-1",
+      "retrieved_at": "2026-10-26T05:37:48Z",
+      "http_status": 200,
+      "response_bytes": 284160,
+      "response_sha256": "2624d0bffa93ff5e4aa2ab10ea9df1f695054792003ea0f584f44d301c7cb1b3",
+      "source_timezone": "Europe/Berlin",
+      "scope": "broadcast_schedule",
+      "state": "ready",
+      "identity_evidence": [
+        "Adjacent live player has data-playertype=live and data-channelnumber=1.",
+        "Only TV programme-table rows with data-channelnumber=1 are admitted; generic agenda and other channel rows are excluded."
+      ],
+      "times_confirmed": [
+        "Each row has a dated caption, explicit start-end clock range and Unix data-enddate.",
+        "Europe/Berlin start localization rejects ambiguous and nonexistent wall clocks. Explicit epoch ends disambiguate an end-time fold.",
+        "Displayed end clock/date must agree with the explicit epoch. No end-time inference."
+      ],
+      "source_contract_guards": "Require channel-1 player, closed programme wrappers, and at least one complete recognized programme table with a valid dated caption; missing table markup is an error.",
+      "events": 3,
+      "complete_ranges": 3,
+      "unknown_ends": 0,
+      "quality": {
+        "source": "germany-bundestag-tv1",
+        "scope": "broadcast_schedule",
+        "linear_guide_eligible": true,
+        "events": 3,
+        "exportable": 3,
+        "overlap_pairs": 0,
+        "inferred_ends": 0,
+        "assumed_dates": 0,
+        "stale": false,
+        "exclusions": {},
+        "excluded_events": []
+      },
+      "first_event": {
+        "id": "generated-b3c3cc920963a3e3b776",
+        "identifier_kind": "generated",
+        "title": "104. Sitzung des Deutschen Bundestages",
+        "status": "scheduled",
+        "start": "2026-11-04T13:00:00Z",
+        "start_basis": "source",
+        "url": "https://www.bundestag.de/mediathek",
+        "end": "2026-11-04T17:00:00Z",
+        "end_basis": "source",
+        "source_timezone": "Europe/Berlin"
+      },
+      "last_event": {
+        "id": "generated-77e0a2be6fdc8e00dd51",
+        "identifier_kind": "generated",
+        "title": "106. Sitzung des Deutschen Bundestages",
+        "status": "scheduled",
+        "start": "2026-11-06T08:00:00Z",
+        "start_basis": "source",
+        "url": "https://www.bundestag.de/mediathek",
+        "end": "2026-11-06T13:50:00Z",
+        "end_basis": "source",
+        "source_timezone": "Europe/Berlin"
+      },
+      "unresolved": [
+        "Published planned end times may change during live parliamentary proceedings. Media reuse restrictions remain unchanged."
+      ]
+    },
+    {
+      "source_url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
+      "scraper_id": "ireland-oireachtas-tv-guide",
+      "channel_id": "ireland-oireachtas-tv",
+      "retrieved_at": "2026-10-26T05:37:23Z",
+      "http_status": 200,
+      "response_bytes": 382719,
+      "response_sha256": "a1b724710328f964a3f1ac19e6a2cde2b284cb74660f8b9628fac5560d9e46aa",
+      "source_timezone": "Europe/Dublin",
+      "scope": "broadcast_schedule",
+      "state": "ready",
+      "identity_evidence": [
+        "The exact channel page pairs its TV guide with App.InitializeLivePage(\"oirtv\").",
+        "All programme watch links target that linear channel page, separately from Dail, Seanad and committee streams."
+      ],
+      "times_confirmed": [
+        "Each date group carries a source-local-midnight Unix day value. Each programme carries explicit Unix start/end fields.",
+        "Positive intervals preserve their exact UTC instants across Dublin DST transitions.",
+        "The source repeats start=end on terminal daily slots; their ends remain unknown. No cross-day inference."
+      ],
+      "source_contract_guards": "Require linear player marker, complete guide/day/event containers and current or future dated groups; missing or outdated guide markup is an error.",
+      "events": 160,
+      "complete_ranges": 149,
+      "unknown_ends": 11,
+      "quality": {
+        "source": "ireland-oireachtas-tv-guide",
+        "scope": "broadcast_schedule",
+        "linear_guide_eligible": true,
+        "events": 160,
+        "exportable": 149,
+        "overlap_pairs": 0,
+        "inferred_ends": 0,
+        "assumed_dates": 0,
+        "stale": false,
+        "exclusions": {
+          "missing_time_range": 11
+        },
+        "excluded_events": [
+          {
+            "id": "generated-ac24294eec507d47b556",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-36ade5336b66e04c80b2",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-daf65860c18715eec740",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-dfd14d0245374a41d19d",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-4e9cacc18f2e6ade5801",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-bd8c5a2bd5260415bbbd",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-2d065445a0d020ca8af2",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-5765675a079f45d1f2cf",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-fe944d41ee17f0f50f0a",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-ef0f91548cd5e8238241",
+            "reasons": [
+              "missing_time_range"
+            ]
+          },
+          {
+            "id": "generated-caf962566478c0f074ed",
+            "reasons": [
+              "missing_time_range"
+            ]
+          }
+        ]
+      },
+      "first_event": {
+        "id": "generated-20d69697ea9c905c17fd",
+        "identifier_kind": "generated",
+        "title": "Joint Committee: Education and Youth",
+        "status": "live",
+        "start": "2026-10-26T04:20:00Z",
+        "start_basis": "source",
+        "url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
+        "end": "2026-10-26T06:30:00Z",
+        "end_basis": "source",
+        "source_timezone": "Europe/Dublin"
+      },
+      "last_event": {
+        "id": "generated-caf962566478c0f074ed",
+        "identifier_kind": "generated",
+        "title": "Seanad Éireann Replay",
+        "status": "scheduled",
+        "start": "2026-11-05T21:45:00Z",
+        "start_basis": "source",
+        "url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
+        "source_timezone": "Europe/Dublin"
+      },
+      "unresolved": [
+        "Terminal daily slot ends are not supplied as positive ranges. No spoken programme language is inferred from title text or ISL labels."
+      ]
+    }
+  ],
+  "proposed_integration": {
+    "registry": [
+      "germany_bundestag",
+      "ireland_oireachtas"
+    ],
+    "reviewed_mappings": {
+      "germany-bundestag-tv1": [
+        "germany-bundestag-1"
+      ],
+      "ireland-oireachtas-tv-guide": [
+        "ireland-oireachtas-tv"
+      ]
+    },
+    "catalogue": {
+      "germany-bundestag-1": {
+        "epg_source": {
+          "scraper": "germany-bundestag-tv1",
+          "url": "https://www.bundestag.de/mediathek",
+          "method": "GET",
+          "kind": "channel_specific_tv_preview",
+          "scraper_status": "implemented"
+        }
+      },
+      "ireland-oireachtas-tv": {
+        "official_url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
+        "provenance_note": "Official linear Oireachtas TV channel page and dated TV guide, distinct from the separate Dail, Seanad and committee-room streams.",
+        "epg_source": {
+          "scraper": "ireland-oireachtas-tv-guide",
+          "url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
+          "method": "GET",
+          "kind": "linear_tv_guide",
+          "scraper_status": "implemented"
+        },
+        "retain_planned_committee_source": true
+      }
+    }
+  },
+  "verification": {
+    "focused_tests": 16,
+    "ruff": "pass",
+    "strict_mypy_modules": 2,
+    "original_response_bytes_preserved_outside_repository": true
+  },
+  "measured_quality": {
+    "events": 163,
+    "exportable": 152,
+    "excluded": 11,
+    "channels_with_events": 2,
+    "excluded_missing_time_range": 11
+  }
+}

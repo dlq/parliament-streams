@@ -31,6 +31,10 @@ helps select further work. Refresh it through the maintenance builder and use
 
 ## Historical Evidence And Automated Outputs
 
+- The [26 October EPG continuation](epg/2026-10-26-coverage-pass.md) and its
+  [measurements](epg/2026-10-26-coverage-pass.json) retain the latest local guide
+  preview, all-catalogue coverage states and linked per-source evidence. Earlier
+  EPG passes remain dated checkpoints rather than current deployment counts.
 - `discovery/` retains country research, authority analysis, reconciliations,
   publication decisions and service follow-ups. Several generations of a review
   can coexist; newer canonical decisions must retain their dated provenance.

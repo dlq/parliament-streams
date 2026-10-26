@@ -49,6 +49,9 @@ Current scraper ids:
 - `czech-chamber-plenary`
 - `estonia-riigikogu-plenary`
 - `knesset-tv-guide`
+- `germany-bundestag-tv1`
+- `ireland-oireachtas-tv-guide`
+- `mauritius-parliament-tv-guide`
 
 They parse supplied HTML/JSON strings. Network fetching remains in the shared
 collector rather than inside parser functions, so every run records what was
@@ -58,9 +61,9 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of 2026-10-25, all 270 catalogue source records have at least one official
-schedule, agenda, meeting or dated video-event surface recorded. Forty-one
-records use implemented parsers across 24 unique URLs and 20 collectors; 229
+As of 2026-10-26, all 270 catalogue source records have at least one official
+schedule, agenda, meeting or dated video-event surface recorded. Forty-four
+records use implemented parsers across 28 recorded metadata URLs and 23 collectors; 226
 catalogue entries still have planned extraction. These are source-discovery
 counts, not populated programme-guide coverage or proof that every surface
 describes a broadcast. This pass did not freshly fetch every planned URL. The
@@ -185,6 +188,11 @@ section with public playlist/guide URLs, copy buttons, and VLC desktop setup
 instructions. XMLTV guide coverage is partial and is separate from playlist
 playback. The VLC instructions link to VideoLAN’s official documentation.
 
+The public labels are **Continuous channels** and **All supported channels—including
+sitting-only streams**. The latter includes the continuous channels plus
+sitting-only and event-based feeds, which may be offline between proceedings.
+Both playlists use the same technical eligibility checks.
+
 Pages generates IPTV exports after each six-hourly schedule collection:
 
 - `data/stable-hls.m3u`: validated, native-playback HLS with low/medium risk
@@ -258,6 +266,33 @@ Pages includes the coverage totals in its Actions summary, and publication
 validation checks the coverage against the catalogue and collected events.
 Older quality reports without the optional coverage section remain readable.
 
+The [26 October continuation](../reports/epg/2026-10-26-coverage-pass.md) and
+[measured results](../reports/epg/2026-10-26-coverage-pass.json) record a verified
+local publication preview at **05:52:28 UTC**: 787 events, 600 with ends, and
+**396 XMLTV programmes across seven populated channels**. Ireland and Germany
+contribute 149 and three complete ranges respectively, with exact linear-feed
+identity checks. Ireland's 11 terminal daily ends remain unknown. Both viewing
+records remain link-outs, with no admission to the playlists. Mauritius adds a
+dated start-only event guide, not a linear XMLTV channel mapping.
+
+There are 14 reviewed mappings and 44 XMLTV definitions, distinct from the seven
+populated guides. The playlists remain four stable / 38 broader entries. All 18
+populated channel schedules are fresh; 23 collectors return 17 event collections
+and six healthy empty results, with no errors or last-good retention. These are
+local measurements, not a claim that this pass has been deployed.
+
+New Zealand now collects the House-only public calendar JSON used by its official
+client. The current empty window is independently supported by the official
+sitting-status endpoint, while a historical replay confirms the dated event
+contract. Sitting intervals can contain parliamentary breaks and remain outside
+linear XMLTV. Portugal now preserves official IDs, locations and safe event links;
+missing start clocks no longer become midnight, and Lisbon DST gaps/folds remain
+unresolved. Its repeated 23:59 calendar ends are not broadcast end evidence.
+
+The 28 recorded metadata URLs include human navigation/recovery links; collectors
+record their actual dated HTTP requests separately. See the continuation report
+for remaining parser, mapping and time holds and which sources were checked.
+
 The [first 25 October pass](../reports/epg/2026-10-25-coverage-pass.md) remains a
 historical checkpoint: 83 programmes across four channels, 37 parser-connected
 entries and 16 collectors. The [second-pass results](../reports/epg/2026-10-25-second-pass-coverage.md)
@@ -278,8 +313,8 @@ belongs to the separately catalogued canal17 service, never the canal01–14 eve
 webcasts. Recovered ParlVU/SenVu end times improve website event data while those
 mixed-room directories remain outside the linear guide. Spain's current dated
 view can legitimately be empty. Czech and Estonian plenary parsers preserve
-starts without inventing ends. New Zealand's current Blazor loading shell is
-now a collection error, not evidence of an empty calendar.
+starts without inventing ends. New Zealand's earlier Blazor-shell failure is
+preserved in those historical results; current collection uses the verified API.
 
 EBS future durations and Italian WebTV1 ends remain unknown. Greece's reachable
 GRNET metadata describes permanent streaming sessions rather than programmes;

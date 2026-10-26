@@ -1,5 +1,35 @@
 # Changelog
 
+## 26 October — Further EPG Coverage And Calendar Contracts
+
+Add exact-channel Germany Bundestag TV1 and Ireland Oireachtas TV collectors,
+with explicit programme ranges and strict identity/date/markup validation.
+Add Mauritius's official dated event guide while retaining its contradictory
+end-time and linear-mapping holds. Restore New Zealand collection through the
+official client's House-only public JSON API; genuine empty windows no longer
+fail on an unrendered HTML shell. Preserve the human calendar recovery link.
+Portugal's agenda now retains official IDs, locations and safe links, skips
+missing clocks and all-day items, and rejects ambiguous Lisbon DST instants.
+
+The [measured local preview](reports/epg/2026-10-26-coverage-pass.md) has 44
+parser-connected records, 23 collectors, 787 events and 396 XMLTV programmes
+across seven populated channels. The new Germany/Ireland collectors contribute
+152 complete ranges; eleven Irish terminal ends remain unknown. All collectors
+succeed or return healthy empty results. Playlists stay at four stable / 38
+broader entries; viewing and reuse admission are unchanged.
+
+Clarify playlist labels as “Continuous channels” and “All supported
+channels—including sitting-only streams” across the catalogue, schedule and
+Data and method pages in all 23 locales. Explain that event-based and sitting-only
+feeds may be offline between proceedings; playlist eligibility and URLs are unchanged.
+
+All 471 Python and eight JavaScript tests pass, with strict mypy for 68 source
+files, Ruff formatting/linting and 93.52% combined statement/branch coverage.
+The assembled publication bundle passes data-product validation. This pass is
+measured before publication; Pages regenerates the live schedules and exports
+from current source responses. The translated playlist labels also pass the
+site rendering, interaction and accessibility checks, including narrow layouts.
+
 ## 25 October — Accessible Map Navigation And Shared Data Explanation
 
 Expose native map search results beside the field, with announced counts and

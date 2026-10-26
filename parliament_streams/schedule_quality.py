@@ -14,6 +14,8 @@ from .scrapers.common import NormalizedScheduleEvent
 # A public institutional calendar is not evidence of a particular broadcast feed.
 # New sources default to unreviewed until their feed mapping is established.
 LINEAR_GUIDE_CHANNELS_BY_SCRAPER: dict[str, set[str]] = {
+    "germany-bundestag-tv1": {"germany-bundestag-1"},
+    "ireland-oireachtas-tv-guide": {"ireland-oireachtas-tv"},
     "cpac": {"cpac-ca"},
     "brazil-tv-camara": {"brazil-tv-camara"},
     "ebs-grid": {"eu-audiovisual-ebs"},
@@ -30,6 +32,7 @@ LINEAR_GUIDE_CHANNELS_BY_SCRAPER: dict[str, set[str]] = {
     "knesset-tv-guide": {"israel-knesset-channel"},
 }
 SOURCE_SCOPES = {
+    "mauritius-parliament-tv-guide": "event_directory",
     "europarl-webstreaming": "event_directory",
     "canada-harmony": "event_directory",
     "quebec-webdiffusion": "event_directory",

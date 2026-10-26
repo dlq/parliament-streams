@@ -1,0 +1,2619 @@
+{
+  "report_version": 1,
+  "checked_on": "2026-10-26",
+  "scope": "Next EPG pass: selected missing parsers, exact linear mappings, New Zealand collection and Portuguese metadata/time correctness. Not a fresh review of every planned source.",
+  "publication_status": "Verified local preview measured before publication; Pages regenerates live schedules and exports separately. These counts do not assert the current live snapshot.",
+  "baseline": {
+    "origin": "Published same-origin products retrieved before this implementation pass",
+    "generated_at": "2026-10-26T04:57:43Z",
+    "snapshot_counts": {
+      "channels": 14,
+      "complete": 3,
+      "current": 3,
+      "empty": 6,
+      "error": 1,
+      "events": 627,
+      "events_with_end": 450,
+      "events_with_official_id": 257,
+      "events_with_url": 303,
+      "fresh_channels": 14,
+      "ok": 13,
+      "stale_channels": 0,
+      "upcoming": 14
+    },
+    "quality_counts": {
+      "events": 627,
+      "exportable": 246,
+      "excluded": 381,
+      "channels_with_events": 14,
+      "excluded_missing_time_range": 177,
+      "excluded_unverified_channel_mapping": 353
+    },
+    "coverage_counts": {
+      "catalogue_sources": 270,
+      "channels_with_parser": 41,
+      "channels_with_reviewed_mapping": 12,
+      "channels_with_events": 14,
+      "channels_with_programmes": 5
+    },
+    "source_states": {
+      "ok": 13,
+      "empty": 6,
+      "error": 1
+    }
+  },
+  "preview": {
+    "generated_at": "2026-10-26T05:52:28Z",
+    "snapshot_counts": {
+      "channels": 18,
+      "complete": 4,
+      "current": 5,
+      "empty": 6,
+      "error": 0,
+      "events": 787,
+      "events_with_end": 600,
+      "events_with_official_id": 274,
+      "events_with_url": 471,
+      "fresh_channels": 18,
+      "ok": 17,
+      "stale_channels": 0,
+      "upcoming": 17
+    },
+    "quality_counts": {
+      "events": 787,
+      "exportable": 396,
+      "excluded": 391,
+      "channels_with_events": 18,
+      "excluded_missing_time_range": 187,
+      "excluded_unverified_channel_mapping": 352
+    },
+    "coverage_counts": {
+      "catalogue_sources": 270,
+      "channels_with_parser": 44,
+      "channels_with_reviewed_mapping": 14,
+      "channels_with_events": 18,
+      "channels_with_programmes": 7
+    },
+    "coverage_states": {
+      "empty": 26,
+      "guide_available": 7,
+      "mapping_unverified": 8,
+      "parser_planned": 226,
+      "quality_hold": 3
+    },
+    "source_states": {
+      "ok": 17,
+      "empty": 6
+    },
+    "registered_collectors": 23,
+    "implemented_metadata_urls": 28,
+    "planned_metadata_urls": 238,
+    "xmltv_channel_definitions": 44,
+    "xmltv_programmes": 396,
+    "stable_playlist_entries": 4,
+    "broader_playlist_entries": 38,
+    "exportable_by_channel": {
+      "brazil-tv-camara": 28,
+      "brazil-tv-senado-official": 56,
+      "cpac-ca": 26,
+      "germany-bundestag-1": 3,
+      "ireland-oireachtas-tv": 149,
+      "israel-knesset-channel": 120,
+      "netherlands-tweede-kamer": 14
+    }
+  },
+  "new_parser_contributions": {
+    "germany-bundestag-1": {
+      "parser_ids": [
+        "germany-bundestag-tv1"
+      ],
+      "reviewed_parser_ids": [
+        "germany-bundestag-tv1"
+      ],
+      "events": 3,
+      "exportable": 3,
+      "state": "guide_available"
+    },
+    "ireland-oireachtas-tv": {
+      "parser_ids": [
+        "ireland-oireachtas-tv-guide"
+      ],
+      "reviewed_parser_ids": [
+        "ireland-oireachtas-tv-guide"
+      ],
+      "events": 160,
+      "exportable": 149,
+      "state": "guide_available"
+    },
+    "mauritius-national-assembly-parliament-tv": {
+      "parser_ids": [
+        "mauritius-parliament-tv-guide"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 1,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    }
+  },
+  "baseline_programmes_with_end_between_snapshots": [
+    {
+      "channel_id": "israel-knesset-channel",
+      "event_id": "273705",
+      "end": "2026-10-26T05:30:00Z"
+    }
+  ],
+  "all_catalogue_coverage": {
+    "cpac-ca": {
+      "parser_ids": [
+        "cpac"
+      ],
+      "reviewed_parser_ids": [
+        "cpac"
+      ],
+      "events": 27,
+      "exportable": 26,
+      "state": "guide_available"
+    },
+    "canada-house-of-commons-parlvu": {
+      "parser_ids": [
+        "canada-harmony"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 38,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "canada-senate-senvu": {
+      "parser_ids": [
+        "canada-harmony"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 27,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "new-zealand-parliament": {
+      "parser_ids": [
+        "new-zealand-parliament"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "norway-stortinget": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-tv-camara": {
+      "parser_ids": [
+        "brazil-tv-camara"
+      ],
+      "reviewed_parser_ids": [
+        "brazil-tv-camara"
+      ],
+      "events": 29,
+      "exportable": 28,
+      "state": "guide_available"
+    },
+    "ireland-oireachtas-tv": {
+      "parser_ids": [
+        "ireland-oireachtas-tv-guide"
+      ],
+      "reviewed_parser_ids": [
+        "ireland-oireachtas-tv-guide"
+      ],
+      "events": 160,
+      "exportable": 149,
+      "state": "guide_available"
+    },
+    "denmark-folketinget": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "netherlands-tweede-kamer": {
+      "parser_ids": [
+        "dutch-debat-direct"
+      ],
+      "reviewed_parser_ids": [
+        "dutch-debat-direct"
+      ],
+      "events": 14,
+      "exportable": 14,
+      "state": "guide_available"
+    },
+    "spain-canal-parlamento": {
+      "parser_ids": [
+        "spain-canal-parlamento-weekly"
+      ],
+      "reviewed_parser_ids": [
+        "spain-canal-parlamento-weekly"
+      ],
+      "events": 5,
+      "exportable": 0,
+      "state": "quality_hold"
+    },
+    "spain-congreso-directo-1": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-congreso-directo-2": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-congreso-directo-3": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-congreso-directo-4": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-congreso-directo-5": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "france-national-assembly": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "chile-camara-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "israel-knesset-channel": {
+      "parser_ids": [
+        "knesset-tv-guide"
+      ],
+      "reviewed_parser_ids": [
+        "knesset-tv-guide"
+      ],
+      "events": 120,
+      "exportable": 120,
+      "state": "guide_available"
+    },
+    "portugal-artv": {
+      "parser_ids": [
+        "portugal-open-data-agenda"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 20,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "greece-hellenic-parliament-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "luxembourg-chamber-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "estonia-riigikogu-live-1": {
+      "parser_ids": [
+        "estonia-riigikogu-plenary"
+      ],
+      "reviewed_parser_ids": [
+        "estonia-riigikogu-plenary"
+      ],
+      "events": 5,
+      "exportable": 0,
+      "state": "quality_hold"
+    },
+    "estonia-riigikogu-live-2": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "italy-senate": {
+      "parser_ids": [
+        "italian-senate-palimpsest"
+      ],
+      "reviewed_parser_ids": [
+        "italian-senate-palimpsest"
+      ],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "india-sansad-tv-1": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "india-sansad-tv-2": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "thailand-parliament-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "slovakia-tv-nrsr": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "mongolia-parliament-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "quebec-canal01": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal02": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal03": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal04": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal05": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal06": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal07": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal08": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal09": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal10": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal11": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal12": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal13": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "quebec-canal14": {
+      "parser_ids": [
+        "quebec-webdiffusion"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "ontario-house-en": {
+      "parser_ids": [
+        "ontario-calendar"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "ontario-house-en-cc": {
+      "parser_ids": [
+        "ontario-calendar"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "ontario-rm151-en": {
+      "parser_ids": [
+        "ontario-calendar"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "ontario-committee-1-en": {
+      "parser_ids": [
+        "ontario-calendar"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "ontario-committee-2-en": {
+      "parser_ids": [
+        "ontario-calendar"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "ontario-media-en": {
+      "parser_ids": [
+        "ontario-calendar"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "nunavut-legislative-assembly-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "uk-parliament-youtube": {
+      "parser_ids": [
+        "uk-parliament",
+        "youtube-live"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 91,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "australia-parliament-youtube": {
+      "parser_ids": [
+        "youtube-live"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 1,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "taiwan-parliamentary-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "germany-bundestag-1": {
+      "parser_ids": [
+        "germany-bundestag-tv1"
+      ],
+      "reviewed_parser_ids": [
+        "germany-bundestag-tv1"
+      ],
+      "events": 3,
+      "exportable": 3,
+      "state": "guide_available"
+    },
+    "costa-rica-assembly-youtube": {
+      "parser_ids": [
+        "youtube-live"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "el-salvador-legislative-assembly": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "european-parliament-multimedia-centre": {
+      "parser_ids": [
+        "europarl-webstreaming"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 139,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "council-of-eu-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "eu-audiovisual-ebs": {
+      "parser_ids": [
+        "ebs-grid"
+      ],
+      "reviewed_parser_ids": [
+        "ebs-grid"
+      ],
+      "events": 13,
+      "exportable": 0,
+      "state": "quality_hold"
+    },
+    "un-web-tv": {
+      "parser_ids": [
+        "un-webtv-schedule"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 35,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "council-of-europe-pace-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "scottish-parliament-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "senedd-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "northern-ireland-assembly-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "osce-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "british-columbia-legislature-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "alberta-assembly-online": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "saskatchewan-legislative-proceedings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "manitoba-house-broadcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "prince-edward-island-assembly-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "northwest-territories-watch-session": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "newfoundland-labrador-house-webcast": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "new-south-wales-parliament-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "victoria-parliament-watch": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "queensland-parliament-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "western-australia-parliament-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "north-rhine-westphalia-landtag-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "baden-wurttemberg-landtag-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "bavaria-landtag-plenum-online": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "catalonia-canal-parlament": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "valencia-canal-corts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "andalusia-parliament-tv-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "navarre-parliament-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "jalisco-canal-parlamento": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "netherlands-tweede-kamer-aletta-jacobszaal": {
+      "parser_ids": [
+        "dutch-debat-direct"
+      ],
+      "reviewed_parser_ids": [
+        "dutch-debat-direct"
+      ],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "netherlands-tweede-kamer-actualiteitenkanaal": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-house-floorcast": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-senate-floor-webcast": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-house-committee-video": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-senate-committee-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-ca-assembly-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-fl-legislature-video": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-mn-legislature-multimedia": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-ny-assembly-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-ny-senate-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-or-legislature-video": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-ri-capitol-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-tx-legislature-broadcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-ut-legislature-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-wa-legislature-tvw": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "swiss-national-council-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "czech-chamber-of-deputies": {
+      "parser_ids": [
+        "czech-chamber-plenary"
+      ],
+      "reviewed_parser_ids": [
+        "czech-chamber-plenary"
+      ],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    },
+    "finland-eduskunta-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "sweden-riksdag-webb-tv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-house-of-representatives-webtv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-sangiin-webtv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "austria-parliament-mediathek": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "mauritius-national-assembly-parliament-tv": {
+      "parser_ids": [
+        "mauritius-parliament-tv-guide"
+      ],
+      "reviewed_parser_ids": [],
+      "events": 1,
+      "exportable": 0,
+      "state": "mapping_unverified"
+    },
+    "italy-camera-webtv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-nagasaki-assembly-committees": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-cordoba-legislature-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-santa-catarina-tv-alesc": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "jersey-states-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "french-polynesia-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "new-caledonia-congress-webtv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "isle-of-man-tynwald-listen-watch": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "sint-maarten-parliament-live": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-bern-grand-council-archive": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "netherlands-drenthe-provincial-council": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "netherlands-limburg-provincial-council": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "netherlands-noord-brabant-provincial-council": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "guam-legislature-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "puerto-rico-senate-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "gibraltar-parliament-video-archive": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "cayman-islands-parliament-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "turks-and-caicos-parliament-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "bermuda-parliament-audio-archive": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "cook-islands-parliament-archive": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "guernsey-states-meeting-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "slovenia-national-council-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "cape-verde-national-assembly-antv": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "lithuania-seimas-committee-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "malaysia-parliament-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "suriname-national-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "dominican-republic-deputies-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-chamber-deputies-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "namibia-parliament-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "north-macedonia-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "ghana-parliament-committee-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-house-representatives-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "guyana-national-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "timor-leste-national-parliament-archive": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-tv-senado-official": {
+      "parser_ids": [
+        "brazil-tv-senado-grid"
+      ],
+      "reviewed_parser_ids": [
+        "brazil-tv-senado-grid"
+      ],
+      "events": 59,
+      "exportable": 56,
+      "state": "guide_available"
+    },
+    "jamaica-parliament-pbcj-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "sri-lanka-parliament-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "panama-national-assembly-committee-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "croatia-parliament-committee-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "botswana-national-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "indonesia-dpr-committee-video-archive": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-natv-onair": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "austria-tirol-landtag-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-appenzell-ausserrhoden-kantonsrat-archive": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "belgium-wallonia-parliament-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "belgium-brussels-parliament-committee-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "british-virgin-islands-house-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "montserrat-legislative-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-neuquen-legislature-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "italy-sicily-assembly-video": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-west-virginia-legislature-media": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-corrientes-deputies-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-corrientes-senate-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "indonesia-north-kalimantan-legislative-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-arauca-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-caqueta-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-risaralda-assembly-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-chubut-legislature-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "poland-lodz-sejmik-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "poland-silesian-sejmik-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-daegu-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-gyeongsangbuk-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-incheon-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-busan-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-chungcheongnam-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-jeonbuk-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-jeonnam-gwangju-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-gyeongsangnam-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-korea-sejong-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-buenos-aires-deputies-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-catamarca-senate-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-buenos-aires-city-legislature-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-la-rioja-legislature-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-mendoza-deputies-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-rio-negro-legislature-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-salta-deputies-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-san-juan-deputies-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-santa-cruz-deputies-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-tierra-del-fuego-legislature-webcasts": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-tucuman-legislature-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-mato-grosso-do-sul-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-paraiba-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-goias-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-mato-grosso-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-pernambuco-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-rondonia-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-ceara-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-parana-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "brazil-rio-de-janeiro-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-caldas-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "canada-new-brunswick-committee-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "finland-aland-lagting-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "montenegro-parliament-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "germany-hesse-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "germany-sachsischer-landtag-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "indonesia-aceh-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-hyogo-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-tokushima-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-africa-northern-cape-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-africa-western-cape-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-parlamento-de-cantabria-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-parlamento-de-la-rioja-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "taiwan-penghu-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "taiwan-tainan-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "united-states-district-of-columbia-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "united-states-kansas-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "united-states-mississippi-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "united-states-wyoming-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "uruguay-canelones-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "uruguay-montevideo-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-bolivar-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-cesar-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-guaviare-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-magdalena-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-quindio-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "colombia-tolima-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-cortes-de-castilla-y-leon-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-parlamento-de-canarias-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "us-virgin-islands-legislature-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "serbia-national-assembly-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-glarus-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-jura-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-thurgau-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-zurich-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-vaud-waadt-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "germany-thuringer-landtag-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-fukui-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-fukushima-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "japan-iwate-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "taiwan-hsinchu-city-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "indonesia-kalimantan-tengah-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "indonesia-jawa-tengah-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "indonesia-di-yogyakarta-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-africa-free-state-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "taiwan-lienchiang-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "belgium-house-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "czech-senate-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-alava-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-bizkaia-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "spain-gipuzkoa-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "czech-moravian-silesian-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-geneva-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-st-gallen-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "germany-mecklenburg-vorpommern-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "italy-south-tyrol-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "italy-campania-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "south-africa-eastern-cape-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "taiwan-kinmen-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "iceland-althingi": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "moldova-parliament-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-catamarca-deputies-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-san-luis-deputies-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "argentina-salta-senate-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "switzerland-zug-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "belgium-french-community-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "czech-republic-liberec-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "czech-republic-zlin-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "portugal-madeira-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "indonesia-kepulauan-riau-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "india-chakma-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "india-lai-council-recordings": {
+      "parser_ids": [],
+      "reviewed_parser_ids": [],
+      "events": 0,
+      "exportable": 0,
+      "state": "parser_planned"
+    },
+    "quebec-canal-assemblee": {
+      "parser_ids": [
+        "quebec-canal-assemblee"
+      ],
+      "reviewed_parser_ids": [
+        "quebec-canal-assemblee"
+      ],
+      "events": 0,
+      "exportable": 0,
+      "state": "empty"
+    }
+  },
+  "source_collection_results": {
+    "brazil-tv-camara": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-27T02:45:00Z",
+      "coverage_start": "2026-10-26T03:00:00Z",
+      "event_count": 29,
+      "events_with_end": 28,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.camara.leg.br/tv/programacao-semanal"
+      ],
+      "used_last_good": false
+    },
+    "brazil-tv-senado-grid": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T00:00:00Z",
+      "coverage_start": "2026-10-26T03:00:00Z",
+      "event_count": 59,
+      "events_with_end": 56,
+      "events_with_official_id": 0,
+      "events_with_url": 59,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www12.senado.leg.br/tv/programacaoAjax?date=26-10-2026",
+        "https://www12.senado.leg.br/tv/programacaoAjax?date=27-10-2026",
+        "https://www12.senado.leg.br/tv/programacaoAjax?date=28-10-2026"
+      ],
+      "used_last_good": false
+    },
+    "canada-harmony": {
+      "channel_count": 2,
+      "channels_expected": 2,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-05T16:00:00Z",
+      "coverage_start": "2026-04-20T15:05:00Z",
+      "event_count": 65,
+      "events_with_end": 65,
+      "events_with_official_id": 65,
+      "events_with_url": 65,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://parlvu.parl.gc.ca/Harmony/en",
+        "https://senparlvu.parl.gc.ca/Harmony/"
+      ],
+      "used_last_good": false
+    },
+    "cpac": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-27T05:43:00Z",
+      "coverage_start": "2026-10-25T22:07:45Z",
+      "event_count": 27,
+      "events_with_end": 26,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.cpac.ca/schedule/"
+      ],
+      "used_last_good": false
+    },
+    "czech-chamber-plenary": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=44",
+        "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=45"
+      ],
+      "used_last_good": false
+    },
+    "dutch-debat-direct": {
+      "channel_count": 1,
+      "channels_expected": 2,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T15:30:00Z",
+      "coverage_start": "2026-10-27T13:01:00Z",
+      "event_count": 14,
+      "events_with_end": 14,
+      "events_with_official_id": 14,
+      "events_with_url": 14,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-26",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-27",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-28",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-29",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-30",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-31",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-11-01"
+      ],
+      "used_last_good": false
+    },
+    "ebs-grid": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-27T19:00:00Z",
+      "coverage_start": "2026-10-26T11:00:00Z",
+      "event_count": 13,
+      "events_with_end": 0,
+      "events_with_official_id": 13,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261026&dateTo=20261027&withCompleteThesaurusData=true"
+      ],
+      "used_last_good": false
+    },
+    "estonia-riigikogu-plenary": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T08:00:00Z",
+      "coverage_start": "2026-10-26T13:00:00Z",
+      "event_count": 5,
+      "events_with_end": 0,
+      "events_with_official_id": 5,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://api.riigikogu.ee/api/agenda/plenary?startDate=2026-10-26&endDate=2026-11-02&lang=ET&querySteno=false"
+      ],
+      "used_last_good": false
+    },
+    "europarl-webstreaming": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-05T09:30:00Z",
+      "coverage_start": "2026-09-28T11:00:00Z",
+      "event_count": 139,
+      "events_with_end": 139,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://multimedia.europarl.europa.eu/_next/data/mn1XdpefUAeUcPpwTz-7w/en/webstreaming.json?view=month&d=2026-10-26"
+      ],
+      "used_last_good": false
+    },
+    "germany-bundestag-tv1": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-06T08:00:00Z",
+      "coverage_start": "2026-11-04T13:00:00Z",
+      "event_count": 3,
+      "events_with_end": 3,
+      "events_with_official_id": 0,
+      "events_with_url": 3,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.bundestag.de/mediathek"
+      ],
+      "used_last_good": false
+    },
+    "ireland-oireachtas-tv-guide": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-05T21:45:00Z",
+      "coverage_start": "2026-10-26T04:20:00Z",
+      "event_count": 160,
+      "events_with_end": 149,
+      "events_with_official_id": 0,
+      "events_with_url": 160,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/"
+      ],
+      "used_last_good": false
+    },
+    "italian-senate-palimpsest": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-26T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-27T00%3A00%3A00",
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-27T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-28T00%3A00%3A00",
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-28T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-29T00%3A00%3A00"
+      ],
+      "used_last_good": false
+    },
+    "knesset-tv-guide": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-01T04:00:00Z",
+      "coverage_start": "2026-10-26T06:30:00Z",
+      "event_count": 120,
+      "events_with_end": 120,
+      "events_with_official_id": 120,
+      "events_with_url": 120,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.knesset.tv/%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%9E%D7%A0%D7%92%D7%9F-%D7%91%D7%A2%D7%A8%D7%95%D7%A5/"
+      ],
+      "used_last_good": false
+    },
+    "mauritius-parliament-tv-guide": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-27T07:00:00Z",
+      "coverage_start": "2026-10-27T07:00:00Z",
+      "event_count": 1,
+      "events_with_end": 0,
+      "events_with_official_id": 1,
+      "events_with_url": 1,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://parliamenttv.govmu.org/Guide"
+      ],
+      "used_last_good": false
+    },
+    "new-zealand-parliament": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting?startDate=2026-10-25&endDate=2026-11-09"
+      ],
+      "used_last_good": false
+    },
+    "ontario-calendar": {
+      "channel_count": 0,
+      "channels_expected": 6,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.ola.org/en/legislative-business/calendar/"
+      ],
+      "used_last_good": false
+    },
+    "portugal-open-data-agenda": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-12-11T10:00:00Z",
+      "coverage_start": "2026-10-26T10:00:00Z",
+      "event_count": 20,
+      "events_with_end": 0,
+      "events_with_official_id": 20,
+      "events_with_url": 8,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx",
+        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx?t=57465a4a5353424d5a576470633278686448567959513d3d&Path=bbRPH1g3WKwPMvKuSm1SGsLji0v6H3ZKlKTemXmtby3qc3NPY1pRIfXJPV%2FsxJqzvIH5yhCp8a5tIo8b97mJfjZ6LUDJUCSviSAr5gQh%2B6m62yp281V3EuIpP0hH%2B79ZXC8uEcpjFN0lTpM0f1jXhFGAcqfp2YEqag3pk%2B59DkrzH1gNTLkDFQCtuzwT1vcCHNMWIEEShrdCU9OBikntZEPu9Pp3tUzpIc7OIju0zLuF4%2FB5MOpVgkAPg73V5B5lbN9rnT7%2B%2FEXBev1ijrxJ4WPox1o2iydOVxV7b8S3PdUstraRe%2FdcGQ2k8yImn8tsvo08fnkw7D4gQO5%2Fmd6E6w%3D%3D",
+        "https://app.parlamento.pt/webutils/docs/doc.txt?path=1nnEUmMwc9kBR%2F27mjDsldV%2B70jeIvLY4t8TCpfJ%2FrX%2BkzDYl4capUooELgp4jdzMv%2FAzWCdlBXVyi03qR9iBiTTrVKpmjjJEgHElBa1SxaJgbvZWv0s%2F0B9xcrW8ZJL%2Btw9G0xEbIMJNSKHdQL5Bm8kHqjGkEQNL36SWF0K4vklrLtRwnBKIadGYxYL1bjHCaGpKdzA35H6JLuYsj29pcrC%2FiI0tUVSY1VbaaXRjVmB972HhuPIqUBVe9B7%2FCOAAPIvCu6p3n0oZ5nYfB%2F0UUfUImc7bqwpWmjKP7Xos0e5T1X80WVupglHHMcAu6TePZIE%2BVvWgiEAeJDiZalhZM7OJk%2BYy4y089SfkeEgta6ztyzZijuE63AQBNCGIwhbw6U7PUr4alSWfEmlUXWcuA%3D%3D&fich=AgendaParlamentar_json.txt&Inline=true"
+      ],
+      "used_last_good": false
+    },
+    "quebec-canal-assemblee": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html"
+      ],
+      "used_last_good": false
+    },
+    "quebec-webdiffusion": {
+      "channel_count": 0,
+      "channels_expected": 14,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeEnDirect",
+        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeAVenir"
+      ],
+      "used_last_good": false
+    },
+    "spain-canal-parlamento-weekly": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-30T08:00:00Z",
+      "coverage_start": "2026-10-26T08:00:00Z",
+      "event_count": 5,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 5,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.congreso.es/programacion",
+        "https://www.congreso.es:443/es/programacion?p_p_id=canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_fechaSeleccionada=2026-10-26&_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_mvcPath=%2Fview_semanal.jsp"
+      ],
+      "used_last_good": false
+    },
+    "uk-parliament": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-25T11:00:00Z",
+      "coverage_start": "2026-10-26T13:00:00Z",
+      "event_count": 91,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://whatson-api.parliament.uk/calendar/events/list.json?startDate=2026-10-26&endDate=2026-11-26"
+      ],
+      "used_last_good": false
+    },
+    "un-webtv-schedule": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-27T00:00:00Z",
+      "coverage_start": "2026-10-26T08:30:00Z",
+      "event_count": 35,
+      "events_with_end": 0,
+      "events_with_official_id": 35,
+      "events_with_url": 35,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://webtv.un.org/en/schedule/2026-10-26"
+      ],
+      "used_last_good": false
+    },
+    "youtube-live": {
+      "channel_count": 1,
+      "channels_expected": 3,
+      "consecutive_failures": 0,
+      "event_count": 1,
+      "events_with_end": 0,
+      "events_with_official_id": 1,
+      "events_with_url": 1,
+      "fetched_at": "2026-10-26T05:52:28Z",
+      "last_success_at": "2026-10-26T05:52:28Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+        "https://www.youtube.com/@AUSParliamentLive/live",
+        "https://www.youtube.com/@AsambleaCRC/live"
+      ],
+      "used_last_good": false
+    }
+  },
+  "evidence_reports": [
+    "reports/epg/2026-10-26-europe-next.json",
+    "reports/epg/2026-10-26-asia-africa-next.json",
+    "reports/epg/2026-10-26-oceania-next.json",
+    "reports/epg/2026-10-26-existing-source-times.json"
+  ],
+  "verification": {
+    "python_tests": 471,
+    "javascript_tests": 8,
+    "mypy_files": 68,
+    "combined_statement_branch_coverage_percent": 93.51631424170284,
+    "ruff_format": "pass",
+    "ruff_lint": "pass",
+    "assembled_publication_validation": "pass",
+    "official_media_played": false,
+    "playback_admission_or_source_reuse_rights_changed": false,
+    "browser_preview": {
+      "viewer_timezone": "America/Toronto",
+      "runtime_errors_or_warnings": 0,
+      "checks": [
+        "Ireland current/next row uses the exact linear-channel link",
+        "Germany November event displays EST across the viewer DST change",
+        "Mauritius stays labelled event listings with its known start",
+        "New Zealand healthy empty result retains the official human calendar link",
+        "All18 populated schedule rows render without horizontal overflow"
+      ]
+    }
+  }
+}

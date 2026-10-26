@@ -12,8 +12,11 @@ from . import (
     ebs,
     estonia_riigikogu,
     european_parliament,
+    germany_bundestag,
+    ireland_oireachtas,
     italian_senate,
     knesset_tv,
+    mauritius_parliament_tv,
     new_zealand_parliament,
     ontario_calendar,
     portugal_agenda,
@@ -26,6 +29,9 @@ from . import (
 )
 
 SCRAPERS: dict[str, ModuleType] = {
+    germany_bundestag.SOURCE["id"]: germany_bundestag,
+    ireland_oireachtas.SOURCE["id"]: ireland_oireachtas,
+    mauritius_parliament_tv.SOURCE["id"]: mauritius_parliament_tv,
     cpac.SOURCE["id"]: cpac,
     brazil_tv_senado.SOURCE["id"]: brazil_tv_senado,
     czech_chamber.SOURCE["id"]: czech_chamber,

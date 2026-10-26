@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-26T05:43:20.569185+00:00",
+  "scope": "Targeted official schedule research for South Korea NATV and Mauritius Parliament TV; no media played and no playback or rights admission changed.",
+  "sources": {
+    "mauritius": {
+      "catalogue_id": "mauritius-national-assembly-parliament-tv",
+      "status": "implemented_official_event_directory_start_only",
+      "source_timezone": "Indian/Mauritius",
+      "requests": [
+        {
+          "url": "https://parliamenttv.govmu.org/Guide",
+          "retrieved_at": "2026-10-26T05:37:26.122638+00:00",
+          "http_status": 200,
+          "bytes": 7528,
+          "sha256": "09bcb1c8cc2ef794f54b1d610c87ef250a4460c91803b3f91ae3d21a43ca2d41"
+        },
+        {
+          "url": "https://parliamenttv.govmu.org/Event/Index/16a861c2-003a-4421-87ff-82ccac261162",
+          "retrieved_at": "2026-10-26T05:44:16.817992+00:00",
+          "http_status": 200,
+          "bytes": 50914,
+          "sha256": "115133df1704e913bffbe0c55d33cdac858ee82d5b79723036776d295a0585f9"
+        },
+        {
+          "url": "https://parliamenttv.govmu.org/Home/Help",
+          "retrieved_at": "2026-10-26T05:44:18.143836+00:00",
+          "http_status": 200,
+          "bytes": 10608,
+          "sha256": "63c11af9c142b163c057a5d78b3a5b18809090cc04786640e0a5d952e50dfc6f"
+        },
+        {
+          "url": "https://information.parliamenttv.govmu.org/api/event/feed",
+          "retrieved_at": "2026-10-26T05:44:19.438257+00:00",
+          "http_status": 200,
+          "bytes": 13568,
+          "sha256": "37c1ce193375fb626456c79fac0ae2447c9137be52daa61577a89921189f8850"
+        }
+      ],
+      "confirmed": [
+        "The official guide publishes an explicit dated 27 October 2026 11:00AM main-chamber event with a stable UUID.",
+        "The dated event details identify channel 1, Mauritius National Assembly Chamber, and TV production; the service help identifies its main-chamber live/archive scope.",
+        "The publicly linked Atom feed dates started meetings with +04:00; the guide start is normalized using Indian/Mauritius, not the viewer timezone.",
+        "The help describes the RSS as the last 25 live meetings. Its current latest entry is 20 October, so it is not used as the upcoming guide.",
+        "Rendered No events found cards are recognized separately from missing/changed/loading markup."
+      ],
+      "unresolved": [
+        "The future event detail says Meeting starts at 11:00AM, ends at 4:30AM for 27 October. No dependable explicit next-day boundary or corrected meridian was established; no end is used.",
+        "This is an event-based service, not an established continuous linear TV guide. Do not add this parser to the linear-guide allowlist.",
+        "Guide titles do not establish spoken programme language, and existing source-specific viewing/reuse restrictions remain unchanged."
+      ],
+      "live_parse": {
+        "channels": 1,
+        "events": [
+          {
+            "id": "16a861c2-003a-4421-87ff-82ccac261162",
+            "identifier_kind": "official",
+            "title": "Mauritius National Assembly Chamber",
+            "status": "scheduled",
+            "start": "2026-10-27T07:00:00Z",
+            "start_basis": "source",
+            "url": "https://parliamenttv.govmu.org/Event/Index/16a861c2-003a-4421-87ff-82ccac261162",
+            "source_timezone": "Indian/Mauritius"
+          }
+        ],
+        "events_with_end": 0,
+        "event_count": 1
+      },
+      "integration": {
+        "module": "mauritius_parliament_tv",
+        "registry_id": "mauritius-parliament-tv-guide",
+        "source_scope": "event_directory",
+        "linear_allowlist": false,
+        "catalogue_epg_source": {
+          "scraper": "mauritius-parliament-tv-guide",
+          "scraper_status": "implemented",
+          "url": "https://parliamenttv.govmu.org/Guide",
+          "method": "GET",
+          "kind": "official_meeting_or_dated_video_index"
+        }
+      }
+    },
+    "south_korea_natv": {
+      "catalogue_id": "south-korea-natv-onair",
+      "status": "current_official_route_access_hold_no_parser",
+      "requests": [
+        {
+          "url": "https://www.natv.go.kr/natv/onair.do",
+          "retrieved_at": "2026-10-26T05:37:24.735686+00:00",
+          "http_status": 400,
+          "bytes": 12,
+          "sha256": "b1771fb8b7c9f81787218e67431af7356447b04ae3c4c2391feabbcac263a855"
+        },
+        {
+          "url": "https://natv.go.kr/natv/onair.do",
+          "retrieved_at": "2026-10-26T05:44:14.388585+00:00",
+          "http_status": 400,
+          "bytes": 12,
+          "sha256": "b1771fb8b7c9f81787218e67431af7356447b04ae3c4c2391feabbcac263a855"
+        },
+        {
+          "url": "http://www.natv.go.kr/natv/onair.do",
+          "retrieved_at": "2026-10-26T05:44:14.888641+00:00",
+          "http_status": 400,
+          "bytes": 12,
+          "sha256": "b1771fb8b7c9f81787218e67431af7356447b04ae3c4c2391feabbcac263a855"
+        }
+      ],
+      "confirmed": [
+        "All three bounded HTTP attempts returned the same 12-byte Bad Request body; the web reader also failed on the official route. This reproduces the 24 October recorded access problem."
+      ],
+      "unresolved": [
+        "No current official programme grid or machine-readable contract could be inspected. No parser, date, duration or channel mapping is inferred from a failing route. This is not evidence that NATV has no guide."
+      ]
+    }
+  },
+  "verification": {
+    "python_tests": 7,
+    "ruff": "pass",
+    "mypy_new_parser": "pass",
+    "live_guide_parse": "one future event, complete source start, unknown end"
+  }
+}

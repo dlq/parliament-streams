@@ -378,7 +378,7 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(ontario_calendar.SOURCE["headers"], {})
         self.assertEqual(
             new_zealand_parliament.SOURCE["url"],
-            "https://prod-win-client-home.azurewebsites.net/calendar?lang=en",
+            "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting",
         )
 
     def test_canada_harmony_parser_extracts_upcoming_cards(self):

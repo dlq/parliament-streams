@@ -15,7 +15,11 @@ and distinct organs; counts are not interchangeable with jurisdictions or stream
 | Earlier service checks only | 632 | Dated evidence, not a fresh replay in this batch |
 | Expanded identities with no individual disposition | 0 | Evidence coverage, not universal validation |
 | Catalogue sources | 270 | Includes the separate Quebec Canal de l'Assemblée official viewing page |
-| Sources with implemented guide parsers | 41 | Parser coverage is separate from current programmes and IPTV admission |
+| Sources with implemented guide parsers | 44 | Parser coverage is separate from current programmes and IPTV admission |
+
+The derived parser count follows the current catalogue (updated 26 October).
+Institutional authority and service-review dates remain those of the linked
+evidence; this count refresh is not a new validation of every legislature.
 
 [This continuation](2026-10-25-held-source-publication-decisions.json) adds thirteen
 sources, documents six missing exact chamber crosswalks and deepens Finland's
