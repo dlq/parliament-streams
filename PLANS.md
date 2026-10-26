@@ -1,6 +1,6 @@
 # Parliament Streams Plans
 
-This is the active roadmap, reviewed **25 October 2026**. Dated progress reports
+This is the active roadmap, reviewed **26 October 2026**. Dated progress reports
 and the previous detailed backlog are preserved in [roadmap history](docs/roadmap-history.md).
 Use [research status](docs/research-status.md) for evidence and
 [GitHub Actions](docs/github-actions.md) for implemented automation.
@@ -14,7 +14,7 @@ programme data and reuse rights are separate review questions.
 
 ## Current State
 
-The catalogue has **270 sources** and the inventory has **940 eligible identity
+The catalogue has **261 usable viewing sources** and the inventory has **940 eligible identity
 records**. The [current service baseline](reports/discovery/2026-10-25-institution-service-baseline.md)
 records exact matches and remaining per-body work. These are different units;
 neither total is a count of fully validated live streams. Completed work and
@@ -38,6 +38,9 @@ older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
 
 ## Catalogue Work
 
+- [ ] Resolve the nine unready feed variants retained in candidates after the
+  [catalogue separation](reports/discovery/2026-10-26-catalogue-research-separation.md);
+  keep publication gated on a supported viewing route.
 - [ ] Work through the named holds for France's Senate, Chile Sala IV, Rivera and
   other unpublished discovery leads. Resolve the specific evidence gap for each;
   a failed route or an identifier search without a result does not prove absence.

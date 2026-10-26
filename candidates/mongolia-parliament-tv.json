@@ -1,0 +1,100 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-26",
+  "updated_on": "2026-10-26",
+  "decision_notes": [
+    "26 October 2026 publication cleanup: moved from the viewing-source catalogue to the research candidate queue because this specific feed is not ready as a viewing route. Legislative eligibility is unchanged.",
+    "The complete prior channel record, source URLs, identity evidence, schedule leads, permissions and retained validation history are preserved below. This migration is not a new playback or rights validation.",
+    "Latest retained finding: Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved.",
+    "Decision and return-to-catalogue criteria: reports/discovery/2026-10-26-catalogue-research-separation.md."
+  ],
+  "channel": {
+    "id": "mongolia-parliament-tv",
+    "name": "Mongolia Parliament TV",
+    "jurisdiction_level": "national",
+    "country_or_region": "Mongolia",
+    "legislature": "State Great Khural",
+    "external_ids": {
+      "wikidata_qid": "Q1544714",
+      "ipu_country_code": "MN",
+      "ipu_parliament_code": "MN",
+      "ipu_chamber_code": "MN-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1544714",
+        "checked_on": "2026-08-16",
+        "confidence": "high",
+        "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/MN/MN-LC01/",
+        "checked_on": "2026-08-16",
+        "confidence": "high",
+        "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+      }
+    ],
+    "language": "Mongolian",
+    "source_type": "direct_dash",
+    "source_kind": "direct_dash_research",
+    "playback_url": "https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd",
+    "official_url": "https://att.parliament.mn/live",
+    "provenance_note": "SkyGo DASH distribution candidate for parliamentary television. The official Parliament live/session page is the safer user-facing route; SkyGo source ownership, terms, and app playback strategy need review. 24 October 2026 publication review: Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved.",
+    "technical_status": "validated",
+    "stability_risk": "high",
+    "availability": "always_on",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": null
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "url": "https://tov.parliament.mn/",
+        "method": "GET",
+        "kind": "meeting_timetable_page",
+        "scraper_status": "planned"
+      }
+    ],
+    "permission": {
+      "status": "personal_use_pending_review",
+      "summary": "DASH experiment from SkyGo/GO+ streaming infrastructure without recorded reuse permission. The official Parliament site publishes a live/session page with meeting video and YouTube references, and GO+ app-store evidence describes a commercial OTT service with official rights, but no source-specific permission was found for third-party use of the DASH manifest.",
+      "evidence": [
+        "https://att.parliament.mn/live",
+        "https://www.parliament.mn/",
+        "https://play.google.com/store/apps/details?id=tv.mirada.iris.android.inspire.skygo"
+      ],
+      "recommendation": "Keep as research-only. Prefer the official Parliament live/session page for users. Do not enable DASH playback until source ownership, reuse permission, and Apple/web playback strategy are documented."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-25T00:49:51Z",
+        "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+        "method": "review_followup",
+        "status": "warning",
+        "note": "Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved."
+      },
+      {
+        "checked_at": "2026-10-22T13:49:35Z",
+        "report_path": "reports/health/2026-10-22-catalogue-health.json",
+        "method": "static_http",
+        "status": "ok",
+        "note": "DASH MPD detected."
+      },
+      {
+        "checked_at": "2026-08-17T10:32:46Z",
+        "report_path": "reports/health/2026-08-17-review-followup-static.json",
+        "method": "review_followup",
+        "status": "ok",
+        "note": "DASH MPD detected."
+      }
+    ],
+    "playback_policy": "research_only"
+  }
+}

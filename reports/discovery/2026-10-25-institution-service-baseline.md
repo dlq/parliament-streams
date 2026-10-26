@@ -9,15 +9,16 @@ and distinct organs; counts are not interchangeable with jurisdictions or stream
 | Measure | Records | Interpretation |
 | --- | ---: | --- |
 | Eligible identities | 940 | Authority-cleared service queue |
-| Exact catalogue matches | 222 | 247 distinct catalogue IDs; no automatic parent/chamber inheritance |
-| Without exact documented match | 718 | Crosswalk or service-evidence gap, not proof of no broadcast |
+| Exact catalogue matches | 221 | 239 distinct catalogue IDs; no automatic parent/chamber inheritance |
+| Without exact documented match | 719 | Crosswalk or service-evidence gap, not proof of no broadcast |
 | Renewed partial source follow-ups | 308 | Specific recorded findings and unresolved questions |
 | Earlier service checks only | 632 | Dated evidence, not a fresh replay in this batch |
 | Expanded identities with no individual disposition | 0 | Evidence coverage, not universal validation |
-| Catalogue sources | 270 | Includes the separate Quebec Canal de l'Assemblée official viewing page |
-| Sources with implemented guide parsers | 44 | Parser coverage is separate from current programmes and IPTV admission |
+| Catalogue sources | 261 | Usable viewing routes; nine unready feed records retained in candidates |
+| Sources with implemented guide parsers | 43 | Parser coverage is separate from current programmes and IPTV admission |
 
-The derived parser count follows the current catalogue (updated 26 October).
+The derived counts follow the current catalogue (updated 26 October after the
+[catalogue separation](2026-10-26-catalogue-research-separation.md)).
 Institutional authority and service-review dates remain those of the linked
 evidence; this count refresh is not a new validation of every legislature.
 

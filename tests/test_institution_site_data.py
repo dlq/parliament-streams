@@ -484,8 +484,11 @@ class CurrentInstitutionSnapshotTests(unittest.TestCase):
         )
         self.assertEqual(rows["hungary--budapest"]["catalogue_ids"], [])
 
-    def test_all_current_body_source_crosswalks_are_preserved_exactly(self) -> None:
+    def test_historical_crosswalks_only_link_current_catalogue_sources(self) -> None:
         rows = {row["id"]: row for row in self.payload["records"]}
+        published_ids = {
+            channel["id"] for channel in load_json_object(DEFAULT_CATALOGUE_PATH)["channels"]
+        }
         register = load_json_object(DEFAULT_SERVICE_REGISTER_PATH)
         self.assertEqual(
             sum(bool(body["catalogue_ids"]) for body in register["eligible_bodies"]), 143
@@ -498,7 +501,9 @@ class CurrentInstitutionSnapshotTests(unittest.TestCase):
                 expected = current.get("catalogue_crosswalk", {}).get(
                     "catalogue_ids", body["catalogue_ids"]
                 )
-                self.assertEqual(rows[body["body_id"]]["catalogue_ids"], sorted(set(expected)))
+                self.assertEqual(
+                    rows[body["body_id"]]["catalogue_ids"], sorted(set(expected) & published_ids)
+                )
 
     def test_generated_classic_script_matches_sources_and_has_no_fetch_or_module_dependency(
         self,

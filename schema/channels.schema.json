@@ -13,7 +13,16 @@
     "channels": {
       "type": "array",
       "minItems": 1,
-      "items": { "$ref": "#/$defs/channel" }
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/channel" },
+          {
+            "properties": {
+              "playback_policy": { "enum": ["native_playback", "provider_embed", "link_out"] }
+            }
+          }
+        ]
+      }
     }
   },
   "$defs": {

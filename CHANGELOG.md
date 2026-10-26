@@ -1,5 +1,14 @@
 # Changelog
 
+## 26 October — Keep Unready Feeds In The Research Queue
+
+Move nine research-only feeds out of the viewing catalogue into researching
+candidates, preserving complete records and review history. Keep usable sibling
+services and the eligible legislature inventory. Refresh catalogue/inventory
+projections and service counts; map and schedule coverage follow the supported
+sources. Reject research-only records at catalogue publication and candidate
+readiness gates. The catalogue now contains 261 usable viewing sources.
+
 ## 26 October — Restore The Homepage Photograph
 
 Give the homepage hero a 300px minimum height on desktop and 220px on phones,

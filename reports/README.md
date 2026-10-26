@@ -29,6 +29,10 @@ registered reviews. Its [readable queue](discovery/2026-10-25-institution-servic
 helps select further work. Refresh it through the maintenance builder and use
 `make service-baseline-check` to detect drift; it is not a third canonical list.
 
+The [26 October catalogue separation](discovery/2026-10-26-catalogue-research-separation.md)
+records the nine unready feeds moved back to candidates, without changing
+legislative eligibility or discarding source evidence.
+
 ## Historical Evidence And Automated Outputs
 
 - The [26 October EPG continuation](epg/2026-10-26-coverage-pass.md) and its

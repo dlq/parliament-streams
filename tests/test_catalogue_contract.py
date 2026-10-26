@@ -149,7 +149,7 @@ class CatalogueContractTests(unittest.TestCase):
         self.assertIn("native_playback", policies)
         self.assertIn("provider_embed", policies)
         self.assertIn("link_out", policies)
-        self.assertIn("research_only", policies)
+        self.assertNotIn("research_only", policies)
         for channel in self.channels:
             with self.subTest(channel=channel["id"]):
                 policy = channel["playback_policy"]

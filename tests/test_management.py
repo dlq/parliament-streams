@@ -84,6 +84,35 @@ def cloned_channel(channel_id="test-assembly", qid="Q123456789"):
 
 
 class ValidationTests(unittest.TestCase):
+    def test_unready_viewing_sources_stay_candidates(self):
+        channel = cloned_channel()
+        channel["source_type"] = "direct_hls"
+        channel["source_kind"] = "official_vendor_hls"
+        channel["playback_url"] = "https://example.org/unverified.m3u8"
+        channel["playback_policy"] = "research_only"
+        catalogue = canonical_catalogue()
+        catalogue["channels"] = [channel]
+        self.assertIn(
+            "unready-viewing-source", {issue.code for issue in validate_catalogue(catalogue)}
+        )
+        self.assertEqual(validate_channel(channel), [])
+        candidate = {
+            "candidate_version": 1,
+            "status": "researching",
+            "created_on": "2026-10-26",
+            "updated_on": "2026-10-26",
+            "decision_notes": ["Playback verification remains unresolved."],
+            "channel": channel,
+        }
+        self.assertEqual(validate_candidate(candidate), [])
+        for status in ["ready", "promoted"]:
+            with self.subTest(status=status):
+                candidate["status"] = status
+                self.assertIn(
+                    "candidate-viewing-not-ready",
+                    {issue.code for issue in validate_candidate(candidate)},
+                )
+
     def test_canonical_catalogue_and_channel_validate(self):
         catalogue = canonical_catalogue()
         self.assertEqual(validate_catalogue(catalogue), [])

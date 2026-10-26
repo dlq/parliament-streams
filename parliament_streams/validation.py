@@ -434,6 +434,14 @@ def validate_catalogue(
         channel = cast(ChannelRecord, raw_channel)
         path = f"$.channels[{index}]"
         issues.extend(_channel_issues(channel, path, require_identity=True))
+        if channel.get("playback_policy") == "research_only":
+            issues.append(
+                ValidationIssue(
+                    f"{path}.playback_policy",
+                    "unready-viewing-source",
+                    "Research-only sources belong in candidates/, not the published catalogue",
+                )
+            )
         channel_id = channel.get("id")
         if isinstance(channel_id, str):
             if channel_id in seen_ids:
@@ -543,6 +551,14 @@ def validate_candidate(
     channel = candidate.get("channel")
     if isinstance(channel, dict):
         require_identity = candidate.get("status") in {"ready", "promoted"}
+        if require_identity and channel.get("playback_policy") == "research_only":
+            issues.append(
+                ValidationIssue(
+                    "$.channel.playback_policy",
+                    "candidate-viewing-not-ready",
+                    "Ready or promoted candidates need a supported viewing route",
+                )
+            )
         for issue in validate_channel(
             cast(ChannelRecord, channel), schema, require_identity=require_identity
         ):

@@ -1,0 +1,167 @@
+{
+  "reviewed_on": "2026-10-26",
+  "scope": "Separate nine unready feed records from the published viewing catalogue without new playback, identity or rights clearance; verify current schedule collection and publication products separately.",
+  "before": {
+    "catalogue_sources": 270,
+    "viewing_policies": {
+      "link_out": 220,
+      "native_playback": 38,
+      "provider_embed": 3,
+      "research_only": 9
+    },
+    "parser_connected": 44,
+    "institution_records": 1412,
+    "eligible_institutions": 940,
+    "institutions_with_catalogue_links": 222,
+    "jurisdictions": 227
+  },
+  "after": {
+    "catalogue_sources": 261,
+    "viewing_policies": {
+      "link_out": 220,
+      "native_playback": 38,
+      "provider_embed": 3
+    },
+    "parser_connected": 43,
+    "institution_records": 1412,
+    "eligible_institutions": 940,
+    "institutions_with_catalogue_links": 221,
+    "jurisdictions": 225
+  },
+  "records": [
+    {
+      "id": "spain-congreso-directo-1",
+      "name": "Spain Congreso en Directo 1",
+      "jurisdiction": "Spain",
+      "candidate": "candidates/spain-congreso-directo-1.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+    },
+    {
+      "id": "spain-congreso-directo-2",
+      "name": "Spain Congreso en Directo 2",
+      "jurisdiction": "Spain",
+      "candidate": "candidates/spain-congreso-directo-2.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+    },
+    {
+      "id": "spain-congreso-directo-3",
+      "name": "Spain Congreso en Directo 3",
+      "jurisdiction": "Spain",
+      "candidate": "candidates/spain-congreso-directo-3.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+    },
+    {
+      "id": "spain-congreso-directo-4",
+      "name": "Spain Congreso en Directo 4",
+      "jurisdiction": "Spain",
+      "candidate": "candidates/spain-congreso-directo-4.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+    },
+    {
+      "id": "spain-congreso-directo-5",
+      "name": "Spain Congreso en Directo 5",
+      "jurisdiction": "Spain",
+      "candidate": "candidates/spain-congreso-directo-5.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+    },
+    {
+      "id": "estonia-riigikogu-live-2",
+      "name": "Estonia Riigikogu Live 2",
+      "jurisdiction": "Estonia",
+      "candidate": "candidates/estonia-riigikogu-live-2.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "Own Live2 page responds; its specific media rendition remains unverified/previously404. General official navigation is distinct from direct-signal validation."
+    },
+    {
+      "id": "mongolia-parliament-tv",
+      "name": "Mongolia Parliament TV",
+      "jurisdiction": "Mongolia",
+      "candidate": "candidates/mongolia-parliament-tv.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "Official Parliament live route returns403 in the current ordinary browser check. Commercial-provider DASH ownership, current endpoint suitability and independent rights remain unresolved."
+    },
+    {
+      "id": "ontario-house-en-cc",
+      "name": "Ontario Legislative Assembly - House EN CC",
+      "jurisdiction": "Ontario",
+      "candidate": "candidates/ontario-house-en-cc.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status."
+    },
+    {
+      "id": "el-salvador-legislative-assembly",
+      "name": "El Salvador Legislative Assembly",
+      "jurisdiction": "El Salvador",
+      "candidate": "candidates/el-salvador-legislative-assembly.json",
+      "preserved_channel_record_exactly": true,
+      "latest_retained_finding": "Own institutional homepage now responds with normal browser TLS and designates TV AL. This does not by itself decode the selected live signal or settle its older endpoint TLS/rights issues; preserve specific feed hold pending its actual source-player check."
+    }
+  ],
+  "retained_ready_routes": [
+    "spain-canal-parlamento",
+    "estonia-riigikogu-live-1",
+    "ontario-house-en",
+    "ontario-rm151-en",
+    "ontario-committee-1-en",
+    "ontario-committee-2-en",
+    "ontario-media-en"
+  ],
+  "inventory_changed": false,
+  "legislative_authority_changed": false,
+  "new_viewing_sources_promoted": 0,
+  "verification": {
+    "all_nine_complete_records_preserved": true,
+    "all_remaining_channel_records_unchanged": true,
+    "inventory_bytes_unchanged": true,
+    "no_removed_schedule_or_coverage_ids": true,
+    "playlists_byte_identical_to_live_release": true,
+    "catalogue": 261,
+    "candidate_statuses": {
+      "promoted": 171,
+      "researching": 12,
+      "rejected": 1
+    },
+    "schedule_channel_count": 19,
+    "guide_counts": {
+      "events": 749,
+      "exportable": 370,
+      "excluded": 379,
+      "channels_with_events": 19,
+      "excluded_missing_time_range": 165,
+      "excluded_unverified_channel_mapping": 340
+    },
+    "xmltv_channel_count": 44,
+    "xmltv_programme_count": 370,
+    "collection_generated_at": "2026-10-26T17:49:15Z",
+    "collector_statuses": {
+      "ok": 17,
+      "error": 1,
+      "empty": 5
+    },
+    "source_errors": [
+      {
+        "source": "knesset-tv-guide",
+        "status": "error",
+        "error": "HTTP 403"
+      }
+    ],
+    "python_tests_passed": 472,
+    "javascript_unit_tests_passed": 8,
+    "python_coverage_percent": 93,
+    "lint_format_typing_schema_and_generated_data_checks": "passed",
+    "discovery_plan": {
+      "eligible_identities": 940,
+      "identities_with_page_routes": 938,
+      "identities_without_page_routes": 2,
+      "unique_check_targets": 1462,
+      "catalogue_records": 261,
+      "catalogue_records_with_page_routes": 261
+    },
+    "html_browser_interaction_responsive_and_axe_checks": "passed"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-26",
+  "updated_on": "2026-10-26",
+  "decision_notes": [
+    "26 October 2026 publication cleanup: moved from the viewing-source catalogue to the research candidate queue because this specific feed is not ready as a viewing route. Legislative eligibility is unchanged.",
+    "The complete prior channel record, source URLs, identity evidence, schedule leads, permissions and retained validation history are preserved below. This migration is not a new playback or rights validation.",
+    "Latest retained finding: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
+    "Decision and return-to-catalogue criteria: reports/discovery/2026-10-26-catalogue-research-separation.md."
+  ],
+  "channel": {
+    "id": "spain-congreso-directo-2",
+    "name": "Spain Congreso en Directo 2",
+    "jurisdiction_level": "national",
+    "country_or_region": "Spain",
+    "legislature": "Congreso de los Diputados",
+    "external_ids": {
+      "wikidata_qid": "Q539149",
+      "ipu_country_code": "ES",
+      "ipu_parliament_code": "ES",
+      "ipu_chamber_code": "ES-LC01"
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q539149",
+        "checked_on": "2026-08-16",
+        "confidence": "high",
+        "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+      },
+      {
+        "source": "ipu_parline",
+        "url": "https://data.ipu.org/parliament/ES/ES-LC01/",
+        "checked_on": "2026-08-16",
+        "confidence": "high",
+        "notes": "Matched to the IPU Parline parliament or chamber identifier; used for institutional identity only."
+      }
+    ],
+    "language": "Spanish",
+    "source_type": "direct_hls",
+    "source_kind": "official_vendor_hls",
+    "playback_url": "https://congresodirecto.akamaized.net/hls/live/2038275/canal2/master.m3u8",
+    "official_url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+    "provenance_note": "Official Congreso en Directo signal 2; master HLS reached on 2026-07-29; sample variant check needs review. 24 October 2026 publication review: The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable.",
+    "technical_status": "needs_review",
+    "stability_risk": "high",
+    "availability": "event_based",
+    "accessibility": {
+      "captions": "unknown",
+      "caption_languages": [],
+      "sign_language": "unknown",
+      "audio_description": "unknown",
+      "notes": null
+    },
+    "epg_sources": [
+      {
+        "scraper": "planned",
+        "url": "https://www.congreso.es/es/web/guest/congreso-en-directo",
+        "method": "GET",
+        "kind": "weekly_live_signals_page",
+        "scraper_status": "planned"
+      },
+      {
+        "scraper": "planned",
+        "url": "https://www.congreso.es/es/programacion",
+        "method": "GET",
+        "kind": "canal_parlamento_weekly_schedule",
+        "scraper_status": "planned"
+      }
+    ],
+    "permission": {
+      "status": "explicit_reuse_with_conditions",
+      "summary": "Congreso documentation says Congreso en Directo provides Plenary and up to five committee/live signals through the Congress website, and FAQ text says institutional signals and downloadable videos are provided free to media and citizens. Native HLS reuse should still preserve attribution and avoid implying endorsement.",
+      "evidence": [
+        "https://www.congreso.es/es/web/guest/congreso-en-directo",
+        "https://www.congreso.es/es/cem/mas-informacion",
+        "https://www.congreso.es/es/cem/faqs"
+      ],
+      "recommendation": "Strong technical and rights candidate; preserve source attribution and revisit terms before redistribution beyond research/catalogue use."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-25T00:49:51Z",
+        "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+        "method": "review_followup",
+        "status": "warning",
+        "note": "The five individually unverified extracted signal variants share a current official Congreso viewing/programme page. Preserve their variant holds without claiming the page itself is unavailable."
+      },
+      {
+        "checked_at": "2026-10-22T13:49:31Z",
+        "report_path": "reports/health/2026-10-22-catalogue-health.json",
+        "method": "static_http",
+        "status": "warning",
+        "note": "HLS master detected, but sample variant check failed."
+      },
+      {
+        "checked_at": "2026-08-17T10:32:25Z",
+        "report_path": "reports/health/2026-08-17-review-followup-static.json",
+        "method": "review_followup",
+        "status": "warning",
+        "note": "HLS master detected, but sample variant check failed."
+      }
+    ],
+    "playback_policy": "research_only"
+  }
+}

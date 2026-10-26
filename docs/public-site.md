@@ -86,7 +86,8 @@ and its recorded terms do not expressly prohibit third-party reuse.
 This is an opt-out research posture: the absence of recorded affirmative
 permission is not represented as a licence or other grant of rights. Direct
 endpoints with `no_third_party_reuse` remain `link_out`, and direct endpoints
-kept for unresolved DASH or technical research remain `research_only`. HLS playback uses the
+kept for unresolved DASH or technical research remain `research_only` in
+`candidates/`, outside the published viewing catalogue. HLS playback uses the
 browser's native support where available and lazily loads the local `hls.js`
 asset for compatible non-Safari browsers. `npm ci` prepares HLS.js and D3 from
 the locked npm dependencies, including D3's installed submodules. Dependabot

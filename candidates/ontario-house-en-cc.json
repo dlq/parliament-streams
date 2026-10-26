@@ -1,0 +1,97 @@
+{
+  "candidate_version": 1,
+  "status": "researching",
+  "created_on": "2026-10-26",
+  "updated_on": "2026-10-26",
+  "decision_notes": [
+    "26 October 2026 publication cleanup: moved from the viewing-source catalogue to the research candidate queue because this specific feed is not ready as a viewing route. Legislative eligibility is unchanged.",
+    "The complete prior channel record, source URLs, identity evidence, schedule leads, permissions and retained validation history are preserved below. This migration is not a new playback or rights validation.",
+    "Latest retained finding: Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status.",
+    "Decision and return-to-catalogue criteria: reports/discovery/2026-10-26-catalogue-research-separation.md."
+  ],
+  "channel": {
+    "id": "ontario-house-en-cc",
+    "name": "Ontario Legislative Assembly - House EN CC",
+    "jurisdiction_level": "subnational",
+    "country_or_region": "Ontario",
+    "legislature": "Legislative Assembly of Ontario",
+    "external_ids": {
+      "wikidata_qid": "Q1809086",
+      "ipu_country_code": null,
+      "ipu_parliament_code": null,
+      "ipu_chamber_code": null
+    },
+    "identity_sources": [
+      {
+        "source": "wikidata",
+        "url": "https://www.wikidata.org/wiki/Q1809086",
+        "checked_on": "2026-08-16",
+        "confidence": "high",
+        "notes": "Matched to the legislature or institution named by this catalogue entry; used for identity and discovery only."
+      }
+    ],
+    "language": "English",
+    "source_type": "direct_hls",
+    "source_kind": "official_vendor_hls",
+    "playback_url": "https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en-cc/playlist.m3u8",
+    "official_url": "https://www.ola.org/en/legislative-business/video",
+    "provenance_note": "Official-vendor HLS for the Legislative Assembly video service. 24 October 2026 publication review: Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status.",
+    "technical_status": "needs_review",
+    "stability_risk": "high",
+    "availability": "sitting_only",
+    "accessibility": {
+      "captions": "available",
+      "caption_languages": [
+        "en"
+      ],
+      "sign_language": "source_dependent",
+      "audio_description": "unknown",
+      "notes": "Ontario says all broadcasts have real-time captioning, and its accessibility plan says streamed House, committee, and media-studio proceedings include simultaneous interpretation in English and French plus closed captioning. Standing Order evidence says sign-language interpretation may appear onscreen if approved by the House."
+    },
+    "epg_sources": [
+      {
+        "scraper": "ontario-calendar",
+        "url": "https://www.ola.org/en/legislative-business/calendar/",
+        "method": "GET",
+        "kind": "calendar_page",
+        "scraper_status": "implemented"
+      }
+    ],
+    "permission": {
+      "status": "noncommercial_pending_review",
+      "summary": "Ontario terms permit reasonable, fair, non-commercial display, reproduction, and use of excerpts from Assembly electronic channels with credit. Media guidance expects accredited media to use the Assembly broadcast feed, but full live-stream relay by an independent public app is not expressly documented as permitted.",
+      "evidence": [
+        "https://www.ola.org/en/legislative-business/video",
+        "https://www.ola.org/en/get-involved/watch-legislature-action",
+        "https://www.ola.org/en/office-assembly/copyright-privacy",
+        "https://www.ola.org/en/office-assembly/accessibility/2024-2027-plan",
+        "https://www.ola.org/en/office-assembly/offices-divisions-branches/legislative-protective-service/who-we-are/media-filming-guidelines"
+      ],
+      "recommendation": "Keep direct playback cautious and non-commercial with Assembly credit; seek written clarification before treating full live-stream reuse as broadly permitted."
+    },
+    "validation_history": [
+      {
+        "checked_at": "2026-10-25T00:49:51Z",
+        "report_path": "reports/health/2026-10-24-publication-review-followup.json",
+        "method": "review_followup",
+        "status": "warning",
+        "note": "Current own Ontario page designates House, committees and archive viewing; this separate extracted English closed-caption variant remains unverified and must not inherit a different channel’s media status."
+      },
+      {
+        "checked_at": "2026-10-22T13:49:38Z",
+        "report_path": "reports/health/2026-10-22-catalogue-health.json",
+        "method": "static_http",
+        "status": "error",
+        "note": "HTTP 404"
+      },
+      {
+        "checked_at": "2026-08-17T10:32:47Z",
+        "report_path": "reports/health/2026-08-17-review-followup-static.json",
+        "method": "review_followup",
+        "status": "error",
+        "note": "HTTP 404"
+      }
+    ],
+    "playback_policy": "research_only"
+  }
+}

@@ -11,11 +11,15 @@ terminal `promoted` state; it cannot be set through `candidate-status`.
 
 ## Current Review Queue
 
-As of **25 October 2026**, the 175 candidate files contain **171 promoted**,
-**three researching** and **one rejected** record. This is a dated directory
+As of **26 October 2026**, the 184 candidate files contain **171 promoted**,
+**twelve researching** and **one rejected** record. This is a dated directory
 snapshot, not the catalogue's total source count; the JSON status fields govern
 each candidate's current state.
 
+- Nine formerly published unready feeds: five Spanish Congreso variants, Estonia
+  Live 2, Mongolia Parliament TV, Ontario House EN CC and El Salvador. Full records
+  and review history are retained; usable sibling services stay published. See the
+  [catalogue separation](../reports/discovery/2026-10-26-catalogue-research-separation.md).
 - Chile Chamber Sala IV: room identity, schedule mapping and rights scope need
   review despite official-page discovery and sample media checks.
 - France's Senate: the live service opened, but published hyperlink conditions

@@ -71,9 +71,9 @@
     "default_displayed_records": 948,
     "eligible_records": 940,
     "legal_holds_excluded_from_service_queue": 8,
-    "eligible_records_with_exact_catalogue_matches": 222,
-    "eligible_records_without_exact_catalogue_matches": 718,
-    "distinct_catalogue_ids_linked": 247,
+    "eligible_records_with_exact_catalogue_matches": 221,
+    "eligible_records_without_exact_catalogue_matches": 719,
+    "distinct_catalogue_ids_linked": 239,
     "historical_service_cohort": 652,
     "outside_historical_service_cohort": 288,
     "records_with_new_source_followups": 308,
@@ -83,14 +83,14 @@
       "partial_source_followup": 308
     },
     "all_dimensions_validated": 0,
-    "catalogue_sources": 270,
-    "catalogue_sources_with_implemented_schedule_parser": 44,
+    "catalogue_sources": 261,
+    "catalogue_sources_with_implemented_schedule_parser": 43,
     "catalogue_aggregate_permission_statuses": {
       "embed_only": 4,
-      "explicit_reuse_with_conditions": 52,
+      "explicit_reuse_with_conditions": 47,
       "no_third_party_reuse": 20,
-      "noncommercial_pending_review": 12,
-      "personal_use_pending_review": 182
+      "noncommercial_pending_review": 11,
+      "personal_use_pending_review": 179
     },
     "aggregate_permission_status_is_not_per_use_clearance": true
   },
@@ -2190,7 +2190,6 @@
         "ontario-committee-1-en",
         "ontario-committee-2-en",
         "ontario-house-en",
-        "ontario-house-en-cc",
         "ontario-media-en",
         "ontario-rm151-en"
       ],
@@ -7479,8 +7478,7 @@
       "level": "national",
       "inventory_grain": "chamber",
       "catalogue_ids": [
-        "estonia-riigikogu-live-1",
-        "estonia-riigikogu-live-2"
+        "estonia-riigikogu-live-1"
       ],
       "historical_service_review": null,
       "source_followups": [
@@ -7500,12 +7498,7 @@
       "level": "national",
       "inventory_grain": "chamber",
       "catalogue_ids": [
-        "spain-canal-parlamento",
-        "spain-congreso-directo-1",
-        "spain-congreso-directo-2",
-        "spain-congreso-directo-3",
-        "spain-congreso-directo-4",
-        "spain-congreso-directo-5"
+        "spain-canal-parlamento"
       ],
       "historical_service_review": null,
       "source_followups": [
@@ -8230,9 +8223,7 @@
       "name": "State Great Hural",
       "level": "national",
       "inventory_grain": "chamber",
-      "catalogue_ids": [
-        "mongolia-parliament-tv"
-      ],
+      "catalogue_ids": [],
       "historical_service_review": null,
       "source_followups": [
         {

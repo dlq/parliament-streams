@@ -2,10 +2,29 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
-## EPG Coverage Improvements — 26 October 2026
+## Viewing Catalogue Separation — 26 October 2026
 
-The catalogue remains at **270 sources**. **44 records** are connected to
-implemented parsers through **28 recorded metadata URLs and 23 collectors**;
+The current catalogue has **261 usable viewing sources**: 38 direct-playback,
+three provider embeds and 220 official viewing links. Nine unready feed records
+moved to researching candidates with their complete evidence/history retained.
+Spain, Estonia and Ontario keep their usable sibling services. Mongolia remains
+an eligible inventory entry without a published viewing match.
+El Salvador sits outside the maintained 71-country inventory; its institutional
+identity and viewing evidence remain in its candidate.
+The inventory still has **940 eligible identities** and eight separate legal holds;
+221 eligible identities have exact catalogue matches covering 239 source IDs.
+
+There are now **43 parser-connected records** and 218 with planned extraction.
+The retired Ontario closed-caption variant no longer duplicates House schedule
+coverage. The 23 collectors, four stable / 38 broader playlist admissions and
+44 XMLTV channel definitions remain unchanged. Collection counts vary by build.
+This is a publication-boundary correction, not a new media, EPG or rights review.
+[Decision and retained candidates](../reports/discovery/2026-10-26-catalogue-research-separation.md).
+
+## Earlier EPG Coverage Checkpoint — 26 October 2026
+
+At that earlier checkpoint the catalogue contained **270 sources**. **44 records**
+were connected to implemented parsers through **28 recorded metadata URLs and 23 collectors**;
 226 records retain planned extraction. Metadata URLs include human recovery
 links, while collectors separately record their actual dated requests.
 
@@ -42,7 +61,7 @@ Greece/Sansad access, Thailand's recurring PDF and other access/mapping/time hol
 remain explicit. NATV currently returns HTTP 400; Australia's checked current
 route returns HTTP 403. This pass does not freshly check every planned URL.
 
-The current baseline links 247 catalogue IDs to 222 exact eligible identities;
+That checkpoint linked 247 catalogue IDs to 222 exact eligible identities;
 the eligible inventory remains 940. The quality report classifies every catalogue
 ID by parser, collection, mapping and programme state. Missing parsers and named
 access/time/mapping holds remain explicit. Measured collection and verification
@@ -181,9 +200,9 @@ IPTV stream or XMLTV parser is inferred.
 France's Assembly, Luxembourg Chamber TV, Nunavut TV and the Swiss National
 Council now link to independently supported official viewing pages. Their old
 extracted endpoints are removed from published records. Nine specific-feed
-research entries retain their own unresolved reasons; the interface calls them
-**Viewing not enabled**, distinct from legislative-authority eligibility. Its
-details show the recorded source-specific reason and review date. The public
+research entries then retained their unresolved reasons under **Viewing not
+enabled**, distinct from legislative-authority eligibility. The 26 October
+catalogue separation subsequently moved those full records into candidates. The public
 Legislatures evidence disclosure now exposes current source follow-ups and their
 separate unresolved findings.
 

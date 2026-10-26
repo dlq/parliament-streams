@@ -16,15 +16,16 @@ The proof-of-concept catalogue uses an opt-out playback posture:
 
 - Direct, technically validated public HLS may remain playable when no recorded
   source terms prohibit it.
-- The retained DASH record is research-only; technical discovery alone does
-  not enable its playback.
+- The retained DASH candidate stays outside the viewing catalogue; technical
+  discovery alone does not enable its playback.
 - Sources with explicit third-party restrictions are link-out only.
 - YouTube sources use official provider embeds only; the project does not
   extract YouTube manifests.
 - Official event platforms such as ParlVU/SenVu remain link-out/event-metadata
   surfaces unless stable playback rights and technical routes are documented.
 - The catalogue records playback presentation separately as `playback_policy`:
-  `native_playback`, `provider_embed`, `link_out`, or `research_only`.
+  `native_playback`, `provider_embed` or `link_out`. The shared channel contract
+  also supports `research_only` for unpublished candidates.
 - Source owners can request correction or removal through the repository owner.
 
 This policy is practical for research, but it is not a legal conclusion that
@@ -115,8 +116,8 @@ Saskatchewan, Northwest Territories, and Navarre remain pending. The snapshot is
 [review-queues-2026-08-19-official-page.json](../reports/review-queues-2026-08-19-official-page.json).
 
 The single `direct_dash_research` record was reviewed on 2026-08-19. Mongolia
-Parliament TV remains research-only: the official Parliament live/session page
-is the safer user-facing route, and the SkyGo DASH manifest lacks
+Parliament TV remains an unpublished research-only candidate: the official
+Parliament live/session page is a research lead, and the SkyGo DASH manifest lacks
 source-specific reuse permission and a platform playback strategy. The snapshot
 is
 [review-queues-2026-08-19-direct-dash-research.json](../reports/review-queues-2026-08-19-direct-dash-research.json).

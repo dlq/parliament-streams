@@ -732,20 +732,13 @@ try {
   assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Watch here/);
   await page.locator("#sort-mode").click();
   assert.match(await page.locator("#sort-status").innerText(), /Viewing method: descending/);
-  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Viewing not enabled/);
-  const researchChannel = canonicalCatalogue.channels.find((channel) => channel.playback_policy === "research_only");
-  assert(researchChannel);
-  const researchRow = page.locator(`[data-channel-id="${researchChannel.id}"]`);
-  await researchRow.click();
-  assert.equal(await page.locator(".research-playback-note").innerText(), "Viewing is not enabled here. The details show the recorded reason and remaining checks.");
-  assert.match(await page.locator(".research-playback-reason").innerText(), /This specific feed has not passed playback checks\. Checked/);
-  assert.equal(await page.locator("#detail-panel [data-start-playback]").count(), 0);
-  assert.equal(await page.locator("#detail-panel .official-button").innerText(), "Official watch page ↗");
-  await page.locator(".source-documentation > summary").first().click();
-  assert((await page.locator(".validation-record").innerText()).includes(researchChannel.validation_history.find((entry) => entry.method === "review_followup").note));
-  await page.locator('[data-channel-id="mongolia-parliament-tv"]').click();
-  assert.match(await page.locator(".research-playback-reason").innerText(), /The stream provider, terms and playback support still need review\. Checked/);
-  assert.equal(await page.locator("#detail-panel [data-start-playback]").count(), 0);
+  assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Watch on official site/);
+  assert.equal(canonicalCatalogue.channels.some((channel) => channel.playback_policy === "research_only"), false);
+  assert.equal(await page.locator(".source-posture-research").count(), 0);
+  /* Removed research candidates must not reappear through the embedded fallback. */
+  for (const id of ["spain-congreso-directo-3", "mongolia-parliament-tv", "ontario-house-en-cc", "el-salvador-legislative-assembly"]) {
+    assert.equal(await page.locator(`[data-channel-id="${id}"]`).count(), 0);
+  }
   await page.locator("#sort-source").click();
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
@@ -857,7 +850,7 @@ try {
   assert.equal(await page.locator(".accessibility-record .detail-subtitle").count(), 0);
 
   await page.locator("#locale-select").selectOption("zh-Hans");
-  await page.locator('[data-channel-id="spain-congreso-directo-3"]').click();
+  await page.locator('[data-channel-id="norway-stortinget"]').click();
   await page.locator(".source-documentation > summary").first().click();
   await page.locator(".source-documentation > summary").nth(1).click();
   const detailTerms = await page.locator(".detail-grid dt").allTextContents();
@@ -870,11 +863,11 @@ try {
   assert.match(await page.locator(".accessibility-record").innerText(), /字幕: 尚未验证/);
   assert.match(await page.locator(".accessibility-record").innerText(), /手语: 尚未验证/);
   assert.equal(await page.locator(".accessibility-record .detail-subtitle").count(), 0);
-  assert.match(await page.locator(".epg-list").innerText(), /直播节目表页面/);
+  assert.match(await page.locator(".epg-list").innerText(), /节目表页面/);
   assert.match(await page.locator(".evidence-note").innerText(), /^证据来源。/);
   assert.match(await page.locator(".evidence-note a").first().innerText(), /官方观看页面|支持来源/);
   assert.equal(await page.locator(".research-note-disclosure summary").innerText(), "目录的英文研究说明");
-  assert.match(await page.locator('[data-channel-id="spain-congreso-directo-3"] + .visually-hidden').innerText(), /尚未启用观看/);
+  assert.match(await page.locator('#norway-stortinget-description').innerText(), /请使用官方网站，因为这里未嵌入播放。/);
 
   const search = page.locator("#search");
   await search.focus();

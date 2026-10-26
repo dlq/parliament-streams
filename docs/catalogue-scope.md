@@ -141,7 +141,11 @@ it does not create a general council-inclusion rule.
 ## Publication and other surfaces
 
 Only an eligible institution with a validated official viewing service is
-promoted. Preserve the evidence for source ownership, chamber/committee
+promoted. The published catalogue must offer a usable viewing route: direct
+playback, an approved provider embed or an official viewing link. Unready feed
+variants stay in `candidates/` with their evidence and review holds; they do not
+belong in the viewing catalogue. The legislature inventory retains eligible
+bodies even when no usable source has been published. Preserve the evidence for source ownership, chamber/committee
 identity, access, source conditions and accessibility. An archive or audio
 service may be useful when accurately described.
 

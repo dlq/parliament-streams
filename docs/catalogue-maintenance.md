@@ -9,6 +9,12 @@ Apply the [catalogue scope rule](catalogue-scope.md) before promoting a new
 institution: legislative authority matters; a council's public meetings alone
 do not make it eligible.
 
+Research-only sources belong in `candidates/`, with status `researching`, rather
+than the published viewing catalogue. Validation rejects `research_only` records
+in the catalogue and in ready or promoted candidates. Preserve full evidence and
+review history when moving an unready feed back to research. A usable official
+link can qualify independently of direct playback or rebroadcast permission.
+
 ## Protecting The Default Branch
 
 The active [Protect main history ruleset](https://github.com/dlq/parliament-streams/rules/25801215)
@@ -238,8 +244,8 @@ uv run parliament-streams playback-policy-audit \
 The playback-policy audit is local and does not make network requests. It
 reports review tensions such as `native_playback` entries whose permission
 status is still pending, `link_out` entries that retain a validated playback
-URL as evidence, and `research_only` entries that keep a playback URL for
-future review.
+URL as evidence. It also recognizes legacy research-only postures, but
+publication validation now confines those records to candidates.
 
 `.github/workflows/catalogue-audit.yml` runs these checks daily and uploads the
 reports without committing transient results. Its Sunday job generates a full
