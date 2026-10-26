@@ -50,6 +50,14 @@
     // translations that accidentally reused a page title or an About label.
     for (const navigation of document.querySelectorAll(".header-inner > nav")) {
       navigation.setAttribute("aria-label", text("navigation"));
+      const dataLink = navigation.querySelector("[data-project-navigation]");
+      if (dataLink) {
+        const dataUrl = new URL("data.html", window.location.href);
+        dataUrl.searchParams.set("lang", locale);
+        dataLink.textContent = text("title");
+        dataLink.href = dataUrl.href;
+        dataLink.lang = locale;
+      }
     }
     for (const home of document.querySelectorAll(".header-inner > a.brand")) {
       home.setAttribute("aria-label", text("home"));

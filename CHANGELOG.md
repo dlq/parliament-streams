@@ -1,5 +1,12 @@
 # Changelog
 
+## 26 October — Data And Method In Main Navigation
+
+Replace the GitHub header link with Data and method on all five pages, with
+localized labels and language-preserving links in all 23 locales. Mark the page
+as current in its own header. Keep the existing Code and contribution links.
+Show all five destinations on phones in two balanced rows at narrow widths.
+
 ## 26 October — Further EPG Coverage And Calendar Contracts
 
 Add exact-channel Germany Bundestag TV1 and Ireland Oireachtas TV collectors,

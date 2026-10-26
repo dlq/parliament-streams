@@ -182,6 +182,17 @@ async function assertPageMetadata(page, path = '') {
   assert.equal(pageNode.name, await page.title());
   assert.equal(pageNode.description, description);
   assert.equal(pageNode.inLanguage, await page.locator('html').getAttribute('lang'));
+  const navigation = page.locator('.header-inner > nav');
+  assert.equal(await navigation.locator('a:visible').count(), 5);
+  const dataLink = navigation.locator('[data-project-navigation]');
+  const locale = await page.locator('html').getAttribute('lang');
+  assert.equal(await dataLink.innerText(), await page.evaluate((code) => window.ParliamentStreamsProjectI18n.message(code, 'title'), locale));
+  const destination = new URL(await dataLink.getAttribute('href'));
+  assert(destination.pathname.endsWith('/data.html'));
+  assert.equal(destination.searchParams.get('lang'), locale);
+  assert.equal(await dataLink.getAttribute('target'), null);
+  assert.equal(await dataLink.getAttribute('aria-current'), path === 'data.html' ? 'page' : null);
+  assert.equal(await navigation.locator('a[href*="github.com"]').count(), 0);
 }
 
 async function assertIptvDisclosure(page) {
@@ -891,8 +902,8 @@ try {
   await page.reload();
   await page.waitForSelector(".channel-button");
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
-  assert.equal(await page.locator("#primary-navigation > a:visible").count(), 4);
-  assert.equal(await page.locator("#primary-navigation .github-link").isVisible(), false);
+  assert.equal(await page.locator("#primary-navigation > a:visible").count(), 5);
+  assert.equal(await page.locator("#primary-navigation [data-project-navigation]").isVisible(), true);
   assert((await page.locator("#primary-navigation > a:visible").first().boundingBox()).height >= 40);
   assert((await page.locator("#search").boundingBox()).y < 800);
   await page.locator(".channel-button").first().click();
@@ -1007,7 +1018,7 @@ try {
   );
   await schedulePage.setViewportSize({ width: 320, height: 800 });
   assert.equal(await schedulePage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
-  assert.equal(await schedulePage.locator("#schedule-primary-navigation > a:visible").count(), 4);
+  assert.equal(await schedulePage.locator("#schedule-primary-navigation > a:visible").count(), 5);
   await schedulePage.locator('.iptv-disclosure > summary').click();
   assert.equal(await schedulePage.locator('.iptv-disclosure').getAttribute('lang'), 'fr');
   assert.equal(await schedulePage.locator('.iptv-disclosure > summary').innerText(), 'Utiliser dans une application IPTV');
@@ -1289,7 +1300,7 @@ try {
   await mapPage.reload();
   await mapPage.waitForSelector(".map-country.is-documented");
   assert.equal(await mapPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
-  assert.equal(await mapPage.locator("#map-primary-navigation > a:visible").count(), 4);
+  assert.equal(await mapPage.locator("#map-primary-navigation > a:visible").count(), 5);
   assert((await mapPage.locator("#world-map").boundingBox()).height <= 220);
   assert((await mapPage.locator("#map-detail .text-link").boundingBox()).height >= 24, "The complete-catalogue link must retain a full mobile pointer target");
   await assertNoAxeViolations(mapPage, "Mobile coverage map");
@@ -1446,7 +1457,7 @@ try {
   await institutionsPage.setViewportSize({ width: 320, height: 800 });
   await institutionsPage.locator("#institution-country").selectOption("Canada");
   assert.equal(await institutionsPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
-  assert.equal(await institutionsPage.locator("#institutions-navigation > a:visible").count(), 4);
+  assert.equal(await institutionsPage.locator("#institutions-navigation > a:visible").count(), 5);
   await assertNoAxeViolations(institutionsPage, "Mobile localized legislature inventory");
   const inventoryFileUrl = new URL("../site/institutions.html", import.meta.url);
   inventoryFileUrl.search = "?lang=en&q=Alberta";

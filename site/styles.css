@@ -123,7 +123,7 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   :root { --page-title-size: clamp(2rem, 10.5vw, 2.25rem); --page-top-space: 1.4rem; --page-intro-space: 1rem; --section-title-size: 1.7rem; }
   .page-intro .lede { font-size: .93rem; }
   .header-inner, main, .site-footer { width: min(100% - 2rem, 1240px); }
-  .header-inner { height: auto; min-height: 94px; grid-template-columns: minmax(0, 1fr) auto; gap: .55rem .75rem; padding-top: .55rem; }.brand { gap: .55rem; font-size: .9rem; }.brand-mark { width: 23px; height: 23px; flex-basis: 23px; } nav { display: grid; grid-column: 1 / -1; grid-row: 2; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; gap: 0; border-top: 1px solid var(--faint); } nav > a { display: flex; align-items: center; justify-content: center; min-height: 40px; padding: .25rem; font-size: .72rem; text-align: center; } nav > a + a { border-left: 1px solid var(--faint); } nav > .github-link { display: none; }.locale-control { grid-column: 2; grid-row: 1; }.locale-control select { max-width: 132px; }
+  .header-inner { height: auto; min-height: 94px; grid-template-columns: minmax(0, 1fr) auto; gap: .55rem .75rem; padding-top: .55rem; }.brand { gap: .55rem; font-size: .9rem; }.brand-mark { width: 23px; height: 23px; flex-basis: 23px; } nav { display: grid; grid-column: 1 / -1; grid-row: 2; grid-template-columns: repeat(5, minmax(0, 1fr)); width: 100%; gap: 0; border-top: 1px solid var(--faint); } nav > a { display: flex; align-items: center; justify-content: center; min-height: 40px; padding: .25rem; font-size: .72rem; text-align: center; } nav > a + a { border-left: 1px solid var(--faint); }.locale-control { grid-column: 2; grid-row: 1; }.locale-control select { max-width: 132px; }
   nav a[aria-current="page"] { text-decoration-thickness: 2px; text-underline-offset: .35rem; }
   .intro { min-height: 320px; background-position: 55% center; }.intro-inner { width: min(100% - 2rem, 1240px); padding: 2rem 0 1.5rem; }.intro .section-label { margin-bottom: .45rem; } h1 { font-size: 2.35rem; line-height: 1; }.lede { margin-top: .8rem; font-size: .92rem; line-height: 1.45; }.catalogue-stats { margin-top: .9rem; }.hero-credit { width: auto; max-width: 100%; margin-top: 1rem; font-size: .62rem; }
   .catalogue-section { padding: 1.1rem 0 4rem; }.catalogue-heading { align-items: start; flex-direction: column; gap: .7rem; margin-bottom: 1rem; }.catalogue-heading h2 { font-size: 2rem; }
@@ -233,7 +233,7 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .row-direct-watch { display: block; margin: calc(.7rem + 1px) 0 .25rem; }
 }
 
-/* Keep the four page links readable between phone and full desktop widths. */
+/* Keep all five page links readable between phone and full desktop widths. */
 @media (min-width: 681px) and (max-width: 1100px) {
   .header-inner { height: auto; min-height: 100px; grid-template-columns: minmax(0, 1fr) auto; gap: .55rem 1rem; padding-top: .75rem; }
   .locale-control { grid-column: 2; grid-row: 1; }
@@ -245,10 +245,10 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .header-inner nav > a { min-width: 0; overflow-wrap: break-word; hyphens: none; }
 }
 @media (max-width: 420px) {
-  .header-inner nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .header-inner nav > a { min-height: 44px; padding: .45rem .65rem; font-size: .8rem; }
-  .header-inner nav > a:nth-of-type(odd) { border-left: 0; }
-  .header-inner nav > a:nth-of-type(n + 3):not(.github-link) { border-top: 1px solid var(--faint); }
+  .header-inner nav { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .header-inner nav > a { grid-column: span 2; min-height: 44px; padding: .45rem .4rem; font-size: .8rem; }
+  .header-inner nav > a:nth-of-type(n + 4) { grid-column: span 3; border-top: 1px solid var(--faint); }
+  .header-inner nav > a:nth-of-type(3n + 1) { border-left: 0; }
   .intro-inner { padding: .9rem 0 .75rem; }
   .intro .lede { margin-top: .45rem; }
   .hero-credit { margin-top: .55rem; }
