@@ -53,6 +53,7 @@ def probe(name: str, url: str, headers: dict[str, str]) -> dict[str, object]:
                             "Via",
                             "X-Cache",
                             "CF-Mitigated",
+                            "X-Amz-Cf-Pop",
                         ]
                         if k in response.headers
                     },
@@ -110,6 +111,16 @@ def main() -> None:
         ("published-script", ROOT + "js/ww_index.js?T=20250204", {}),
         ("collector", api, {}),
         ("published-ajax-headers", api, AJAX),
+        (
+            "browser-compatible-client",
+            api,
+            {
+                **AJAX,
+                "User-Agent": "Mozilla/5.0 (compatible; ParliamentStreams/0.1; +https://github.com/dlq/parliament-streams)",
+                "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+            },
+        ),
+        ("generic-http-client", api, {**AJAX, "User-Agent": "curl/8.5.0"}),
         ("unescaped-date", ROOT + "api/get_program.php?ch=ly1&date=" + day, AJAX),
         (
             "canonical-host-without-www",
