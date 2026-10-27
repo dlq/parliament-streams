@@ -7,6 +7,7 @@ import json
 import platform
 import re
 import ssl
+import subprocess
 import time
 from datetime import UTC, datetime
 from html import unescape
@@ -146,6 +147,35 @@ def main() -> None:
         results.append(row)
         print(json.dumps(row, ensure_ascii=False), flush=True)
         time.sleep(0.5)
+    curl = subprocess.run(
+        [
+            "curl",
+            "--silent",
+            "--show-error",
+            "--max-time",
+            "15",
+            "--max-filesize",
+            str(LIMIT),
+            "--user-agent",
+            AGENT,
+            "--write-out",
+            "\n%{http_code}",
+            api,
+        ],
+        capture_output=True,
+        check=False,
+    )
+    body, _, code = curl.stdout.rpartition(b"\n")
+    results.append(
+        {
+            "name": "curl-transport",
+            "url": api,
+            "exit_code": curl.returncode,
+            "status": code.decode("ascii", errors="replace"),
+            "sample_sha256": hashlib.sha256(body[:LIMIT]).hexdigest(),
+            "cloudfront_request_blocked": b"Request blocked" in body,
+        }
+    )
     report["results"] = results
     Path("taiwan-api-diagnostic.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n"
