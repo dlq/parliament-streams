@@ -30,6 +30,7 @@
     const minimize = panel.querySelector("[data-minimize-viewer]");
     const text = (key) => window.ParliamentStreamsViewerI18n.message(panel.lang, key);
     move.textContent = panel.querySelector("#detail-title").textContent;
+    move.setAttribute("aria-label", `${move.textContent} — ${text("move")}`);
     function minimized(value) {
       if (value && !panel.classList.contains("is-minimized") && !bounds) bounds = rectangle(panel);
       panel.classList.toggle("is-minimized", value);
