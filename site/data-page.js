@@ -26,7 +26,7 @@
       link.href = url.href;
     }
     for (const link of document.querySelectorAll("[data-asset-key]")) {
-      link.setAttribute("aria-label", `${project.message(locale, link.dataset.assetKey)} (${link.textContent.trim()})`);
+      link.setAttribute("aria-label", `${link.textContent.trim()} — ${project.message(locale, link.dataset.assetKey)}`);
     }
     selector.value = locale;
     window.ParliamentStreamsSeo.update(`${project.message(locale, "title")} · Parliament Streams`, project.message(locale, "intro"), locale);
