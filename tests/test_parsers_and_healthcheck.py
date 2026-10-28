@@ -11,8 +11,6 @@ from unittest.mock import MagicMock, patch
 from parliament_streams import healthcheck
 from parliament_streams.scrapers import __main__ as scraper_cli
 from parliament_streams.scrapers import (
-    brazil_tv_camara,
-    canada_harmony,
     cpac,
     ebs,
     european_parliament,
@@ -23,9 +21,8 @@ from parliament_streams.scrapers import (
     quebec_webdiffusion,
     uk_parliament,
     un_webtv,
-    youtube_live,
 )
-from parliament_streams.scrapers.common import clean_html, first_match, normalized_events, parse_iso
+from parliament_streams.scrapers.common import clean_html, normalized_events, parse_iso
 
 
 class ParserTests(unittest.TestCase):
@@ -87,27 +84,6 @@ class ParserTests(unittest.TestCase):
 
         request = un_webtv.request_specs(datetime(2026, 8, 25, 2, tzinfo=UTC))[0]
         self.assertTrue(request["url"].endswith("/2026-08-24"))
-
-    def test_youtube_live_parser_ignores_unresolved_channel_page(self):
-        html = '<link rel="canonical" href="https://www.youtube.com/@AUSParliamentLive/live">'
-        self.assertEqual(youtube_live.parse(html, channel_id="australia-parliament-youtube"), {})
-
-    def test_youtube_live_parser_uses_explicit_watch_metadata(self):
-        html = """
-        <link rel="canonical" href="https://www.youtube.com/watch?v=abcDEF12345">
-        <meta property="og:title" content="Parliament live - YouTube">
-        <script>{"isLiveNow":true,"urlCanonical":"https://www.youtube.com/watch?v=abcDEF12345"}</script>
-        """
-        parsed = youtube_live.parse(
-            html,
-            now=datetime(2026, 8, 19, 12, tzinfo=UTC),
-            channel_id="australia-parliament-youtube",
-        )["australia-parliament-youtube"]
-        self.assertEqual(parsed["current_event_title"], "Parliament live")
-        self.assertEqual(parsed["current_event_time"], "Live now")
-        self.assertEqual(parsed["current_event_url"], "https://www.youtube.com/watch?v=abcDEF12345")
-        self.assertEqual(parsed["current_event_id"], "abcDEF12345")
-        self.assertEqual(parsed["current_event_status"], "Live now")
 
     def test_italian_senate_json_schedule(self):
         payload = json.dumps(
@@ -257,8 +233,6 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(
             clean_html("<strong>Hello</strong><br>world &amp; friends"), "Hello world & friends"
         )
-        self.assertEqual(first_match("A schedule starts at noon", r"starts at (\w+)"), "noon")
-        self.assertIsNone(first_match("no match", r"starts at (\w+)"))
         self.assertEqual(parse_iso("2026-08-15T12:00:00Z"), datetime(2026, 8, 15, 12, tzinfo=UTC))
         self.assertIsNone(parse_iso("not a date"))
 
@@ -300,76 +274,6 @@ class ParserTests(unittest.TestCase):
         )
         self.assertEqual(empty, {})
 
-    def test_brazil_and_new_zealand_parsers(self):
-        brazil_html = """<tr><td><span>09:00</span></td><td><span>News</span></td></tr>
-        <tr><td><span>12:00</span></td><td><span>Chamber <b>session</b></span></td></tr>"""
-        brazil = brazil_tv_camara.parse(brazil_html, datetime(2026, 1, 15, 14, tzinfo=UTC))[
-            "brazil-tv-camara"
-        ]
-        self.assertEqual(brazil["current_event_title"], "News")
-        self.assertEqual(brazil["next_event_title"], "Chamber session")
-        self.assertEqual(brazil["current_event_start"], "2026-01-15T12:00:00Z")
-        self.assertEqual(brazil["next_event_start"], "2026-01-15T15:00:00Z")
-        self.assertEqual(brazil_tv_camara.parse("<p>No programme</p>"), {})
-
-        calendar = "<p>The House next meets on Tuesday at 2pm.</p>"
-        new_zealand = new_zealand_parliament.parse(calendar, datetime(2026, 1, 15, 15, tzinfo=UTC))
-        self.assertEqual(
-            new_zealand["new-zealand-parliament"]["next_event_time"], "Tuesday at 2pm."
-        )
-        self.assertIsNone(new_zealand["new-zealand-parliament"]["current_event_title"])
-
-        new_calendar = """
-        <span class="calendar-date">September 2026</span>
-        <div class="calendar-grid">
-          <button class="day-button day-not-in-month house-sitting-day">
-            <span class="date-number">31</span>
-          </button>
-          <button class="day-button house-sitting-day">
-            <span class="date-number">3</span>
-          </button>
-          <button class="day-button house-sitting-day">
-            <span class="date-number">15</span>
-          </button>
-        </div>
-        """
-        parsed_new_calendar = new_zealand_parliament.parse(
-            new_calendar, datetime(2026, 9, 5, tzinfo=UTC)
-        )["new-zealand-parliament"]
-        self.assertIsNone(parsed_new_calendar["current_event_title"])
-        self.assertEqual(parsed_new_calendar["next_event_title"], "House next meets")
-        self.assertEqual(parsed_new_calendar["next_event_time"], "Tuesday, 15 September 2026")
-
-        current_calendar = new_zealand_parliament.parse(
-            new_calendar, datetime(2026, 9, 3, 2, tzinfo=UTC)
-        )["new-zealand-parliament"]
-        self.assertEqual(current_calendar["current_event_title"], "House sitting day")
-
-        protected_script_on_calendar = """
-        <title>Parliament Calendar</title>
-        <script src="https://validate.perfdrive.com/stormcaster.js"></script>
-        <span class="house-session__text">
-          The House next meets on Tuesday, 15 September 2026
-        </span>
-        """
-        parsed_calendar = new_zealand_parliament.parse(protected_script_on_calendar)
-        self.assertIsNone(parsed_calendar["new-zealand-parliament"]["current_event_title"])
-        self.assertEqual(
-            parsed_calendar["new-zealand-parliament"]["next_event_time"],
-            "Tuesday, 15 September 2026",
-        )
-        self.assertEqual(new_zealand_parliament.parse("No calendar listing"), {})
-        for blocked_html in (
-            "<title>CAPTCHA page</title>",
-            "Verifying your browser before proceeding...",
-            '<script src="https://verify.perfdrive.com/challenge.js"></script>',
-        ):
-            with (
-                self.subTest(blocked_html=blocked_html),
-                self.assertRaisesRegex(ValueError, "bot-protection page"),
-            ):
-                new_zealand_parliament.parse(blocked_html)
-
     def test_schedule_sources_use_current_reachable_calendar_urls(self):
         self.assertEqual(
             ontario_calendar.SOURCE["url"],
@@ -380,85 +284,6 @@ class ParserTests(unittest.TestCase):
             new_zealand_parliament.SOURCE["url"],
             "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting",
         )
-
-    def test_canada_harmony_parser_extracts_upcoming_cards(self):
-        html = """
-        <html lang="en"><script>var language = "en";</script>
-        <div class="divEvent" >
-          <a href="/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15441"
-             title="DVSC meeting no. 1">
-            <table class="eventTable eventTableNotStarted">
-              <tr><td colspan="2" class="tdEventTitle">
-                <span>DVSC meeting no. 1 (Room B45)</span>
-                <div class="eventStatus eventTableNotStarted">Not Started</div>
-              </td></tr>
-              <tr><td class="tdEventText"><div class="eventText">
-                <div class="eventDesc">Subcommittee on Diversity</div>
-                <div class="eventTime">10:00 AM-11:30 AM</div>
-                <div class="eventDate">Thu, Aug 27, 2026</div>
-              </div></td></tr>
-            </table>
-          </a>
-        </div>
-        <div class="divEvent" >
-          <a href="/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15434"
-             title="Senate sitting no. 87">
-            <table class="eventTable eventTableNotStarted">
-              <tr><td colspan="2" class="tdEventTitle">
-                <span>Senate sitting no. 87 (Senate Chamber)</span>
-              </td></tr>
-              <tr><td class="tdEventText"><div class="eventText">
-                <div class="eventDesc">Senate sitting no. 87</div>
-                <div class="eventTime">6:00 PM-10:00 PM</div>
-                <div class="eventDate">Mon, Sep 28, 2026</div>
-              </div></td></tr>
-            </table>
-          </a>
-        </div>
-        """
-        parsed = canada_harmony.parse(
-            html,
-            now=datetime(2026, 8, 19, 12, tzinfo=UTC),
-            channel_id="canada-senate-senvu",
-        )["canada-senate-senvu"]
-        self.assertIsNone(parsed["current_event_title"])
-        self.assertIsNone(parsed["current_event_time"])
-        self.assertEqual(
-            parsed["next_event_url"],
-            "https://senparlvu.parl.gc.ca/Harmony/en/PowerBrowser/PowerBrowserV2/20260819/-1/15441",
-        )
-        self.assertEqual(
-            parsed["next_event_title"], "DVSC meeting no. 1 - Subcommittee on Diversity"
-        )
-        self.assertEqual(parsed["next_event_id"], "15441")
-        self.assertEqual(parsed["next_event_status"], "Not Started")
-        self.assertEqual(parsed["next_event_location"], "Room B45")
-        self.assertEqual(parsed["next_event_language"], "en")
-
-    def test_canada_harmony_collects_house_and_senate_pages(self):
-        responses = {
-            canada_harmony.HOUSE_URL: "Sorry there are no upcoming events",
-            canada_harmony.SENATE_URL: (
-                '<div class="divEvent"><a href="/event" title="Senate sitting no. 87">'
-                '<table><tr><td colspan="2" class="tdEventTitle">'
-                "<span>Senate sitting no. 87 (Senate Chamber)</span></td></tr>"
-                '<tr><td><div class="eventDesc">Senate sitting no. 87</div>'
-                '<div class="eventTime">6:00 PM-10:00 PM</div>'
-                '<div class="eventDate">Mon, Sep 28, 2026</div></td></tr></table></a></div>'
-            ),
-        }
-
-        def fetcher(spec, _timeout, _retries):
-            return responses[spec["url"]]
-
-        parsed, urls = canada_harmony.collect(
-            fetcher,
-            now=datetime(2026, 8, 19, 12, tzinfo=UTC),
-            timeout=3,
-            retries=0,
-        )
-        self.assertEqual(urls, [canada_harmony.HOUSE_URL, canada_harmony.SENATE_URL])
-        self.assertEqual(list(parsed), ["canada-senate-senvu"])
 
     def test_european_parliament_parser_selects_current_and_next(self):
         payload = """{
@@ -490,12 +315,12 @@ class ParserTests(unittest.TestCase):
 
     def test_scraper_cli_writes_json_from_saved_input(self):
         with tempfile.TemporaryDirectory() as directory:
-            input_path = Path(directory) / "calendar.html"
-            input_path.write_text("The House next meets on Wednesday.", encoding="utf-8")
+            input_path = Path(directory) / "calendar.json"
+            input_path.write_text("[]", encoding="utf-8")
             output = io.StringIO()
             with contextlib.redirect_stdout(output):
                 self.assertEqual(scraper_cli.main(["new-zealand-parliament", str(input_path)]), 0)
-        self.assertIn('"new-zealand-parliament"', output.getvalue())
+        self.assertEqual(json.loads(output.getvalue()), {})
 
     def test_scraper_cli_rejects_wrong_number_of_input_files(self):
         with tempfile.TemporaryDirectory() as directory:

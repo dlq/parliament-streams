@@ -14,38 +14,39 @@ from .scrapers.common import NormalizedScheduleEvent
 # A public institutional calendar is not evidence of a particular broadcast feed.
 # New sources default to unreviewed until their feed mapping is established.
 LINEAR_GUIDE_CHANNELS_BY_SCRAPER: dict[str, set[str]] = {
+    # The official portal explicitly pairs scheduleChannelId=1 and liveStreamId=1.
+    # Only its default feed is covered; the seven other live streams are excluded.
+    "rhode-island-cablecast": {"us-ri-capitol-tv"},
     "germany-bundestag-tv1": {"germany-bundestag-1"},
     "ireland-oireachtas-tv-guide": {"ireland-oireachtas-tv"},
     "cpac": {"cpac-ca"},
-    "brazil-tv-camara": {"brazil-tv-camara"},
     "ebs-grid": {"eu-audiovisual-ebs"},
     "italian-senate-palimpsest": {"italy-senate"},
     "dutch-debat-direct": {
         "netherlands-tweede-kamer",
         "netherlands-tweede-kamer-aletta-jacobszaal",
     },
-    "spain-canal-parlamento-weekly": {"spain-canal-parlamento"},
-    "quebec-canal-assemblee": {"quebec-canal-assemblee"},
     "brazil-tv-senado-grid": {"brazil-tv-senado-official"},
-    "czech-chamber-plenary": {"czech-chamber-of-deputies"},
     "estonia-riigikogu-plenary": {"estonia-riigikogu-live-1"},
     "knesset-tv-guide": {"israel-knesset-channel"},
 }
 SOURCE_SCOPES = {
+    "brazil-camara-events-api": "institutional_agenda",
+    "california-assembly-calendar": "institutional_agenda",
+    "harmony-json": "event_directory",
+    "us-senate-hearings-xml": "institutional_agenda",
+    "new-york-senate-calendar": "institutional_agenda",
     "italy-camera-webtv-events": "event_directory",
     "taiwan-parliamentary-tv-programmes": "event_directory",
     "norway-stortinget-calendar": "institutional_agenda",
     "sweden-riksdag-calendar": "institutional_agenda",
-    "mauritius-parliament-tv-guide": "event_directory",
     "europarl-webstreaming": "event_directory",
-    "canada-harmony": "event_directory",
     "quebec-webdiffusion": "event_directory",
     "un-webtv-schedule": "event_directory",
     "new-zealand-parliament": "institutional_agenda",
     "ontario-calendar": "institutional_agenda",
     "portugal-open-data-agenda": "institutional_agenda",
     "uk-parliament": "institutional_agenda",
-    "youtube-live": "live_event_metadata",
 }
 
 
@@ -211,6 +212,8 @@ def assess_schedules(catalogue: Catalogue, snapshot: ScheduleSnapshot) -> Schedu
                 reasons[index].add("cancelled")
             if not event["title"].strip():
                 reasons[index].add("empty_title")
+            if time_provenance(event, scraper_id)[0] == "collection_date":
+                reasons[index].add("assumed_broadcast_date")
             if not event.get("start") or not event.get("end"):
                 reasons[index].add("missing_time_range")
                 continue

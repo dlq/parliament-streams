@@ -1,5 +1,50 @@
 # Changelog
 
+## 2026-10-28 — Five Structured Schedule Collectors
+
+- Add Câmara event JSON, California calendar-export parameters, Harmony event
+  JSON, Senate hearing XML and New York session ICS, covering seven viewing records.
+- Preserve source clocks and identifiers, reject ambiguous times and incomplete
+  pagination, and keep meeting starts outside linear guide mappings.
+- Document the Senate/New York live-access holds separately from parser tests.
+
+## 2026-10-28 — Retire Presentation-Based Collectors
+
+- Remove nine collectors and their parser-specific tests; retain 21 structured or
+  machine-readable collectors, with Bundestag as one documented hybrid exception.
+- Preserve all viewing sources and official schedule links, remove obsolete guide
+  mappings and prevent cached retired ranges from entering current exports.
+- Remove New Zealand’s legacy HTML/status parser and unused shared helpers;
+  refresh coverage data and the structured-replacement discovery register.
+
+## 2026-10-28 — Prefer Structured Schedule Sources
+
+- Prioritize supported XMLTV, JSON/XML and iCalendar/ICS, then event/broadcast
+  JSON-LD, microdata/RDFa and first-party machine-readable data before plain HTML.
+- Clarify that source-kind backlog groups are not a completed format audit, and
+  that structured timestamps still require calendar/broadcast semantic checks.
+
+## 2026-10-28 — Three Prioritized Programme Collectors
+
+- Add Rhode Island’s explicitly paired default-channel Cablecast guide, with
+  broadcast run IDs/ranges and existing XMLTV overlap quarantine.
+- Add start-only public commission broadcasts for France and broadcast-marked
+  Luxembourg agenda events, preserving source-zone and identity checks.
+- Share strict French dates with Quebec, refresh generated coverage data and
+  document all remaining planned inputs with known holds.
+
+## 2026-10-28 — Stabilize Existing Schedule Collectors
+
+- Keep Ireland’s complete programmes when another slot lacks an end; make unused
+  Italian player/room metadata optional while preserving identity/time checks.
+- Share JSON shape validation, reject ambiguous UK clocks and avoid indefinitely
+  live start-only European events. Preserve full calendars over provider Now/Next
+  and successful current data over stale fallback results.
+- Correct four Ontario room parser associations; exclude assumed broadcast dates
+  from XMLTV and validate the new quality-report reason.
+- Record a fresh 27-source collection and rank a small future shortlist, led by
+  Rhode Island Cablecast. No new collector or viewing/rights admission this pass.
+
 ## 2026-10-26 — Italian and Taiwanese programme listings
 
 - Collect featured upcoming Italian Chamber WebTV broadcasts with official event

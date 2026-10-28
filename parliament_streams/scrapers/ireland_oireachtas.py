@@ -101,16 +101,9 @@ class _GuideHTML(HTMLParser):
                 raise ValueError("Oireachtas TV programme has a backwards time range")
             if self.start.astimezone(ZoneInfo(TIMEZONE)).date() != self.day:
                 raise ValueError("Oireachtas TV programme disagrees with its dated guide group")
-            if (
-                self.events
-                and self.events[-1]["start"].astimezone(ZoneInfo(TIMEZONE)).date() == self.day
-                and "end" not in self.events[-1]
-            ):
-                raise ValueError("Oireachtas TV open-ended slot is not terminal in its guide day")
             event: ScheduleEvent = {"start": self.start, "title": title, "url": PAGE_URL}
-            # The source repeats start=end for each terminal daily slot. That is
-            # an unknown end, not an actual zero-length programme or a licence
-            # to bridge the following day's first listing.
+            # Equal instants mark an unknown end, including interior slots.
+            # Preserve the other programmes without guessing this slot's end.
             if self.end > self.start:
                 event["end"] = self.end
             self.events.append(event)

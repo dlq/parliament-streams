@@ -36,7 +36,10 @@ class DataProductTests(unittest.TestCase):
         self.addCleanup(self.temporary.cleanup)
         self.directory = Path(self.temporary.name)
         self.catalogue = load_catalogue()
-        self.channel = next(c for c in self.catalogue["channels"] if c["id"] == "brazil-tv-camara")
+        self.channel = next(
+            c for c in self.catalogue["channels"] if c["id"] == "estonia-riigikogu-live-1"
+        )
+        self.channel["availability"] = "always_on"  # Controlled playlist fixture.
         self.catalogue["channels"] = [self.channel]
         write_json(self.directory / "channels.json", self.catalogue)
         fallbacks = load_fallbacks()
@@ -64,6 +67,7 @@ class DataProductTests(unittest.TestCase):
             "id": "fixture",
             "identifier_kind": "official",
             "title": "Budget & scrutiny",
+            "start_basis": "source",
             "status": "scheduled",
             "start": "2026-10-25T14:00:00Z",
             "end": "2026-10-25T15:00:00Z",
@@ -83,7 +87,7 @@ class DataProductTests(unittest.TestCase):
                         "next_event_title": event["title"],
                         "next_event_time": event["start"],
                         "confidence": "high",
-                        "scraper": "brazil-tv-camara",
+                        "scraper": "estonia-riigikogu-plenary",
                         "source_url": "https://example.org/schedule",
                         "fetched_at": timestamp,
                         "last_success_at": timestamp,
@@ -91,7 +95,7 @@ class DataProductTests(unittest.TestCase):
                     }
                 },
                 "sources": {
-                    "brazil-tv-camara": {
+                    "estonia-riigikogu-plenary": {
                         "status": "ok",
                         "fetched_at": timestamp,
                         "urls": ["https://example.org/schedule"],
@@ -336,7 +340,7 @@ class DataProductTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unrecorded source"):
             validate_data_products(self.directory)
         snapshot["channels"][self.channel["id"]]["scraper"] = "uk-parliament"
-        snapshot["sources"]["uk-parliament"] = snapshot["sources"].pop("brazil-tv-camara")
+        snapshot["sources"]["uk-parliament"] = snapshot["sources"].pop("estonia-riigikogu-plenary")
         write_snapshot(self.directory / "schedules.json", snapshot)
         self.quality(lambda r: r["channels"][self.channel["id"]].update(source="uk-parliament"))
         with self.assertRaisesRegex(ValueError, "feed mapping"):

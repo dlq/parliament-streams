@@ -7,7 +7,7 @@ from collections.abc import Callable
 from datetime import UTC, datetime
 from hashlib import sha256
 from html import unescape
-from typing import Literal, NotRequired, TypedDict
+from typing import Any, Literal, NotRequired, TypedDict, cast
 from zoneinfo import ZoneInfo
 
 TAG_RE = re.compile(r"<[^>]+>")
@@ -99,18 +99,25 @@ class ScheduleMetadata(TypedDict):
 ParsedSchedule = dict[str, ScheduleMetadata]
 
 
+def require_object(value: object, label: str) -> dict[str, Any]:
+    """Reject changed response shapes as source errors rather than parser crashes."""
+    if not isinstance(value, dict):
+        raise ValueError(f"{label} must be a JSON object")
+    return cast(dict[str, Any], value)
+
+
+def require_records(value: object, label: str) -> list[dict[str, Any]]:
+    """Recognize an explicit empty array, while rejecting malformed record lists."""
+    if not isinstance(value, list) or any(not isinstance(row, dict) for row in value):
+        raise ValueError(f"{label} must be a JSON array of objects")
+    return cast(list[dict[str, Any]], value)
+
+
 def clean_html(text: str) -> str:
     """Return readable text from small schedule snippets."""
     text = re.sub(r"<br\s*/?>", " ", text, flags=re.IGNORECASE)
     text = TAG_RE.sub("", text)
     return SPACE_RE.sub(" ", unescape(text)).strip()
-
-
-def first_match(text: str, pattern: str) -> str | None:
-    match = re.search(pattern, text, flags=re.IGNORECASE | re.DOTALL)
-    if not match:
-        return None
-    return match.group(1)
 
 
 def parse_iso(value: str) -> datetime | None:
@@ -215,11 +222,6 @@ def local_time_label(value: datetime, tz_name: str = "America/Toronto") -> str:
     local = value.astimezone(ZoneInfo(tz_name))
     suffix = "ET" if tz_name in {"America/Toronto", "America/New_York"} else local.tzname()
     return f"{local.strftime('%-I:%M %p')} {suffix}"
-
-
-def checked_label(now: datetime | None = None, tz_name: str = "America/Toronto") -> str:
-    now = now or datetime.now(UTC)
-    return f"Checked {local_time_label(now, tz_name)}"
 
 
 def build_upcoming_schedule(

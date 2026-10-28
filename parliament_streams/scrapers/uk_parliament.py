@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 from datetime import UTC, datetime, timedelta
-from typing import Any, cast
+from typing import Any
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
 
@@ -15,6 +15,8 @@ from .common import (
     ScraperSource,
     build_upcoming_schedule,
     clean_html,
+    localize_source_time,
+    require_records,
 )
 
 API_URL = "https://whatson-api.parliament.uk/calendar/events/list.json"
@@ -50,8 +52,8 @@ def _start_time(item: dict[str, Any]) -> datetime | None:
     if not time_text:
         return None
     try:
-        return datetime.strptime(f"{date_text} {time_text}", "%Y-%m-%d %H:%M").replace(
-            tzinfo=ZoneInfo("Europe/London")
+        return localize_source_time(
+            datetime.strptime(f"{date_text} {time_text}", "%Y-%m-%d %H:%M"), "Europe/London"
         )
     except ValueError:
         return None
@@ -83,7 +85,7 @@ def _title(item: dict[str, Any]) -> str:
 def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     events: list[ScheduleEvent] = []
-    for item in cast(list[dict[str, Any]], json.loads(payload)):
+    for item in require_records(json.loads(payload), "UK calendar"):
         if not _public_event(item):
             continue
         start = _start_time(item)

@@ -1,0 +1,256 @@
+{
+  "reviewed_on": "2026-10-28",
+  "before_collectors": 30,
+  "after_collectors": 21,
+  "catalogue_sources": 261,
+  "parser_connected_records": 35,
+  "records_without_active_collector": 226,
+  "implemented_metadata_urls": 24,
+  "retired": [
+    {
+      "id": "france-commission-broadcasts",
+      "source": {
+        "id": "france-commission-broadcasts",
+        "channel_ids": [
+          "france-national-assembly"
+        ],
+        "url": "https://event2.assemblee-nationale.fr/programme.php",
+        "method": "GET",
+        "notes": "Explicit public commission broadcast dates and starts. Parallel meetings; not a plenary calendar or a linear TV feed. Ends remain unknown."
+      }
+    },
+    {
+      "id": "luxembourg-broadcast-agenda",
+      "source": {
+        "id": "luxembourg-broadcast-agenda",
+        "channel_ids": [
+          "luxembourg-chamber-tv"
+        ],
+        "url": "https://www.chd.lu/fr/agenda",
+        "method": "GET",
+        "notes": "Current and next week, only explicitly broadcast-marked sessions/committees. Source starts only; midnight date markers and hidden live templates are not programme times."
+      }
+    },
+    {
+      "id": "mauritius-parliament-tv-guide",
+      "source": {
+        "id": "mauritius-parliament-tv-guide",
+        "channel_ids": [
+          "mauritius-national-assembly-parliament-tv"
+        ],
+        "url": "https://parliamenttv.govmu.org/Guide",
+        "method": "GET",
+        "notes": "Official dated Parliament TV event guide, with stable event IDs and Mauritius starts. An event directory, not a linear TV grid. Programme ends remain unknown."
+      }
+    },
+    {
+      "id": "czech-chamber-plenary",
+      "source": {
+        "id": "czech-chamber-plenary",
+        "channel_ids": [
+          "czech-chamber-of-deputies"
+        ],
+        "url": "https://www.psp.cz/sqw/hp.sqw?k=203",
+        "method": "GET",
+        "notes": "Only dated schuze Poslanecke snemovny blocks with official sitting links map to Stream1. Committee/social events are excluded; source supplies starts, with no invented ends."
+      }
+    },
+    {
+      "id": "spain-canal-parlamento-weekly",
+      "source": {
+        "id": "spain-canal-parlamento-weekly",
+        "channel_ids": [
+          "spain-canal-parlamento"
+        ],
+        "url": "https://www.congreso.es/programacion",
+        "method": "GET",
+        "headers": {
+          "User-Agent": "Mozilla/5.0",
+          "Accept": "text/html"
+        },
+        "notes": "Follows the official weekly broadcast link, using its displayed date range. Unknown 'Fin Anterior' starts and last daily ends remain unresolved. The public site currently requires an ordinary browser compatibility User-Agent."
+      }
+    },
+    {
+      "id": "quebec-canal-assemblee",
+      "source": {
+        "id": "quebec-canal-assemblee",
+        "channel_ids": [
+          "quebec-canal-assemblee"
+        ],
+        "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html",
+        "method": "GET",
+        "headers": {},
+        "notes": "Official weekly programme for the separate linear Canal de l'Assemblée (canal17); never copied to the canal01–14 event webcasts. Retains explicitly printed time ranges."
+      }
+    },
+    {
+      "id": "brazil-tv-camara",
+      "source": {
+        "id": "brazil-tv-camara",
+        "channel_ids": [
+          "brazil-tv-camara"
+        ],
+        "url": "https://www.camara.leg.br/tv/programacao-semanal",
+        "method": "GET",
+        "headers": {
+          "User-Agent": "Mozilla/5.0"
+        },
+        "notes": "Extracts time/title rows from the active tab of TV Camara's weekly schedule."
+      }
+    },
+    {
+      "id": "canada-harmony",
+      "source": {
+        "id": "canada-harmony",
+        "channel_ids": [
+          "canada-house-of-commons-parlvu",
+          "canada-senate-senvu"
+        ],
+        "urls": [
+          "https://parlvu.parl.gc.ca/Harmony/en",
+          "https://senparlvu.parl.gc.ca/Harmony/"
+        ],
+        "method": "GET",
+        "notes": "Parses server-rendered upcoming event cards from ParlVU and SenVu Harmony pages."
+      }
+    },
+    {
+      "id": "youtube-live",
+      "source": {
+        "id": "youtube-live",
+        "channel_ids": [
+          "uk-parliament-youtube",
+          "australia-parliament-youtube",
+          "costa-rica-assembly-youtube"
+        ],
+        "urls": [
+          "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+          "https://www.youtube.com/@AUSParliamentLive/live",
+          "https://www.youtube.com/@AsambleaCRC/live"
+        ],
+        "method": "GET",
+        "headers": {
+          "Accept-Language": "en-US,en;q=0.9"
+        },
+        "notes": "Checks official YouTube /live pages for explicit current watch metadata. It does not extract YouTube manifests and intentionally returns empty when a channel page does not expose a clear watch video."
+      }
+    }
+  ],
+  "retained_formats": {
+    "json": [
+      "brazil-tv-senado-grid",
+      "dutch-debat-direct",
+      "ebs-grid",
+      "estonia-riigikogu-plenary",
+      "europarl-webstreaming",
+      "italian-senate-palimpsest",
+      "new-zealand-parliament",
+      "portugal-open-data-agenda",
+      "quebec-webdiffusion",
+      "taiwan-parliamentary-tv-programmes",
+      "uk-parliament"
+    ],
+    "xml": [
+      "sweden-riksdag-calendar"
+    ],
+    "ical": [
+      "norway-stortinget-calendar"
+    ],
+    "embedded_json": [
+      "rhode-island-cablecast"
+    ],
+    "machine_readable_html": [
+      "cpac",
+      "ireland-oireachtas-tv-guide",
+      "italy-camera-webtv-events",
+      "knesset-tv-guide",
+      "ontario-calendar",
+      "un-webtv-schedule"
+    ],
+    "hybrid_exception": [
+      "germany-bundestag-tv1"
+    ]
+  },
+  "sole_hybrid_exception": "germany-bundestag-tv1",
+  "collection_generated_at": "2026-10-28T17:49:36Z",
+  "collection_counts": {
+    "channels": 16,
+    "complete": 6,
+    "current": 6,
+    "empty": 4,
+    "error": 1,
+    "events": 679,
+    "events_with_end": 450,
+    "events_with_official_id": 120,
+    "events_with_url": 318,
+    "fresh_channels": 16,
+    "ok": 16,
+    "stale_channels": 0,
+    "upcoming": 16
+  },
+  "quality_counts": {
+    "events": 679,
+    "exportable": 242,
+    "excluded": 437,
+    "channels_with_events": 16,
+    "excluded_missing_time_range": 229,
+    "excluded_overlapping_programme": 2,
+    "excluded_unverified_channel_mapping": 412
+  },
+  "xmltv_channel_definitions": 44,
+  "xmltv_populated_channels": 7,
+  "same_input_comparison": {
+    "snapshot_generated_at": "2026-10-28T16:06:46Z",
+    "original_exported_programmes": 246,
+    "exported_with_retired_mappings_removed": 246
+  },
+  "errors": {
+    "knesset-tv-guide": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 19,
+      "error": "HTTP 403",
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T17:49:36Z",
+      "last_success_at": "2026-10-26T04:57:43Z",
+      "outcome_detail": "fetch_or_parse_error",
+      "status": "error",
+      "urls": [
+        "https://www.knesset.tv/%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%9E%D7%A0%D7%92%D7%9F-%D7%91%D7%A2%D7%A8%D7%95%D7%A5/"
+      ],
+      "used_last_good": false
+    }
+  },
+  "artifact_hashes": {
+    "schedules.json": "0862c3a5bfcd33b8de8383199b7f6f543f3cd775b10455240f627bcd3681298b",
+    "epg-quality.json": "fa723fe1181835cbac4badf9107113b06468d61a094c5ffc52b8a571e2e39145",
+    "epg.xml": "79c4f6d1e00ad5916180b8f2815d0e8d31f731818ada3260e571f80a7fbc7b2b"
+  },
+  "catalogue_sha256": "9da9d4df807ed7493e42f017772765417ffa42aea235f6591ebd86398aebb709",
+  "backlog_counts": {
+    "catalogue_records": 261,
+    "registered_collectors": 21,
+    "records_with_implemented_source": 35,
+    "records_without_implemented_source": 226,
+    "records_with_any_planned_source": 236,
+    "planned_associations": 249,
+    "distinct_planned_inputs": 243,
+    "groups": {
+      "Broadcast and webcast schedule candidates": 20,
+      "Institutional calendars and meeting listings": 67,
+      "Recording, archive and navigation surfaces": 152,
+      "Structured-data and document candidates": 4
+    }
+  },
+  "verification": {
+    "python_tests": 457,
+    "javascript_tests": 9,
+    "strict_typechecked_source_files": 66,
+    "lint_format_and_data_products": "passed",
+    "browser_html_accessibility": "passed after migrating retired-source fixtures"
+  }
+}

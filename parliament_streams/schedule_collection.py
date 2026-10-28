@@ -391,7 +391,8 @@ def collect_schedules(
                         old_schedule, collected_at, timedelta(hours=stale_ttl_hours)
                     )
                     if retained:
-                        channels[channel_id] = retained
+                        if channel_id not in channels:
+                            channels[channel_id] = retained
                         source_channels[channel_id] = retained
                         used_last_good = True
             metrics = _source_metrics(source_channels)

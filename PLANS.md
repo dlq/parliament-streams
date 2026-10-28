@@ -1,6 +1,6 @@
 # Parliament Streams Plans
 
-This is the active roadmap, reviewed **26 October 2026**. Dated progress reports
+This is the active roadmap, reviewed **28 October 2026**. Dated progress reports
 and the previous detailed backlog are preserved in [roadmap history](docs/roadmap-history.md).
 Use [research status](docs/research-status.md) for evidence and
 [GitHub Actions](docs/github-actions.md) for implemented automation.
@@ -64,64 +64,54 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
 
 ## Scraper Work
 
-The [WebTV programme continuation](reports/epg/2026-10-26-webtv-programmes.md)
-brings the current 261-source catalogue to 47 parser-connected records and 27
-collectors, with 214 sources still awaiting extraction. It adds Italian Chamber
-featured broadcasts and Taiwan's official two-channel programme API. Keep their
-aggregate portals outside linear XMLTV; resolve separate feed records/mappings
-and dependable broadcast ends before expanding export. Taiwan's iVOD forecast
-still has a modern-TLS access hold; use the supported official programme API
-without weakening TLS checks.
+Use **official structured metadata**: XMLTV, JSON/XML APIs, iCalendar/ICS,
+event/broadcast JSON-LD, microdata/RDFa, embedded JSON and explicit machine-readable
+HTML fields. Generic SEO graphs, upload dates and placeholder meeting bounds do
+not establish broadcast programmes. See [source selection](docs/schedules-and-iptv.md#source-selection).
 
-The [hosted-runner access investigation](reports/epg/2026-10-27-taiwan-actions-access.md)
-reproduces CloudFront 403s for Taiwan's programme API across three diagnostic
-jobs, ordinary headers and independent curl. The local API contract is usable,
-but production access is still held. Seek an operator-supported feed/access
-arrangement; do not treat header changes, cached payloads or TLS downgrades as
-an established fix. The exact blocking rule requires publisher logs.
+The [retention decision](reports/epg/2026-10-28-structured-collector-retirement.md)
+retires nine presentation-based collectors and their tests. After five structured
+additions, **26 collectors** cover **42 of 261 catalogue records** through 31
+metadata URLs. The 219 other records retain official schedule links. Bundestag is the sole documented hybrid
+exception, with source channel identity and explicit end timestamps cross-checking
+its printed start/range. Other retained HTML sources expose machine-readable event
+fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
 
-The earlier [Nordic continuation](reports/epg/2026-10-26-nordic-coverage.md) brought
-the catalogue to 45 parser-connected records and 25 collectors.
-Norway and Sweden add source-timezone-aware starts, with official identities and
-explicit calendar-duration, unknown-start and linear-mapping holds. There are
-216 sources with planned extraction at that checkpoint; XMLTV/playlist admissions stayed
-unchanged. Finland, Denmark and Greece retain specific fresh source-access/time
-findings for the next pass.
+- [x] Remove TV Câmara, Canadian Harmony, Czech Chamber, French commissions,
+  Luxembourg, Mauritius, Quebec's prose TV guide, Spain's weekly guide and the
+  heuristic YouTube resolver. Remove retired mappings and stale-recovery paths;
+  preserve viewing services, official outlinks and historical evidence.
+- [ ] Harden retained interfaces: European Parliament's pinned frontend route,
+  Portugal's fixed legislature/link discovery, Ontario's date/title scope and
+  UN Web TV's changed-page recognition. Seek supported structured replacements
+  before adding more presentation rules.
+- [ ] Keep Taiwan/Knesset access holds separate from parser refactoring; use bounded
+  requests and honest last-good/error reporting rather than repeated header changes.
+- [x] Implement the five structured priorities: Câmara event API, California's
+  explicit calendar-export parameters, Harmony JSON for House/Senate/Bermuda,
+  US Senate hearings XML and New York session ICS. Keep institutional calendars
+  separate from linear guide mappings; see [implementation evidence](reports/epg/2026-10-28-structured-collector-implementation.md).
+- [ ] Resolve US Senate/XML and New York/ICS HTTP 403 access holds, then confirm
+  their live contracts and New York date/time precision. Parser tests are not
+  evidence of successful live retrieval. Do not invent midnight programme starts.
+- [ ] Follow the [new structured-source priorities](reports/epg/2026-10-28-structured-candidate-priorities.md)
+  and [current input register](reports/epg/2026-10-28-unimplemented-collectors.md).
+  BC's embedded calendar has historical noon-bounded session blocks, not verified
+  upcoming broadcast times. Scotland/Minnesota and Senedd/Northern Ireland need
+  structured-feed evidence before another parser. This pass was not a full sweep.
+- [ ] Keep France's large agenda ZIP and PDF recurrence grids behind their specific
+  cost/mapping holds.
+  A future plain-HTML exception requires a concrete source-specific decision.
+- [ ] Check the retained/new collector code and regenerated data in its first
+  hosted release run after publication. Local verification does not establish a
+  completed deployment.
 
-The earlier [26 October continuation](reports/epg/2026-10-26-coverage-pass.md) and
-[measured data](reports/epg/2026-10-26-coverage-pass.json) record a local publication
-preview at 05:52:28 UTC: 44 parser-connected records, 23 collectors and 396 XMLTV
-programmes across seven channels. Germany and Ireland add 152 explicit ranges;
-Mauritius adds a start-only event guide. New Zealand's supported House-calendar
-API returns a healthy current empty window. Portugal preserves source IDs and
-metadata without midnight defaults or fabricated ends. These are pre-publication
-measurements; live schedules and exports are regenerated during deployment.
-The [first](reports/epg/2026-10-25-coverage-pass.md) and
-[second](reports/epg/2026-10-25-second-pass-coverage.md) 25 October checkpoints remain
-historical measurements. The quality report tracks every catalogue entry through
-parser, collection, mapping and programme availability states; its 226 planned
-records describe that earlier checkpoint.
-
-- [ ] Verify feed/room mappings for event platforms; institutional agendas and
-  parallel event directories must not become a fictional linear TV guide.
-- [ ] Resolve EBS/Italian and Czech/Estonian end-time gaps, TV Camara's assumed
-  broadcast dates, and Greece/Sansad/Denmark/Slovakia access or mapping holds.
-  Validate Thailand's monthly PDF recurrence and timing conflicts before parser
-  work; keep Chile/Jalisco signal mappings separate from institutional agendas.
-- [x] Restore a supported New Zealand calendar-data contract. House-only public
-  JSON now distinguishes genuine empty windows from source errors; calendar
-  intervals remain outside XMLTV until broadcast continuity is established.
-- [ ] Resolve Ireland's terminal-slot ends and Mauritius's contradictory end clock
-  from authoritative broadcast evidence; keep both unknown in the meantime.
-- [ ] Cover empty/off-session responses, changed markup, cancellations, rescheduling,
-  overnight events, timezones and daylight-saving transitions. Preserve valid
-  partial results and explain exclusions without manufacturing programme times.
-- [ ] Retain bounded public response samples, retrieval metadata, hashes and parser
-  versions; compare event counts and usable coverage across runs. Reconcile sample
-  output with the source and try playlist/guide identifiers in an IPTV client.
-- [ ] Enrich ParlVU/SenVu archives and other official event links using stable
-  identifiers and documented access. Event-specific manifests remain unsuitable
-  as permanent channels; YouTube manifests must not be extracted.
+Historical checkpoints: [stabilization](reports/epg/2026-10-28-collector-stabilization.md),
+[three additions](reports/epg/2026-10-28-priority-collectors.md),
+[pre-retirement ranking](reports/epg/2026-10-28-collector-maintainability.md), and
+[Taiwan hosted-access evidence](reports/epg/2026-10-27-taiwan-actions-access.md).
+The later retirement decision governs current scope, including removal of the
+French and Luxembourg collectors added earlier the same day.
 
 ## Rights And Permission Work
 

@@ -1,0 +1,438 @@
+{
+  "reviewed_on": "2026-10-28",
+  "catalogue_sources": 261,
+  "registered_collectors": 30,
+  "parser_connected_records": 46,
+  "records_without_implemented_parser": 215,
+  "local_snapshot_generated_at": "2026-10-28T16:06:46Z",
+  "collection_counts": {
+    "channels": 24,
+    "complete": 8,
+    "current": 9,
+    "empty": 6,
+    "error": 2,
+    "events": 780,
+    "events_with_end": 532,
+    "events_with_official_id": 190,
+    "events_with_url": 416,
+    "fresh_channels": 23,
+    "ok": 22,
+    "stale_channels": 1,
+    "upcoming": 23
+  },
+  "quality_counts": {
+    "events": 780,
+    "exportable": 246,
+    "excluded": 534,
+    "channels_with_events": 24,
+    "excluded_assumed_broadcast_date": 20,
+    "excluded_missing_time_range": 248,
+    "excluded_overlapping_programme": 2,
+    "excluded_unverified_channel_mapping": 483
+  },
+  "xmltv_populated_channels": 7,
+  "new_collector_results": {
+    "rhode-island-cablecast": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T15:30:00Z",
+      "coverage_start": "2026-10-28T15:40:00Z",
+      "event_count": 28,
+      "events_with_end": 28,
+      "events_with_official_id": 28,
+      "events_with_url": 28,
+      "fetched_at": "2026-10-28T16:06:46Z",
+      "last_success_at": "2026-10-28T16:06:46Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://capitoltvri.cablecast.tv/"
+      ],
+      "used_last_good": false
+    },
+    "france-commission-broadcasts": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T16:30:00Z",
+      "coverage_start": "2026-10-27T16:30:00Z",
+      "event_count": 19,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 19,
+      "fetched_at": "2026-10-28T16:06:46Z",
+      "last_success_at": "2026-10-28T16:06:46Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://event2.assemblee-nationale.fr/programme.php"
+      ],
+      "used_last_good": false
+    },
+    "luxembourg-broadcast-agenda": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T13:00:00Z",
+      "coverage_start": "2026-10-28T13:00:00Z",
+      "event_count": 3,
+      "events_with_end": 0,
+      "events_with_official_id": 3,
+      "events_with_url": 3,
+      "fetched_at": "2026-10-28T16:06:46Z",
+      "last_success_at": "2026-10-28T16:06:46Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.chd.lu/fr/agenda?startDate=2026-10-26&endDate=2026-11-01",
+        "https://www.chd.lu/fr/agenda?startDate=2026-11-02&endDate=2026-11-08"
+      ],
+      "used_last_good": false
+    }
+  },
+  "new_channel_quality": {
+    "us-ri-capitol-tv": {
+      "source": "rhode-island-cablecast",
+      "scope": "broadcast_schedule",
+      "linear_guide_eligible": true,
+      "events": 28,
+      "exportable": 26,
+      "overlap_pairs": 1,
+      "inferred_ends": 0,
+      "assumed_dates": 0,
+      "stale": false,
+      "exclusions": {
+        "overlapping_programme": 2
+      },
+      "excluded_events": [
+        {
+          "id": "33155",
+          "reasons": [
+            "overlapping_programme"
+          ]
+        },
+        {
+          "id": "33152",
+          "reasons": [
+            "overlapping_programme"
+          ]
+        }
+      ]
+    },
+    "france-national-assembly": {
+      "source": "france-commission-broadcasts",
+      "scope": "event_directory",
+      "linear_guide_eligible": false,
+      "events": 19,
+      "exportable": 0,
+      "overlap_pairs": 0,
+      "inferred_ends": 0,
+      "assumed_dates": 0,
+      "stale": false,
+      "exclusions": {
+        "missing_time_range": 19,
+        "unverified_channel_mapping": 19
+      },
+      "excluded_events": [
+        {
+          "id": "generated-2dc334acd31c7796a690",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-8e335ca50df095a18678",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-776f2d3abc4311cfe6be",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-f57df54b6a4b2c5f9d5f",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-dd000a9796d2c7a38180",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-b35bf12e6250efd17ca0",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-c5dd5a8fd0ca3a7e82ec",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-0f363b924826659b806e",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-7ca29fcd950ddac4225c",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-997758de16043f675852",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-6c090708263f2e1469db",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-2cec9fba8ffc1cf9961d",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-c5084e515ac6184305a2",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-94cf42d426fd05f815ee",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-a80d23a1dd6a50d56759",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-664558a0e0df42b78007",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-95eb31955485cfb53327",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-5d64be5f17e9a6235d85",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "generated-04ed5396cfefcf48ad8f",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        }
+      ]
+    },
+    "luxembourg-chamber-tv": {
+      "source": "luxembourg-broadcast-agenda",
+      "scope": "event_directory",
+      "linear_guide_eligible": false,
+      "events": 3,
+      "exportable": 0,
+      "overlap_pairs": 0,
+      "inferred_ends": 0,
+      "assumed_dates": 0,
+      "stale": false,
+      "exclusions": {
+        "missing_time_range": 3,
+        "unverified_channel_mapping": 3
+      },
+      "excluded_events": [
+        {
+          "id": "1016202",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "1016299",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        },
+        {
+          "id": "1016214",
+          "reasons": [
+            "missing_time_range",
+            "unverified_channel_mapping"
+          ]
+        }
+      ]
+    }
+  },
+  "current_errors": {
+    "knesset-tv-guide": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 18,
+      "error": "HTTP 403",
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T16:06:46Z",
+      "last_success_at": "2026-10-26T04:57:43Z",
+      "outcome_detail": "fetch_or_parse_error",
+      "status": "error",
+      "urls": [
+        "https://www.knesset.tv/%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%9E%D7%A0%D7%92%D7%9F-%D7%91%D7%A2%D7%A8%D7%95%D7%A5/"
+      ],
+      "used_last_good": false
+    },
+    "uk-parliament": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 1,
+      "coverage_end": "2026-11-27T09:30:00Z",
+      "coverage_start": "2026-10-28T16:30:00Z",
+      "error": "The read operation timed out",
+      "event_count": 92,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T16:06:46Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "fetch_or_parse_error",
+      "status": "error",
+      "urls": [
+        "https://whatson-api.parliament.uk/calendar/events/list.json?startDate=2026-10-28&endDate=2026-11-28"
+      ],
+      "used_last_good": true
+    }
+  },
+  "bounded_source_samples": [
+    {
+      "name": "rhode-island",
+      "url": "https://capitoltvri.cablecast.tv/",
+      "fetched_at": "2026-10-28T15:58:05.835164+00:00",
+      "status": "ok",
+      "bytes": 1972259,
+      "sha256": "f04ab1f1bc2ae2ec82bbb11eb046929d37ff8cf94d748976f94aeac72209fc66"
+    },
+    {
+      "name": "rhode-island-schedule",
+      "url": "https://capitoltvri.cablecast.tv/schedule?site=1",
+      "fetched_at": "2026-10-28T15:58:06.586367+00:00",
+      "status": "ok",
+      "bytes": 1990,
+      "sha256": "71492b612c7a209f6d92d58be8beea44779b67153076466a04fa5a4d4c7a5fc3"
+    },
+    {
+      "name": "france",
+      "url": "https://event2.assemblee-nationale.fr/programme.php",
+      "fetched_at": "2026-10-28T15:58:06.673173+00:00",
+      "status": "ok",
+      "bytes": 35503,
+      "sha256": "e333e0a531d0e9c8bc521202f21c2cb838f59facecf3f59ebdf070d34a82e2e2"
+    },
+    {
+      "name": "luxembourg",
+      "url": "https://www.chd.lu/fr/agenda",
+      "fetched_at": "2026-10-28T15:58:07.187844+00:00",
+      "status": "ok",
+      "bytes": 240710,
+      "sha256": "ee1ab33c6764761d68f47e102815300afa4c96ee677ef1b078a7d5cb44adc926"
+    }
+  ],
+  "github_runner_access_evidence": {
+    "workflow_run": "https://github.com/dlq/parliament-streams/actions/runs/40696700432",
+    "audit_generated_at": "2026-10-28T13:30:13Z",
+    "source_results": [
+      {
+        "url": "https://capitoltvri.cablecast.tv/",
+        "method": "GET",
+        "status": "reachable",
+        "checked_at": "2026-10-28T13:30:13Z",
+        "channel_ids": [
+          "us-ri-capitol-tv"
+        ],
+        "scraper_status": [
+          "planned"
+        ],
+        "detail": "Retrieved 1916357 bytes"
+      },
+      {
+        "url": "https://event2.assemblee-nationale.fr/programme.php",
+        "method": "GET",
+        "status": "reachable",
+        "checked_at": "2026-10-28T13:30:13Z",
+        "channel_ids": [
+          "france-national-assembly"
+        ],
+        "scraper_status": [
+          "planned"
+        ],
+        "detail": "Retrieved 35503 bytes"
+      },
+      {
+        "url": "https://www.chd.lu/fr/agenda",
+        "method": "GET",
+        "status": "reachable",
+        "checked_at": "2026-10-28T13:30:13Z",
+        "channel_ids": [
+          "luxembourg-chamber-tv"
+        ],
+        "scraper_status": [
+          "planned"
+        ],
+        "detail": "Retrieved 240710 bytes"
+      }
+    ],
+    "scope": "Existing hosted audit HTTP reachability, not execution of the new parser code."
+  },
+  "artifact_hashes": {
+    "schedules.json": "5130537e53b0d4a6d815ebe8e94956c2d630083713726454ee73a750d6f519ed",
+    "epg-quality.json": "becf55e73f480e6c3fdf0f709ca417f265551cab38f92ef0a98d9f1861879eea",
+    "epg.xml": "57d9d9709eb3ebb22ef223c1baa9cbd75aad36e53bafbd60b8707559b346e947"
+  },
+  "remaining_backlog": "2026-10-28-unimplemented-collectors.json"
+}

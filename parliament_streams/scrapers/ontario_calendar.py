@@ -15,14 +15,7 @@ from .common import (
     parse_iso,
 )
 
-CHANNEL_IDS = [
-    "ontario-house-en",
-    "ontario-house-en-cc",
-    "ontario-rm151-en",
-    "ontario-committee-1-en",
-    "ontario-committee-2-en",
-    "ontario-media-en",
-]
+CHANNEL_IDS = ["ontario-house-en"]
 
 SOURCE: ScraperSource = {
     "id": "ontario-calendar",
@@ -30,7 +23,9 @@ SOURCE: ScraperSource = {
     "url": "https://www.ola.org/en/legislative-business/calendar/",
     "method": "GET",
     "headers": {},
-    "notes": "Extracts dated event headings from the official OLA calendar.",
+    "notes": (
+        "House sitting events only; committee-room and media-studio mappings are unimplemented."
+    ),
 }
 
 

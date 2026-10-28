@@ -1,0 +1,227 @@
+{
+  "reviewed_on": "2026-10-28",
+  "scope": "Five structured candidates implemented; live retrieval and contract fixtures are separate evidence. No new viewing services or broadcast mappings.",
+  "catalogue_sha256": "83652decde0221f5e7c6dc51bc25e78817f408684fa0becdbf19b1b495868cdd",
+  "registry_collectors": 26,
+  "parser_connected_records": 42,
+  "implemented_metadata_urls": 31,
+  "local_collection": {
+    "generated_at": "2026-10-28T18:33:28Z",
+    "sha256": "52cf44a6e97937c8163b79479a8437331e56ed5d74a2b097c0c570da371a4d5a",
+    "counts": {
+      "channels": 21,
+      "complete": 6,
+      "current": 6,
+      "empty": 3,
+      "error": 3,
+      "events": 752,
+      "events_with_end": 506,
+      "events_with_official_id": 191,
+      "events_with_url": 390,
+      "fresh_channels": 21,
+      "ok": 20,
+      "stale_channels": 0,
+      "upcoming": 21
+    },
+    "new_sources": {
+      "brazil-camara-events-api": {
+        "channel_count": 1,
+        "channels_expected": 1,
+        "consecutive_failures": 0,
+        "coverage_end": "2026-11-11T17:00:00Z",
+        "coverage_start": "2026-10-29T11:00:00Z",
+        "event_count": 16,
+        "events_with_end": 0,
+        "events_with_official_id": 16,
+        "events_with_url": 16,
+        "fetched_at": "2026-10-28T18:33:28Z",
+        "last_success_at": "2026-10-28T18:33:28Z",
+        "outcome_detail": "events",
+        "status": "ok",
+        "urls": [
+          "https://dadosabertos.camara.leg.br/api/v2/eventos?dataInicio=2026-10-28&dataFim=2026-11-11&itens=100&pagina=1&ordem=ASC&ordenarPor=dataHoraInicio"
+        ],
+        "used_last_good": false
+      },
+      "california-assembly-calendar": {
+        "channel_count": 1,
+        "channels_expected": 1,
+        "consecutive_failures": 0,
+        "coverage_end": "2026-10-30T00:00:00Z",
+        "coverage_start": "2026-10-29T17:00:00Z",
+        "event_count": 3,
+        "events_with_end": 0,
+        "events_with_official_id": 0,
+        "events_with_url": 3,
+        "fetched_at": "2026-10-28T18:33:28Z",
+        "last_success_at": "2026-10-28T18:33:28Z",
+        "outcome_detail": "events",
+        "status": "ok",
+        "urls": [
+          "https://www.assembly.ca.gov/events"
+        ],
+        "used_last_good": false
+      },
+      "harmony-json": {
+        "channel_count": 2,
+        "channels_expected": 3,
+        "consecutive_failures": 0,
+        "coverage_end": "2026-11-06T15:00:00Z",
+        "coverage_start": "2026-10-28T18:00:00Z",
+        "event_count": 57,
+        "events_with_end": 57,
+        "events_with_official_id": 57,
+        "events_with_url": 57,
+        "fetched_at": "2026-10-28T18:33:28Z",
+        "last_success_at": "2026-10-28T18:33:28Z",
+        "outcome_detail": "events",
+        "status": "ok",
+        "urls": [
+          "https://parlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+          "https://senparlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+          "https://sg001-harmony.sliq.net/00290/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000"
+        ],
+        "used_last_good": false
+      },
+      "us-senate-hearings-xml": {
+        "channel_count": 0,
+        "channels_expected": 1,
+        "consecutive_failures": 1,
+        "error": "HTTP 403",
+        "event_count": 0,
+        "events_with_end": 0,
+        "events_with_official_id": 0,
+        "events_with_url": 0,
+        "fetched_at": "2026-10-28T18:33:28Z",
+        "outcome_detail": "fetch_or_parse_error",
+        "status": "error",
+        "urls": [
+          "https://www.senate.gov/general/committee_schedules/hearings.xml"
+        ],
+        "used_last_good": false
+      },
+      "new-york-senate-calendar": {
+        "channel_count": 0,
+        "channels_expected": 1,
+        "consecutive_failures": 1,
+        "error": "HTTP 403",
+        "event_count": 0,
+        "events_with_end": 0,
+        "events_with_official_id": 0,
+        "events_with_url": 0,
+        "fetched_at": "2026-10-28T18:33:28Z",
+        "outcome_detail": "fetch_or_parse_error",
+        "status": "error",
+        "urls": [
+          "https://www.nysenate.gov/session/calendar-download"
+        ],
+        "used_last_good": false
+      }
+    }
+  },
+  "new_channels": {
+    "brazil-tv-camara": 16,
+    "us-ca-assembly-live": 3,
+    "canada-house-of-commons-parlvu": 36,
+    "canada-senate-senvu": 21,
+    "bermuda-parliament-audio-archive": 0,
+    "us-senate-committee-webcasts": 0,
+    "us-ny-senate-live": 0
+  },
+  "contracts": {
+    "brazil": "Documented Câmara events JSON; 14-day window, 100 rows/page, at most three pages. Cancellation/deferred/ended rows skipped; missing starts or capped pagination fail visibly. America/Sao_Paulo starts, official event IDs, no inferred TV replay/end times.",
+    "california": "Official calendar-export name/start/location query parameters, not visible event prose or malformed ICS. America/Los_Angeles clocks corroborate the dated public event listing. Empty UID and invalid VALUE=DATE in ICS are not silently repaired; generated two-hour ends are ignored.",
+    "harmony": "Publisher util formatter requires a 17-digit millisecond watermark. Corrected requests work on all three sites. Four event groups, numeric status, published records and official IDs; Toronto/Bermuda zones for naive clocks, explicit offsets preserved. Stale suspended events are excluded. Bermuda returned a valid empty four-group response.",
+    "us_senate": "Contract fixtures follow the public unitedstates/congress client: meeting/cmte_code/date/room/matter and %d-%b-%Y %I:%M %p. Current endpoint returns 403 in collector and browser; root/current nonempty payload is not independently verified. Empty sentinel recognized conservatively.",
+    "new_york": "Publisher-owned Drupal view confirms ICS path, UID=nid, summary=title, date range, location and official node URL. Current endpoint returns 403; current body/date precision is not verified. Strict timed subset accepts explicit UTC or America/New_York/US/Eastern, unfolds lines, rejects floating/DST-ambiguous/recurring records, preserves UID. Date-only-only response is a precision hold, not midnight programmes."
+  },
+  "contract_references": {
+    "senate_client": "https://github.com/unitedstates/congress/blob/main/congress/tasks/committee_meetings.py",
+    "senate_client_blob_sha": "83117190005a6b5627207e2a43f1043ba34516ad",
+    "ny_publisher_config": "https://github.com/nysenate/NYSenate.gov-Website-D9/blob/main/config/sync/views.view.session_calendar.yml",
+    "ny_publisher_config_blob_sha": "c6517ff39c7d204893833679e7d1daf57220d840"
+  },
+  "fetch_evidence": [
+    {
+      "name": "house",
+      "url": "https://parlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+      "fetched_at": "2026-10-28T18:19:48.242731+00:00",
+      "status": "ok",
+      "bytes": 34612,
+      "sha256": "71bf1c988645b7ee3a4f5d32efd77acdb9cebd219e4a44b9033bcc6e4f66cfb9",
+      "keys": [
+        "ContentEntityDatas",
+        "LastModifiedTime"
+      ],
+      "group_counts": [
+        1,
+        10,
+        17,
+        10
+      ]
+    },
+    {
+      "name": "senate",
+      "url": "https://senparlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+      "fetched_at": "2026-10-28T18:19:48.243197+00:00",
+      "status": "ok",
+      "bytes": 21616,
+      "sha256": "88071e02bea99ceabca1fcaac3d90e87e45d9b2afc95c95c6b7306a4fbfcd263",
+      "keys": [
+        "ContentEntityDatas",
+        "LastModifiedTime"
+      ],
+      "group_counts": [
+        0,
+        10,
+        8,
+        5
+      ]
+    },
+    {
+      "name": "bermuda",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+      "fetched_at": "2026-10-28T18:19:48.243301+00:00",
+      "status": "ok",
+      "bytes": 126,
+      "sha256": "63d94b06b6d22eb7ab65c7f0f8a0d2c3681fd3c7805771dc0d5e68db93a4f9f5",
+      "keys": [
+        "ContentEntityDatas",
+        "LastModifiedTime"
+      ],
+      "group_counts": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "export_validation": {
+    "programmes": 241,
+    "xmltv_channels": 44,
+    "stable_playlist_channels": 4,
+    "broader_playlist_channels": 38,
+    "new_linear_mappings": 0,
+    "data_product_validation": "passed"
+  },
+  "remaining_holds": [
+    "US Senate XML: supported access and fresh nonempty contract confirmation",
+    "New York ICS: supported access, actual calendar body and time precision",
+    "Bermuda: empty current window; parser success does not establish current programme coverage",
+    "Knesset HTTP 403 unchanged; Taiwan hosted-runner hold not resolved by local success",
+    "First hosted execution remains unverified until code is published"
+  ],
+  "automation_integration": "Scheduled collection discovers registered collectors and canonical implemented associations; no new workflow or source-specific action is required. Updated generated catalogue data exposes the new metadata inputs. First hosted run remains pending publication.",
+  "verification": {
+    "python_tests": 466,
+    "python_coverage_percent": 94,
+    "javascript_tests": 9,
+    "html_browser_accessibility": "passed",
+    "lint_format": "passed",
+    "mypy": "passed, 71 source files",
+    "generated_data_and_schema_checks": "passed",
+    "new_data_bundle": "cross-format validation passed",
+    "note": "Initial retirement assertion incorrectly blocked the new Harmony JSON host; narrowed it to reject retired presentation routes. Focused tests rerun after explicit-date and CDATA hardening."
+  }
+}

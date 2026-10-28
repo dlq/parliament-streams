@@ -11,6 +11,7 @@ class ScraperContractTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         catalogue = json.loads(CATALOGUE_PATH.read_text(encoding="utf-8"))
+        cls.catalogue = catalogue
         cls.scraper_ids = sorted(
             {
                 source["scraper"]
@@ -28,6 +29,17 @@ class ScraperContractTests(unittest.TestCase):
                 self.assertTrue(hasattr(module, "SOURCE"))
                 self.assertEqual(module.SOURCE["id"], scraper_id)
                 self.assertTrue(hasattr(module, "parse"))
+
+    def test_implemented_associations_have_declared_targets(self):
+        registry = importlib.import_module("parliament_streams.scrapers")
+        for channel in self.catalogue["channels"]:
+            for source in channel.get("epg_sources", []):
+                if source["scraper_status"] == "implemented":
+                    with self.subTest(channel=channel["id"], scraper=source["scraper"]):
+                        self.assertIn(
+                            channel["id"],
+                            registry.SCRAPERS[source["scraper"]].SOURCE["channel_ids"],
+                        )
 
     def test_scraper_registry_covers_declared_scrapers(self):
         registry = importlib.import_module("parliament_streams.scrapers")

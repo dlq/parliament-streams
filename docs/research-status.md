@@ -2,6 +2,73 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Five Structured Collector Implementations — 28 October 2026
+
+There are now **26 collectors / 42 parser-connected viewing records**, across
+31 metadata URLs; 219 catalogue records retain official links without an active
+collector. New inputs are Câmara institutional event JSON, California calendar
+export parameters, Harmony JSON for the Canadian House/Senate and Bermuda,
+US Senate hearings XML and New York session ICS. The two US feeds remain live
+access holds; their implemented parsers do not imply fetched programme data.
+Harmony's corrected 17-digit watermark resolves the earlier 500 probes.
+No new linear/XMLTV mappings, viewing services or rights decisions are inferred.
+[Implementation evidence and live results](../reports/epg/2026-10-28-structured-collector-implementation.md).
+
+The earlier shortlist and retention totals below are dated checkpoints.
+
+## Structured Collector Retention — 28 October 2026
+
+The later same-day scope decision removes nine presentation-based collectors and
+their tests. There are now **21 collectors / 35 parser-connected records** across
+24 metadata URLs, with 226 catalogue records retaining official links only.
+All 261 viewing sources, map/search membership and playback/rights policies stay.
+Machine-readable HTML fields remain in scope; Bundestag is the sole hybrid
+exception. Earlier same-day additions/rankings below are historical checkpoints.
+
+The fresh local run at **17:49:36 UTC** has 16 successful sources, four empty and
+one Knesset 403, with 679 events across 16 fresh schedules. The validated bundle
+exports **242 programmes across seven populated XMLTV channels**, with 44
+channel definitions and unchanged four stable / 38 broader playlist admissions.
+A same-input comparison preserves all 246 earlier XMLTV entries after retirement;
+website-only listings and possible future guide coverage are reduced.
+[Retirement decisions and evidence](../reports/epg/2026-10-28-structured-collector-retirement.md) ·
+[Current input discovery register](../reports/epg/2026-10-28-unimplemented-collectors.md).
+
+## Three Prioritized Collectors — 28 October 2026
+
+Rhode Island Cablecast, French public commission broadcasts and Luxembourg's
+broadcast-marked agenda now bring coverage to **30 collectors / 46 records** in
+the unchanged 261-source viewing catalogue. The new local results have 28 explicit
+Rhode Island ranges, 19 French starts and three Luxembourg starts. XMLTV admits
+26 Rhode Island ranges, quarantining a three-second source overlap; the European
+listings remain start-only event directories. The complete validated snapshot
+has 246 programmes across seven XMLTV channels, 45 definitions and unchanged
+four stable / 38 broader playlist admissions.
+
+The current local run has 22 successful sources, six empty and two errors:
+Knesset 403 and a timed-out UK request with bounded stale recovery. Existing
+hosted audit evidence confirms HTTP access to all three new base pages; hosted
+execution of the new parser code remains a release check.
+[Contracts and measured evidence](../reports/epg/2026-10-28-priority-collectors.md) ·
+[All 231 remaining candidate inputs](../reports/epg/2026-10-28-unimplemented-collectors.md).
+
+## Collector Stabilization — 28 October 2026
+
+The catalogue remains at **261 viewing sources** with **27 collectors**. Corrected
+Ontario scope leaves **43 parser-connected records** and **218 planned records**;
+four rooms previously advertised the House-only parser. JSON error isolation,
+Irish partial guides, Italian optional metadata, UK DST handling and provider
+fallback precedence now have regression checks. Assumed broadcast dates remain
+visible in JSON but are excluded from XMLTV.
+
+The fresh **local** snapshot at 15:42:37 UTC has 20 successful sources, six empty
+results and one error (Knesset HTTP 403): 743 events across 21 schedules, with no
+stale channels. Taiwan worked locally; this does not resolve its GitHub runner
+403 hold. The validated bundle exports 221 programmes across six populated XMLTV
+channels. Rhode Island Cablecast is the next recommended collector; France and
+Luxembourg are optional, lower-priority start-only discovery sources.
+[Corrections, limits, evidence and ranked candidates](../reports/epg/2026-10-28-collector-stabilization.md).
+
 ## Nordic EPG Continuation — 26 October 2026
 
 The catalogue remains at 261 usable viewing sources. **45 records** now connect

@@ -22,7 +22,8 @@ def main(argv: list[str] | None = None) -> int:
         type=Path,
         help=(
             "Input response file(s). Quebec requires live JSON first and optional upcoming JSON "
-            "second; other scrapers use one HTML file."
+            "second; Harmony requires House, Senate and Bermuda JSON in that order; "
+            "Câmara accepts paginated JSON. Other parsers accept one saved response."
         ),
     )
     args = parser.parse_args(argv)
@@ -35,6 +36,8 @@ def main(argv: list[str] | None = None) -> int:
             parser.error(
                 "quebec-webdiffusion accepts one live JSON file and optional upcoming JSON."
             )
+        result = scraper.parse(*inputs)
+    elif args.scraper in {"harmony-json", "brazil-camara-events-api"}:
         result = scraper.parse(*inputs)
     else:
         if len(inputs) != 1:

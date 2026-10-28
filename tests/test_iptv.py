@@ -26,8 +26,9 @@ class IPTVTests(unittest.TestCase):
     def setUp(self):
         self.catalogue = load_catalogue(ROOT / "data/channels.json")
         self.channel = copy.deepcopy(
-            next(c for c in self.catalogue["channels"] if c["id"] == "brazil-tv-camara")
+            next(c for c in self.catalogue["channels"] if c["id"] == "estonia-riigikogu-live-1")
         )
+        self.channel["availability"] = "always_on"  # Controlled playlist fixture.
         self.catalogue["channels"] = [self.channel]
 
     def snapshot(self, events, **fields):
@@ -35,7 +36,11 @@ class IPTVTests(unittest.TestCase):
             ScheduleSnapshot,
             {
                 "channels": {
-                    self.channel["id"]: {"events": events, "scraper": "brazil-tv-camara", **fields}
+                    self.channel["id"]: {
+                        "events": [{"start_basis": "source", **event} for event in events],
+                        "scraper": "estonia-riigikogu-plenary",
+                        **fields,
+                    }
                 }
             },
         )
@@ -80,7 +85,7 @@ class IPTVTests(unittest.TestCase):
         self.channel["name"] = 'Câmara "TV"\n#EXTINF: injected'
         result = render_playlist([self.channel], "https://example.org/epg.xml")
         self.assertEqual(len(result.splitlines()), 3)
-        self.assertIn('tvg-id="brazil-tv-camara"', result)
+        self.assertIn('tvg-id="estonia-riigikogu-live-1"', result)
         self.assertIn("Câmara 'TV' #EXTINF: injected", result)
         self.channel["playback_url"] = "https://example.org/stream\n#EXTINF:fake"
         with self.assertRaises(ValueError):

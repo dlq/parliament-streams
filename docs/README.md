@@ -20,7 +20,7 @@ from the repository root unless stated otherwise.
 | [Public Data and method page](https://dlq.ca/parliament-streams/data.html) | Research-to-publication stages, stable data downloads, coverage limits and contribution paths |
 | [Public Legislatures page](https://dlq.ca/parliament-streams/institutions.html) | Working institution inventory, authority decisions, research gaps and ways to contribute evidence |
 | [Help with translation](translating.md) | Phrase-level suggestions, supported locales and translation files |
-| [Schedules, IPTV and XMLTV](schedules-and-iptv.md) | Collection, exports, guide eligibility and quality limits |
+| [Schedules, IPTV and XMLTV](schedules-and-iptv.md) | Structured-source priorities, collection, exports, guide eligibility and quality limits |
 | [Research status and evidence](research-status.md) | Current working-tree totals, discovery coverage and report links |
 | [Operational institution register](../data/discovery/README.md) | Current identities, authority decisions, exclusions and country crosswalks |
 | [Rights summary](rights-summary.md) | Playback policy and unresolved permission work |
@@ -32,11 +32,14 @@ from the repository root unless stated otherwise.
 
 ## Latest Research Handoffs
 
+[Five structured collectors: implementation and access holds](../reports/epg/2026-10-28-structured-collector-implementation.md).
+
 These dated reports support the current [research status](research-status.md).
 Canonical records and later reviewed evidence take precedence when a report ages.
 
 | Report | Scope |
 | --- | --- |
+| [28 October collector retention](../reports/epg/2026-10-28-structured-collector-retirement.md) | 21 retained collectors, nine retirements, cache/export boundaries and structured replacement discovery |
 | [25 October service baseline](../reports/discovery/2026-10-25-institution-service-baseline.md) | 940 eligible identities, 222 exact matches and separate per-use metadata/media/EPG/rights questions |
 | [25 October publication decisions](../reports/discovery/2026-10-25-held-source-publication-decisions.json) | 13 further official links, six chamber crosswalks and Finland evidence without duplication |
 | [24 October legal follow-up](../reports/discovery/2026-10-24-legal-holds-review.md) | Three French exclusions and eight specific legal holds, retained separately from the eligible service queue |

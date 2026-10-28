@@ -7,7 +7,7 @@ import re
 from datetime import UTC, datetime
 from urllib.parse import urljoin, urlsplit
 
-from .common import ParsedSchedule, ScraperSource, clean_html
+from .common import ParsedSchedule, ScraperSource, clean_html, require_object, require_records
 
 SOURCE: ScraperSource = {
     "id": "quebec-webdiffusion",
@@ -30,10 +30,15 @@ def parse(
     live_json: str, upcoming_json: str = '{"d":[]}', now: datetime | None = None
 ) -> ParsedSchedule:
     now = now or datetime.now(UTC)
-    live_items = json.loads(live_json).get("d", [])
+    live_items = require_records(
+        require_object(json.loads(live_json), "Quebec live response").get("d"), "Quebec live items"
+    )
     # Its displayed Date/Heure values do not identify one of the fourteen feeds.
     # Validate the companion response without copying unassigned activities.
-    json.loads(upcoming_json)
+    require_records(
+        require_object(json.loads(upcoming_json), "Quebec upcoming response").get("d"),
+        "Quebec upcoming items",
+    )
     schedules: ParsedSchedule = {}
 
     for item in live_items:

@@ -1,0 +1,212 @@
+{
+  "reviewed_on": "2026-10-28",
+  "scope": "Bounded prioritization of new structured collectors; no collector implemented or promoted in this pass. Not an exhaustive sweep of the 243 candidate inputs.",
+  "active_collectors_unchanged": 21,
+  "priorities": [
+    {
+      "rank": 1,
+      "name": "Brazil Câmara institutional events",
+      "catalogue_ids": [
+        "brazil-tv-camara"
+      ],
+      "format": "documented JSON API",
+      "status": "next_implementation_candidate",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/eventos",
+      "evidence": "Fresh bounded response contains seven upcoming meetings with official IDs, dated starts, status and room/organ fields.",
+      "admission_gate": "Corroborate source timezone; implement bounded pagination, cancellation and genuine-empty handling. Publish institutional events separately from TV replay times. No linear XMLTV mapping is implied."
+    },
+    {
+      "rank": 2,
+      "name": "California Assembly event calendar",
+      "catalogue_ids": [
+        "us-ca-assembly-live"
+      ],
+      "format": "official per-event ICS export links with machine-readable date/clock parameters",
+      "status": "validation_before_implementation",
+      "url": "https://www.assembly.ca.gov/events",
+      "evidence": "Three advertised upcoming event-calendar links. One fetched ICS has an empty UID and declares VALUE=DATE for date-time values; no source timezone is supplied in that sample.",
+      "admission_gate": "Resolve malformed ICS/date types and corroborate source-zone semantics. Treat generated end times as unverified planned boundaries until corroborated. If useful starts cannot be established without guessing, defer. Do not quietly turn this into a presentation scraper."
+    },
+    {
+      "rank": 3,
+      "name": "Harmony public JSON family: Canada House, Canada Senate, Bermuda",
+      "catalogue_ids": [
+        "canada-house-of-commons-parlvu",
+        "canada-senate-senvu",
+        "bermuda-parliament-audio-archive"
+      ],
+      "format": "first-party JSON route referenced by published Harmony JavaScript",
+      "status": "request_contract_investigation",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony/javascript/upcomingEvents.js",
+      "evidence": "Published script requests api/Data/GetUpcomingEvents and consumes ContentEntityDatas with ScheduledStart/ScheduledEnd. Isolated requests using a historical lastModified value returned HTTP 500 at all three sites.",
+      "admission_gate": "Reproduce the exact public request/session/parameter contract and obtain real nonempty JSON before implementing. HTTP 500 from the probe does not establish that the publisher API is generally broken. Verify each publisher identity and Toronto/Bermuda timezone independently; never revive the retired HTML parser as fallback."
+    },
+    {
+      "rank": 4,
+      "name": "U.S. Senate committee hearings",
+      "catalogue_ids": [
+        "us-senate-committee-webcasts"
+      ],
+      "format": "official advertised XML feed",
+      "status": "access_hold",
+      "url": "https://www.senate.gov/general/committee_schedules/hearings.xml",
+      "evidence": "The official hearings page links to this XML feed; the normal collection client returned HTTP 403 in this pass. The public page currently reports no hearings.",
+      "admission_gate": "Establish ordinary collector/hosted access and corroborate a nonempty XML example, including source clocks and stable identity. Keep committee-calendar metadata separate from continuous broadcast ranges. Do not prioritize repetitive header work."
+    },
+    {
+      "rank": 5,
+      "name": "New York Senate session calendar",
+      "catalogue_ids": [
+        "us-ny-senate-live"
+      ],
+      "format": "official advertised iCalendar subscription/download",
+      "status": "access_hold_and_precision_unverified",
+      "url": "https://www.nysenate.gov/session/calendar-download",
+      "evidence": "The official events page advertises adding all session dates to a calendar; the normal collection client returned HTTP 403.",
+      "admission_gate": "Obtain and inspect the calendar body through supported access. Determine whether it has actual clocks or only sitting dates. Date-only events are useful calendar metadata, not fabricated midnight programmes."
+    }
+  ],
+  "other_findings": [
+    {
+      "name": "British Columbia",
+      "finding": "Embedded Drupal/FullCalendar JSON confirmed, with America/Vancouver, 145 entries and IDs. In Session entries sampled are historical multi-day noon-bounded blocks; no current upcoming session example was found. Holidays dominate the non-session remainder.",
+      "decision": "Low priority until genuinely useful current session/meeting granularity is established; do not interpret noon placeholders as broadcasts."
+    },
+    {
+      "name": "Scotland",
+      "finding": "The sampled business page had no JSON-LD, microdata, datetime or ICS hints in this bounded inspection. Its TV homepage script refreshes /Home/ContentPartial, a presentation partial rather than a demonstrated structured event feed.",
+      "decision": "Further structured-feed discovery only; absence is not established and no new HTML parser is prioritized."
+    },
+    {
+      "name": "Minnesota",
+      "finding": "Combined calendar is reachable; inspected hints point to a calendar-details request. No suitable event JSON/XML/ICS contract was verified.",
+      "decision": "Discovery only; no implementation priority yet."
+    },
+    {
+      "name": "European Parliament published meetings JSON",
+      "finding": "Previously verified JSON contains coarse meeting-day boundaries. An existing broadcast collector already supplies event listings.",
+      "decision": "Treat as a possible structured replacement/metadata enrichment, not a new coverage win or automatic source of broadcast starts/ends."
+    },
+    {
+      "name": "France JSON agenda ZIP",
+      "finding": "Previously observed 8,547,225-byte archive exceeds the shared fetch cap; meeting-vs-broadcast mapping is unresolved.",
+      "decision": "Defer until a bounded supported route is found."
+    },
+    {
+      "name": "Senedd / Northern Ireland",
+      "finding": "Existing observed pages provide useful presentation listings; Northern Ireland JSON-LD describes page/site/breadcrumbs, not the webcast entries. A suitable structured schedule feed has not been verified.",
+      "decision": "Do not reinstate plain HTML collection merely because those pages are easy to read."
+    }
+  ],
+  "fetch_evidence": [
+    {
+      "candidate": "us-senate-hearings",
+      "url": "https://www.senate.gov/general/committee_schedules/hearings.xml",
+      "fetched_at": "2026-10-28T18:06:19.567612+00:00",
+      "status": "error",
+      "error": "HTTP 403"
+    },
+    {
+      "candidate": "ny-session-calendar",
+      "url": "https://www.nysenate.gov/session/calendar-download",
+      "fetched_at": "2026-10-28T18:06:19.900841+00:00",
+      "status": "error",
+      "error": "HTTP 403"
+    },
+    {
+      "candidate": "brazil-events",
+      "url": "https://dadosabertos.camara.leg.br/api/v2/eventos?dataInicio=2026-10-29&dataFim=2026-11-04&itens=10&ordem=ASC&ordenarPor=dataHoraInicio",
+      "fetched_at": "2026-10-28T18:06:20.102434+00:00",
+      "status": "ok",
+      "bytes": 10185,
+      "sha256": "be285aeca1ad250a561a28a7064de70e68b154fa5f1885ade039448fa8debef3"
+    },
+    {
+      "candidate": "scottish-business",
+      "url": "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/",
+      "fetched_at": "2026-10-28T18:06:21.556436+00:00",
+      "status": "ok",
+      "bytes": 280151,
+      "sha256": "6c49b4106bf104b041768a8473daf9193167817387a5c2f4272a0f4b16f2dedd"
+    },
+    {
+      "candidate": "minnesota",
+      "url": "https://www.leg.mn.gov/cal",
+      "fetched_at": "2026-10-28T18:08:15.436681+00:00",
+      "status": "ok",
+      "bytes": 101210,
+      "sha256": "a93c3d7253a0a629af9b8fb27dec14e4a5d1ae5848588b9beb61acda661d19ad"
+    },
+    {
+      "candidate": "bc-calendar",
+      "url": "https://www.leg.bc.ca/index.php/parliamentary-business/parliamentary-calendar",
+      "fetched_at": "2026-10-28T18:08:15.437010+00:00",
+      "status": "ok",
+      "bytes": 201068,
+      "sha256": "414b01e837983c62bbbfd3d1cdfa1d90a41bc5ba1c1eabd2769a6af3eb69da03"
+    },
+    {
+      "candidate": "california-events",
+      "url": "https://www.assembly.ca.gov/events",
+      "fetched_at": "2026-10-28T18:08:15.437103+00:00",
+      "status": "ok",
+      "bytes": 52905,
+      "sha256": "2403fe3555991bd1a00a12ea597b0a7e7f810c2cb528389d47848fdd34ba9909"
+    },
+    {
+      "candidate": "scottish-tv-script",
+      "url": "https://www.scottishparliament.tv/ts/homepage.js?v=fayz_fT2lpHlMbH31bW7Z4L2PB4XUPOhCS5cFDB4X2Q",
+      "fetched_at": "2026-10-28T18:08:15.437181+00:00",
+      "status": "ok",
+      "bytes": 4406,
+      "sha256": "41efd62ea9effe414d25c915ec96d9dc876969f9d5b352b97b3a34221cf7e207"
+    },
+    {
+      "candidate": "bermuda-events-script",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony/javascript/upcomingEvents.js",
+      "fetched_at": "2026-10-28T18:08:16.097322+00:00",
+      "status": "ok",
+      "bytes": 4865,
+      "sha256": "1d57b1c3356d4b10875e2bb4fc0d81b28398544ea271988d16a9288f603874ad"
+    },
+    {
+      "candidate": "california-ics",
+      "url": "https://www.assembly.ca.gov/api/ics/generate?name=JOINT%20LEGISLATIVE%20AUDIT&start=20261029T170000&end=20261029T190000&description=&location=Santa%20Clarita%20Valley%20International%20Charter%20School%2028080%20Hasley%20Canyon%20Road%20%23200%20Castaic",
+      "fetched_at": "2026-10-28T18:09:38.840655+00:00",
+      "status": "ok",
+      "bytes": 527,
+      "sha256": "c403ba0ebdffc959d622dd9190c738bc89a9acbcb8df66fce64e6cd3b169d033"
+    },
+    {
+      "candidate": "bermuda-json",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony/en/api/Data/GetUpcomingEvents?lastModified=197001010000000",
+      "fetched_at": "2026-10-28T18:09:38.841015+00:00",
+      "status": "error",
+      "error": "HTTP 500"
+    },
+    {
+      "candidate": "canada-house-json",
+      "url": "https://parlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=197001010000000",
+      "fetched_at": "2026-10-28T18:09:38.841111+00:00",
+      "status": "error",
+      "error": "HTTP 500"
+    },
+    {
+      "candidate": "canada-senate-json",
+      "url": "https://senparlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=197001010000000",
+      "fetched_at": "2026-10-28T18:09:38.841176+00:00",
+      "status": "error",
+      "error": "HTTP 500"
+    }
+  ],
+  "ready_vs_provisional": "Only Brazil is the next implementation candidate. California and Harmony require bounded contract validation; Senate/New York are parked access holds.",
+  "implementation_followup": {
+    "reference": "2026-10-28-structured-collector-implementation.json",
+    "status": "all_five_parser_families_implemented",
+    "live_access_holds": [
+      "us-senate-hearings-xml",
+      "new-york-senate-calendar"
+    ],
+    "correction": "Harmony 15-digit probe watermark was malformed; corrected 17-digit public requests succeed."
+  }
+}

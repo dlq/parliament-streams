@@ -114,9 +114,7 @@ def parse(payload: str, *, now: datetime | None = None) -> ParsedSchedule:
         clock = card.get("data-dataora", "")
         if (
             not re.fullmatch(r"[1-9]\d*", event_id)
-            or not re.fullmatch(r"[1-9]\d*", card.get("data-ch_evento", ""))
             or not title
-            or not location
             or not re.fullmatch(r"\d{4}-\d\d-\d\d \d\d:\d\d:\d\d", clock)
         ):
             raise ValueError("Incomplete Camera WebTV event identity or time")
@@ -128,8 +126,9 @@ def parse(payload: str, *, now: datetime | None = None) -> ParsedSchedule:
             "start": start,
             "event_id": event_id,
             "url": f"https://webtv.camera.it/evento/{event_id}",
-            "location": location,
         }
+        if location:
+            event["location"] = location
         if event_id in events and events[event_id] != event:
             raise ValueError("Conflicting Camera WebTV event identity")
         events[event_id] = event

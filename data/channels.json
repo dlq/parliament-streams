@@ -142,10 +142,17 @@
       },
       "epg_sources": [
         {
-          "scraper": "canada-harmony",
+          "scraper": "planned",
           "url": "https://parlvu.parl.gc.ca/Harmony/en",
           "method": "GET",
           "kind": "harmony_upcoming_events_and_powerbrowser_pages",
+          "scraper_status": "planned"
+        },
+        {
+          "url": "https://parlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+          "method": "GET",
+          "kind": "harmony_event_json",
+          "scraper": "harmony-json",
           "scraper_status": "implemented"
         }
       ],
@@ -225,10 +232,17 @@
       },
       "epg_sources": [
         {
-          "scraper": "canada-harmony",
+          "scraper": "planned",
           "url": "https://senparlvu.parl.gc.ca/Harmony/",
           "method": "GET",
           "kind": "harmony_upcoming_events_and_powerbrowser_pages",
+          "scraper_status": "planned"
+        },
+        {
+          "url": "https://senparlvu.parl.gc.ca/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+          "method": "GET",
+          "kind": "harmony_event_json",
+          "scraper": "harmony-json",
           "scraper_status": "implemented"
         }
       ],
@@ -502,18 +516,18 @@
       },
       "epg_sources": [
         {
-          "scraper": "brazil-tv-camara",
+          "scraper": "planned",
           "url": "https://www.camara.leg.br/tv/programacao-semanal",
           "method": "GET",
           "kind": "weekly_schedule_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         },
         {
-          "scraper": "planned",
+          "scraper": "brazil-camara-events-api",
           "url": "https://dadosabertos.camara.leg.br/api/v2/eventos",
           "method": "GET",
           "kind": "open_data_events_api",
-          "scraper_status": "planned"
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -891,11 +905,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "spain-canal-parlamento-weekly",
+          "scraper": "planned",
           "url": "https://www.congreso.es/programacion",
           "method": "GET",
           "kind": "linear_weekly_broadcast_schedule",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -3380,11 +3394,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "ontario-calendar",
+          "scraper": "planned",
           "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -3465,11 +3479,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "ontario-calendar",
+          "scraper": "planned",
           "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -3550,11 +3564,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "ontario-calendar",
+          "scraper": "planned",
           "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -3635,11 +3649,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "ontario-calendar",
+          "scraper": "planned",
           "url": "https://www.ola.org/en/legislative-business/calendar/",
           "method": "GET",
           "kind": "calendar_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -3820,11 +3834,11 @@
           "scraper_status": "implemented"
         },
         {
-          "scraper": "youtube-live",
+          "scraper": "planned",
           "url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
           "method": "GET",
           "kind": "official_youtube_live_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -3915,11 +3929,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "youtube-live",
+          "scraper": "planned",
           "url": "https://www.youtube.com/@AUSParliamentLive/live",
           "method": "GET",
           "kind": "official_youtube_live_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         },
         {
           "scraper": "planned",
@@ -4191,11 +4205,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "youtube-live",
+          "scraper": "planned",
           "url": "https://www.youtube.com/@AsambleaCRC/live",
           "method": "GET",
           "kind": "official_youtube_live_page",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         },
         {
           "scraper": "planned",
@@ -6864,6 +6878,13 @@
           "method": "GET",
           "kind": "senate_hearings_and_meetings",
           "scraper_status": "planned"
+        },
+        {
+          "url": "https://www.senate.gov/general/committee_schedules/hearings.xml",
+          "method": "GET",
+          "kind": "committee_hearing_xml",
+          "scraper": "us-senate-hearings-xml",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -6934,11 +6955,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "planned",
+          "scraper": "california-assembly-calendar",
           "url": "https://www.assembly.ca.gov/events",
           "method": "GET",
-          "kind": "assembly_events_calendar",
-          "scraper_status": "planned"
+          "kind": "calendar_export_parameters",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -7241,6 +7262,13 @@
           "method": "GET",
           "kind": "senate_events_calendar",
           "scraper_status": "planned"
+        },
+        {
+          "url": "https://www.nysenate.gov/session/calendar-download",
+          "method": "GET",
+          "kind": "session_icalendar",
+          "scraper": "new-york-senate-calendar",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -7372,7 +7400,7 @@
       "playback_url": null,
       "playback_policy": "link_out",
       "official_url": "https://capitoltvri.cablecast.tv/",
-      "provenance_note": "Capitol TV is the Rhode Island General Assembly's broadcast arm and publishes eight live channels, schedules, and archives through Cablecast.",
+      "provenance_note": "Capitol TV is the Rhode Island General Assembly's broadcast arm and publishes eight live channels, schedules, and archives through Cablecast. Schedule metadata covers only the portal’s explicitly paired default schedule channel 1/live stream 1; the other seven streams are not assigned that guide.",
       "technical_status": "link_only",
       "stability_risk": "medium",
       "availability": "event_based",
@@ -7387,11 +7415,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "planned",
+          "scraper": "rhode-island-cablecast",
           "url": "https://capitoltvri.cablecast.tv/",
           "method": "GET",
           "kind": "cablecast_schedule_and_archives",
-          "scraper_status": "planned"
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -7778,11 +7806,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "czech-chamber-plenary",
+          "scraper": "planned",
           "url": "https://www.psp.cz/sqw/hp.sqw?k=203",
           "method": "GET",
           "kind": "dated_plenary_weekly_plan",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {
@@ -8230,8 +8258,8 @@
       },
       "epg_sources": [
         {
-          "scraper": "mauritius-parliament-tv-guide",
-          "scraper_status": "implemented",
+          "scraper": "planned",
+          "scraper_status": "planned",
           "url": "https://parliamenttv.govmu.org/Guide",
           "method": "GET",
           "kind": "dated_event_guide_start_only"
@@ -9482,6 +9510,13 @@
           "url": "https://sg001-harmony.sliq.net/00290/Harmony",
           "method": "GET",
           "kind": "official_meeting_calendar"
+        },
+        {
+          "url": "https://sg001-harmony.sliq.net/00290/Harmony/en/api/Data/GetUpcomingEvents?lastModified=19700101000000000",
+          "method": "GET",
+          "kind": "harmony_event_json",
+          "scraper": "harmony-json",
+          "scraper_status": "implemented"
         }
       ],
       "permission": {
@@ -19075,11 +19110,11 @@
       },
       "epg_sources": [
         {
-          "scraper": "quebec-canal-assemblee",
+          "scraper": "planned",
           "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html",
           "method": "GET",
           "kind": "dated_linear_weekly_programme",
-          "scraper_status": "implemented"
+          "scraper_status": "planned"
         }
       ],
       "permission": {

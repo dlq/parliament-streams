@@ -105,17 +105,26 @@ class OireachtasTVGuideTests(unittest.TestCase):
         during_unknown = self.parse(html, now=datetime(2026, 10, 26, 23, 30, tzinfo=UTC))
         self.assertIsNone(during_unknown[ireland_oireachtas.CHANNEL_ID]["current_event_title"])
 
-    def test_open_interior_slot_and_backwards_range_are_not_exported_as_valid_times(self):
-        for end in ["2026-10-26T09:00:00+00:00", "2026-10-26T08:00:00+00:00"]:
-            html = irish_guide(
-                irish_day(
-                    "2026-10-26",
-                    irish_event("2026-10-26T09:00:00+00:00", end)
-                    + irish_event("2026-10-26T10:00:00+00:00", "2026-10-26T11:00:00+00:00"),
-                )
+    def test_unknown_interior_end_preserves_other_complete_programmes(self):
+        html = irish_guide(
+            irish_day(
+                "2026-10-26",
+                irish_event("2026-10-26T09:00:00+00:00", "2026-10-26T09:00:00+00:00")
+                + irish_event("2026-10-26T10:00:00+00:00", "2026-10-26T11:00:00+00:00"),
             )
-            with self.subTest(end=end), self.assertRaises(ValueError):
-                self.parse(html)
+        )
+        events = self.parse(html)[ireland_oireachtas.CHANNEL_ID]["events"]
+        self.assertNotIn("end", events[0])
+        self.assertEqual(events[1]["end"], "2026-10-26T11:00:00Z")
+
+    def test_backwards_range_fails(self):
+        html = irish_guide(
+            irish_day(
+                "2026-10-26", irish_event("2026-10-26T09:00:00+00:00", "2026-10-26T08:00:00+00:00")
+            )
+        )
+        with self.assertRaises(ValueError):
+            self.parse(html)
 
     def test_explicit_unix_instants_resolve_both_dst_fold_occurrences(self):
         html = irish_guide(

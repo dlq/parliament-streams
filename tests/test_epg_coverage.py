@@ -35,7 +35,7 @@ class EpgCoverageTests(unittest.TestCase):
         channels = {channel["id"]: channel for channel in self.catalogue["channels"]}
         selected = [
             "cpac-ca",
-            "brazil-tv-camara",
+            "brazil-tv-senado-official",
             "eu-audiovisual-ebs",
             "italy-senate",
             "netherlands-tweede-kamer",
@@ -70,7 +70,10 @@ class EpgCoverageTests(unittest.TestCase):
                 "generated_at": "2026-10-25T12:00:00Z",
                 "channels": {
                     "cpac-ca": {"scraper": "cpac", "events": [self.event]},
-                    "brazil-tv-camara": {"scraper": "brazil-tv-camara", "events": [incomplete]},
+                    "brazil-tv-senado-official": {
+                        "scraper": "brazil-tv-senado-grid",
+                        "events": [incomplete],
+                    },
                     "european-parliament-multimedia-centre": {
                         "scraper": "europarl-webstreaming",
                         "events": [self.event, {**self.event, "id": "parallel-room"}],
@@ -78,7 +81,7 @@ class EpgCoverageTests(unittest.TestCase):
                 },
                 "sources": {
                     "cpac": {"status": "ok"},
-                    "brazil-tv-camara": {"status": "ok"},
+                    "brazil-tv-senado-grid": {"status": "ok"},
                     "europarl-webstreaming": {"status": "ok"},
                     "ebs-grid": {"status": "empty"},
                     "italian-senate-palimpsest": {"status": "error"},
@@ -97,7 +100,7 @@ class EpgCoverageTests(unittest.TestCase):
                 "eu-audiovisual-ebs": "empty",
                 "italy-senate": "collection_error",
                 "european-parliament-multimedia-centre": "mapping_unverified",
-                "brazil-tv-camara": "quality_hold",
+                "brazil-tv-senado-official": "quality_hold",
                 "cpac-ca": "guide_available",
             },
         )
@@ -130,7 +133,7 @@ class EpgCoverageTests(unittest.TestCase):
             definitions,
             {
                 "cpac-ca",
-                "brazil-tv-camara",
+                "brazil-tv-senado-official",
                 "eu-audiovisual-ebs",
                 "italy-senate",
                 "netherlands-tweede-kamer",
@@ -148,14 +151,14 @@ class EpgCoverageTests(unittest.TestCase):
                 self.assertEqual(coverage["channels"]["eu-audiovisual-ebs"]["state"], "empty")
         self.snapshot["sources"]["cpac"]["status"] = "error"
         self.snapshot["channels"]["cpac-ca"]["stale"] = True
-        self.snapshot["sources"]["brazil-tv-camara"]["status"] = "error"
-        self.snapshot["channels"]["brazil-tv-camara"]["stale"] = True
+        self.snapshot["sources"]["brazil-tv-senado-grid"]["status"] = "error"
+        self.snapshot["channels"]["brazil-tv-senado-official"]["stale"] = True
         report = assess_schedules(self.catalogue, self.snapshot).report
         coverage = report["coverage"]["channels"]
         self.assertEqual(coverage["cpac-ca"]["state"], "guide_available")
-        self.assertEqual(coverage["brazil-tv-camara"]["state"], "quality_hold")
+        self.assertEqual(coverage["brazil-tv-senado-official"]["state"], "quality_hold")
         self.assertTrue(report["channels"]["cpac-ca"]["stale"])
-        self.assertTrue(report["channels"]["brazil-tv-camara"]["stale"])
+        self.assertTrue(report["channels"]["brazil-tv-senado-official"]["stale"])
 
     def test_coverage_counts_uncollected_catalogue_entries_without_mutating_inputs(self):
         empty = cast(ScheduleSnapshot, {"channels": {}, "sources": {}})

@@ -5,7 +5,6 @@ from __future__ import annotations
 import json
 import re
 from datetime import UTC, datetime, timedelta
-from typing import Any, cast
 from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
 
@@ -17,6 +16,7 @@ from .common import (
     build_upcoming_schedule,
     clean_html,
     localize_source_time,
+    require_records,
 )
 
 API_URL = "https://webtv.senato.it/api/palimpsest"
@@ -57,7 +57,7 @@ def parse(*payloads: str, now: datetime | None = None) -> ParsedSchedule:
     events: list[ScheduleEvent] = []
 
     for offset, payload in enumerate(payloads):
-        raw_events = cast(list[dict[str, Any]], json.loads(payload))
+        raw_events = require_records(json.loads(payload), "Italian Senate palimpsest")
         event_date = local_date + timedelta(days=offset)
         for raw_event in raw_events:
             if (

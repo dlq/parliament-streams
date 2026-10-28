@@ -1,0 +1,648 @@
+{
+  "reviewed_on": "2026-10-28",
+  "scope": "Maintenance of the existing 27 collectors; no new collector implemented",
+  "local_snapshot_generated_at": "2026-10-28T15:42:37Z",
+  "collection_counts": {
+    "channels": 21,
+    "complete": 7,
+    "current": 8,
+    "empty": 6,
+    "error": 1,
+    "events": 743,
+    "events_with_end": 505,
+    "events_with_official_id": 163,
+    "events_with_url": 360,
+    "fresh_channels": 21,
+    "ok": 20,
+    "stale_channels": 0,
+    "upcoming": 20
+  },
+  "quality_counts": {
+    "events": 743,
+    "exportable": 221,
+    "excluded": 522,
+    "channels_with_events": 21,
+    "excluded_assumed_broadcast_date": 20,
+    "excluded_missing_time_range": 238,
+    "excluded_unverified_channel_mapping": 473
+  },
+  "xmltv_populated_channels": 6,
+  "source_results": {
+    "brazil-tv-camara": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T02:45:00Z",
+      "coverage_start": "2026-10-28T03:00:00Z",
+      "event_count": 20,
+      "events_with_end": 19,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.camara.leg.br/tv/programacao-semanal"
+      ],
+      "used_last_good": false
+    },
+    "brazil-tv-senado-grid": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-31T02:30:00Z",
+      "coverage_start": "2026-10-28T03:00:00Z",
+      "event_count": 64,
+      "events_with_end": 61,
+      "events_with_official_id": 0,
+      "events_with_url": 64,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www12.senado.leg.br/tv/programacaoAjax?date=28-10-2026",
+        "https://www12.senado.leg.br/tv/programacaoAjax?date=29-10-2026",
+        "https://www12.senado.leg.br/tv/programacaoAjax?date=30-10-2026"
+      ],
+      "used_last_good": false
+    },
+    "canada-harmony": {
+      "channel_count": 2,
+      "channels_expected": 2,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-06T15:00:00Z",
+      "coverage_start": "2026-04-20T15:05:00Z",
+      "event_count": 59,
+      "events_with_end": 59,
+      "events_with_official_id": 59,
+      "events_with_url": 59,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://parlvu.parl.gc.ca/Harmony/en",
+        "https://senparlvu.parl.gc.ca/Harmony/"
+      ],
+      "used_last_good": false
+    },
+    "cpac": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T14:00:00Z",
+      "coverage_start": "2026-10-28T08:02:00Z",
+      "event_count": 21,
+      "events_with_end": 20,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.cpac.ca/schedule/"
+      ],
+      "used_last_good": false
+    },
+    "czech-chamber-plenary": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-03T13:00:00Z",
+      "coverage_start": "2026-11-03T13:00:00Z",
+      "event_count": 1,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 1,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=44",
+        "https://www.psp.cz/sqw/hp.sqw?k=202&r=2026&c=45"
+      ],
+      "used_last_good": false
+    },
+    "dutch-debat-direct": {
+      "channel_count": 1,
+      "channels_expected": 2,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T15:30:00Z",
+      "coverage_start": "2026-10-28T09:15:49Z",
+      "event_count": 13,
+      "events_with_end": 13,
+      "events_with_official_id": 13,
+      "events_with_url": 13,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-28",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-29",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-30",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-10-31",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-11-01",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-11-02",
+        "https://api.debatdirect.tweedekamer.nl/api/agenda/2026-11-03"
+      ],
+      "used_last_good": false
+    },
+    "ebs-grid": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T16:20:00Z",
+      "coverage_start": "2026-10-28T09:30:10Z",
+      "event_count": 12,
+      "events_with_end": 5,
+      "events_with_official_id": 12,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://8hwk2cyeyb.execute-api.eu-west-1.amazonaws.com/parrotfish-prod/ebs/grid?channelName=EBS&dateFrom=20261028&dateTo=20261029&withCompleteThesaurusData=true"
+      ],
+      "used_last_good": false
+    },
+    "estonia-riigikogu-plenary": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T08:00:00Z",
+      "coverage_start": "2026-10-28T10:00:00Z",
+      "event_count": 3,
+      "events_with_end": 0,
+      "events_with_official_id": 3,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://api.riigikogu.ee/api/agenda/plenary?startDate=2026-10-28&endDate=2026-11-04&lang=ET&querySteno=false"
+      ],
+      "used_last_good": false
+    },
+    "europarl-webstreaming": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-05T10:30:00Z",
+      "coverage_start": "2026-09-28T11:00:00Z",
+      "event_count": 206,
+      "events_with_end": 206,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://multimedia.europarl.europa.eu/_next/data/mn1XdpefUAeUcPpwTz-7w/en/webstreaming.json?view=month&d=2026-10-28"
+      ],
+      "used_last_good": false
+    },
+    "germany-bundestag-tv1": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-06T08:00:00Z",
+      "coverage_start": "2026-11-04T13:00:00Z",
+      "event_count": 3,
+      "events_with_end": 3,
+      "events_with_official_id": 0,
+      "events_with_url": 3,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.bundestag.de/mediathek"
+      ],
+      "used_last_good": false
+    },
+    "ireland-oireachtas-tv-guide": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-05T21:45:00Z",
+      "coverage_start": "2026-10-28T15:30:00Z",
+      "event_count": 128,
+      "events_with_end": 119,
+      "events_with_official_id": 0,
+      "events_with_url": 128,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/"
+      ],
+      "used_last_good": false
+    },
+    "italian-senate-palimpsest": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-28T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-29T00%3A00%3A00",
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-29T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-30T00%3A00%3A00",
+        "https://webtv.senato.it/api/palimpsest?field_date_value%5Bmin%5D=2026-10-30T00%3A00%3A00&field_date_value%5Bmax%5D=2026-10-31T00%3A00%3A00"
+      ],
+      "used_last_good": false
+    },
+    "italy-camera-webtv-events": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T14:00:00Z",
+      "coverage_start": "2026-10-29T07:30:00Z",
+      "event_count": 9,
+      "events_with_end": 0,
+      "events_with_official_id": 9,
+      "events_with_url": 9,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://webtv.camera.it/"
+      ],
+      "used_last_good": false
+    },
+    "knesset-tv-guide": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 17,
+      "error": "HTTP 403",
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-26T04:57:43Z",
+      "outcome_detail": "fetch_or_parse_error",
+      "status": "error",
+      "urls": [
+        "https://www.knesset.tv/%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%9E%D7%A0%D7%92%D7%9F-%D7%91%D7%A2%D7%A8%D7%95%D7%A5/"
+      ],
+      "used_last_good": false
+    },
+    "mauritius-parliament-tv-guide": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://parliamenttv.govmu.org/Guide"
+      ],
+      "used_last_good": false
+    },
+    "new-zealand-parliament": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://prod-win-client-home.azurewebsites.net/api/opendata/calendar/housesitting?startDate=2026-10-28&endDate=2026-11-12"
+      ],
+      "used_last_good": false
+    },
+    "norway-stortinget-calendar": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-26T09:00:00Z",
+      "coverage_start": "2026-11-02T12:00:00Z",
+      "event_count": 16,
+      "events_with_end": 0,
+      "events_with_official_id": 16,
+      "events_with_url": 16,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.stortinget.no/api/kalender/geticalmeetings?languageCode=no",
+        "https://www.stortinget.no/api/kalender/geticalhearings?languageCode=no"
+      ],
+      "used_last_good": false
+    },
+    "ontario-calendar": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.ola.org/en/legislative-business/calendar/"
+      ],
+      "used_last_good": false
+    },
+    "portugal-open-data-agenda": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-12-11T10:00:00Z",
+      "coverage_start": "2026-10-27T11:00:00Z",
+      "event_count": 17,
+      "events_with_end": 0,
+      "events_with_official_id": 17,
+      "events_with_url": 6,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx",
+        "https://www.parlamento.pt/Cidadania/Paginas/DABoletimInformativo.aspx?t=57465a4a5353424d5a576470633278686448567959513d3d&Path=2hkHhW5cOW9m7kXJL2AIrcOe8zjwLDcjkC6URxSPx8QjlPvX3SmbQMHSdPS3ySK7xAcsiKLqXW4tcgepiTpHwyQSJeHq1kxZUl%2bejsJMjRmRT5mLGb6K12aPjUXiKdfEeqkVmYi1%2b2R3AexJBBEQF52ecsm%2fQ0yzVVZnBZawd1r3DZIhR26zqR4joCR0sOn8oltj4qxySjJUPZbAuZXYYa6KI4pIsbh2l7hOCTn0sVl%2fKmkhcH%2fW8Zyhvkk%2fF%2bQ7bZO10%2bndxSujxb83LpcM4%2b8OgErPv3al9On5iGx1iK8GOKlL%2bQcalM6ns%2b1wYKiqeZ7GfKeC7UxOWregmdPgOA%3d%3d",
+        "https://app.parlamento.pt/webutils/docs/doc.txt?path=l0bAIus9VfM7mkazSeVdhouP34hxPITSJBPAghcfjkymEbpplg1WgtcPP8KSfGbgxdCrbUi8v01ESClfXWjsiuvvDxHxg9k9vTzK91r8tHEAcW79p2M2v60eP2Ul6vICewup1fFwXWsP1wsSu60FmpyDxYZGrgEkxpC2IG0fp5LF%2fkDBX6xR59%2b3OerBBDswHMiXWJzFoo3F05e%2bP4JXBKQeKMloVqdloNxu4CjgHcUNRcQ345r0YafpKkHl0ngOk5fvcnvqI8IMgnuzwptQ%2bkoo3VZ3EdUKz64IW0%2ffBUa6KNv%2fTrSu6hd%2bCSH0yjRjxDqF2rLPLFeiqXzp8nkHVgeeW%2f8sMlN2J0ejd%2bfbavQf8v1V1ZOlOVbl2Wd%2fvK8ID%2btcVhqIir0mIFYzhq6atqwf%2fu2GFuxMwgEvPd0qTG0%3d&fich=AgendaParlamentar_json.txt&Inline=true"
+      ],
+      "used_last_good": false
+    },
+    "quebec-canal-assemblee": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html"
+      ],
+      "used_last_good": false
+    },
+    "quebec-webdiffusion": {
+      "channel_count": 0,
+      "channels_expected": 14,
+      "consecutive_failures": 0,
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "no_events_in_window",
+      "status": "empty",
+      "urls": [
+        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeEnDirect",
+        "https://www.assnat.qc.ca/Gabarits/RefonteVA_Accueil.aspx/ObtenirListeAVenir"
+      ],
+      "used_last_good": false
+    },
+    "spain-canal-parlamento-weekly": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-30T08:00:00Z",
+      "coverage_start": "2026-10-26T08:00:00Z",
+      "event_count": 5,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 5,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.congreso.es/programacion",
+        "https://www.congreso.es:443/es/programacion?p_p_id=canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_fechaSeleccionada=2026-10-28&_canalParlamentoPortlet_INSTANCE_ixPKZs1MDAFR_mvcPath=%2Fview_semanal.jsp"
+      ],
+      "used_last_good": false
+    },
+    "sweden-riksdag-calendar": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-25T15:00:00Z",
+      "coverage_start": "2026-11-03T12:00:00Z",
+      "event_count": 11,
+      "events_with_end": 0,
+      "events_with_official_id": 11,
+      "events_with_url": 11,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://data.riksdagen.se/kalender/?org=kamm&utformat=xml"
+      ],
+      "used_last_good": false
+    },
+    "taiwan-parliamentary-tv-programmes": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-30T10:00:00Z",
+      "coverage_start": "2026-10-28T16:31:00Z",
+      "event_count": 22,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 22,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F28",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F29",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F29",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F30",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F30"
+      ],
+      "used_last_good": false
+    },
+    "uk-parliament": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-11-27T09:30:00Z",
+      "coverage_start": "2026-10-28T08:45:00Z",
+      "event_count": 110,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://whatson-api.parliament.uk/calendar/events/list.json?startDate=2026-10-28&endDate=2026-11-28"
+      ],
+      "used_last_good": false
+    },
+    "un-webtv-schedule": {
+      "channel_count": 1,
+      "channels_expected": 1,
+      "consecutive_failures": 0,
+      "coverage_end": "2026-10-29T00:30:00Z",
+      "coverage_start": "2026-10-28T12:30:00Z",
+      "event_count": 22,
+      "events_with_end": 0,
+      "events_with_official_id": 22,
+      "events_with_url": 22,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://webtv.un.org/en/schedule/2026-10-28"
+      ],
+      "used_last_good": false
+    },
+    "youtube-live": {
+      "channel_count": 1,
+      "channels_expected": 3,
+      "consecutive_failures": 0,
+      "event_count": 1,
+      "events_with_end": 0,
+      "events_with_official_id": 1,
+      "events_with_url": 1,
+      "fetched_at": "2026-10-28T15:42:37Z",
+      "last_success_at": "2026-10-28T15:42:37Z",
+      "outcome_detail": "events",
+      "status": "ok",
+      "urls": [
+        "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+        "https://www.youtube.com/@AUSParliamentLive/live",
+        "https://www.youtube.com/@AsambleaCRC/live"
+      ],
+      "used_last_good": false
+    }
+  },
+  "source_samples": [
+    {
+      "source": "ireland-oireachtas-tv-guide",
+      "url": "https://www.oireachtas.ie/en/oireachtas-tv/oireachtas-tv-channel/",
+      "retrieved_at": "2026-10-28T15:31:10.452922+00:00",
+      "bytes": 282139,
+      "sha256": "4f3383066cbee3fd9017e65054651dfdd74042d1f8fdf5da30338e7904cb6c06"
+    },
+    {
+      "source": "italy-camera-webtv-events",
+      "url": "https://webtv.camera.it/",
+      "retrieved_at": "2026-10-28T15:31:11.924360+00:00",
+      "bytes": 86682,
+      "sha256": "b4f7533ee7e1eb2df2b8ae1257b1c96c11d9a5a5208b8e843b159f4165f5034a"
+    },
+    {
+      "source": "brazil-tv-camara",
+      "url": "https://www.camara.leg.br/tv/programacao-semanal",
+      "retrieved_at": "2026-10-28T15:31:13.065883+00:00",
+      "bytes": 73383,
+      "sha256": "1a8233daae90d6b75432a4269c3636bdf375497cb0b5e5538e8631e43bb7f096"
+    }
+  ],
+  "candidate_fetches": [
+    {
+      "candidate": "rhode-island",
+      "url": "https://capitoltvri.cablecast.tv/",
+      "fetched_at": "2026-10-28T15:42:40.620563+00:00",
+      "bytes": 1968607,
+      "sha256": "1eb99c5e24a08b824cf8a5da7cc38a095a91c4125c53e7043bae640d6542b0e5",
+      "status": "ok"
+    },
+    {
+      "candidate": "bermuda",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+      "fetched_at": "2026-10-28T15:42:41.369313+00:00",
+      "bytes": 50699,
+      "sha256": "db53b3092a6e73488297349c903d158a192263ec65e62f72f857daf6fd6267d7",
+      "status": "ok"
+    },
+    {
+      "candidate": "bermuda-upcoming",
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony/en/View/UpcomingEvents/",
+      "fetched_at": "2026-10-28T15:45:30.721664+00:00",
+      "status": "ok",
+      "bytes": 50699,
+      "sha256": "db53b3092a6e73488297349c903d158a192263ec65e62f72f857daf6fd6267d7"
+    },
+    {
+      "candidate": "france-open-data-agenda",
+      "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip",
+      "fetched_at": "2026-10-28T15:45:31.533589+00:00",
+      "status": 200,
+      "content_type": "application/zip",
+      "content_length": "8547225",
+      "method": "HEAD"
+    }
+  ],
+  "candidate_schedule_sample": {
+    "runs": 43,
+    "range_start": "2026-10-28T00:00:00Z",
+    "range_end": "2026-10-29T15:51:28Z",
+    "channels": null,
+    "sample": {
+      "scheduleItemId": 33121,
+      "channelId": 1,
+      "runDateTime": "2026-10-28T00:00:00Z",
+      "endDateTime": "2026-10-28T00:23:08Z",
+      "title": "Joint Committee on State Lottery: 10-26-2026"
+    }
+  },
+  "artifact_hashes": {
+    "schedules.json": "bb775f80807794b557f833e39cd0bbcfe4793802b0aa247da3d6a76d967842ff",
+    "epg-quality.json": "f331d5ffc9d95bd59a9c8ed5b60c4a47dd57364e38a9886e4d1ad961f96e7848",
+    "epg.xml": "9b8a2a0a260b14dfb46e0c58eafe483cb950dc033c00afb0c8a881f0b34e1bf2"
+  },
+  "limits": [
+    "Local collection does not establish GitHub runner accessibility.",
+    "Empty means the parser returned no events, not an independent verification of every source window.",
+    "Source metrics describe each collector; overlapping channel results use publication precedence.",
+    "Raw source bodies stay outside the repository; only hashes, bounded public metadata and synthetic regression fixtures are retained."
+  ],
+  "additional_candidate_samples": [
+    {
+      "name": "france-commissions",
+      "url": "https://event2.assemblee-nationale.fr/programme.php",
+      "retrieved_at": "2026-10-28T15:20:59.122269+00:00",
+      "status": 200,
+      "bytes": 35503,
+      "sha256": "e333e0a531d0e9c8bc521202f21c2cb838f59facecf3f59ebdf070d34a82e2e2"
+    },
+    {
+      "name": "luxembourg-agenda",
+      "url": "https://www.chd.lu/fr/agenda",
+      "retrieved_at": "2026-10-28T15:21:01.121955+00:00",
+      "status": 200,
+      "bytes": 240710,
+      "sha256": "ea6cc6cf8b736e488aa2d3b309db4e03c3ec2420ca287016ae15161f47c710a5"
+    }
+  ]
+}

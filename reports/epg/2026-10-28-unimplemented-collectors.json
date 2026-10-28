@@ -1,0 +1,4180 @@
+{
+  "generated_on": "2026-10-28",
+  "catalogue_sha256": "83652decde0221f5e7c6dc51bc25e78817f408684fa0becdbf19b1b495868cdd",
+  "scope": "All epg_sources marked planned in the published viewing catalogue, including supplementary sources on already parsed records. Inventory-only candidates and implemented-but-blocked collectors are separate.",
+  "counts": {
+    "catalogue_records": 261,
+    "registered_collectors": 26,
+    "records_with_implemented_source": 42,
+    "records_without_implemented_source": 219,
+    "records_with_any_planned_source": 235,
+    "planned_associations": 247,
+    "distinct_planned_inputs": 241,
+    "groups": {
+      "Broadcast and webcast schedule candidates": 20,
+      "Institutional calendars and meeting listings": 66,
+      "Recording, archive and navigation surfaces": 152,
+      "Structured-data and document candidates": 3
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.aph.gov.au/News_and_Events/Watch_Parliament",
+      "method": "GET",
+      "kinds": [
+        "broadcast_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "australia-parliament-youtube",
+          "name": "Australia Parliament Live",
+          "jurisdiction": "Australia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.camara.cl/prensa/television.aspx",
+      "method": "GET",
+      "kinds": [
+        "television_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "chile-camara-tv",
+          "name": "Chile Camara TV",
+          "jurisdiction": "Chile",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.asamblea.go.cr/p/SitePages/Transmisi%C3%B3n%20en%20vivo.aspx",
+      "method": "GET",
+      "kinds": [
+        "live_transmission_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "costa-rica-assembly-youtube",
+          "name": "Costa Rica Assembly YouTube",
+          "jurisdiction": "Costa Rica",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.ft.dk/da/Aktuelt/webtv/TV_kanalen_folketinget",
+      "method": "GET",
+      "kinds": [
+        "linear_television_programme_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "denmark-folketinget",
+          "name": "Denmark Folketinget",
+          "jurisdiction": "Denmark",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Prior HTTP 403 hold; not revalidated in this pass."
+    },
+    {
+      "url": "https://www.ft.dk/da/aktuelt/tv-fra-folketinget",
+      "method": "GET",
+      "kinds": [
+        "upcoming_broadcasts_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "denmark-folketinget",
+          "name": "Denmark Folketinget",
+          "jurisdiction": "Denmark",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Prior HTTP 403 hold; not revalidated in this pass."
+    },
+    {
+      "url": "https://www.riigikogu.ee/en/news-and-publications/multimedia/live-broadcast/",
+      "method": "GET",
+      "kinds": [
+        "live_broadcast_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "estonia-riigikogu-live-1",
+          "name": "Estonia Riigikogu Live 1",
+          "jurisdiction": "Estonia",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://event2.assemblee-nationale.fr/programme.php",
+      "method": "GET",
+      "kinds": [
+        "broadcast_programme_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "france-national-assembly",
+          "name": "France National Assembly",
+          "jurisdiction": "France",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "france-commission-broadcasts"
+    },
+    {
+      "url": "https://www.hellenicparliament.gr/Enimerosi/Vouli-Tileorasi/programma/",
+      "method": "GET",
+      "kinds": [
+        "television_programme_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "greece-hellenic-parliament-tv",
+          "name": "Greece Hellenic Parliament TV",
+          "jurisdiction": "Greece",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Prior HTTP 403 hold; not revalidated in this pass."
+    },
+    {
+      "url": "https://sansadtv.nic.in/program-schedule",
+      "method": "GET",
+      "kinds": [
+        "programme_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "india-sansad-tv-1",
+          "name": "India Sansad TV 1",
+          "jurisdiction": "India",
+          "has_another_implemented_source": false
+        },
+        {
+          "id": "india-sansad-tv-2",
+          "name": "India Sansad TV 2",
+          "jurisdiction": "India",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Prior access/mapping hold; not revalidated in this pass."
+    },
+    {
+      "url": "https://sansadtv.nic.in/fpc-rs",
+      "method": "GET",
+      "kinds": [
+        "programme_spreadsheet_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "india-sansad-tv-2",
+          "name": "India Sansad TV 2",
+          "jurisdiction": "India",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Prior access/mapping hold; not revalidated in this pass."
+    },
+    {
+      "url": "https://www.parliament.nsw.gov.au/webcasts",
+      "method": "GET",
+      "kinds": [
+        "webcast_and_daily_program_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "new-south-wales-parliament-webcasts",
+          "name": "New South Wales Parliament Webcasts",
+          "jurisdiction": "New South Wales",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.landtag.nrw.de/home/mediathek/aktuelle-und-kunftige-live-ubert.html",
+      "method": "GET",
+      "kinds": [
+        "scheduled_livestreams"
+      ],
+      "catalogue_records": [
+        {
+          "id": "north-rhine-westphalia-landtag-live",
+          "name": "North Rhine-Westphalia Landtag Live",
+          "jurisdiction": "North Rhine-Westphalia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://niassembly.tv/calendar/",
+      "method": "GET",
+      "kinds": [
+        "assembly_tv_live_schedule"
+      ],
+      "catalogue_records": [
+        {
+          "id": "northern-ireland-assembly-tv",
+          "name": "Northern Ireland Assembly TV",
+          "jurisdiction": "Northern Ireland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parliament.qld.gov.au/en/work-of-committees/Upcoming-Committee-Business",
+      "method": "GET",
+      "kinds": [
+        "upcoming_broadcast_committee_business"
+      ],
+      "catalogue_records": [
+        {
+          "id": "queensland-parliament-live",
+          "name": "Queensland Parliament Live",
+          "jurisdiction": "Queensland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.scottishparliament.tv/",
+      "method": "GET",
+      "kinds": [
+        "parliament_tv_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "scottish-parliament-tv",
+          "name": "Scottish Parliament TV",
+          "jurisdiction": "Scotland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.senedd.tv/",
+      "method": "GET",
+      "kinds": [
+        "senedd_tv_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "senedd-tv",
+          "name": "Senedd TV",
+          "jurisdiction": "Wales",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://tv.nrsr.sk/",
+      "method": "GET",
+      "kinds": [
+        "current_and_upcoming_broadcasts_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "slovakia-tv-nrsr",
+          "name": "Slovakia TV NRSR",
+          "jurisdiction": "Slovakia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://tpchannel.org/schedule/tv",
+      "method": "GET",
+      "kinds": [
+        "monthly_television_grid_pdf_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "thailand-parliament-tv",
+          "name": "Thailand Parliament TV",
+          "jurisdiction": "Thailand",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Prior monthly-PDF recurrence/date conflicts; not revalidated in this pass."
+    },
+    {
+      "url": "https://live.house.gov/",
+      "method": "GET",
+      "kinds": [
+        "house_floor_live_status_and_schedule"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-house-floorcast",
+          "name": "U.S. House FloorCast",
+          "jurisdiction": "United States",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.senate.gov/legislative/schedule/floor_schedule.htm",
+      "method": "GET",
+      "kinds": [
+        "senate_floor_schedule"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-senate-floor-webcast",
+          "name": "U.S. Senate Floor Webcast",
+          "jurisdiction": "United States",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Broadcast and webcast schedule candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.assembly.ab.ca/assembly-business/watch-the-assembly",
+      "method": "GET",
+      "kinds": [
+        "watch_page_and_session_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "alberta-assembly-online",
+          "name": "Alberta Assembly Online",
+          "jurisdiction": "Alberta",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/actividadparlamentaria/agendasemanal.do",
+      "method": "GET",
+      "kinds": [
+        "weekly_parliamentary_agenda"
+      ],
+      "catalogue_records": [
+        {
+          "id": "andalusia-parliament-tv-live",
+          "name": "Andalusia Parliament TV Live",
+          "jurisdiction": "Andalusia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parlament.gv.at/aktuelles/mediathek",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "austria-parliament-mediathek",
+          "name": "Austria Parliament Mediathek",
+          "jurisdiction": "Austria",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.landtag-bw.de/de/mediathek/landtag-live",
+      "method": "GET",
+      "kinds": [
+        "livestream_and_sitting_schedule"
+      ],
+      "catalogue_records": [
+        {
+          "id": "baden-wurttemberg-landtag-live",
+          "name": "Baden-Wurttemberg Landtag Live",
+          "jurisdiction": "Baden-Wurttemberg",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.bayern.landtag.de/aktuelles/sitzungen/",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_meetings"
+      ],
+      "catalogue_records": [
+        {
+          "id": "bavaria-landtag-plenum-online",
+          "name": "Bavaria Landtag Plenum Online",
+          "jurisdiction": "Bavaria",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://sg001-harmony.sliq.net/00290/Harmony",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "bermuda-parliament-audio-archive",
+          "name": "Bermuda Parliament Audio Archive",
+          "jurisdiction": "Bermuda",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Structured Harmony JSON replacement now implemented; this retired presentation input remains an official outlink, not an HTML reinstatement queue."
+    },
+    {
+      "url": "https://www.gr.be.ch/de/start/sessionen/daten-der-kommenden-sessionen.html",
+      "method": "GET",
+      "kinds": [
+        "official_session_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-bern-grand-council-archive",
+          "name": "Bern Grand Council Archive",
+          "jurisdiction": "Bern",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.leg.bc.ca/index.php/parliamentary-business/parliamentary-calendar",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "british-columbia-legislature-webcasts",
+          "name": "British Columbia Legislature Webcasts",
+          "jurisdiction": "British Columbia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Embedded FullCalendar JSON confirmed; sampled session entries are historical noon-bounded blocks. Upcoming timed session unverified."
+    },
+    {
+      "url": "https://parlvu.parl.gc.ca/Harmony/en",
+      "method": "GET",
+      "kinds": [
+        "harmony_upcoming_events_and_powerbrowser_pages"
+      ],
+      "catalogue_records": [
+        {
+          "id": "canada-house-of-commons-parlvu",
+          "name": "Canada House of Commons ParlVU",
+          "jurisdiction": "Canada",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Structured Harmony JSON replacement now implemented; this retired presentation input remains an official outlink, not an HTML reinstatement queue.",
+      "retired_collector": "canada-harmony"
+    },
+    {
+      "url": "https://senparlvu.parl.gc.ca/Harmony/",
+      "method": "GET",
+      "kinds": [
+        "harmony_upcoming_events_and_powerbrowser_pages"
+      ],
+      "catalogue_records": [
+        {
+          "id": "canada-senate-senvu",
+          "name": "Canada Senate SenVu",
+          "jurisdiction": "Canada",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Structured Harmony JSON replacement now implemented; this retired presentation input remains an official outlink, not an HTML reinstatement queue.",
+      "retired_collector": "canada-harmony"
+    },
+    {
+      "url": "https://www.parlament.cat/web/index.html",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_agenda"
+      ],
+      "catalogue_records": [
+        {
+          "id": "catalonia-canal-parlament",
+          "name": "Catalonia Canal Parlament",
+          "jurisdiction": "Catalonia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://parliament.ky/events-calender/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "cayman-islands-parliament-webcasts",
+          "name": "Cayman Islands Parliament Webcasts",
+          "jurisdiction": "Cayman Islands",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://parliament.gov.ck/calendar-1/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "cook-islands-parliament-archive",
+          "name": "Cook Islands Parliament Archive (September 2020)",
+          "jurisdiction": "Cook Islands",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://skribi.consilium.europa.eu/en/meetings/calendar/",
+      "method": "GET",
+      "kinds": [
+        "meeting_calendar_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "council-of-eu-live",
+          "name": "Council of the European Union Live",
+          "jurisdiction": "European Union",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://legislaturacba.gob.ar/agenda/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-cordoba-legislature-live",
+          "name": "Córdoba Legislature Video",
+          "jurisdiction": "Córdoba",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.ft.dk/da/aktuelt/kalender/",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_calendar_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "denmark-folketinget",
+          "name": "Denmark Folketinget",
+          "jurisdiction": "Denmark",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Prior HTTP 403 hold; not revalidated in this pass."
+    },
+    {
+      "url": "https://www.drentsparlement.nl/vergaderingen/vergaderschema/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "netherlands-drenthe-provincial-council",
+          "name": "Drenthe Provincial Council",
+          "jurisdiction": "Drenthe",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.assemblee-nationale.fr/dyn/seance-publique",
+      "method": "GET",
+      "kinds": [
+        "public_sitting_agenda"
+      ],
+      "catalogue_records": [
+        {
+          "id": "france-national-assembly",
+          "name": "France National Assembly",
+          "jurisdiction": "France",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.pfwb.be/agenda",
+      "method": "GET",
+      "kinds": [
+        "official_agenda"
+      ],
+      "catalogue_records": [
+        {
+          "id": "belgium-french-community-recordings",
+          "name": "French Community Parliamentary Recordings",
+          "jurisdiction": "French Community",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.assemblee.pf/agenda",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "french-polynesia-assembly-webcasts",
+          "name": "French Polynesia Assembly Webcasts",
+          "jurisdiction": "French Polynesia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parliament.gi/proceedings-of-parliament/parliamentary-business-timetable",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "gibraltar-parliament-video-archive",
+          "name": "Gibraltar Parliament Video Archive",
+          "jurisdiction": "Gibraltar",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://guamlegislature.gov/calendar/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "guam-legislature-webcasts",
+          "name": "Guam Legislature Webcasts",
+          "jurisdiction": "Guam",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://parliament.gg/parliamentary-business/meetings",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "guernsey-states-meeting-recordings",
+          "name": "Guernsey States Meeting Recordings",
+          "jurisdiction": "Guernsey",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://m.knesset.gov.il/EN/activity/committees",
+      "method": "GET",
+      "kinds": [
+        "upcoming_committee_meetings_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "israel-knesset-channel",
+          "name": "Israel Knesset Channel",
+          "jurisdiction": "Israel",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.congresojal.gob.mx/agenda-parlamentaria/mes",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_agenda"
+      ],
+      "catalogue_records": [
+        {
+          "id": "jalisco-canal-parlamento",
+          "name": "Jalisco Canal Parlamento",
+          "jurisdiction": "Jalisco",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.shugiintv.go.jp/jp/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-house-of-representatives-webtv",
+          "name": "Japan House of Representatives WebTV",
+          "jurisdiction": "Japan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.webtv.sangiin.go.jp/webtv/index.php",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-sangiin-webtv",
+          "name": "Japan Senate (Sangiin) WebTV",
+          "jurisdiction": "Japan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://statesassembly.public-i.tv/core/portal/home",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "jersey-states-assembly-webcasts",
+          "name": "Jersey States Assembly Webcasts",
+          "jurisdiction": "Jersey",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://limburg.bestuurlijkeinformatie.nl/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "netherlands-limburg-provincial-council",
+          "name": "Limburg Provincial Council",
+          "jurisdiction": "Limburg",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.chd.lu/fr/agenda",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_agenda"
+      ],
+      "catalogue_records": [
+        {
+          "id": "luxembourg-chamber-tv",
+          "name": "Luxembourg Chamber TV",
+          "jurisdiction": "Luxembourg",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "luxembourg-broadcast-agenda"
+    },
+    {
+      "url": "https://www.gov.mb.ca/legislature/business/calendar.html",
+      "method": "GET",
+      "kinds": [
+        "sessional_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "manitoba-house-broadcasts",
+          "name": "Manitoba House Broadcasts",
+          "jurisdiction": "Manitoba",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.leg.mn.gov/cal",
+      "method": "GET",
+      "kinds": [
+        "joint_legislative_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-mn-legislature-multimedia",
+          "name": "Minnesota Legislature Multimedia",
+          "jurisdiction": "Minnesota",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Calendar reachable; suitable structured event payload not verified in this bounded pass."
+    },
+    {
+      "url": "https://www.pref.nagasaki.jp/gikai/5000.html",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-nagasaki-assembly-committees",
+          "name": "Nagasaki Prefectural Assembly Committees",
+          "jurisdiction": "Nagasaki",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://parlamentodenavarra.es/es",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_calendar_and_live_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "navarre-parliament-live",
+          "name": "Navarre Parliament Live",
+          "jurisdiction": "Navarre",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.tweedekamer.nl/debat_en_vergadering/livedebatten",
+      "method": "GET",
+      "kinds": [
+        "live_debates_and_agenda_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "netherlands-tweede-kamer",
+          "name": "Netherlands Tweede Kamer",
+          "jurisdiction": "Netherlands",
+          "has_another_implemented_source": true
+        },
+        {
+          "id": "netherlands-tweede-kamer-aletta-jacobszaal",
+          "name": "Netherlands Tweede Kamer Aletta Jacobszaal",
+          "jurisdiction": "Netherlands",
+          "has_another_implemented_source": true
+        },
+        {
+          "id": "netherlands-tweede-kamer-actualiteitenkanaal",
+          "name": "Netherlands Tweede Kamer Actualiteitenkanaal",
+          "jurisdiction": "Netherlands",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.congres.nc/agenda/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "new-caledonia-congress-webtv",
+          "name": "New Caledonia Congress WebTV",
+          "jurisdiction": "New Caledonia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.nysenate.gov/events",
+      "method": "GET",
+      "kinds": [
+        "senate_events_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-ny-senate-live",
+          "name": "New York Senate Live",
+          "jurisdiction": "New York",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Official session ICS is advertised; native client returned HTTP 403 on 2026-10-28. Time precision unverified."
+    },
+    {
+      "url": "https://www.assembly.nl.ca/HouseBusiness/ParliamentaryCalendar.aspx",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "newfoundland-labrador-house-webcast",
+          "name": "Newfoundland and Labrador House Webcast",
+          "jurisdiction": "Newfoundland and Labrador",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://brainps.brabant.nl/handboek-ps/vergaderingen/vergaderkalender-provinciale-staten/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "netherlands-noord-brabant-provincial-council",
+          "name": "Noord-Brabant Provincial Council",
+          "jurisdiction": "Noord-Brabant",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.ntlegislativeassembly.ca/committees",
+      "method": "GET",
+      "kinds": [
+        "assembly_and_committee_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "northwest-territories-watch-session",
+          "name": "Northwest Territories Watch Session",
+          "jurisdiction": "Northwest Territories",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.stortinget.no/no/Hva-skjer-pa-Stortinget/Moteprogram/?w=0&yw=all",
+      "method": "GET",
+      "kinds": [
+        "meeting_programme_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "norway-stortinget",
+          "name": "Norway Stortinget",
+          "jurisdiction": "Norway",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.ola.org/en/legislative-business/calendar/",
+      "method": "GET",
+      "kinds": [
+        "calendar_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "ontario-rm151-en",
+          "name": "Ontario Legislative Assembly - Room 151",
+          "jurisdiction": "Ontario",
+          "has_another_implemented_source": false
+        },
+        {
+          "id": "ontario-committee-1-en",
+          "name": "Ontario Legislative Assembly - Committee 1",
+          "jurisdiction": "Ontario",
+          "has_another_implemented_source": false
+        },
+        {
+          "id": "ontario-committee-2-en",
+          "name": "Ontario Legislative Assembly - Committee 2",
+          "jurisdiction": "Ontario",
+          "has_another_implemented_source": false
+        },
+        {
+          "id": "ontario-media-en",
+          "name": "Ontario Legislative Assembly - Media Studio",
+          "jurisdiction": "Ontario",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "House-only parser does not map committee rooms or media studio; room-specific source identification remains open."
+    },
+    {
+      "url": "https://olis.oregonlegislature.gov/",
+      "method": "GET",
+      "kinds": [
+        "olis_legislative_events"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-or-legislature-video",
+          "name": "Oregon Legislature Video",
+          "jurisdiction": "Oregon",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.assembly.pe.ca/calendar",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "prince-edward-island-assembly-live",
+          "name": "Prince Edward Island Assembly Live",
+          "jurisdiction": "Prince Edward Island",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://senado.pr.gov/envivo",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "puerto-rico-senate-webcasts",
+          "name": "Puerto Rico Senate Webcasts",
+          "jurisdiction": "Puerto Rico",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.assnat.qc.ca/fr/video-audio/canal-assemblee/semaine-cours.html",
+      "method": "GET",
+      "kinds": [
+        "dated_linear_weekly_programme"
+      ],
+      "catalogue_records": [
+        {
+          "id": "quebec-canal-assemblee",
+          "name": "Quebec - Canal de l'Assemblée",
+          "jurisdiction": "Quebec",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "quebec-canal-assemblee"
+    },
+    {
+      "url": "https://www.alesc.sc.gov.br/tv/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-santa-catarina-tv-alesc",
+          "name": "Santa Catarina TV Alesc",
+          "jurisdiction": "Santa Catarina",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.legassembly.sk.ca/parliamentary-calendar",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "saskatchewan-legislative-proceedings",
+          "name": "Saskatchewan Legislative Proceedings",
+          "jurisdiction": "Saskatchewan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parliament.scot/chamber-and-committees/whats-on-and-watch-live/whats-on/",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_business_schedule"
+      ],
+      "catalogue_records": [
+        {
+          "id": "scottish-parliament-tv",
+          "name": "Scottish Parliament TV",
+          "jurisdiction": "Scotland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Business page and TV script inspected; suitable structured event feed unverified. HTML content partials alone do not qualify."
+    },
+    {
+      "url": "https://senedd.wales/calendar",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_meetings_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "senedd-tv",
+          "name": "Senedd TV",
+          "jurisdiction": "Wales",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://sxmparliament.org/live-meeting/",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "sint-maarten-parliament-live",
+          "name": "Sint Maarten Parliament Meetings",
+          "jurisdiction": "Sint Maarten",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.nrsr.sk/web/default.aspx?sid=schodze%2Fzoznam",
+      "method": "GET",
+      "kinds": [
+        "meeting_programme_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "slovakia-tv-nrsr",
+          "name": "Slovakia TV NRSR",
+          "jurisdiction": "Slovakia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parlament.ch/en/ratsbetrieb/sessions",
+      "method": "GET",
+      "kinds": [
+        "session_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "swiss-national-council-live",
+          "name": "Swiss National Council Live",
+          "jurisdiction": "Switzerland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://ivod.ly.gov.tw/index.php/Forecast",
+      "method": "GET",
+      "kinds": [
+        "meeting_forecast_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "taiwan-parliamentary-tv",
+          "name": "Taiwan Parliamentary TV",
+          "jurisdiction": "Taiwan",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://capitol.texas.gov/",
+      "method": "GET",
+      "kinds": [
+        "legislative_meetings_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-tx-legislature-broadcasts",
+          "name": "Texas Legislature Broadcasts",
+          "jurisdiction": "Texas",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parliament.go.th/view/457/%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B8%E0%B8%A1/TH-TH",
+      "method": "GET",
+      "kinds": [
+        "meeting_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "thailand-parliament-tv",
+          "name": "Thailand Parliament TV",
+          "jurisdiction": "Thailand",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parliament.gov.tc/events",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "turks-and-caicos-parliament-webcasts",
+          "name": "Turks and Caicos Parliament Webcasts",
+          "jurisdiction": "Turks and Caicos Islands",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://tynwald.im/business/sittings",
+      "method": "GET",
+      "kinds": [
+        "official_meeting_or_dated_video_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "isle-of-man-tynwald-listen-watch",
+          "name": "Tynwald Audio and Committee Video",
+          "jurisdiction": "Isle of Man",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.senate.gov/committees/hearings_meetings.htm",
+      "method": "GET",
+      "kinds": [
+        "senate_hearings_and_meetings"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-senate-committee-webcasts",
+          "name": "U.S. Senate Committee Webcasts",
+          "jurisdiction": "United States",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Official hearings XML is advertised; native client returned HTTP 403 on 2026-10-28. Access hold; nonempty contract unverified."
+    },
+    {
+      "url": "https://le.utah.gov/~2026/2026.htm",
+      "method": "GET",
+      "kinds": [
+        "session_calendar_and_now_playing"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-ut-legislature-live",
+          "name": "Utah Legislature Live",
+          "jurisdiction": "Utah",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.cortsvalencianes.es/es/actividad/actualidad/agenda",
+      "method": "GET",
+      "kinds": [
+        "parliamentary_agenda"
+      ],
+      "catalogue_records": [
+        {
+          "id": "valencia-canal-corts",
+          "name": "Valencia Canal Corts",
+          "jurisdiction": "Valencia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parliament.vic.gov.au/sittingcalendar",
+      "method": "GET",
+      "kinds": [
+        "sitting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "victoria-parliament-watch",
+          "name": "Victoria Parliament Watch",
+          "jurisdiction": "Victoria",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://leg.wa.gov/",
+      "method": "GET",
+      "kinds": [
+        "legislative_calendar_with_tvw_links"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-wa-legislature-tvw",
+          "name": "Washington Legislature on TVW",
+          "jurisdiction": "Washington",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parliament.wa.gov.au/parliament/sitting-dates",
+      "method": "GET",
+      "kinds": [
+        "sitting_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "western-australia-parliament-live",
+          "name": "Western Australia Parliament Live",
+          "jurisdiction": "Western Australia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://zlinskykraj.cz/terminy-zasedani",
+      "method": "GET",
+      "kinds": [
+        "official_session_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "czech-republic-zlin-recordings",
+          "name": "Zlín Regional Assembly Recordings",
+          "jurisdiction": "Zlín Region",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://zg.ch/de/kantonsrat",
+      "method": "GET",
+      "kinds": [
+        "official_session_calendar"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-zug-recordings",
+          "name": "Zug Parliamentary Recordings",
+          "jurisdiction": "Zug",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Institutional calendars and meeting listings",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://dpra.acehprov.go.id/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "indonesia-aceh-recordings",
+          "name": "Aceh Legislative Recordings",
+          "jurisdiction": "Aceh",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCBYKiVXWhglTX3rFhr_253Q/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-appenzell-ausserrhoden-kantonsrat-archive",
+          "name": "Appenzell Ausserrhoden Cantonal Council Archive",
+          "jurisdiction": "Appenzell Ausserrhoden",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCqTycM15CbUe1zv5Xo0n1zw/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-arauca-assembly-webcasts",
+          "name": "Arauca Assembly Webcasts",
+          "jurisdiction": "Arauca",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UC5KfW9_wv4tqbIPgY8tMG-w/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-chamber-deputies-webcasts",
+          "name": "Argentina Chamber of Deputies Webcasts",
+          "jurisdiction": "Argentina",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@AUSParliamentLive/live",
+      "method": "GET",
+      "kinds": [
+        "official_youtube_live_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "australia-parliament-youtube",
+          "name": "Australia Parliament Live",
+          "jurisdiction": "Australia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "youtube-live"
+    },
+    {
+      "url": "https://media.dekamer.be/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "belgium-house-recordings",
+          "name": "Belgian House Legislative Recordings",
+          "jurisdiction": "Belgium",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://jjggbizkaia.eus/es/agenda-parlamentaria",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-bizkaia-recordings",
+          "name": "Bizkaia Legislative Recordings",
+          "jurisdiction": "Bizkaia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.asambleadebolivar.gov.co/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-bolivar-recordings",
+          "name": "Bolívar Legislative Recordings",
+          "jurisdiction": "Bolívar",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@BWPARLIAMENT/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "botswana-national-assembly-webcasts",
+          "name": "Botswana National Assembly Webcasts",
+          "jurisdiction": "Botswana",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.camara.leg.br/tv/programacao-semanal",
+      "method": "GET",
+      "kinds": [
+        "weekly_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-tv-camara",
+          "name": "Brazil TV Camara",
+          "jurisdiction": "Brazil",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "brazil-tv-camara"
+    },
+    {
+      "url": "https://www.youtube.com/@houseofassemblyvi2922/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "british-virgin-islands-house-assembly-webcasts",
+          "name": "British Virgin Islands House of Assembly Webcasts",
+          "jurisdiction": "British Virgin Islands",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/c/parlementbrusselslive/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "belgium-brussels-parliament-committee-webcasts",
+          "name": "Brussels Parliament Committee Webcasts",
+          "jurisdiction": "Brussels-Capital Region",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.legislatura.gob.ar/InfoSesion/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-buenos-aires-city-legislature-webcasts",
+          "name": "Buenos Aires City Legislature Committee Recordings",
+          "jurisdiction": "Buenos Aires City",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.hcdiputados-ba.gov.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-buenos-aires-deputies-webcasts",
+          "name": "Buenos Aires Province Deputies Recordings",
+          "jurisdiction": "Buenos Aires Province",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://council.busan.go.kr/council/index",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-busan-council-recordings",
+          "name": "Busan Metropolitan Council Recordings",
+          "jurisdiction": "Busan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parlamento.cv/antv/",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "cape-verde-national-assembly-antv",
+          "name": "Cabo Verde National Assembly ANTV",
+          "jurisdiction": "Cape Verde",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.asambleadecaldas.gov.co/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-caldas-assembly-recordings",
+          "name": "Caldas Departmental Assembly Recordings",
+          "jurisdiction": "Caldas",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.cr.campania.it/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "italy-campania-recordings",
+          "name": "Campania Legislative Recordings",
+          "jurisdiction": "Campania",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parcan.es/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-parlamento-de-canarias-recordings",
+          "name": "Canary Islands Legislative Recordings",
+          "jurisdiction": "Canary Islands",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.juntadecanelones.gub.uy/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "uruguay-canelones-recordings",
+          "name": "Canelones Legislative Recordings",
+          "jurisdiction": "Canelones",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://parlamento-cantabria.es/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-parlamento-de-cantabria-recordings",
+          "name": "Cantabria Legislative Recordings",
+          "jurisdiction": "Cantabria",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCnv4PhFlCBm4pXvHOzkaCfg/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-caqueta-assembly-webcasts",
+          "name": "Caquetá Assembly Webcasts",
+          "jurisdiction": "Caquetá",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.ccyl.es/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-cortes-de-castilla-y-leon-recordings",
+          "name": "Castile and León Legislative Recordings",
+          "jurisdiction": "Castile and León",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://tv.diputadoscatamarca.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-catamarca-deputies-recordings",
+          "name": "Catamarca Deputies Recordings",
+          "jurisdiction": "Catamarca",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://senadodecatamarca.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-catamarca-senate-recordings",
+          "name": "Catamarca Senate Recordings",
+          "jurisdiction": "Catamarca",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.al.ce.gov.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-ceara-assembly-recordings",
+          "name": "Ceará Assembly Recordings",
+          "jurisdiction": "Ceará",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://dprd.jatengprov.go.id/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "indonesia-jawa-tengah-recordings",
+          "name": "Central Java Legislative Recordings",
+          "jurisdiction": "Central Java",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://dprd.kalteng.go.id/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "indonesia-kalimantan-tengah-recordings",
+          "name": "Central Kalimantan Legislative Recordings",
+          "jurisdiction": "Central Kalimantan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://asambleacesar.gov.co/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-cesar-recordings",
+          "name": "Cesar Legislative Recordings",
+          "jurisdiction": "Cesar",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.cadc.gov.in/releases/governance/legislature/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "india-chakma-council-recordings",
+          "name": "Chakma Council Recordings (Mizoram)",
+          "jurisdiction": "Chakma Autonomous District",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@LegislaturadelChubut23-27/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-chubut-legislature-webcasts",
+          "name": "Chubut Legislature Webcasts",
+          "jurisdiction": "Chubut",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://council.chungnam.go.kr/kr/cast/plenary.do",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-chungcheongnam-council-recordings",
+          "name": "Chungcheongnam-do Council Recordings",
+          "jurisdiction": "Chungcheongnam-do",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@CamaraColombia/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-house-representatives-webcasts",
+          "name": "Colombia House of Representatives Webcasts",
+          "jurisdiction": "Colombia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://hcdcorrientes.gov.ar/sesiones/orden-del-dia/",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-corrientes-deputies-webcasts",
+          "name": "Corrientes Chamber of Deputies Webcasts",
+          "jurisdiction": "Corrientes",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.senadoctes.gov.ar/vt.php",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-corrientes-senate-recordings",
+          "name": "Corrientes Senate Recordings",
+          "jurisdiction": "Corrientes",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@AsambleaCRC/live",
+      "method": "GET",
+      "kinds": [
+        "official_youtube_live_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "costa-rica-assembly-youtube",
+          "name": "Costa Rica Assembly YouTube",
+          "jurisdiction": "Costa Rica",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "youtube-live"
+    },
+    {
+      "url": "https://www.coe.int/en/web/portal/live",
+      "method": "GET",
+      "kinds": [
+        "live_webcast_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "council-of-europe-pace-live",
+          "name": "Council of Europe / PACE Live",
+          "jurisdiction": "Council of Europe",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://video.consilium.europa.eu/home/en",
+      "method": "GET",
+      "kinds": [
+        "council_live_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "council-of-eu-live",
+          "name": "Council of the European Union Live",
+          "jurisdiction": "European Union",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@saborskatv-odbori3799/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "croatia-parliament-committee-webcasts",
+          "name": "Croatia Parliament Committee Webcasts",
+          "jurisdiction": "Croatia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.psp.cz/sqw/hp.sqw?k=203",
+      "method": "GET",
+      "kinds": [
+        "dated_plenary_weekly_plan"
+      ],
+      "catalogue_records": [
+        {
+          "id": "czech-chamber-of-deputies",
+          "name": "Czech Chamber of Deputies Live",
+          "jurisdiction": "Czech Republic",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "czech-chamber-plenary"
+    },
+    {
+      "url": "https://www.senat.cz/cinnost/kalend/index.php",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "czech-senate-recordings",
+          "name": "Czech Senate Legislative Recordings",
+          "jurisdiction": "Czech Republic",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://council.daegu.go.kr/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-daegu-council-recordings",
+          "name": "Daegu Metropolitan Council Recordings",
+          "jurisdiction": "Daegu",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://dccouncil.gov/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "united-states-district-of-columbia-recordings",
+          "name": "District of Columbia Legislative Recordings",
+          "jurisdiction": "District of Columbia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/user/CamaraDiputadosRD/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "dominican-republic-deputies-webcasts",
+          "name": "Dominican Republic Chamber of Deputies Webcasts",
+          "jurisdiction": "Dominican Republic",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.eclegislature.gov.za/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-africa-eastern-cape-recordings",
+          "name": "Eastern Cape Legislative Recordings",
+          "jurisdiction": "Eastern Cape",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://verkkolahetys.eduskunta.fi/fi/taysistunnot",
+      "method": "GET",
+      "kinds": [
+        "official_event_video_directory"
+      ],
+      "catalogue_records": [
+        {
+          "id": "finland-eduskunta-webcasts",
+          "name": "Finland Eduskunta Webcasts",
+          "jurisdiction": "Finland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.flsenate.gov/Media/VideoSchedule/Active",
+      "method": "GET",
+      "kinds": [
+        "legislative_video_schedule"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-fl-legislature-video",
+          "name": "Florida Legislature Video",
+          "jurisdiction": "Florida",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://fsl.gov.za/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-africa-free-state-recordings",
+          "name": "Free State Legislative Recordings",
+          "jurisdiction": "Free State",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.pref.fukui.lg.jp/gikai/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-fukui-recordings",
+          "name": "Fukui Legislative Recordings",
+          "jurisdiction": "Fukui",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.pref.fukushima.lg.jp/site/gikai/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-fukushima-recordings",
+          "name": "Fukushima Legislative Recordings",
+          "jurisdiction": "Fukushima",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://ge.ch/grandconseil/sessions/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-geneva-recordings",
+          "name": "Geneva Legislative Recordings",
+          "jurisdiction": "Geneva",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@parliamentofghana816/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "ghana-parliament-committee-webcasts",
+          "name": "Ghana Parliament Committee Webcasts",
+          "jurisdiction": "Ghana",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.bngipuzkoa.eus/WAS/CORP/DJGPortalWEB/agenda_parlamentaria.jsp?idioma=es",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-gipuzkoa-recordings",
+          "name": "Gipuzkoa Legislative Recordings",
+          "jurisdiction": "Gipuzkoa",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://gl.recapp.ch/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-glarus-recordings",
+          "name": "Glarus Legislative Recordings",
+          "jurisdiction": "Glarus",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://portal.al.go.leg.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-goias-assembly-recordings",
+          "name": "Goiás Assembly Recordings",
+          "jurisdiction": "Goiás",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.asamblea-guaviare.gov.co/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-guaviare-recordings",
+          "name": "Guaviare Legislative Recordings",
+          "jurisdiction": "Guaviare",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCFcGxVIBPlx_l5eXfEl7jgw/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "guyana-national-assembly-webcasts",
+          "name": "Guyana National Assembly Webcasts",
+          "jurisdiction": "Guyana",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://council.gb.go.kr/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-gyeongsangbuk-council-recordings",
+          "name": "Gyeongsangbuk-do Council Recordings",
+          "jurisdiction": "Gyeongsangbuk-do",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://council.gyeongnam.go.kr/kr/main.do",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-gyeongsangnam-council-recordings",
+          "name": "Gyeongsangnam-do Council Recordings",
+          "jurisdiction": "Gyeongsangnam-do",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://hessischer-landtag.de/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "germany-hesse-recordings",
+          "name": "Hesse Historical Plenary Recordings",
+          "jurisdiction": "Hesse",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.hsinchu-cc.gov.tw/tc/index.aspx",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "taiwan-hsinchu-city-recordings",
+          "name": "Hsinchu City Legislative Recordings",
+          "jurisdiction": "Hsinchu City",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://web.pref.hyogo.lg.jp/gikai/index.html",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-hyogo-recordings",
+          "name": "Hyogo Legislative Recordings",
+          "jurisdiction": "Hyogo",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCR01Nu1YqRvpuIWkvLGUMAg/streams",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "iceland-althingi",
+          "name": "Iceland Althingi Historical Committee Archive",
+          "jurisdiction": "Iceland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.icouncil.go.kr/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-incheon-council-recordings",
+          "name": "Incheon Metropolitan Council Recordings",
+          "jurisdiction": "Incheon",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://tvrparlemen.dpr.go.id/video_akd",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "indonesia-dpr-committee-video-archive",
+          "name": "Indonesia DPR Committee Video Archive",
+          "jurisdiction": "Indonesia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.oireachtas.ie/en/committees/schedule/",
+      "method": "GET",
+      "kinds": [
+        "committee_schedule_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "ireland-oireachtas-tv",
+          "name": "Ireland Oireachtas TV",
+          "jurisdiction": "Ireland",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.pref.iwate.jp/gikai/index.html",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-iwate-recordings",
+          "name": "Iwate Legislative Recordings",
+          "jurisdiction": "Iwate",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://pbcjamaica.org/show/parliamentsenate/",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "jamaica-parliament-pbcj-recordings",
+          "name": "Jamaica Parliamentary Recordings (PBCJ)",
+          "jurisdiction": "Jamaica",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.jbstatecouncil.jeonbuk.kr/jbassem/main",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-jeonbuk-council-recordings",
+          "name": "Jeonbuk State Council Recordings",
+          "jurisdiction": "Jeonbuk State",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://council.jeonnam-gwangju.go.kr/jngjassem/main",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-jeonnam-gwangju-council-recordings",
+          "name": "Jeonnam–Gwangju Integrated Special City Council Recordings",
+          "jurisdiction": "Jeonnam–Gwangju Integrated Special City",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://ju.recapp.ch/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-jura-recordings",
+          "name": "Jura Legislative Recordings",
+          "jurisdiction": "Jura",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.kslegislature.gov/b2025_26/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "united-states-kansas-recordings",
+          "name": "Kansas Legislative Recordings",
+          "jurisdiction": "Kansas",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@dprdkepri/streams",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "indonesia-kepulauan-riau-recordings",
+          "name": "Kepulauan Riau Legislative Recordings",
+          "jurisdiction": "Kepulauan Riau",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.kmcc.gov.tw/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "taiwan-kinmen-recordings",
+          "name": "Kinmen Legislative Recordings",
+          "jurisdiction": "Kinmen",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://legislaturalarioja.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-la-rioja-legislature-recordings",
+          "name": "La Rioja Legislature Recordings",
+          "jurisdiction": "La Rioja, Argentina",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parlamento-larioja.org/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-parlamento-de-la-rioja-recordings",
+          "name": "La Rioja, Spain Legislative Recordings",
+          "jurisdiction": "La Rioja, Spain",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@IPRLADC/streams",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "india-lai-council-recordings",
+          "name": "Lai Council Recordings (Mizoram)",
+          "jurisdiction": "Lai Autonomous District",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.kraj-lbc.cz/samosprava/zastupitelstvo",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "czech-republic-liberec-recordings",
+          "name": "Liberec Regional Assembly Recordings",
+          "jurisdiction": "Liberec Region",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.mtcc.gov.tw/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "taiwan-lienchiang-recordings",
+          "name": "Lienchiang Legislative Recordings",
+          "jurisdiction": "Lienchiang",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.alram.pt/pt/inicio/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "portugal-madeira-recordings",
+          "name": "Madeira Legislative Assembly Recordings",
+          "jurisdiction": "Madeira",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.asamblea-magdalena.gov.co/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-magdalena-recordings",
+          "name": "Magdalena Legislative Recordings",
+          "jurisdiction": "Magdalena",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCu2I5HXcZudP59E5Ld10K_g/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "malaysia-parliament-webcasts",
+          "name": "Malaysia Parliament Webcasts",
+          "jurisdiction": "Malaysia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.al.mt.gov.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-mato-grosso-assembly-recordings",
+          "name": "Mato Grosso Assembly Recordings",
+          "jurisdiction": "Mato Grosso",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://al.ms.gov.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-mato-grosso-do-sul-assembly-recordings",
+          "name": "Mato Grosso do Sul Assembly Recordings",
+          "jurisdiction": "Mato Grosso do Sul",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://parliamenttv.govmu.org/Guide",
+      "method": "GET",
+      "kinds": [
+        "dated_event_guide_start_only"
+      ],
+      "catalogue_records": [
+        {
+          "id": "mauritius-national-assembly-parliament-tv",
+          "name": "Mauritius National Assembly Parliament TV",
+          "jurisdiction": "Mauritius",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "mauritius-parliament-tv-guide"
+    },
+    {
+      "url": "https://www.landtag-mv.de/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "germany-mecklenburg-vorpommern-recordings",
+          "name": "Mecklenburg-Vorpommern Legislative Recordings",
+          "jurisdiction": "Mecklenburg-Vorpommern",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.hcdmza.gob.ar/site/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-mendoza-deputies-recordings",
+          "name": "Mendoza Deputies Recordings",
+          "jurisdiction": "Mendoza",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.legislature.ms.gov/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "united-states-mississippi-recordings",
+          "name": "Mississippi Legislative Recordings",
+          "jurisdiction": "Mississippi",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCRfMRKU9POyEX5GYapAZJUw/streams",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "moldova-parliament-recordings",
+          "name": "Moldova Parliament Recordings",
+          "jurisdiction": "Moldova",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.skupstina.me/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "montenegro-parliament-recordings",
+          "name": "Montenegro Parliament Recordings",
+          "jurisdiction": "Montenegro",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.juntamvd.gub.uy/public/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "uruguay-montevideo-recordings",
+          "name": "Montevideo Legislative Recordings",
+          "jurisdiction": "Montevideo",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@MontserratLegislativeAssembly/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "montserrat-legislative-assembly-webcasts",
+          "name": "Montserrat Legislative Assembly Webcasts",
+          "jurisdiction": "Montserrat",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.msk.cz/cs/kraj/zastupitelstvo/vystupy-z-jednani-zastupitelstva-_-volebni-obdobi-2024_2028-20603/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "czech-moravian-silesian-recordings",
+          "name": "Moravian-Silesian Legislative Recordings",
+          "jurisdiction": "Moravian-Silesian Region",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCueeiEi-sE0Ru0WDMk6dC3w/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "namibia-parliament-webcasts",
+          "name": "Namibia Parliament Webcasts",
+          "jurisdiction": "Namibia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://legislaturaneuquen.gob.ar/Agenda.aspx?mes=10&anio=2026",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-neuquen-legislature-webcasts",
+          "name": "Neuquén Legislature Webcasts",
+          "jurisdiction": "Neuquén",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.legnb.ca/en/webcasts",
+      "method": "GET",
+      "kinds": [
+        "official_recording_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "canada-new-brunswick-committee-recordings",
+          "name": "New Brunswick Legislative Assembly Committee Recordings",
+          "jurisdiction": "New Brunswick",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://nyassembly.gov/av/live/",
+      "method": "GET",
+      "kinds": [
+        "assembly_live_event_listing"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-ny-assembly-live",
+          "name": "New York Assembly Live",
+          "jurisdiction": "New York",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@dprdprov.kaltara/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "indonesia-north-kalimantan-legislative-webcasts",
+          "name": "North Kalimantan Legislative Webcasts",
+          "jurisdiction": "North Kalimantan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCD5qpVe9-yNv4Xu4b3EuKFw/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "north-macedonia-assembly-webcasts",
+          "name": "North Macedonia Assembly Webcasts",
+          "jurisdiction": "North Macedonia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.ncpleg.gov.za/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-africa-northern-cape-recordings",
+          "name": "Northern Cape Legislative Recordings",
+          "jurisdiction": "Northern Cape",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.assembly.nu.ca/webcasts?page=1",
+      "method": "GET",
+      "kinds": [
+        "webcast_archive_and_live_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "nunavut-legislative-assembly-tv",
+          "name": "Nunavut Legislative Assembly TV",
+          "jurisdiction": "Nunavut",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.osce.org/live",
+      "method": "GET",
+      "kinds": [
+        "live_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "osce-live",
+          "name": "OSCE Live",
+          "jurisdiction": "OSCE",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/user/AsambleaNacionalPa/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "panama-national-assembly-committee-webcasts",
+          "name": "Panama National Assembly Committee Webcasts",
+          "jurisdiction": "Panama",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.assembleia.pr.leg.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-parana-assembly-recordings",
+          "name": "Paraná Assembly Recordings",
+          "jurisdiction": "Paraná",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.al.pb.leg.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-paraiba-assembly-recordings",
+          "name": "Paraíba Assembly Recordings",
+          "jurisdiction": "Paraíba",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.phcouncil.gov.tw/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "taiwan-penghu-recordings",
+          "name": "Penghu Legislative Recordings",
+          "jurisdiction": "Penghu",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.alepe.pe.gov.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-pernambuco-assembly-recordings",
+          "name": "Pernambuco Assembly Recordings",
+          "jurisdiction": "Pernambuco",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.asamblea-quindio.gov.co/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-quindio-recordings",
+          "name": "Quindío Historical Assembly Recordings",
+          "jurisdiction": "Quindío",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.alerj.rj.gov.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-rio-de-janeiro-assembly-recordings",
+          "name": "Rio de Janeiro Assembly Recordings",
+          "jurisdiction": "Rio de Janeiro",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@asambleadepartamental-comu59/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-risaralda-assembly-webcasts",
+          "name": "Risaralda Assembly Webcasts",
+          "jurisdiction": "Risaralda",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.al.ro.leg.br/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "brazil-rondonia-assembly-recordings",
+          "name": "Rondônia Assembly Recordings",
+          "jurisdiction": "Rondônia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://web.legisrn.gov.ar/vivo",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-rio-negro-legislature-recordings",
+          "name": "Río Negro Legislature Recordings",
+          "jurisdiction": "Río Negro",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.diputadosalta.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-salta-deputies-recordings",
+          "name": "Salta Deputies Recordings",
+          "jurisdiction": "Salta",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://senadosalta.gob.ar/prensa/informe-de-sesiones/informe-de-sesiones-2026/informe-de-sesiones-2026/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-salta-senate-recordings",
+          "name": "Salta Senate Legislative Clips",
+          "jurisdiction": "Salta",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://diputadossanjuan.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-san-juan-deputies-recordings",
+          "name": "San Juan Deputies Recordings",
+          "jurisdiction": "San Juan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://diputados.sanluis.gov.ar/inicio/diario-de-sesiones/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-san-luis-deputies-recordings",
+          "name": "San Luis Deputies Recordings",
+          "jurisdiction": "San Luis",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://diputadosdesantacruz.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-santa-cruz-deputies-webcasts",
+          "name": "Santa Cruz Deputies And Committee Recordings",
+          "jurisdiction": "Santa Cruz, Argentina",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.landtag.sachsen.de/de",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "germany-sachsischer-landtag-recordings",
+          "name": "Saxony Legislative Recordings",
+          "jurisdiction": "Saxony",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/@AtvirasSeimas2/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "lithuania-seimas-committee-webcasts",
+          "name": "Seimas Committee Webcasts",
+          "jurisdiction": "Lithuania",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://council.sejong.go.kr/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_video_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-sejong-council-recordings",
+          "name": "Sejong City Council Committee Recordings",
+          "jurisdiction": "Sejong",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parlament.gov.rs/преноси/архива.2082.html",
+      "method": "GET",
+      "kinds": [
+        "official_recording_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "serbia-national-assembly-recordings",
+          "name": "Serbia National Assembly Recordings",
+          "jurisdiction": "Serbia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.ars.sicilia.it/agenda/lavori-aula",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "italy-sicily-assembly-video",
+          "name": "Sicilian Regional Assembly Video",
+          "jurisdiction": "Sicily",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://bip.slaskie.pl/sejmik_wojewodztwa/sesje_sejmiku/transmisja_i_nagrania_sesji/nagrania_sesji",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "poland-silesian-sejmik-recordings",
+          "name": "Silesian Regional Assembly Recordings",
+          "jurisdiction": "Silesian Voivodeship",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCHZMFuV0JworHCa9H0pZfOg/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "slovenia-national-council-webcasts",
+          "name": "Slovenia National Council Webcasts",
+          "jurisdiction": "Slovenia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.natv.go.kr/natv/onair.do",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-korea-natv-onair",
+          "name": "South Korea National Assembly Television",
+          "jurisdiction": "South Korea",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.landtag-bz.org/de/home",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "italy-south-tyrol-recordings",
+          "name": "South Tyrol Legislative Recordings",
+          "jurisdiction": "South Tyrol",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.congreso.es/programacion",
+      "method": "GET",
+      "kinds": [
+        "linear_weekly_broadcast_schedule"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-canal-parlamento",
+          "name": "Spain Canal Parlamento",
+          "jurisdiction": "Spain",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "spain-canal-parlamento-weekly"
+    },
+    {
+      "url": "https://www.parliament.lk/en/parliament-live/chamber-on-demand",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "sri-lanka-parliament-recordings",
+          "name": "Sri Lanka Parliament Proceedings Archive",
+          "jurisdiction": "Sri Lanka",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.sg.ch/politik-verwaltung/kantonsrat.html",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-st-gallen-recordings",
+          "name": "St Gallen Legislative Recordings",
+          "jurisdiction": "St Gallen",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/user/dnasuriname/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "suriname-national-assembly-webcasts",
+          "name": "Suriname National Assembly Webcasts",
+          "jurisdiction": "Suriname",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.riksdagen.se/sv/webb-tv/",
+      "method": "GET",
+      "kinds": [
+        "official_event_video_directory"
+      ],
+      "catalogue_records": [
+        {
+          "id": "sweden-riksdag-webb-tv",
+          "name": "Sweden Riksdag Webb-TV",
+          "jurisdiction": "Sweden",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.tncc.gov.tw/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "taiwan-tainan-recordings",
+          "name": "Tainan Legislative Recordings",
+          "jurisdiction": "Tainan",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://grvisio.tg.ch/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-thurgau-recordings",
+          "name": "Thurgau Legislative Recordings",
+          "jurisdiction": "Thurgau",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.thueringer-landtag.de/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "germany-thuringer-landtag-recordings",
+          "name": "Thuringia Legislative Recordings",
+          "jurisdiction": "Thuringia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.legistdf.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-tierra-del-fuego-legislature-webcasts",
+          "name": "Tierra del Fuego Legislature Recordings And Hearings",
+          "jurisdiction": "Tierra del Fuego",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.parlamento.tl/videos",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "timor-leste-national-parliament-archive",
+          "name": "Timor-Leste National Parliament Video Archive",
+          "jurisdiction": "Timor-Leste",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.pref.tokushima.lg.jp/gikai/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "japan-tokushima-recordings",
+          "name": "Tokushima Legislative Recordings",
+          "jurisdiction": "Tokushima",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://asambleatolima.gov.co/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "colombia-tolima-recordings",
+          "name": "Tolima Legislative Recordings",
+          "jurisdiction": "Tolima",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.legislaturadetucuman.gob.ar/",
+      "method": "GET",
+      "kinds": [
+        "official_institution_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "argentina-tucuman-legislature-recordings",
+          "name": "Tucumán Legislature Recordings",
+          "jurisdiction": "Tucumán",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.tirol.gv.at/landtag/live/",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "austria-tirol-landtag-webcasts",
+          "name": "Tyrol Landtag Webcasts",
+          "jurisdiction": "Tyrol",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCMasyWuE1P2AaEKw_FkGq9g/live",
+      "method": "GET",
+      "kinds": [
+        "official_youtube_live_page"
+      ],
+      "catalogue_records": [
+        {
+          "id": "uk-parliament-youtube",
+          "name": "UK Parliament YouTube",
+          "jurisdiction": "United Kingdom",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Presentation collector retired on 2026-10-28. Keep the official link; require useful structured event data before implementing a replacement.",
+      "retired_collector": "youtube-live"
+    },
+    {
+      "url": "https://legvi.org/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-virgin-islands-legislature-recordings",
+          "name": "United States Virgin Islands Legislative Recordings",
+          "jurisdiction": "United States Virgin Islands",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.sonomix.ch/live/gcvd/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-vaud-waadt-recordings",
+          "name": "Vaud Legislative Recordings",
+          "jurisdiction": "Vaud",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.youtube.com/channel/UCUuYqgfbrMsn2Qx4TLXb_9A/streams",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "belgium-wallonia-parliament-webcasts",
+          "name": "Wallonia Parliament Webcasts",
+          "jurisdiction": "Wallonia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://home.wvlegislature.gov/live-media/",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-west-virginia-legislature-media",
+          "name": "West Virginia Legislature Media",
+          "jurisdiction": "West Virginia",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.wcpp.gov.za/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "south-africa-western-cape-recordings",
+          "name": "Western Cape Legislative Recordings",
+          "jurisdiction": "Western Cape",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.wyoleg.gov/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "united-states-wyoming-recordings",
+          "name": "Wyoming Legislative Recordings",
+          "jurisdiction": "Wyoming",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://jdih-dprd-diy.jogjaprov.go.id/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "indonesia-di-yogyakarta-recordings",
+          "name": "Yogyakarta Legislative Recordings",
+          "jurisdiction": "Yogyakarta",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://zh.recapp.ch/shareparl/",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "switzerland-zurich-recordings",
+          "name": "Zurich Legislative Recordings",
+          "jurisdiction": "Zurich",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.jjggalava.eus/agenda",
+      "method": "GET",
+      "kinds": [
+        "official_recording_or_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "spain-alava-recordings",
+          "name": "Álava Legislative Recordings",
+          "jurisdiction": "Álava",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://www.lagtinget.ax/live",
+      "method": "GET",
+      "kinds": [
+        "official_recording_and_event_navigation"
+      ],
+      "catalogue_records": [
+        {
+          "id": "finland-aland-lagting-recordings",
+          "name": "Åland Parliament Plenary Recordings",
+          "jurisdiction": "Åland",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://bip.lodzkie.pl/transmisja-obrad-sesji-sw%C5%82",
+      "method": "GET",
+      "kinds": [
+        "official_event_or_recording_index"
+      ],
+      "catalogue_records": [
+        {
+          "id": "poland-lodz-sejmik-recordings",
+          "name": "Łódź Regional Assembly Recordings",
+          "jurisdiction": "Łódź Voivodeship",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Recording, archive and navigation surfaces",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://data.europarl.europa.eu/api/v2/meetings",
+      "method": "GET",
+      "kinds": [
+        "open_data_meetings_api"
+      ],
+      "catalogue_records": [
+        {
+          "id": "european-parliament-multimedia-centre",
+          "name": "European Parliament Multimedia Centre",
+          "jurisdiction": "European Union",
+          "has_another_implemented_source": true
+        }
+      ],
+      "group": "Structured-data and document candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    },
+    {
+      "url": "https://data.assemblee-nationale.fr/static/openData/repository/17/vp/reunions/Agenda.json.zip",
+      "method": "GET",
+      "kinds": [
+        "open_data_agenda_json_zip"
+      ],
+      "catalogue_records": [
+        {
+          "id": "france-national-assembly",
+          "name": "France National Assembly",
+          "jurisdiction": "France",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Structured-data and document candidates",
+      "review_note": "HEAD 200 on 2026-10-28: 8,547,225-byte agenda ZIP, above shared fetch cap; broadcast mapping also unresolved."
+    },
+    {
+      "url": "https://api.congress.gov/",
+      "method": "GET",
+      "kinds": [
+        "congress_api_committee_meetings"
+      ],
+      "catalogue_records": [
+        {
+          "id": "us-house-committee-video",
+          "name": "U.S. House Committee Video",
+          "jurisdiction": "United States",
+          "has_another_implemented_source": false
+        }
+      ],
+      "group": "Structured-data and document candidates",
+      "review_note": "Not freshly assessed in this implementation pass; no broadcast mapping or parser contract is implied."
+    }
+  ],
+  "selection_policy": {
+    "reviewed_on": "2026-10-28",
+    "reference": "../../docs/schedules-and-iptv.md#source-selection",
+    "preferred_inputs": [
+      "supported XMLTV, JSON/XML APIs and iCalendar/ICS",
+      "event/broadcast semantic markup",
+      "embedded JSON and stable machine-readable event fields"
+    ],
+    "retirement_rule": "Retired presentation-source links are retained for structured replacement discovery, not automatic restoration of old scrapers. Bundestag is the sole documented hybrid exception.",
+    "format_assessment": "Recorded source-kind groups are not an exhaustive structured-format audit. Uninspected formats remain unknown."
+  },
+  "prioritization_reference": "2026-10-28-structured-candidate-priorities.json",
+  "implementation_reference": "2026-10-28-structured-collector-implementation.json"
+}

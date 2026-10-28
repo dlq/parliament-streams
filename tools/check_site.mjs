@@ -1059,12 +1059,12 @@ try {
     generated_at: coverageDate,
     sources: {
       "new-zealand-parliament": { status: "error" },
-      "czech-chamber-plenary": { status: "empty" },
+      "norway-stortinget-calendar": { status: "empty" },
     },
     channels: {
       "cpac-ca": { current_event_title: "Current programme", current_event_start: coverageDate, fetched_at: coverageDate },
       "estonia-riigikogu-live-1": { next_event_title: "Plenary sitting", next_event_start: "2026-10-26T13:00:00Z", fetched_at: coverageDate },
-      "canada-house-of-commons-parlvu": { next_event_title: "Committee meeting", next_event_start: "2026-10-26T15:00:00Z", fetched_at: coverageDate, last_success_at: "2026-10-25T15:00:00Z", stale: true },
+      "european-parliament-multimedia-centre": { next_event_title: "Committee meeting", next_event_start: "2026-10-26T15:00:00Z", fetched_at: coverageDate, last_success_at: "2026-10-25T15:00:00Z", stale: true },
     },
   };
   let qualityDate = coverageDate;
@@ -1074,7 +1074,7 @@ try {
     schema_version: 1, generated_at: qualityDate, coverage: { channels: {
       "cpac-ca": { state: "guide_available" },
       "estonia-riigikogu-live-1": { state: "quality_hold" },
-      "canada-house-of-commons-parlvu": { state: "mapping_unverified" },
+      "european-parliament-multimedia-centre": { state: "mapping_unverified" },
     } },
   }) }));
   await schedulePage.goto(`${baseUrl}schedule.html?lang=en&jurisdiction=New+Zealand&listings=current`);
@@ -1086,6 +1086,9 @@ try {
   await schedulePage.locator("#schedule-jurisdiction").selectOption("Alberta");
   assert.match(await schedulePage.locator("#schedule-coverage").innerText(), /No automated listings yet/);
   await schedulePage.locator("#schedule-jurisdiction").selectOption("Czechia");
+  assert.match(await schedulePage.locator("#schedule-coverage").innerText(), /No automated listings yet/);
+  assert.equal(await schedulePage.locator("#official-schedules").isVisible(), true);
+  await schedulePage.locator("#schedule-jurisdiction").selectOption("Norway");
   assert.match(await schedulePage.locator("#schedule-coverage").innerText(), /checked window/);
   await schedulePage.locator("#schedule-clear").click();
   assert.equal(await schedulePage.locator("#schedule-jurisdiction").evaluate((element) => document.activeElement === element), true);

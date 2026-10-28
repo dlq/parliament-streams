@@ -74,11 +74,19 @@ class ItalyCameraTests(unittest.TestCase):
             italian_card(start="11:00"),
             italian_card(kind="unknown"),
             italian_card(title=""),
-            italian_card().replace("Assemblea", ""),
-            italian_card().replace('data-ch_evento="11"', 'data-ch_evento=""'),
         ]:
             with self.subTest(card=card), self.assertRaises(ValueError):
                 self.parse(card)
+
+    def test_unused_channel_and_room_metadata_are_optional(self):
+        card = (
+            italian_card()
+            .replace("Assemblea", "")
+            .replace('data-ch_evento="11"', 'data-ch_evento=""')
+        )
+        event = self.parse(card)[italy_camera.CHANNEL_ID]["events"][0]
+        self.assertNotIn("location", event)
+        self.assertEqual(event["start"], "2026-10-27T10:00:00Z")
 
     def test_healthy_empty_is_distinct_from_changed_or_truncated_page(self):
         self.assertEqual(self.parse(""), {})

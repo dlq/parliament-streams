@@ -5,7 +5,7 @@ import unittest
 from datetime import UTC, datetime
 from urllib.parse import parse_qs, urlsplit
 
-from parliament_streams.scrapers import brazil_tv_camara, ebs, italian_senate
+from parliament_streams.scrapers import ebs, italian_senate
 
 
 class EbsProgrammeTimesTests(unittest.TestCase):
@@ -195,64 +195,6 @@ class ItalianSenateProgrammeTimesTests(unittest.TestCase):
                     now=instant,
                 )["italy-senate"]
                 self.assertEqual([event["id"] for event in schedule["events"]], ["126145"])
-
-
-class BrazilBroadcastDayTests(unittest.TestCase):
-    @staticmethod
-    def row(clock, title):
-        return f"<tr><td><span>{clock}</span></td><td><span>{title}</span></td></tr>"
-
-    @classmethod
-    def pane(cls, day, rows, active=False):
-        return (
-            f'<div class="tab-pane fade{" active in show" if active else ""}" id="{day}">'
-            f"<table>{''.join(cls.row(*row) for row in rows)}</table></div>"
-        )
-
-    def test_source_local_active_weekday_isolated_without_anchoring_other_days(self):
-        html = self.pane(
-            "domingo",
-            [("21:00", "Debate (Gravado: 21/10/26)"), ("23:00", "Late programme")],
-            active=True,
-        ) + self.pane("segunda_feira", [("00:00", "Other broadcast day")])
-        # UTC has crossed into Monday; the source is still on Sunday in São Paulo.
-        schedule = brazil_tv_camara.parse(html, datetime(2026, 10, 26, 1, tzinfo=UTC))[
-            "brazil-tv-camara"
-        ]
-        self.assertEqual(len(schedule["events"]), 2)
-        event, last = schedule["events"]
-        self.assertEqual(event["start"], "2026-10-26T00:00:00Z")
-        self.assertEqual(event["end"], "2026-10-26T02:00:00Z")
-        self.assertEqual(event["start_basis"], "collection_date")
-        self.assertEqual(event["end_basis"], "next_listing_start")
-        self.assertEqual(event["source_timezone"], "America/Sao_Paulo")
-        self.assertNotIn("end", last)
-
-    def test_missing_or_contradictory_active_day_never_falls_back_to_all_tabs(self):
-        now = datetime(2026, 10, 25, 12, tzinfo=UTC)
-        for html in [
-            self.pane("segunda_feira", [("09:00", "Wrong day")], active=True),
-            self.pane("domingo", [("09:00", "No active day")]),
-            self.pane("unknown", [("09:00", "Unknown day")], active=True),
-            self.pane("domingo", [("09:00", "First active")], active=True)
-            + self.pane("segunda_feira", [("10:00", "Second active")], active=True),
-        ]:
-            with self.subTest(html=html):
-                self.assertEqual(brazil_tv_camara.parse(html, now), {})
-
-    def test_clock_rollover_is_held_without_inventing_a_new_calendar_day(self):
-        html = self.pane(
-            "domingo", [("23:00", "Night"), ("00:30", "Unknown next day")], active=True
-        )
-        self.assertEqual(brazil_tv_camara.parse(html, datetime(2026, 10, 25, 12, tzinfo=UTC)), {})
-
-    def test_invalid_clock_does_not_abort_other_rows_or_supply_an_end(self):
-        html = self.pane("domingo", [("24:00", "Invalid"), ("09:00", "Programme")], active=True)
-        schedule = brazil_tv_camara.parse(html, datetime(2026, 10, 25, 12, tzinfo=UTC))[
-            "brazil-tv-camara"
-        ]
-        self.assertEqual(len(schedule["events"]), 1)
-        self.assertNotIn("end", schedule["events"][0])
 
 
 if __name__ == "__main__":

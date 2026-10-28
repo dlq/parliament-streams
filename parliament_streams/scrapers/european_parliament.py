@@ -17,6 +17,8 @@ from .common import (
     local_time_label,
     normalized_events,
     parse_iso,
+    require_object,
+    require_records,
 )
 
 CHANNEL_ID = "european-parliament-multimedia-centre"
@@ -54,19 +56,20 @@ def _event_title(event: dict[str, Any]) -> str:
 
 def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
-    data = json.loads(payload)
-    events = data.get("pageProps", {}).get("mediaItems", [])
+    data = require_object(json.loads(payload), "European Parliament response")
+    page = require_object(data.get("pageProps"), "European Parliament pageProps")
+    events = require_records(page.get("mediaItems"), "European Parliament mediaItems")
     parsed: list[ScheduleEvent] = []
     for event in events:
         start = parse_iso(str(event.get("EventDateStart", "")))
         end = parse_iso(str(event.get("EventDateEnd", "")))
         title = _event_title(event)
-        if start and title:
+        if start and start.utcoffset() is not None and title:
             parsed_event: ScheduleEvent = {"start": start, "title": title}
             room = clean_html(str(event.get("room", "")))
             if room:
                 parsed_event["location"] = room
-            if end:
+            if end and end.utcoffset() is not None and end > start:
                 parsed_event["end"] = end
             status = str(event.get("statusName", "")).strip()
             if status:
@@ -75,11 +78,7 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     parsed.sort(key=lambda event: event["start"])
 
     current = next(
-        (
-            event
-            for event in parsed
-            if event["start"] <= now and (event.get("end") is None or now <= event["end"])
-        ),
+        (event for event in parsed if event.get("end") and event["start"] <= now < event["end"]),
         None,
     )
     upcoming = next((event for event in parsed if event["start"] > now), None)

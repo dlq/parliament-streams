@@ -10,7 +10,7 @@ from parliament_streams.catalogue import load_catalogue
 from parliament_streams.iptv import render_xmltv
 from parliament_streams.schedule_collection import ScheduleSnapshot
 from parliament_streams.schedule_quality import assess_schedules
-from parliament_streams.scrapers import brazil_tv_camara, cpac, ebs, european_parliament
+from parliament_streams.scrapers import cpac, ebs, european_parliament
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -83,8 +83,8 @@ class ScheduleQualityTests(unittest.TestCase):
 
     def test_channels_with_events_excludes_retained_empty_channel_rows(self):
         snapshot = self.snapshot("cpac", "cpac-ca", [self.event])
-        snapshot["channels"]["brazil-tv-camara"] = {
-            "scraper": "brazil-tv-camara",
+        snapshot["channels"]["brazil-tv-senado-official"] = {
+            "scraper": "brazil-tv-senado-grid",
             "events": [],
         }
         report = assess_schedules(self.catalogue, snapshot).report
@@ -92,8 +92,8 @@ class ScheduleQualityTests(unittest.TestCase):
             report["counts"],
             {"events": 1, "exportable": 1, "excluded": 0, "channels_with_events": 1},
         )
-        self.assertEqual(set(report["channels"]), {"cpac-ca", "brazil-tv-camara"})
-        empty = report["channels"]["brazil-tv-camara"]
+        self.assertEqual(set(report["channels"]), {"cpac-ca", "brazil-tv-senado-official"})
+        empty = report["channels"]["brazil-tv-senado-official"]
         self.assertEqual(empty["events"], 0)
         self.assertEqual(empty["exportable"], 0)
         self.assertEqual(empty["scope"], "broadcast_schedule")
@@ -185,23 +185,13 @@ class ScheduleQualityTests(unittest.TestCase):
             self.assertEqual(report["counts"]["excluded_missing_time_range"], 1)
 
     def test_inferred_times_are_preserved_and_disclosed(self):
-        html = (
-            '<div class="tab-pane active">'
-            "<tr><td><span>09:00</span></td><td><span>Debate</span></td></tr>"
-            "<tr><td><span>10:00</span></td><td><span>Next</span></td></tr></div>"
-        )
-        schedule = brazil_tv_camara.parse(html, datetime(2026, 10, 14, 11, tzinfo=UTC))[
-            "brazil-tv-camara"
-        ]
-        event = schedule["events"][0]
-        self.assertEqual(event["start_basis"], "collection_date")
-        self.assertEqual(event["end_basis"], "next_listing_start")
-        snapshot = self.snapshot("brazil-tv-camara", "brazil-tv-camara", [event])
+        event = {**self.event, "start_basis": "collection_date"}
+        snapshot = self.snapshot("cpac", "cpac-ca", [event])
         xml, count, _ = render_xmltv(self.catalogue, snapshot)
-        self.assertEqual(count, 1)
-        description = ET.fromstring(xml).findtext("programme/desc")
-        self.assertIn("assumed", description)
-        self.assertIn("inferred", description)
+        self.assertEqual(count, 0)
+        self.assertIsNone(ET.fromstring(xml).find("programme"))
+        quality = assess_schedules(self.catalogue, snapshot).report
+        self.assertEqual(quality["counts"]["excluded_assumed_broadcast_date"], 1)
         cpac_html = (
             '<div data-airdate="2026-10-14T12:00:00Z">'
             '<button class="schedule-item-btn">Debate</button></div>'

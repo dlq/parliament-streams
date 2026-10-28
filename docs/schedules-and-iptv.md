@@ -27,37 +27,106 @@ successful sources fails before deployment. The scheduled workflow may retain
 only still-future events from the preceding successful snapshot for up to 24
 hours; those channels are marked stale and never retain a stale Now listing.
 
+## Source Selection
+
+Prioritize official structured schedule and metadata sources before adding or
+expanding plain HTML scrapers. This applies to new candidates and replacement
+inputs for brittle existing collectors. The maintainability ranking identifies
+risks; it is not an instruction to keep patching each website's presentation.
+
+Preferred discovery order:
+
+1. Publisher-supported **XMLTV, JSON/XML APIs and iCalendar/ICS subscriptions**,
+   including feeds advertised by the official calendar or webcast site.
+2. **Semantic structured data in HTML**: JSON-LD, microdata and RDFa describing
+   actual events, broadcasts or schedules, with explicit dates and identifiers.
+3. **First-party application data**: embedded JSON, discoverable JSON endpoints,
+   or stable machine-readable HTML attributes. Prefer reusable platform contracts;
+   avoid pinning frontend build IDs. Treat undocumented app state as less stable
+   than a supported public feed, even when it is JSON.
+4. Plain HTML tables/cards only where they offer clear additional value and no
+   suitable structured source has been found. PDF/prose extraction is a later,
+   source-specific exception rather than the default work queue.
+
+Within those groups, prioritize useful broadcast or meeting coverage, clear
+source identity, explicit source clocks/zones, stable IDs, bounded retrieval,
+known access and manageable maintenance. A small supported feed can be more
+useful than a large structured archive. Retain official outlinks when collection
+is not worthwhile. Nine presentation-based collectors have been retired.
+Retained machine-readable HTML inputs remain supported; Bundestag TV 1 is the
+sole hybrid exception, with explicit channel/end fields corroborating its printed
+start/range. A new plain-HTML exception needs a source-specific recorded decision.
+
+Structured data must describe the thing being collected. Generic `WebPage`,
+`Organization` or breadcrumb JSON-LD is not EPG. A recording's publication date,
+upload time or duration does not establish its scheduled broadcast time. An
+institutional meeting calendar is useful metadata, but is not automatically a
+linear television guide. This distinction still applies to `Event`, `VideoObject`
+and broadcast-related markup; inspect the actual field meanings and source page.
+
+For calendar feeds, preserve source identifiers, timezone/UTC semantics and
+cancellations; account for recurrence and exceptions when the source uses them.
+All-day dates, floating clocks, placeholders and tentative starts must remain
+explicitly unresolved unless authoritative evidence resolves them. A calendar's
+`DTEND` or a JSON-LD `endDate` may describe a planned meeting boundary rather than
+broadcast continuity. XMLTV admission still requires the reviewed feed mapping
+and credible programme ranges; format alone never grants admission or reuse rights.
+
+For each investigated input, record its observed format, retrieval URL, supported
+or undocumented status, event/broadcast/calendar/archive scope, identifier and
+time fields, empty/error behavior, sample date/hash and unresolved questions.
+Leave uninspected formats unknown. The “structured-data and document”
+group in the dated backlog is a source-kind grouping, **not** an exhaustive
+search for JSON-LD, microdata, hidden JSON or ICS across the other candidate inputs.
+
+The [five-source implementation pass](../reports/epg/2026-10-28-structured-collector-implementation.md)
+adds Câmara institutional event JSON, California calendar-export parameters,
+Harmony JSON for the Canadian House/Senate and Bermuda, US Senate hearing XML,
+and New York session ICS. Harmony's request watermark requires 17 digits;
+the corrected public request succeeds. California's malformed ICS is not repaired:
+only explicit calendar-export query parameters are collected, with starts only.
+The two US Senate/New York parsers have tested contracts but live access remains
+held by HTTP 403. New York's actual payload precision still needs confirmation.
+
+None supplies a new reviewed linear-feed mapping. The European Parliament's
+published meetings JSON still needs a usefulness/granularity review. Senedd,
+Northern Ireland and other HTML leads need structured-feed evidence or a recorded
+exception before implementation. This was a bounded shortlist, not a full format sweep.
+
+## Implemented Collectors
+
 Current scraper ids:
 
+- `brazil-camara-events-api`
+- `california-assembly-calendar`
+- `harmony-json`
+- `us-senate-hearings-xml`
+- `new-york-senate-calendar`
+
+- `rhode-island-cablecast`
+- `italy-camera-webtv-events`
+- `taiwan-parliamentary-tv-programmes`
+- `norway-stortinget-calendar`
+- `sweden-riksdag-calendar`
+- `germany-bundestag-tv1`
+- `ireland-oireachtas-tv-guide`
 - `cpac`
+- `brazil-tv-senado-grid`
+- `estonia-riigikogu-plenary`
+- `knesset-tv-guide`
+- `dutch-debat-direct`
 - `quebec-webdiffusion`
 - `new-zealand-parliament`
 - `ontario-calendar`
-- `brazil-tv-camara`
 - `europarl-webstreaming`
 - `ebs-grid`
 - `italian-senate-palimpsest`
 - `portugal-open-data-agenda`
-- `canada-harmony`
 - `uk-parliament`
 - `un-webtv-schedule`
-- `youtube-live`
-- `dutch-debat-direct`
-- `spain-canal-parlamento-weekly`
-- `quebec-canal-assemblee`
-- `brazil-tv-senado-grid`
-- `czech-chamber-plenary`
-- `estonia-riigikogu-plenary`
-- `knesset-tv-guide`
-- `germany-bundestag-tv1`
-- `ireland-oireachtas-tv-guide`
-- `mauritius-parliament-tv-guide`
-- `norway-stortinget-calendar`
-- `sweden-riksdag-calendar`
-- `italy-camera-webtv-events`
-- `taiwan-parliamentary-tv-programmes`
 
-They parse supplied HTML/JSON strings. Network fetching remains in the shared
+They parse supplied JSON, XML, ICS or HTML with explicit machine-readable fields,
+plus the documented Bundestag hybrid. Network fetching remains in the shared
 collector rather than inside parser functions, so every run records what was
 requested, when it ran, and whether each source succeeded.
 
@@ -65,10 +134,10 @@ Schedule sources use `scraper_status: implemented` when a registered Python
 parser exists. Sources without a usable parser remain `planned` and appear as
 official outlinks.
 
-As of 2026-10-26, all 261 catalogue source records have at least one official
-schedule, agenda, meeting or dated video-event surface recorded. Forty-seven
-records use implemented parsers across 33 recorded metadata URLs and 27 collectors;
-214 catalogue entries still have planned extraction. These are source-discovery
+As of 2026-10-28, all 261 catalogue source records have at least one official
+schedule, agenda, meeting or dated video-event surface recorded. Forty-two
+records use implemented parsers across 31 recorded metadata URLs and 26 collectors;
+219 catalogue entries have no active collector. These are source-discovery
 counts, not populated programme-guide coverage or proof that every surface
 describes a broadcast. This pass did not freshly fetch every planned URL. The
 jurisdiction filter
@@ -77,6 +146,30 @@ These official links remain available if generated programme data cannot load.
 Catalogue and schedule use the same sourced jurisdiction-flag registry. The earlier
 117-record/106-URL snapshot and the source-by-source discovery baseline in
 `reports/epg-discovery-2026-08-24.md` remain historical evidence.
+
+The [structured retention pass](../reports/epg/2026-10-28-structured-collector-retirement.md)
+removes nine presentation-based collectors and their source-specific tests,
+including the French and Luxembourg additions from earlier the same day.
+Official viewing and schedule outlinks remain in the catalogue. Retired source
+entries use the existing `planned` status to mean no active collector; this is
+not a promise to recreate their old HTML parsers. Offline export rejects their
+cached ranges and collection cannot revive them through last-good recovery.
+Rhode Island's default-channel embedded JSON stays. New Zealand accepts its
+current JSON API contract and no longer interprets saved presentation HTML.
+
+The [current input register](../reports/epg/2026-10-28-unimplemented-collectors.md)
+contains 241 distinct URLs, including supplementary and retired-source links.
+Treat it as structured replacement discovery, not a plain-HTML implementation queue.
+
+The [maintenance pass](../reports/epg/2026-10-28-collector-stabilization.md)
+corrects four Ontario room associations: the implemented calendar supplies House
+sittings only. Shared JSON container checks isolate malformed sources; Ireland
+keeps complete programmes beside unknown ends. The later retirement removed the YouTube resolver and its
+special precedence branch. Retained stale data still cannot overwrite another
+source's successful current result. Per-source
+metrics describe collector output, while channel rows describe the selected result.
+Future additions prioritize useful, maintainable broadcast data over filling every
+planned parser slot; the ranked shortlist is in that report and the roadmap.
 
 The [Nordic continuation](../reports/epg/2026-10-26-nordic-coverage.md) adds Norway's
 official plenary/public-room iCalendars and Sweden's documented chamber XML.
@@ -277,8 +370,10 @@ the next listing. TV Senado and Spain keep inference within a validated dated
 daily table and leave terminal ends unknown. TV Camara currently assumes the
 programme date from collection and verifies the active source weekday. These
 assumptions are recorded as
-`end_basis`/`start_basis` in schedule JSON and disclosed in XMLTV descriptions.
-Legacy cached records from those parsers receive the same disclosures. Missing
+`end_basis`/`start_basis` in schedule JSON. Assumed broadcast dates are excluded
+from XMLTV with `assumed_broadcast_date`, including legacy TV Camara records;
+weekday agreement alone cannot confirm a calendar date. Allowed next-listing end
+inference remains disclosed in XMLTV descriptions. Missing
 or nonpositive EBS durations remain unknown instead of creating zero-length
 programmes. Bounded retained schedules are also labelled in descriptions.
 Official HTML/JSON/calendar URLs in `epg_sources` are research inputs, not

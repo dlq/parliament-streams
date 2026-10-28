@@ -20,6 +20,8 @@ from .common import (
     local_time_label,
     normalized_events,
     parse_iso,
+    require_object,
+    require_records,
 )
 
 CHANNEL_ID = "eu-audiovisual-ebs"
@@ -49,7 +51,7 @@ def request_specs(now: datetime) -> list[FetchRequest]:
 
 
 def _title(program: dict[str, Any]) -> str:
-    titles = program.get("titles", [])
+    titles = require_records(program.get("titles", []), "EBS programme titles")
     preferred = next((item for item in titles if item.get("language") == "EN"), None)
     selected = preferred or (titles[0] if titles else {})
     return clean_html(str(selected.get("content", "")))
@@ -73,13 +75,13 @@ def _programme_end(start: datetime, raw_duration: object) -> datetime | None:
 
 def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
-    days = json.loads(payload)
+    days = require_records(json.loads(payload), "EBS guide")
     events: list[ScheduleEvent] = []
     for day in days:
-        channel = day.get("channel", {})
+        channel = require_object(day.get("channel", {}), "EBS channel")
         if channel and channel.get("name") != "EBS":
             continue
-        for program in day.get("programs", []):
+        for program in require_records(day.get("programs", []), "EBS programmes"):
             if (
                 channel.get("id")
                 and program.get("channelId")
