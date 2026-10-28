@@ -1,0 +1,665 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-27",
+  "scope": "Bounded investigation of Taiwan programme API access from the production hosted-runner environment. No media, cookies, credentials, proxies, direct-origin routing or TLS downgrades used. Diagnostic workflow remained on a separate branch and did not publish the site.",
+  "published_failure": {
+    "generated_at": "2026-10-27T22:23:20Z",
+    "source": {
+      "channel_count": 0,
+      "channels_expected": 1,
+      "consecutive_failures": 4,
+      "error": "HTTP 403",
+      "event_count": 0,
+      "events_with_end": 0,
+      "events_with_official_id": 0,
+      "events_with_url": 0,
+      "fetched_at": "2026-10-27T22:23:20Z",
+      "outcome_detail": "fetch_or_parse_error",
+      "status": "error",
+      "urls": [
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F28",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F29",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F29",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F30",
+        "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly2&date=2026%2F10%2F30"
+      ],
+      "used_last_good": false
+    }
+  },
+  "local_comparison": {
+    "checked_at": "2026-10-27T23:53:52.549302+00:00",
+    "platform": "Darwin",
+    "python": "3.12.15",
+    "ssl": "OpenSSL 3.5.9 29 Sep 2026",
+    "note": "No credentials, cookies, raw denial bodies or challenge tokens retained; no TLS settings relaxed.",
+    "results": [
+      {
+        "name": "homepage",
+        "url": "https://www.parliamentarytv.org.tw/",
+        "error_type": "TimeoutError"
+      },
+      {
+        "name": "published-script",
+        "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+        "status": 200,
+        "response_bytes_sampled": 16522,
+        "truncated": false,
+        "sample_sha256": "9eb9f646269bd4e78e31833e553d45c5f8d87bbd193d9c283a7b4fa6e1b3edf0",
+        "headers": {
+          "Server": "Apache/2.4.69 (Amazon Linux)",
+          "Content-Type": "application/javascript",
+          "Content-Length": "16522",
+          "Via": "1.1 95a3dd023df73736e8ea01cca5036ec0.cloudfront.net (CloudFront)",
+          "X-Cache": "Miss from cloudfront"
+        },
+        "title": null,
+        "response_markers": []
+      },
+      {
+        "name": "collector",
+        "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+        "error_type": "TimeoutError"
+      },
+      {
+        "name": "published-ajax-headers",
+        "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+        "status": 200,
+        "response_bytes_sampled": 1696,
+        "truncated": false,
+        "sample_sha256": "cdaf3ff31b19ccc2839e87cd35f37ec0eb9988335b0ce5cfd5d349423de4d9d3",
+        "headers": {
+          "Server": "Apache/2.4.69 (Amazon Linux)",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Via": "1.1 32ea9b2b7eaaba833294021989c78c08.cloudfront.net (CloudFront)",
+          "X-Cache": "Miss from cloudfront"
+        },
+        "json_type": "list",
+        "rows": 11,
+        "row_keys": [
+          "eps",
+          "now",
+          "pname",
+          "ptime",
+          "subname"
+        ]
+      },
+      {
+        "name": "unescaped-date",
+        "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026/10/28",
+        "error_type": "TimeoutError"
+      },
+      {
+        "name": "canonical-host-without-www",
+        "url": "https://parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+        "error_type": "URLError"
+      },
+      {
+        "name": "linked-broadcaster-guide",
+        "url": "https://www.cts.com.tw/schedule/?ch=lyA",
+        "status": 200,
+        "response_bytes_sampled": 65537,
+        "truncated": true,
+        "sample_sha256": "570360d9ae669dd9a5e10bb9bedf077ca9b20d7336da21492f42e81931fc2f65",
+        "headers": {
+          "Server": "nginx",
+          "Content-Type": "text/html;charset=utf-8",
+          "Content-Length": "147450",
+          "Via": "1.1 2080aae7ace369c71819923852e1b17e.cloudfront.net (CloudFront)",
+          "X-Cache": "Miss from cloudfront"
+        },
+        "title": "節目表 - 華視全球資訊網",
+        "response_markers": []
+      }
+    ]
+  },
+  "github_comparisons": [
+    {
+      "url": "https://github.com/dlq/parliament-streams/actions/runs/40605197642",
+      "commit": "ba68ad9d986723ca0d4abca84198b0b0582dff47",
+      "observations": {
+        "checked_at": "2026-10-27T23:53:51.016268+00:00",
+        "platform": "Linux",
+        "python": "3.11.17",
+        "ssl": "OpenSSL 3.0.13 30 Jan 2024",
+        "note": "No credentials, cookies, raw denial bodies or challenge tokens retained; no TLS settings relaxed.",
+        "results": [
+          {
+            "name": "homepage",
+            "url": "https://www.parliamentarytv.org.tw/",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "22a49789b69d9d92e4807870f48619830dc69167be66651083ec1bccc4b47f10",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 92d0bcc9a19894fd3823013d01c6aaf6.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "published-script",
+            "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "64d810adec36257fa62ac7dd5e89bdbbaf4d8f8d884f12ace546bb618cfe0ca6",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 55be39e5edc1db532a4d1c84f1e5e6a2.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "collector",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "fc795464d9af5c3d0f8ffe7f5fe8071770424db04d21729027285172f8152549",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 6c20a9afdcefb8187eafae98c6f405bc.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "published-ajax-headers",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "bd2dbe08a388a3e0b88fe6826dbc3cb5a6668a5873488d653eb0f7c9750547c9",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 7d4aec5a0e591156e530d9b2067f6b50.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "unescaped-date",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026/10/28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "6c5dfef01148e2878c3b0828a9589827459f04275b7a89f86a5329d179716393",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 a877a70ddae2838a216f98697c6cf30c.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "canonical-host-without-www",
+            "url": "https://parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "error_type": "URLError"
+          },
+          {
+            "name": "linked-broadcaster-guide",
+            "url": "https://www.cts.com.tw/schedule/?ch=lyA",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "f36f41689b21480154fac5119a4aee6d773f894ba59f0d770b5d3cdf1385e9c8",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 af85571f12498efdefcadaccc1930a92.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://github.com/dlq/parliament-streams/actions/runs/40605438712",
+      "commit": "c4acd53b74b74a4f41dc97b55b5f14ea533faf8a",
+      "observations": {
+        "checked_at": "2026-10-27T23:56:03.471912+00:00",
+        "platform": "Linux",
+        "python": "3.11.17",
+        "ssl": "OpenSSL 3.0.13 30 Jan 2024",
+        "note": "No credentials, cookies, raw denial bodies or challenge tokens retained; no TLS settings relaxed.",
+        "results": [
+          {
+            "name": "homepage",
+            "url": "https://www.parliamentarytv.org.tw/",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "7b932a6500010eb2bdd787a566eb74ae8e700d3a4a90588c20c665ea920eab28",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 f9bb854514bf1b40a7175016f26fcc5a.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX52-P3"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "published-script",
+            "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "4fb868b8a5171de966cb6f4bfd128bb84bfa2790731a31bb4dc068b7cc846401",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 17a0aa80d403fbaf0a5ada3a85a54c22.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX52-P3"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "collector",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "194a3f7d43913fbdf3696d9ee155736976bf0c44014d7f3ddef514c23676f2d2",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 2c05225edb39737522cc9637414fe09c.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX52-P3"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "published-ajax-headers",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "9049440b24b30c4c36e99f02a60a044b8df1a8f39282f60aa9b8ad427f0dfbed",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 523337ea6437f30d60b126f4a782be5c.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX52-P3"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "browser-compatible-client",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "4fa2093bcfa4f9b3eff46450928c8989ec383d361df2318578f7f9445ab41e06",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 a13aeffcb3f9676bbc052c3661215f2a.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX52-P3"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "generic-http-client",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "bfac1721432c0d37417d9d1e1aaa1e0deac2ff802abf8f8e13d4f5a6aa51c539",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 523337ea6437f30d60b126f4a782be5c.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX52-P3"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "unescaped-date",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026/10/28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "1cccb6828fd474d9de8dc101a527d88de44da1314743876a98ac651d98152bf1",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 0660f92086dbd3330dcb4ef4ac730cf4.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX52-P3"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "canonical-host-without-www",
+            "url": "https://parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "error_type": "URLError"
+          },
+          {
+            "name": "linked-broadcaster-guide",
+            "url": "https://www.cts.com.tw/schedule/?ch=lyA",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "71dd3720c873421048756edd3317335bcd42905f187a39896c51fd85a4d0ef6a",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 ee40b6fb86110741a6ccff39169674a0.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "PHX50-P2"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://github.com/dlq/parliament-streams/actions/runs/40605497975",
+      "commit": "ab9a2e39929acd929b7a1503f5cbff2a19fabab5",
+      "observations": {
+        "checked_at": "2026-10-27T23:56:35.134320+00:00",
+        "platform": "Linux",
+        "python": "3.11.17",
+        "ssl": "OpenSSL 3.0.13 30 Jan 2024",
+        "note": "No credentials, cookies, raw denial bodies or challenge tokens retained; no TLS settings relaxed.",
+        "results": [
+          {
+            "name": "homepage",
+            "url": "https://www.parliamentarytv.org.tw/",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "7bca52e62ffc5d2e4b64c7d60368ded91d44ab88f7841672fb47349eafc42361",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 301344113dc05dc15d7b460113c8b8a4.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P9"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "published-script",
+            "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "e91724a3500bad0d7f77ae03c1b792016e7cf862a6f0191022fabc354e94da82",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 339b50639d9b4146fda74da7c1df3f92.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P9"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "collector",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "be3d0ec6ab021288b93d378a868e036e33ebad8eb61705bf5c528dce304f082c",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 fa4b93a28d2af7c945bbee127a248096.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P9"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "published-ajax-headers",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "bc52bc506ea0c9b42384169efc86382f3e599232c7f968d54fa0ba6e1825e816",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 63a74e1d2415fbd6511596275b2fd6ba.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P9"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "browser-compatible-client",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "eb264a8ca59e44f203a78b56da248b1ca282a3bbfb06af9eb05172486b2f0e67",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 6b59e9a9374a531451d6c8464f6ce4bc.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P9"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "generic-http-client",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "f7feca739eadb4237240d879a923f9978ae5bc540618b8bd68f70be089859ab8",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 339b50639d9b4146fda74da7c1df3f92.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P9"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "unescaped-date",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026/10/28",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "a1a2324d24523bc24f4415157b843fdfa361977eb1cb804571a0da350f5ca037",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 e4939403ec9869a5b69d6d64f85509d6.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P9"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "canonical-host-without-www",
+            "url": "https://parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "error_type": "URLError"
+          },
+          {
+            "name": "linked-broadcaster-guide",
+            "url": "https://www.cts.com.tw/schedule/?ch=lyA",
+            "status": 403,
+            "response_bytes_sampled": 919,
+            "truncated": false,
+            "sample_sha256": "0bdd82847fb5b6e41644a81df7a605b0994adc9ff588c41ad099d13e23b4861e",
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Content-Length": "919",
+              "Via": "1.1 b26ccdd71260d48cda5fd0b5410f6984.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "SFO53-P6"
+            },
+            "title": "ERROR: The request could not be satisfied",
+            "response_markers": [
+              "blocked"
+            ],
+            "denial_text": "ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner. If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation. Generated by cloudfront (CloudFront) Request ID: [re"
+          },
+          {
+            "name": "curl-transport",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F10%2F28",
+            "exit_code": 0,
+            "status": "403",
+            "sample_sha256": "bf24b3b30167030cac796ad780bb3243b999d920d682578f88ba17a6441363b0",
+            "cloudfront_request_blocked": true
+          }
+        ]
+      }
+    }
+  ],
+  "confirmed": [
+    "Three isolated ubuntu-latest diagnostic runs reproduce CloudFront HTTP 403 Request blocked responses.",
+    "The same denial affects the homepage, published script, dated programme API and officially linked CTS guide.",
+    "The published AJAX request headers, browser-compatible and generic user agents, and escaped/unescaped date slashes do not resolve the denial.",
+    "An independent curl HTTPS transport also returns CloudFront HTTP 403, so this is not a Python-only parser or transport failure.",
+    "The matched local AJAX API request succeeds with an 11-row JSON programme array; some other local requests time out.",
+    "The host without www does not yield a usable alternate endpoint.",
+    "The published coverage report correctly records a collection error after four consecutive failures and does not fabricate Taiwan programmes."
+  ],
+  "inference": {
+    "finding": "CloudFront-delivered access denial depends on the request environment; a publisher-side network/security restriction is the leading explanation.",
+    "uncertainty": "The public error response does not identify whether AWS WAF, geographic/IP rules, or an origin firewall is responsible. No claim is made that a particular rule or country is confirmed. Publisher CloudFront/WAF/origin logs are required for exact attribution.",
+    "supporting_documentation": [
+      "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/http-403-permission-denied.html",
+      "https://docs.github.com/en/actions/reference/runners/github-hosted-runners"
+    ]
+  },
+  "remediation": {
+    "preferred": "Ask the operator for a supported public programme feed or for authorized access to the low-frequency programme endpoint from the collection infrastructure. Supply diagnostic UTC timestamps, paths, the identified collector user agent and run URLs. Do not request that all protections be disabled.",
+    "if_supported_access_requires_fixed_egress": "Evaluate a permitted collector with stable egress only after confirming access requirements with the publisher. Standard GitHub-hosted runner address ranges vary; broad range allowlisting is not a robust default.",
+    "pending": "Retain the implemented parser and explicit production access hold. Use only genuinely collected data with real fetch timestamps; no cached successful payload is republished as a fresh result.",
+    "not_adopted": [
+      "No speculative header patch that failed runner tests.",
+      "No challenge solving, credential/cookie reuse, proxy rotation, direct-origin bypass or TLS weakening.",
+      "No unrequested publisher contact or new always-on service."
+    ]
+  },
+  "production_code_changed": false,
+  "workflow_scope": "Temporary diagnostic workflow and bounded script committed only on codex/taiwan-api-diagnostics; main retains its existing publication pipeline."
+}

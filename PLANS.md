@@ -73,6 +73,13 @@ and dependable broadcast ends before expanding export. Taiwan's iVOD forecast
 still has a modern-TLS access hold; use the supported official programme API
 without weakening TLS checks.
 
+The [hosted-runner access investigation](reports/epg/2026-10-27-taiwan-actions-access.md)
+reproduces CloudFront 403s for Taiwan's programme API across three diagnostic
+jobs, ordinary headers and independent curl. The local API contract is usable,
+but production access is still held. Seek an operator-supported feed/access
+arrangement; do not treat header changes, cached payloads or TLS downgrades as
+an established fix. The exact blocking rule requires publisher logs.
+
 The earlier [Nordic continuation](reports/epg/2026-10-26-nordic-coverage.md) brought
 the catalogue to 45 parser-connected records and 25 collectors.
 Norway and Sweden add source-timezone-aware starts, with official identities and

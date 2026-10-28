@@ -97,6 +97,13 @@ is mapped to one continuous XMLTV channel. The iVOD forecast remains planned:
 its legacy TLS renegotiation fails under the collector's modern TLS checks;
 no TLS security setting is relaxed.
 
+The [27 October hosted-runner investigation](../reports/epg/2026-10-27-taiwan-actions-access.md)
+finds a separate production access hold on the modern Taiwan programme API:
+CloudFront returns 403 from GitHub across ordinary header profiles and curl.
+Registered-parser coverage is not the same as a successful current collection.
+The published quality report keeps the source failure visible; an
+operator-supported feed or access arrangement is still needed.
+
 The [renewed institution review](../reports/discovery/2026-10-25-institution-service-baseline.md)
 tracks source freshness, timezone/event mapping and programme-data rights
 separately. Gipuzkoa's officially linked RSS still contains February 2016 events;
