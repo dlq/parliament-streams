@@ -1,8 +1,7 @@
 # Search visibility and link previews
 
-The preferred public site is `https://dlq.ca/parliament-streams/`. Catalogue,
-coverage map, and schedule pages publish self-referencing canonical URLs on that
-domain. The old GitHub Pages address redirects there and must not be declared as
+The preferred public site is `https://dlq.ca/parliament-streams/`. All five
+public pages publish self-referencing canonical URLs on that domain. The old GitHub Pages address redirects there and must not be declared as
 the canonical page.
 
 Every page has a branded title, a description, Open Graph and Twitter Card
@@ -13,10 +12,10 @@ English metadata so link-preview crawlers do not need JavaScript. Structured
 data describes the independent catalogue; it does not claim that the project is
 an official parliamentary service or that rich results are guaranteed.
 
-`site/sitemap.xml` lists the three canonical HTML pages. It intentionally omits
+`site/sitemap.xml` lists all five canonical HTML pages. It intentionally omits
 UI query-string variants, playlist feeds, JSON exports, and XMLTV. No artificial
-last-modified dates or priority values are added. Every page links to the sitemap
-in its footer.
+last-modified dates or priority values are added. The sitemap remains available
+for crawlers and Search Console submission; footers use the shared repository link.
 
 ## Search Console setup
 
@@ -29,8 +28,8 @@ No property, verification record, or ownership permissions were changed.
    domain verification requires access to the domain's DNS.
 2. Submit `https://dlq.ca/parliament-streams/sitemap.xml` in **Sitemaps** after it
    is deployed.
-3. Inspect the homepage, map, and schedule URLs. Check Google's selected
-   canonical, crawl/indexing status, and rendered content; request indexing
+3. Inspect the catalogue, legislature inventory, map, schedule and Data and methods
+   URLs. Check Google's selected canonical, crawl/indexing status, and rendered content; request indexing
    after meaningful changes.
 4. Review project-URL performance for brand searches and legislature-specific
    queries. Compare impressions, clicks, click-through rate, and average

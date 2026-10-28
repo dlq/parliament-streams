@@ -4,88 +4,76 @@
 [![Catalogue Audit](https://github.com/dlq/parliament-streams/actions/workflows/catalogue-audit.yml/badge.svg)](https://github.com/dlq/parliament-streams/actions/workflows/catalogue-audit.yml)
 [![GitHub Pages](https://github.com/dlq/parliament-streams/actions/workflows/pages.yml/badge.svg)](https://github.com/dlq/parliament-streams/actions/workflows/pages.yml)
 
-Find official parliamentary video from around the world. Parliament Streams
-is an independent catalogue of official viewing pages, documented streams,
-schedules and evidence about source access, accessibility and reuse.
+Find official parliamentary video and audio from around the world. Parliament
+Streams publishes a legislature inventory, a catalogue of official viewing
+sources, collected schedules, IPTV playlists and a partial XMLTV guide. The
+Python tools and static website make the source evidence and its limits inspectable.
 
 **[Catalogue](https://dlq.ca/parliament-streams/)** ·
 **[Legislatures](https://dlq.ca/parliament-streams/institutions.html)** ·
 **[Coverage map](https://dlq.ca/parliament-streams/map.html)** ·
-**[Programme guide](https://dlq.ca/parliament-streams/schedule.html)** ·
-**[Data and method](https://dlq.ca/parliament-streams/data.html)**
+**[Schedule](https://dlq.ca/parliament-streams/schedule.html)** ·
+**[Data and methods](https://dlq.ca/parliament-streams/data.html)**
 
-## Help Improve The Catalogue
+## Use the data
 
-Contributions of any size are welcome. Share an official source, check a
-translation, report something confusing, or help improve the code. Local
-knowledge, language skills and experience using the site are all useful.
+Start with [Data and methods](https://dlq.ca/parliament-streams/data.html) for the
+file directory, inclusion rules, collection methods, detailed documentation and
+credits. No installation is needed to browse the site or use the public files.
+
+- [Viewing-source catalogue (JSON)](https://dlq.ca/parliament-streams/data/channels.json)
+- [Legislature inventory (JSON)](data/discovery/institutions.json)
+- [Schedules and events (JSON)](https://dlq.ca/parliament-streams/data/schedules.json)
+- [Continuous-channel playlist (M3U)](https://dlq.ca/parliament-streams/data/stable-hls.m3u)
+- [All supported channels (M3U)](https://dlq.ca/parliament-streams/data/validated-hls.m3u), including sitting-only streams
+- [XMLTV programme guide](https://dlq.ca/parliament-streams/data/epg.xml) and
+  [guide quality report](https://dlq.ca/parliament-streams/data/epg-quality.json)
+
+Playlists link to the original streams. Guide coverage is partial; a viewing
+source does not automatically qualify for IPTV or XMLTV. Scheduled collection
+and export run every six hours. The catalogue and schedule pages include copy
+buttons and VLC instructions; prefer the `.m3u` channel lists for VLC.
+
+## Contribute
+
+An official link, local knowledge, a translation correction or a usability
+observation is a useful contribution. You do not need to write code or install
+the project to help. Start with [CONTRIBUTING.md](CONTRIBUTING.md),
+[the issue chooser](https://github.com/dlq/parliament-streams/issues/new/choose)
+or [open issues](https://github.com/dlq/parliament-streams/issues).
 
 | You can help with… | Start here |
 | --- | --- |
-| An official parliamentary source or a better viewing link | [Suggest or correct a source](https://github.com/dlq/parliament-streams/issues/new?template=source_correction.yml) |
-| A missing legislature, authority evidence or inventory correction | [Share a research finding](https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml&title=%5BInventory%5D%3A%20&contribution=Legislature%20or%20territory%3A%20%0AProposed%20addition%20or%20correction%3A%20%0A&page=https%3A%2F%2Fdlq.ca%2Fparliament-streams%2Finstitutions.html) |
+| An official source or a better viewing link | [Suggest or correct a source](https://github.com/dlq/parliament-streams/issues/new?template=source_correction.yml) |
+| A missing legislature or evidence about its powers | [Share a research finding](https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml) |
 | A broken stream, player or page | [Report what happened](https://github.com/dlq/parliament-streams/issues/new?template=endpoint_validation.yml) |
-| Translations and more natural wording in any supported language | [Suggest a translation](https://github.com/dlq/parliament-streams/issues/new?template=translation_review.yml) · [Translation guide](docs/translating.md) |
-| Incorrect schedules, times, room names or language labels | [Report a schedule issue](https://github.com/dlq/parliament-streams/issues/new?template=schedule_metadata.yml) |
-| Accessibility, mobile usability, documentation, research, code or another idea | [Share an idea or finding](https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml) |
+| Translations and more natural wording | [Suggest a translation](https://github.com/dlq/parliament-streams/issues/new?template=translation_review.yml) · [Translation guide](docs/translating.md) |
+| Schedules, times, rooms or language labels | [Report a schedule issue](https://github.com/dlq/parliament-streams/issues/new?template=schedule_metadata.yml) |
+| Accessibility, research, documentation, code or another idea | [Share an idea or finding](https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml) |
 
-For a small first contribution, try one link, one sentence, one translation or
-one source you know well. A plain-language issue is enough to get started;
-pull requests are welcome too. See [all contribution paths](CONTRIBUTING.md)
-or [browse open issues](https://github.com/dlq/parliament-streams/issues).
+One source, one sentence or one translated phrase is a good first contribution.
+Small documentation edits can use GitHub’s web editor. For code changes, fork
+the repository, make a focused change and describe how you checked it. Report
+sensitive issues through [SECURITY.md](SECURITY.md), rather than a public issue.
 
-## What It Covers
+## Run locally
 
-National parliaments and state, provincial, territorial, autonomous or devolved
-legislatures with substantive **legislative authority**, including their public
-committee proceedings. Ordinary local councils and planning/service bodies are
-outside default scope. See [catalogue eligibility](docs/catalogue-scope.md) for
-borderline and special-status cases; international sources are labelled
-separately.
-
-The [Legislatures page](https://dlq.ca/parliament-streams/institutions.html)
-shares the working inventory and research status, with 23 interface locales
-and English research notes. Inclusion does not certify a stream or reuse rights.
-
-Research priorities use the Economist Intelligence Unit's Democracy Index.
-See [how the research tiers work](docs/catalogue-scope.md#research-priorities-and-democracy-tiers)
-for the edition, country lists and the distinction between priority and eligibility.
-
-The site plays documented sources when the catalogue's technical and playback
-policy permits it, and otherwise links to the official service. It is a static
-site with no accounts, analytics, stream proxy or rebroadcast backend.
-Public availability is not a reuse licence; each source retains its evidence
-and conditions. See the [rights summary](docs/rights-summary.md).
-
-## IPTV And Programme Data
-
-The catalogue and schedule pages offer playlist/guide links, copy buttons and
-localized VLC desktop instructions:
-
-- [Stable HLS playlist](https://dlq.ca/parliament-streams/data/stable-hls.m3u)
-- [Broader validated HLS playlist](https://dlq.ca/parliament-streams/data/validated-hls.m3u) — some feeds are available only during proceedings
-- [XMLTV guide](https://dlq.ca/parliament-streams/data/epg.xml) — partial coverage
-
-These UTF-8 channel lists link to the original streams. Official viewing links
-and calendar pages do not automatically qualify for IPTV or XMLTV. Pages
-schedules export refreshes every six hours; details and local commands are in
-[schedules, IPTV and XMLTV](docs/schedules-and-iptv.md).
-
-## Run Locally
-
-For an HTTP preview, install Node.js 24+ and run:
+For a website preview, install Git, Node.js 24+, Python 3 and Make:
 
 ```sh
+git clone https://github.com/dlq/parliament-streams.git
+cd parliament-streams
 npm ci
 make site
 ```
 
-Open [localhost:8000/site/](http://localhost:8000/site/). Python 3 supplies the
-preview server. `npm ci` prepares the locked HLS.js and D3 browser assets.
-The interface supports 23 locales; source records retain their recorded
-languages. See [site and language behaviour](docs/public-site.md).
+Open [localhost:8000/site/](http://localhost:8000/site/). `npm ci` assembles the
+locked HLS.js and D3 assets; `make site` serves the checkout with Python’s HTTP
+server. The preview includes the maintained catalogue and inventory snapshots.
+Live schedules are generated separately and are not included in a fresh checkout.
 
-For the complete development checks, install Python 3.11+, `uv` and Node.js 24+:
+For Python tooling and the complete checks, use Python 3.11+ and `uv`, alongside
+Node.js 24+ and Make. From the repository root:
 
 ```sh
 uv sync --locked --extra dev
@@ -94,33 +82,48 @@ npx playwright install chromium
 make verify
 ```
 
-Use a repository checkout: the Python CLI uses its `schema/` and `data/`
-resources. `make test` runs Python, JavaScript unit and local browser tests;
-`make verify` also checks data, formatting, types and Python coverage. See
-[development and validation](docs/development.md) for individual commands and
-live audits. [CONTRIBUTING.md](CONTRIBUTING.md) explains evidence requirements.
+On Linux, Playwright may also need system browser dependencies; see
+[development and validation](docs/development.md). `make verify` checks data,
+generated files, formatting, types, tests, coverage, HTML, browser interactions
+and accessibility. `make test` runs the Python, JavaScript and browser tests.
+For a local schedule snapshot, run `make schedules` after setup; this contacts
+official third-party services. Details are in [schedules and IPTV](docs/schedules-and-iptv.md).
 
-## Maintain And Explore
+Use a checkout for the Python CLI: it resolves `schema/` and `data/` resources
+from the repository. A standalone Python package installation is not a complete
+catalogue and research workspace.
 
-`data/channels.json` is the canonical catalogue. New sources normally start as
-reviewable records in `candidates/`; the catalogue manager validates changes
-and regenerates `site/catalogue-data.js`. Do not edit that generated snapshot
-independently. Start with [catalogue maintenance](docs/catalogue-maintenance.md).
+## Understand and maintain the project
+
+The two maintained lists are [the legislature inventory](data/discovery/institutions.json)
+and [the viewing-source catalogue](data/channels.json). An inventory record does
+not certify a broadcast. A catalogue entry can be an official page, archive,
+embedded player or direct stream; embedding and reuse have separate conditions.
+
+Scope is based on substantive legislative authority, including eligible public
+committee proceedings. Research priorities use the EIU Democracy Index 2024
+baseline; they are not an absolute catalogue restriction. See
+[inclusion rules](docs/catalogue-scope.md) and [research status](docs/research-status.md).
+
+New source records normally start in `candidates/`, then undergo review and
+validation before promotion. Edit maintained inputs and regenerate their views;
+do not edit `site/catalogue-data.js` or `site/institutions-data.js` independently.
 
 | Topic | Guide |
 | --- | --- |
-| Documentation index | [All guides](docs/README.md) |
-| Data files and generated snapshots | [Data guide](data/README.md) |
-| Research reports and evidence limits | [Reports guide](reports/README.md) |
-| Data model, files and runtime | [Architecture](docs/architecture.md) |
-| Automated checks, review queues and deployment | [GitHub Actions](docs/github-actions.md) |
-| Scope and eligibility | [What counts as a parliament](docs/catalogue-scope.md) |
-| Current coverage and research leads | [Research status and evidence](docs/research-status.md) |
-| Rights and attribution evidence | [Source rights](docs/source-rights-and-permissions.md) |
-| Roadmap | [Plans](PLANS.md) |
-| Change history | [Changelog](CHANGELOG.md) |
-| Research history | [Working notes](NOTES.md) |
+| Data products, methods and credits | [Public guide](https://dlq.ca/parliament-streams/data.html) |
+| Source corrections and publication | [Catalogue maintenance](docs/catalogue-maintenance.md) |
+| Data roles, generated files and code structure | [Data guide](data/README.md) · [Architecture](docs/architecture.md) |
+| Automation and review queues | [GitHub Actions](docs/github-actions.md) |
+| Dated findings and their limits | [Reports guide](reports/README.md) |
+| All maintained guides | [Documentation index](docs/README.md) |
+| Future work and changes | [Plans](PLANS.md) · [Changelog](CHANGELOG.md) |
 
-The project also documents how public parliamentary video could become easier
-to find and use: stable protocols, clear terms, machine-readable schedules and
-accessible media. Read the [open-stream principles](docs/open-stream-principles.md).
+## Licence and source rights
+
+Project code uses the [BSD 3-Clause licence](LICENSE). Broadcasters’ video,
+audio, schedules, images and map data retain their own conditions; a public URL
+or play button is not a reuse licence. See [source rights](docs/source-rights-and-permissions.md)
+and [asset credits](https://dlq.ca/parliament-streams/data.html#data-colophon-title).
+The site has no accounts, analytics, stream proxy or rebroadcast backend;
+[privacy notes](PRIVACY.md) explain third-party playback requests.

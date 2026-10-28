@@ -249,23 +249,22 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .hero-credit { margin-top: .55rem; }
 }
 
-/* Shared project routes remain available without expanding the compact lists. */
-[data-project-links="intro"] { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .2rem 1.5rem; margin: .4rem 0 .65rem; padding: .35rem .75rem; border-inline-start: 3px solid var(--green); background: var(--green-wash); }
-.project-summary { flex: 0 1 auto; }
-.project-summary { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.45; }
-.project-links { display: flex; flex-wrap: wrap; align-items: center; gap: .2rem 1rem; font-size: .8rem; line-height: 1.4; }
-.project-links a { display: inline-flex; align-items: center; min-height: 32px; color: var(--red); text-decoration: none; }
-.project-links a:hover { text-decoration: underline; }
-.project-links a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: underline; }
-.site-footer [data-project-links] { flex: 1 0 100%; }
+/* The repository badge is the consistent footer destination on every page. */
+.site-footer { align-items: center; }
+.site-footer .repository-link { display: inline-flex; align-items: center; align-self: flex-end; gap: .45rem; margin-inline-start: auto; padding: .35rem .65rem; min-height: 44px; border: 1px solid var(--faint); border-radius: 6px; color: var(--ink); font-size: .8rem; font-weight: 600; white-space: nowrap; }
+.site-footer .repository-link:hover { color: var(--green); border-color: var(--green); background: var(--green-wash); }
+.repository-link img { flex: none; }
+.footer-context { display: grid; align-self: flex-start; gap: .35rem; min-width: 0; text-align: start; }
+.footer-source-links { line-height: 1.6; }
+
+/* Data and methods keeps project information separate from the compact lists. */
 .site-footer { flex-wrap: wrap; }
-.site-footer .project-links { gap: .2rem 1.2rem; }
 .data-page main > section:not(.page-intro) { padding: 1.6rem 0; border-top: 1px solid var(--faint); }
 .data-page h2 { font-size: var(--section-title-size); line-height: 1.15; }
 .data-page p { max-width: 850px; color: var(--muted); line-height: 1.55; }
 .data-stages { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem 1.5rem; margin: 1.4rem 0 .5rem; padding-left: 1.2rem; }
 .data-stage { padding-left: .2rem; color: var(--green); }
-.data-page .data-stage h2 { margin: 0; color: var(--ink); font-family: inherit; font-size: .95rem; font-weight: 700; line-height: 1.35; }
+.data-page .data-stage h3 { margin: 0; color: var(--ink); font-family: inherit; font-size: .95rem; font-weight: 700; line-height: 1.35; }
 .data-stage p { margin: .4rem 0; font-size: .85rem; }
 .data-assets { margin: 1rem 0; }
 .data-assets > div { display: grid; grid-template-columns: minmax(180px, .8fr) minmax(0, 2fr); gap: .4rem 1.5rem; padding: .85rem 0; border-top: 1px solid var(--faint); }
@@ -277,10 +276,6 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .data-page main > section.data-contribute { margin-block: 1.6rem; padding: 1.25rem 1rem; border-top: 0; border-inline-start: 3px solid var(--green); background: var(--green-wash); }
 .project-language-note { font-size: .8rem; }
 @media (max-width: 680px) {
-  [data-project-links="intro"] { margin: .5rem 0 .7rem; }
-  [data-project-links="intro"] .project-summary { display: none; }
-  .data-page [data-project-links="intro"] .project-summary { display: block; font-size: .85rem; }
-  .project-links { font-size: .78rem; }
   .catalogue-information { margin-bottom: .6rem; }
   .data-stages { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem 1.5rem; }
   .data-assets > div { grid-template-columns: minmax(0, 1fr); }
@@ -311,3 +306,12 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
   .detail-panel.is-minimized .viewer-controls { margin-bottom: 0; border-bottom: 0; }
 }
 .navigation-error { position: fixed; z-index: 40; top: 1rem; left: 50%; transform: translateX(-50%); width: min(38rem, calc(100% - 2rem)); margin: 0; padding: .8rem 1rem; border: 1px solid var(--red); background: var(--white); color: var(--ink); box-shadow: var(--shadow); font-size: .86rem; }
+
+/* The data directory stays readable as the methods and credits grow. */
+.data-contents { display: flex; border: 0; flex-wrap: wrap; justify-content: flex-start; gap: .35rem 1.25rem; margin: .6rem 0 1.4rem; font-size: .85rem; }
+.data-contents a { display: inline-flex; align-items: center; justify-content: flex-start; min-height: 36px; max-width: 100%; padding: 0; border: 0; overflow-wrap: anywhere; font-size: .85rem; color: var(--green); text-decoration: underline; text-underline-offset: .15em; }
+.data-page :is(h2, h3)[id] { scroll-margin-top: 1rem; }
+.data-stage .data-doc-links { margin-top: .6rem; font-size: .78rem; }
+.data-stage .data-doc-links a { min-height: 32px; }
+.data-supporting .data-asset-links { font-size: .8rem; }
+.data-colophon-byline a { color: var(--red); text-underline-offset: .15em; }

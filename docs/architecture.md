@@ -245,7 +245,9 @@ for reviewed maintenance, but they should be followed immediately by
 ## Scrapers And Schedules
 
 Schedule parsers live in `parliament_streams/scrapers/`. Parsers should consume
-saved HTML or JSON strings and return normalized schedule data. They should not
+saved JSON, XML, ICS or retained machine-readable HTML and return normalized
+schedule data. Prefer supported structured feeds; the source-selection policy
+and documented hybrid exception are in [schedules and IPTV](schedules-and-iptv.md#source-selection). They should not
 perform network requests directly; `parliament_streams/schedule_collection.py`
 owns HTTP, retries, timestamps, errors, and output shape.
 

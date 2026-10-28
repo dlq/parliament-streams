@@ -39,7 +39,7 @@
           <a id="institutions-nav-current" href="institutions.html" aria-current="page">Legislatures</a>
           <a id="institutions-nav-map" href="map.html">Coverage map</a>
           <a id="institutions-nav-schedule" href="schedule.html">Schedule</a>
-          <a href="data.html" data-project-navigation>Data and method</a>
+          <a href="data.html" data-project-navigation>Data and methods</a>
         </nav>
         <label class="locale-control"><span class="visually-hidden" id="institutions-language">Language</span><select id="locale-select"></select></label>
       </div>
@@ -50,31 +50,7 @@
         <p class="lede" id="institutions-lede">Explore the institutions in our research, and help fill the gaps.</p>
         <p class="institutions-reviewed" id="institutions-reviewed"></p>
       </div>
-      <div data-project-links="intro"></div>
 
-      <details class="institutions-contribute">
-        <summary id="contribute-title">Help improve this list</summary>
-        <p id="contribute-copy">Missing an institution or an official broadcast? Have a correction, translation, accessibility finding or another idea? Contributions of any size are welcome.</p>
-        <div class="institutions-links">
-          <a id="contribute-institution" href="https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml">Suggest an institution</a>
-          <a id="contribute-source" href="https://github.com/dlq/parliament-streams/issues/new?template=source_correction.yml">Share an official broadcast</a>
-          <a id="contribute-translation" href="https://github.com/dlq/parliament-streams/issues/new?template=translation_review.yml">Help with translation</a>
-          <a id="contribute-other" href="https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml">Other contributions</a>
-        </div>
-      </details>
-      <details class="institutions-scope">
-        <summary id="scope-title">Scope and method</summary>
-        <div>
-          <p id="scope-copy">Our current research covers 71 country groups from the EIU Democracy Index 2024 baseline, including first-level and autonomous special-status legislatures. Chambers and distinct legislative organs are listed within their institutions where applicable. This is a working inventory; completeness and viewing-service validation remain separate.</p>
-          <p id="scope-names">Institution names follow the source records; research notes are available in English.</p>
-          <p id="scope-service">No documented viewing source is a research gap; it does not establish that the institution has no broadcasts.</p>
-          <div class="institutions-links">
-            <a id="scope-notes" href="https://github.com/dlq/parliament-streams/blob/main/docs/catalogue-scope.md" lang="en">Research notes (English)</a>
-            <a id="scope-data" href="https://github.com/dlq/parliament-streams/blob/main/data/discovery/institutions.json">Download inventory JSON</a>
-            <a id="contribution-guide" href="https://github.com/dlq/parliament-streams/blob/main/CONTRIBUTING.md">Contribution guide</a>
-          </div>
-        </div>
-      </details>
       <div class="institutions-filters" role="search" aria-labelledby="institution-search-label">
         <label class="institutions-search"><span id="institution-search-label">Search country or institution</span><input id="institution-search" type="search" autocomplete="off" aria-describedby="institution-search-hint"></label>
         <label><span id="institution-country-label">Country</span><select id="institution-country"></select></label>
@@ -89,9 +65,10 @@
       <noscript><p>This research inventory needs JavaScript to filter its entries. <a href="https://github.com/dlq/parliament-streams/blob/main/data/discovery/institutions.json">Read the inventory on GitHub</a> or <a href="https://github.com/dlq/parliament-streams/issues/new?template=contribution.yml">suggest a contribution</a>.</p></noscript>
     </main>
     <footer class="site-footer">
-      <div data-project-links="footer"></div>
-      <span id="institutions-footer">Parliament Streams is an independent research catalogue.</span>
-      <a href="https://github.com/dlq/parliament-streams">GitHub</a>
+      <div class="footer-context">
+        <span id="institutions-footer">Parliament Streams is an independent research catalogue.</span>
+      </div>
+      <a class="repository-link" href="https://github.com/dlq/parliament-streams" hreflang="en" dir="ltr"><img src="assets/brand/github-mark.svg" width="18" height="18" alt=""><span>dlq/parliament-streams</span></a>
     </footer>
     <aside class="detail-panel" id="detail-panel" aria-label="Source viewer" hidden></aside>
 

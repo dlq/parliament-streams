@@ -17,7 +17,7 @@ from the repository root unless stated otherwise.
 | [Naming and compatibility](naming-conventions.md) | Domain vocabulary, operation names and stable data/command interfaces |
 | [Data validation and coverage](data-validation.md) | Product schemas, cross-format checks, static-type scope and coverage measurements |
 | [Public site and languages](public-site.md) | Page roles, keyboard controls, schedule states, playback, deployment, localization and local previews |
-| [Public Data and method page](https://dlq.ca/parliament-streams/data.html) | Research-to-publication stages, stable data downloads, coverage limits and contribution paths |
+| [Public Data and methods page](https://dlq.ca/parliament-streams/data.html) | Public files, supporting research data, methods, detailed guides, credits and contribution paths |
 | [Public Legislatures page](https://dlq.ca/parliament-streams/institutions.html) | Working institution inventory, authority decisions, research gaps and ways to contribute evidence |
 | [Help with translation](translating.md) | Phrase-level suggestions, supported locales and translation files |
 | [Schedules, IPTV and XMLTV](schedules-and-iptv.md) | Structured-source priorities, collection, exports, guide eligibility and quality limits |
@@ -69,3 +69,15 @@ current register and research status for next work.
 The historical files retain their original evidence paths. Do not rewrite an
 old observation as a current availability claim or delete it simply because a
 later review reached a different conclusion.
+
+## Keeping documentation current
+
+The README is the entry point for using the project, running a checkout and
+contributing. Data and methods is the public guide to outputs, research methods,
+limitations and credits. Detailed commands and evidence rules belong in the
+linked guides; overlap between the entry points is intentional.
+
+Current canonical JSON and workflow code govern present behavior. Dated reports,
+NOTES.md, older changelog entries and roadmap history preserve the observations
+and decisions of their own time; do not silently rewrite their historical totals
+or imply that every old source observation was freshly revalidated.

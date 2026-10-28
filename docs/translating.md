@@ -20,7 +20,7 @@ Use the language selector on the [catalogue](https://dlq.ca/parliament-streams/)
 [Legislatures page](https://dlq.ca/parliament-streams/institutions.html),
 [map](https://dlq.ca/parliament-streams/map.html),
 [schedule](https://dlq.ca/parliament-streams/schedule.html) or
-[Data and method page](https://dlq.ca/parliament-streams/data.html).
+[Data and methods page](https://dlq.ca/parliament-streams/data.html).
 A shared URL can also set the language, for example `?lang=fr`.
 Screenshots are useful when text wraps badly or a control is unclear.
 
@@ -30,7 +30,7 @@ Screenshots are useful when text wraps badly or a control is unclear.
 - Names for legislatures, jurisdictions, committees and parliamentary business.
 - Search/filter labels, source details and accessibility instructions.
 - Legislature inventory statuses, scope explanations and contribution prompts.
-- The Data and method explanation, public-file labels and shared utility links.
+- The Data and methods explanation, public-file labels and shared utility links.
 - Schedule coverage, collection-error and retained-listing explanations.
 - The distinction between viewing checks, reuse permissions and a populated guide.
 - IPTV setup, copy-button feedback and the VLC desktop instructions.
@@ -67,7 +67,7 @@ programme guide; none of those labels grants reuse permission.
 The translation tables are in `site/i18n.js`, `site/institutions-i18n.js`,
 `site/map-i18n.js`, `site/schedule-i18n.js`, `site/iptv.js` and
 `site/project-i18n.js`. The project table supplies all 23 locales for the
-Data and method page and shared Data/Contribute/Code links; it is rendered by
+Data and methods page and its shared navigation tab; it is rendered by
 `site/data-page.js` and `site/project-info.js`. The Czech, Finnish,
 Swedish and Traditional Chinese packs live in `site/extra-locales.js`. Some jurisdiction
 names are localized through the browser's `Intl.DisplayNames` data. See
@@ -75,7 +75,7 @@ names are localized through the browser's `Intl.DisplayNames` data. See
 
 Preserve message keys, placeholder names such as `{count}` and `{date}`, and
 locale-specific plural forms. Translate the interface consistently across
-catalogue, Legislatures, map, schedule, Data and method, and IPTV/VLC surfaces. The working
+catalogue, Legislatures, map, schedule, Data and methods, and IPTV/VLC surfaces. The working
 legislature inventory has interface messages in all 23 locales, while its
 English research notes and recorded institution names retain their language.
 Official programme titles, source names and rights notes retain their recorded

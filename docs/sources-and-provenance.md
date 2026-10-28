@@ -8,8 +8,8 @@ legislature, broadcaster, streaming vendor, or video platform.
 
 The repository licence covers the project code and documentation written for
 this repository. Local third-party visual assets have their own recorded terms:
-see the attribution files under `site/assets/flags/`, `site/assets/hero/`, and
-`site/assets/maps/`. Browser-library notices are generated under
+see the attribution files under `site/assets/flags/`, `site/assets/hero/`,
+`site/assets/maps/`, and the GitHub mark licence under `site/assets/brand/`. Browser-library notices are generated under
 `site/assets/vendor/`; its README documents their separate licences.
 
 It does not grant rights to:
@@ -25,8 +25,10 @@ It does not grant rights to:
 ## Catalogue Entries
 
 The current catalogue is `data/channels.json`. It contains a curated set of
-public official pages, official-vendor HLS candidates, direct HLS/DASH research
-entries, schedule/EPG scrape surfaces, and official YouTube/link-out sources.
+usable official viewing pages, archives, documented direct HLS and official
+provider embeds. Unready HLS/DASH research records remain in `candidates/`, outside
+the viewing catalogue. Schedule references include active structured collectors
+and planned official calendar links; neither automatically supplies XMLTV.
 
 Each source should be treated as provisional unless its own official page and terms clearly support the intended use. Some direct URLs are discovered through official pages, official APIs, or official player infrastructure, but that does not automatically mean they are appropriate for all redistribution or embedding contexts.
 

@@ -58,12 +58,7 @@
     document.documentElement.lang = state.locale;
     const texts = {
       "institutions-title": "title", "institutions-lede": "lede", "institutions-skip": "skip",
-      "contribute-title": "contribute", "contribute-copy": "contributeCopy",
-      "contribute-institution": "suggestInstitution", "contribute-source": "suggestSource",
-      "contribute-translation": "translate", "contribute-other": "otherContributions",
-      "scope-title": "scope", "scope-copy": "scopeCopy", "scope-names": "nameNote",
-      "scope-service": "noServiceNote", "scope-notes": "sourceNotes", "scope-data": "dataLink",
-      "contribution-guide": "contributionGuide", "institution-search-label": "search",
+      "institution-search-label": "search",
       "institution-country-label": "country", "institution-status-label": "status",
       "institution-search-hint": "searchHint", "institution-clear": "clear",
       "institutions-nav-current": "title",
@@ -75,10 +70,6 @@
     byId("institutions-nav-map").textContent = window.ParliamentStreamsMapI18n.message(state.locale, "title");
     byId("institutions-nav-schedule").textContent = window.ParliamentStreamsScheduleI18n.message(state.locale, "title");
     for (const [id, path] of [["institutions-brand", "./"], ["institutions-nav-catalogue", "./"], ["institutions-nav-current", "institutions.html"], ["institutions-nav-map", "map.html"], ["institutions-nav-schedule", "schedule.html"]]) byId(id).href = localeHref(path);
-    byId("contribute-institution").href = issueUrl("contribution.yml", { title: "[Institution]: ", page: pageUrl() });
-    byId("contribute-source").href = issueUrl("source_correction.yml", {});
-    byId("contribute-translation").href = issueUrl("translation_review.yml", { language: state.locale, location: pageUrl() });
-    byId("contribute-other").href = issueUrl("contribution.yml", { page: pageUrl() });
     byId("institution-search").placeholder = message("search");
     byId("locale-select").value = state.locale;
     if (data) byId("institutions-reviewed").textContent = message("reviewed", { date: localizedDate(data.reviewed_on) });

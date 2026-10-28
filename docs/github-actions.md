@@ -12,7 +12,7 @@ The automation maintains two different lists:
 | Legislature inventory | `data/discovery/institutions.json` | A legislative identity, authority decision or retained research entry; eligibility does not certify a viewing service. |
 | Stream catalogue | `data/channels.json` | A reviewed viewing source with its identity, access, schedule, accessibility and rights evidence. One source is not necessarily one legislature. |
 
-On 25 October 2026 these contain **940 eligible identities** and **269 catalogue
+As of 28 October 2026 these contain **940 eligible identities** and **261 catalogue
 sources**, respectively. Scheduled jobs produce observations, review issues and
 artifacts. They do not add or remove institutions, publish a new source, promote
 a candidate or rewrite these lists automatically.

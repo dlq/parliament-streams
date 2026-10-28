@@ -8,8 +8,21 @@
 
   function localize() {
     document.documentElement.lang = locale;
+    document.querySelector(".data-contents").setAttribute("aria-label", project.message(locale, "contentsLabel"));
     for (const node of document.querySelectorAll("[data-project-text]")) {
       node.textContent = project.message(locale, node.dataset.projectText);
+    }
+    for (const node of document.querySelectorAll("[data-inventory-text]")) {
+      node.textContent = window.ParliamentStreamsInstitutionsI18n.message(locale, node.dataset.inventoryText);
+    }
+    for (const node of document.querySelectorAll("[data-schedule-text]")) {
+      node.textContent = window.ParliamentStreamsScheduleI18n.message(locale, node.dataset.scheduleText);
+    }
+    for (const link of document.querySelectorAll("[data-contribution-template]")) {
+      const url = new URL(link.href);
+      url.searchParams.set("page", window.location.href);
+      if (link.dataset.contributionTemplate === "translation") url.searchParams.set("language", locale);
+      link.href = url.href;
     }
     document.querySelector("#data-language-label").textContent = shared.message(locale, "language");
     document.querySelector("#data-footer-copy").textContent = shared.message(locale, "footer");

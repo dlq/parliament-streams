@@ -10,31 +10,42 @@ ones. The coverage map includes all published subnational jurisdictions, with
 location dots for tiny outlines. Shared search associations preserve territorial
 relationships without presenting Crown Dependencies as UK subdivisions.
 
-The [Data and method page](https://dlq.ca/parliament-streams/data.html) explains
+The [Data and methods page](https://dlq.ca/parliament-streams/data.html) explains
 four separate stages: the legislature research inventory, viewing-source
-catalogue, checks and review, and generated products. It groups nine stable
-download links into seven products: catalogue JSON, inventory JSON, schedules,
-guide quality and coverage, the two HLS playlists (each in M3U and M3U8 form),
-and XMLTV. Inventory inclusion, technical access, feed mapping and reuse rights
+catalogue, checks and review, and generated products. Its public directory links catalogue and inventory JSON, schedules, guide quality,
+the two HLS playlists (each in M3U and M3U8 form), XMLTV, fallback sources and
+supranational map context. Supporting sections link the country baseline, map
+geometry, review ledgers and research registers. Methods link to detailed Markdown
+guides; the colophon covers the build, privacy, code licence and asset credits. Inventory inclusion, technical access, feed mapping and reuse rights
 remain separate findings. Automation proposes changes for human review; it
 does not automatically approve or promote a source.
 
-All five pages share localized **Data and method**, **Contribute** and **Code**
-utility links. At widths up to 420px, the five primary page links use a balanced
-two-row layout so long translations can wrap at word boundaries. The shared
-project explanation stays on the Data page on mobile, keeping the catalogue
-and other lists compact.
+Native in-page section links and their Back/Forward history keep the page
+controllers and viewer mounted.
+
+Its Scope and method section explains the legislature inventory, viewing catalogue
+and schedule inclusion rules in that order, including authority evidence, usable
+official viewing routes, structured programme data and the separate XMLTV gate.
+The inventory scope and contribution disclosures now live there; per-entry
+correction links remain available in Legislatures.
+
+All five pages share a localized **Data and methods** navigation tab. Project
+explanations, contribution paths and the code repository link live on that page,
+without repeating a project card above the lists or a utility-link row below them.
+Every footer has the same repository badge at the right: the GitHub mark and
+`dlq/parliament-streams`. Map attribution and direct schedule-data links remain.
+At widths up to 420px, the five primary page links use a balanced two-row layout
+so long translations can wrap at word boundaries.
 
 The four secondary pages share responsive title sizes, introductory spacing and
 top padding. The catalogue retains its image hero and compact section heading.
-A pale green wash identifies the shared Data and method strip and contribution
-areas; lists retain white backgrounds and their existing row spacing. These
-shared rules and colour/spacing tokens live in `site/styles.css`.
+A pale green wash identifies the Data page contribution area; lists retain white
+backgrounds and their existing row spacing. These shared rules and colour/spacing tokens live in `site/styles.css`.
 
 ## Shared viewer and navigation
 
 Source details use one shared viewer across Catalogue, Coverage map, Schedule,
-Legislatures and Data and method. Desktop opens it at the bottom right without
+Legislatures and Data and methods. Desktop opens it at the bottom right without
 changing list width. Drag its title bar to move it and its upper-left corner to
 resize it. The same controls support arrow keys, with Shift for larger steps;
 Home resets position and size. Minimise keeps the media attached; Close stops
@@ -248,8 +259,8 @@ Legislatures and IPTV/VLC messages are checked for complete key coverage. Czech
 source counts use the locale's plural categories. Dates, numbers, and sorting
 use `Intl`.
 
-The Data page and shared utility links have a separate 23-locale message table
-in `site/project-i18n.js`; `site/project-info.js` renders the shared links and
+The Data page and shared navigation have a separate 23-locale message table
+in `site/project-i18n.js`; `site/project-info.js` localizes the navigation and
 `site/data-page.js` translates the Data page. New scope, schedule-coverage,
 permission and playlist explanations follow the same locale selection.
 

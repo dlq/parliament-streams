@@ -157,9 +157,26 @@
       window.ParliamentStreamsViewer.open(link.dataset.viewerSource, { play: link.dataset.viewerPlay === "true", trigger: link });
       return;
     }
-    if (!isPage(url) || (url.pathname === location.pathname && url.search === location.search && url.hash)) return;
+    if (!isPage(url)) return;
+    if (url.pathname === location.pathname && url.search === location.search && url.hash) {
+      event.preventDefault();
+      positions.set(location.href, [scrollX, scrollY]);
+      history.pushState({}, "", url);
+      currentUrl = url.href;
+      scrollToTarget(url, false);
+      return;
+    }
     event.preventDefault();
     navigate(url.href);
   });
-  window.addEventListener("popstate", () => navigate(location.href, { back: true }));
+  window.addEventListener("popstate", () => {
+    const next = new URL(location.href);
+    const current = new URL(currentUrl);
+    if (next.pathname === current.pathname && next.search === current.search) {
+      currentUrl = next.href;
+      scrollToTarget(next, true);
+      return;
+    }
+    navigate(next.href, { back: true });
+  });
 })();

@@ -38,6 +38,12 @@ npm ci
 npx playwright install chromium
 ```
 
+On Linux, `npx playwright install --with-deps chromium` also installs missing
+browser system packages. Run `make site` from the repository root and open
+[localhost:8000/site/](http://localhost:8000/site/) for a static preview.
+The checked-in catalogue and inventory work without a collected schedule;
+`make schedules` creates that ignored local snapshot through live source requests.
+
 The Makefile uses `uv run --locked --extra dev`, so contributors get a Python
 3.11+ environment and pinned development tools from `uv.lock` instead of
 relying on a system Python.

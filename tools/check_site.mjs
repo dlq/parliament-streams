@@ -194,6 +194,11 @@ async function assertPageMetadata(page, path = '') {
   assert.equal(await dataLink.getAttribute('target'), null);
   assert.equal(await dataLink.getAttribute('aria-current'), path === 'data.html' ? 'page' : null);
   assert.equal(await navigation.locator('a[href*="github.com"]').count(), 0);
+  assert.equal(await page.locator('[data-project-links], .project-links').count(), 0, 'Project explanation and utility links are not duplicated around each page');
+  const repository = page.locator('.site-footer .repository-link');
+  assert.equal(await repository.innerText(), 'dlq/parliament-streams');
+  assert.equal(await repository.getAttribute('href'), 'https://github.com/dlq/parliament-streams');
+  assert.equal(await repository.locator('img').getAttribute('alt'), '');
 }
 
 async function assertIptvDisclosure(page) {
@@ -1483,10 +1488,28 @@ try {
   await dataPage.locator("#data-title").waitFor();
   await assertPageMetadata(dataPage, "data.html");
   assert.equal(await dataPage.locator(".data-stage").count(), 4);
-  assert.equal(await dataPage.locator(".data-assets > div").count(), 7);
-  assert.equal(await dataPage.locator(".data-asset-links a").count(), 9);
+  assert.equal(await dataPage.locator(".data-inclusion-rules > div").count(), 3);
+  assert.match(await dataPage.locator(".data-inclusion").innerText(), /legislative authority|Legislative authority/);
+  assert.equal(await dataPage.locator("[data-contribution-template]").count(), 4);
+  assert.equal(await dataPage.locator(".data-files .data-assets > div").count(), 9);
+  assert.equal(await dataPage.locator(".data-files .data-asset-links a").count(), 11);
   assert.match(await dataPage.locator(".data-limits").innerText(), /parser.*not populated guides/i);
   assert.match(await dataPage.locator(".data-limits").innerText(), /rights.*separate|licensing is separate/i);
+  assert.equal(await dataPage.locator('.data-supporting .data-assets > div').count(), 4);
+  assert.equal(await dataPage.locator('.data-methods a[href$=".md"]').count(), 7);
+  assert.equal(await dataPage.locator('.data-colophon a[href$="PRIVACY.md"]').count(), 1);
+  const dataMain = await dataPage.locator('main').elementHandle();
+  const fragmentRequests = [];
+  const recordFragmentRequest = (request) => { if (request.resourceType() === 'fetch') fragmentRequests.push(request.url()); };
+  dataPage.on('request', recordFragmentRequest);
+  await dataPage.locator('.data-contents a[href="#data-colophon-title"]').click();
+  assert.equal(new URL(dataPage.url()).hash, '#data-colophon-title');
+  await dataPage.locator('#data-colophon-title').waitFor({ state: 'visible' });
+  await dataPage.goBack();
+  assert.equal(new URL(dataPage.url()).hash, '');
+  assert.equal(await dataMain.evaluate((node) => node.isConnected), true, 'In-page history preserves the page controllers');
+  assert.deepEqual(fragmentRequests, [], 'In-page jumps do not fetch or remount the document');
+  dataPage.off('request', recordFragmentRequest);
   const dataLocales = await dataPage.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
   for (const code of dataLocales) {
     await dataPage.locator("#locale-select").selectOption(code);
@@ -1494,8 +1517,8 @@ try {
     assert.equal(await dataPage.locator("html").getAttribute("lang"), code);
     assert.equal(new URL(dataPage.url()).searchParams.get("lang"), code);
     assert.equal(new URL(await dataPage.locator("#data-nav-catalogue").getAttribute("href")).searchParams.get("lang"), code);
-    assert.equal(new URL(await dataPage.locator('[data-project-links="intro"] a').first().getAttribute("href")).searchParams.get("lang"), code);
-    if (code !== "en") assert.notEqual(await dataPage.locator("#data-title").innerText(), "Data and method");
+    assert.equal(new URL(await dataPage.locator('[data-project-navigation]').getAttribute("href")).searchParams.get("lang"), code);
+    if (code !== "en") assert.notEqual(await dataPage.locator("#data-title").innerText(), "Data and methods");
     await assertPageMetadata(dataPage, "data.html");
     await dataPage.setViewportSize({ width: 320, height: 800 });
     assert.equal(await dataPage.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${code}: translated data page fits a narrow screen`);
@@ -1511,7 +1534,7 @@ try {
       }));
       assert(navigation.every((link) => width <= 420 ? link.height >= 40 && link.width >= 60 : link.width > 0 && link.height > 0), `${code}: navigation remains usable at ${width}px`);
     }
-    await assertNoAxeViolations(dataPage, `${code}: Data and method`);
+    await assertNoAxeViolations(dataPage, `${code}: Data and methods`);
   }
   assert.deepEqual(dataErrors, []);
   const dataFileUrl = new URL("../site/data.html", import.meta.url);

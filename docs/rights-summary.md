@@ -12,7 +12,7 @@ The detailed evidence lives in
 
 ## Current Policy
 
-The proof-of-concept catalogue uses an opt-out playback posture:
+The catalogue uses an opt-out playback posture:
 
 - Direct, technically validated public HLS may remain playable when no recorded
   source terms prohibit it.
@@ -54,7 +54,7 @@ These entries need either written clarification or a future dated terms review.
 
 ## Current Open Queue
 
-As of 2026-10-25 (local working tree):
+As of 2026-10-28 (canonical viewing catalogue):
 
 - France's National Assembly now has `no_third_party_reuse`: its current notice
   distinguishes conditionally reusable official documents from multimedia that
@@ -79,8 +79,9 @@ As of 2026-10-25 (local working tree):
   `no_third_party_reuse`, while retaining its official viewing link. A legislature's
   provider designation is separate from the provider's audiovisual rights.
   [Current provider conditions](../reports/discovery/2026-10-24-service-review-us-chambers-c.json).
-- 194 of 269 catalogue entries remain permission-pending: 16 official-vendor
-  HLS, three first-party HLS, 174 official pages and one DASH research record.
+- 190 of 261 catalogue entries remain permission-pending: 14 official-vendor
+  HLS, two first-party HLS and 174 official pages. Unpublished research candidates
+  are counted separately; no DASH record is in the viewing catalogue.
 - The previous 28-entry review queue remains classified in the dated report;
   it is a historical subset, not the current total.
 - Later official-page additions retain source-specific terms notes in the

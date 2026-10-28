@@ -2,6 +2,16 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Hosted Collector Release — 28 October 2026
+
+The [first published structured-collector run](https://github.com/dlq/parliament-streams/actions/runs/40747783733)
+passed CI, CodeQL, data-product validation and Pages publication. The deployed
+catalogue matched commit `26b6618`; all 26 collectors appeared in the schedule
+snapshot. Câmara collected 17 events, California three and Harmony 57, with
+Bermuda empty. Four HTTP 403 holds remained: Taiwan, Knesset, US Senate XML and
+New York ICS. The exported guide had 241 programmes. These are dated hosted
+observations, separate from the earlier local counts below.
+
 ## Five Structured Collector Implementations — 28 October 2026
 
 There are now **26 collectors / 42 parser-connected viewing records**, across

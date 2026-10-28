@@ -388,7 +388,6 @@ function applyStaticTranslations() {
   document.querySelector("#open-streams-link").firstChild.textContent = `${t("openStreams")} `;
   document.querySelector("#open-streams-link").setAttribute("lang", state.locale);
   setText("footer-copy", t("footer"));
-  setText("about-link", t("about"));
 }
 function setLocale(locale) {
   state.locale = supportedLocale(locale);

@@ -72,8 +72,8 @@ not establish broadcast programmes. See [source selection](docs/schedules-and-ip
 The [retention decision](reports/epg/2026-10-28-structured-collector-retirement.md)
 retires nine presentation-based collectors and their tests. After five structured
 additions, **26 collectors** cover **42 of 261 catalogue records** through 31
-metadata URLs. The 219 other records retain official schedule links. Bundestag is the sole documented hybrid
-exception, with source channel identity and explicit end timestamps cross-checking
+metadata URLs. The 219 other records retain official schedule links. Bundestag is
+the sole documented hybrid exception, with source channel identity and explicit end timestamps cross-checking
 its printed start/range. Other retained HTML sources expose machine-readable event
 fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
 
@@ -102,9 +102,10 @@ fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
 - [ ] Keep France's large agenda ZIP and PDF recurrence grids behind their specific
   cost/mapping holds.
   A future plain-HTML exception requires a concrete source-specific decision.
-- [ ] Check the retained/new collector code and regenerated data in its first
-  hosted release run after publication. Local verification does not establish a
-  completed deployment.
+- [x] Check the first hosted collector release: CI, CodeQL and
+  [Pages publication](https://github.com/dlq/parliament-streams/actions/runs/40747783733)
+  passed. Câmara, California and Harmony succeeded; the documented Taiwan,
+  Knesset, US Senate and New York access holds remain.
 
 Historical checkpoints: [stabilization](reports/epg/2026-10-28-collector-stabilization.md),
 [three additions](reports/epg/2026-10-28-priority-collectors.md),
@@ -115,7 +116,7 @@ French and Luxembourg collectors added earlier the same day.
 
 ## Rights And Permission Work
 
-As of this review, **194 of 270 sources** retain a permission status ending in
+As of this review, **190 of 261 sources** retain a permission status ending in
 `pending_review`. This is an evidence queue, not a statement that all uses are
 prohibited or permitted. Catalogue fields and dated source findings govern each
 source's presentation.
@@ -143,7 +144,7 @@ was published in release `ae5337e`:
 - [x] Repair map search feedback, keyboard tab order, selection/focus state and
   the mobile route to selected details and the textual jurisdiction index.
 - [x] Explain the inventory → catalogue → reviewed checks → generated products
-  relationship through a shared Data and method route, consistent code/data/
+  relationship through a shared Data and methods route, consistent code/data/
   contribution utilities and clearly defined coverage counts.
 - [x] Connect schedule empty/error/stale/mapping states to specific explanations
   and official-source actions; simplify detail and reuse-permission wording.

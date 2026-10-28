@@ -3,50 +3,12 @@
   const shared = window.ParliamentStreamsI18n;
   const project = window.ParliamentStreamsProjectI18n;
   const selector = document.querySelector("#locale-select");
-  const repository = "https://github.com/dlq/parliament-streams";
-  const contributionGuide = `${repository}/blob/main/CONTRIBUTING.md`;
 
-  function updateProjectLinks() {
+  function updateProjectNavigation() {
     const locale = shared.supportedLocale(selector?.value
       || new URLSearchParams(window.location.search).get("lang")
       || shared.readLocalePreference() || navigator.language);
     const text = (key) => project.message(locale, key);
-    for (const host of document.querySelectorAll("[data-project-links]")) {
-      if (host.dataset.projectLocale === locale) continue;
-      const links = document.createElement("div");
-      links.className = "project-links";
-      const dataUrl = new URL("data.html", window.location.href);
-      dataUrl.searchParams.set("lang", locale);
-      for (const [key, href, external] of [
-        ["title", dataUrl.href, false],
-        ["contribute", contributionGuide, true],
-        ["code", repository, true],
-      ]) {
-        const link = document.createElement("a");
-        link.textContent = text(key);
-        link.href = href;
-        link.lang = locale;
-        if (external) {
-          link.hreflang = "en";
-          const icon = document.createElement("span");
-          icon.textContent = " ↗";
-          icon.setAttribute("aria-hidden", "true");
-          link.append(icon);
-        } else if (window.location.pathname.endsWith("/data.html")) {
-          link.setAttribute("aria-current", "page");
-        }
-        links.append(link);
-      }
-      const children = [];
-      if (host.dataset.projectLinks === "intro") {
-        const summary = document.createElement("p");
-        summary.className = "project-summary";
-        summary.textContent = text("intro");
-        children.push(summary);
-      }
-      host.replaceChildren(...children, links);
-      host.dataset.projectLocale = locale;
-    }
     // Page controllers run first. Correct these names independently of older
     // translations that accidentally reused a page title or an About label.
     for (const navigation of document.querySelectorAll(".header-inner > nav")) {
@@ -65,7 +27,7 @@
     }
   }
 
-  const scheduleUpdate = () => queueMicrotask(updateProjectLinks);
+  const scheduleUpdate = () => queueMicrotask(updateProjectNavigation);
   scheduleUpdate();
   selector?.addEventListener("change", scheduleUpdate);
   window.addEventListener("pageshow", scheduleUpdate, { signal: pageSignal });

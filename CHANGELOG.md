@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-10-28 — Expand the Data Guide and Refresh Documentation
+
+- Expand Data and methods with published and supporting data, linked methods,
+  native section navigation and a build/privacy/licensing colophon in all 23 locales.
+- Improve README setup, direct contribution paths, data entry points and licensing.
+- Audit 97 local Markdown files and 937 local/repository link targets; refresh
+  current counts, publication scope and sitemap documentation while preserving
+  dated research evidence. Check setup commands and distinguish generated files
+  from missing maintained inputs.
+
+## 2026-10-28 — Simplify Shared Project Information
+
+- Remove repeated project cards and footer utility rows from all five pages.
+- Rename the tab Data and methods, explain the three lists’ inclusion rules,
+  and move inventory scope and contribution explanations there in all 23 locales.
+- Keep entry-specific correction links in Legislatures and add a consistent
+  GitHub repository badge to every footer.
+
 ## 2026-10-28 — Five Structured Schedule Collectors
 
 - Add Câmara event JSON, California calendar-export parameters, Harmony event
