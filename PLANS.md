@@ -44,6 +44,28 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
 
 ## Catalogue Work
 
+- [ ] Continue boundary identity/currentness checks beyond the 29 October map
+  corrections. Resolve the mixed-source Korean overlaps around Gyeongsangbuk-do
+  using consistent geometry; do not trim one region against another by guesswork.
+  Require country/region identifiers, complete component membership and source
+  vintage before adding outlines. Run `uv run tools/check_map_geometry.py` and
+  the geographic regression tests; valid topology alone does not prove the right
+  territory. See [map source corrections](site/assets/maps/ATTRIBUTION.md#29-october-2026-correctness-corrections).
+- [x] Apply shared-edge display simplification to valid country coverages. The
+  29 October result is 3.21 MB (1.13 MB gzip), down from 4.51 MB (1.57 MB gzip).
+  Preserve component/hole counts and original component interior points; reduce
+  tolerance for Åland/French territorial outlines where needed. Reconcile the
+  Córdoba and Santa Catarina precision mismatch before simplifying Argentina
+  and Brazil. Korea remains unchanged. The optional pinned transformation is
+  `uv run tools/simplify_map_geometry.py INPUT.geojson OUTPUT.geojson`; source
+  references and feature-level provenance remain in the map assets.
+- [ ] Continue the [subnational authority recheck](reports/discovery/2026-10-29-subnational-authority-recheck.md):
+  exact legislative organ, territorial tier, substantive enactment powers,
+  legal rank, budget/scrutiny and operative grant dates. Evidence-presence checks
+  cover all 835 eligible subnational records; fresh framework readings are a
+  narrower check. Prioritize Colombian text retrieval, special-status grants
+  and older consolidations. Retain the three accepted Basque foral exceptions;
+  do not admit ordinary provincial or municipal councils by analogy.
 - [ ] Resolve the nine unready feed variants retained in candidates after the
   [catalogue separation](reports/discovery/2026-10-26-catalogue-research-separation.md);
   keep publication gated on a supported viewing route.

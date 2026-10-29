@@ -2,6 +2,46 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Map Geometry Corrections — 29 October 2026
+
+The geometry audit found an unrelated Maltese Victoria component in Australia's
+Victoria outline, an incomplete Åland aggregate, mixed-vintage Swiss boundaries
+and eight invalid regional MultiPolygons. The corrections remove the wrong
+Victoria component, use Statistics Finland's 2026 Åland region, align all ten
+mapped Swiss cantons to the same official 2026 source and dissolve/repair invalid
+components. Sicily retains all nine provincial components with their shared
+internal borders dissolved. Moutier is now inside Jura and outside Bern.
+
+Follow-up coverage checks identified thin rounding overlaps between Córdoba
+and its neighbors, and between Santa Catarina and Paraná. Restoring six-decimal
+Natural Earth source coordinates resolves both country coverages. Shared-edge
+display simplification now reduces the regional file from 4.51 MB to 3.21 MB
+(1.57 MB to 1.13 MB gzip). All polygon components, holes and original component
+interior points are retained; Åland and French territorial geometry use smaller
+tolerances. Korean geometry and the three institution-location Points are unchanged.
+
+All 160 area features pass the offline topology check. Geographic regression
+tests cover the discovered wrong-place and missing-land cases. This does not
+certify every outline against current official geography: the Korean mixed-source
+overlaps remain explicit follow-up. [Sources, modifications and limits](../site/assets/maps/ATTRIBUTION.md#29-october-2026-correctness-corrections).
+
+## Subnational Authority Recheck — 29 October 2026
+
+The project owner retained the three Basque foral inclusions pending a substantive
+challenge. Ordinary Spanish provincial diputaciones remain outside that exception.
+All **835 eligible subnational identity records** have authority explanations,
+primary references and provenance; their public-inventory statuses agree and the
+142 added chamber/organ records resolve to eligible anchors, preserving parent,
+sibling-chamber and distinct same-canton direct-democracy relationships.
+These are record-consistency checks, not 835 fresh legal confirmations.
+
+Fourteen renewed framework readings concern 307 records, with explicit limits
+for ordinance rank, special grants and older consolidations. The remaining
+individual legal refresh is still open, including Colombian retrieval and named
+special-status cases. No inventory membership or viewing sources changed.
+[Evidence, primary sources and follow-up](../reports/discovery/2026-10-29-subnational-authority-recheck.md) ·
+[Required authority evidence](catalogue-scope.md#evidence-required-for-a-subnational-decision).
+
 ## Hosted Collector Release — 28 October 2026
 
 The [first published structured-collector run](https://github.com/dlq/parliament-streams/actions/runs/40747783733)

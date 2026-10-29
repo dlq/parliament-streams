@@ -101,6 +101,44 @@ executive-scrutiny powers, can satisfy this rule. Check the extent and legal bas
 a narrow delegated service regulation alone remains insufficient. The ordinary
 municipal exclusion still applies where municipalities have similar powers.
 
+### Evidence required for a subnational decision
+
+Record the exact body, territorial tier and operative legal provision before
+clearing its authority gate. The review must distinguish:
+
+- **Legislation:** Acts, statutes or other instruments with the force of law in
+  allocated territorial fields.
+- **Substantive autonomous regional ordinances:** generally binding rules in
+  the assembly's own regional remit. Record their subordinate legal rank,
+  subject limits and any approval or assent requirements explicitly.
+- **Administration or consultation:** budgets, service plans, individual
+  decisions, executive implementation rules and advisory recommendations do
+  not establish legislative authority by themselves.
+
+For an ordinance-based inclusion, identify both the provision empowering the
+assembly to enact the norms and the substantive regional subjects it can
+regulate. Establish budget and executive scrutiny separately. Being elected,
+first-level, called a parliament, or having a webcast is insufficient. A broad
+enabling clause must not silently stand in for a required operative grant.
+Check commencement, expiry, repeal and successor institutions where relevant.
+
+A shared national framework may support several regional assemblies, but each
+record still needs the correct institutional identity and tier. A constituent
+chamber must be linked to its actual legislature; it does not create another
+territory. Keep substantive eligibility, evidence freshness and current
+institutional activity as separate findings. A failed source request neither
+revokes powers nor refreshes the legal evidence.
+
+On 29 October 2026 the project retained the existing **Álava/Araba, Bizkaia and
+Gipuzkoa Juntas Generales** inclusions pending a substantive challenge. These
+are documented Basque foral exceptions, not ordinary Spanish diputaciones or
+additional autonomous communities. Law 27/1983 Article 6(2) reserves formal
+law-rank norms to the Basque Parliament; Articles 7–8 establish the distinct
+foral powers. This scope acceptance does not erase that distinction or approve
+other provincial councils by analogy.
+[Legal text](https://boe.es/buscar/act.php?id=BOE-A-2012-5193) ·
+[29 October evidence recheck and its limits](../reports/discovery/2026-10-29-subnational-authority-recheck.md).
+
 ## Borderline and special cases
 
 Keep a documented authority review before promoting regional assemblies whose

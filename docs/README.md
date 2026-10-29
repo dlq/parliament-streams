@@ -39,6 +39,7 @@ Canonical records and later reviewed evidence take precedence when a report ages
 
 | Report | Scope |
 | --- | --- |
+| [29 October subnational authority recheck](../reports/discovery/2026-10-29-subnational-authority-recheck.md) | Accepted Basque exceptions, all-record evidence checks, renewed borderline frameworks and remaining legal-refresh limits |
 | [28 October collector retention](../reports/epg/2026-10-28-structured-collector-retirement.md) | 21 retained collectors, nine retirements, cache/export boundaries and structured replacement discovery |
 | [25 October service baseline](../reports/discovery/2026-10-25-institution-service-baseline.md) | 940 eligible identities, 222 exact matches and separate per-use metadata/media/EPG/rights questions |
 | [25 October publication decisions](../reports/discovery/2026-10-25-held-source-publication-decisions.json) | 13 further official links, six chamber crosswalks and Finland evidence without duplication |

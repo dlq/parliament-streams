@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-10-29 — Correct Regional Map Geometry
+
+- Remove the unrelated Maltese Victoria polygon from Australia's Victoria;
+  replace incomplete Åland geometry with Statistics Finland's 2026 region.
+- Align all ten mapped Swiss cantons to the official 2026 source and simplify
+  their shared edges together; restore Moutier to Jura without a Bern/Jura gap.
+- Repair eight invalid regional geometries, dissolving component borders while
+  retaining all nine Sicily provinces. Preserve source attribution and legal
+  limits; track remaining Korean mixed-source overlaps separately.
+- Add geographic regression checks and a pinned, optional offline topology audit.
+- Reconcile Córdoba and Santa Catarina's five-decimal coordinates with their
+  six-decimal source neighbors. Apply coverage-preserving display simplification
+  to the valid country groups, with lower island-safe tolerances where needed;
+  reduce regional GeoJSON from 4.51 MB to 3.21 MB (about 28% smaller gzip).
+  Retain all polygon components, holes and original component interior points.
+  Korean outlines remain unchanged pending source reconciliation.
+
 ## 2026-10-29 — Korean, Japanese and Indonesian Interfaces
 
 - Add complete Korean, Japanese and Indonesian JSON packs across the five pages,

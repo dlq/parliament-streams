@@ -4,7 +4,7 @@ Country boundaries in `countries-110m.geojson` are derived from Natural Earth's
 1:110m Admin 0 Countries dataset. The documented subdivision boundaries in
 `documented-admin1.geojson` are extracted from Natural Earth's 1:10m Admin 1
 States and Provinces dataset. Natural Earth data is in the public domain.
-Exceptions below include current official Swiss geometry for Bern and attributed county aggregation for Daegu and Gyeongsangbuk.
+Current exceptions include official Swiss cantonal geometry, official Finnish geometry for Åland, and attributed county aggregation for Daegu and Gyeongsangbuk. The dated notes below retain earlier provenance; the 29 October correction section supersedes their geometry choices where named.
 
 - Source: https://www.naturalearthdata.com/downloads/110m-cultural-vectors/
 - Admin 1 source: https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
@@ -180,3 +180,108 @@ and explicit English research scope note. The Indian council locations do not
 shade all Mizoram or all Lawngtlai as their jurisdiction. PFWB's official Brussels
 Lambert 72 building-group coordinate is transformed to WGS84; the conflicting
 Commons coordinate is not used. See the dated publication and individual reports.
+
+
+## 29 October 2026 correctness corrections
+
+The bundled map previously contained substantive selection errors as well as
+invalid polygon collections. The following corrections supersede the earlier
+source choices for the named features:
+
+- **Victoria:** extract Natural Earth Admin 1 v5.1.1 by both `iso_3166_2=AU-VIC`
+  and `adm0_a3=AUS`. The previous name-based collection also included the small
+  Maltese municipality of Victoria (`MT-45`); that unrelated polygon is removed.
+- **Åland:** replace the incomplete eleven-feature Natural Earth aggregate with
+  [Statistics Finland's 2026 municipality-based regional geometry](https://stat.fi/fi/palvelut/tilastodatapalvelut/paikkatietoaineistot/tilastointialueet/kuntapohjaiset-tilastointialueet),
+  layer `tilastointialueet:maakunta1000k_2026`, region `maakunta=21`, requested
+  through its [WFS interface](https://geo.stat.fi/geoserver/tilastointialueet/wfs)
+  as GeoJSON in EPSG:4326. This restores the missing northern main-island land
+  around Finström, Geta, Hammarland, Saltvik and Sund, and retains 685 generalized
+  island components. Source: Statistics Finland, 2026, under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Source layer scale is
+  1:1,000,000; this is still a generalized navigation outline. The exact retrieval
+  URL, layer year and region code are retained on the feature.
+- **All ten mapped Swiss cantons:** Bern, Jura, Vaud, Zurich, Thurgau, Glarus,
+  Appenzell Ausserrhoden, Geneva, St Gallen and Zug now use the same official
+  swissBOUNDARIES3D cantonal layer and 1 January 2026 data status, **©swisstopo**,
+  under the OGD terms linked above. Retrieved 29 October 2026 via the Find API
+  in EPSG:4326; exact query URLs and canton feature IDs are retained on each
+  feature. This repairs the Moutier gap left by combining updated Bern with
+  old Jura, and the inconsistent shared edges with the other older outlines.
+  Shared canton edges were simplified **together** with Shapely 2.2.0
+  `coverage_simplify(tolerance=0.0005)` in longitude/latitude degrees, retaining
+  valid coverage. This angular tolerance is a cartographic choice, not a claim
+  of uniform metre accuracy. Coordinates are snapped to six decimal places.
+- **New Caledonia, Bermuda, Wallonia, Montserrat, Sicily, Goiás and Campania:**
+  repair invalid rings and dissolve touching polygon components into valid
+  territorial areas. Sicily retains all nine Natural Earth provincial components,
+  including Enna; their internal provincial boundaries are not regional borders.
+  Polygon repair is applied to components **before** union: applying a generic
+  validity repair to a whole invalid MultiPolygon can discard intended interiors.
+  Coordinate snapping uses a 0.000001-degree grid and winding is normalized for
+  D3's spherical polygons. These repairs retain the original source selection
+  and public-domain terms; they do not make that source newly surveyed.
+
+All 160 regional area features now pass a Shapely validity/emptiness check.
+That is a topology check, not certification of every real-world boundary. Compare
+against source identifiers, jurisdiction tier, source date and a current official
+reference before treating a new outline as ready. The three institution-location
+Points remain locators rather than territorial areas.
+
+Reproduce the offline topology audit with `uv run tools/check_map_geometry.py`;
+its pinned script dependency is separate from the application runtime. Overlap
+leads are reported, not automatically subtracted: mixed-source generalizations
+still create small overlaps between Gyeongsangbuk-do and the Natural Earth
+Jeonbuk/Gyeongsangnam outlines. Those Korean edges require a consistent-source
+follow-up; the 2020 county reconstruction is not certified by the topology pass.
+The pinned Natural Earth comparison checks fidelity to that source, not whether
+the upstream geography is itself complete/current, as the Åland example shows.
+
+## Display simplification — 29 October 2026
+
+The published regional file is now a generalized display derivative. The earlier
+0.0005-degree Swiss operation above describes source preparation; the final
+layer-level settings are in the GeoJSON `display_generalization` metadata.
+
+Before this transformation, Córdoba (AR-X) and Santa Catarina (BR-SC) were
+re-extracted from Natural Earth Admin 1 v5.1.1 using country and region codes,
+retaining its six-decimal coordinates. Their earlier five-decimal rounding had
+created thin overlaps with six-decimal neighbors. This resolves the Argentine
+and Brazilian coverage failures without choosing one jurisdiction over another.
+The greatest corresponding coordinate displacement was about 0.0000071 degrees;
+this is a precision correction, not evidence of a legal boundary change.
+
+Shapely 2.2.0 `coverage_simplify` processes each valid parent-country coverage as
+one group so shared edges remain matched. The requested tolerance is 0.005
+longitude/latitude degrees. It is reduced to 0.00125 for FI/Åland and 0.0025 for
+FR/French territories because the initial result did not retain every original
+component's interior representative point. These are angular cartographic
+parameters, not uniform metre tolerances or maximum-displacement guarantees.
+
+For every processed group, the transformation checks valid coverage before and
+after, individual validity, polygon-component count, interior-hole count and
+containment of an original interior representative point from every component.
+Coordinates are not rounded again after the shared-edge operation. Winding is
+normalized for D3. All original feature properties and institutional locator
+Points are preserved. The separate Lienchiang ODbL file is unchanged.
+
+The Korean group fails the initial coverage check and is copied unchanged for
+source reconciliation; topology-preserving simplification cannot establish
+which conflicting source edge is geographically correct. No attempt is made
+to subtract overlaps or assign disputed strips automatically.
+
+The file is reduced from 4,511,792 to 3,211,654 bytes; a reproducible gzip estimate
+is reduced from 1,566,449 to 1,131,859 bytes (about 28%). These gzip figures are
+local compression measurements, not a claim about the server's transfer encoding.
+
+The pinned, optional transform is:
+
+```sh
+uv run tools/simplify_map_geometry.py INPUT.geojson OUTPUT.geojson
+```
+
+Use a separate unsimplified source input. The command refuses an already marked
+display derivative and records the input SHA-256, per-country applied tolerances
+and unchanged groups in the output. This makes the file-to-file transformation
+repeatable; it does not provide an automatic upstream boundary refresh pipeline.
+No new browser dependency or runtime API is introduced.

@@ -6,7 +6,7 @@ const { jurisdictionName: localizedJurisdictionName, message: mapMessage, source
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261025-holds", appScriptUrl);
-const subnationalGeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261025-holds", appScriptUrl);
+const subnationalGeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261029-simplified", appScriptUrl);
 const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261025-holds", appScriptUrl);
 
 
