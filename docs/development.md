@@ -86,6 +86,23 @@ assertions for desktop and mobile semantics, keyboard focus, reflow, control
 contrast, and reduced-motion support. It does not rerun the Python suite without
 coverage or repeat the browser suite.
 
+On GitHub, Python/data and JavaScript/browser checks run in parallel. Local
+`make verify` retains the complete sequential checks; no coverage threshold or
+publication validation is weakened by CI scheduling.
+
+Focused CLI/store tests use four representative source records. Export-failure
+tests use a one-record synthetic inventory in `tests/fixtures/public-inventory.json`.
+The real catalogue and full inventory remain covered by maintained-data contract,
+projection and offline-publication checks. Tests do not bypass validators to run faster.
+
+Browser coverage avoids repeating the same component matrix: all 23 IPTV/VLC
+locales run at 320px once; other catalogue/schedule placements exercise English,
+French, long German labels, Devanagari, Thai, CJK and syllabics. Fast key/schema/
+placeholder checks still cover every locale. All five pages retain direct-load
+versus soft-navigation layout and language-picker width checks at desktop and
+mobile widths, plus existing narrow-screen, keyboard, Axe, playback, timezone
+and bidirectional-source checks.
+
 After changing catalogue or inventory inputs, refresh public inventory matches with:
 
 ```sh

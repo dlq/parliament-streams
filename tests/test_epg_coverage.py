@@ -222,7 +222,9 @@ class EpgCoveragePublicationTests(unittest.TestCase):
             fallbacks["fallbacks"] = []
             write_json(directory / "fallbacks.json", fallbacks)
             shutil.copyfile(ROOT / "data/supranational.json", directory / "supranational.json")
-            shutil.copyfile(ROOT / "data/institutions.json", directory / "institutions.json")
+            shutil.copyfile(
+                ROOT / "tests/fixtures/public-inventory.json", directory / "institutions.json"
+            )
             write_snapshot(directory / "schedules.json", snapshot)
             write_iptv_exports(catalogue, snapshot, directory, "https://example.org/epg.xml")
             result = validate_data_products(directory)

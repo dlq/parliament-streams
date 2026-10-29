@@ -6,9 +6,10 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Pages gates on this entire workflow: both independent jobs must succeed.
 jobs:
-  verify:
-    name: Verify catalogue and scrapers
+  python:
+    name: Python and data contracts
     runs-on: ubuntu-latest
 
     steps:
@@ -19,12 +20,6 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: "3.11"
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: "24"
-          cache: npm
 
       - name: Check whitespace
         run: git diff --check
@@ -38,12 +33,6 @@ jobs:
       - name: Check tracked research for embedded credentials
         run: make research-secrets-check
 
-      - name: Install site test dependencies
-        run: npm ci
-
-      - name: Install site-test browser
-        run: npx playwright install --with-deps chromium
-
       - name: Check Python formatting
         run: make format-check
 
@@ -56,11 +45,37 @@ jobs:
       - name: Validate catalogue and candidate management rules
         run: make catalogue-validate candidates-validate
 
-      - name: Check site rendering, interactions and accessibility
-        run: make accessibility-check
-
-      - name: Verify JSON, research rules, history, site data, tests, and coverage
+      - name: Verify JSON, research rules, history and generated data
         run: >-
           make json-check fallbacks-validate discovery-targets-validate
           us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check
-          validation-history-check institution-site-data-check data-products-check compile coverage test-js
+          validation-history-check institution-site-data-check data-products-check compile
+
+      - name: Run Python tests with coverage
+        run: make coverage
+
+  browser:
+    name: JavaScript, browser and accessibility
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install site test dependencies
+        run: npm ci
+
+      - name: Install site-test browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Run JavaScript tests
+        run: make test-js
+
+      - name: Check site rendering, interactions and accessibility
+        run: make accessibility-check

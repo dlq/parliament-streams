@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import io
+import re
 import unittest
 from pathlib import Path
 from typing import Any
@@ -240,6 +241,24 @@ class PagesVerificationTests(unittest.TestCase):
         self.assertIn("iptv-export", deploy)
         self.assertIn("--minimum-successful-sources 1", deploy)
         self.assertNotIn("accessibility-check", deploy)
+
+    def test_parallel_ci_keeps_both_check_groups_mandatory(self) -> None:
+        workflow = (ROOT / ".github/workflows/ci.yml").read_text()
+        jobs = dict(
+            re.findall(
+                r"^  ([a-z_]+):\n(.*?)(?=^  [a-z_]+:|\Z)",
+                workflow.split("\njobs:\n", 1)[1],
+                re.M | re.S,
+            )
+        )
+        self.assertIn("run: make coverage", jobs["python"])
+        self.assertIn("data-products-check", jobs["python"])
+        self.assertIn("run: make test-js", jobs["browser"])
+        self.assertIn("run: make accessibility-check", jobs["browser"])
+        for name in ("python", "browser"):
+            with self.subTest(job=name):
+                self.assertNotRegex(jobs[name], r"(?m)^    (needs|if|continue-on-error):")
+                self.assertNotRegex(jobs[name], r"(?m)^\s+continue-on-error:")
 
     def test_docs_only_main_pushes_still_receive_required_workflows(self) -> None:
         for filename in ("ci.yml", "codeql.yml"):

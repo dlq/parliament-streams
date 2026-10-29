@@ -46,7 +46,9 @@ class DataProductTests(unittest.TestCase):
         fallbacks["fallbacks"] = []
         write_json(self.directory / "fallbacks.json", fallbacks)
         shutil.copyfile(ROOT / "data/supranational.json", self.directory / "supranational.json")
-        shutil.copyfile(ROOT / "data/institutions.json", self.directory / "institutions.json")
+        shutil.copyfile(
+            ROOT / "tests/fixtures/public-inventory.json", self.directory / "institutions.json"
+        )
         counts = {
             field: 0
             for field in load_json_object(ROOT / "schema/schedules.schema.json")["properties"][

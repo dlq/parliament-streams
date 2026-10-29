@@ -159,6 +159,7 @@ export async function assertNavigationStyles(page, baseUrl) {
   ];
   const layout = async (selectors) => page.evaluate((targets) => ({
     locale: document.documentElement.lang,
+    localeSelectorWidth: document.querySelector("#locale-select").getBoundingClientRect().width,
     stylesheets: [...document.querySelectorAll('link[rel="stylesheet"]')]
       .filter((node) => node.media !== "not all")
       .map((node) => new URL(node.href).pathname).sort(),
@@ -168,6 +169,7 @@ export async function assertNavigationStyles(page, baseUrl) {
     }),
     overflow: document.documentElement.scrollWidth > innerWidth,
   }), selectors);
+  let selectorWidth;
   for (const width of [1280, 390]) {
     await page.setViewportSize({ width, height: 900 });
     const expected = new Map();
@@ -176,7 +178,11 @@ export async function assertNavigationStyles(page, baseUrl) {
       await page.waitForFunction(() => window.ParliamentStreamsViewer);
       await page.evaluate(async () => { await window.ParliamentStreamsPageReady; await window.ParliamentStreamsViewer.ready; });
       await page.locator(selectors.at(-1)).first().waitFor({ state: "attached" });
-      expected.set(file, await layout(selectors));
+      const snapshot = await layout(selectors);
+      selectorWidth ??= snapshot.localeSelectorWidth;
+      assert.equal(snapshot.localeSelectorWidth, selectorWidth, `${file}: language selector width is stable`);
+      assert.equal(snapshot.overflow, false, `${file}: fresh page fits ${width}px`);
+      expected.set(file, snapshot);
     }
     for (const [file, heading, selectors] of pages) {
       const link = file === "index.html" ? '#data-nav-catalogue' : `.site-header nav a[href*="${file}"]`;

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-29 — Reduce CI Repeated Work
+
+- Run Python/data and JavaScript/browser checks in parallel CI jobs while
+  preserving the exact-revision workflow gate, full data checks and coverage floor.
+- Use four-source CLI/store fixtures and a one-record publication inventory for
+  focused tests; retain full maintained-data integration validation.
+- Consolidate repeated IPTV locale matrices and language-picker layout checks;
+  retain all-language copy contracts and representative script, viewport and
+  playback/accessibility coverage. Expose Python coverage as a separate CI step.
+
 ## 2026-10-29 — Simplify the Browser Runtime
 
 - Give the shared header and language picker one owner, preserving selection,

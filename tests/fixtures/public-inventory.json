@@ -1,0 +1,29 @@
+{
+  "reviewed_on": "2026-10-25",
+  "countries": [{"name": "Example", "code": "GB"}],
+  "records": [{
+    "id": "example--assembly",
+    "country": "Example",
+    "name": "Example Assembly",
+    "aliases": [],
+    "jurisdiction_label": "Example",
+    "level": "national",
+    "kind": "legislature",
+    "status": "eligible_legislature",
+    "relationships": [],
+    "catalogue_ids": [],
+    "decision_basis": "Synthetic legislature used to exercise publication contracts.",
+    "remaining_authority_instruments": [],
+    "primary_urls": ["https://example.org/assembly"],
+    "report_urls": [],
+    "service_review": {"stage": "not_recorded", "reviewed_on": null, "followups": []}
+  }],
+  "scope": {
+    "country_baseline": "Synthetic test baseline",
+    "territorial_boundary": "Synthetic test legislature",
+    "default_statuses": ["eligible_legislature"],
+    "record_count_is_not_a_jurisdiction_legislature_or_service_count": true,
+    "complete_exhaustive_institutional_census_certified": false,
+    "catalogue_links_do_not_certify_current_playback_or_rights": true
+  }
+}

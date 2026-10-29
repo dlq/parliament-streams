@@ -30,6 +30,14 @@ All times below are UTC. Every workflow also supports a manual Actions run.
 | [Legislature Inventory Review](../.github/workflows/legislature-inventory-review.yml) | Fifth day of each month at 08:23 | Proposed inventory changes, evidence gaps and a retained comparison baseline |
 | [Deploy GitHub Pages](../.github/workflows/pages.yml) | Relevant `main` pushes and every six hours at minute 17 | Static site, current schedules, playlists and partial XMLTV guide |
 
+CI runs two independent jobs in parallel: **Python and data contracts** runs
+formatting, linting, types, maintained-data checks and Python coverage;
+**JavaScript, browser and accessibility** runs JavaScript tests, HTML validation
+and the silent browser/Axe suite. Each job installs only its own toolchain.
+Neither job is conditional or allowed to fail. Pages still requires the entire
+`CI` workflow to succeed for the exact current revision, so both jobs must pass.
+Python coverage and data-generation timings have separate steps for diagnosis.
+
 ## Publication Requires Successful Checks
 
 Pages pins its checkout to the triggering commit SHA and requires that SHA to

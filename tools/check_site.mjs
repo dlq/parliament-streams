@@ -237,8 +237,12 @@ async function assertIptvDisclosure(page) {
   await disclosure.locator(':scope > summary').click();
 }
 
-async function assertIptvLocales(page, localeSelect) {
-  const locales = await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
+// Exercise every pack once at 320px. Other placements retain Latin/long-label,
+// Devanagari, Thai, CJK and syllabic integration checks without repeating all copy.
+async function assertIptvLocales(page, localeSelect, { allLocales = false } = {}) {
+  const locales = allLocales
+    ? await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code))
+    : ["en", "fr", "de", "hi", "th", "zh-Hant", "iu-Cans"];
   const disclosure = page.locator('.iptv-disclosure');
   await page.evaluate(() => { window.__localeNavigationSentinel = true; });
   if (!(await disclosure.evaluate((element) => element.open))) await disclosure.locator(':scope > summary').click();
@@ -535,25 +539,15 @@ async function assertDataLoadingAndLanguageWidth(browser, baseUrl) {
     assert.equal(requests.length, 1, "Browsing the catalogue needs only catalogue JSON");
     assert(requests[0].endsWith("/channels.json"));
     assert.deepEqual(playerRequests, [], "Browsing must not initialize the player");
-    for (const width of [1280, 390, 320]) {
-      await page.setViewportSize({ width, height: 900 });
-      let expected;
-      for (const file of ["data.html", "index.html", "institutions.html", "schedule.html", "map.html"]) {
-        await page.goto(`${baseUrl}${file}?lang=en`);
-        await page.waitForFunction(() => window.ParliamentStreamsViewer);
-        await page.evaluate(async () => { await window.ParliamentStreamsViewer.ready; await window.ParliamentStreamsPageReady; });
-        const selector = page.locator("#locale-select");
-        await selector.locator('option[value="pt-BR"]').waitFor({ state: "attached" });
-        const size = await selector.evaluate((node) => node.getBoundingClientRect().width);
-        expected ??= size;
-        assert.equal(size, expected, `Language selector has the same intrinsic width on ${file} at ${width}px`);
-        await selector.selectOption("pt-BR");
-        await page.evaluate(() => window.ParliamentStreamsLocaleReady);
-        await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
-        assert.equal(await selector.evaluate((node) => node.getBoundingClientRect().width), expected);
-        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
-      }
-    }
+    // All-page direct/soft-navigation width parity is checked by
+    // assertNavigationStyles; retain a real language change at the narrow limit.
+    const selector = page.locator("#locale-select");
+    const expectedWidth = await selector.evaluate((node) => node.getBoundingClientRect().width);
+    await page.setViewportSize({ width: 320, height: 900 });
+    await selector.selectOption("pt-BR");
+    await page.evaluate(() => window.ParliamentStreamsLocaleReady);
+    assert.equal(await selector.evaluate((node) => node.getBoundingClientRect().width), expectedWidth);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     await page.setViewportSize({ width: 1280, height: 900 });
     await page.goto(`${baseUrl}data.html`);
     requests.length = 0;
@@ -752,7 +746,7 @@ try {
   await assertIptvDisclosure(page);
   await assertIptvLocales(page, '#locale-select');
   await page.setViewportSize({ width: 320, height: 740 });
-  await assertIptvLocales(page, '#locale-select');
+  await assertIptvLocales(page, '#locale-select', { allLocales: true });
   await page.setViewportSize({ width: 1280, height: 900 });
   await assertNoAxeViolations(page, "Desktop catalogue");
 

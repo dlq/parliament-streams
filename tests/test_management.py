@@ -53,7 +53,23 @@ def canonical_catalogue():
     return json.loads(CATALOGUE_PATH.read_text(encoding="utf-8"))
 
 
-CANONICAL_CHANNEL_COUNT = len(canonical_catalogue()["channels"])
+# Focused CLI/store fixtures cover native HLS, an official page, and YouTube,
+# plus national/subnational and permission filters. Full maintained data is
+# validated in test_catalogue_contract.py and the publication checks.
+FIXTURE_IDS = (
+    "cpac-ca",
+    "navarre-parliament-live",
+    "jalisco-canal-parlamento",
+    "australia-parliament-youtube",
+)
+FIXTURE_CHANNEL_COUNT = len(FIXTURE_IDS)
+
+
+def fixture_catalogue():
+    catalogue = canonical_catalogue()
+    by_id = {channel["id"]: channel for channel in catalogue["channels"]}
+    catalogue["channels"] = [by_id[channel_id] for channel_id in FIXTURE_IDS]
+    return catalogue
 
 
 def cloned_channel(channel_id="test-assembly", qid="Q123456789"):
@@ -82,7 +98,7 @@ class ValidationTests(unittest.TestCase):
         channel["source_kind"] = "official_vendor_hls"
         channel["playback_url"] = "https://example.org/unverified.m3u8"
         channel["playback_policy"] = "research_only"
-        catalogue = canonical_catalogue()
+        catalogue = fixture_catalogue()
         catalogue["channels"] = [channel]
         self.assertIn(
             "unready-viewing-source", {issue.code for issue in validate_catalogue(catalogue)}
@@ -105,8 +121,8 @@ class ValidationTests(unittest.TestCase):
                     {issue.code for issue in validate_candidate(candidate)},
                 )
 
-    def test_canonical_catalogue_and_channel_validate(self):
-        catalogue = canonical_catalogue()
+    def test_catalogue_and_channel_validate(self):
+        catalogue = fixture_catalogue()
         self.assertEqual(validate_catalogue(catalogue), [])
         self.assertEqual(validate_channel(catalogue["channels"][0]), [])
         self.assertEqual(load_schema()["title"], "Parliament Streams Catalogue")
@@ -131,7 +147,7 @@ class ValidationTests(unittest.TestCase):
         self.assertIn("fallback-playback-claim", codes)
 
     def test_schema_and_duplicate_errors_are_actionable(self):
-        catalogue = canonical_catalogue()
+        catalogue = fixture_catalogue()
         catalogue["generated_on"] = "not-a-date"
         duplicate = copy.deepcopy(catalogue["channels"][0])
         catalogue["channels"].append(duplicate)
@@ -146,7 +162,7 @@ class ValidationTests(unittest.TestCase):
         self.assertTrue(raised.exception.issues)
 
     def test_malformed_nested_values_return_issues_instead_of_crashing(self):
-        catalogue = canonical_catalogue()
+        catalogue = fixture_catalogue()
         channel = catalogue["channels"][0]
         channel["external_ids"] = []
         channel["identity_sources"] = "invalid"
@@ -396,7 +412,7 @@ class ManagementTests(unittest.TestCase):
         self.root = Path(self.directory.name)
         self.catalogue_path = self.root / "channels.json"
         self.fallbacks_path = self.root / "fallbacks.json"
-        write_json(self.catalogue_path, canonical_catalogue())
+        write_json(self.catalogue_path, fixture_catalogue())
         write_json(self.fallbacks_path, load_fallbacks(DEFAULT_FALLBACKS_PATH))
         self.store = CatalogueStore(
             catalogue_path=self.catalogue_path,
@@ -407,7 +423,7 @@ class ManagementTests(unittest.TestCase):
 
     def test_json_loaders(self):
         catalogue = load_catalogue(self.catalogue_path)
-        self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
+        self.assertEqual(len(catalogue["channels"]), FIXTURE_CHANNEL_COUNT)
         self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 9)
         self.assertIn("fallbacks", load_fallbacks(self.fallbacks_path))
 
@@ -425,7 +441,7 @@ class ManagementTests(unittest.TestCase):
 
     def test_store_add_replace_update_remove_and_dry_runs(self):
         added = self.store.add(cloned_channel())
-        self.assertEqual(len(added["channels"]), CANONICAL_CHANNEL_COUNT + 1)
+        self.assertEqual(len(added["channels"]), FIXTURE_CHANNEL_COUNT + 1)
         self.assertEqual(self.store.load()["channels"][-1]["id"], "test-assembly")
         with self.assertRaisesRegex(ValueError, "already exists"):
             self.store.add(cloned_channel())
@@ -451,18 +467,18 @@ class ManagementTests(unittest.TestCase):
             self.store.update("missing", cloned_channel("missing"))
 
         preview_removed = self.store.remove("test-assembly", persist=False)
-        self.assertEqual(len(preview_removed["channels"]), CANONICAL_CHANNEL_COUNT)
-        self.assertEqual(len(self.store.load()["channels"]), CANONICAL_CHANNEL_COUNT + 1)
+        self.assertEqual(len(preview_removed["channels"]), FIXTURE_CHANNEL_COUNT)
+        self.assertEqual(len(self.store.load()["channels"]), FIXTURE_CHANNEL_COUNT + 1)
         self.store.remove("test-assembly")
-        self.assertEqual(len(self.store.load()["channels"]), CANONICAL_CHANNEL_COUNT)
+        self.assertEqual(len(self.store.load()["channels"]), FIXTURE_CHANNEL_COUNT)
         with self.assertRaisesRegex(KeyError, "Unknown catalogue id"):
             self.store.remove("missing")
 
     def test_store_dry_run_and_invalid_commit(self):
         store = CatalogueStore(catalogue_path=self.catalogue_path)
         preview = store.add(cloned_channel(), persist=False)
-        self.assertEqual(len(preview["channels"]), CANONICAL_CHANNEL_COUNT + 1)
-        invalid = canonical_catalogue()
+        self.assertEqual(len(preview["channels"]), FIXTURE_CHANNEL_COUNT + 1)
+        invalid = fixture_catalogue()
         invalid["channels"][0]["id"] = "INVALID"
         with self.assertRaises(CatalogueValidationError):
             store.commit(invalid)
@@ -588,7 +604,7 @@ class ManagementTests(unittest.TestCase):
             )
 
     def test_seed_identity_audit_health_diff_and_csv(self):
-        catalogue = canonical_catalogue()
+        catalogue = fixture_catalogue()
         seed = generate_validation_seed(
             catalogue,
             channel_ids={"jalisco-canal-parlamento"},
@@ -604,7 +620,7 @@ class ManagementTests(unittest.TestCase):
             generate_validation_seed(catalogue, channel_ids={"missing"})
 
         audit = audit_identities(catalogue, checked_at="2026-08-16T00:00:00Z")
-        self.assertEqual(audit["counts"], {"ok": CANONICAL_CHANNEL_COUNT, "error": 0})
+        self.assertEqual(audit["counts"], {"ok": FIXTURE_CHANNEL_COUNT, "error": 0})
         broken = copy.deepcopy(catalogue)
         broken["channels"][0]["identity_sources"][0]["url"] = "https://example.test/Q1"
         broken_audit = audit_identities(broken)
@@ -683,7 +699,7 @@ class CliTests(unittest.TestCase):
         self.directory = tempfile.TemporaryDirectory()
         self.root = Path(self.directory.name)
         self.catalogue = self.root / "channels.json"
-        write_json(self.catalogue, canonical_catalogue())
+        write_json(self.catalogue, fixture_catalogue())
 
     def tearDown(self):
         self.directory.cleanup()
@@ -698,7 +714,7 @@ class CliTests(unittest.TestCase):
     def test_validate_list_and_show_commands(self):
         result, output, _ = self.run_cli("validate")
         self.assertEqual(result, 0)
-        self.assertIn(f"{CANONICAL_CHANNEL_COUNT} sources", output)
+        self.assertIn(f"{FIXTURE_CHANNEL_COUNT} sources", output)
 
         result, output, _ = self.run_cli("list", "--level", "subnational")
         self.assertEqual(result, 0)
@@ -721,7 +737,7 @@ class CliTests(unittest.TestCase):
         self.assertEqual(result, 2)
         self.assertIn("Unknown catalogue id", error)
 
-        broken = canonical_catalogue()
+        broken = fixture_catalogue()
         broken["generated_on"] = "invalid"
         write_json(self.catalogue, broken)
         result, _, error = self.run_cli("validate")
@@ -766,7 +782,7 @@ class CliTests(unittest.TestCase):
         )
         result, output, _ = self.run_cli("candidate-promote", str(candidate))
         self.assertEqual(result, 0)
-        self.assertIn(f"{CANONICAL_CHANNEL_COUNT + 1} sources", output)
+        self.assertIn(f"{FIXTURE_CHANNEL_COUNT + 1} sources", output)
         self.assertEqual(load_candidate(candidate)["status"], "promoted")
         self.assertIn("Promoted to", load_candidate(candidate)["decision_notes"][-1])
 
@@ -792,8 +808,8 @@ class CliTests(unittest.TestCase):
         write_json(record, cloned_channel())
         result, output, _ = self.run_cli("add", str(record), "--dry-run")
         self.assertEqual(result, 0)
-        self.assertIn(f"Would write {CANONICAL_CHANNEL_COUNT + 1}", output)
-        self.assertEqual(len(load_catalogue(self.catalogue)["channels"]), CANONICAL_CHANNEL_COUNT)
+        self.assertIn(f"Would write {FIXTURE_CHANNEL_COUNT + 1}", output)
+        self.assertEqual(len(load_catalogue(self.catalogue)["channels"]), FIXTURE_CHANNEL_COUNT)
         self.assertEqual(self.run_cli("add", str(record))[0], 0)
 
         changed = cloned_channel()
@@ -843,7 +859,7 @@ class CliTests(unittest.TestCase):
         self.assertEqual(load_json_object(identity)["counts"]["error"], 0)
         result, output, _ = self.run_cli("identity-audit")
         self.assertEqual(result, 0)
-        self.assertIn(f'"total": {CANONICAL_CHANNEL_COUNT}', output)
+        self.assertIn(f'"total": {FIXTURE_CHANNEL_COUNT}', output)
 
         before = self.root / "before.json"
         after = self.root / "after.json"
@@ -970,9 +986,9 @@ class CliTests(unittest.TestCase):
         self.assertEqual(audit.call_args.args[0]["schema_version"], 9)
 
     def test_playback_policy_audit_reports_review_tensions(self):
-        catalogue = canonical_catalogue()
+        catalogue = fixture_catalogue()
         report = audit_playback_policies(catalogue)
-        self.assertEqual(report["counts"]["channels"], CANONICAL_CHANNEL_COUNT)
+        self.assertEqual(report["counts"]["channels"], FIXTURE_CHANNEL_COUNT)
         self.assertGreater(report["counts"]["native_playback"], 0)
         self.assertGreater(report["counts"]["link_out"], 0)
         self.assertGreater(report["counts"]["review"], 0)
