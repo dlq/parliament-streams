@@ -1,9 +1,9 @@
 (() => {
-  const pageSignal = window.ParliamentStreamsNavigation?.signal;
   "use strict";
+  const pageSignal = window.ParliamentStreamsNavigation?.signal;
   const shared = window.ParliamentStreamsI18n;
   const translations = window.ParliamentStreamsInstitutionsI18n;
-  const data = window.PARLIAMENT_STREAMS_INSTITUTIONS;
+  let data;
   const query = new URLSearchParams(window.location.search);
   const byId = (id) => document.getElementById(id);
   const statuses = {
@@ -283,28 +283,36 @@
     }
   }
 
-  for (const [code, label] of shared.locales) byId("locale-select").add(new Option(label, code));
-  if (data) {
-    countries = data.countries;
-    records = new Map(data.records.map((row) => [row.id, row]));
-    if (!countries.some((country) => country.name === state.country)) state.country = "";
+  async function init() {
+    data = await window.ParliamentStreamsData.load("institutions");
+    if (pageSignal?.aborted) return;
+    byId("locale-select").replaceChildren();
+    for (const [code, label] of shared.locales) byId("locale-select").add(new Option(label, code));
+    if (data) {
+      countries = data.countries;
+      records = new Map(data.records.map((row) => [row.id, row]));
+      if (!countries.some((country) => country.name === state.country)) state.country = "";
+    }
+    byId("institution-search").value = state.search;
+    byId("institution-search").addEventListener("input", (event) => { state.search = event.target.value; updateUrl(); render(); });
+    byId("institution-country").addEventListener("change", (event) => { state.country = event.target.value; openCountries = new Set(); updateUrl(); render(); });
+    byId("institution-status").addEventListener("change", (event) => { state.status = event.target.value; openCountries = new Set(); updateUrl(); render(); });
+    byId("locale-select").addEventListener("change", (event) => {
+      state.locale = event.target.value;
+      shared.writeLocalePreference(state.locale);
+      updateUrl(); localize(); render();
+    });
+    byId("institution-clear").addEventListener("click", () => {
+      Object.assign(state, { search: "", country: "", status: "default" });
+      byId("institution-search").value = "";
+      openCountries = new Set();
+      updateUrl(); localize(); render();
+      byId("institution-search").focus();
+    });
+    localize();
+    render();
   }
-  byId("institution-search").value = state.search;
-  byId("institution-search").addEventListener("input", (event) => { state.search = event.target.value; updateUrl(); render(); });
-  byId("institution-country").addEventListener("change", (event) => { state.country = event.target.value; openCountries = new Set(); updateUrl(); render(); });
-  byId("institution-status").addEventListener("change", (event) => { state.status = event.target.value; openCountries = new Set(); updateUrl(); render(); });
-  byId("locale-select").addEventListener("change", (event) => {
-    state.locale = event.target.value;
-    shared.writeLocalePreference(state.locale);
-    updateUrl(); localize(); render();
+  window.ParliamentStreamsPageReady = init().catch(() => {
+    if (!pageSignal?.aborted) byId("institution-results").textContent = shared.message(state.locale, "sourceError");
   });
-  byId("institution-clear").addEventListener("click", () => {
-    Object.assign(state, { search: "", country: "", status: "default" });
-    byId("institution-search").value = "";
-    openCountries = new Set();
-    updateUrl(); localize(); render();
-    byId("institution-search").focus();
-  });
-  localize();
-  render();
 })();

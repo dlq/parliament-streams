@@ -1,25 +1,14 @@
-"""Generate the classic-script snapshot used by local file previews."""
+"""Load and validate the shared map context JSON product."""
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 from typing import Any
 
-from .catalogue import (
-    DEFAULT_CATALOGUE_PATH,
-    DEFAULT_FALLBACKS_PATH,
-    load_catalogue,
-    load_fallbacks,
-    load_json_object,
-)
+from .catalogue import load_json_object
 from .data_contracts import require_json_schema
-from .models import Catalogue, FallbackCatalogue
 
-DEFAULT_SITE_DATA_PATH = Path(__file__).resolve().parents[1] / "site" / "catalogue-data.js"
 DEFAULT_SUPRANATIONAL_PATH = Path(__file__).resolve().parents[1] / "data" / "supranational.json"
-DEFAULT_SCHEDULES_PATH = Path(__file__).resolve().parents[1] / "data" / "schedules.json"
-SCHEDULE_ASSIGNMENT = "window.PARLIAMENT_STREAMS_SCHEDULES = "
 
 
 def load_supranational(path: Path = DEFAULT_SUPRANATIONAL_PATH) -> dict[str, Any]:
@@ -30,79 +19,3 @@ def load_supranational(path: Path = DEFAULT_SUPRANATIONAL_PATH) -> dict[str, Any
     if len({item["id"] for item in organizations}) != len(organizations):
         raise ValueError("Supranational organization IDs must be unique")
     return value
-
-
-def load_optional_schedules(
-    path: Path = DEFAULT_SCHEDULES_PATH,
-) -> dict[str, Any] | None:
-    """Load a generated schedule snapshot when the current checkout has one."""
-    return load_json_object(path) if path.exists() else None
-
-
-def render_site_data_payload(
-    catalogue: Catalogue,
-    fallbacks: FallbackCatalogue | None = None,
-    supranational: dict[str, Any] | None = None,
-    schedules: dict[str, Any] | None = None,
-) -> str:
-    datasets = (
-        ("CATALOGUE", catalogue),
-        ("FALLBACKS", fallbacks),
-        ("SUPRANATIONAL", supranational),
-        ("SCHEDULES", schedules),
-    )
-    return "".join(
-        f"window.PARLIAMENT_STREAMS_{name} = {json.dumps(value, ensure_ascii=False, indent=2)};\n"
-        for name, value in datasets
-        if value is not None
-    )
-
-
-def render_site_data(
-    catalogue_path: Path = DEFAULT_CATALOGUE_PATH,
-    fallbacks_path: Path = DEFAULT_FALLBACKS_PATH,
-    supranational_path: Path = DEFAULT_SUPRANATIONAL_PATH,
-    schedules_path: Path = DEFAULT_SCHEDULES_PATH,
-) -> str:
-    supranational = load_supranational(supranational_path)
-    return render_site_data_payload(
-        load_catalogue(catalogue_path),
-        load_fallbacks(fallbacks_path),
-        supranational,
-        load_optional_schedules(schedules_path),
-    )
-
-
-def write_site_data(
-    catalogue_path: Path = DEFAULT_CATALOGUE_PATH,
-    fallbacks_path: Path = DEFAULT_FALLBACKS_PATH,
-    target_path: Path = DEFAULT_SITE_DATA_PATH,
-    supranational_path: Path = DEFAULT_SUPRANATIONAL_PATH,
-    schedules_path: Path = DEFAULT_SCHEDULES_PATH,
-) -> None:
-    target_path.parent.mkdir(parents=True, exist_ok=True)
-    target_path.write_text(
-        render_site_data(catalogue_path, fallbacks_path, supranational_path, schedules_path),
-        encoding="utf-8",
-    )
-
-
-def site_data_is_current(
-    catalogue_path: Path = DEFAULT_CATALOGUE_PATH,
-    fallbacks_path: Path = DEFAULT_FALLBACKS_PATH,
-    target_path: Path = DEFAULT_SITE_DATA_PATH,
-    supranational_path: Path = DEFAULT_SUPRANATIONAL_PATH,
-    schedules_path: Path = DEFAULT_SCHEDULES_PATH,
-) -> bool:
-    if not target_path.exists():
-        return False
-
-    actual = target_path.read_text(encoding="utf-8")
-    expected = render_site_data(catalogue_path, fallbacks_path, supranational_path, schedules_path)
-    if schedules_path.exists():
-        return actual == expected
-
-    if actual == expected:
-        return True
-    static_content, marker, _ = actual.partition(SCHEDULE_ASSIGNMENT)
-    return bool(marker) and static_content == expected

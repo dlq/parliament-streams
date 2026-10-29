@@ -305,6 +305,12 @@ async function newLocalContext(browser, options = {}) {
   await context.route("**/*", (route) => {
     const request = route.request();
     const url = new URL(request.url());
+    if (url.origin === "https://dlq.ca" && url.pathname.startsWith("/parliament-streams/data/")) {
+      return readFile(join(root, "data", url.pathname.split("/").at(-1))).then(
+        (body) => route.fulfill({ contentType: "application/json", headers: { "Access-Control-Allow-Origin": "*" }, body }),
+        () => route.fulfill({ status: 404, headers: { "Access-Control-Allow-Origin": "*" }, body: "Not found" }),
+      );
+    }
     const external = ["http:", "https:"].includes(url.protocol)
       && !["127.0.0.1", "localhost", "[::1]"].includes(url.hostname);
     return external || request.resourceType() === "media" ? route.abort() : route.continue();
@@ -496,6 +502,51 @@ async function assertViewerTimezones(browser, baseUrl) {
   }
 }
 
+async function assertDataLoadingAndLanguageWidth(browser, baseUrl) {
+  const context = await newLocalContext(browser, { viewport: { width: 1280, height: 900 } });
+  const page = await context.newPage();
+  const requests = [];
+  page.on("request", (request) => {
+    if (/\/data\/[^/]+\.json$/.test(new URL(request.url()).pathname)) requests.push(new URL(request.url()).pathname);
+  });
+  try {
+    await page.goto(`${baseUrl}data.html`);
+    await page.waitForFunction(() => window.ParliamentStreamsViewer);
+    await page.evaluate(() => window.ParliamentStreamsViewer.ready);
+    assert.deepEqual(requests, [], "The documentation page must not load catalogue or programme data");
+    for (const width of [1280, 390, 320]) {
+      await page.setViewportSize({ width, height: 900 });
+      let expected;
+      for (const file of ["data.html", "index.html", "institutions.html", "schedule.html", "map.html"]) {
+        await page.goto(`${baseUrl}${file}?lang=en`);
+        await page.waitForFunction(() => window.ParliamentStreamsViewer);
+        await page.evaluate(async () => { await window.ParliamentStreamsViewer.ready; await window.ParliamentStreamsPageReady; });
+        const selector = page.locator("#locale-select");
+        await selector.locator('option[value="pt-BR"]').waitFor({ state: "attached" });
+        const size = await selector.evaluate((node) => node.getBoundingClientRect().width);
+        expected ??= size;
+        assert.equal(size, expected, `Language selector has the same intrinsic width on ${file} at ${width}px`);
+        await selector.selectOption("pt-BR");
+        await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
+        assert.equal(await selector.evaluate((node) => node.getBoundingClientRect().width), expected);
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+      }
+    }
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.goto(`${baseUrl}data.html`);
+    requests.length = 0;
+    await page.locator('nav a[href*="map.html"]').click();
+    await page.locator("#map-search").waitFor();
+    await page.evaluate(() => window.ParliamentStreamsPageReady);
+    await page.locator('nav a[href*="schedule.html"]').click();
+    await page.locator("#schedule-jurisdiction").waitFor();
+    await page.evaluate(() => window.ParliamentStreamsPageReady);
+    assert.equal(requests.filter((path) => path.endsWith("/channels.json")).length, 1, "Map and schedule reuse the same catalogue response");
+  } finally {
+    await context.close();
+  }
+}
+
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const address = server.address();
 assert(address && typeof address === "object");
@@ -503,6 +554,7 @@ const baseUrl = `http://127.0.0.1:${address.port}/site/`;
 const browser = await chromium.launch({ args: ["--mute-audio"] });
 
 try {
+  await assertDataLoadingAndLanguageWidth(browser, baseUrl);
   const context = await newLocalContext(browser, { viewport: { width: 1280, height: 900 } });
   // Exercise the actual local HLS library without depending on a live broadcaster.
   const hlsPage = await context.newPage();
@@ -1426,8 +1478,8 @@ try {
   assert.equal(new URL(correction.searchParams.get("page")).searchParams.get("status"), "all");
   assert.match(correction.searchParams.get("context"), /canada--alberta/);
   await assertNoAxeViolations(institutionsPage, "Expanded institution evidence");
-  const structuredScopeRecord = await institutionsPage.evaluate(() => {
-    const record = window.PARLIAMENT_STREAMS_INSTITUTIONS.records.find((row) =>
+  const structuredScopeRecord = await institutionsPage.evaluate(async () => {
+    const record = (await window.ParliamentStreamsData.load("institutions")).records.find((row) =>
       row.service_review?.followups?.some((followup) => followup.scope && typeof followup.scope === "object"));
     return {
       id: record.id,

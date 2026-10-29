@@ -118,14 +118,14 @@ uv run parliament-streams candidate-promote candidates/example-assembly.json
 
 For an existing source, export or prepare one standalone channel object and use
 `parliament-streams update <id> <record.json> --dry-run` before applying it.
-Do not hand-edit `site/catalogue-data.js`; catalogue mutations regenerate it.
+Catalogue mutations update `data/channels.json` directly; there is no JavaScript copy.
 See [docs/catalogue-maintenance.md](docs/catalogue-maintenance.md) for direct
 feeds, YouTube candidates, removals, reports, audits, and exports.
 
 ## Development Tooling
 
 Python 3.11 and `uv` own catalogue management, schema and business-rule checks,
-site-data generation, scrapers, health checks, tests and coverage, Ruff, and
+inventory JSON generation, scrapers, health checks, tests and coverage, Ruff, and
 mypy. Node.js 24 and npm assemble the locked browser libraries and own HTML
 validation, Playwright browser behavior, Axe accessibility checks, and the
 optional live deep-browser research tool. `make`
@@ -144,11 +144,11 @@ make verify
 
 The Makefile uses `uv run --locked --extra dev`, so install `uv` first if it is
 not already available. `make verify` validates the JSON catalogue and generated
-site snapshot, checks schema and cross-record contracts, checks Ruff formatting
+inventory JSON projection, checks schema and cross-record contracts, checks Ruff formatting
 and linting, runs strict mypy, compiles Python modules, enforces at least 90%
 coverage with branch measurement enabled, validates the HTML, and checks
 desktop/mobile accessibility with Axe and Playwright. After an exceptional manual change to
-`data/channels.json`, run `make site-data` to refresh the direct-file snapshot.
+`data/channels.json`, run `make institution-site-data` to refresh inventory matches.
 
 `npm ci` also generates the ignored local HLS.js/D3 browser assets and their
 license notices from the lockfile. See

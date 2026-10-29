@@ -215,7 +215,7 @@ export async function assertProviderViewer(page, baseUrl) {
   const id = await details.getAttribute('data-viewer-source');
   await details.click();
   assert.match(page.url(), /schedule.html/);
-  assert.equal(await page.locator('#detail-title').innerText(), await page.evaluate((key) => window.PARLIAMENT_STREAMS_CATALOGUE.channels.find((channel) => channel.id === key).name, id));
+  assert.equal(await page.locator('#detail-title').innerText(), await page.evaluate(async (key) => (await window.ParliamentStreamsData.load("channels")).channels.find((channel) => channel.id === key).name, id));
   await page.locator('[data-close-detail]').click();
   await page.locator('#schedule-nav-institutions').click();
   await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));

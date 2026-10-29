@@ -2,7 +2,7 @@
 
 `data/channels.json` is the canonical published catalogue. Use the
 `parliament-streams` Python command for routine maintenance so schema rules,
-cross-record invariants, dates, and the generated direct-file site snapshot stay
+cross-record invariants and dates stay
 coherent.
 
 Apply the [catalogue scope rule](catalogue-scope.md) before promoting a new
@@ -52,7 +52,7 @@ rules and review handoffs are in [GitHub Actions and review queues](github-actio
 | --- | --- | --- |
 | Add a new source | `parliament-streams candidate-new` | Prefer a candidate record under `candidates/` until evidence is complete. |
 | Fix an existing channel | `parliament-streams show <id>` | Export or prepare one full channel object, then use `update --dry-run`. |
-| Change generated site data | `make site-data` | Do not hand-edit `site/catalogue-data.js`. |
+| Refresh public inventory JSON | `make institution-site-data` | Edit inventory inputs and regenerate `data/institutions.json`. |
 | Check for institution-inventory changes | `make inventory-review` | Live research signals and a report for review; no automatic membership changes. |
 | Refresh validation-history links | `make validation-history` | Run after adding retained `reports/health/` artifacts. |
 | Check validation-history drift | `make validation-history-check` | Included in `make verify`. |
@@ -120,8 +120,7 @@ uv run parliament-streams candidate-promote candidates/example-assembly.json
 ```
 
 Promotion validates the candidate and complete catalogue, updates
-`generated_on`, writes the catalogue atomically, and regenerates
-`site/catalogue-data.js`. It then marks the candidate `promoted` and records a
+`generated_on` and writes `data/channels.json` atomically. It then marks the candidate `promoted` and records a
 dated decision note. A duplicate ID or playback URL is rejected.
 
 ## Change Existing Records
@@ -140,7 +139,7 @@ readiness gate through `candidate-promote`.
 
 Manual edits to `data/channels.json` are still possible for bulk, reviewed
 changes, but run `make site-data` immediately afterward. Never edit
-`site/catalogue-data.js` as an independent source.
+a JavaScript snapshot as an independent source.
 
 ## Scope Recorded Viewing Evidence
 
@@ -277,7 +276,7 @@ workflow. An implemented source names a registered Python parser:
 ```
 
 Use `parliament-streams update` to persist a reviewed endpoint change; it
-validates the complete record and regenerates the direct-file site snapshot.
+validates the complete record and updates the catalogue JSON.
 Then run `make schedules` to test retrieval, parsing, and normalized output.
 
 Check every unique recorded EPG URL and retain a dated report:

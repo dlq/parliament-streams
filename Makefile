@@ -6,7 +6,7 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check catalogue-site-data-check institution-site-data-check data-products-check format-check lint type-check compile coverage test-js accessibility-check
+verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check institution-site-data-check data-products-check format-check lint type-check compile coverage test-js accessibility-check
 
 .PHONY: data-products-check
 data-products-check:
@@ -64,15 +64,14 @@ validation-history:
 validation-history-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) parliament-streams validation-history-refresh --check
 
-catalogue-site-data:
-	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_catalogue_site_data.py
+# Compatibility aliases: the catalogue is already the canonical JSON product.
+catalogue-site-data: catalogue-validate
 
-catalogue-site-data-check:
-	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_catalogue_site_data.py --check
+catalogue-site-data-check: catalogue-validate
 
-site-data: catalogue-site-data
+site-data: institution-site-data
 
-site-data-check: catalogue-site-data-check
+site-data-check: institution-site-data-check
 
 institution-site-data:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_institution_site_data.py

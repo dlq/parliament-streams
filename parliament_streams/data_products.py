@@ -82,6 +82,11 @@ def validate_data_products(directory: Path) -> dict[str, int]:
     require_valid_catalogue(catalogue)
     require_valid_fallbacks(load_fallbacks(directory / "fallbacks.json"), catalogue)
     load_supranational(directory / "supranational.json")
+    require_json_schema(
+        load_json_object(directory / "institutions.json"),
+        "institution-site-data.schema.json",
+        label="public legislature inventory",
+    )
     snapshot = cast(ScheduleSnapshot, load_json_object(directory / "schedules.json"))
     require_json_schema(snapshot, "schedules.schema.json", label="published schedules")
     quality = cast(QualityReport, load_json_object(directory / "epg-quality.json"))

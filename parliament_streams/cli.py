@@ -51,7 +51,6 @@ from .schedule_collection import (
     write_snapshot,
 )
 from .schedule_quality import assess_schedules
-from .site_data import DEFAULT_SITE_DATA_PATH
 from .validation import (
     CatalogueValidationError,
     require_valid_candidate,
@@ -74,14 +73,7 @@ def _write_report(report: object, output: Path | None) -> None:
 
 
 def _store(args: argparse.Namespace) -> CatalogueStore:
-    catalogue_path = args.catalogue
-    if args.site_data:
-        site_data_path = args.site_data
-    elif catalogue_path.resolve() == DEFAULT_CATALOGUE_PATH.resolve():
-        site_data_path = DEFAULT_SITE_DATA_PATH
-    else:
-        site_data_path = None
-    return CatalogueStore(catalogue_path=catalogue_path, site_data_path=site_data_path)
+    return CatalogueStore(catalogue_path=args.catalogue)
 
 
 def _cmd_validate(args: argparse.Namespace) -> int:
@@ -411,14 +403,6 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--catalogue", type=Path, default=DEFAULT_CATALOGUE_PATH, help="Catalogue JSON path."
-    )
-    parser.add_argument(
-        "--site-data",
-        type=Path,
-        help=(
-            "Generated site snapshot path; defaults to the repository snapshot for the "
-            "canonical catalogue."
-        ),
     )
     commands = parser.add_subparsers(dest="command", required=True)
 

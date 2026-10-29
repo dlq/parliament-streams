@@ -14,9 +14,7 @@ from typing import Any, Literal, TextIO, cast
 
 from .catalogue import (
     DEFAULT_CATALOGUE_PATH,
-    DEFAULT_FALLBACKS_PATH,
     load_catalogue,
-    load_fallbacks,
     load_json_object,
 )
 from .models import (
@@ -37,12 +35,6 @@ from .models import (
     StabilityRisk,
     ValidationHistoryEntry,
     ValidationSeed,
-)
-from .site_data import (
-    DEFAULT_SITE_DATA_PATH,
-    load_optional_schedules,
-    load_supranational,
-    render_site_data_payload,
 )
 from .validation import (
     CatalogueValidationError,
@@ -162,11 +154,9 @@ def validation_history_is_current(
 
 @dataclass(frozen=True)
 class CatalogueStore:
-    """Load, validate, and atomically persist a catalogue and site snapshot."""
+    """Load, validate, and atomically persist the catalogue JSON product."""
 
     catalogue_path: Path = DEFAULT_CATALOGUE_PATH
-    fallbacks_path: Path = DEFAULT_FALLBACKS_PATH
-    site_data_path: Path | None = DEFAULT_SITE_DATA_PATH
 
     def load(self) -> Catalogue:
         catalogue = load_catalogue(self.catalogue_path)
@@ -185,19 +175,7 @@ class CatalogueStore:
         prepared = deepcopy(catalogue)
         prepared["generated_on"] = (generated_on or date.today()).isoformat()
         require_valid_catalogue(prepared)
-        site_data = (
-            render_site_data_payload(
-                prepared,
-                load_fallbacks(self.fallbacks_path),
-                load_supranational(),
-                load_optional_schedules(),
-            )
-            if self.site_data_path
-            else None
-        )
         write_json(self.catalogue_path, prepared)
-        if self.site_data_path and site_data is not None:
-            _atomic_write_text(self.site_data_path, site_data)
         return prepared
 
     def add(

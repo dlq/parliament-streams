@@ -32,14 +32,6 @@ from parliament_streams.management import (
     write_json,
 )
 from parliament_streams.playback_policy_audit import audit_playback_policies
-from parliament_streams.site_data import (
-    load_optional_schedules,
-    load_supranational,
-    render_site_data,
-    render_site_data_payload,
-    site_data_is_current,
-    write_site_data,
-)
 from parliament_streams.validation import (
     CatalogueValidationError,
     ValidationIssue,
@@ -404,62 +396,20 @@ class ManagementTests(unittest.TestCase):
         self.root = Path(self.directory.name)
         self.catalogue_path = self.root / "channels.json"
         self.fallbacks_path = self.root / "fallbacks.json"
-        self.site_path = self.root / "catalogue-data.js"
         write_json(self.catalogue_path, canonical_catalogue())
         write_json(self.fallbacks_path, load_fallbacks(DEFAULT_FALLBACKS_PATH))
         self.store = CatalogueStore(
             catalogue_path=self.catalogue_path,
-            fallbacks_path=self.fallbacks_path,
-            site_data_path=self.site_path,
         )
 
     def tearDown(self):
         self.directory.cleanup()
 
-    def test_json_loaders_and_site_data(self):
+    def test_json_loaders(self):
         catalogue = load_catalogue(self.catalogue_path)
-        fallbacks = load_fallbacks(self.fallbacks_path)
         self.assertEqual(len(catalogue["channels"]), CANONICAL_CHANNEL_COUNT)
         self.assertEqual(load_json_object(self.catalogue_path)["schema_version"], 9)
-        self.assertIn(
-            "PARLIAMENT_STREAMS_FALLBACKS",
-            render_site_data(self.catalogue_path, self.fallbacks_path),
-        )
-        self.assertEqual(
-            render_site_data_payload(
-                catalogue,
-                fallbacks,
-                load_supranational(),
-                load_optional_schedules(),
-            ),
-            render_site_data(self.catalogue_path, self.fallbacks_path),
-        )
-        write_site_data(self.catalogue_path, self.fallbacks_path, self.site_path)
-        self.assertTrue(
-            site_data_is_current(self.catalogue_path, self.fallbacks_path, self.site_path)
-        )
-        missing_schedules_path = self.root / "missing-schedules.json"
-        self.assertIsNone(load_optional_schedules(missing_schedules_path))
-        self.assertNotIn(
-            "PARLIAMENT_STREAMS_SCHEDULES",
-            render_site_data(
-                self.catalogue_path,
-                self.fallbacks_path,
-                schedules_path=missing_schedules_path,
-            ),
-        )
-        self.assertTrue(
-            site_data_is_current(
-                self.catalogue_path,
-                self.fallbacks_path,
-                self.site_path,
-                schedules_path=missing_schedules_path,
-            )
-        )
-        self.site_path.write_text("stale", encoding="utf-8")
-        self.assertFalse(
-            site_data_is_current(self.catalogue_path, self.fallbacks_path, self.site_path)
-        )
+        self.assertIn("fallbacks", load_fallbacks(self.fallbacks_path))
 
         array_path = self.root / "array.json"
         array_path.write_text("[]", encoding="utf-8")
@@ -476,7 +426,6 @@ class ManagementTests(unittest.TestCase):
     def test_store_add_replace_update_remove_and_dry_runs(self):
         added = self.store.add(cloned_channel())
         self.assertEqual(len(added["channels"]), CANONICAL_CHANNEL_COUNT + 1)
-        self.assertTrue(self.site_path.exists())
         self.assertEqual(self.store.load()["channels"][-1]["id"], "test-assembly")
         with self.assertRaisesRegex(ValueError, "already exists"):
             self.store.add(cloned_channel())
@@ -509,8 +458,8 @@ class ManagementTests(unittest.TestCase):
         with self.assertRaisesRegex(KeyError, "Unknown catalogue id"):
             self.store.remove("missing")
 
-    def test_store_without_site_data_and_invalid_commit(self):
-        store = CatalogueStore(catalogue_path=self.catalogue_path, site_data_path=None)
+    def test_store_dry_run_and_invalid_commit(self):
+        store = CatalogueStore(catalogue_path=self.catalogue_path)
         preview = store.add(cloned_channel(), persist=False)
         self.assertEqual(len(preview["channels"]), CANONICAL_CHANNEL_COUNT + 1)
         invalid = canonical_catalogue()

@@ -93,11 +93,10 @@ revision, with another gate immediately before deployment. Scheduled runs do not
 fall back to an older passing revision. [Public-site behaviour](public-site.md) covers caching,
 map/search relationships, deployment and localization.
 
-`site/catalogue-data.js` is generated from `data/channels.json` so `site/index.html`
-can be opened directly from disk. Its retained schedule suffix is a dated local
-preview, not a current live snapshot; Pages publishes newly collected schedules.
-Do not edit it independently; run
-`make site-data` or use the catalogue manager.
+Browser code loads JSON through `site/data-loader.js`, which shares requests across
+page changes. Catalogue records live only in `data/channels.json`; no executable
+JavaScript copy is generated. Hosted pages read their own deployment's JSON.
+Direct-file previews fetch the published JSON from GitHub Pages over HTTPS.
 
 The Legislatures page has its own generation path:
 
@@ -106,18 +105,17 @@ flowchart TD
   I["Legislature inventory: institutions.json"] --> B["make institution-site-data"]
   C["Stream catalogue: channels.json"] --> B
   E["Retained chamber/service crosswalks and registered service reviews"] --> B
-  B --> S["site/institutions-data.js"]
+  B --> S["data/institutions.json"]
   S --> P["site/institutions.html + institutions.js"]
 ```
 
-The builder projects the full maintained inventory into a compact external
-script, joining exact catalogue IDs and dated evidence. It preserves exclusions,
+The builder projects the full maintained inventory into a compact JSON
+product, joining exact catalogue IDs and dated evidence. It preserves exclusions,
 holds and historical records; the public page applies status, country and search
 filters. Its default view is a subset of the retained records. A country's or
 parent legislature's viewing source is never automatically copied to a chamber.
 `make institution-site-data-check` detects drift; edit the inputs and regenerate
-the script instead of editing it directly. The same script supports hosted and
-direct-file previews.
+the JSON projection instead of editing it directly.
 
 `data/schedules.json` is a local generated now/next snapshot and is ignored by
 Git. GitHub Pages generates its own schedule snapshot during deployment.
@@ -150,7 +148,7 @@ evidence sanitization. Schedule adapters live in the explicit `scrapers/` regist
 
 `tools/` provides repository-maintenance commands, renderers, browser checks and
 asset assembly. For example, `tools/build_institution_site_data.py` renders the
-inventory projection into the public script; the monitor and service-baseline
+inventory projection into public JSON; the monitor and service-baseline
 builder reuse the package's projection logic. The Makefile and workflow commands
 remain stable entry points. [Development](development.md) covers setup and checks.
 
@@ -160,7 +158,7 @@ The public site is static:
 
 1. GitHub Pages serves the assembled static publication artifact.
 2. Catalogue, map and schedule surfaces load the published catalogue data;
-   the Legislatures page loads `institutions-data.js`.
+   the Legislatures page loads `data/institutions.json`.
 3. Schedule-aware pages optionally fetch the freshly published `data/schedules.json`.
 4. Catalogue surfaces fetch `data/fallbacks.json` for related fallback links and the fallback
    directory.
@@ -237,8 +235,8 @@ Prefer candidate records for new sources:
 4. Mark it `ready`.
 5. Promote it with `candidate-promote`.
 
-Promotion validates the full catalogue, updates `generated_on`, regenerates the
-site snapshot, and records the candidate outcome. Bulk manual edits are possible
+Promotion validates the full catalogue, updates `generated_on`, writes the
+catalogue JSON, and records the candidate outcome. Bulk manual edits are possible
 for reviewed maintenance, but they should be followed immediately by
 `make site-data` and `make verify`.
 

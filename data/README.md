@@ -44,18 +44,18 @@ not apply inventory edits, publish sources, create EPG parsers or grant rights.
 
 ## Generated Views
 
-- `make site-data` generates [site/catalogue-data.js](../site/catalogue-data.js)
-  for direct-file catalogue previews.
+- The browser loads [data/channels.json](channels.json) directly, without a
+  generated JavaScript copy.
 - `make institution-site-data` joins the inventory, exact catalogue matches,
   retained chamber/service crosswalks and registered reviews into
-  [site/institutions-data.js](../site/institutions-data.js), used by the
+  [data/institutions.json](institutions.json), used by the
   [Legislatures page](../site/institutions.html).
 - `data/schedules.json` is an ignored local collection snapshot. Pages collects
   its own schedules and generates the playlist, XMLTV and quality files in the
   publication artifact.
 
-Edit maintained inputs and regenerate their views. Keep generated scripts out
-of independent manual edits. `make verify` checks schemas, business rules,
+Edit maintained inputs and regenerate their views rather than editing generated
+data products independently. `make verify` checks schemas, business rules,
 review inputs and generated-data freshness; it does not certify current network
 availability or legal permission. [Catalogue maintenance](../docs/catalogue-maintenance.md)
 documents the review and promotion commands.

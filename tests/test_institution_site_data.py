@@ -23,7 +23,6 @@ from parliament_streams.inventory.projection import (
 )
 from parliament_streams.inventory.reviews import load_reviews
 from tools.build_institution_site_data import (
-    ASSIGNMENT,
     DEFAULT_CATALOGUE_PATH,
     DEFAULT_DIRECTORY_PATH,
     DEFAULT_INVENTORY_PATH,
@@ -377,7 +376,7 @@ class InstitutionSnapshotTests(unittest.TestCase):
                 file.write_text(json.dumps(data), encoding="utf-8")
             register = root / "register.json"
             register.write_text('{"eligible_bodies": []}', encoding="utf-8")
-            output = root / "snapshot.js"
+            output = root / "snapshot.json"
             arguments = [
                 "--inventory",
                 str(files[0]),
@@ -403,7 +402,7 @@ class InstitutionSnapshotTests(unittest.TestCase):
             with redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
                 main([*arguments, "--check"])
 
-    def test_source_text_cannot_terminate_an_embedded_script(self) -> None:
+    def test_source_text_round_trips_as_json(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             self.inventory["records"][0]["name"] = "Assembly </script>\u2028next\u2029line"
@@ -418,10 +417,7 @@ class InstitutionSnapshotTests(unittest.TestCase):
             ):
                 file.write_text(json.dumps(data), encoding="utf-8")
             rendered = render_site_data(*files)
-            self.assertNotIn("</script>", rendered)
-            self.assertNotIn("\u2028", rendered)
-            self.assertNotIn("\u2029", rendered)
-            payload = json.loads(rendered.split(ASSIGNMENT, 1)[1].removesuffix(";\n"))
+            payload = json.loads(rendered)
             row = next(row for row in payload["records"] if row["id"] == "national--ca-lc01")
             self.assertEqual(row["name"], self.inventory["records"][0]["name"])
 
@@ -505,16 +501,12 @@ class CurrentInstitutionSnapshotTests(unittest.TestCase):
                     rows[body["body_id"]]["catalogue_ids"], sorted(set(expected) & published_ids)
                 )
 
-    def test_generated_classic_script_matches_sources_and_has_no_fetch_or_module_dependency(
+    def test_generated_json_matches_sources(
         self,
     ) -> None:
         rendered = render_site_data()
         self.assertEqual(DEFAULT_TARGET_PATH.read_text(encoding="utf-8"), rendered)
-        self.assertIn(ASSIGNMENT, rendered)
-        self.assertNotIn("fetch(", rendered)
-        self.assertNotIn("\nexport ", rendered)
-        json_text = rendered.split(ASSIGNMENT, 1)[1].removesuffix(";\n")
-        self.assertEqual(json.loads(json_text), self.payload)
+        self.assertEqual(json.loads(rendered), self.payload)
         self.assertLess(len(rendered.encode("utf-8")), DEFAULT_INVENTORY_PATH.stat().st_size)
 
 

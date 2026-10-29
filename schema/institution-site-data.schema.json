@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/dlq/parliament-streams/schema/institution-site-data.schema.json",
   "title": "Generated public legislature inventory snapshot",
-  "description": "The projection published as site/institutions-data.js; raw research inventory validation remains separate.",
+  "description": "The projection published as data/institutions.json; raw research inventory validation remains separate.",
   "type": "object",
   "additionalProperties": false,
   "required": ["reviewed_on", "countries", "records", "scope"],

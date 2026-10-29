@@ -20,13 +20,13 @@ Development uses two deliberately separate toolchains:
 
 | Tooling | Responsibility |
 | --- | --- |
-| Python 3.11+ and `uv` | Catalogue CLI and mutations, JSON Schema and business-rule validation, site-data generation, scrapers, HTTP health checks, unit tests and coverage, Ruff formatting/linting, and mypy type checking. |
+| Python 3.11+ and `uv` | Catalogue CLI and mutations, JSON Schema and business-rule validation, inventory JSON generation, scrapers, HTTP health checks, unit tests and coverage, Ruff formatting/linting, and mypy type checking. |
 | Node.js 24+ and npm | Locked HLS.js/D3 browser-asset assembly, JavaScript unit tests, static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
 | Make | Stable command entry points that compose the Python and Node checks without hiding which toolchain runs them. |
 | Playwright Chromium | The downloaded browser used to test rendered desktop, intermediate-width, mobile, keyboard, and accessibility behavior. |
 
 Node assembles the browser libraries during installation. Python generates the
-catalogue snapshots; neither toolchain serves production traffic. The deployed GitHub Page is static HTML, CSS, JavaScript,
+public inventory JSON projection; neither toolchain serves production traffic. The deployed GitHub Page is static HTML, CSS, JavaScript,
 and JSON and requires neither Python nor Node at runtime.
 
 Install `uv`, Node.js 24 or newer, both locked development environments, and
@@ -78,7 +78,7 @@ make verify
 ```
 
 This runs JSON syntax plus schema/business-rule validation, checks that the
-direct-file site snapshot is current, checks Ruff formatting and linting, runs
+public inventory JSON projection is current, checks Ruff formatting and linting, runs
 strict mypy over production Python and Python tools, compiles Python modules,
 and runs Python tests through the coverage gate. It runs JavaScript unit tests
 once, validates the HTML and runs Axe plus browser
@@ -86,10 +86,10 @@ assertions for desktop and mobile semantics, keyboard focus, reflow, control
 contrast, and reduced-motion support. It does not rerun the Python suite without
 coverage or repeat the browser suite.
 
-After changing `data/channels.json`, refresh the direct-file snapshot with:
+After changing catalogue or inventory inputs, refresh public inventory matches with:
 
 ```sh
-make site-data
+make institution-site-data
 ```
 
 Format Python sources with:

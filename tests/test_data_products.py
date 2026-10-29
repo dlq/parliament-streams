@@ -46,6 +46,7 @@ class DataProductTests(unittest.TestCase):
         fallbacks["fallbacks"] = []
         write_json(self.directory / "fallbacks.json", fallbacks)
         shutil.copyfile(ROOT / "data/supranational.json", self.directory / "supranational.json")
+        shutil.copyfile(ROOT / "data/institutions.json", self.directory / "institutions.json")
         counts = {
             field: 0
             for field in load_json_object(ROOT / "schema/schedules.schema.json")["properties"][
@@ -344,6 +345,11 @@ class DataProductTests(unittest.TestCase):
         write_snapshot(self.directory / "schedules.json", snapshot)
         self.quality(lambda r: r["channels"][self.channel["id"]].update(source="uk-parliament"))
         with self.assertRaisesRegex(ValueError, "feed mapping"):
+            validate_data_products(self.directory)
+
+    def test_public_inventory_schema_is_enforced(self):
+        write_json(self.directory / "institutions.json", {"records": []})
+        with self.assertRaisesRegex(ValueError, "public legislature inventory"):
             validate_data_products(self.directory)
 
     def test_supranational_schema_and_unique_ids_are_enforced(self):

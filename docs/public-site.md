@@ -217,12 +217,15 @@ and schedule-source alerts close only on `ok` results, not empty data, warnings
 or reset counters.
 
 For a quick local preview, run `npm ci` once to prepare the browser libraries,
-then open `site/index.html` directly. The checked-in
-`site/catalogue-data.js` snapshot allows the page to work without a local
-server. It is generated from the canonical JSON and checked for drift by CI.
-The Legislatures page similarly reads `site/institutions-data.js`, generated
-from the operational institution register with `make institution-site-data`.
-`make institution-site-data-check` checks that snapshot for drift, and
+then open `site/index.html` directly. Direct-file pages fetch the published JSON
+from GitHub Pages over HTTPS and require an internet connection. They show
+published data, including schedules, rather than unpublished local edits.
+
+All pages share `data-loader.js`: catalogue, map and schedule requests reuse the
+same JSON response across page changes. The Data and methods page loads no
+catalogue data until a viewer is requested. Legislatures loads the derived
+`data/institutions.json` projection generated with `make institution-site-data`.
+`make institution-site-data-check` checks for drift, and
 `make institution-inventory-validate` checks the underlying register.
 The monthly [legislature inventory review](catalogue-maintenance.md#monthly-legislature-inventory-review)
 reports proposed institutional changes and source-access gaps for human review.
@@ -232,7 +235,7 @@ YouTube does not permit iframe playback from a `file://` page because it has no
 HTTP origin/referrer; the direct-file preview therefore shows a link to the
 public catalogue instead of a broken player.
 
-To preview the hosted data-loading path instead, serve the repository root:
+To preview unpublished local data changes, serve the repository root:
 
 ```sh
 make site
@@ -240,8 +243,8 @@ make site
 
 Then visit `http://localhost:8000/site/`. This HTTP preview also enables the
 official YouTube embeds. The served page requests the same
-canonical `data/channels.json` file used by the deployment workflow and falls
-back to the generated snapshot if that request is unavailable.
+canonical `data/channels.json` file used by the deployment workflow. There is no
+JavaScript data snapshot fallback.
 
 ## Languages
 

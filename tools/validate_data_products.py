@@ -34,7 +34,12 @@ def main(argv: list[str] | None = None) -> int:
         else:
             with TemporaryDirectory(prefix="parliament-products-") as temporary:
                 directory = Path(temporary)
-                for name in ("channels.json", "fallbacks.json", "supranational.json"):
+                for name in (
+                    "channels.json",
+                    "fallbacks.json",
+                    "supranational.json",
+                    "institutions.json",
+                ):
                     shutil.copyfile(ROOT / "data" / name, directory / name)
                 schedule_schema = load_json_object(SCHEMA_DIRECTORY / "schedules.schema.json")
                 snapshot = cast(

@@ -80,8 +80,9 @@ public page and dataset URLs, and workflow filenames/names stable when they are
 used as crosswalks, consumer interfaces or deployment-gate inputs. Historical
 country-name variants in an identifier are not instructions to rename an identity.
 
-Use `make catalogue-site-data` for catalogue snapshot generation;
-`make site-data` remains a compatible alias. `npm run check:browser` runs the local
+Use `make institution-site-data` to generate the public inventory JSON projection.
+`make site-data` remains an alias; the former `catalogue-site-data` targets now
+validate the catalogue, which the browser loads directly. `npm run check:browser` runs the local
 browser suite; the established accessibility commands remain compatible aliases.
 The former `tools/check_accessibility.mjs` path delegates to `tools/check_site.mjs`.
 `tools/deep_validate_browser.mjs` retains its established research entry point and

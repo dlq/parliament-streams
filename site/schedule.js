@@ -4,13 +4,6 @@ const { locales, message, readLocalePreference, supportedLocale, writeLocalePref
 const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
-const scriptUrl = document.currentScript?.src ?? window.location.href;
-const catalogueUrl = new URL("./data/channels.json", scriptUrl);
-const localCatalogueUrl = new URL("../data/channels.json", scriptUrl);
-const schedulesUrl = new URL("./data/schedules.json", scriptUrl);
-const localSchedulesUrl = new URL("../data/schedules.json", scriptUrl);
-const qualityUrl = new URL("./data/epg-quality.json", scriptUrl);
-const localQualityUrl = new URL("../data/epg-quality.json", scriptUrl);
 const query = new URLSearchParams(window.location.search);
 const locale = supportedLocale(query.get("lang") ?? readLocalePreference() ?? navigator.language);
 const state = { channels: [], schedules: {}, sources: {}, quality: {}, hasSnapshot: false, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", listingFilter: query.get("listings") ?? "" };
@@ -257,16 +250,6 @@ function renderFreshness() {
   if (elements.updated.classList.contains("is-stale")) elements.updated.textContent += ` · ${st("stale")}`;
 }
 
-async function fetchJson(primary, fallback) {
-  for (const url of [primary, fallback]) {
-    try {
-      const response = await fetch(url, { cache: "no-store" });
-      if (response.ok) return await response.json();
-    } catch { /* A missing optional publication product must not hide official links. */ }
-  }
-  return null;
-}
-
 function updateFilterUrl() {
   const url = new URL(window.location.href);
   for (const [key, value] of [["jurisdiction", state.jurisdiction], ["listings", state.listingFilter]]) {
@@ -294,12 +277,11 @@ async function init() {
     render();
   });
 
-  let catalogue = window.PARLIAMENT_STREAMS_CATALOGUE;
-  let snapshot = window.PARLIAMENT_STREAMS_SCHEDULES;
-  if (window.location.protocol !== "file:") {
-    catalogue = await fetchJson(catalogueUrl, localCatalogueUrl) ?? catalogue;
-    snapshot = await fetchJson(schedulesUrl, localSchedulesUrl) ?? snapshot;
-  }
+  const [catalogue, scheduleSnapshot] = await Promise.all([
+    window.ParliamentStreamsData.load("channels"),
+    window.ParliamentStreamsData.optional("schedules"),
+  ]);
+  let snapshot = scheduleSnapshot;
   if (!catalogue) throw new Error(t("sourceError"));
   // Official calendars remain usable if generated programme data is unavailable.
   state.hasSnapshot = Boolean(snapshot && typeof snapshot.channels === "object" && snapshot.channels !== null);
@@ -309,8 +291,7 @@ async function init() {
   state.sources = snapshot.sources ?? {};
   state.generatedAt = snapshot.generated_at ?? Object.values(state.schedules).map((item) => item.fetched_at).filter(Boolean).sort().at(-1) ?? null;
   if (snapshot.schema_version === 3) {
-    const quality = window.PARLIAMENT_STREAMS_EPG_QUALITY
-      ?? (window.location.protocol !== "file:" ? await fetchJson(qualityUrl, localQualityUrl) : null);
+    const quality = await window.ParliamentStreamsData.optional("epg-quality");
     // Do not combine coverage from a different scheduled publication window.
     if (quality?.schema_version === 1 && quality.generated_at === state.generatedAt) {
       state.quality = quality.coverage?.channels ?? {};

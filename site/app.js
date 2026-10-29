@@ -1,17 +1,9 @@
 (() => {
-// The deployed Pages artifact places its JSON beside this script; local server
-// previews serve the repository's data directory one level above site/.
+// Catalogue controls and the persistent viewer share the JSON product cache.
 const { locales, localizedLabel, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
 const { message: mapMessage, countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
-const appScriptUrl = document.currentScript?.src ?? window.location.href;
-const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
-const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
-const fallbacksUrl = new URL("./data/fallbacks.json", appScriptUrl);
-const localFallbacksUrl = new URL("../data/fallbacks.json", appScriptUrl);
-const schedulesUrl = new URL("./data/schedules.json", appScriptUrl);
-const localSchedulesUrl = new URL("../data/schedules.json", appScriptUrl);
 const redundantAccessibilityNotes = new Set([
   "The official service provides accessible variants for some scheduled proceedings.",
   "The official service provides language and accessibility variants for some scheduled proceedings.",
@@ -1087,46 +1079,26 @@ async function startPlayback(channel) {
     frame.innerHTML = `<div class="player-placeholder"><p>${t("playbackError")} <a href="${channel.official_url}" target="_blank" rel="noreferrer">${t("official")} ↗</a></p></div>`;
   }
 }
-async function init() {
-  try {
-    let catalogue = window.PARLIAMENT_STREAMS_CATALOGUE;
-    if (window.location.protocol !== "file:") {
-      let response = await fetch(catalogueUrl, { cache: "no-store" });
-      if (!response.ok && catalogueUrl.href !== localCatalogueUrl.href) {
-        response = await fetch(localCatalogueUrl, { cache: "no-store" });
-      }
-      if (response.ok) catalogue = await response.json();
-    }
-    if (!catalogue) throw new Error("Catalogue data is unavailable.");
+let dataReady;
+function loadData() {
+  if (!dataReady) dataReady = (async () => {
+    const [catalogue, fallbacks, schedules] = await Promise.all([
+      window.ParliamentStreamsData.load("channels"),
+      window.ParliamentStreamsData.optional("fallbacks"),
+      window.ParliamentStreamsData.optional("schedules"),
+    ]);
     state.channels = catalogue.channels;
-    let fallbackCatalogue = window.PARLIAMENT_STREAMS_FALLBACKS;
-    if (window.location.protocol !== "file:") {
-      try {
-        let fallbackResponse = await fetch(fallbacksUrl, { cache: "no-store" });
-        if (!fallbackResponse.ok && fallbacksUrl.href !== localFallbacksUrl.href) {
-          fallbackResponse = await fetch(localFallbacksUrl, { cache: "no-store" });
-        }
-        if (fallbackResponse.ok) fallbackCatalogue = await fallbackResponse.json();
-      } catch {
-        fallbackCatalogue = null;
-      }
-    }
-    state.fallbacks = fallbackCatalogue?.fallbacks ?? [];
-    if (window.location.protocol !== "file:") {
-      try {
-        let scheduleResponse = await fetch(schedulesUrl, { cache: "no-store" });
-        if (!scheduleResponse.ok && schedulesUrl.href !== localSchedulesUrl.href) {
-          scheduleResponse = await fetch(localSchedulesUrl, { cache: "no-store" });
-        }
-        if (scheduleResponse.ok) {
-          const scheduleSnapshot = await scheduleResponse.json();
-          state.schedules = scheduleSnapshot.channels ?? {};
-        }
-      } catch {
-        state.schedules = {};
-      }
-    }
+    state.fallbacks = fallbacks?.fallbacks ?? [];
+    state.schedules = schedules?.channels ?? {};
     state.generatedOn = catalogue.generated_on;
+  })().catch((error) => { dataReady = null; throw error; });
+  return dataReady;
+}
+async function init() {
+  bindElements();
+  if (!elements.list) return;
+  try {
+    await loadData();
     mountPage();
   } catch (error) {
     if (elements.stats) elements.stats.textContent = t("sourceError");
@@ -1168,8 +1140,8 @@ function mountPage() {
 const ready = init();
 window.ParliamentStreamsViewer = {
   ready,
-  async open(id, options) { await ready; openSource(id, options); },
-  async mount() { await ready; mountPage(); },
+  async open(id, options) { await loadData(); openSource(id, options); },
+  async mount() { await ready; if (document.querySelector("#channel-list")) await loadData(); mountPage(); },
 };
 matchMedia("(max-width: 680px)").addEventListener("change", (event) => syncFilterDisclosure(event));
 matchMedia("(max-width: 1100px)").addEventListener("change", () => {

@@ -43,7 +43,7 @@ exact catalogue matches, retained national-chamber/service crosswalks and
 registered service reviews:
 
 `institutions.json` + reviewed supporting inputs → `make institution-site-data`
-→ [site/institutions-data.js](../../site/institutions-data.js)
+→ [data/institutions.json](../institutions.json)
 → [Legislatures page](../../site/institutions.html).
 
 The generated file preserves all authority statuses; the page's default filter

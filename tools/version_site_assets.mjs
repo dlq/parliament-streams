@@ -9,6 +9,7 @@ const pages = (await readdir(directory)).filter((name) => name.endsWith(".html")
 for (const page of pages) {
   const path = join(directory, page);
   let html = await readFile(path, "utf8");
+  html = html.replace('name="parliament-data-root" content="../data/"', 'name="parliament-data-root" content="./data/"');
   const attributes = [...html.matchAll(/<(?:script\b[^>]*\bsrc|link\b[^>]*\bhref)="([^"]+\.(?:js|css)(?:\?[^"]*)?)"/g)];
   for (const [, asset] of attributes) {
     if (/^(?:[a-z]+:|\/\/|\/)/i.test(asset)) continue;

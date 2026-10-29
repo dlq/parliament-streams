@@ -5,13 +5,9 @@ const { jurisdictionName: localizedJurisdictionName, message: mapMessage, source
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
-const catalogueUrl = new URL("./data/channels.json", appScriptUrl);
-const localCatalogueUrl = new URL("../data/channels.json", appScriptUrl);
 const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261025-holds", appScriptUrl);
 const subnationalGeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261025-holds", appScriptUrl);
 const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261025-holds", appScriptUrl);
-const supranationalUrl = new URL("./data/supranational.json", appScriptUrl);
-const localSupranationalUrl = new URL("../data/supranational.json", appScriptUrl);
 
 
 
@@ -723,16 +719,10 @@ async function init() {
     else window.location.search = params.toString();
   });
 
-  let catalogue = window.PARLIAMENT_STREAMS_CATALOGUE;
-  let supranational = window.PARLIAMENT_STREAMS_SUPRANATIONAL;
-  if (window.location.protocol !== "file:") {
-    let response = await fetch(catalogueUrl, { cache: "no-store" });
-    if (!response.ok) response = await fetch(localCatalogueUrl, { cache: "no-store" });
-    if (response.ok) catalogue = await response.json();
-    let supranationalResponse = await fetch(supranationalUrl, { cache: "no-store" });
-    if (!supranationalResponse.ok) supranationalResponse = await fetch(localSupranationalUrl, { cache: "no-store" });
-    if (supranationalResponse.ok) supranational = await supranationalResponse.json();
-  }
+  const [catalogue, supranational] = await Promise.all([
+    window.ParliamentStreamsData.load("channels"),
+    window.ParliamentStreamsData.load("supranational"),
+  ]);
   if (!catalogue || !supranational) throw new Error(mt("mapUnavailable"));
   state.channels = catalogue.channels;
   state.supranational = supranational.organizations;

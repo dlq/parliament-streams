@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-28 — Load Public Data as JSON
+
+- Remove executable catalogue and legislature data copies. Load canonical catalogue
+  JSON and the schema-validated public `data/institutions.json` projection through
+  a shared request cache, preserving playback across navigation.
+- Avoid catalogue requests on Data and methods until the viewer is opened;
+  direct-file previews fetch the published JSON from GitHub Pages.
+- Keep the language selector sized to its longest option from first paint through
+  page and language changes, including mobile layouts.
+- Update publication assembly, data-product validation, regression tests and docs.
+
 ## 2026-10-28 — Expand the Data Guide and Refresh Documentation
 
 - Expand Data and methods with published and supporting data, linked methods,

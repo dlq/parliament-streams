@@ -69,7 +69,8 @@ make site
 
 Open [localhost:8000/site/](http://localhost:8000/site/). `npm ci` assembles the
 locked HLS.js and D3 assets; `make site` serves the checkout with Python’s HTTP
-server. The preview includes the maintained catalogue and inventory snapshots.
+server for previewing unpublished local JSON changes. You can also open
+`site/index.html` directly: it fetches published JSON from GitHub Pages over HTTPS.
 Live schedules are generated separately and are not included in a fresh checkout.
 
 For Python tooling and the complete checks, use Python 3.11+ and `uv`, alongside
@@ -106,8 +107,8 @@ baseline; they are not an absolute catalogue restriction. See
 [inclusion rules](docs/catalogue-scope.md) and [research status](docs/research-status.md).
 
 New source records normally start in `candidates/`, then undergo review and
-validation before promotion. Edit maintained inputs and regenerate their views;
-do not edit `site/catalogue-data.js` or `site/institutions-data.js` independently.
+validation before promotion. Catalogue JSON is loaded directly; regenerate the
+public `data/institutions.json` projection after changing its inventory inputs.
 
 | Topic | Guide |
 | --- | --- |

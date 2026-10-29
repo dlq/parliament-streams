@@ -63,4 +63,4 @@ jobs:
         run: >-
           make json-check fallbacks-validate discovery-targets-validate
           us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check
-          validation-history-check catalogue-site-data-check institution-site-data-check data-products-check compile coverage test-js
+          validation-history-check institution-site-data-check data-products-check compile coverage test-js

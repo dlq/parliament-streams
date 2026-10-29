@@ -601,6 +601,6 @@ When a reply arrives:
    [docs/source-rights-and-permissions.md](source-rights-and-permissions.md).
 3. Update `data/channels.json` only if the reply clearly supports a status
    change.
-4. Regenerate `site/catalogue-data.js`.
+4. Run `make institution-site-data` to refresh inventory catalogue matches.
 5. Update the relevant review-queue report or create a successor report.
 6. Run `make verify`.
