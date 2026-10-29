@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-29 — Clarify Zoomed Map Presentation
+
+- Replace tiny-area circles with the actual regional outline once it is readable
+  at the current zoom; preserve keyboard focus and a single accessible target.
+- Load detailed Natural Earth national context only for visible regional-parent
+  countries at zoom level two and above. Keep the small initial world overview;
+  reduce coarse national/regional coastline mismatches in zoomed views.
+- Use a non-scaling boundary stroke for keyboard focus instead of an SVG
+  bounding-box outline that grows into an oversized frame at high zoom.
+- Retain source metadata, a rebuild tool and tests for detailed context identity,
+  geographic winding, marker handoff and keyboard navigation.
+
 ## 2026-10-29 — Correct Regional Map Geometry
 
 - Remove the unrelated Maltese Victoria polygon from Australia's Victoria;

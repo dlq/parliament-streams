@@ -50,7 +50,7 @@
 .map-location-marker:hover, .map-location-marker:focus { stroke: var(--ink); stroke-width: 2.4; outline: none; }
 .map-location-marker.is-selected { stroke: var(--red); }
 #world-map [role="button"][aria-pressed="true"] { stroke: var(--ink); stroke-width: 1.8; stroke-dasharray: 4 2; }
-#world-map [role="button"]:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; stroke: var(--ink); stroke-width: 2.4; }
+#world-map [role="button"]:focus-visible { outline: none; stroke: var(--ink); stroke-width: 2.4; vector-effect: non-scaling-stroke; }
 .map-location-note { margin: .8rem 0; padding: .65rem .8rem; border-inline-start: 3px solid var(--green); background: var(--green-wash); font-size: .76rem; line-height: 1.5; }
 .map-location-note p { margin: 0 0 .45rem; }
 .map-location-note a { color: var(--red); overflow-wrap: anywhere; }

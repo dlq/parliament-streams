@@ -1,0 +1,212 @@
+{
+  "source": {
+    "dataset": "Natural Earth Admin 0 Countries v5.1.1, 1:10 million",
+    "url": "https://github.com/nvkelso/natural-earth-vector/blob/v5.1.1/geojson/ne_10m_admin_0_countries.geojson",
+    "sha256": "239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255",
+    "license": "Public domain",
+    "changes": "Preserve existing navigation identities; detailed polygons, topology-preserving simplification at at most 0.005 degrees, component-interior checks, D3 winding. No ODbL-derived geometry is incorporated."
+  },
+  "description": "Detailed national context loaded only for visible countries at regional zoom.",
+  "countries": [
+    {
+      "code": "AR",
+      "file": "countries/AR.geojson",
+      "bytes": 56668
+    },
+    {
+      "code": "AT",
+      "file": "countries/AT.geojson",
+      "bytes": 10276
+    },
+    {
+      "code": "AU",
+      "file": "countries/AU.geojson",
+      "bytes": 164841
+    },
+    {
+      "code": "BE",
+      "file": "countries/BE.geojson",
+      "bytes": 6447
+    },
+    {
+      "code": "BM",
+      "file": "countries/BM.geojson",
+      "bytes": 1028
+    },
+    {
+      "code": "BR",
+      "file": "countries/BR.geojson",
+      "bytes": 126230
+    },
+    {
+      "code": "CA",
+      "file": "countries/CA.geojson",
+      "bytes": 873005
+    },
+    {
+      "code": "CH",
+      "file": "countries/CH.geojson",
+      "bytes": 7359
+    },
+    {
+      "code": "CO",
+      "file": "countries/CO.geojson",
+      "bytes": 67102
+    },
+    {
+      "code": "CZ",
+      "file": "countries/CZ.geojson",
+      "bytes": 9618
+    },
+    {
+      "code": "DE",
+      "file": "countries/DE.geojson",
+      "bytes": 31186
+    },
+    {
+      "code": "ES",
+      "file": "countries/ES.geojson",
+      "bytes": 63609
+    },
+    {
+      "code": "FI",
+      "file": "countries/FI.geojson",
+      "bytes": 37401
+    },
+    {
+      "code": "FR",
+      "file": "countries/FR.geojson",
+      "bytes": 48540
+    },
+    {
+      "code": "GB",
+      "file": "countries/GB.geojson",
+      "bytes": 147578
+    },
+    {
+      "code": "GG",
+      "file": "countries/GG.geojson",
+      "bytes": 845
+    },
+    {
+      "code": "GI",
+      "file": "countries/GI.geojson",
+      "bytes": 309
+    },
+    {
+      "code": "GU",
+      "file": "countries/GU.geojson",
+      "bytes": 768
+    },
+    {
+      "code": "ID",
+      "file": "countries/ID.geojson",
+      "bytes": 223034
+    },
+    {
+      "code": "IM",
+      "file": "countries/IM.geojson",
+      "bytes": 906
+    },
+    {
+      "code": "IN",
+      "file": "countries/IN.geojson",
+      "bytes": 85021
+    },
+    {
+      "code": "IT",
+      "file": "countries/IT.geojson",
+      "bytes": 50510
+    },
+    {
+      "code": "JE",
+      "file": "countries/JE.geojson",
+      "bytes": 587
+    },
+    {
+      "code": "JP",
+      "file": "countries/JP.geojson",
+      "bytes": 86220
+    },
+    {
+      "code": "KR",
+      "file": "countries/KR.geojson",
+      "bytes": 33451
+    },
+    {
+      "code": "KY",
+      "file": "countries/KY.geojson",
+      "bytes": 1243
+    },
+    {
+      "code": "MS",
+      "file": "countries/MS.geojson",
+      "bytes": 456
+    },
+    {
+      "code": "MX",
+      "file": "countries/MX.geojson",
+      "bytes": 158567
+    },
+    {
+      "code": "NL",
+      "file": "countries/NL.geojson",
+      "bytes": 9780
+    },
+    {
+      "code": "PL",
+      "file": "countries/PL.geojson",
+      "bytes": 13991
+    },
+    {
+      "code": "PR",
+      "file": "countries/PR.geojson",
+      "bytes": 3837
+    },
+    {
+      "code": "PT",
+      "file": "countries/PT.geojson",
+      "bytes": 19465
+    },
+    {
+      "code": "SX",
+      "file": "countries/SX.geojson",
+      "bytes": 363
+    },
+    {
+      "code": "TC",
+      "file": "countries/TC.geojson",
+      "bytes": 3759
+    },
+    {
+      "code": "TW",
+      "file": "countries/TW.geojson",
+      "bytes": 6021
+    },
+    {
+      "code": "US",
+      "file": "countries/US.geojson",
+      "bytes": 720028
+    },
+    {
+      "code": "UY",
+      "file": "countries/UY.geojson",
+      "bytes": 7401
+    },
+    {
+      "code": "VG",
+      "file": "countries/VG.geojson",
+      "bytes": 1312
+    },
+    {
+      "code": "VI",
+      "file": "countries/VI.geojson",
+      "bytes": 1232
+    },
+    {
+      "code": "ZA",
+      "file": "countries/ZA.geojson",
+      "bytes": 23788
+    }
+  ]
+}

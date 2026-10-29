@@ -2,6 +2,22 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Zoomed Map Presentation — 29 October 2026
+
+Small-area circles now hand over to the actual polygon at the current zoom,
+preserving one accessible target and keyboard focus. The desktop Europe check
+reduces 57 overview markers to eight active markers at regional zoom. Focus uses
+a constant-width boundary stroke instead of a zoom-enlarged SVG outline box.
+
+The initial 1:110m world overview is retained for loading cost. At zoom scale two
+and above, the map loads visible relevant 1:10m national context files from the
+same Natural Earth release used for most regional polygons. Forty context files
+are available, totaling 3.10 MB uncompressed; they are fetched individually and
+are not part of the initial map requests. They reduce the large coastline mismatch
+in the tested Europe, Japan and Sicily views. Different-source regional edges
+and countries outside this context set retain their documented limits.
+[Sources and rebuild method](../site/assets/maps/ATTRIBUTION.md#detailed-national-context-at-regional-zoom--29-october-2026).
+
 ## Map Geometry Corrections — 29 October 2026
 
 The geometry audit found an unrelated Maltese Victoria component in Australia's

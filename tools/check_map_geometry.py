@@ -31,6 +31,18 @@ def main() -> None:
         for props, geometry in areas
         if not geometry.is_valid or geometry.is_empty
     ]
+    contexts = [
+        json.loads(path.read_text()) for path in sorted((root / "countries").glob("*.geojson"))
+    ]
+    for feature in contexts:
+        geometry = shape(feature["geometry"])
+        if not geometry.is_valid or geometry.is_empty:
+            invalid.append(
+                {
+                    "name": f"national context: {feature['properties']['name']}",
+                    "reason": explain_validity(geometry),
+                }
+            )
     overlaps = []
     for (left, a), (right, b) in itertools.combinations(areas, 2):
         if left["parent_code"] != right["parent_code"]:
@@ -47,7 +59,13 @@ def main() -> None:
             )
     print(
         json.dumps(
-            {"outlines": len(areas), "invalid": invalid, "overlap_review": overlaps}, indent=2
+            {
+                "outlines": len(areas),
+                "country_context_outlines": len(contexts),
+                "invalid": invalid,
+                "overlap_review": overlaps,
+            },
+            indent=2,
         )
     )
     if invalid:

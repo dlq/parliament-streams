@@ -1247,7 +1247,13 @@ try {
   assert.equal(await selectedShape.evaluate((element) => document.activeElement === element), false);
   const focusedShape = mapPage.locator('#world-map [role="button"][tabindex="0"]');
   assert.equal(await focusedShape.evaluate((element) => document.activeElement === element), true);
-  assert.notEqual(await focusedShape.evaluate((element) => getComputedStyle(element).outlineStyle), "none");
+  const mapFocusStyle = await focusedShape.evaluate((element) => {
+    const style = getComputedStyle(element);
+    return { strokeWidth: Number.parseFloat(style.strokeWidth), vectorEffect: style.vectorEffect, outline: style.outlineStyle };
+  });
+  assert(mapFocusStyle.strokeWidth >= 2, "Map keyboard focus needs a visible boundary stroke");
+  assert.equal(mapFocusStyle.vectorEffect, "non-scaling-stroke", "Focus strokes must not grow with zoom");
+  assert.equal(mapFocusStyle.outline, "none", "SVG bounding-box outlines must not obscure nearby regions when zoomed");
   assert.equal(await mapPage.locator("#map-detail h2").innerText(), "Alberta", "Arrow browsing must not change the selection");
   await focusedShape.press("Home");
   assert.equal(await mapPage.locator('#world-map [role="button"][tabindex="0"]').evaluate((element) => document.activeElement === element), true);
@@ -1268,6 +1274,28 @@ try {
   assert.match(await mapPage.locator("#map-detail").innerText(), /Member States/i);
   assert.match(await mapPage.locator(".map-viewport").getAttribute("transform"), /scale\(1\)/);
   await mapPage.getByRole("button", { name: "All coverage", exact: true }).click();
+  // Tiny-area circles give way to the actual outline as it becomes readable.
+  // Keyboard focus must follow the representation change without duplicates.
+  await mapPage.locator("#zoom-reset").click();
+  await mapPage.waitForTimeout(300);
+  const overviewMarkerCount = await mapPage.locator('.map-region-marker[role="button"]').count();
+  const detailBeforeMarkerZoom = await mapPage.locator("#map-detail h2").innerText();
+  const juraMarker = mapPage.locator('.map-region-marker[data-map-key="region:Jura"]');
+  await juraMarker.focus();
+  const juraMarkerBox = await juraMarker.boundingBox();
+  await mapPage.mouse.move(juraMarkerBox.x + juraMarkerBox.width / 2, juraMarkerBox.y + juraMarkerBox.height / 2);
+  await mapPage.mouse.wheel(0, -1500);
+  await mapPage.waitForTimeout(400);
+  const juraOutline = mapPage.locator('.map-region[data-map-key="region:Jura"]');
+  assert.equal(await juraMarker.isVisible(), false, "A readable outline no longer needs a circle");
+  assert.equal(await juraOutline.getAttribute("role"), "button");
+  assert(await mapPage.locator('.map-region-marker[role="button"]').count() < overviewMarkerCount);
+  assert.equal(await juraOutline.evaluate((element) => document.activeElement === element), true);
+  assert.equal(await mapPage.locator('[data-map-key="region:Jura"][role="button"]').count(), 1);
+  await juraOutline.press("ArrowRight");
+  assert.match(await mapPage.locator(".map-viewport").getAttribute("transform"), /scale\(1\)/);
+  assert.equal(await mapPage.locator('#world-map [role="button"][tabindex="0"]').evaluate((element) => document.activeElement === element), true);
+  assert.equal(await mapPage.locator("#map-detail h2").innerText(), detailBeforeMarkerZoom);
   // Nearby institution seats must remain distinct pointer targets while zooming.
   for (const feature of institutionLocationFeatures) {
     const name = feature.properties.name;

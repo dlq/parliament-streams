@@ -10,6 +10,13 @@ ones. The coverage map includes all published subnational jurisdictions, with
 location dots for tiny outlines. Shared search associations preserve territorial
 relationships without presenting Crown Dependencies as UK subdivisions.
 
+Tiny-area dots give way to the actual outline as it becomes readable on zoom;
+keyboard focus follows that change. The initial map uses a small world overview.
+At regional zoom, detailed national context is fetched only for visible relevant
+parent countries, reducing the mismatched coastlines caused by the coarse
+overview. The [map attribution](../site/assets/maps/ATTRIBUTION.md) records
+sources, display transformations and remaining source-alignment limits.
+
 The [Data and methods page](https://dlq.ca/parliament-streams/data.html) explains
 four separate stages: the legislature research inventory, viewing-source
 catalogue, checks and review, and generated products. Its public directory links catalogue and inventory JSON, schedules, guide quality,

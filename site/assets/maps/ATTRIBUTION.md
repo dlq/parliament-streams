@@ -1,7 +1,10 @@
 # Map data
 
 Country boundaries in `countries-110m.geojson` are derived from Natural Earth's
-1:110m Admin 0 Countries dataset. The documented subdivision boundaries in
+1:110m Admin 0 Countries dataset and remain the initial world overview. At
+regional zoom, the map loads the relevant detailed national context from
+`countries/`, derived from Natural Earth Admin 0 Countries v5.1.1 at 1:10m.
+The documented subdivision boundaries in
 `documented-admin1.geojson` are extracted from Natural Earth's 1:10m Admin 1
 States and Provinces dataset. Natural Earth data is in the public domain.
 Current exceptions include official Swiss cantonal geometry, official Finnish geometry for Åland, and attributed county aggregation for Daegu and Gyeongsangbuk. The dated notes below retain earlier provenance; the 29 October correction section supersedes their geometry choices where named.
@@ -285,3 +288,42 @@ display derivative and records the input SHA-256, per-country applied tolerances
 and unchanged groups in the output. This makes the file-to-file transformation
 repeatable; it does not provide an automatic upstream boundary refresh pipeline.
 No new browser dependency or runtime API is introduced.
+
+## Detailed national context at regional zoom — 29 October 2026
+
+Using only the 1:110m overview behind 1:10m regional polygons produced conspicuous
+coastline mismatches, slivers and apparent gaps. Forty national-context files in
+`countries/` now provide finer background outlines for the documented regional
+and institutional-location parent codes. The browser loads only visible relevant
+countries at zoom scale two or above, and retains them for that map page's
+lifetime. Country identity, grouping and selection are unchanged.
+
+Source: [Natural Earth Admin 0 Countries v5.1.1 GeoJSON](https://github.com/nvkelso/natural-earth-vector/blob/v5.1.1/geojson/ne_10m_admin_0_countries.geojson),
+public domain. [Index and source SHA-256](country-detail-index.json) lists all
+files and their byte sizes. Each feature retains its source Admin 0 identifier
+and applied display tolerance. No geoBoundaries/ODbL geometry is copied into
+these public-domain country files.
+
+Processing selects a single country by its primary ISO identity, or an explicit
+name match when a fallback ISO code is shared by dependencies. The selected
+mainland identity is checked for Australia, Brazil and France. It preserves the existing
+navigation identity, applies Shapely 2.2.0 topology-preserving simplification
+starting at 0.005 degrees and reduces the tolerance until all source polygon
+components and their interior representative points are retained. Winding is
+normalized for D3. The optional offline rebuild command is:
+
+```sh
+uv run tools/build_country_context.py ne_10m_admin_0_countries.geojson
+```
+
+The detailed files total about 3.10 MB uncompressed across all forty countries;
+they are not fetched together or added to the initial map load. Countries outside
+this regional-parent set retain the coarse world overview. These context layers
+reduce visible scale mismatch; they do not claim a single exact shared topology
+with the separately sourced Swiss, Finnish, Korean or island outlines, nor a
+current cadastral survey or resolution of disputed territorial status.
+
+Small-area circles are presentation aids, separate from the outline data. Their
+screen-space need is now recalculated during zoom. A circle disappears once the
+outline is at least four screen pixels across; tiny remaining areas keep a
+constant-size circle. Institution-location diamonds retain their distinct scope.

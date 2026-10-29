@@ -23,6 +23,36 @@ const fallbackCountryNames = {
 const query = new URLSearchParams(window.location.search);
 const locale = window.ParliamentStreamsPageLocale.current();
 const state = { channels: [], supranational: [], geometry: null, subnationalGeometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null, mapFocusKey: null };
+const detailedCountries = new Map();
+const countryDetailRequests = new Set();
+
+async function loadVisibleCountryDetails() {
+  const transform = d3.zoomTransform(elements.map);
+  if (transform.k < 2 || pageSignal?.aborted) return;
+  const parents = new Set(state.subnationalGeometry.features.map((feature) => feature.properties.parent_code));
+  const { width, height } = mapDimensions();
+  await Promise.all(state.geometry.features.map(async (feature) => {
+    const code = canonicalFeatureCode(feature);
+    if (!parents.has(code) || countryDetailRequests.has(code)) return;
+    const [[x0, y0], [x1, y1]] = state.mapPath.bounds(feature);
+    if (x1 * transform.k + transform.x < 0 || x0 * transform.k + transform.x > width
+      || y1 * transform.k + transform.y < 0 || y0 * transform.k + transform.y > height) return;
+    countryDetailRequests.add(code);
+    try {
+      const url = new URL(`./assets/maps/countries/${code}.geojson?v=20261029-context`, appScriptUrl);
+      const detail = await d3.json(url, { signal: pageSignal });
+      if (pageSignal?.aborted) return;
+      detailedCountries.set(code, detail);
+      d3.select(elements.map).selectAll(".map-country")
+        .filter((country) => canonicalFeatureCode(country) === code)
+        .attr("d", state.mapPath(detail))
+        .attr("data-context-resolution", "detail");
+    } catch (error) {
+      countryDetailRequests.delete(code);
+      if (!pageSignal?.aborted) console.warn(`Detailed map context unavailable for ${code}`, error);
+    }
+  }));
+}
 const { escapeHtml } = window.ParliamentStreamsSourceUI.create(() => state.locale);
 
 const elements = {
@@ -446,6 +476,37 @@ function mapButtons() {
     .sort((left, right) => left.getAttribute("aria-label").localeCompare(right.getAttribute("aria-label"), state.locale));
 }
 
+function updateRegionMarkers(svg, scale) {
+  const active = document.activeElement;
+  const outlines = new Map(svg.selectAll(".map-region").nodes()
+    .map((node) => [node.dataset.jurisdiction, node]));
+  let changed = false;
+  svg.selectAll(".map-region-marker").each(function (feature) {
+    const outline = outlines.get(feature.properties.name);
+    const showMarker = Number(outline.dataset.outlineSize) * scale < 4;
+    const marker = d3.select(this).attr("r", 3.5 / scale);
+    if ((this.getAttribute("role") === "button") === showMarker) return;
+    changed = true;
+    marker.attr("visibility", showMarker ? null : "hidden")
+      .attr("aria-hidden", showMarker ? null : "true")
+      .attr("role", showMarker ? "button" : null)
+      .attr("tabindex", showMarker ? -1 : null)
+      .attr("aria-pressed", showMarker ? String(feature.properties.name === state.selectedRegion) : null);
+    d3.select(outline).attr("role", showMarker ? null : "button")
+      .attr("tabindex", showMarker ? null : -1)
+      .attr("aria-hidden", showMarker ? "true" : null)
+      .attr("aria-label", showMarker ? null : this.getAttribute("aria-label"))
+      .attr("aria-pressed", showMarker ? null : String(feature.properties.name === state.selectedRegion));
+  });
+  if (!changed) return;
+  if (active?.dataset.mapKey) state.mapFocusKey = active.dataset.mapKey;
+  updateMapTabStops();
+  if (active?.dataset.mapKey && active.getAttribute("role") !== "button") {
+    mapButtons().find((button) => button.dataset.mapKey === active.dataset.mapKey)
+      ?.focus({ preventScroll: true });
+  }
+}
+
 function updateMapTabStops() {
   const buttons = mapButtons();
   const current = buttons.find((button) => button.dataset.mapKey === state.mapFocusKey)
@@ -465,14 +526,15 @@ function navigateMap(event) {
   const index = buttons.indexOf(current);
   const next = event.key === "Home" ? 0 : event.key === "End" ? buttons.length - 1
     : (index + (["ArrowLeft", "ArrowUp"].includes(event.key) ? -1 : 1) + buttons.length) % buttons.length;
+  const nextKey = buttons[next].dataset.mapKey;
   // Browsing may cross continents. A zoomed viewport must not hide the next
   // keyboard target; overview navigation leaves selection unchanged.
   if (state.zoom && d3.zoomTransform(elements.map).k !== 1) {
     d3.select(elements.map).interrupt().call(state.zoom.transform, d3.zoomIdentity);
   }
-  state.mapFocusKey = buttons[next].dataset.mapKey;
+  state.mapFocusKey = nextKey;
   updateMapTabStops();
-  buttons[next].focus({ preventScroll: true });
+  mapButtons().find((button) => button.dataset.mapKey === nextKey)?.focus({ preventScroll: true });
 }
 
 function renderMap() {
@@ -501,7 +563,8 @@ function renderMap() {
       const isSelectedMember = isMember && code === state.selectedSupranationalCountry;
       return ["map-country", state.mode !== "supranational" && covered.has(code) && "is-documented", subnationalContext && "is-context", state.mode !== "supranational" && code === state.selectedCode && covered.has(code) && !state.selectedRegion && "is-selected", state.mode === "supranational" && !isMember && "is-muted", isMember && "is-member", isDocumentedMember && "is-documented", isSelectedMember && "is-selected"].filter(Boolean).join(" ");
     })
-    .attr("d", path)
+    .attr("d", (feature) => path(detailedCountries.get(canonicalFeatureCode(feature)) ?? feature))
+    .attr("data-context-resolution", (feature) => detailedCountries.has(canonicalFeatureCode(feature)) ? "detail" : "overview")
     .attr("role", (feature) => (state.mode === "supranational" ? members : covered).has(canonicalFeatureCode(feature)) ? "button" : null)
     .attr("tabindex", (feature) => (state.mode === "supranational" ? members : covered).has(canonicalFeatureCode(feature)) ? -1 : null)
     .attr("data-map-key", (feature) => `country:${canonicalFeatureCode(feature)}`)
@@ -526,12 +589,13 @@ function renderMap() {
   let regionLayer = viewport.select("g.map-regions");
   if (regionLayer.empty()) regionLayer = viewport.append("g").attr("class", "map-regions");
   const showRegions = state.mode === "all" || state.mode === "subnational";
-  const needsMarker = (feature) => {
-    const [[x0, y0], [x1, y1]] = path.bounds(feature);
-    return Math.max(x1 - x0, y1 - y0) < 4;
-  };
-  const regionLabel = (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("documented")}, ${levelLabel("subnational")}`;
   const areaFeatures = showRegions ? state.subnationalGeometry.features.filter((feature) => feature.geometry.type === "MultiPolygon") : [];
+  const outlineSizes = new Map(areaFeatures.map((feature) => {
+    const [[x0, y0], [x1, y1]] = path.bounds(feature);
+    return [feature, Math.max(x1 - x0, y1 - y0)];
+  }));
+  const needsMarker = (feature) => outlineSizes.get(feature) < 4;
+  const regionLabel = (feature) => `${jurisdictionName(feature.properties.name)}, ${mt("documented")}, ${levelLabel("subnational")}`;
   const regions = regionLayer.selectAll("path.map-region").data(areaFeatures, (feature) => feature.properties.name);
   regions.exit().remove();
   regions.enter().append("path").merge(regions)
@@ -542,8 +606,10 @@ function renderMap() {
     ].filter(Boolean).join(" "))
     .attr("d", path)
     .attr("data-jurisdiction", (feature) => feature.properties.name)
+    .attr("data-outline-size", (feature) => outlineSizes.get(feature))
     .attr("role", (feature) => needsMarker(feature) ? null : "button")
     .attr("tabindex", (feature) => needsMarker(feature) ? null : -1)
+    .attr("aria-hidden", (feature) => needsMarker(feature) ? "true" : null)
     .attr("data-map-key", (feature) => `region:${feature.properties.name}`)
     .attr("aria-pressed", (feature) => needsMarker(feature) ? null : String(feature.properties.name === state.selectedRegion))
     .attr("aria-label", (feature) => needsMarker(feature) ? null : regionLabel(feature))
@@ -564,6 +630,8 @@ function renderMap() {
     .attr("cx", (feature) => projection(d3.geoCentroid(feature))[0])
     .attr("cy", (feature) => projection(d3.geoCentroid(feature))[1])
     .attr("r", 3.5 / d3.zoomTransform(elements.map).k)
+    .attr("visibility", null)
+    .attr("aria-hidden", null)
     .attr("role", "button")
     .attr("tabindex", -1)
     .attr("data-map-key", (feature) => `region:${feature.properties.name}`)
@@ -598,6 +666,8 @@ function renderMap() {
       if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectRegion(feature, event); }
     });
   positionInstitutionLocations(svg, d3.zoomTransform(elements.map).k);
+  updateRegionMarkers(svg, d3.zoomTransform(elements.map).k);
+  loadVisibleCountryDetails();
   updateMapTabStops();
   // Resizing can replace a tiny area's outline with its location dot. Keep
   // keyboard focus on the same jurisdiction when its SVG representation changes.
@@ -685,9 +755,9 @@ function setupZoom() {
   const svg = d3.select(elements.map);
   const zoom = d3.zoom().scaleExtent([1, 8]).on("zoom", (event) => {
     svg.select("g.map-viewport").attr("transform", event.transform);
-    svg.selectAll(".map-region-marker").attr("r", 3.5 / event.transform.k);
+    updateRegionMarkers(svg, event.transform.k);
     positionInstitutionLocations(svg, event.transform.k);
-  });
+  }).on("end", loadVisibleCountryDetails);
   state.zoom = zoom;
   svg.call(zoom);
   document.querySelector("#zoom-in").addEventListener("click", () => svg.transition().call(zoom.scaleBy, 1.5));

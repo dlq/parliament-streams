@@ -6,6 +6,24 @@ import { geoArea, geoContains } from "d3";
 const features = JSON.parse(await readFile(new URL("../site/assets/maps/documented-admin1.geojson", import.meta.url), "utf8")).features;
 const regions = new Map(features.map((feature) => [feature.properties.name, feature]));
 
+test("detailed country context preserves navigation identity and spherical polygon interiors", async () => {
+  const index = JSON.parse(await readFile(new URL("../site/assets/maps/country-detail-index.json", import.meta.url), "utf8"));
+  const parents = new Set(features.map((feature) => feature.properties.parent_code));
+  assert.deepEqual(new Set(index.countries.map((entry) => entry.code)), parents);
+  for (const entry of index.countries) {
+    const country = JSON.parse(await readFile(new URL(`../site/assets/maps/${entry.file}`, import.meta.url), "utf8"));
+    assert.equal(country.properties.iso_a2 === "CN-TW" ? "TW" : country.properties.iso_a2, entry.code);
+    const mainlandChecks = { AU: [149.13, -35.28], BR: [-47.88, -15.79], FR: [2.35, 48.86] };
+    if (mainlandChecks[entry.code]) {
+      assert(geoContains(country, mainlandChecks[entry.code]), `${entry.code}: mainland must not be replaced by an offshore territory sharing its ISO fallback`);
+    }
+    for (const coordinates of country.geometry.coordinates) {
+      const area = geoArea({ type: "Polygon", coordinates });
+      assert(area > 0 && area < 2 * Math.PI, `${entry.code}: reversed or empty country component`);
+    }
+  }
+});
+
 test("regional outlines use the small spherical interior for every polygon component", () => {
   for (const feature of features) {
     if (feature.geometry.type !== "MultiPolygon") continue;
