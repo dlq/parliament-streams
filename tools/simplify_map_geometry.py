@@ -13,13 +13,14 @@ import hashlib
 import json
 from collections import defaultdict
 from pathlib import Path
+from typing import Any
 
 from shapely import coverage_is_valid, coverage_simplify
 from shapely.geometry import MultiPolygon, mapping, shape
 from shapely.geometry.polygon import orient
 
 
-def generalize(document: dict, tolerance: float) -> dict:
+def generalize(document: dict[str, Any], tolerance: float) -> dict[str, Any]:
     if "display_generalization" in document:
         raise ValueError("Use an unsimplified input, not an existing display derivative")
     groups = defaultdict(list)
@@ -28,7 +29,12 @@ def generalize(document: dict, tolerance: float) -> dict:
             groups[feature["properties"]["parent_code"]].append(feature)
     simplified, unchanged, tolerances = [], [], {}
     for code, features in sorted(groups.items()):
-        originals = [shape(feature["geometry"]) for feature in features]
+        originals: list[MultiPolygon] = []
+        for feature in features:
+            geometry = shape(feature["geometry"])
+            if not isinstance(geometry, MultiPolygon):
+                raise ValueError(f"{code}: expected a MultiPolygon source geometry")
+            originals.append(geometry)
         if not coverage_is_valid(originals):
             unchanged.append(code)
             continue
