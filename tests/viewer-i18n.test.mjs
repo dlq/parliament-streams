@@ -77,3 +77,22 @@ test("an unavailable selected pack falls back to English during startup", async 
   assert.equal(window.ParliamentStreamsI18n.message("en", "nav"), "Catalogue");
   assert.equal(requests.length, 2);
 });
+
+test("Korean, Japanese and Indonesian regional preferences load their own complete packs", async () => {
+  for (const [preference, code, name, title] of [
+    ["ko-KR", "ko", "한국어", "의회 영상, 기록으로 남기다."],
+    ["ja-JP", "ja", "日本語", "議会映像を、記録する。"],
+    ["id-ID", "id", "Bahasa Indonesia", "Video parlemen, terdokumentasi."],
+    ["in-ID", "id", "Bahasa Indonesia", "Video parlemen, terdokumentasi."],
+  ]) {
+    const { window, requests } = await runtime(preference);
+    const shared = window.ParliamentStreamsI18n;
+    assert.equal(shared.currentLocale(), code);
+    assert.equal(shared.supportedLocale(preference), code);
+    assert.equal(shared.locales.find(([locale]) => locale === code)[1], name);
+    assert.equal(shared.message(code, "title"), title);
+    assert.equal(requests.length, 2);
+    for (const count of [0, 1, 2, 101]) assert(window.ParliamentStreamsMapI18n.sourceCount(code, count).includes(String(count)));
+    assert(shared.data(code, "iptv").vlcGuide.trim());
+  }
+});

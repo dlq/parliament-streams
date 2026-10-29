@@ -1,6 +1,6 @@
 # Parliament Streams Plans
 
-This is the active roadmap, reviewed **28 October 2026**. Dated progress reports
+This is the active roadmap, reviewed **29 October 2026**. Dated progress reports
 and the previous detailed backlog are preserved in [roadmap history](docs/roadmap-history.md).
 Use [research status](docs/research-status.md) for evidence and
 [GitHub Actions](docs/github-actions.md) for implemented automation.
@@ -173,19 +173,38 @@ was published in release `ae5337e`:
 
 ### Language Coverage And Review
 
-- [ ] Arrange fluent-speaker review of all 23 locales, especially the newer Czech,
-  Finnish, Swedish and Traditional Chinese packs and provisional Inuktitut text.
+- [x] Add Korean (`ko`), Japanese (`ja`) and Indonesian (`id`) across the interface,
+  viewer and IPTV/VLC instructions, using the existing on-demand JSON packs.
+
+- [ ] Arrange fluent-speaker review of all supported locales, especially the new
+  Korean, Japanese and Indonesian packs, recent Czech/Finnish/Swedish/Traditional
+  Chinese copy and provisional Inuktitut text.
   IPTV/VLC help must remain complete in every supported locale.
 - [ ] Revisit language-picker ordering consistently across pages; keep the current
   order until that review. Source labels alone do not establish language coverage.
 
 ### Deferred Locale Work
 
-Assess Welsh, Catalan/Valencian, Basque, Scottish Gaelic, European Portuguese and
-Norwegian language variants against source coverage and available reviewers.
-Hebrew needs a dedicated right-to-left/bidirectional layout review. Cyrillic
-Mongolian and traditional vertical Mongolian require separate script/layout
-choices; do not add them merely because a source lists the language.
+- [ ] After Korean (`ko`), Japanese (`ja`) and Indonesian (`id`), prioritize
+  **Basque** (four catalogue entries), **Polish** (two), and **Catalan/Valencian**
+  (two combined). Assess whether Valencian needs a separate variant pack while
+  preserving distinct broadcast-language labels.
+- [ ] Assess the other currently recorded gaps: **Afrikaans, Albanian, Cape Verdean
+  Creole, Croatian, Icelandic, Ladin, Lithuanian, Macedonian, Malay, Montenegrin,
+  Romanian, Scottish Gaelic, Serbian, Setswana, Sinhala, Slovenian, Tahitian,
+  Tamil, Tetum, Welsh and Xhosa**. Seek fluent reviewers and verify source-language
+  metadata before exposing a complete interface pack; multilingual source labels
+  are not a complete census of languages used in broadcasts.
+- [ ] Add **Hebrew** only with a dedicated right-to-left/bidirectional review of
+  navigation, compact lists, filters, viewer controls, punctuation and mixed-script
+  source/programme text. Keep source-title direction isolation separate from UI direction.
+- [ ] Assess European Portuguese and Norwegian variants against source coverage
+  and available reviewers. Cyrillic Mongolian and traditional vertical Mongolian
+  require separate script/layout choices; do not add them merely because a source
+  lists the language.
+- [ ] Every future locale must include catalogue, legislatures, map, schedule,
+  Data and methods, viewer, IPTV/VLC, placeholders, plural forms and responsive/
+  accessibility checks. Keep English fallback and on-demand JSON loading.
 
 ## Deferred Search Visibility Follow-up
 

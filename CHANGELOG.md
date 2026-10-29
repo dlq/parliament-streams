@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-29 — Korean, Japanese and Indonesian Interfaces
+
+- Add complete Korean, Japanese and Indonesian JSON packs across the five pages,
+  viewer, accessibility controls and IPTV/VLC instructions; support 26 locales.
+- Preserve placeholders, local date/number formatting, single-form source counts
+  and the initial language-picker width. Recognize regional browser locales and
+  the legacy Indonesian language alias.
+- Track remaining broadcast-language gaps, variant decisions and Hebrew/Mongolian
+  layout prerequisites in the active plans; seek fluent-speaker review.
+
 ## 2026-10-29 — Reduce CI Repeated Work
 
 - Run Python/data and JavaScript/browser checks in parallel CI jobs while

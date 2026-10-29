@@ -37,13 +37,14 @@ Screenshots are useful when text wraps badly or a control is unclear.
 - Dates, numbers, plural forms and text that overflows on mobile.
 - Keyboard and screen-reader pronunciation, including language annotations.
 
-All 23 supported locales welcome review. Czech, Finnish, Swedish and
+All 26 supported locales welcome review, especially the new Korean, Japanese
+and Indonesian packs. Czech, Finnish, Swedish and
 Traditional Chinese are recent additions needing fluent-speaker feedback.
 The Inuktitut syllabics interface is an explicitly provisional machine-generated
 draft and especially needs review by an Inuktitut speaker. Complete message-key
 coverage does not establish translation quality.
 The new project, scope, permissions, schedule-coverage and global-playlist copy
-also needs fluent review across all 23 locales. Review should preserve the
+also needs fluent review across all 26 locales. Review should preserve the
 difference between a research body, a viewing source and a verified linear
 programme guide; none of those labels grants reuse permission.
 
@@ -60,7 +61,8 @@ programme guide; none of those labels grants reuse permission.
 | Simplified Chinese | `zh-Hans` | Traditional Chinese | `zh-Hant` |
 | Inuktitut syllabics | `iu-Cans` | Te reo Māori | `mi` |
 | Czech | `cs` | Finnish | `fi` |
-| Swedish | `sv` | | |
+| Swedish | `sv` | Korean | `ko` |
+| Japanese | `ja` | Indonesian | `id` |
 
 ## Editing The Translation Files
 
@@ -78,13 +80,13 @@ caches additional languages when selected. `site/page-locale.js` owns the shared
 header and language picker; page controllers translate only their own content.
 Some jurisdiction names come from the browser's `Intl.DisplayNames` data.
 The [locale schema](../schema/ui-locale.schema.json), key-coverage checks and
-placeholder checks validate all 23 files even though normal startup loads only
+placeholder checks validate all 26 files even though normal startup loads only
 one or two. See [site and language behaviour](public-site.md) for fallback rules.
 
 Preserve message keys, placeholder names such as `{count}` and `{date}`, and
 locale-specific plural forms. Translate the interface consistently across
 catalogue, Legislatures, map, schedule, Data and methods, and IPTV/VLC surfaces. The working
-legislature inventory has interface messages in all 23 locales, while its
+legislature inventory has interface messages in all 26 locales, while its
 English research notes and recorded institution names retain their language.
 Official programme titles, source names and rights notes retain their recorded
 language; changes to their meaning need separate source evidence.

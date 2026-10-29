@@ -89,7 +89,7 @@ remaining research gaps. It is broader than the video catalogue: an eligible
 legislature does not automatically have a verified stream, programme guide or
 reuse permission. An entry can identify a legislative body or one of its
 chambers; **Within research scope** describes that research decision rather
-than approval of a viewing source. Its interface supports all 23 locales; institution names and
+than approval of a viewing source. Its interface supports all 26 locales; institution names and
 English research notes retain their recorded language. Use the page's
 contribution links to suggest a missing body or provide official evidence for
 a correction, including unresolved legislative-authority questions.
@@ -254,7 +254,8 @@ JavaScript data snapshot fallback.
 The static interface supports English, French, Spanish, Brazilian Portuguese,
 Danish, German, Estonian, Greek, Hindi, Irish, Italian, Luxembourgish, Dutch,
 Norwegian Bokmal, Slovak, Thai, Simplified Chinese, Inuktitut syllabics,
-te reo Maori, Czech, Finnish, Swedish, and Traditional Chinese (23 locales).
+te reo Maori, Czech, Finnish, Swedish, Traditional Chinese, Korean, Japanese,
+and Indonesian (26 locales).
 Select a
 language in the site header or use `?lang=fr` (substituting a supported locale
 code) in a shared URL; the selection is also stored locally in the browser.

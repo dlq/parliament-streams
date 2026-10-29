@@ -242,7 +242,7 @@ async function assertIptvDisclosure(page) {
 async function assertIptvLocales(page, localeSelect, { allLocales = false } = {}) {
   const locales = allLocales
     ? await page.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code))
-    : ["en", "fr", "de", "hi", "th", "zh-Hant", "iu-Cans"];
+    : ["en", "fr", "de", "hi", "th", "zh-Hant", "iu-Cans", "ko", "ja", "id"];
   const disclosure = page.locator('.iptv-disclosure');
   await page.evaluate(() => { window.__localeNavigationSentinel = true; });
   if (!(await disclosure.evaluate((element) => element.open))) await disclosure.locator(':scope > summary').click();
@@ -1480,7 +1480,7 @@ try {
   assert.equal(await institutionsPage.locator(".institution-country").count(), 71);
   assert.equal(await institutionsPage.locator(".institution-country[open]").count(), 0);
   assert.match(await institutionsPage.locator("#institution-results").innerText(), /Entries: 948 · Country groups: 71/);
-  assert.equal(await institutionsPage.locator("#locale-select option").count(), 23);
+  assert.equal(await institutionsPage.locator("#locale-select option").count(), await institutionsPage.evaluate(() => window.ParliamentStreamsI18n.locales.length));
   await assertNoAxeViolations(institutionsPage, "Desktop legislature inventory");
   await institutionsPage.locator("#institution-country").selectOption("Argentina");
   const legislatureHeading = institutionsPage.locator("#argentina--buenos-aires > .institution-row-heading");

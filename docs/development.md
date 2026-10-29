@@ -95,9 +95,10 @@ tests use a one-record synthetic inventory in `tests/fixtures/public-inventory.j
 The real catalogue and full inventory remain covered by maintained-data contract,
 projection and offline-publication checks. Tests do not bypass validators to run faster.
 
-Browser coverage avoids repeating the same component matrix: all 23 IPTV/VLC
+Browser coverage avoids repeating the same component matrix: all 26 IPTV/VLC
 locales run at 320px once; other catalogue/schedule placements exercise English,
-French, long German labels, Devanagari, Thai, CJK and syllabics. Fast key/schema/
+French, long German labels, Devanagari, Thai, Chinese, Korean, Japanese,
+Indonesian and syllabics. Fast key/schema/
 placeholder checks still cover every locale. All five pages retain direct-load
 versus soft-navigation layout and language-picker width checks at desktop and
 mobile widths, plus existing narrow-screen, keyboard, Axe, playback, timezone
