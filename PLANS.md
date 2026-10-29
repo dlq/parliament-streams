@@ -5,6 +5,29 @@ and the previous detailed backlog are preserved in [roadmap history](docs/roadma
 Use [research status](docs/research-status.md) for evidence and
 [GitHub Actions](docs/github-actions.md) for implemented automation.
 
+## Where Work Is Tracked
+
+This file holds project priorities, milestones, scope constraints and deferred
+ideas. Link to active work rather than keeping a second task checklist here.
+
+GitHub issues hold reproducible bugs, bounded improvements, contribution tasks
+and actionable research questions. Each task should state the problem, relevant
+source or record IDs, evidence, and what would count as done. Large review queues
+can retain an umbrella issue, with smaller issues for independently useful work.
+
+Current queues: [rights evidence #13](https://github.com/dlq/parliament-streams/issues/13),
+[media accessibility #14](https://github.com/dlq/parliament-streams/issues/14),
+[monthly inventory source access #51](https://github.com/dlq/parliament-streams/issues/51),
+and [Taiwan schedule regression #53](https://github.com/dlq/parliament-streams/issues/53).
+The automated inventory issue is a review inbox; an inaccessible URL is not a
+reason to remove a legislature. Do not create one issue per raw access failure.
+Split out a finding only when it has a concrete investigation or correction.
+
+Canonical data records decisions; dated reports and research status retain the
+supporting evidence. Completed work belongs in the changelog and roadmap history,
+not in this active checklist. Issues should link to those records rather than
+copying large inventories or periodically changing counts into their task lists.
+
 ## Current Goal
 
 Maintain an understandable catalogue and legislature inventory with official
@@ -32,7 +55,8 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
    rights gaps, using exact institution IDs and recording confirmed and unresolved
    claims separately. Retain the eight precise legal holds outside the eligible
    service queue. See [current findings](docs/research-status.md).
-2. Review discovery findings and monitor the hardened Actions workflows in use.
+2. Review [inventory findings](https://github.com/dlq/parliament-streams/issues/51)
+   and monitor the hardened Actions workflows in use.
    Preserve incomplete/capped checks, source errors and human decisions; no
    workflow should promote a source or change inventory membership automatically.
 3. Improve guide accuracy for existing sources before expanding parser coverage:
@@ -47,20 +71,12 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
 - [ ] Continue boundary identity/currentness checks beyond the 29 October map
   corrections. The Korean mixed-source overlaps are resolved with one attributed
   SGIS-derived snapshot for all nine mapped regions and their national context.
+  Swiss, Indonesian and Manx context now also share their regional source units;
+  preserve their pinned manifests, licensing and source-vintage limits.
   Require country/region identifiers, complete component membership and source
   vintage before adding outlines. Run `uv run tools/check_map_geometry.py` and
   the geographic regression tests; valid topology alone does not prove the right
   territory. See [map source corrections](site/assets/maps/ATTRIBUTION.md#29-october-2026-correctness-corrections).
-- [x] Apply shared-edge display simplification to valid country coverages. The
-  29 October result is 3.21 MB (1.13 MB gzip), down from 4.51 MB (1.57 MB gzip).
-  Preserve component/hole counts and original component interior points; reduce
-  tolerance for Åland/French territorial outlines where needed. Reconcile the
-  Córdoba and Santa Catarina precision mismatch before simplifying Argentina
-  and Brazil. The subsequent Korean source reconciliation applies its own joint
-  simplification and preserves the national-context source override. The optional
-  pinned transformation for the original country coverages is
-  `uv run tools/simplify_map_geometry.py INPUT.geojson OUTPUT.geojson`; source
-  references and feature-level provenance remain in the map assets.
 - [ ] Continue the [subnational authority recheck](reports/discovery/2026-10-29-subnational-authority-recheck.md):
   exact legislative organ, territorial tier, substantive enactment powers,
   legal rank, budget/scrutiny and operative grant dates. Evidence-presence checks
@@ -94,27 +110,20 @@ HTML fields. Generic SEO graphs, upload dates and placeholder meeting bounds do
 not establish broadcast programmes. See [source selection](docs/schedules-and-iptv.md#source-selection).
 
 The [retention decision](reports/epg/2026-10-28-structured-collector-retirement.md)
-retires nine presentation-based collectors and their tests. After five structured
-additions, **26 collectors** cover **42 of 261 catalogue records** through 31
+retires nine presentation-based collectors and their tests. After [five structured additions](reports/epg/2026-10-28-structured-collector-implementation.md),
+**26 collectors** cover **42 of 261 catalogue records** through 31
 metadata URLs. The 219 other records retain official schedule links. Bundestag is
 the sole documented hybrid exception, with source channel identity and explicit end timestamps cross-checking
 its printed start/range. Other retained HTML sources expose machine-readable event
 fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
 
-- [x] Remove TV Câmara, Canadian Harmony, Czech Chamber, French commissions,
-  Luxembourg, Mauritius, Quebec's prose TV guide, Spain's weekly guide and the
-  heuristic YouTube resolver. Remove retired mappings and stale-recovery paths;
-  preserve viewing services, official outlinks and historical evidence.
 - [ ] Harden retained interfaces: European Parliament's pinned frontend route,
   Portugal's fixed legislature/link discovery, Ontario's date/title scope and
   UN Web TV's changed-page recognition. Seek supported structured replacements
   before adding more presentation rules.
-- [ ] Keep Taiwan/Knesset access holds separate from parser refactoring; use bounded
+- [ ] Track [Taiwan’s hosted access regression](https://github.com/dlq/parliament-streams/issues/53)
+  and keep Taiwan/Knesset access holds separate from parser refactoring; use bounded
   requests and honest last-good/error reporting rather than repeated header changes.
-- [x] Implement the five structured priorities: Câmara event API, California's
-  explicit calendar-export parameters, Harmony JSON for House/Senate/Bermuda,
-  US Senate hearings XML and New York session ICS. Keep institutional calendars
-  separate from linear guide mappings; see [implementation evidence](reports/epg/2026-10-28-structured-collector-implementation.md).
 - [ ] Resolve US Senate/XML and New York/ICS HTTP 403 access holds, then confirm
   their live contracts and New York date/time precision. Parser tests are not
   evidence of successful live retrieval. Do not invent midnight programme starts.
@@ -126,10 +135,6 @@ fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
 - [ ] Keep France's large agenda ZIP and PDF recurrence grids behind their specific
   cost/mapping holds.
   A future plain-HTML exception requires a concrete source-specific decision.
-- [x] Check the first hosted collector release: CI, CodeQL and
-  [Pages publication](https://github.com/dlq/parliament-streams/actions/runs/40747783733)
-  passed. Câmara, California and Harmony succeeded; the documented Taiwan,
-  Knesset, US Senate and New York access holds remain.
 
 Historical checkpoints: [stabilization](reports/epg/2026-10-28-collector-stabilization.md),
 [three additions](reports/epg/2026-10-28-priority-collectors.md),
@@ -140,8 +145,9 @@ French and Luxembourg collectors added earlier the same day.
 
 ## Rights And Permission Work
 
-As of this review, **190 of 261 sources** retain a permission status ending in
-`pending_review`. This is an evidence queue, not a statement that all uses are
+The [rights evidence queue](https://github.com/dlq/parliament-streams/issues/13)
+tracks source-specific follow-up. As of this review, **190 of 261 sources** retain
+a permission status ending in `pending_review`. This is an evidence queue, not a statement that all uses are
 prohibited or permitted. Catalogue fields and dated source findings govern each
 source's presentation.
 
@@ -149,7 +155,7 @@ source's presentation.
   other audiovisual reuse and programme-data licensing as distinct claims. Reuse
   evidence consistently within a service family without inferring a blanket grant.
 - [ ] Prioritize official caption, caption-language, interpretation and audio-description
-  evidence. Missing evidence remains `unknown`, not confirmed unavailability.
+  evidence through the [media accessibility queue](https://github.com/dlq/parliament-streams/issues/14). Missing evidence remains `unknown`, not confirmed unavailability.
 - [ ] Maintain the [rights matrix](docs/source-rights-and-permissions.md),
   [rights summary](docs/rights-summary.md) and [request drafts](docs/permission-requests.md).
   Outreach remains deferred until a coordinated communications package and messages
@@ -161,23 +167,9 @@ Keep the current visual identity, compact density and straightforward watch
 handoff. Revisit broader product direction after another data-stability round.
 A hosted television-view application remains a later product decision.
 
-The [25 October Pages audit](reports/ui/2026-10-25-audit.md) is complete for the
-documented journeys, with 25 original captures. The first implementation pass
-was published in release `ae5337e`:
+The [25 October Pages audit](reports/ui/2026-10-25-audit.md) records the original
+findings and implemented changes. Remaining verification:
 
-- [x] Repair map search feedback, keyboard tab order, selection/focus state and
-  the mobile route to selected details and the textual jurisdiction index.
-- [x] Explain the inventory → catalogue → reviewed checks → generated products
-  relationship through a shared Data and methods route, consistent code/data/
-  contribution utilities and clearly defined coverage counts.
-- [x] Connect schedule empty/error/stale/mapping states to specific explanations
-  and official-source actions; simplify detail and reuse-permission wording.
-  State explicitly that IPTV downloads are global and independent of page filters.
-- [x] Repair narrow translated navigation, retain always-visible catalogue
-  coverage and tighten secondary spacing and repeated labels.
-- [x] Align secondary-page headings and introductory spacing; use a restrained
-  green wash for shared explanations and contribution areas, retaining compact
-  white list rows.
 - [ ] Verify real screen-reader, zoom/text-resize, forced-colour and physical
   mobile behaviour. Obtain fluent-speaker review of the new translated copy.
 - [ ] Review singular/plural result-count wording across locales, including
@@ -196,9 +188,6 @@ was published in release `ae5337e`:
   publisher-reported live status from a programme inferred from its time range.
 
 ### Language Coverage And Review
-
-- [x] Add Korean (`ko`), Japanese (`ja`) and Indonesian (`id`) across the interface,
-  viewer and IPTV/VLC instructions, using the existing on-demand JSON packs.
 
 - [ ] Arrange fluent-speaker review of all supported locales, especially the new
   Korean, Japanese and Indonesian packs, recent Czech/Finnish/Swedish/Traditional

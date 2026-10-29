@@ -70,3 +70,28 @@ test("Korean regions retain current memberships and share the national source", 
   assert(!geoContains(regions.get("Gyeongsangbuk-do"), probes.Daegu), "Gunwi must not remain in Gyeongsangbuk-do");
   assert(geoContains(regions.get("Jeonnam–Gwangju Integrated Special City"), [126.392, 34.811]), "Merged jurisdiction must retain both former areas");
 });
+
+test("Swiss, Indonesian and Manx context retains source identity and key locations", async () => {
+  const source = JSON.parse(await readFile(new URL("../site/assets/maps/consistent-context-sources.json", import.meta.url), "utf8"));
+  const probes = {
+    CH: { Geneva: [6.14, 46.2], Thurgau: [8.898, 47.557], "St Gallen": [9.376, 47.425], Jura: [7.3697, 47.2797] },
+    ID: { "North Kalimantan": [117.36, 2.84], Aceh: [95.32, 5.55], "Central Java": [110.42, -6.99], Yogyakarta: [110.37, -7.8], "Central Kalimantan": [113.92, -2.21], "Kepulauan Riau": [104.47, 0.92] },
+    IM: { "Isle of Man": [-4.48, 54.15] },
+  };
+  for (const [code, locations] of Object.entries(probes)) {
+    const country = JSON.parse(await readFile(new URL(`../site/assets/maps/countries/${code}.geojson`, import.meta.url), "utf8"));
+    assert.equal(country.properties.context_source.preserve_source_override, true);
+    assert.equal(country.properties.context_source.source_key, code);
+    for (const [name, point] of Object.entries(locations)) {
+      assert(geoContains(regions.get(name), point), `${name}: expected location missing`);
+      assert(geoContains(country, point), `${name}: national context omits the same location`);
+    }
+    for (const name of Object.keys(source[code].mapped_regions)) {
+      assert.equal(regions.get(name).properties.source_id, source[code].mapped_regions[name].source_id);
+      assert.equal(regions.get(name).properties.boundary_source, "consistent-context-sources.json");
+    }
+  }
+  const manx = JSON.parse(await readFile(new URL("../site/assets/maps/countries/IM.geojson", import.meta.url), "utf8"));
+  assert.deepEqual(manx.geometry, regions.get("Isle of Man").geometry);
+  assert.equal(source.ID.source_date, "2019", "Do not imply a current provincial inventory from this older source");
+});

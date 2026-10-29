@@ -4,11 +4,11 @@ Country boundaries in `countries-110m.geojson` are derived from Natural Earth's
 1:110m Admin 0 Countries dataset and remain the initial world overview. At
 regional zoom, the map loads the relevant detailed national context from
 `countries/`, derived from Natural Earth Admin 0 Countries v5.1.1 at 1:10m,
-except for the Korean source override documented below.
+except for the Korean, Swiss, Indonesian and Manx source overrides documented below.
 The documented subdivision boundaries in
 `documented-admin1.geojson` are extracted from Natural Earth's 1:10m Admin 1
 States and Provinces dataset. Natural Earth data is in the public domain.
-Current exceptions include official Swiss cantonal geometry, official Finnish geometry for Åland, and the SGIS-derived source for all nine mapped Korean regions and their national context. The dated notes below retain earlier provenance; the 29 October correction and Korean reconciliation sections supersede their geometry choices where named.
+Current exceptions include official Swiss cantonal geometry, official Finnish geometry for Åland, the OCHA/HDX source for mapped Indonesian provinces, and the SGIS-derived source for all nine mapped Korean regions and their national context. The dated notes below retain earlier provenance; the 29 October correction and Korean reconciliation sections supersede their geometry choices where named.
 
 - Source: https://www.naturalearthdata.com/downloads/110m-cultural-vectors/
 - Admin 1 source: https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
@@ -300,7 +300,9 @@ countries at zoom scale two or above, and retains them for that map page's
 lifetime. Country identity, grouping and selection are unchanged.
 
 Source: [Natural Earth Admin 0 Countries v5.1.1 GeoJSON](https://github.com/nvkelso/natural-earth-vector/blob/v5.1.1/geojson/ne_10m_admin_0_countries.geojson),
-public domain, for 39 of the 40 files. Korea uses the CC BY 4.0 override below.
+public domain by default. Korea, Switzerland, Indonesia and Isle of Man use
+the explicit source overrides below (including a different public-domain source
+for Isle of Man).
 [Index and source SHA-256](country-detail-index.json) lists all
 files and their byte sizes. Each feature retains its source Admin 0 identifier
 and applied display tolerance. No geoBoundaries/ODbL geometry is copied into
@@ -373,3 +375,57 @@ maintained SGIS-derived snapshot, not a newly surveyed 2026 cadastre. No change
 to legislative eligibility or catalogue, schedule or inventory membership follows
 from this boundary correction. The national rebuild tool preserves this explicit
 source override and its license instead of restoring the older Natural Earth KR.
+
+
+## Swiss, Indonesian and Manx context reconciliation — 29 October 2026
+
+This section supersedes earlier national-context choices for `CH`, `ID` and `IM`,
+and the mixed-source Indonesian regional outlines. The [source manifest](consistent-context-sources.json)
+records exact URLs, SHA-256 hashes, source dates, licenses, unit counts, explicit
+regional identity mappings and transformation limits. Rebuild from the listed
+files downloaded into one local directory:
+
+```sh
+uv run tools/build_consistent_map_context.py SOURCE_DIRECTORY
+```
+
+- **Switzerland:** all 26 official swissBOUNDARIES3D canton geometries from the
+  geo.admin.ch feature API, data status 1 January 2026, ©swisstopo under the
+  [OGD terms](https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices).
+  Ten mapped cantons and their national background use these same source units.
+  The national outline is their full union, including source water areas. Moutier
+  remains in Jura. Only the ten existing catalogue regions are published.
+- **Indonesia:** [geoBoundaries gbHumanitarian IDN ADM1](https://www.geoboundaries.org/api/current/gbHumanitarian/IDN/ADM1/),
+  pinned repository revision `9469f09`, boundary ID `IDN-ADM1-30024224`, derived
+  from [OCHA ROAP / HDX](https://data.humdata.org/dataset/cod-ab-idn), under
+  [CC BY 3.0 IGO](https://creativecommons.org/licenses/by/3.0/igo/). All six mapped
+  provinces use explicit shape IDs and native source names from the same 34-unit
+  dataset as the national background. The source represents **2019**, despite its
+  later package publication date. The 34 units are not today's province inventory;
+  later Papua divisions are not inferred or published. International borders are
+  not adjudicated. All 5,103 source national polygon components are retained.
+- **Isle of Man:** public-domain Natural Earth Admin 1 v5.1.1, selected by both
+  `adm0_a3=IMN` and `iso_3166_2=IM-X01~`. The regional feature and national context
+  share identical territorial geometry, including both source components. Its
+  Crown Dependency identity and navigation grouping are unchanged.
+
+The optional builder verifies all input hashes before processing. Source units
+must be individually valid and form valid coverage. Disconnected landmasses and
+nearby islands are grouped before joint shared-edge simplification; this avoids
+independently simplified islands merging or creating artificial water holes.
+Maximum tolerance is 0.0005 degrees in Switzerland and 0.005 degrees for Indonesia
+and Isle of Man, lowered per group where needed. These angular tolerances are
+cartographic choices, not uniform metre-accuracy claims. Exterior edges are
+snapped to seven decimals while interior hole rings retain their simplified
+coordinates. All components, holes and original component interior points must
+survive both regional and national reassembly; D3 winding is normalized.
+
+National context is the union of these same simplified source units, with no
+clipping against an older background. Source overrides and licenses survive the
+default country-context rebuild. The optional topology audit now also checks that
+regions sharing an explicit source manifest fit their corresponding national
+context. Adjacent countries retain separate source vintages, and unrepresented
+areas are not added to the legislature inventory through this geometry work.
+Detailed context is fetched only at regional zoom; the initial overview is
+unchanged. The Indonesian context costs about 0.84 MB gzip versus 0.08 MB before,
+reflecting the additional source islands and coastline detail.

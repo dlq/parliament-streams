@@ -43,6 +43,12 @@ below for published source records; a suggestion can start with just an
 official link. Describe how you checked a change and any uncertainty that
 remains. UI changes benefit from a screenshot and desktop/mobile checks.
 
+[PLANS.md](PLANS.md) explains project priorities and deferred ideas. Use issues
+for a specific bug, contribution or research question: include the affected page,
+source or record IDs, evidence and a clear result that would resolve it. Link to
+an existing queue when relevant; keep detailed findings in the data or a dated
+report, and reference them from the issue.
+
 Use the GitHub issue templates for source corrections, endpoint validation
 problems, and schedule metadata issues. If the report is sensitive, follow
 [SECURITY.md](SECURITY.md) instead of opening a public issue.

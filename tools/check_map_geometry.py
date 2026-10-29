@@ -43,6 +43,25 @@ def main() -> None:
                     "reason": explain_validity(geometry),
                 }
             )
+    by_code = {
+        (
+            "TW" if feature["properties"]["iso_a2"] == "CN-TW" else feature["properties"]["iso_a2"]
+        ): feature
+        for feature in contexts
+    }
+    alignment = []
+    for props, geometry in areas:
+        context = by_code.get(props["parent_code"])
+        if not context or not geometry.is_valid:
+            continue
+        source = context["properties"].get("context_source", {})
+        if not props.get("boundary_source") or props["boundary_source"] != source.get(
+            "source_metadata"
+        ):
+            continue
+        national = shape(context["geometry"])
+        if national.is_valid and not national.buffer(1e-9).covers(geometry):
+            alignment.append({"name": props["name"], "parent_code": props["parent_code"]})
     overlaps = []
     for (left, a), (right, b) in itertools.combinations(areas, 2):
         if left["parent_code"] != right["parent_code"]:
@@ -64,11 +83,12 @@ def main() -> None:
                 "country_context_outlines": len(contexts),
                 "invalid": invalid,
                 "overlap_review": overlaps,
+                "same_source_context_mismatch": alignment,
             },
             indent=2,
         )
     )
-    if invalid:
+    if invalid or alignment:
         raise SystemExit(1)
 
 

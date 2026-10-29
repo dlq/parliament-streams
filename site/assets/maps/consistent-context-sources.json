@@ -1,0 +1,296 @@
+{
+  "CH": {
+    "dataset": "swisstopo swissBOUNDARIES3D cantons",
+    "source_date": "2026-01-01",
+    "license": "swisstopo Open Government Data terms",
+    "license_url": "https://www.swisstopo.admin.ch/en/terms-of-use-free-geodata-and-geoservices",
+    "attribution": "©swisstopo",
+    "format": "swiss-feature",
+    "identity_property": "ak",
+    "name_property": "name",
+    "expected_source_units": 26,
+    "source_files": [
+      {
+        "file": "CH-1.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/1?geometryFormat=geojson&sr=4326",
+        "sha256": "716021d170665a9f9714a8c3c7347e317dc8a789f3204ba3f323494532b892f5"
+      },
+      {
+        "file": "CH-2.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/2?geometryFormat=geojson&sr=4326",
+        "sha256": "dedc5f31d3785564cf9c135cfc2d3cf5f3974c9adcd6af0d8532daa95a456de7"
+      },
+      {
+        "file": "CH-3.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/3?geometryFormat=geojson&sr=4326",
+        "sha256": "efe44b38095a9c4b7d025199935e69bdfc027cc1baac32ee34354edfdb68a49e"
+      },
+      {
+        "file": "CH-4.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/4?geometryFormat=geojson&sr=4326",
+        "sha256": "8069da8032d2a3a7c6c4e5d8561ad9f1743a2c995bf5f16785937c724f386673"
+      },
+      {
+        "file": "CH-5.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/5?geometryFormat=geojson&sr=4326",
+        "sha256": "6c97e8c23a4980372c2ca8ee39eccc7df806713be69471b1319daafe32cd8f03"
+      },
+      {
+        "file": "CH-6.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/6?geometryFormat=geojson&sr=4326",
+        "sha256": "7eb6fa8938b472551ae457eb1212553c9cbfb0497fee9bd82cc2aa0ccf3f2278"
+      },
+      {
+        "file": "CH-7.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/7?geometryFormat=geojson&sr=4326",
+        "sha256": "6e388c670bc2d4a6e21bbbe7cab1b4ce54f7ef9068690dca75c3018d9dca418a"
+      },
+      {
+        "file": "CH-8.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/8?geometryFormat=geojson&sr=4326",
+        "sha256": "f179f9b2a2c7f12523e5c68c474954035a226986eca089459681c19ffb38537b"
+      },
+      {
+        "file": "CH-9.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/9?geometryFormat=geojson&sr=4326",
+        "sha256": "6e0aaab028069c0843c8094e6d232f5a913d5324643a3307c59f3a09ebccedc2"
+      },
+      {
+        "file": "CH-10.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/10?geometryFormat=geojson&sr=4326",
+        "sha256": "cb319aff847390d664ad1267898cb22435bac6d47ba42b001b47b07fc3bf0bf5"
+      },
+      {
+        "file": "CH-11.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/11?geometryFormat=geojson&sr=4326",
+        "sha256": "4e7c4d7e85a979edce05b0b25a49c8781943d60b0a6226164a6c88bc4b72913e"
+      },
+      {
+        "file": "CH-12.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/12?geometryFormat=geojson&sr=4326",
+        "sha256": "d722939e06f0ba5a5f8d7bbe847d1892b9d17a719fcc3f5f837015c32bc0e2d4"
+      },
+      {
+        "file": "CH-13.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/13?geometryFormat=geojson&sr=4326",
+        "sha256": "1ae8c919737cc3738f4339d519d2ac7cd72f90071c7687f37c9489aaad604544"
+      },
+      {
+        "file": "CH-14.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/14?geometryFormat=geojson&sr=4326",
+        "sha256": "cb293a4af27f24b6a48c4f398ce8e0aee47b9f70b4bffd3ea755a18eda527a75"
+      },
+      {
+        "file": "CH-15.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/15?geometryFormat=geojson&sr=4326",
+        "sha256": "71b6c07e3e44ab41e41958b861dcd3ef11466ed06b28625e4e3322b3e9a2c126"
+      },
+      {
+        "file": "CH-16.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/16?geometryFormat=geojson&sr=4326",
+        "sha256": "56d36454dbf33ef7efc23ddbf56ecc5feb6bc0c35e7be1e6bb60ad050de4a7ab"
+      },
+      {
+        "file": "CH-17.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/17?geometryFormat=geojson&sr=4326",
+        "sha256": "9fcbdc0a501919e7d8722827e0868784010be046dccffc02df0833f9de21f86a"
+      },
+      {
+        "file": "CH-18.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/18?geometryFormat=geojson&sr=4326",
+        "sha256": "b403c35f07ebc31127eb5d32c2c800f6b5cfe60d46ff3fdc22632928f1ed77ec"
+      },
+      {
+        "file": "CH-19.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/19?geometryFormat=geojson&sr=4326",
+        "sha256": "1563f821f05c856254ff408e21723c5b26a41c00ce1fe5a428f08c91e1b9fee2"
+      },
+      {
+        "file": "CH-20.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/20?geometryFormat=geojson&sr=4326",
+        "sha256": "c1eccb926d32225f2c6b58b393ca22169fdcb6356eed2be668f956faf36b498c"
+      },
+      {
+        "file": "CH-21.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/21?geometryFormat=geojson&sr=4326",
+        "sha256": "16ab4f9229eb0e5095f66f5280262a9846497b7ccaa7b499cb50180a728a9324"
+      },
+      {
+        "file": "CH-22.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/22?geometryFormat=geojson&sr=4326",
+        "sha256": "286459d05ec07995d85be28251400d34b413e2f06da8fbc05ed3d484ce8d3245"
+      },
+      {
+        "file": "CH-23.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/23?geometryFormat=geojson&sr=4326",
+        "sha256": "bb28da683d094e9944a6baba04a801fd025174b77391ee18d94d483628853cdd"
+      },
+      {
+        "file": "CH-24.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/24?geometryFormat=geojson&sr=4326",
+        "sha256": "9e757a8792aee8d68ce859ff5f196e0649cbf5750bcef94d91f2b756d7eddcad"
+      },
+      {
+        "file": "CH-25.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/25?geometryFormat=geojson&sr=4326",
+        "sha256": "8ee8678b3ee9e6f50cc1cbe666d92c2f026981d0df91a50f830a2d16c000c08e"
+      },
+      {
+        "file": "CH-26.json",
+        "url": "https://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/26?geometryFormat=geojson&sr=4326",
+        "sha256": "36872af15c90ebc74fd1425330f085acd41e7e05bbd248f40978beacc1a35ff7"
+      }
+    ],
+    "mapped_regions": {
+      "Bern": {
+        "source_id": "BE",
+        "source_name": "Bern"
+      },
+      "Appenzell Ausserrhoden": {
+        "source_id": "AR",
+        "source_name": "Appenzell Ausserrhoden"
+      },
+      "Glarus": {
+        "source_id": "GL",
+        "source_name": "Glarus"
+      },
+      "Jura": {
+        "source_id": "JU",
+        "source_name": "Jura"
+      },
+      "Thurgau": {
+        "source_id": "TG",
+        "source_name": "Thurgau"
+      },
+      "Zurich": {
+        "source_id": "ZH",
+        "source_name": "Zürich"
+      },
+      "Vaud": {
+        "source_id": "VD",
+        "source_name": "Vaud"
+      },
+      "Geneva": {
+        "source_id": "GE",
+        "source_name": "Genève"
+      },
+      "St Gallen": {
+        "source_id": "SG",
+        "source_name": "St. Gallen"
+      },
+      "Zug": {
+        "source_id": "ZG",
+        "source_name": "Zug"
+      }
+    },
+    "limits": "National context is the union of all 26 cantons, including source water areas. Only ten catalogue regions are published. The generalized map is not a cadastral survey; adjacent countries retain separate sources.",
+    "processing": {
+      "display_tolerance_degrees": 0.0005,
+      "landmass_group_counts_by_tolerance_degrees": {
+        "0.0005": 1
+      },
+      "national_components": 1,
+      "changes": "Simplify source units jointly within groups of neighboring national landmasses; use smaller tolerances where island safeguards require them. Snap exterior edges to seven decimals, retain interior hole rings and normalize D3 winding. Preserve components, holes and original component interior points. National context is the union of these same simplified units; no regional clipping or guessed borders."
+    },
+    "max_display_tolerance_degrees": 0.0005
+  },
+  "ID": {
+    "dataset": "geoBoundaries gbHumanitarian IDN ADM1 / OCHA ROAP / HDX",
+    "source_date": "2019",
+    "license": "CC BY 3.0 IGO",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/igo/",
+    "attribution": "OCHA Regional Office for Asia and the Pacific / HDX, via geoBoundaries",
+    "format": "geojson",
+    "identity_property": "shapeID",
+    "name_property": "shapeName",
+    "filter": {
+      "shapeGroup": "IDN",
+      "shapeType": "ADM1"
+    },
+    "expected_source_units": 34,
+    "source_files": [
+      {
+        "file": "IDN-ADM1.geojson",
+        "url": "https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/9469f09/releaseData/gbHumanitarian/IDN/ADM1/geoBoundaries-IDN-ADM1_simplified.geojson",
+        "sha256": "6a92013432cb64c03915a84fe53281fcacadd2b66cf69d502d8259fd6d23fb3e"
+      }
+    ],
+    "mapped_regions": {
+      "North Kalimantan": {
+        "source_id": "30024224B24146714486683",
+        "source_name": "Kalimantan Utara"
+      },
+      "Aceh": {
+        "source_id": "30024224B14445163505265",
+        "source_name": "Aceh"
+      },
+      "Central Kalimantan": {
+        "source_id": "30024224B80039142809981",
+        "source_name": "Kalimantan Tengah"
+      },
+      "Central Java": {
+        "source_id": "30024224B41957156739176",
+        "source_name": "Jawa Tengah"
+      },
+      "Yogyakarta": {
+        "source_id": "30024224B24701656176843",
+        "source_name": "Daerah Istimewa Yogyakarta"
+      },
+      "Kepulauan Riau": {
+        "source_id": "30024224B48361329949794",
+        "source_name": "Kepulauan Riau"
+      }
+    },
+    "limits": "The source represents 2019, not the current inventory of Indonesian provinces. Its 34 units supply national context; only six explicitly identified catalogue regions are published. Later Papua divisions are not inferred or added. Already generalized source geometry is retained and further simplified only with component, hole and interior-point safeguards. This does not adjudicate international boundaries.",
+    "processing": {
+      "display_tolerance_degrees": 0.005,
+      "landmass_group_counts_by_tolerance_degrees": {
+        "0.0003125": 1,
+        "0.000625": 10,
+        "0.00125": 30,
+        "0.0025": 53,
+        "0.005": 1636
+      },
+      "national_components": 5103,
+      "changes": "Simplify source units jointly within groups of neighboring national landmasses; use smaller tolerances where island safeguards require them. Snap exterior edges to seven decimals, retain interior hole rings and normalize D3 winding. Preserve components, holes and original component interior points. National context is the union of these same simplified units; no regional clipping or guessed borders."
+    },
+    "max_display_tolerance_degrees": 0.005
+  },
+  "IM": {
+    "dataset": "Natural Earth Admin 1 v5.1.1, Isle of Man",
+    "source_date": "v5.1.1",
+    "license": "Public domain",
+    "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "attribution": "Natural Earth",
+    "format": "geojson",
+    "identity_property": "iso_3166_2",
+    "name_property": "name",
+    "filter": {
+      "adm0_a3": "IMN"
+    },
+    "expected_source_units": 1,
+    "source_files": [
+      {
+        "file": "NE-ADM1.geojson",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.1/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5"
+      }
+    ],
+    "mapped_regions": {
+      "Isle of Man": {
+        "source_id": "IM-X01~",
+        "source_name": "Isle of Man"
+      }
+    },
+    "limits": "Use the same territorial navigation geometry for the regional feature and national context. Crown Dependency identity is retained; this is a generalized coastline, not a cadastral survey.",
+    "processing": {
+      "display_tolerance_degrees": 0.005,
+      "landmass_group_counts_by_tolerance_degrees": {
+        "0.005": 2
+      },
+      "national_components": 2,
+      "changes": "Simplify source units jointly within groups of neighboring national landmasses; use smaller tolerances where island safeguards require them. Snap exterior edges to seven decimals, retain interior hole rings and normalize D3 winding. Preserve components, holes and original component interior points. National context is the union of these same simplified units; no regional clipping or guessed borders."
+    },
+    "max_display_tolerance_degrees": 0.005
+  }
+}

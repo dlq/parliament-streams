@@ -47,7 +47,16 @@
     {
       "code": "CH",
       "file": "countries/CH.geojson",
-      "bytes": 7359
+      "bytes": 180754,
+      "source_override": {
+        "preserve_source_override": true,
+        "source_metadata": "consistent-context-sources.json",
+        "source_key": "CH",
+        "dataset": "swisstopo swissBOUNDARIES3D cantons",
+        "license": "swisstopo Open Government Data terms",
+        "tolerance_degrees": 0.0005,
+        "minimum_tolerance_degrees": 0.0005
+      }
     },
     {
       "code": "CO",
@@ -102,12 +111,30 @@
     {
       "code": "ID",
       "file": "countries/ID.geojson",
-      "bytes": 223034
+      "bytes": 2378448,
+      "source_override": {
+        "preserve_source_override": true,
+        "source_metadata": "consistent-context-sources.json",
+        "source_key": "ID",
+        "dataset": "geoBoundaries gbHumanitarian IDN ADM1 / OCHA ROAP / HDX",
+        "license": "CC BY 3.0 IGO",
+        "tolerance_degrees": 0.005,
+        "minimum_tolerance_degrees": 0.0003125
+      }
     },
     {
       "code": "IM",
       "file": "countries/IM.geojson",
-      "bytes": 906
+      "bytes": 1739,
+      "source_override": {
+        "preserve_source_override": true,
+        "source_metadata": "consistent-context-sources.json",
+        "source_key": "IM",
+        "dataset": "Natural Earth Admin 1 v5.1.1, Isle of Man",
+        "license": "Public domain",
+        "tolerance_degrees": 0.005,
+        "minimum_tolerance_degrees": 0.005
+      }
     },
     {
       "code": "IN",

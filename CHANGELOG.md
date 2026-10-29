@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-29 — Align Swiss, Indonesian and Manx Map Context
+
+- Derive Switzerland’s detailed national outline and ten mapped cantons from
+  the same official 2026 swisstopo dataset. Retain the Moutier correction.
+- Align all six mapped Indonesian provinces, including North Kalimantan, with
+  national context derived from the pinned OCHA/HDX provincial source. Record
+  its 2019 vintage explicitly; do not infer current province inventory from it.
+- Use one Isle of Man territorial geometry for both its region and context.
+- Preserve source components, holes and interior points during joint display
+  simplification; add source manifests, rebuild safeguards and context alignment
+  checks. Keep detailed context lazy-loaded at regional zoom.
+
 ## 2026-10-29 — Reconcile Korean Boundaries and Align Data Links
 
 - Replace all nine Korean regional outlines and their detailed national context

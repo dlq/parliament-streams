@@ -2,6 +2,28 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Swiss, Indonesian and Manx Context Alignment — 29 October 2026
+
+The ten mapped Swiss cantons and national context now share the official 2026
+swisstopo source. All 26 source cantons contribute to the national outline; only
+the existing ten catalogue regions are displayed. Moutier stays in Jura. All six
+mapped Indonesian provinces, including North Kalimantan, now share the pinned
+OCHA/HDX geometry used to derive their national background. That source represents
+2019: its 34 units are processing inputs, not a claim about today's province
+inventory or newly published legislative bodies. Isle of Man uses the same
+territorial geometry for its region and national context.
+
+All source units pass coverage checks. Joint simplification groups nearby islands
+together and preserves every source component, hole and component interior point;
+Indonesia retains 5,103 national components. The offline map audit reports no
+invalid outlines, regional overlap leads or mismatches between explicitly shared
+regional/national sources. Cross-country source differences and source-vintage
+limits remain; these checks do not certify international borders or a cadastral
+survey. Initial overview requests remain unchanged. The detailed Indonesian file
+is larger (about 0.84 MB gzip), fetched only when its national context is needed
+at regional zoom. Geographic regression tests and muted desktop/mobile map checks
+pass. [Pinned sources and rebuild method](../site/assets/maps/ATTRIBUTION.md#swiss-indonesian-and-manx-context-reconciliation--29-october-2026).
+
 ## Korean Boundary Reconciliation and Data Link Alignment — 29 October 2026
 
 All nine mapped Korean regions and their detailed national context now use one
