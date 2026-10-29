@@ -68,11 +68,14 @@ sorting do not recreate an active video, provider iframe or HLS instance.
 Navigation loads the destination's stylesheets before replacing the current
 page, then activates only that page's styles in their original order. A missing
 stylesheet keeps the current page and player available for a retry.
-`site/app.js` owns the existing shared renderer/player and catalogue controller;
-`site/viewer-controls.js` owns desktop geometry, and `site/viewer-i18n.js` covers
-controls and navigation recovery in all 23 locales. Each page remains directly
-addressable, with its own HTML and normal script entry points. No framework,
-server, storage of viewing history or browser popup is introduced.
+`site/catalogue.js` owns catalogue filters, sorting and rows. `site/viewer.js`
+is a small shared entry point; it loads `site/viewer-player.js` and
+`site/viewer-controls.js` only when a source is opened. The player then requests
+fallback and schedule JSON through the shared cache. Browsing the catalogue
+alone fetches only catalogue JSON. Shared source display helpers live in
+`site/source-ui.js`. Each page remains directly addressable with ordinary HTML.
+The map bundles only its eight required D3 exports, retaining upstream notices.
+No framework, server, viewing-history storage or browser popup is introduced.
 
 Page controllers clean up their global listeners/observers when leaving a page.
 A failed enhanced navigation leaves the viewer available and displays a retry
@@ -256,16 +259,18 @@ Select a
 language in the site header or use `?lang=fr` (substituting a supported locale
 code) in a shared URL; the selection is also stored locally in the browser.
 Chinese browser locales for Taiwan, Hong Kong, and Macao select Traditional
-Chinese unless an explicit Simplified Chinese script is requested. The four
-additional packs live in `site/extra-locales.js`; catalogue, map, schedule,
-Legislatures and IPTV/VLC messages are checked for complete key coverage. Czech
-source counts use the locale's plural categories. Dates, numbers, and sorting
-use `Intl`.
+Chinese unless an explicit Simplified Chinese script is requested.
 
-The Data page and shared navigation have a separate 23-locale message table
-in `site/project-i18n.js`; `site/project-info.js` localizes the navigation and
-`site/data-page.js` translates the Data page. New scope, schedule-coverage,
-permission and playlist explanations follow the same locale selection.
+Language copy lives in `site/locales/<locale>.json`, including the shared header,
+Data and methods, viewer, IPTV and VLC instructions. `site/i18n.js` fetches English
+and the selected locale, sharing cached requests when languages or pages change.
+Czech source counts retain locale-specific plural categories. Dates, numbers and
+sorting use `Intl`. Language changes wait for the new pack, preserve filters and
+playback, and use one header/picker owner in `site/page-locale.js`.
+
+Publication fingerprints both lazy viewer scripts and language packs, so a new
+release invalidates changed code or copy. Direct-file previews fetch published
+locale JSON from GitHub Pages alongside published data products.
 
 IPTV setup, copy feedback, and VLC desktop instructions follow the selected
 language on both the catalogue and schedule pages. The external VideoLAN

@@ -1,8 +1,8 @@
-(() => {
-  const pageSignal = window.ParliamentStreamsNavigation?.signal;
-const { locales, localizedLabel, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
+window.ParliamentStreamsPageReady = window.ParliamentStreamsI18n.startPage((pageSignal) => {
+
+const { localizedLabel, message } = window.ParliamentStreamsI18n;
 const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount, subnationalParents, countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
-const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
+
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
 const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261025-holds", appScriptUrl);
@@ -21,8 +21,10 @@ const fallbackCountryNames = {
 };
 
 const query = new URLSearchParams(window.location.search);
-const locale = supportedLocale(query.get("lang") ?? readLocalePreference() ?? navigator.language);
+const locale = window.ParliamentStreamsPageLocale.current();
 const state = { channels: [], supranational: [], geometry: null, subnationalGeometry: null, mode: "all", selectedCode: "CA", selectedRegion: null, selectedOrganizationId: "eu", selectedSupranationalCountry: null, search: "", locale, mapPath: null, mapProjection: null, zoom: null, mapFocusKey: null };
+const { escapeHtml } = window.ParliamentStreamsSourceUI.create(() => state.locale);
+
 const elements = {
   map: document.querySelector("#world-map"),
   detail: document.querySelector("#map-detail"),
@@ -33,7 +35,6 @@ const elements = {
   legendSelected: document.querySelector("#legend-selected-label"),
   legendUndocumented: document.querySelector("#legend-undocumented-label"),
   workspace: document.querySelector(".map-workspace"),
-  locale: document.querySelector("#locale-select"),
   modes: document.querySelectorAll("[data-mode]"),
   index: document.querySelector("#jurisdiction-index"),
   layout: document.querySelector(".map-layout"),
@@ -80,15 +81,9 @@ function relationshipLabel(organization, plural = false) {
 }
 
 function applyStaticTranslations() {
-  document.documentElement.lang = state.locale;
+
   window.ParliamentStreamsSeo.update(`${mt("title")} · Parliament Streams`, mt("lede"), state.locale);
   document.querySelector("#map-skip-link").textContent = mt("skip");
-  document.querySelector("#map-brand-home").setAttribute("aria-label", t("brandHome"));
-  document.querySelector("#map-primary-navigation").setAttribute("aria-label", t("primaryNavigation"));
-  document.querySelector("#map-nav-catalogue").textContent = t("nav");
-  document.querySelector("#map-nav-map").textContent = mt("title");
-  document.querySelector("#map-nav-schedule").textContent = scheduleMessage(state.locale, "title");
-  document.querySelector("#map-locale-label").textContent = t("language");
   document.querySelector("#map-section-label").textContent = mt("section");
   document.querySelector("#map-title").textContent = mt("title");
   document.querySelector("#map-lede").textContent = mt("lede");
@@ -700,23 +695,14 @@ function setupZoom() {
   document.querySelector("#zoom-reset").addEventListener("click", () => svg.transition().call(zoom.transform, d3.zoomIdentity));
 }
 
-function escapeHtml(value) {
-  return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
-}
-
 async function init() {
   await window.ParliamentStreamsVendor.load("d3");
   if (pageSignal?.aborted) return;
   applyStaticTranslations();
-  elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
-  elements.locale.value = state.locale;
-  elements.locale.addEventListener("change", () => {
-    writeLocalePreference(elements.locale.value);
-    const params = new URLSearchParams(window.location.search);
-    params.set("lang", elements.locale.value);
-    const url = new URL(location.href); url.search = params.toString();
-    if (window.ParliamentStreamsNavigation) window.ParliamentStreamsNavigation.navigate(url.href);
-    else window.location.search = params.toString();
+  window.ParliamentStreamsPageLocale.bind((locale) => {
+    state.locale = locale;
+    applyStaticTranslations();
+    render();
   });
 
   const [catalogue, supranational] = await Promise.all([
@@ -776,8 +762,8 @@ async function init() {
   window.ParliamentStreamsNavigation?.cleanup(() => clearTimeout(resizeTimer));
 }
 
-window.ParliamentStreamsPageReady = init().catch((error) => {
+return init().catch((error) => {
   if (pageSignal?.aborted) return;
   elements.detail.innerHTML = `<h2 id="map-detail-title" tabindex="-1">${escapeHtml(mt("mapUnavailable"))}</h2><p class="map-detail-empty">${escapeHtml(error.message)}</p>`;
 });
-})();
+});

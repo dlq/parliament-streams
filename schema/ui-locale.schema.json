@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public interface language pack",
+  "type": "object",
+  "required": ["schema_version", "locale", "name", "common", "map", "schedule", "institutions", "viewer", "project", "iptv", "jurisdictions", "sourceCount", "source"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": 1},
+    "locale": {"type": "string", "pattern": "^[a-z]{2,3}(?:-[A-Za-z]{2,8})?$"},
+    "name": {"$ref": "#/$defs/text"},
+    "common": {
+      "type": "object", "required": ["labels"], "additionalProperties": false,
+      "properties": {"labels": {"$ref": "#/$defs/strings"}},
+      "patternProperties": {"^(?!labels$)": {"$ref": "#/$defs/text"}}
+    },
+    "map": {"$ref": "#/$defs/messages"},
+    "schedule": {"$ref": "#/$defs/messages"},
+    "institutions": {"$ref": "#/$defs/messages"},
+    "viewer": {"$ref": "#/$defs/messages"},
+    "project": {"$ref": "#/$defs/messages"},
+    "iptv": {"$ref": "#/$defs/messages"},
+    "jurisdictions": {"$ref": "#/$defs/strings"},
+    "sourceCount": {
+      "type": "object", "required": ["other"], "additionalProperties": false,
+      "patternProperties": {"^(zero|one|two|few|many|other)$": {"$ref": "#/$defs/text"}}
+    },
+    "source": {
+      "type": "object", "required": ["specialJurisdictions", "devolvedJurisdictions", "subnationalJurisdictions", "languageNames"],
+      "additionalProperties": {"$ref": "#/$defs/strings"}
+    }
+  },
+  "$defs": {
+    "text": {"type": "string", "minLength": 1},
+    "strings": {"type": "object", "additionalProperties": {"$ref": "#/$defs/text"}},
+    "messages": {"type": "object", "minProperties": 1, "additionalProperties": {"$ref": "#/$defs/text"}}
+  }
+}

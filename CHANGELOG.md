@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-29 — Simplify the Browser Runtime
+
+- Give the shared header and language picker one owner, preserving selection,
+  filters and the longest-option width across all five pages.
+- Separate catalogue controls from the persistent viewer; load player code and
+  fallback/programme JSON when a source is opened. Share source display helpers.
+- Bundle only the D3 exports used by the map, preserving runtime license notices.
+- Move all 23 locale packs, including IPTV/VLC copy and jurisdiction labels, to
+  JSON. Load English plus the selected language and validate all packs in CI.
+- Fingerprint lazy scripts and locale data for publication; extend browser,
+  language-loading, schema, placeholder and asset-version regression checks.
+
 ## 2026-10-28 — Load Public Data as JSON
 
 - Remove executable catalogue and legislature data copies. Load canonical catalogue

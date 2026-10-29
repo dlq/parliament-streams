@@ -1,6 +1,6 @@
-(() => {
+window.ParliamentStreamsPageReady = window.ParliamentStreamsI18n.startPage((pageSignal) => {
   "use strict";
-  const pageSignal = window.ParliamentStreamsNavigation?.signal;
+
   const shared = window.ParliamentStreamsI18n;
   const translations = window.ParliamentStreamsInstitutionsI18n;
   let data;
@@ -13,7 +13,7 @@
     historical_institution_superseded: "historical",
   };
   const state = {
-    locale: shared.supportedLocale(query.get("lang") ?? shared.readLocalePreference() ?? navigator.language),
+    locale: window.ParliamentStreamsPageLocale.current(),
     search: query.get("q") ?? "",
     country: query.get("country") ?? "",
     status: Object.hasOwn(statuses, query.get("status")) || query.get("status") === "all" ? query.get("status") : "default",
@@ -38,7 +38,6 @@
     return url.href;
   };
   const pageUrl = (id) => `https://dlq.ca/parliament-streams/institutions.html${id ? `?q=${encodeURIComponent(id)}&status=all` : ""}`;
-  const localeHref = (path) => `${path}?lang=${encodeURIComponent(state.locale)}`;
   let countries = [];
   let records = new Map();
   let openCountries = new Set();
@@ -55,21 +54,15 @@
 
   function localize() {
     countryLabels.clear();
-    document.documentElement.lang = state.locale;
+
     const texts = {
       "institutions-title": "title", "institutions-lede": "lede", "institutions-skip": "skip",
       "institution-search-label": "search",
       "institution-country-label": "country", "institution-status-label": "status",
       "institution-search-hint": "searchHint", "institution-clear": "clear",
-      "institutions-nav-current": "title",
     };
     for (const [id, key] of Object.entries(texts)) byId(id).textContent = message(key);
     for (const [id, key] of [["institutions-language", "language"], ["institutions-footer", "footer"], ["institutions-nav-catalogue", "nav"]]) byId(id).textContent = shared.message(state.locale, key);
-    byId("institutions-brand").setAttribute("aria-label", shared.message(state.locale, "brandHome"));
-    byId("institutions-navigation").setAttribute("aria-label", shared.message(state.locale, "primaryNavigation"));
-    byId("institutions-nav-map").textContent = window.ParliamentStreamsMapI18n.message(state.locale, "title");
-    byId("institutions-nav-schedule").textContent = window.ParliamentStreamsScheduleI18n.message(state.locale, "title");
-    for (const [id, path] of [["institutions-brand", "./"], ["institutions-nav-catalogue", "./"], ["institutions-nav-current", "institutions.html"], ["institutions-nav-map", "map.html"], ["institutions-nav-schedule", "schedule.html"]]) byId(id).href = localeHref(path);
     byId("institution-search").placeholder = message("search");
     byId("locale-select").value = state.locale;
     if (data) byId("institutions-reviewed").textContent = message("reviewed", { date: localizedDate(data.reviewed_on) });
@@ -286,8 +279,6 @@
   async function init() {
     data = await window.ParliamentStreamsData.load("institutions");
     if (pageSignal?.aborted) return;
-    byId("locale-select").replaceChildren();
-    for (const [code, label] of shared.locales) byId("locale-select").add(new Option(label, code));
     if (data) {
       countries = data.countries;
       records = new Map(data.records.map((row) => [row.id, row]));
@@ -297,10 +288,9 @@
     byId("institution-search").addEventListener("input", (event) => { state.search = event.target.value; updateUrl(); render(); });
     byId("institution-country").addEventListener("change", (event) => { state.country = event.target.value; openCountries = new Set(); updateUrl(); render(); });
     byId("institution-status").addEventListener("change", (event) => { state.status = event.target.value; openCountries = new Set(); updateUrl(); render(); });
-    byId("locale-select").addEventListener("change", (event) => {
-      state.locale = event.target.value;
-      shared.writeLocalePreference(state.locale);
-      updateUrl(); localize(); render();
+    window.ParliamentStreamsPageLocale.bind((locale) => {
+      state.locale = locale;
+      localize(); render();
     });
     byId("institution-clear").addEventListener("click", () => {
       Object.assign(state, { search: "", country: "", status: "default" });
@@ -312,7 +302,7 @@
     localize();
     render();
   }
-  window.ParliamentStreamsPageReady = init().catch(() => {
+  return init().catch(() => {
     if (!pageSignal?.aborted) byId("institution-results").textContent = shared.message(state.locale, "sourceError");
   });
-})();
+});

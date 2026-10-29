@@ -245,6 +245,7 @@ async function assertIptvLocales(page, localeSelect) {
   if (!(await disclosure.locator('.iptv-vlc').evaluate((element) => element.open))) await disclosure.locator('.iptv-vlc > summary').click();
   for (const locale of locales) {
     await page.locator(localeSelect).selectOption(locale);
+    await page.evaluate(() => window.ParliamentStreamsLocaleReady);
     assert.equal(await page.evaluate(() => window.__localeNavigationSentinel), true, 'Changing language updates the page without reloading');
     assert.deepEqual(await page.evaluate((code) => window.ParliamentStreamsIptvI18n.coverage(code), locale), [], `Missing IPTV/VLC translations for ${locale}`);
     assert.equal(await disclosure.getAttribute('lang'), locale);
@@ -270,6 +271,7 @@ async function assertIptvLocales(page, localeSelect) {
     assert.equal(overflow, false, `IPTV help overflows in ${locale}`);
   }
   await page.locator(localeSelect).selectOption('en');
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await disclosure.locator(':scope > summary').click();
 }
 
@@ -305,8 +307,8 @@ async function newLocalContext(browser, options = {}) {
   await context.route("**/*", (route) => {
     const request = route.request();
     const url = new URL(request.url());
-    if (url.origin === "https://dlq.ca" && url.pathname.startsWith("/parliament-streams/data/")) {
-      return readFile(join(root, "data", url.pathname.split("/").at(-1))).then(
+    if (url.origin === "https://dlq.ca" && /^\/parliament-streams\/(data|locales)\//.test(url.pathname)) {
+      return readFile(join(root, url.pathname.includes("/locales/") ? "site/locales" : "data", url.pathname.split("/").at(-1))).then(
         (body) => route.fulfill({ contentType: "application/json", headers: { "Access-Control-Allow-Origin": "*" }, body }),
         () => route.fulfill({ status: 404, headers: { "Access-Control-Allow-Origin": "*" }, body: "Not found" }),
       );
@@ -453,6 +455,7 @@ async function assertViewerTimezones(browser, baseUrl) {
       await schedule.screenshot({ path: join(tmpdir(), `parliament-timezone-${timezoneId.replaceAll("/", "-")}.png`), fullPage: true });
       for (const page of [catalogue, schedule]) {
         await page.locator("#locale-select").selectOption("nl");
+        await page.evaluate(() => window.ParliamentStreamsLocaleReady);
         assert.equal(await page.locator("html").getAttribute("lang"), "nl");
         assert.equal(await page.evaluate(() => Intl.DateTimeFormat().resolvedOptions().timeZone), timezoneId);
         const times = page === catalogue
@@ -464,11 +467,14 @@ async function assertViewerTimezones(browser, baseUrl) {
         }
       }
       await catalogue.locator("#locale-select").selectOption("en");
+      await catalogue.evaluate(() => window.ParliamentStreamsLocaleReady);
       await catalogue.locator(`[data-channel-id="${hebrew.id}"]`).click();
       await schedule.locator("#locale-select").selectOption("en");
+      await schedule.evaluate(() => window.ParliamentStreamsLocaleReady);
       for (const locale of ["en", "nl"]) {
         for (const page of [catalogue, schedule]) {
           await page.locator("#locale-select").selectOption(locale);
+          await page.evaluate(() => window.ParliamentStreamsLocaleReady);
           const container = page === catalogue
             ? page.locator(".programme-record")
             : page.locator("#schedule-list tr").filter({ hasText: hebrew.titles[0] });
@@ -506,7 +512,12 @@ async function assertDataLoadingAndLanguageWidth(browser, baseUrl) {
   const context = await newLocalContext(browser, { viewport: { width: 1280, height: 900 } });
   const page = await context.newPage();
   const requests = [];
+  const localeRequests = [];
+  const playerRequests = [];
   page.on("request", (request) => {
+    const path = new URL(request.url()).pathname;
+    if (/\/locales\/[^/]+\.json$/.test(path)) localeRequests.push(path);
+    if (/\/viewer-(player|controls)\.js$/.test(path)) playerRequests.push(path);
     if (/\/data\/[^/]+\.json$/.test(new URL(request.url()).pathname)) requests.push(new URL(request.url()).pathname);
   });
   try {
@@ -514,6 +525,16 @@ async function assertDataLoadingAndLanguageWidth(browser, baseUrl) {
     await page.waitForFunction(() => window.ParliamentStreamsViewer);
     await page.evaluate(() => window.ParliamentStreamsViewer.ready);
     assert.deepEqual(requests, [], "The documentation page must not load catalogue or programme data");
+    assert.equal(localeRequests.length, 1, "English startup fetches one language pack");
+    assert(localeRequests[0].endsWith("/en.json"));
+    assert.deepEqual(playerRequests, [], "A closed viewer must not load player code");
+    requests.length = 0;
+    await page.goto(`${baseUrl}index.html?lang=en`);
+    await page.waitForFunction(() => window.ParliamentStreamsViewer);
+    await page.evaluate(() => window.ParliamentStreamsPageReady);
+    assert.equal(requests.length, 1, "Browsing the catalogue needs only catalogue JSON");
+    assert(requests[0].endsWith("/channels.json"));
+    assert.deepEqual(playerRequests, [], "Browsing must not initialize the player");
     for (const width of [1280, 390, 320]) {
       await page.setViewportSize({ width, height: 900 });
       let expected;
@@ -527,6 +548,7 @@ async function assertDataLoadingAndLanguageWidth(browser, baseUrl) {
         expected ??= size;
         assert.equal(size, expected, `Language selector has the same intrinsic width on ${file} at ${width}px`);
         await selector.selectOption("pt-BR");
+        await page.evaluate(() => window.ParliamentStreamsLocaleReady);
         await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
         assert.equal(await selector.evaluate((node) => node.getBoundingClientRect().width), expected);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
@@ -745,6 +767,7 @@ try {
   );
   for (const { locale } of localeCoverage) {
     await page.locator("#locale-select").selectOption(locale);
+    await page.evaluate(() => window.ParliamentStreamsLocaleReady);
     assert.equal(await page.locator("html").getAttribute("lang"), locale);
     await assertPageMetadata(page);
     assert((await page.locator("#catalogue-title").innerText()).trim());
@@ -753,6 +776,7 @@ try {
     assert.equal(await page.locator("#sort-status").getAttribute("lang"), locale);
   }
   await page.locator("#locale-select").selectOption("en");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
 
   assert.deepEqual(await page.evaluate(() => ['zh-TW', 'zh-HK', 'zh-MO', 'zh-Hant-TW', 'zh-Hans-TW', 'cs-CZ', 'fi-FI', 'sv-FI'].map(window.ParliamentStreamsI18n.supportedLocale)), ['zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hans', 'cs', 'fi', 'sv']);
   assert.deepEqual(await page.evaluate(() => [1, 2, 5].map((count) => window.ParliamentStreamsMapI18n.sourceCount('cs', count))), ['1 zdroj', '2 zdroje', '5 zdrojů']);
@@ -777,9 +801,11 @@ try {
   }
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.locator("#locale-select").selectOption("fr");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.locator("#search").fill("Allemagne");
   assert.equal(await page.locator('[data-channel-id="bavaria-landtag-plenum-online"]').count(), 1);
   await page.locator("#locale-select").selectOption("en");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.locator("#search").fill("");
 
   const rows = page.locator(".channel-button");
@@ -815,6 +841,7 @@ try {
   assert.equal(await youtubeRow.getAttribute("aria-pressed"), "true");
   assert.notEqual(await youtubeRow.evaluate((element) => getComputedStyle(element).boxShadow), "none");
   const youtubeFrame = page.locator("#media-frame iframe");
+  await youtubeFrame.waitFor();
   assert.equal(await youtubeFrame.count(), 1);
   assert.match(await youtubeFrame.getAttribute("src"), /youtube-nocookie\.com\/embed\/abcDEF12345/);
   assert.equal(await youtubeFrame.getAttribute("title"), "Australia Parliament Live · YouTube");
@@ -863,6 +890,7 @@ try {
   assert.match(await page.locator(".evidence-dates").innerText(), /Aug 16, 2026/);
 
   await page.locator("#locale-select").selectOption("fr");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.locator(".source-documentation > summary").first().click();
   assert.equal(await page.locator("#nav-map").innerText(), "Carte de couverture");
   assert.equal(await page.locator("#nav-schedule").innerText(), "Horaire");
@@ -914,6 +942,7 @@ try {
   assert.equal(await page.locator(".accessibility-record .detail-subtitle").count(), 0);
 
   await page.locator("#locale-select").selectOption("zh-Hans");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.locator('[data-channel-id="norway-stortinget"]').click();
   await page.locator(".source-documentation > summary").first().click();
   await page.locator(".source-documentation > summary").nth(1).click();
@@ -943,11 +972,13 @@ try {
   assert(contrastRatio(rgb(colours.outline), [255, 255, 255]) >= 3);
 
   await page.locator("#locale-select").selectOption("en");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.setViewportSize({ width: 900, height: 800 });
   await page.reload();
   await page.waitForSelector(".channel-button");
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
   await page.locator(".channel-button").first().click();
+  await page.locator("#detail-title").waitFor();
   assert.equal(await page.locator("#detail-panel").isVisible(), true);
   assert.equal(await page.locator("#detail-panel").evaluate((element) => getComputedStyle(element).position), "fixed");
   assert.equal(await page.locator(".detail-grabber").isVisible(), true);
@@ -971,6 +1002,7 @@ try {
   assert((await page.locator("#primary-navigation > a:visible").first().boundingBox()).height >= 40);
   assert((await page.locator("#search").boundingBox()).y < 800);
   await page.locator(".channel-button").first().click();
+  await page.locator("#detail-title").waitFor();
   assert.equal(await page.locator("#detail-title").evaluate((element) => document.activeElement === element), true);
   assert.equal(await page.locator("#detail-panel").getAttribute("aria-labelledby"), "detail-title");
   await assertNoAxeViolations(page, "Open mobile source details");
@@ -979,6 +1011,7 @@ try {
   assert.equal(await page.locator(".channel-button").first().evaluate((element) => document.activeElement === element), true);
 
   await page.locator("#locale-select").selectOption("fr");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   assert.equal(await page.locator("html").getAttribute("lang"), "fr");
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
 
@@ -1061,8 +1094,10 @@ try {
   assert.match(await schedulePage.locator("#official-schedules-list").innerText(), /Fukushima/);
   assert.equal(new URL(schedulePage.url()).searchParams.get("jurisdiction"), "Fukushima");
   await schedulePage.locator("#locale-select").selectOption("fr");
+  await schedulePage.evaluate(() => window.ParliamentStreamsLocaleReady);
   assert.equal(await schedulePage.locator("#schedule-jurisdiction").inputValue(), "Fukushima");
   await schedulePage.locator("#locale-select").selectOption("en");
+  await schedulePage.evaluate(() => window.ParliamentStreamsLocaleReady);
   await schedulePage.reload();
   await schedulePage.waitForSelector("#official-schedules-list > li", { state: "attached" });
   assert.equal(await schedulePage.locator("#schedule-jurisdiction").inputValue(), "Fukushima");
@@ -1077,7 +1112,7 @@ try {
   await assertPageMetadata(schedulePage, "schedule.html");
   assert.equal(await schedulePage.locator("#schedule-now-heading").textContent(), "Maintenant");
   assert.deepEqual(
-    await schedulePage.evaluate(() => window.ParliamentStreamsI18n.locales.flatMap(([code]) => window.ParliamentStreamsScheduleI18n.coverage(code).map((key) => `${code}:${key}`))),
+    await schedulePage.evaluate(async () => { await Promise.all(window.ParliamentStreamsI18n.locales.map(([code]) => window.ParliamentStreamsI18n.load(code))); return window.ParliamentStreamsI18n.locales.flatMap(([code]) => window.ParliamentStreamsScheduleI18n.coverage(code).map((key) => `${code}:${key}`)); }),
     [],
   );
   await schedulePage.setViewportSize({ width: 320, height: 800 });
@@ -1091,6 +1126,7 @@ try {
   await schedulePage.locator('.iptv-disclosure > summary').click();
   await assertIptvLocales(schedulePage, '#locale-select');
   await schedulePage.locator('#locale-select').selectOption('fr');
+  await schedulePage.evaluate(() => window.ParliamentStreamsLocaleReady);
   const firstScheduleRow = schedulePage.locator("#schedule-list tr").first();
   const nowCell = await firstScheduleRow.locator("td").nth(1).boundingBox();
   const nextCell = await firstScheduleRow.locator("td").nth(2).boundingBox();
@@ -1343,7 +1379,7 @@ try {
   const mapLocales = await mapPage.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
   for (const locale of mapLocales) {
     assert.deepEqual(
-      await mapPage.evaluate((code) => window.ParliamentStreamsMapI18n.coverage(code), locale),
+      await mapPage.evaluate(async (code) => { await window.ParliamentStreamsI18n.load(code); return window.ParliamentStreamsMapI18n.coverage(code); }, locale),
       [],
       `Missing map translations for ${locale}`,
     );
@@ -1516,11 +1552,12 @@ try {
   assert.match(await institutionsPage.locator(".institution-empty").innerText(), /No matching institutions/);
   await institutionsPage.locator("#institution-clear").click();
   await institutionsPage.locator("#locale-select").selectOption("fr");
+  await institutionsPage.evaluate(() => window.ParliamentStreamsLocaleReady);
   assert.equal(await institutionsPage.locator("html").getAttribute("lang"), "fr");
   assert.equal(await institutionsPage.locator("#institutions-title").innerText(), await institutionsPage.evaluate(() => window.ParliamentStreamsInstitutionsI18n.message("fr", "title")));
   assert.match(await institutionsPage.locator("#institutions-nav-catalogue").getAttribute("href"), /lang=fr/);
   await assertPageMetadata(institutionsPage, "institutions.html");
-  assert.deepEqual(await institutionsPage.evaluate(() => window.ParliamentStreamsI18n.locales.filter(([locale]) => window.ParliamentStreamsInstitutionsI18n.coverage(locale).missing.length).map(([locale]) => locale)), []);
+  assert.deepEqual(await institutionsPage.evaluate(async () => { await Promise.all(window.ParliamentStreamsI18n.locales.map(([code]) => window.ParliamentStreamsI18n.load(code))); return window.ParliamentStreamsI18n.locales.filter(([locale]) => window.ParliamentStreamsInstitutionsI18n.coverage(locale).missing.length).map(([locale]) => locale); }), []);
   await institutionsPage.setViewportSize({ width: 320, height: 800 });
   await institutionsPage.locator("#institution-country").selectOption("Canada");
   assert.equal(await institutionsPage.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
@@ -1565,6 +1602,7 @@ try {
   const dataLocales = await dataPage.evaluate(() => window.ParliamentStreamsI18n.locales.map(([code]) => code));
   for (const code of dataLocales) {
     await dataPage.locator("#locale-select").selectOption(code);
+    await dataPage.evaluate(() => window.ParliamentStreamsLocaleReady);
     assert.deepEqual(await dataPage.evaluate((locale) => window.ParliamentStreamsProjectI18n.coverage(locale).missing, code), []);
     assert.equal(await dataPage.locator("html").getAttribute("lang"), code);
     assert.equal(new URL(dataPage.url()).searchParams.get("lang"), code);
@@ -1577,6 +1615,7 @@ try {
   }
   for (const code of ["en", "de", "fr"]) {
     await dataPage.locator("#locale-select").selectOption(code);
+    await dataPage.evaluate(() => window.ParliamentStreamsLocaleReady);
     for (const width of [1280, 390, 320]) {
       await dataPage.setViewportSize({ width, height: 900 });
       assert.equal(await dataPage.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${code}: data page reflows at ${width}px`);
@@ -1630,6 +1669,7 @@ try {
   assert.equal(await storagePage.evaluate(() => window.ParliamentStreamsI18n.readLocalePreference()), null);
   await storagePage.locator("#search").fill("Canada");
   await storagePage.locator("#locale-select").selectOption("fr");
+  await storagePage.evaluate(() => window.ParliamentStreamsLocaleReady);
   assert.equal(await storagePage.locator("#search").inputValue(), "Canada");
   await storagePage.locator('[data-channel-id="alberta-assembly-online"]').waitFor();
   assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
@@ -1642,6 +1682,7 @@ try {
   const scheduleJurisdiction = await scheduleOption.getAttribute("value");
   await storagePage.locator("#schedule-jurisdiction").selectOption(scheduleJurisdiction);
   await storagePage.locator("#locale-select").selectOption("fr");
+  await storagePage.evaluate(() => window.ParliamentStreamsLocaleReady);
   assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
   assert.equal(await storagePage.locator("#schedule-jurisdiction").inputValue(), scheduleJurisdiction);
   assert.equal(await storagePage.locator(".iptv-disclosure").getAttribute("lang"), "fr");
@@ -1650,6 +1691,7 @@ try {
   await storagePage.locator(".institution-country").first().waitFor();
   await storagePage.locator("#institution-search").fill("Alberta");
   await storagePage.locator("#locale-select").selectOption("fr");
+  await storagePage.evaluate(() => window.ParliamentStreamsLocaleReady);
   await storagePage.locator("#canada--alberta").waitFor();
   assert.equal(await storagePage.locator("html").getAttribute("lang"), "fr");
   assert.equal(await storagePage.locator("#institution-search").inputValue(), "Alberta");
@@ -1657,6 +1699,7 @@ try {
   await storagePage.goto(`${baseUrl}map.html`);
   await storagePage.locator(".map-country.is-documented").first().waitFor();
   await storagePage.locator("#locale-select").selectOption("fr");
+  await storagePage.evaluate(() => window.ParliamentStreamsLocaleReady);
   await storagePage.waitForURL(/lang=fr/);
   await storagePage.locator(".map-country.is-documented").first().waitFor();
   await selectMapSearchResult(storagePage, "Alberta");

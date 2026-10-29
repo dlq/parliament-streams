@@ -64,14 +64,22 @@ programme guide; none of those labels grants reuse permission.
 
 ## Editing The Translation Files
 
-The translation tables are in `site/i18n.js`, `site/institutions-i18n.js`,
-`site/map-i18n.js`, `site/schedule-i18n.js`, `site/iptv.js` and
-`site/project-i18n.js`. The project table supplies all 23 locales for the
-Data and methods page and its shared navigation tab; it is rendered by
-`site/data-page.js` and `site/project-info.js`. The Czech, Finnish,
-Swedish and Traditional Chinese packs live in `site/extra-locales.js`. Some jurisdiction
-names are localized through the browser's `Intl.DisplayNames` data. See
-[site and language behaviour](public-site.md) for fallback and content rules.
+Each supported language has one JSON file in [site/locales/](../site/locales/),
+for example [fr.json](../site/locales/fr.json). Its named sections cover
+`common` catalogue text, `map`, `schedule`, `institutions`, `viewer`, `project`
+(Data and methods), and `iptv` (including VLC instructions). `jurisdictions`,
+`source` and `sourceCount` hold translated display names and plural forms.
+Edit these files directly; there is no JavaScript translation table to regenerate.
+A new locale also needs its code and autonym registered in the small `locales`
+list in `site/i18n.js`; tests keep that list and the JSON files in agreement.
+
+The small `site/i18n.js` runtime loads English plus the selected language and
+caches additional languages when selected. `site/page-locale.js` owns the shared
+header and language picker; page controllers translate only their own content.
+Some jurisdiction names come from the browser's `Intl.DisplayNames` data.
+The [locale schema](../schema/ui-locale.schema.json), key-coverage checks and
+placeholder checks validate all 23 files even though normal startup loads only
+one or two. See [site and language behaviour](public-site.md) for fallback rules.
 
 Preserve message keys, placeholder names such as `{count}` and `{date}`, and
 locale-specific plural forms. Translate the interface consistently across
@@ -82,7 +90,7 @@ Official programme titles, source names and rights notes retain their recorded
 language; changes to their meaning need separate source evidence.
 
 For a pull request, name the locale and affected pages, and explain any
-terminology choices. Run `npm run check:site` after setting up the
+terminology choices. Run `npm test` and `npm run check:site` after setting up the
 [development environment](development.md), then inspect the changed screens
 in that language at desktop and mobile widths. Automated checks cover message
 keys and UI behaviour; fluent review establishes whether the wording is good.

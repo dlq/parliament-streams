@@ -1,12 +1,14 @@
-(() => {
-  const pageSignal = window.ParliamentStreamsNavigation?.signal;
-const { locales, message, readLocalePreference, supportedLocale, writeLocalePreference } = window.ParliamentStreamsI18n;
+window.ParliamentStreamsPageReady = window.ParliamentStreamsI18n.startPage((pageSignal) => {
+
+const { message } = window.ParliamentStreamsI18n;
 const { jurisdictionName: localizedJurisdictionName, message: mapMessage, sourceCount } = window.ParliamentStreamsMapI18n;
 const { message: scheduleMessage } = window.ParliamentStreamsScheduleI18n;
 
 const query = new URLSearchParams(window.location.search);
-const locale = supportedLocale(query.get("lang") ?? readLocalePreference() ?? navigator.language);
+const locale = window.ParliamentStreamsPageLocale.current();
 const state = { channels: [], schedules: {}, sources: {}, quality: {}, hasSnapshot: false, generatedAt: null, locale, jurisdiction: query.get("jurisdiction") ?? "", listingFilter: query.get("listings") ?? "" };
+
+const { escapeHtml, localEventTime } = window.ParliamentStreamsSourceUI.create(() => state.locale);
 
 const flagAssets = window.ParliamentStreamsFlags;
 
@@ -17,7 +19,6 @@ const elements = {
   results: document.querySelector("#schedule-results"),
   empty: document.querySelector("#schedule-empty"),
   updated: document.querySelector("#schedule-updated"),
-  locale: document.querySelector("#locale-select"),
   coverage: document.querySelector("#schedule-coverage"),
   clear: document.querySelector("#schedule-clear"),
 };
@@ -26,8 +27,6 @@ function t(key, values) { return message(state.locale, key, values); }
 function mt(key, values) { return mapMessage(state.locale, key, values); }
 function st(key, values) { return scheduleMessage(state.locale, key, values); }
 function setText(id, value) { document.querySelector(`#${id}`).textContent = value; }
-function escapeHtml(value) { return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;"); }
-
 function isPlaybackEnabled(channel) {
   return ["native_playback", "provider_embed"].includes(channel.playback_policy);
 }
@@ -46,19 +45,6 @@ function jurisdictionName(channel) {
 
 function isUnavailableTitle(title) {
   return !title || /^(no |none\b|not available|unavailable)/i.test(title) || /no .* (listed|live|available)/i.test(title);
-}
-
-function localEventTime(start, fallback) {
-  if (!start) return fallback;
-  const date = new Date(start);
-  if (Number.isNaN(date.valueOf())) return fallback;
-  const today = new Date();
-  const sameDay = date.getFullYear() === today.getFullYear()
-    && date.getMonth() === today.getMonth()
-    && date.getDate() === today.getDate();
-  const options = { hour: "numeric", minute: "2-digit", timeZoneName: "short" };
-  if (!sameDay) Object.assign(options, { weekday: "short", month: "short", day: "numeric" });
-  return new Intl.DateTimeFormat(state.locale, options).format(date);
 }
 
 function hasCurrent(schedule) { return !isUnavailableTitle(schedule.current_event_title); }
@@ -215,15 +201,9 @@ function renderFilters() {
 }
 
 function applyTranslations() {
-  document.documentElement.lang = state.locale;
+
   window.ParliamentStreamsSeo.update(`${st("title")} · Parliament Streams`, st("lede"), state.locale);
   setText("schedule-skip-link", st("skip"));
-  document.querySelector("#schedule-brand-home").setAttribute("aria-label", t("brandHome"));
-  document.querySelector("#schedule-primary-navigation").setAttribute("aria-label", t("primaryNavigation"));
-  setText("schedule-nav-catalogue", t("nav"));
-  setText("schedule-nav-map", mt("title"));
-  setText("schedule-nav-schedule", st("title"));
-  setText("schedule-locale-label", t("language"));
   setText("schedule-title", st("title"));
   setText("schedule-lede", st("lede"));
   setText("schedule-time-note", st("timeNote"));
@@ -261,14 +241,8 @@ function updateFilterUrl() {
 
 async function init() {
   applyTranslations();
-  elements.locale.innerHTML = locales.map(([code, name]) => `<option value="${code}" lang="${code}">${name}</option>`).join("");
-  elements.locale.value = state.locale;
-  elements.locale.addEventListener("change", () => {
-    state.locale = supportedLocale(elements.locale.value);
-    writeLocalePreference(state.locale);
-    const url = new URL(window.location.href);
-    url.searchParams.set("lang", state.locale);
-    history.replaceState({}, "", url);
+  window.ParliamentStreamsPageLocale.bind((locale) => {
+    state.locale = locale;
     applyTranslations();
     renderFilters();
     elements.jurisdiction.value = state.jurisdiction;
@@ -320,10 +294,10 @@ async function init() {
   });
 }
 
-window.ParliamentStreamsPageReady = init().catch((error) => {
+return init().catch((error) => {
   if (pageSignal?.aborted) return;
   elements.updated.textContent = error.message;
   elements.updated.classList.add("is-stale");
   elements.empty.hidden = false;
 });
-})();
+});

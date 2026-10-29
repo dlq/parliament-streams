@@ -21,7 +21,7 @@ Development uses two deliberately separate toolchains:
 | Tooling | Responsibility |
 | --- | --- |
 | Python 3.11+ and `uv` | Catalogue CLI and mutations, JSON Schema and business-rule validation, inventory JSON generation, scrapers, HTTP health checks, unit tests and coverage, Ruff formatting/linting, and mypy type checking. |
-| Node.js 24+ and npm | Locked HLS.js/D3 browser-asset assembly, JavaScript unit tests, static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
+| Node.js 24+ and npm | Locked HLS.js and selected D3 exports, JavaScript unit tests, static HTML validation, Playwright browser interaction tests, Axe accessibility checks, and the optional deep browser/player research pass. |
 | Make | Stable command entry points that compose the Python and Node checks without hiding which toolchain runs them. |
 | Playwright Chromium | The downloaded browser used to test rendered desktop, intermediate-width, mobile, keyboard, and accessibility behavior. |
 

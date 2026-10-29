@@ -167,7 +167,7 @@ The public site is static:
 6. It enables native playback only when catalogue metadata permits it.
 7. `site/navigation.js` progressively replaces the main/header/footer of the five
    ordinary HTML pages while a shared viewer remains attached to the document.
-   `site/app.js` rebinds catalogue controls when returning; other page controllers
+   `site/catalogue.js` initializes catalogue controls when returning; other page controllers
    initialize for their current route and use an abortable page lifecycle for
    global listeners, observers and pending initialization. The desktop move/resize
    controls are isolated in `site/viewer-controls.js`.
@@ -293,7 +293,7 @@ drive the low-noise always-on regression issue workflow.
 - To add or change a source: read `docs/catalogue-maintenance.md`.
 - To understand source rights posture: read
   `docs/source-rights-and-permissions.md`.
-- To work on the static site: start with `site/app.js`, then run
+- To work on the static site: start with `site/catalogue.js` and `site/page-locale.js`, then run
   `npm run check:site`.
 - To work on schedule metadata: start with
   `parliament_streams/schedule_collection.py` and one existing scraper.

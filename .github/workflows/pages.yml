@@ -19,6 +19,7 @@ on:
       - "package.json"
       - "package-lock.json"
       - "tools/build_vendor_assets.mjs"
+      - "tools/d3-entry.mjs"
       - "tools/build_institution_site_data.py"
       - "tools/version_site_assets.mjs"
       - "tools/verify_pages_revision.py"

@@ -3,7 +3,7 @@
   if (window.ParliamentStreamsNavigation || location.protocol === "file:") return;
   const base = new URL("./", document.currentScript.src);
   const pages = new Set(["", "index.html", "map.html", "schedule.html", "institutions.html", "data.html"]);
-  const controllers = new Set(["map.js", "schedule.js", "institutions.js", "data-page.js", "iptv.js", "institutions-nav.js", "project-info.js"]);
+  const controllers = new Set(["catalogue.js", "map.js", "schedule.js", "institutions.js", "data-page.js", "iptv.js"]);
   const loaded = new Set([...document.scripts].filter((script) => script.src).map((script) => new URL(script.src).pathname));
   const styles = new Map([...document.querySelectorAll('link[rel="stylesheet"]')].map((node) => [node.href, { node, ready: Promise.resolve() }]));
   const positions = new Map();
@@ -123,6 +123,7 @@
       for (const script of next.querySelectorAll("script[src]")) {
         if (ticket !== revision) return;
         await loadScript(script.getAttribute("src"));
+        await window.ParliamentStreamsPageReady;
       }
       await window.ParliamentStreamsPageReady;
       if (ticket !== revision) return;

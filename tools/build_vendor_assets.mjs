@@ -50,8 +50,8 @@ async function licenseNotices(pkg) {
   return sections.join("\n\n");
 }
 
-const d3Entry = require.resolve("d3");
-const d3Package = await packageForFile(d3Entry);
+const d3Entry = join(root, "tools/d3-entry.mjs");
+const d3Package = await packageForFile(require.resolve("d3"));
 const hlsPackage = await packageForFile(require.resolve("hls.js"));
 const d3Bundle = await build({
   absWorkingDir: root,
@@ -71,10 +71,15 @@ const d3Bundle = await build({
 });
 
 const runtimePackages = new Map();
-for (const input of Object.keys(d3Bundle.metafile.inputs).sort()) {
+const outputInputs = Object.values(d3Bundle.metafile.outputs).flatMap((output) =>
+  Object.entries(output.inputs).filter(([, value]) => value.bytesInOutput > 0).map(([file]) => file)
+);
+for (const input of [...new Set(outputInputs)].sort()) {
+  if (resolve(root, input) === d3Entry) continue;
   const pkg = await packageForFile(resolve(root, input));
   runtimePackages.set(pkg.directory, pkg);
 }
+runtimePackages.set(d3Package.directory, d3Package);
 runtimePackages.set(hlsPackage.directory, hlsPackage);
 const packages = [...runtimePackages.values()].sort((first, second) => {
   const firstKey = `${first.name}@${first.version}`;

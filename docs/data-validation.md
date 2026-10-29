@@ -13,6 +13,7 @@ or permission to reuse a broadcast.
 | Fallback sources | [fallbacks.schema.json](../schema/fallbacks.schema.json), known catalogue references and playback-claim rules. |
 | Supranational map context | [supranational.schema.json](../schema/supranational.schema.json), unique organization IDs and country-code lists. |
 | Raw legislature inventory | Custom authority, identity, relationship, country-reconciliation and evidence checks in `make institution-inventory-validate`. This research register has no general JSON Schema. |
+| Interface translations | [ui-locale.schema.json](../schema/ui-locale.schema.json), message keys and named placeholders checked across every JSON locale pack. |
 | Public legislature snapshot | [institution-site-data.schema.json](../schema/institution-site-data.schema.json), plus exact identity/crosswalk checks in the projection builder. Both generation and drift checks enforce the schema. |
 | Discovery and U.S. target registers | [discovery-targets.schema.json](../schema/discovery-targets.schema.json) and [us-legislature-candidates.schema.json](../schema/us-legislature-candidates.schema.json), plus maintained-scope/identity checks. These are research inputs, not published viewing sources. |
 | Collected schedules | [schedules.schema.json](../schema/schedules.schema.json) before a snapshot is written and when it enters an export/audit. |

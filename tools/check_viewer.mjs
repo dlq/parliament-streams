@@ -67,10 +67,20 @@ export async function assertPersistentViewer(page, baseUrl) {
   await page.unroute("**/map.html*");
   await go("map.html", "#map-title");
   await page.locator("#locale-select").selectOption("fr");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.waitForURL(/lang=fr/);
   await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
   await continuity();
   assert.equal(await page.locator("#detail-panel").getAttribute("lang"), "fr");
+  await page.evaluate((url) => window.ParliamentStreamsNavigation.navigate(url), `${baseUrl}data.html?lang=en`);
+  await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
+  assert.equal(await page.locator("#detail-panel").getAttribute("lang"), "en");
+  await continuity();
+  await page.goBack();
+  await page.locator("#map-title").waitFor();
+  await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
+  assert.equal(await page.locator("#detail-panel").getAttribute("lang"), "fr");
+  await continuity();
   await page.locator('.site-header nav a[href*="./"], .site-header nav a[href*="index.html"], #map-nav-catalogue').last().click();
   await page.locator("#search").waitFor();
   await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
@@ -132,12 +142,14 @@ export async function assertPersistentViewer(page, baseUrl) {
   assert.deepEqual(errors, []);
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.locator("#locale-select").selectOption("en");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
 }
 
 export async function assertNavigationStyles(page, baseUrl) {
   await page.goto(`${baseUrl}index.html?lang=en`);
   await page.locator('.channel-button').first().waitFor();
   await page.locator('#locale-select').selectOption('en');
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   const pages = [
     ["institutions.html", "#institutions-title", [".institutions-filters", "#institution-search", ".institution-country > summary"]],
     ["map.html", "#map-title", [".map-summary", ".map-toolbar", "#world-map"]],
@@ -194,6 +206,7 @@ export async function assertProviderViewer(page, baseUrl) {
     assert.equal(await page.evaluate(() => window.__providerViewer.frame === document.querySelector("#media-frame iframe")), true);
   }
   await page.locator("#locale-select").selectOption("fr");
+  await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.waitForURL(/lang=fr/);
   await page.waitForFunction(() => !document.documentElement.classList.contains("page-loading"));
   assert.equal(await page.evaluate(() => window.__providerViewer.frame === document.querySelector("#media-frame iframe")), true);
