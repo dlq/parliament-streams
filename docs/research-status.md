@@ -2,6 +2,28 @@
 
 [Documentation index](README.md) · [Catalogue eligibility](catalogue-scope.md)
 
+## Korean Boundary Reconciliation and Data Link Alignment — 29 October 2026
+
+All nine mapped Korean regions and their detailed national context now use one
+October 2026 SGIS-derived snapshot maintained by vuski/admdongkor: 3,559 source
+units grouped into 16 first-level areas. Explicit codes and native names determine
+membership. Gunwi remains in Daegu; the source also reflects the current Incheon
+and Jeonnam–Gwangju organization. Joint simplification preserves all components,
+holes and original component interior points, including 1,099 national island
+components. The offline audit reports no invalid outlines or regional overlap
+leads across all 160 mapped area features and 40 country context files.
+
+The other seven Korean areas are used only as unlabelled national context; this
+pass does not validate their individual authority or every upstream shared edge.
+These are navigation outlines from a maintained snapshot, not a new cadastral
+survey. The default country rebuild preserves this licensed source override.
+[Source, attribution and rebuild method](../site/assets/maps/ATTRIBUTION.md#korean-source-reconciliation--29-october-2026).
+
+Data and methods labels and download links now share a text baseline. Browser
+checks cover all 13 public/supporting rows, mobile stacking, link targets,
+accessibility and console health. Catalogue, inventory and schedule membership
+are unchanged by these presentation corrections.
+
 ## Zoomed Map Presentation — 29 October 2026
 
 Small-area circles now hand over to the actual polygon at the current zoom,
@@ -11,8 +33,8 @@ a constant-width boundary stroke instead of a zoom-enlarged SVG outline box.
 
 The initial 1:110m world overview is retained for loading cost. At zoom scale two
 and above, the map loads visible relevant 1:10m national context files from the
-same Natural Earth release used for most regional polygons. Forty context files
-are available, totaling 3.10 MB uncompressed; they are fetched individually and
+same Natural Earth release used for most regional polygons, with the Korean
+source override described above. Forty context files are available; they are fetched individually and
 are not part of the initial map requests. They reduce the large coastline mismatch
 in the tested Europe, Japan and Sicily views. Different-source regional edges
 and countries outside this context set retain their documented limits.
@@ -34,12 +56,13 @@ Natural Earth source coordinates resolves both country coverages. Shared-edge
 display simplification now reduces the regional file from 4.51 MB to 3.21 MB
 (1.57 MB to 1.13 MB gzip). All polygon components, holes and original component
 interior points are retained; Åland and French territorial geometry use smaller
-tolerances. Korean geometry and the three institution-location Points are unchanged.
+tolerances. At that checkpoint Korean geometry and the three institution-location
+Points were unchanged; the Korean follow-up above supersedes that geometry.
 
 All 160 area features pass the offline topology check. Geographic regression
 tests cover the discovered wrong-place and missing-land cases. This does not
-certify every outline against current official geography: the Korean mixed-source
-overlaps remain explicit follow-up. [Sources, modifications and limits](../site/assets/maps/ATTRIBUTION.md#29-october-2026-correctness-corrections).
+certify every outline against current official geography. The Korean mixed-source
+overlaps identified at this checkpoint are resolved in the follow-up above. [Sources, modifications and limits](../site/assets/maps/ATTRIBUTION.md#29-october-2026-correctness-corrections).
 
 ## Subnational Authority Recheck — 29 October 2026
 

@@ -3,11 +3,12 @@
 Country boundaries in `countries-110m.geojson` are derived from Natural Earth's
 1:110m Admin 0 Countries dataset and remain the initial world overview. At
 regional zoom, the map loads the relevant detailed national context from
-`countries/`, derived from Natural Earth Admin 0 Countries v5.1.1 at 1:10m.
+`countries/`, derived from Natural Earth Admin 0 Countries v5.1.1 at 1:10m,
+except for the Korean source override documented below.
 The documented subdivision boundaries in
 `documented-admin1.geojson` are extracted from Natural Earth's 1:10m Admin 1
 States and Provinces dataset. Natural Earth data is in the public domain.
-Current exceptions include official Swiss cantonal geometry, official Finnish geometry for Åland, and attributed county aggregation for Daegu and Gyeongsangbuk. The dated notes below retain earlier provenance; the 29 October correction section supersedes their geometry choices where named.
+Current exceptions include official Swiss cantonal geometry, official Finnish geometry for Åland, and the SGIS-derived source for all nine mapped Korean regions and their national context. The dated notes below retain earlier provenance; the 29 October correction and Korean reconciliation sections supersede their geometry choices where named.
 
 - Source: https://www.naturalearthdata.com/downloads/110m-cultural-vectors/
 - Admin 1 source: https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/
@@ -299,10 +300,12 @@ countries at zoom scale two or above, and retains them for that map page's
 lifetime. Country identity, grouping and selection are unchanged.
 
 Source: [Natural Earth Admin 0 Countries v5.1.1 GeoJSON](https://github.com/nvkelso/natural-earth-vector/blob/v5.1.1/geojson/ne_10m_admin_0_countries.geojson),
-public domain. [Index and source SHA-256](country-detail-index.json) lists all
+public domain, for 39 of the 40 files. Korea uses the CC BY 4.0 override below.
+[Index and source SHA-256](country-detail-index.json) lists all
 files and their byte sizes. Each feature retains its source Admin 0 identifier
 and applied display tolerance. No geoBoundaries/ODbL geometry is copied into
-these public-domain country files.
+the Natural Earth country files. The default rebuild preserves explicitly
+marked source overrides rather than replacing their geometry or license.
 
 Processing selects a single country by its primary ISO identity, or an explicit
 name match when a fallback ISO code is shared by dependencies. The selected
@@ -316,14 +319,57 @@ normalized for D3. The optional offline rebuild command is:
 uv run tools/build_country_context.py ne_10m_admin_0_countries.geojson
 ```
 
-The detailed files total about 3.10 MB uncompressed across all forty countries;
-they are not fetched together or added to the initial map load. Countries outside
+The forty detailed files are not fetched together or added to the initial map load. Countries outside
 this regional-parent set retain the coarse world overview. These context layers
 reduce visible scale mismatch; they do not claim a single exact shared topology
-with the separately sourced Swiss, Finnish, Korean or island outlines, nor a
+with the separately sourced Swiss, Finnish or island outlines, nor a
 current cadastral survey or resolution of disputed territorial status.
 
 Small-area circles are presentation aids, separate from the outline data. Their
 screen-space need is now recalculated during zoom. A circle disappears once the
 outline is at least four screen pixels across; tiny remaining areas keep a
 constant-size circle. Institution-location diamonds retain their distinct scope.
+
+
+## Korean source reconciliation — 29 October 2026
+
+This section supersedes the earlier mixed-source Korean geometry and overlap
+follow-up notes. All nine published Korean regions and the detailed `KR` national
+context now derive from [vuski/admdongkor's 1 October 2026 snapshot](https://github.com/vuski/admdongkor/tree/3bc00489b76696db864bdbea4b19985cdfa8b403/ver20261001).
+The [data license](https://github.com/vuski/admdongkor/blob/d5d5a821c8de6cc337d47eeca604d7af76271c9b/LICENSE-DATA)
+is CC BY 4.0, retaining upstream SGIS attribution under KOGL Type 1.
+See the [official SGIS copyright policy](https://sgis.mods.go.kr/jsp/member/copyright.jsp).
+The repository's MIT code license is separate from its boundary-data license.
+
+Attribution: SGIS administrative-dong boundaries (KOGL Type 1), adapted by
+vuski/admdongkor (CC BY 4.0), further processed by Parliament Streams.
+[Machine-readable provenance](korea-source.json) records the exact source URL,
+commit, SHA-256, identities, transformation and limits. The upstream SHA-256 is
+`843ece3a0b3429742cd4a1b699cc13987a88b5e5401f382e7fdaaa194ea5e605`.
+
+The rebuild dissolves 3,559 administrative-dong units by 16 explicit first-level
+codes. Published mappings are Daegu 27, Gyeongsangbuk-do 47, Incheon 28, Busan 26,
+Chungcheongnam-do 44, Jeonbuk State 52, Jeonnam–Gwangju Integrated Special City 12,
+Gyeongsangnam-do 48 and Sejong 36. Exact native names are checked too. Gunwi's
+source membership is Daegu; Incheon reflects its 2026 district reorganization.
+
+Nine mapped regions and one unlabelled national remainder are simplified
+jointly at 0.000625 degrees. Exterior edges are snapped to seven decimal places;
+interior hole rings retain their simplified coordinates. All component counts,
+hole counts and original component interior points are preserved. The national
+outline is the union of this same partition, preserving its 1,099 island
+components. D3 winding is normalized. Rebuild offline from the pinned local input:
+
+```sh
+uv run tools/build_korean_map_geometry.py HangJeongDong_ver20261001.geojson
+```
+
+The nine published regions form valid coverage and resolve the two earlier
+Gyeongsangbuk-do overlap leads. Three tiny upstream edge mismatches among
+Seoul/Gyeonggi/Incheon disappear within the unlabelled national-context union;
+individual topology of the seven unpublished areas is not certified. The
+remainder is processing geometry, not an added legislature record. This is a
+maintained SGIS-derived snapshot, not a newly surveyed 2026 cadastre. No change
+to legislative eligibility or catalogue, schedule or inventory membership follows
+from this boundary correction. The national rebuild tool preserves this explicit
+source override and its license instead of restoring the older Natural Earth KR.

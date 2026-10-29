@@ -4,9 +4,10 @@
     "url": "https://github.com/nvkelso/natural-earth-vector/blob/v5.1.1/geojson/ne_10m_admin_0_countries.geojson",
     "sha256": "239eec57ac17f100a11e2536cffc56752c318b50ae765b0918ff7aab4ce8f255",
     "license": "Public domain",
+    "applies_to": "Default source; explicit per-country source_override entries take precedence.",
     "changes": "Preserve existing navigation identities; detailed polygons, topology-preserving simplification at at most 0.005 degrees, component-interior checks, D3 winding. No ODbL-derived geometry is incorporated."
   },
-  "description": "Detailed national context loaded only for visible countries at regional zoom.",
+  "description": "Detailed national context loaded only for visible countries at regional zoom. Source overrides take precedence over the default Natural Earth source.",
   "countries": [
     {
       "code": "AR",
@@ -131,7 +132,15 @@
     {
       "code": "KR",
       "file": "countries/KR.geojson",
-      "bytes": 33451
+      "bytes": 901992,
+      "source_override": {
+        "preserve_source_override": true,
+        "source_metadata": "korea-source.json",
+        "dataset": "SGIS-derived vuski/admdongkor, 2026-10-01 snapshot",
+        "license": "CC BY 4.0 with SGIS attribution under KOGL Type 1",
+        "source_sha256": "843ece3a0b3429742cd4a1b699cc13987a88b5e5401f382e7fdaaa194ea5e605",
+        "tolerance_degrees": 0.000625
+      }
     },
     {
       "code": "KY",

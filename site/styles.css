@@ -267,10 +267,10 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .data-page .data-stage h3 { margin: 0; color: var(--ink); font-family: inherit; font-size: .95rem; font-weight: 700; line-height: 1.35; }
 .data-stage p { margin: .4rem 0; font-size: .85rem; }
 .data-assets { margin: 1rem 0; }
-.data-assets > div { display: grid; grid-template-columns: minmax(180px, .8fr) minmax(0, 2fr); gap: .4rem 1.5rem; padding: .85rem 0; border-top: 1px solid var(--faint); }
+.data-assets > div { display: grid; grid-template-columns: minmax(180px, .8fr) minmax(0, 2fr); align-items: baseline; gap: .4rem 1.5rem; padding: .85rem 0; border-top: 1px solid var(--faint); }
 .data-assets dt { color: var(--ink); font-size: .9rem; font-weight: 700; }
 .data-assets dd { margin: 0; min-width: 0; color: var(--muted); font-size: .85rem; line-height: 1.5; }
-.data-asset-links, .data-doc-links { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.data-asset-links, .data-doc-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem 1.2rem; }
 .data-asset-links a, .data-doc-links a, .data-contribute a { display: inline-flex; align-items: center; min-height: 32px; color: var(--red); overflow-wrap: anywhere; }
 .data-doc-links a { column-gap: .25em; }
 .data-page main > section.data-contribute { margin-block: 1.6rem; padding: 1.25rem 1rem; border-top: 0; border-inline-start: 3px solid var(--green); background: var(--green-wash); }

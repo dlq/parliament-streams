@@ -45,8 +45,8 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
 ## Catalogue Work
 
 - [ ] Continue boundary identity/currentness checks beyond the 29 October map
-  corrections. Resolve the mixed-source Korean overlaps around Gyeongsangbuk-do
-  using consistent geometry; do not trim one region against another by guesswork.
+  corrections. The Korean mixed-source overlaps are resolved with one attributed
+  SGIS-derived snapshot for all nine mapped regions and their national context.
   Require country/region identifiers, complete component membership and source
   vintage before adding outlines. Run `uv run tools/check_map_geometry.py` and
   the geographic regression tests; valid topology alone does not prove the right
@@ -56,7 +56,9 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
   Preserve component/hole counts and original component interior points; reduce
   tolerance for Åland/French territorial outlines where needed. Reconcile the
   Córdoba and Santa Catarina precision mismatch before simplifying Argentina
-  and Brazil. Korea remains unchanged. The optional pinned transformation is
+  and Brazil. The subsequent Korean source reconciliation applies its own joint
+  simplification and preserves the national-context source override. The optional
+  pinned transformation for the original country coverages is
   `uv run tools/simplify_map_geometry.py INPUT.geojson OUTPUT.geojson`; source
   references and feature-level provenance remain in the map assets.
 - [ ] Continue the [subnational authority recheck](reports/discovery/2026-10-29-subnational-authority-recheck.md):

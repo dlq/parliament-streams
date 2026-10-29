@@ -1609,6 +1609,28 @@ try {
   assert.equal(await dataPage.locator('.data-supporting .data-assets > div').count(), 4);
   assert.equal(await dataPage.locator('.data-methods a[href$=".md"]').count(), 7);
   assert.equal(await dataPage.locator('.data-colophon a[href$="PRIVACY.md"]').count(), 1);
+  const fileRowBaselines = await dataPage.locator('.data-files .data-assets > div, .data-supporting .data-assets > div').evaluateAll((rows) => {
+    const baseline = (element) => {
+      const wrapper = document.createElement("span");
+      const probe = document.createElement("span");
+      probe.style.cssText = "display:inline-block;width:0;height:0;padding:0;border:0;vertical-align:baseline";
+      while (element.firstChild) wrapper.append(element.firstChild);
+      wrapper.prepend(probe);
+      element.append(wrapper);
+      const position = probe.getBoundingClientRect().top;
+      probe.remove();
+      while (wrapper.firstChild) element.insertBefore(wrapper.firstChild, wrapper);
+      wrapper.remove();
+      return position;
+    };
+    return rows.map((row) => ({
+      label: row.querySelector("dt").textContent,
+      difference: baseline(row.querySelector("dt")) - baseline(row.querySelector("dd a")),
+    }));
+  });
+  for (const row of fileRowBaselines) {
+    assert(Math.abs(row.difference) < 1, `${row.label}: label and first download link need the same baseline`);
+  }
   const dataMain = await dataPage.locator('main').elementHandle();
   const fragmentRequests = [];
   const recordFragmentRequest = (request) => { if (request.resourceType() === 'fetch') fragmentRequests.push(request.url()); };

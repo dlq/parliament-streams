@@ -70,6 +70,9 @@ def main() -> None:
             "url": SOURCE_URL,
             "sha256": hashlib.sha256(raw).hexdigest(),
             "license": "Public domain",
+            "applies_to": (
+                "Default source; explicit per-country source_override entries take precedence."
+            ),
             "changes": (
                 "Preserve existing navigation identities; detailed polygons, topology-preserving "
                 "simplification at at most 0.005 degrees, component-interior checks, D3 winding. "
@@ -77,12 +80,29 @@ def main() -> None:
             ),
         },
         "description": (
-            "Detailed national context loaded only for visible countries at regional zoom."
+            "Detailed national context loaded only for visible countries at regional zoom. "
+            "Source overrides take precedence over the default Natural Earth source."
         ),
         "countries": [],
     }
     args.output_directory.mkdir(parents=True, exist_ok=True)
     for code in sorted(parents):
+        override_path = root / "countries" / f"{code}.geojson"
+        if override_path.exists():
+            existing = json.loads(override_path.read_text())
+            override = existing["properties"].get("context_source", {})
+            if override.get("preserve_source_override"):
+                path = args.output_directory / f"{code}.geojson"
+                path.write_bytes(override_path.read_bytes())
+                index["countries"].append(
+                    {
+                        "code": code,
+                        "file": f"countries/{code}.geojson",
+                        "bytes": path.stat().st_size,
+                        "source_override": override,
+                    }
+                )
+                continue
         anchor = next(
             row for row in overview if canonical_code(row["properties"]["iso_a2"]) == code
         )

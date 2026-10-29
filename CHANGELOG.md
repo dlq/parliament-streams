@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-29 — Reconcile Korean Boundaries and Align Data Links
+
+- Replace all nine Korean regional outlines and their detailed national context
+  with one attributed October 2026 SGIS-derived snapshot. Preserve Gunwi in Daegu,
+  island components and shared edges; resolve the two mixed-source overlap leads.
+- Record the pinned source, license and offline rebuild method, and preserve the
+  Korean override when rebuilding the other national context assets.
+- Align Data and methods row labels and download links on their text baselines,
+  retaining mobile stacking and accessible link targets.
+
 ## 2026-10-29 — Clarify Zoomed Map Presentation
 
 - Replace tiny-area circles with the actual regional outline once it is readable

@@ -44,3 +44,29 @@ test("regional outlines retain corrected territorial membership", () => {
     assert(geoContains(regions.get("Sicily"), point), `Sicily lost a provincial-capital location: ${point}`);
   }
 });
+
+test("Korean regions retain current memberships and share the national source", async () => {
+  const country = JSON.parse(await readFile(new URL("../site/assets/maps/countries/KR.geojson", import.meta.url), "utf8"));
+  const source = JSON.parse(await readFile(new URL("../site/assets/maps/korea-source.json", import.meta.url), "utf8"));
+  assert.equal(source.snapshot_date, "2026-10-01");
+  assert.equal(source.source_units, 3559);
+  assert.equal(country.properties.context_source.preserve_source_override, true);
+  const probes = {
+    Daegu: [128.573, 36.242],
+    "Gyeongsangbuk-do": [130.903, 37.485],
+    Busan: [129.067, 35.09],
+    Incheon: [126.673, 37.41],
+    "Chungcheongnam-do": [126.663, 36.601],
+    "Jeonbuk State": [127.148, 35.824],
+    "Jeonnam–Gwangju Integrated Special City": [126.852, 35.159],
+    "Gyeongsangnam-do": [128.682, 35.228],
+    Sejong: [127.289, 36.48],
+  };
+  for (const [name, point] of Object.entries(probes)) {
+    assert(geoContains(regions.get(name), point), `${name}: expected administrative location is missing`);
+    assert(geoContains(country, point), `${name}: national context does not contain the same location`);
+    assert.equal(regions.get(name).properties.boundary_source, "korea-source.json");
+  }
+  assert(!geoContains(regions.get("Gyeongsangbuk-do"), probes.Daegu), "Gunwi must not remain in Gyeongsangbuk-do");
+  assert(geoContains(regions.get("Jeonnam–Gwangju Integrated Special City"), [126.392, 34.811]), "Merged jurisdiction must retain both former areas");
+});
