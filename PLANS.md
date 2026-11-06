@@ -121,12 +121,13 @@ fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
   Portugal's fixed legislature/link discovery, Ontario's date/title scope and
   UN Web TV's changed-page recognition. Seek supported structured replacements
   before adding more presentation rules.
-- [ ] Track [Taiwan’s hosted access regression](https://github.com/dlq/parliament-streams/issues/53)
-  and keep Taiwan/Knesset access holds separate from parser refactoring; use bounded
-  requests and honest last-good/error reporting rather than repeated header changes.
-- [ ] Resolve US Senate/XML and New York/ICS HTTP 403 access holds, then confirm
-  their live contracts and New York date/time precision. Parser tests are not
-  evidence of successful live retrieval. Do not invent midnight programme starts.
+- Track supported access and live-contract investigations in
+  [Taiwan #53](https://github.com/dlq/parliament-streams/issues/53),
+  [US Senate hearings XML #54](https://github.com/dlq/parliament-streams/issues/54),
+  [New York Senate ICS #55](https://github.com/dlq/parliament-streams/issues/55),
+  and [Knesset TV #56](https://github.com/dlq/parliament-streams/issues/56).
+  Keep access holds separate from parser correctness, use bounded requests and
+  honest last-good/error reporting, and require real time precision for programmes.
 - [ ] Follow the [new structured-source priorities](reports/epg/2026-10-28-structured-candidate-priorities.md)
   and [current input register](reports/epg/2026-10-28-unimplemented-collectors.md).
   BC's embedded calendar has historical noon-bounded session blocks, not verified
@@ -170,10 +171,8 @@ A hosted television-view application remains a later product decision.
 The [25 October Pages audit](reports/ui/2026-10-25-audit.md) records the original
 findings and implemented changes. Remaining verification:
 
-- [ ] Verify real screen-reader, zoom/text-resize, forced-colour and physical
-  mobile behaviour. Obtain fluent-speaker review of the new translated copy.
-- [ ] Review singular/plural result-count wording across locales, including
-  the schedule's one-channel filter result.
+- [Manual website accessibility review #57](https://github.com/dlq/parliament-streams/issues/57).
+- [Localized result-count plural forms #58](https://github.com/dlq/parliament-streams/issues/58).
 
 ### Group Subnational Sources In The Catalogue
 
@@ -183,16 +182,23 @@ findings and implemented changes. Remaining verification:
   links; search and filters should reveal matches inside their groups.
 - [ ] Add dated schedule browsing and shareable filter state when event identifiers
   and timestamps support it. Missing coverage must remain distinct from no events.
-  Jurisdiction/listing filters are now shareable. Review how Now/Next summaries
-  age between scheduled collections before expanding dated browsing; distinguish
-  publisher-reported live status from a programme inferred from its time range.
+  Jurisdiction/listing filters are now shareable. Complete the
+  [Now/Next freshness review #59](https://github.com/dlq/parliament-streams/issues/59)
+  before expanding dated browsing.
 
 ### Language Coverage And Review
 
-- [ ] Arrange fluent-speaker review of all supported locales, especially the new
-  Korean, Japanese and Indonesian packs, recent Czech/Finnish/Swedish/Traditional
-  Chinese copy and provisional Inuktitut text.
-  IPTV/VLC help must remain complete in every supported locale.
+Initial fluent-speaker review tasks:
+
+- [Korean (`ko`) #60](https://github.com/dlq/parliament-streams/issues/60).
+- [Japanese (`ja`) #61](https://github.com/dlq/parliament-streams/issues/61).
+- [Indonesian (`id`) #62](https://github.com/dlq/parliament-streams/issues/62).
+- [Inuktitut syllabics (`iu-Cans`) #63](https://github.com/dlq/parliament-streams/issues/63).
+
+All supported locales still welcome review, including recent Czech, Finnish,
+Swedish and Traditional Chinese copy. IPTV/VLC help must remain complete in every
+supported locale; key completeness does not establish linguistic quality.
+
 - [ ] Revisit language-picker ordering consistently across pages; keep the current
   order until that review. Source labels alone do not establish language coverage.
 
