@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import re
 from datetime import UTC, datetime
-from html import unescape
+from html.parser import HTMLParser
 from typing import Any, cast
 from urllib.parse import urljoin, urlsplit
 
@@ -32,11 +32,38 @@ SOURCE: ScraperSource = {
 }
 
 
-def _link(html: str, pattern: str, base_url: str) -> str:
-    match = re.search(pattern, html, flags=re.IGNORECASE)
-    if not match:
-        raise ValueError("official agenda download link was not found")
-    return urljoin(base_url, unescape(match.group(1)))
+class _AgendaLinks(HTMLParser):
+    def __init__(self, html: str) -> None:
+        super().__init__()
+        self.links: list[tuple[str, str]] = []
+        self.feed(html)
+        self.close()
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "a":
+            attributes = dict(attrs)
+            if href := attributes.get("href"):
+                self.links.append((attributes.get("title") or "", href))
+
+
+def _legislature_number(roman: str) -> int:
+    values = dict(I=1, V=5, X=10, L=50, C=100, D=500, M=1000)
+    digits = [values[letter] for letter in roman.upper()]
+    return sum(
+        -value if value < following else value
+        for value, following in zip(digits, digits[1:] + [0], strict=True)
+    )
+
+
+def _official_link(links: set[str], base_url: str, description: str) -> str:
+    urls = {urljoin(base_url, link) for link in links}
+    if len(urls) != 1:
+        raise ValueError(f"Expected one official Portugal {description} link")
+    url = urls.pop()
+    parsed = urlsplit(url)
+    if parsed.scheme != "https" or parsed.netloc not in {"www.parlamento.pt", "app.parlamento.pt"}:
+        raise ValueError(f"Portugal {description} link leaves its official publisher")
+    return url
 
 
 def collect(
@@ -44,18 +71,25 @@ def collect(
 ) -> tuple[ParsedSchedule, list[str]]:
     index_request: FetchRequest = {"url": INDEX_URL, "method": "GET", "headers": {}}
     index_html = fetcher(index_request, timeout, retries)
-    legislature_url = _link(
-        index_html,
-        r'<a[^>]+title="Pasta XVII Legislatura"[^>]+href="([^"]+)"',
-        INDEX_URL,
-    )
+    folders: dict[int, set[str]] = {}
+    for title, href in _AgendaLinks(index_html).links:
+        match = re.fullmatch(r"Pasta\s+([IVXLCDM]+)\s+Legislatura", title.strip(), re.IGNORECASE)
+        if match:
+            folders.setdefault(_legislature_number(match[1]), set()).add(href)
+    if not folders:
+        raise ValueError("Official Portugal legislature folders were not found")
+    legislature_url = _official_link(folders[max(folders)], INDEX_URL, "legislature folder")
     legislature_html = fetcher(
         {"url": legislature_url, "method": "GET", "headers": {}}, timeout, retries
     )
-    json_url = _link(
-        legislature_html,
-        r'<a[^>]+href="([^"]*AgendaParlamentar_json\.txt[^"]*)"',
+    json_url = _official_link(
+        {
+            href
+            for _, href in _AgendaLinks(legislature_html).links
+            if "agendaparlamentar_json.txt" in href.casefold()
+        },
         legislature_url,
+        "JSON agenda",
     )
     payload = fetcher({"url": json_url, "method": "GET", "headers": {}}, timeout, retries)
     return parse(payload, now=now), [INDEX_URL, legislature_url, json_url]

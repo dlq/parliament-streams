@@ -82,9 +82,18 @@ def parse(html: str, now: datetime | None = None) -> ParsedSchedule:
     now = now or datetime.now(UTC)
     coming_marker = "view-display--attachment-coming-up"
     live = _events(_section(html, "Live Now", coming_marker))
+    scheduled = _events(_section(html, "Coming Up"))
+    if not live and not scheduled:
+        if (
+            coming_marker in html
+            and "mediaun-timezone" not in html
+            and re.search(r"<p>\s*There are no results\.\s*</p>", html)
+        ):
+            return {}
+        raise ValueError("UN Web TV schedule lacks recognizable events or an explicit empty state")
     for event in live:
         event["status"] = "Live now"
-    upcoming = [event for event in _events(_section(html, "Coming Up")) if event["start"] >= now]
+    upcoming = [event for event in scheduled if event["start"] >= now]
     current = live[0] if live else None
     next_event = upcoming[0] if upcoming else None
     if not current and not next_event:

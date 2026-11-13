@@ -12,6 +12,30 @@ NOW = datetime(2026, 10, 28, 12, tzinfo=UTC)
 
 
 class ScraperStabilityTests(unittest.TestCase):
+    def test_european_parliament_resolves_each_published_build(self):
+        ep = european_parliament
+        for build in ("first-build", "next_build"):
+            with self.subTest(build=build):
+                url = (
+                    f"{ep.BASE_URL}/_next/data/{build}/en/webstreaming.json?view=month&d=2026-10-28"
+                )
+                responses = {
+                    ep.HOME_URL: f'<script id="__NEXT_DATA__">{{"buildId":"{build}"}}</script>',
+                    url: '{"pageProps":{"mediaItems":[]}}',
+                }
+
+                def fetch(spec, _timeout, _retries, responses=responses):
+                    return responses[spec["url"]]
+
+                self.assertEqual(ep.collect(fetch, NOW, 3, 0), ({}, [url, ep.HOME_URL]))
+
+        for html in (
+            "<html>Unavailable</html>",
+            '<script id="__NEXT_DATA__">{"buildId":"../other"}</script>',
+        ):
+            with self.subTest(html=html), self.assertRaisesRegex(ValueError, "European Parliament"):
+                ep.collect(lambda *_, html=html: html, NOW, 3, 0)
+
     def test_malformed_responses_do_not_stop_other_sources(self):
         # Exercise every collector through the orchestration boundary, including
         # collectors making multiple requests. The healthy UK fixture must survive.

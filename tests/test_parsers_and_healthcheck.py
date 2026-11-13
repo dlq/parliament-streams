@@ -85,6 +85,11 @@ class ParserTests(unittest.TestCase):
         request = un_webtv.request_specs(datetime(2026, 8, 25, 2, tzinfo=UTC))[0]
         self.assertTrue(request["url"].endswith("/2026-08-24"))
 
+        empty = '<p>There are no results.</p><div class="view-display--attachment-coming-up"></div>'
+        self.assertEqual(un_webtv.parse(empty), {})
+        with self.assertRaisesRegex(ValueError, "explicit empty state"):
+            un_webtv.parse(empty.replace("There are no results.", "Service unavailable"))
+
     def test_italian_senate_json_schedule(self):
         payload = json.dumps(
             [
@@ -211,7 +216,8 @@ class ParserTests(unittest.TestCase):
     def test_portugal_resolves_current_open_data_download(self):
         responses = {
             portugal_agenda.INDEX_URL: (
-                '<a title="Pasta XVII Legislatura" href="/legislature?Path=current">XVII</a>'
+                '<a title="Pasta XVII Legislatura" href="/legislature?Path=old">XVII</a>'
+                "<a href='/legislature?Path=current' title='Pasta XVIII Legislatura'>XVIII</a>"
             ),
             "https://www.parlamento.pt/legislature?Path=current": (
                 '<a href="https://app.parlamento.pt/AgendaParlamentar_json.txt?token=current">'
