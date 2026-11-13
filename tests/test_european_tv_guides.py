@@ -196,6 +196,15 @@ class BundestagTVGuideTests(unittest.TestCase):
         self.assertEqual(event["source_timezone"], "Europe/Berlin")
         self.assertIsNone(row["current_event_title"])
 
+    def test_displayed_end_minute_matches_exact_unix_end_with_seconds(self):
+        html = german_guide(
+            german_table(german_row("9 bis 14.23 Uhr", "2026-11-13T13:23:08+00:00"), "13.11.2026")
+        )
+        row = self.parse(html)[germany_bundestag.CHANNEL_ID]
+        self.assertEqual(row["events"][0]["end"], "2026-11-13T13:23:08Z")
+        with self.assertRaisesRegex(ValueError, "end timestamp disagrees"):
+            self.parse(html.replace("14.23 Uhr", "14.24 Uhr"))
+
     def test_other_channels_and_unscoped_events_are_not_mapped_to_channel_1(self):
         self.assertEqual(self.parse(german_guide(german_table(german_row(channel="2")))), {})
         with self.assertRaisesRegex(ValueError, "channel-1"):

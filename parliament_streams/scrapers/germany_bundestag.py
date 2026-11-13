@@ -29,7 +29,7 @@ SOURCE: ScraperSource = {
     "method": "GET",
     "notes": (
         "Official TV preview rows identify channel 1 alongside its channel-1 live player. "
-        "Use the dated source clock range and verify its end against the explicit Unix end."
+        "Verify the displayed end minute against the explicit Unix end and retain its seconds."
     ),
 }
 RANGE = re.compile(r"(\d{1,2}(?:[.:]\d{2})?)\s+bis\s+(\d{1,2}(?:[.:]\d{2})?)\s+Uhr")
@@ -139,7 +139,8 @@ class _ProgrammeHTML(HTMLParser):
             end = datetime.fromtimestamp(int(self.end_epoch), UTC)
         except (OverflowError, OSError, ValueError) as error:
             raise ValueError("Bundestag TV end timestamp is out of range") from error
-        if end.astimezone(ZoneInfo(TIMEZONE)).replace(tzinfo=None) != wall_end or end <= start:
+        end_minute = end.astimezone(ZoneInfo(TIMEZONE)).replace(tzinfo=None, second=0)
+        if end_minute != wall_end or end <= start:
             raise ValueError("Bundestag TV end timestamp disagrees with its displayed range")
         self.events.append({"start": start, "end": end, "title": title, "url": PAGE_URL})
 
