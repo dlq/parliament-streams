@@ -25,7 +25,7 @@ SOURCE: ScraperSource = {
     "method": "GET",
     "notes": (
         "Committee hearing XML. Record contract corroborated by unitedstates/congress "
-        "committee_meetings.py; live payload validation held by publisher HTTP 403. "
+        "committee_meetings.py. Dated no-hearing placeholders are skipped. "
         "Institutional starts only, not a linear webcast guide."
     ),
 }
@@ -48,8 +48,12 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
             raise ValueError("Senate hearing lacks its committee field")
         committee = (row.findtext("cmte_code") or "").strip()
         if not committee:
-            # Published no-hearings sentinel has an empty committee code.
-            if any((row.findtext(field) or "").strip() for field in ("date", "matter", "room")):
+            # A no-hearing row can carry the date it describes.
+            subject = clean_html(row.findtext("matter") or "").casefold().rstrip(".")
+            room = clean_html(row.findtext("room") or "")
+            date = (row.findtext("date") or "").strip()
+            empty_placeholder = not subject and (not date or date.endswith(" 00:00 AM"))
+            if room or (not empty_placeholder and subject != "no committee hearings scheduled"):
                 raise ValueError("Incomplete Senate hearing cannot be treated as empty")
             continue
         title = clean_html(row.findtext("matter") or "")
