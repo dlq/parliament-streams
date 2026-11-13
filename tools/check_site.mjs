@@ -536,8 +536,8 @@ async function assertDataLoadingAndLanguageWidth(browser, baseUrl) {
     await page.goto(`${baseUrl}index.html?lang=en`);
     await page.waitForFunction(() => window.ParliamentStreamsViewer);
     await page.evaluate(() => window.ParliamentStreamsPageReady);
-    assert.equal(requests.length, 1, "Browsing the catalogue needs only catalogue JSON");
-    assert(requests[0].endsWith("/channels.json"));
+    assert.deepEqual(requests.map((path) => path.split("/").at(-1)).sort(),
+      ["catalogue-grouping.json", "channels.json"], "Browsing loads only source and grouping data");
     assert.deepEqual(playerRequests, [], "Browsing must not initialize the player");
     // All-page direct/soft-navigation width parity is checked by
     // assertNavigationStyles; retain a real language change at the narrow limit.
@@ -549,6 +549,13 @@ async function assertDataLoadingAndLanguageWidth(browser, baseUrl) {
     assert.equal(await selector.evaluate((node) => node.getBoundingClientRect().width), expectedWidth);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     await page.setViewportSize({ width: 1280, height: 900 });
+    await page.route("**/data/catalogue-grouping.json", (route) => route.fulfill({ status: 404 }));
+    await page.reload();
+    await page.locator('[data-channel-id="alberta-assembly-online"]').waitFor();
+    assert.equal(await page.locator(".catalogue-group").count(), 0);
+    await page.locator("#search").fill("Canada");
+    assert.equal(await page.locator('[data-channel-id="alberta-assembly-online"]').count(), 1);
+    await page.unroute("**/data/catalogue-grouping.json");
     await page.goto(`${baseUrl}data.html`);
     requests.length = 0;
     await page.locator('nav a[href*="map.html"]').click();
@@ -775,6 +782,8 @@ try {
   assert.deepEqual(await page.evaluate(() => ['zh-TW', 'zh-HK', 'zh-MO', 'zh-Hant-TW', 'zh-Hans-TW', 'cs-CZ', 'fi-FI', 'sv-FI'].map(window.ParliamentStreamsI18n.supportedLocale)), ['zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hans', 'cs', 'fi', 'sv']);
   assert.deepEqual(await page.evaluate(() => [1, 2, 5].map((count) => window.ParliamentStreamsMapI18n.sourceCount('cs', count))), ['1 zdroj', '2 zdroje', '5 zdrojů']);
 
+  const catalogueErrors = [];
+  page.on("pageerror", (error) => catalogueErrors.push(error.message));
   for (const width of [1280, 320]) {
     await page.setViewportSize({ width, height: 900 });
     for (const search of ["Neuquen", "Neuquén", "Neuque\u0301n"]) {
@@ -782,6 +791,13 @@ try {
       assert.equal(await page.locator('[data-channel-id="argentina-neuquen-legislature-webcasts"]').count(), 1);
     }
     await page.locator("#search").fill("Canada");
+    const albertaGroup = page.locator('[data-group="jurisdiction:ca"] [data-group="jurisdiction:ca-ab"]');
+    assert.equal(await albertaGroup.locator('[data-channel-id="alberta-assembly-online"]').count(), 1);
+    assert.match(await albertaGroup.locator(":scope > h4").innerText(), /Alberta.*1 source/s);
+    assert.equal(await albertaGroup.evaluate((group) => {
+      const national = group.parentElement.querySelector('[data-channel-id="canada-senate-senvu"]');
+      return Boolean(national?.compareDocumentPosition(group) & Node.DOCUMENT_POSITION_FOLLOWING);
+    }), true, "National sources precede subnational groups");
     for (const region of ["Alberta", "Ontario", "Quebec", "New Brunswick"]) {
       const expected = canonicalCatalogue.channels.filter((channel) => channel.country_or_region === region);
       assert(expected.length > 0);
@@ -791,8 +807,13 @@ try {
     }
     assert.equal(await page.locator('[data-channel-id="cpac-ca"]').count(), 1);
     assert.equal(await page.locator('[data-channel-id="scottish-parliament-tv"]').count(), 0);
+    if (process.env.PARLIAMENT_GROUPING_SCREENSHOTS === "1") {
+      await albertaGroup.scrollIntoViewIfNeeded();
+      await page.screenshot({ path: join(tmpdir(), `parliament-catalogue-canada-${width}.png`) });
+    }
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
   }
+  assert.deepEqual(catalogueErrors, []);
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.locator("#locale-select").selectOption("fr");
   await page.evaluate(() => window.ParliamentStreamsLocaleReady);
@@ -804,6 +825,10 @@ try {
 
   const rows = page.locator(".channel-button");
   assert.equal(await rows.count(), canonicalCatalogue.channels.length);
+  assert.equal(await page.locator('[data-group="jurisdiction:ar-w"] [data-channel-id="argentina-corrientes-deputies-webcasts"]').count(), 1);
+  await page.locator("#search").fill("United Kingdom");
+  assert.equal(await page.locator('#channel-list > [data-group="jurisdiction:im"] [data-channel-id="isle-of-man-tynwald-listen-watch"]').count(), 1);
+  await page.locator("#search").fill("");
   assert.deepEqual(await page.locator(".channel-header .sort-button").allInnerTexts(), [
     "SOURCE",
     "JURISDICTION",
@@ -816,6 +841,7 @@ try {
   assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Watch here/);
   await page.locator("#sort-mode").click();
   assert.match(await page.locator("#sort-status").innerText(), /Viewing method: descending/);
+  assert.equal(await page.locator(".catalogue-group").count(), 0);
   assert.match(await page.locator(".channel-button").first().locator(".source-posture").innerText(), /Watch on official site/);
   assert.equal(canonicalCatalogue.channels.some((channel) => channel.playback_policy === "research_only"), false);
   assert.equal(await page.locator(".source-posture-research").count(), 0);
@@ -823,7 +849,9 @@ try {
   for (const id of ["spain-congreso-directo-3", "mongolia-parliament-tv", "ontario-house-en-cc", "el-salvador-legislative-assembly"]) {
     assert.equal(await page.locator(`[data-channel-id="${id}"]`).count(), 0);
   }
-  await page.locator("#sort-source").click();
+  await page.locator("#group-catalogue").click();
+  assert.equal(await page.locator('[data-group="jurisdiction:ca"]').count(), 1);
+  assert.equal(await rows.count(), canonicalCatalogue.channels.length);
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
   assert.match(await navarreFlag.getAttribute("src"), /assets\/flags\/navarre\.svg$/);

@@ -1,6 +1,6 @@
 window.ParliamentStreamsPageReady = window.ParliamentStreamsI18n.startPage((pageSignal) => {
 
-const { countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
+const { countrySearchTerms, normalizeSearchText, sourceCount } = window.ParliamentStreamsMapI18n;
 
 const heroImages = [
   {
@@ -41,13 +41,14 @@ const heroImages = [
   },
 ];
 
-const state = { channels: [], generatedOn: "", locale: window.ParliamentStreamsPageLocale.current(), sort: { key: "source", direction: "ascending" } };
+const state = { channels: [], grouping: null, sortExplicit: false, generatedOn: "", locale: window.ParliamentStreamsPageLocale.current(), sort: { key: "source", direction: "ascending" } };
 const elements = {};
 const { t, label, slug, jurisdictionName, jurisdictionMark, isPlaybackEnabled, playbackMode, playbackModeLabel, playbackModeDescription, formatDate, sourceNameMarkup, languageMarkup, contentLanguageTag, languageAttribute, escapeHtml } = window.ParliamentStreamsSourceUI.create(() => state.locale, () => state.channels);
 function bindElements() { Object.assign(elements, {
   stats: document.querySelector("#catalogue-stats"),
   list: document.querySelector("#channel-list"),
   filterDisclosure: document.querySelector(".filter-disclosure"),
+  groupReset: document.querySelector("#group-catalogue"),
   count: document.querySelector("#results-count"),
   search: document.querySelector("#search"),
   level: document.querySelector("#level-filter"),
@@ -87,6 +88,7 @@ function applyStaticTranslations() {
   setText("page-title", t("title"));
   setText("intro-lede", t("lede"));
   setText("browse-label", t("browse"));
+  elements.groupReset.textContent = t("groupCatalogue");
   setText("catalogue-title", t("catalogue"));
   document.querySelector("#source-json-link").firstChild.textContent = `${t("json")} `;
   setText("search-label", t("search"));
@@ -159,8 +161,9 @@ function sortValue(channel, key) {
   }
 }
 function renderSortHeaders() {
+  elements.sortStatus.textContent = state.grouping && !state.sortExplicit ? t("groupedCatalogue") : "";
   elements.sortHeaders.forEach((header) => {
-    const active = header.dataset.sortHeader === state.sort.key;
+    const active = (!state.grouping || state.sortExplicit) && header.dataset.sortHeader === state.sort.key;
     const button = header.querySelector("button");
     button.classList.toggle("is-active", active);
     button.dataset.direction = active ? state.sort.direction : "none";
@@ -172,24 +175,107 @@ function renderSortHeaders() {
   });
 }
 function optionValues(key) { return [...new Set(state.channels.map((channel) => channel[key]))].sort(); }
+function placementPath(records, id, parentField) {
+  const path = [];
+  while (id && Object.hasOwn(records, id) && !path.includes(id)) {
+    path.unshift(id);
+    id = records[id][parentField];
+  }
+  return path;
+}
+function groupPath(channel) {
+  const grouping = state.grouping;
+  const placement = grouping?.sources[channel.id]?.placement;
+  if (!placement) return [];
+  return [
+    ...placementPath(grouping.jurisdictions, placement.jurisdiction_id, "parent_id")
+      .map((id) => ({ key: `jurisdiction:${id}`, label: jurisdictionName(grouping.jurisdictions[id].label) })),
+    ...placementPath(grouping.institutions, placement.institution_id, "umbrella_id")
+      .map((id) => ({ key: `institution:${id}`, label: grouping.institutions[id].label })),
+    ...(placement.room_id ? [{ key: `room:${placement.room_id}`, label: grouping.rooms[placement.room_id].label }] : []),
+  ];
+}
+function groupingSearchTerms(channel) {
+  const grouping = state.grouping;
+  const entry = grouping?.sources[channel.id];
+  if (!entry) return countrySearchTerms(state.locale, channel);
+  const jurisdictionIds = new Set();
+  const institutions = new Set(entry.reviewed_institution_ids.flatMap(
+    (id) => placementPath(grouping.institutions, id, "umbrella_id"),
+  ));
+  const matchedJurisdictions = [
+    entry.placement?.jurisdiction_id,
+    ...[...institutions].map((id) => grouping.institutions[id].jurisdiction_id),
+  ];
+  for (const id of matchedJurisdictions) {
+    for (const ancestor of placementPath(grouping.jurisdictions, id, "parent_id")) {
+      jurisdictionIds.add(ancestor);
+      for (const associated of grouping.jurisdictions[ancestor].search_association_ids ?? []) {
+        jurisdictionIds.add(associated);
+      }
+    }
+  }
+  return [
+    ...[...jurisdictionIds].flatMap((id) => {
+      const { label, region_code: code } = grouping.jurisdictions[id];
+      return [label, jurisdictionName(label), ...(code ? ["en", state.locale].map((locale) =>
+        new Intl.DisplayNames([locale], { type: "region" }).of(code)) : [])];
+    }),
+    ...[...institutions].flatMap((id) => {
+      const { label, aliases } = grouping.institutions[id];
+      return [label, ...aliases];
+    }),
+    entry.placement?.room_id ? grouping.rooms[entry.placement.room_id].label : "",
+  ].join(" ");
+}
+function renderGroups(channels) {
+  const root = { rows: [], groups: new Map(), count: 0 };
+  for (const channel of channels) {
+    let group = root;
+    for (const { key, label } of groupPath(channel)) {
+      if (!group.groups.has(key)) group.groups.set(key, { key, label, rows: [], groups: new Map(), count: 0 });
+      group = group.groups.get(key);
+      group.count += 1;
+    }
+    group.rows.push(channel);
+  }
+  const collator = new Intl.Collator(state.locale, { numeric: true, sensitivity: "base" });
+  function renderChildren(group, depth) {
+    return [...group.groups.values()].sort((left, right) =>
+      Number(left.key.startsWith("jurisdiction:")) - Number(right.key.startsWith("jurisdiction:"))
+      || collator.compare(left.label, right.label)
+    ).map((child) => {
+      // The row already names its legislature when there is only one source.
+      if (child.key.startsWith("institution:") && child.count === 1 && !child.groups.size) {
+        return renderSource(child.rows[0]);
+      }
+      const headingLevel = Math.min(3 + depth, 6);
+      return `<li class="catalogue-group" data-group="${escapeHtml(child.key)}">
+        <h${headingLevel} class="catalogue-group-heading">${escapeHtml(child.label)}
+          <span>${escapeHtml(sourceCount(state.locale, child.count))}</span>
+        </h${headingLevel}>
+        <ul class="channel-list">${child.rows.map(renderSource).join("")}${renderChildren(child, depth + 1)}</ul>
+      </li>`;
+    }).join("");
+  }
+  return renderChildren(root, 0) + root.rows.map(renderSource).join("");
+}
 function filteredSources() {
   const search = normalizeSearchText(elements.search.value.trim());
   const collator = new Intl.Collator(state.locale, { numeric: true, sensitivity: "base" });
   return state.channels.filter((channel) => {
-    const searchable = normalizeSearchText([channel.name, channel.legislature, channel.country_or_region, jurisdictionName(channel.country_or_region), countrySearchTerms(state.locale, channel), channel.language].join(" "));
-    return (!search || searchable.includes(search))
-      && (!elements.level.value || channel.jurisdiction_level === elements.level.value)
-      && (!elements.format.value || channel.source_type === elements.format.value);
+    if (elements.level.value && channel.jurisdiction_level !== elements.level.value) return false;
+    if (elements.format.value && channel.source_type !== elements.format.value) return false;
+    if (!search) return true;
+    const terms = [channel.name, channel.legislature, channel.country_or_region,
+      jurisdictionName(channel.country_or_region), groupingSearchTerms(channel), channel.language];
+    return normalizeSearchText(terms.join(" ")).includes(search);
   }).sort((left, right) => {
     const result = collator.compare(sortValue(left, state.sort.key), sortValue(right, state.sort.key));
     return state.sort.direction === "ascending" ? result : -result;
   });
 }
-function renderList() {
-  const channels = filteredSources();
-  renderSortHeaders();
-  elements.count.textContent = t("results", { shown: channels.length, total: state.channels.length });
-  elements.list.innerHTML = channels.length ? channels.map((channel) => {
+function renderSource(channel) {
     const descriptionId = `${channel.id}-description`;
     const status = playbackMode(channel);
     const playable = isPlaybackEnabled(channel);
@@ -206,7 +292,16 @@ function renderList() {
       ${external ? `<a class="row-direct-watch" href="${channel.official_url}" target="_blank" rel="noreferrer" aria-label="${t("official")}: ${escapeHtml(channel.name)}">${t("official")} <span aria-hidden="true">↗</span></a>` : ""}
       <span class="visually-hidden" id="${descriptionId}" lang="${state.locale}">${playbackModeDescription(status)}</span>
     </li>`;
-  }).join("") : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
+}
+function renderList() {
+  const channels = filteredSources();
+  renderSortHeaders();
+  elements.count.textContent = t("results", { shown: channels.length, total: state.channels.length });
+  const grouped = state.grouping && !state.sortExplicit;
+  elements.groupReset.hidden = !state.grouping || grouped;
+  elements.list.innerHTML = channels.length
+    ? grouped ? renderGroups(channels) : channels.map(renderSource).join("")
+    : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
     window.ParliamentStreamsViewer.open(button.dataset.channelId, { play: true, trigger: button });
   }));
@@ -226,11 +321,18 @@ function mountPage() {
   setOptionLabel(elements.format, "allTypes", optionValues("source_type"));
   renderResearchSummary();
   [elements.search, elements.level, elements.format].forEach((input) => input.addEventListener("input", renderList));
+  elements.groupReset.addEventListener("click", () => {
+    state.sort = { key: "source", direction: "ascending" };
+    state.sortExplicit = false;
+    renderList();
+    document.querySelector("#catalogue-results").focus();
+  });
   elements.sortButtons.forEach((button) => button.addEventListener("click", () => {
     const key = button.dataset.sort;
-    state.sort = key === state.sort.key
+    state.sort = (!state.grouping || state.sortExplicit) && key === state.sort.key
       ? { key, direction: state.sort.direction === "ascending" ? "descending" : "ascending" }
       : { key, direction: "ascending" };
+    state.sortExplicit = true;
     renderList();
   }));
   renderList();
@@ -239,9 +341,15 @@ function mountPage() {
   if (requested && requested !== window.ParliamentStreamsViewer.selectedId) window.ParliamentStreamsViewer.open(requested, { play: parameters.get("play") === "1" });
 }
 return (async () => {
-  const catalogue = await window.ParliamentStreamsData.load("channels");
+  const data = window.ParliamentStreamsData;
+  const [catalogue, grouping] = await Promise.all([
+    data.load("channels"), data.optional("catalogue-grouping"),
+  ]);
   if (pageSignal?.aborted) return;
   state.channels = catalogue.channels;
+  if (grouping?.schema_version === 1 && grouping.sources && grouping.jurisdictions && grouping.institutions && grouping.rooms) {
+    state.grouping = grouping;
+  }
   state.generatedOn = catalogue.generated_on;
   mountPage();
   document.addEventListener("parliament:sourcechange", () => {

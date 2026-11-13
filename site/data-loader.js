@@ -6,7 +6,7 @@
   const root = location.protocol === "file:"
     ? new URL("https://dlq.ca/parliament-streams/data/")
     : new URL(localRoot, script);
-  const products = new Set(["channels", "fallbacks", "supranational", "institutions", "schedules", "epg-quality"]);
+  const products = new Set(["channels", "catalogue-grouping", "fallbacks", "supranational", "institutions", "schedules", "epg-quality"]);
   const requests = new Map();
   function load(name) {
     if (!products.has(name)) return Promise.reject(new Error(`Unknown data product: ${name}`));

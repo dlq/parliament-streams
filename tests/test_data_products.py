@@ -19,6 +19,7 @@ from jsonschema import FormatChecker
 
 from parliament_streams import cli
 from parliament_streams.catalogue import load_catalogue, load_fallbacks, load_json_object
+from parliament_streams.catalogue_grouping import build_catalogue_grouping
 from parliament_streams.data_contracts import require_json_schema, schema_validator
 from parliament_streams.data_products import validate_data_products
 from parliament_streams.iptv import write_iptv_exports
@@ -49,6 +50,17 @@ class DataProductTests(unittest.TestCase):
         shutil.copyfile(
             ROOT / "tests/fixtures/public-inventory.json", self.directory / "institutions.json"
         )
+        grouping = build_catalogue_grouping(
+            self.catalogue,
+            load_json_object(self.directory / "institutions.json"),
+            {
+                "jurisdictions": {"ee": {"label": "Estonia", "kind": "national"}},
+                "institution_jurisdictions": {},
+                "rooms": {},
+                "source_placements": {},
+            },
+        )
+        write_json(self.directory / "catalogue-grouping.json", grouping)
         counts = {
             field: 0
             for field in load_json_object(ROOT / "schema/schedules.schema.json")["properties"][
@@ -151,6 +163,26 @@ class DataProductTests(unittest.TestCase):
         self.assertEqual(result["stable_channels"], 1)
         self.assertEqual(result["validated_channels"], 1)
         self.assertEqual(result["xmltv_channels"], 1)
+
+    def test_publication_rejects_invalid_catalogue_grouping_references(self):
+        path = self.directory / "catalogue-grouping.json"
+        grouping = load_json_object(path)
+        for edit in (
+            lambda data: data["jurisdictions"]["ee"].update(parent_id="ee"),
+            lambda data: data["sources"][self.channel["id"]]["placement"].update(room_id="unknown"),
+            lambda data: data["sources"].clear(),
+        ):
+            with self.subTest(edit=edit):
+                invalid = copy.deepcopy(grouping)
+                edit(invalid)
+                write_json(path, invalid)
+                with (
+                    contextlib.redirect_stderr(io.StringIO()) as error_output,
+                    self.assertRaises(SystemExit) as error,
+                ):
+                    validate_products_main(["--data-dir", str(self.directory)])
+                self.assertEqual(error.exception.code, 2)
+                self.assertIn("grouping", error_output.getvalue().lower())
 
     def test_fractional_seconds_preserve_valid_ranges_and_exclude_collapsed_ranges(self):
         for end, programmes in (

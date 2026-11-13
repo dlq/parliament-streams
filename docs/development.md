@@ -104,10 +104,11 @@ versus soft-navigation layout and language-picker width checks at desktop and
 mobile widths, plus existing narrow-screen, keyboard, Axe, playback, timezone
 and bidirectional-source checks.
 
-After changing catalogue or inventory inputs, refresh public inventory matches with:
+After changing catalogue or inventory inputs, refresh the public inventory and
+[catalogue grouping](catalogue-grouping.md) snapshots.
 
 ```sh
-make institution-site-data
+make site-data
 ```
 
 Format Python sources with:

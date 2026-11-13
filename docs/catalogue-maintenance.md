@@ -52,7 +52,7 @@ rules and review handoffs are in [GitHub Actions and review queues](github-actio
 | --- | --- | --- |
 | Add a new source | `parliament-streams candidate-new` | Prefer a candidate record under `candidates/` until evidence is complete. |
 | Fix an existing channel | `parliament-streams show <id>` | Export or prepare one full channel object, then use `update --dry-run`. |
-| Refresh public inventory JSON | `make institution-site-data` | Edit inventory inputs and regenerate `data/institutions.json`. |
+| Refresh public inventory and catalogue grouping JSON | `make site-data` | Regenerate `data/institutions.json` and `data/catalogue-grouping.json` after editing maintained inputs. |
 | Check for institution-inventory changes | `make inventory-review` | Live research signals and a report for review; no automatic membership changes. |
 | Refresh validation-history links | `make validation-history` | Run after adding retained `reports/health/` artifacts. |
 | Check validation-history drift | `make validation-history-check` | Included in `make verify`. |
@@ -397,7 +397,7 @@ or an explicit decision; simply observing an unchanged page does not dismiss
 them. Current access gaps clear when a source recovers. Then run:
 
 ```sh
-make institution-inventory-validate institution-site-data
+make institution-inventory-validate site-data
 ```
 
 Review and commit the resulting change through the normal process. The monthly
@@ -465,7 +465,7 @@ published. A failed or unavailable scan withholds those outputs. Run the offline
 plan and snapshot preflights with:
 
 ```sh
-make discovery-plan-validate service-baseline-check institution-site-data-check
+make discovery-plan-validate service-baseline-check site-data-check
 ```
 
 The baseline check reconciles the saved eligible-ID/service-report snapshot
@@ -481,7 +481,7 @@ regenerate both the baseline and public institution snapshot:
 
 ```sh
 uv run --locked python -m tools.build_institution_service_baseline --reviewed-on YYYY-MM-DD
-make institution-site-data
+make site-data
 ```
 
 The public legislature evidence disclosures include each source follow-up's

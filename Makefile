@@ -6,9 +6,9 @@ UV_CACHE_DIR ?= $(CURDIR)/.uv-cache
 PYTHONPYCACHEPREFIX ?= $(CURDIR)/.pycache
 PYTHON_SOURCES := parliament_streams tests tools
 
-verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check institution-site-data-check data-products-check format-check lint type-check compile coverage test-js accessibility-check
+verify: research-secrets-check json-check catalogue-validate fallbacks-validate candidates-validate discovery-targets-validate us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check validation-history-check site-data-check data-products-check format-check lint type-check compile coverage test-js accessibility-check
 
-.PHONY: data-products-check
+.PHONY: data-products-check catalogue-grouping catalogue-grouping-check
 data-products-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/validate_data_products.py
 
@@ -70,14 +70,21 @@ catalogue-site-data: catalogue-validate
 catalogue-site-data-check: catalogue-validate
 
 site-data: institution-site-data
+	$(MAKE) catalogue-grouping
 
-site-data-check: institution-site-data-check
+site-data-check: institution-site-data-check catalogue-grouping-check
 
 institution-site-data:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_institution_site_data.py
 
 institution-site-data-check:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_institution_site_data.py --check
+
+catalogue-grouping:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_catalogue_grouping.py
+
+catalogue-grouping-check:
+	UV_CACHE_DIR=$(UV_CACHE_DIR) $(UV_RUN) python tools/build_catalogue_grouping.py --check
 
 compile:
 	UV_CACHE_DIR=$(UV_CACHE_DIR) PYTHONPYCACHEPREFIX=$(PYTHONPYCACHEPREFIX) $(UV_RUN) python -m compileall $(PYTHON_SOURCES)

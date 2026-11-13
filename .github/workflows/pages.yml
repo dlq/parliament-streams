@@ -9,6 +9,8 @@ on:
       - "site/**"
       - "data/channels.json"
       - "data/institutions.json"
+      - "data/catalogue-grouping.json"
+      - "data/discovery/catalogue-grouping.json"
       - "data/fallbacks.json"
       - "data/schedules.json"
       - "data/supranational.json"
@@ -21,6 +23,8 @@ on:
       - "tools/build_vendor_assets.mjs"
       - "tools/d3-entry.mjs"
       - "tools/build_institution_site_data.py"
+      - "tools/build_catalogue_grouping.py"
+      - "Makefile"
       - "tools/version_site_assets.mjs"
       - "tools/verify_pages_revision.py"
       - "tools/validate_data_products.py"
@@ -89,7 +93,7 @@ jobs:
         run: npm ci
       # Full tests/accessibility are required by the exact-SHA CI gate above.
       - name: Verify catalogue and assembled data snapshots
-        run: make catalogue-validate institution-site-data-check
+        run: make catalogue-validate site-data-check
       - name: Restore the preceding schedule snapshot
         uses: actions/cache/restore@v6
         with:
@@ -102,6 +106,7 @@ jobs:
           cp -R site/. _site/
           cp data/channels.json _site/data/channels.json
           cp data/institutions.json _site/data/institutions.json
+          cp data/catalogue-grouping.json _site/data/catalogue-grouping.json
           cp data/fallbacks.json _site/data/fallbacks.json
           cp data/supranational.json _site/data/supranational.json
           node tools/version_site_assets.mjs _site

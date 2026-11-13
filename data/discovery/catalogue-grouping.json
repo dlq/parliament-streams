@@ -1,0 +1,1420 @@
+{
+  "institution_jurisdictions": {
+    "argentina--buenos-aires": "ar-buenos-aires-province",
+    "argentina--catamarca": "ar-catamarca",
+    "argentina--chubut": "ar-chubut",
+    "argentina--ciudad-autonoma-de-buenos-aires": "ar-buenos-aires-city",
+    "argentina--cordoba": "ar-cordoba",
+    "argentina--corrientes": "ar-w",
+    "argentina--la-rioja": "ar-la-rioja-argentina",
+    "argentina--mendoza": "ar-mendoza",
+    "argentina--neuquen": "ar-neuquen",
+    "argentina--rio-negro": "ar-rio-negro",
+    "argentina--salta": "ar-salta",
+    "argentina--san-juan": "ar-san-juan",
+    "argentina--san-luis": "ar-san-luis",
+    "argentina--santa-cruz": "ar-santa-cruz-argentina",
+    "argentina--tierra-del-fuego": "ar-tierra-del-fuego",
+    "argentina--tucuman": "ar-tucuman",
+    "australia--new-south-wales": "au-new-south-wales",
+    "australia--queensland": "au-queensland",
+    "australia--victoria": "au-victoria",
+    "australia--western-australia": "au-western-australia",
+    "austria--tiroler-landtag": "at-tyrol",
+    "belgium--parlement-bruxellois-brussels-parlement": "be-brussels-capital-region",
+    "belgium--parlement-de-la-federation-wallonie-bruxelles": "be-french-community",
+    "belgium--parlement-de-wallonie": "be-wallonia",
+    "brazil--assembleia-legislativa-da-paraiba": "br-paraiba",
+    "brazil--assembleia-legislativa-de-goias": "br-goias",
+    "brazil--assembleia-legislativa-de-mato-grosso": "br-mato-grosso",
+    "brazil--assembleia-legislativa-de-mato-grosso-do-sul": "br-mato-grosso-do-sul",
+    "brazil--assembleia-legislativa-de-pernambuco": "br-pernambuco",
+    "brazil--assembleia-legislativa-de-rondonia": "br-rondonia",
+    "brazil--assembleia-legislativa-de-santa-catarina": "br-santa-catarina",
+    "brazil--assembleia-legislativa-do-ceara": "br-ceara",
+    "brazil--assembleia-legislativa-do-parana": "br-parana",
+    "brazil--assembleia-legislativa-do-rio-de-janeiro": "br-rio-de-janeiro",
+    "canada--alberta": "ca-ab",
+    "canada--british-columbia": "ca-british-columbia",
+    "canada--manitoba": "ca-manitoba",
+    "canada--new-brunswick": "ca-new-brunswick",
+    "canada--newfoundland-and-labrador": "ca-newfoundland-and-labrador",
+    "canada--northwest-territories": "ca-northwest-territories",
+    "canada--nunavut": "ca-nunavut",
+    "canada--ontario": "ca-ontario",
+    "canada--prince-edward-island": "ca-prince-edward-island",
+    "canada--quebec": "ca-quebec",
+    "canada--saskatchewan": "ca-saskatchewan",
+    "colombia--arauca": "co-arauca",
+    "colombia--bolivar": "co-bolivar",
+    "colombia--caldas": "co-caldas",
+    "colombia--caqueta": "co-caqueta",
+    "colombia--cesar": "co-cesar",
+    "colombia--guaviare": "co-guaviare",
+    "colombia--magdalena": "co-magdalena",
+    "colombia--quindio": "co-quindio",
+    "colombia--risaralda": "co-risaralda",
+    "colombia--tolima": "co-tolima",
+    "czech-republic--liberecky-kraj": "cz-liberec-region",
+    "czech-republic--moravskoslezsky-kraj": "cz-moravian-silesian-region",
+    "czech-republic--zlinsky-kraj": "cz-zlin-region",
+    "finland--alands-lagting": "fi-aland",
+    "france--french-polynesia": "pf",
+    "france--new-caledonia": "nc",
+    "germany--bayerischer-landtag": "de-bavaria",
+    "germany--hesse": "de-hesse",
+    "germany--landtag-mecklenburg-vorpommern": "de-mecklenburg-vorpommern",
+    "germany--landtag-von-baden-wurttemberg": "de-baden-wurttemberg",
+    "germany--north-rhine-westphalia": "de-north-rhine-westphalia",
+    "germany--sachsischer-landtag": "de-saxony",
+    "germany--thuringer-landtag": "de-thuringia",
+    "india--chakma-autonomous-district-council": "in-chakma-autonomous-district",
+    "india--lai-autonomous-district-council": "in-lai-autonomous-district",
+    "indonesia--aceh": "id-aceh",
+    "indonesia--di-yogyakarta": "id-yogyakarta",
+    "indonesia--jawa-tengah": "id-central-java",
+    "indonesia--kalimantan-tengah": "id-central-kalimantan",
+    "indonesia--kalimantan-utara": "id-north-kalimantan",
+    "indonesia--kepulauan-riau": "id-kepulauan-riau",
+    "italy--assemblea-regionale-siciliana": "it-sicily",
+    "italy--consiglio-della-provincia-autonoma-di-bolzano": "it-south-tyrol",
+    "italy--consiglio-regionale-della-campania": "it-campania",
+    "japan--fukui": "jp-fukui",
+    "japan--fukushima": "jp-fukushima",
+    "japan--hyogo": "jp-hyogo",
+    "japan--iwate": "jp-iwate",
+    "japan--nagasaki": "jp-nagasaki",
+    "japan--tokushima": "jp-tokushima",
+    "national--ar-lc01": "ar",
+    "national--be-lc01": "be",
+    "national--br-lc01": "br",
+    "national--br-uc01": "br",
+    "national--bw-lc01": "bw",
+    "national--ca-lc01": "ca",
+    "national--ca-uc01": "ca",
+    "national--ch-lc01": "ch",
+    "national--cl-lc01": "cl",
+    "national--co-lc01": "co",
+    "national--cr-lc01": "cr",
+    "national--cv-lc01": "cv",
+    "national--cz-uc01": "cz",
+    "national--de-lc01": "de",
+    "national--dk-lc01": "dk",
+    "national--do-lc01": "do",
+    "national--ee-lc01": "ee",
+    "national--es-lc01": "es",
+    "national--fi-lc01": "fi",
+    "national--fr-lc01": "fr",
+    "national--gh-lc01": "gh",
+    "national--gr-lc01": "gr",
+    "national--gy-lc01": "gy",
+    "national--hr-lc01": "hr",
+    "national--id-lc01": "id",
+    "national--il-lc01": "il",
+    "national--is-lc01": "is",
+    "national--it-lc01": "it",
+    "national--it-uc01": "it",
+    "national--jp-lc01": "jp",
+    "national--jp-uc01": "jp",
+    "national--kr-lc01": "kr",
+    "national--lk-lc01": "lk",
+    "national--lt-lc01": "lt",
+    "national--lu-lc01": "lu",
+    "national--md-lc01": "md",
+    "national--mk-lc01": "mk",
+    "national--mu-lc01": "mu",
+    "national--nl-lc01": "nl",
+    "national--no-lc01": "no",
+    "national--nz-lc01": "nz",
+    "national--pt-lc01": "pt",
+    "national--rs-lc01": "rs",
+    "national--se-lc01": "se",
+    "national--si-uc01": "si",
+    "national--sk-lc01": "sk",
+    "national--sr-lc01": "sr",
+    "national--tl-lc01": "tl",
+    "national--us-lc01": "us",
+    "national--us-uc01": "us",
+    "netherlands--drenthe": "nl-drenthe",
+    "netherlands--limburg": "nl-limburg",
+    "netherlands--noord-brabant": "nl-noord-brabant",
+    "netherlands--sint-maarten": "sx",
+    "new-zealand--cook-islands": "ck",
+    "poland--odzkie": "pl-odz-voivodeship",
+    "poland--slaskie": "pl-silesian-voivodeship",
+    "portugal--assembleia-legislativa-de-regiao-autonoma-da-madeira": "pt-madeira",
+    "south-africa--eastern-cape": "za-eastern-cape",
+    "south-africa--free-state": "za-free-state",
+    "south-africa--northern-cape": "za-northern-cape",
+    "south-africa--western-cape": "za-western-cape",
+    "south-korea--busan": "kr-busan",
+    "south-korea--chungcheongnam": "kr-chungcheongnam-do",
+    "south-korea--daegu": "kr-daegu",
+    "south-korea--gyeongsangbuk": "kr-gyeongsangbuk-do",
+    "south-korea--gyeongsangnam": "kr-gyeongsangnam-do",
+    "south-korea--incheon": "kr-incheon",
+    "south-korea--jeonbuk": "kr-jeonbuk-state",
+    "south-korea--jeonnam-gwangju": "kr-jeonnamgwangju-integrated-special-city",
+    "south-korea--sejong": "kr-sejong",
+    "spain--basque-country--araba-juntas-generales": "es-alava",
+    "spain--basque-country--bizkaia-juntas-generales": "es-bizkaia",
+    "spain--basque-country--gipuzkoa-juntas-generales": "es-gipuzkoa",
+    "spain--cortes-de-castilla-y-leon": "es-castile-and-leon",
+    "spain--corts-valencianes": "es-valencia",
+    "spain--parlament-de-catalunya": "es-catalonia",
+    "spain--parlamento-de-andalucia": "es-andalusia",
+    "spain--parlamento-de-canarias": "es-canary-islands",
+    "spain--parlamento-de-cantabria": "es-cantabria",
+    "spain--parlamento-de-la-rioja": "es-la-rioja-spain",
+    "spain--parlamento-de-navarra": "es-navarre",
+    "switzerland--appenzell-auserrhoden": "ch-appenzell-ausserrhoden",
+    "switzerland--bern": "ch-bern",
+    "switzerland--geneve-genf": "ch-geneva",
+    "switzerland--glarus": "ch-glarus",
+    "switzerland--jura": "ch-jura",
+    "switzerland--st-gallen": "ch-st-gallen",
+    "switzerland--thurgau": "ch-thurgau",
+    "switzerland--vaud-waadt": "ch-vaud",
+    "switzerland--zug": "ch-zug",
+    "switzerland--zurich": "ch-zurich",
+    "taiwan--hsinchu-city": "tw-hsinchu-city",
+    "taiwan--kinmen": "tw-kinmen",
+    "taiwan--lienchiang": "tw-lienchiang",
+    "taiwan--penghu": "tw-penghu",
+    "taiwan--tainan": "tw-tainan",
+    "united-kingdom--bermuda": "bm",
+    "united-kingdom--british-virgin-islands": "vg",
+    "united-kingdom--cayman-islands": "ky",
+    "united-kingdom--gibraltar": "gi",
+    "united-kingdom--guernsey": "gg",
+    "united-kingdom--isle-of-man": "im",
+    "united-kingdom--jersey": "je",
+    "united-kingdom--montserrat": "ms",
+    "united-kingdom--northern-ireland": "gb-northern-ireland",
+    "united-kingdom--scotland": "gb-scotland",
+    "united-kingdom--turks-and-caicos-islands": "tc",
+    "united-kingdom--wales": "gb-wales",
+    "united-states--california": "us-california",
+    "united-states--district-of-columbia": "us-district-of-columbia",
+    "united-states--florida": "us-florida",
+    "united-states--guam": "gu",
+    "united-states--kansas": "us-kansas",
+    "united-states--minnesota": "us-minnesota",
+    "united-states--mississippi": "us-mississippi",
+    "united-states--new-york": "us-new-york",
+    "united-states--oregon": "us-oregon",
+    "united-states--puerto-rico": "pr",
+    "united-states--rhode-island": "us-rhode-island",
+    "united-states--texas": "us-texas",
+    "united-states--united-states-virgin-islands": "vi",
+    "united-states--utah": "us-utah",
+    "united-states--washington": "us-washington",
+    "united-states--west-virginia": "us-west-virginia",
+    "united-states--wyoming": "us-wyoming",
+    "uruguay--canelones": "uy-canelones",
+    "uruguay--montevideo": "uy-montevideo"
+  },
+  "jurisdictions": {
+    "ar": {
+      "kind": "national",
+      "label": "Argentina",
+      "region_code": "AR"
+    },
+    "ar-buenos-aires-city": {
+      "kind": "subnational",
+      "label": "Buenos Aires City",
+      "parent_id": "ar"
+    },
+    "ar-buenos-aires-province": {
+      "kind": "subnational",
+      "label": "Buenos Aires Province",
+      "parent_id": "ar"
+    },
+    "ar-catamarca": {
+      "kind": "subnational",
+      "label": "Catamarca",
+      "parent_id": "ar"
+    },
+    "ar-chubut": {
+      "kind": "subnational",
+      "label": "Chubut",
+      "parent_id": "ar"
+    },
+    "ar-cordoba": {
+      "kind": "subnational",
+      "label": "Córdoba",
+      "parent_id": "ar"
+    },
+    "ar-la-rioja-argentina": {
+      "kind": "subnational",
+      "label": "La Rioja, Argentina",
+      "parent_id": "ar"
+    },
+    "ar-mendoza": {
+      "kind": "subnational",
+      "label": "Mendoza",
+      "parent_id": "ar"
+    },
+    "ar-neuquen": {
+      "kind": "subnational",
+      "label": "Neuquén",
+      "parent_id": "ar"
+    },
+    "ar-rio-negro": {
+      "kind": "subnational",
+      "label": "Río Negro",
+      "parent_id": "ar"
+    },
+    "ar-salta": {
+      "kind": "subnational",
+      "label": "Salta",
+      "parent_id": "ar"
+    },
+    "ar-san-juan": {
+      "kind": "subnational",
+      "label": "San Juan",
+      "parent_id": "ar"
+    },
+    "ar-san-luis": {
+      "kind": "subnational",
+      "label": "San Luis",
+      "parent_id": "ar"
+    },
+    "ar-santa-cruz-argentina": {
+      "kind": "subnational",
+      "label": "Santa Cruz, Argentina",
+      "parent_id": "ar"
+    },
+    "ar-tierra-del-fuego": {
+      "kind": "subnational",
+      "label": "Tierra del Fuego",
+      "parent_id": "ar"
+    },
+    "ar-tucuman": {
+      "kind": "subnational",
+      "label": "Tucumán",
+      "parent_id": "ar"
+    },
+    "ar-w": {
+      "kind": "subnational",
+      "label": "Corrientes",
+      "parent_id": "ar"
+    },
+    "at": {
+      "kind": "national",
+      "label": "Austria",
+      "region_code": "AT"
+    },
+    "at-tyrol": {
+      "kind": "subnational",
+      "label": "Tyrol",
+      "parent_id": "at"
+    },
+    "au": {
+      "kind": "national",
+      "label": "Australia",
+      "region_code": "AU"
+    },
+    "au-new-south-wales": {
+      "kind": "subnational",
+      "label": "New South Wales",
+      "parent_id": "au"
+    },
+    "au-queensland": {
+      "kind": "subnational",
+      "label": "Queensland",
+      "parent_id": "au"
+    },
+    "au-victoria": {
+      "kind": "subnational",
+      "label": "Victoria",
+      "parent_id": "au"
+    },
+    "au-western-australia": {
+      "kind": "subnational",
+      "label": "Western Australia",
+      "parent_id": "au"
+    },
+    "be": {
+      "kind": "national",
+      "label": "Belgium",
+      "region_code": "BE"
+    },
+    "be-brussels-capital-region": {
+      "kind": "subnational",
+      "label": "Brussels-Capital Region",
+      "parent_id": "be"
+    },
+    "be-french-community": {
+      "kind": "subnational",
+      "label": "French Community",
+      "parent_id": "be"
+    },
+    "be-wallonia": {
+      "kind": "subnational",
+      "label": "Wallonia",
+      "parent_id": "be"
+    },
+    "bm": {
+      "kind": "subnational",
+      "label": "Bermuda",
+      "region_code": "BM",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "br": {
+      "kind": "national",
+      "label": "Brazil",
+      "region_code": "BR"
+    },
+    "br-ceara": {
+      "kind": "subnational",
+      "label": "Ceará",
+      "parent_id": "br"
+    },
+    "br-goias": {
+      "kind": "subnational",
+      "label": "Goiás",
+      "parent_id": "br"
+    },
+    "br-mato-grosso": {
+      "kind": "subnational",
+      "label": "Mato Grosso",
+      "parent_id": "br"
+    },
+    "br-mato-grosso-do-sul": {
+      "kind": "subnational",
+      "label": "Mato Grosso do Sul",
+      "parent_id": "br"
+    },
+    "br-paraiba": {
+      "kind": "subnational",
+      "label": "Paraíba",
+      "parent_id": "br"
+    },
+    "br-parana": {
+      "kind": "subnational",
+      "label": "Paraná",
+      "parent_id": "br"
+    },
+    "br-pernambuco": {
+      "kind": "subnational",
+      "label": "Pernambuco",
+      "parent_id": "br"
+    },
+    "br-rio-de-janeiro": {
+      "kind": "subnational",
+      "label": "Rio de Janeiro",
+      "parent_id": "br"
+    },
+    "br-rondonia": {
+      "kind": "subnational",
+      "label": "Rondônia",
+      "parent_id": "br"
+    },
+    "br-santa-catarina": {
+      "kind": "subnational",
+      "label": "Santa Catarina",
+      "parent_id": "br"
+    },
+    "bw": {
+      "kind": "national",
+      "label": "Botswana",
+      "region_code": "BW"
+    },
+    "ca": {
+      "kind": "national",
+      "label": "Canada",
+      "region_code": "CA"
+    },
+    "ca-ab": {
+      "kind": "subnational",
+      "label": "Alberta",
+      "parent_id": "ca"
+    },
+    "ca-british-columbia": {
+      "kind": "subnational",
+      "label": "British Columbia",
+      "parent_id": "ca"
+    },
+    "ca-manitoba": {
+      "kind": "subnational",
+      "label": "Manitoba",
+      "parent_id": "ca"
+    },
+    "ca-new-brunswick": {
+      "kind": "subnational",
+      "label": "New Brunswick",
+      "parent_id": "ca"
+    },
+    "ca-newfoundland-and-labrador": {
+      "kind": "subnational",
+      "label": "Newfoundland and Labrador",
+      "parent_id": "ca"
+    },
+    "ca-northwest-territories": {
+      "kind": "subnational",
+      "label": "Northwest Territories",
+      "parent_id": "ca"
+    },
+    "ca-nunavut": {
+      "kind": "subnational",
+      "label": "Nunavut",
+      "parent_id": "ca"
+    },
+    "ca-ontario": {
+      "kind": "subnational",
+      "label": "Ontario",
+      "parent_id": "ca"
+    },
+    "ca-prince-edward-island": {
+      "kind": "subnational",
+      "label": "Prince Edward Island",
+      "parent_id": "ca"
+    },
+    "ca-quebec": {
+      "kind": "subnational",
+      "label": "Quebec",
+      "parent_id": "ca"
+    },
+    "ca-saskatchewan": {
+      "kind": "subnational",
+      "label": "Saskatchewan",
+      "parent_id": "ca"
+    },
+    "ch": {
+      "kind": "national",
+      "label": "Switzerland",
+      "region_code": "CH"
+    },
+    "ch-appenzell-ausserrhoden": {
+      "kind": "subnational",
+      "label": "Appenzell Ausserrhoden",
+      "parent_id": "ch"
+    },
+    "ch-bern": {
+      "kind": "subnational",
+      "label": "Bern",
+      "parent_id": "ch"
+    },
+    "ch-geneva": {
+      "kind": "subnational",
+      "label": "Geneva",
+      "parent_id": "ch"
+    },
+    "ch-glarus": {
+      "kind": "subnational",
+      "label": "Glarus",
+      "parent_id": "ch"
+    },
+    "ch-jura": {
+      "kind": "subnational",
+      "label": "Jura",
+      "parent_id": "ch"
+    },
+    "ch-st-gallen": {
+      "kind": "subnational",
+      "label": "St Gallen",
+      "parent_id": "ch"
+    },
+    "ch-thurgau": {
+      "kind": "subnational",
+      "label": "Thurgau",
+      "parent_id": "ch"
+    },
+    "ch-vaud": {
+      "kind": "subnational",
+      "label": "Vaud",
+      "parent_id": "ch"
+    },
+    "ch-zug": {
+      "kind": "subnational",
+      "label": "Zug",
+      "parent_id": "ch"
+    },
+    "ch-zurich": {
+      "kind": "subnational",
+      "label": "Zurich",
+      "parent_id": "ch"
+    },
+    "ck": {
+      "kind": "national",
+      "label": "Cook Islands",
+      "region_code": "CK",
+      "search_association_ids": [
+        "nz"
+      ]
+    },
+    "cl": {
+      "kind": "national",
+      "label": "Chile",
+      "region_code": "CL"
+    },
+    "co": {
+      "kind": "national",
+      "label": "Colombia",
+      "region_code": "CO"
+    },
+    "co-arauca": {
+      "kind": "subnational",
+      "label": "Arauca",
+      "parent_id": "co"
+    },
+    "co-bolivar": {
+      "kind": "subnational",
+      "label": "Bolívar",
+      "parent_id": "co"
+    },
+    "co-caldas": {
+      "kind": "subnational",
+      "label": "Caldas",
+      "parent_id": "co"
+    },
+    "co-caqueta": {
+      "kind": "subnational",
+      "label": "Caquetá",
+      "parent_id": "co"
+    },
+    "co-cesar": {
+      "kind": "subnational",
+      "label": "Cesar",
+      "parent_id": "co"
+    },
+    "co-guaviare": {
+      "kind": "subnational",
+      "label": "Guaviare",
+      "parent_id": "co"
+    },
+    "co-magdalena": {
+      "kind": "subnational",
+      "label": "Magdalena",
+      "parent_id": "co"
+    },
+    "co-quindio": {
+      "kind": "subnational",
+      "label": "Quindío",
+      "parent_id": "co"
+    },
+    "co-risaralda": {
+      "kind": "subnational",
+      "label": "Risaralda",
+      "parent_id": "co"
+    },
+    "co-tolima": {
+      "kind": "subnational",
+      "label": "Tolima",
+      "parent_id": "co"
+    },
+    "council-of-europe": {
+      "kind": "supranational",
+      "label": "Council of Europe"
+    },
+    "cr": {
+      "kind": "national",
+      "label": "Costa Rica",
+      "region_code": "CR"
+    },
+    "cv": {
+      "kind": "national",
+      "label": "Cape Verde",
+      "region_code": "CV"
+    },
+    "cz": {
+      "kind": "national",
+      "label": "Czech Republic",
+      "region_code": "CZ"
+    },
+    "cz-liberec-region": {
+      "kind": "subnational",
+      "label": "Liberec Region",
+      "parent_id": "cz"
+    },
+    "cz-moravian-silesian-region": {
+      "kind": "subnational",
+      "label": "Moravian-Silesian Region",
+      "parent_id": "cz"
+    },
+    "cz-zlin-region": {
+      "kind": "subnational",
+      "label": "Zlín Region",
+      "parent_id": "cz"
+    },
+    "de": {
+      "kind": "national",
+      "label": "Germany",
+      "region_code": "DE"
+    },
+    "de-baden-wurttemberg": {
+      "kind": "subnational",
+      "label": "Baden-Wurttemberg",
+      "parent_id": "de"
+    },
+    "de-bavaria": {
+      "kind": "subnational",
+      "label": "Bavaria",
+      "parent_id": "de"
+    },
+    "de-hesse": {
+      "kind": "subnational",
+      "label": "Hesse",
+      "parent_id": "de"
+    },
+    "de-mecklenburg-vorpommern": {
+      "kind": "subnational",
+      "label": "Mecklenburg-Vorpommern",
+      "parent_id": "de"
+    },
+    "de-north-rhine-westphalia": {
+      "kind": "subnational",
+      "label": "North Rhine-Westphalia",
+      "parent_id": "de"
+    },
+    "de-saxony": {
+      "kind": "subnational",
+      "label": "Saxony",
+      "parent_id": "de"
+    },
+    "de-thuringia": {
+      "kind": "subnational",
+      "label": "Thuringia",
+      "parent_id": "de"
+    },
+    "dk": {
+      "kind": "national",
+      "label": "Denmark",
+      "region_code": "DK"
+    },
+    "do": {
+      "kind": "national",
+      "label": "Dominican Republic",
+      "region_code": "DO"
+    },
+    "ee": {
+      "kind": "national",
+      "label": "Estonia",
+      "region_code": "EE"
+    },
+    "es": {
+      "kind": "national",
+      "label": "Spain",
+      "region_code": "ES"
+    },
+    "es-alava": {
+      "kind": "subnational",
+      "label": "Álava",
+      "parent_id": "es"
+    },
+    "es-andalusia": {
+      "kind": "subnational",
+      "label": "Andalusia",
+      "parent_id": "es"
+    },
+    "es-bizkaia": {
+      "kind": "subnational",
+      "label": "Bizkaia",
+      "parent_id": "es"
+    },
+    "es-canary-islands": {
+      "kind": "subnational",
+      "label": "Canary Islands",
+      "parent_id": "es"
+    },
+    "es-cantabria": {
+      "kind": "subnational",
+      "label": "Cantabria",
+      "parent_id": "es"
+    },
+    "es-castile-and-leon": {
+      "kind": "subnational",
+      "label": "Castile and León",
+      "parent_id": "es"
+    },
+    "es-catalonia": {
+      "kind": "subnational",
+      "label": "Catalonia",
+      "parent_id": "es"
+    },
+    "es-gipuzkoa": {
+      "kind": "subnational",
+      "label": "Gipuzkoa",
+      "parent_id": "es"
+    },
+    "es-la-rioja-spain": {
+      "kind": "subnational",
+      "label": "La Rioja, Spain",
+      "parent_id": "es"
+    },
+    "es-navarre": {
+      "kind": "subnational",
+      "label": "Navarre",
+      "parent_id": "es"
+    },
+    "es-valencia": {
+      "kind": "subnational",
+      "label": "Valencia",
+      "parent_id": "es"
+    },
+    "european-union": {
+      "kind": "supranational",
+      "label": "European Union"
+    },
+    "fi": {
+      "kind": "national",
+      "label": "Finland",
+      "region_code": "FI"
+    },
+    "fi-aland": {
+      "kind": "subnational",
+      "label": "Åland",
+      "parent_id": "fi"
+    },
+    "fr": {
+      "kind": "national",
+      "label": "France",
+      "region_code": "FR"
+    },
+    "gb": {
+      "kind": "national",
+      "label": "United Kingdom",
+      "region_code": "GB"
+    },
+    "gb-northern-ireland": {
+      "kind": "subnational",
+      "label": "Northern Ireland",
+      "parent_id": "gb"
+    },
+    "gb-scotland": {
+      "kind": "subnational",
+      "label": "Scotland",
+      "parent_id": "gb"
+    },
+    "gb-wales": {
+      "kind": "subnational",
+      "label": "Wales",
+      "parent_id": "gb"
+    },
+    "gg": {
+      "kind": "subnational",
+      "label": "Guernsey",
+      "region_code": "GG",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "gh": {
+      "kind": "national",
+      "label": "Ghana",
+      "region_code": "GH"
+    },
+    "gi": {
+      "kind": "subnational",
+      "label": "Gibraltar",
+      "region_code": "GI",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "gr": {
+      "kind": "national",
+      "label": "Greece",
+      "region_code": "GR"
+    },
+    "gu": {
+      "kind": "subnational",
+      "label": "Guam",
+      "region_code": "GU",
+      "search_association_ids": [
+        "us"
+      ]
+    },
+    "gy": {
+      "kind": "national",
+      "label": "Guyana",
+      "region_code": "GY"
+    },
+    "hr": {
+      "kind": "national",
+      "label": "Croatia",
+      "region_code": "HR"
+    },
+    "id": {
+      "kind": "national",
+      "label": "Indonesia",
+      "region_code": "ID"
+    },
+    "id-aceh": {
+      "kind": "subnational",
+      "label": "Aceh",
+      "parent_id": "id"
+    },
+    "id-central-java": {
+      "kind": "subnational",
+      "label": "Central Java",
+      "parent_id": "id"
+    },
+    "id-central-kalimantan": {
+      "kind": "subnational",
+      "label": "Central Kalimantan",
+      "parent_id": "id"
+    },
+    "id-kepulauan-riau": {
+      "kind": "subnational",
+      "label": "Kepulauan Riau",
+      "parent_id": "id"
+    },
+    "id-north-kalimantan": {
+      "kind": "subnational",
+      "label": "North Kalimantan",
+      "parent_id": "id"
+    },
+    "id-yogyakarta": {
+      "kind": "subnational",
+      "label": "Yogyakarta",
+      "parent_id": "id"
+    },
+    "ie": {
+      "kind": "national",
+      "label": "Ireland",
+      "region_code": "IE"
+    },
+    "il": {
+      "kind": "national",
+      "label": "Israel",
+      "region_code": "IL"
+    },
+    "im": {
+      "kind": "subnational",
+      "label": "Isle of Man",
+      "region_code": "IM",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "in": {
+      "kind": "national",
+      "label": "India",
+      "region_code": "IN"
+    },
+    "in-chakma-autonomous-district": {
+      "kind": "subnational",
+      "label": "Chakma Autonomous District",
+      "parent_id": "in"
+    },
+    "in-lai-autonomous-district": {
+      "kind": "subnational",
+      "label": "Lai Autonomous District",
+      "parent_id": "in"
+    },
+    "is": {
+      "kind": "national",
+      "label": "Iceland",
+      "region_code": "IS"
+    },
+    "it": {
+      "kind": "national",
+      "label": "Italy",
+      "region_code": "IT"
+    },
+    "it-campania": {
+      "kind": "subnational",
+      "label": "Campania",
+      "parent_id": "it"
+    },
+    "it-sicily": {
+      "kind": "subnational",
+      "label": "Sicily",
+      "parent_id": "it"
+    },
+    "it-south-tyrol": {
+      "kind": "subnational",
+      "label": "South Tyrol",
+      "parent_id": "it"
+    },
+    "je": {
+      "kind": "subnational",
+      "label": "Jersey",
+      "region_code": "JE",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "jm": {
+      "kind": "national",
+      "label": "Jamaica",
+      "region_code": "JM"
+    },
+    "jp": {
+      "kind": "national",
+      "label": "Japan",
+      "region_code": "JP"
+    },
+    "jp-fukui": {
+      "kind": "subnational",
+      "label": "Fukui",
+      "parent_id": "jp"
+    },
+    "jp-fukushima": {
+      "kind": "subnational",
+      "label": "Fukushima",
+      "parent_id": "jp"
+    },
+    "jp-hyogo": {
+      "kind": "subnational",
+      "label": "Hyogo",
+      "parent_id": "jp"
+    },
+    "jp-iwate": {
+      "kind": "subnational",
+      "label": "Iwate",
+      "parent_id": "jp"
+    },
+    "jp-nagasaki": {
+      "kind": "subnational",
+      "label": "Nagasaki",
+      "parent_id": "jp"
+    },
+    "jp-tokushima": {
+      "kind": "subnational",
+      "label": "Tokushima",
+      "parent_id": "jp"
+    },
+    "kr": {
+      "kind": "national",
+      "label": "South Korea",
+      "region_code": "KR"
+    },
+    "kr-busan": {
+      "kind": "subnational",
+      "label": "Busan",
+      "parent_id": "kr"
+    },
+    "kr-chungcheongnam-do": {
+      "kind": "subnational",
+      "label": "Chungcheongnam-do",
+      "parent_id": "kr"
+    },
+    "kr-daegu": {
+      "kind": "subnational",
+      "label": "Daegu",
+      "parent_id": "kr"
+    },
+    "kr-gyeongsangbuk-do": {
+      "kind": "subnational",
+      "label": "Gyeongsangbuk-do",
+      "parent_id": "kr"
+    },
+    "kr-gyeongsangnam-do": {
+      "kind": "subnational",
+      "label": "Gyeongsangnam-do",
+      "parent_id": "kr"
+    },
+    "kr-incheon": {
+      "kind": "subnational",
+      "label": "Incheon",
+      "parent_id": "kr"
+    },
+    "kr-jeonbuk-state": {
+      "kind": "subnational",
+      "label": "Jeonbuk State",
+      "parent_id": "kr"
+    },
+    "kr-jeonnamgwangju-integrated-special-city": {
+      "kind": "subnational",
+      "label": "Jeonnam–Gwangju Integrated Special City",
+      "parent_id": "kr"
+    },
+    "kr-sejong": {
+      "kind": "subnational",
+      "label": "Sejong",
+      "parent_id": "kr"
+    },
+    "ky": {
+      "kind": "subnational",
+      "label": "Cayman Islands",
+      "region_code": "KY",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "lk": {
+      "kind": "national",
+      "label": "Sri Lanka",
+      "region_code": "LK"
+    },
+    "lt": {
+      "kind": "national",
+      "label": "Lithuania",
+      "region_code": "LT"
+    },
+    "lu": {
+      "kind": "national",
+      "label": "Luxembourg",
+      "region_code": "LU"
+    },
+    "md": {
+      "kind": "national",
+      "label": "Moldova",
+      "region_code": "MD"
+    },
+    "me": {
+      "kind": "national",
+      "label": "Montenegro",
+      "region_code": "ME"
+    },
+    "mk": {
+      "kind": "national",
+      "label": "North Macedonia",
+      "region_code": "MK"
+    },
+    "ms": {
+      "kind": "subnational",
+      "label": "Montserrat",
+      "region_code": "MS",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "mu": {
+      "kind": "national",
+      "label": "Mauritius",
+      "region_code": "MU"
+    },
+    "mx": {
+      "kind": "national",
+      "label": "Mexico",
+      "region_code": "MX"
+    },
+    "mx-jalisco": {
+      "kind": "subnational",
+      "label": "Jalisco",
+      "parent_id": "mx"
+    },
+    "my": {
+      "kind": "national",
+      "label": "Malaysia",
+      "region_code": "MY"
+    },
+    "na": {
+      "kind": "national",
+      "label": "Namibia",
+      "region_code": "NA"
+    },
+    "nc": {
+      "kind": "subnational",
+      "label": "New Caledonia",
+      "region_code": "NC",
+      "search_association_ids": [
+        "fr"
+      ]
+    },
+    "nl": {
+      "kind": "national",
+      "label": "Netherlands",
+      "region_code": "NL"
+    },
+    "nl-drenthe": {
+      "kind": "subnational",
+      "label": "Drenthe",
+      "parent_id": "nl"
+    },
+    "nl-limburg": {
+      "kind": "subnational",
+      "label": "Limburg",
+      "parent_id": "nl"
+    },
+    "nl-noord-brabant": {
+      "kind": "subnational",
+      "label": "Noord-Brabant",
+      "parent_id": "nl"
+    },
+    "no": {
+      "kind": "national",
+      "label": "Norway",
+      "region_code": "NO"
+    },
+    "nz": {
+      "kind": "national",
+      "label": "New Zealand",
+      "region_code": "NZ"
+    },
+    "osce": {
+      "kind": "supranational",
+      "label": "OSCE"
+    },
+    "pa": {
+      "kind": "national",
+      "label": "Panama",
+      "region_code": "PA"
+    },
+    "pf": {
+      "kind": "subnational",
+      "label": "French Polynesia",
+      "region_code": "PF",
+      "search_association_ids": [
+        "fr"
+      ]
+    },
+    "pl": {
+      "kind": "national",
+      "label": "Poland",
+      "region_code": "PL"
+    },
+    "pl-odz-voivodeship": {
+      "kind": "subnational",
+      "label": "Łódź Voivodeship",
+      "parent_id": "pl"
+    },
+    "pl-silesian-voivodeship": {
+      "kind": "subnational",
+      "label": "Silesian Voivodeship",
+      "parent_id": "pl"
+    },
+    "pr": {
+      "kind": "subnational",
+      "label": "Puerto Rico",
+      "region_code": "PR",
+      "search_association_ids": [
+        "us"
+      ]
+    },
+    "pt": {
+      "kind": "national",
+      "label": "Portugal",
+      "region_code": "PT"
+    },
+    "pt-madeira": {
+      "kind": "subnational",
+      "label": "Madeira",
+      "parent_id": "pt"
+    },
+    "rs": {
+      "kind": "national",
+      "label": "Serbia",
+      "region_code": "RS"
+    },
+    "se": {
+      "kind": "national",
+      "label": "Sweden",
+      "region_code": "SE"
+    },
+    "si": {
+      "kind": "national",
+      "label": "Slovenia",
+      "region_code": "SI"
+    },
+    "sk": {
+      "kind": "national",
+      "label": "Slovakia",
+      "region_code": "SK"
+    },
+    "sr": {
+      "kind": "national",
+      "label": "Suriname",
+      "region_code": "SR"
+    },
+    "sx": {
+      "kind": "subnational",
+      "label": "Sint Maarten",
+      "region_code": "SX",
+      "search_association_ids": [
+        "nl"
+      ]
+    },
+    "tc": {
+      "kind": "subnational",
+      "label": "Turks and Caicos Islands",
+      "region_code": "TC",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "th": {
+      "kind": "national",
+      "label": "Thailand",
+      "region_code": "TH"
+    },
+    "tl": {
+      "kind": "national",
+      "label": "Timor-Leste",
+      "region_code": "TL"
+    },
+    "tw": {
+      "kind": "national",
+      "label": "Taiwan",
+      "region_code": "TW"
+    },
+    "tw-hsinchu-city": {
+      "kind": "subnational",
+      "label": "Hsinchu City",
+      "parent_id": "tw"
+    },
+    "tw-kinmen": {
+      "kind": "subnational",
+      "label": "Kinmen",
+      "parent_id": "tw"
+    },
+    "tw-lienchiang": {
+      "kind": "subnational",
+      "label": "Lienchiang",
+      "parent_id": "tw"
+    },
+    "tw-penghu": {
+      "kind": "subnational",
+      "label": "Penghu",
+      "parent_id": "tw"
+    },
+    "tw-tainan": {
+      "kind": "subnational",
+      "label": "Tainan",
+      "parent_id": "tw"
+    },
+    "united-nations": {
+      "kind": "supranational",
+      "label": "United Nations"
+    },
+    "us": {
+      "kind": "national",
+      "label": "United States",
+      "region_code": "US"
+    },
+    "us-california": {
+      "kind": "subnational",
+      "label": "California",
+      "parent_id": "us"
+    },
+    "us-district-of-columbia": {
+      "kind": "subnational",
+      "label": "District of Columbia",
+      "parent_id": "us"
+    },
+    "us-florida": {
+      "kind": "subnational",
+      "label": "Florida",
+      "parent_id": "us"
+    },
+    "us-kansas": {
+      "kind": "subnational",
+      "label": "Kansas",
+      "parent_id": "us"
+    },
+    "us-minnesota": {
+      "kind": "subnational",
+      "label": "Minnesota",
+      "parent_id": "us"
+    },
+    "us-mississippi": {
+      "kind": "subnational",
+      "label": "Mississippi",
+      "parent_id": "us"
+    },
+    "us-new-york": {
+      "kind": "subnational",
+      "label": "New York",
+      "parent_id": "us"
+    },
+    "us-oregon": {
+      "kind": "subnational",
+      "label": "Oregon",
+      "parent_id": "us"
+    },
+    "us-rhode-island": {
+      "kind": "subnational",
+      "label": "Rhode Island",
+      "parent_id": "us"
+    },
+    "us-texas": {
+      "kind": "subnational",
+      "label": "Texas",
+      "parent_id": "us"
+    },
+    "us-utah": {
+      "kind": "subnational",
+      "label": "Utah",
+      "parent_id": "us"
+    },
+    "us-washington": {
+      "kind": "subnational",
+      "label": "Washington",
+      "parent_id": "us"
+    },
+    "us-west-virginia": {
+      "kind": "subnational",
+      "label": "West Virginia",
+      "parent_id": "us"
+    },
+    "us-wyoming": {
+      "kind": "subnational",
+      "label": "Wyoming",
+      "parent_id": "us"
+    },
+    "uy": {
+      "kind": "national",
+      "label": "Uruguay",
+      "region_code": "UY"
+    },
+    "uy-canelones": {
+      "kind": "subnational",
+      "label": "Canelones",
+      "parent_id": "uy"
+    },
+    "uy-montevideo": {
+      "kind": "subnational",
+      "label": "Montevideo",
+      "parent_id": "uy"
+    },
+    "vg": {
+      "kind": "subnational",
+      "label": "British Virgin Islands",
+      "region_code": "VG",
+      "search_association_ids": [
+        "gb"
+      ]
+    },
+    "vi": {
+      "kind": "subnational",
+      "label": "United States Virgin Islands",
+      "region_code": "VI",
+      "search_association_ids": [
+        "us"
+      ]
+    },
+    "za": {
+      "kind": "national",
+      "label": "South Africa",
+      "region_code": "ZA"
+    },
+    "za-eastern-cape": {
+      "kind": "subnational",
+      "label": "Eastern Cape",
+      "parent_id": "za"
+    },
+    "za-free-state": {
+      "kind": "subnational",
+      "label": "Free State",
+      "parent_id": "za"
+    },
+    "za-northern-cape": {
+      "kind": "subnational",
+      "label": "Northern Cape",
+      "parent_id": "za"
+    },
+    "za-western-cape": {
+      "kind": "subnational",
+      "label": "Western Cape",
+      "parent_id": "za"
+    }
+  },
+  "rooms": {},
+  "source_placements": {
+    "cpac-ca": {
+      "evidence": "data/channels.json#cpac-ca",
+      "jurisdiction_id": "ca"
+    },
+    "jalisco-canal-parlamento": {
+      "evidence": "data/channels.json#jalisco-canal-parlamento",
+      "jurisdiction_id": "mx-jalisco",
+      "provisional": true
+    }
+  }
+}

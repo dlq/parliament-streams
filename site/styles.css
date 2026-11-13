@@ -315,3 +315,22 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .data-stage .data-doc-links a { min-height: 32px; }
 .data-supporting .data-asset-links { font-size: .8rem; }
 .data-colophon-byline a { color: var(--red); text-underline-offset: .15em; }
+
+.catalogue-group-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .5rem 1rem;
+  margin: 0;
+  padding: .45rem .65rem;
+  border-top: 1px solid var(--faint);
+  font: inherit;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.catalogue-group-heading > span { font-size: .8rem; font-weight: 400; }
+.catalogue-group > h3 { background: var(--green-wash); }
+.catalogue-group > .channel-list .catalogue-group-heading { padding-inline-start: 1rem; }
+.catalogue-group > .channel-list .catalogue-group > .channel-list .catalogue-group-heading { padding-inline-start: 1.35rem; }
+.catalogue-results-toolbar { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem 1rem; flex-wrap: wrap; }
+.catalogue-group-reset { border: 0; background: none; color: var(--red); text-decoration: underline; cursor: pointer; padding: .35rem 0; }

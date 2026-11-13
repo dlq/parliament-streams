@@ -14,12 +14,19 @@ if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from parliament_streams.catalogue import load_catalogue, load_json_object  # noqa: E402
+from parliament_streams.catalogue_grouping import validate_catalogue_grouping  # noqa: E402
 from parliament_streams.data_contracts import SCHEMA_DIRECTORY, schema_validator  # noqa: E402
 from parliament_streams.data_products import validate_data_products  # noqa: E402
 from parliament_streams.iptv import write_iptv_exports  # noqa: E402
 from parliament_streams.schedule_collection import ScheduleSnapshot, utc_timestamp, write_snapshot  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def check_grouping(directory: Path) -> None:
+    catalogue = load_catalogue(directory / "channels.json")
+    product = load_json_object(directory / "catalogue-grouping.json")
+    validate_catalogue_grouping(product, catalogue)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -31,6 +38,7 @@ def main(argv: list[str] | None = None) -> int:
             schema_validator(load_json_object(path))
         if args.data_dir is not None:
             result = validate_data_products(args.data_dir)
+            check_grouping(args.data_dir)
         else:
             with TemporaryDirectory(prefix="parliament-products-") as temporary:
                 directory = Path(temporary)
@@ -39,6 +47,7 @@ def main(argv: list[str] | None = None) -> int:
                     "fallbacks.json",
                     "supranational.json",
                     "institutions.json",
+                    "catalogue-grouping.json",
                 ):
                     shutil.copyfile(ROOT / "data" / name, directory / name)
                 schedule_schema = load_json_object(SCHEMA_DIRECTORY / "schedules.schema.json")
@@ -64,6 +73,7 @@ def main(argv: list[str] | None = None) -> int:
                     "https://dlq.ca/parliament-streams/data/epg.xml",
                 )
                 result = validate_data_products(directory)
+                check_grouping(directory)
         print(json.dumps(result, sort_keys=True))
     except (OSError, ValueError) as error:
         parser.error(str(error))

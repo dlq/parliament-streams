@@ -1,0 +1,210 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "jurisdictions": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/jurisdiction"
+      }
+    },
+    "institutions": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/institution"
+      }
+    },
+    "rooms": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/room"
+      }
+    },
+    "sources": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "jurisdictions",
+    "institutions",
+    "rooms",
+    "sources"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Catalogue grouping sidecar",
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-+[a-z0-9]+)*$"
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1
+    },
+    "optionalId": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/id"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "jurisdiction": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/label"
+        },
+        "kind": {
+          "enum": [
+            "national",
+            "subnational",
+            "supranational"
+          ]
+        },
+        "region_code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "parent_id": {
+          "$ref": "#/$defs/id"
+        },
+        "search_association_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      },
+      "required": [
+        "label",
+        "kind"
+      ],
+      "additionalProperties": false
+    },
+    "institution": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/label"
+        },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/label"
+          }
+        },
+        "jurisdiction_id": {
+          "$ref": "#/$defs/id"
+        },
+        "umbrella_id": {
+          "$ref": "#/$defs/optionalId"
+        }
+      },
+      "required": [
+        "label",
+        "aliases",
+        "jurisdiction_id",
+        "umbrella_id"
+      ],
+      "additionalProperties": false
+    },
+    "room": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/label"
+        },
+        "institution_id": {
+          "$ref": "#/$defs/id"
+        },
+        "evidence": {
+          "$ref": "#/$defs/label"
+        }
+      },
+      "required": [
+        "label",
+        "institution_id",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "placement": {
+      "type": "object",
+      "properties": {
+        "jurisdiction_id": {
+          "$ref": "#/$defs/id"
+        },
+        "institution_id": {
+          "$ref": "#/$defs/optionalId"
+        },
+        "room_id": {
+          "$ref": "#/$defs/optionalId"
+        }
+      },
+      "required": [
+        "jurisdiction_id",
+        "institution_id",
+        "room_id"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "placement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/placement"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reviewed_institution_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "placement_status": {
+          "enum": [
+            "reviewed",
+            "provisional"
+          ]
+        }
+      },
+      "required": [
+        "placement",
+        "reviewed_institution_ids",
+        "placement_status"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

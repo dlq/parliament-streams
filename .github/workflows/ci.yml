@@ -49,7 +49,7 @@ jobs:
         run: >-
           make json-check fallbacks-validate discovery-targets-validate
           us-candidates-validate discovery-decisions-validate institution-inventory-validate inventory-review-validate discovery-plan-validate service-baseline-check
-          validation-history-check institution-site-data-check data-products-check compile
+          validation-history-check site-data-check data-products-check compile
 
       - name: Run Python tests with coverage
         run: make coverage
