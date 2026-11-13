@@ -1,6 +1,7 @@
 // Shared jurisdiction flags for catalogue and schedule.
 // Provenance: assets/flags/ATTRIBUTION.md; uncertain flags remain neutral.
 window.ParliamentStreamsFlags = Object.freeze({
+  "Kepulauan Riau": "assets/flags/kepulauan-riau.svg",
   // Further 25 October source-backed additions; see continued-catalogue-flags report.
   "Iceland": "assets/flags/is.svg",
   "Moldova": "assets/flags/md.svg",

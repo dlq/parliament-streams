@@ -246,6 +246,38 @@ make official symbols project branding or imply endorsement.
 
 The French Community uses the existing `wallonia.svg` (CC0). Its own Parliament
 confirms that the Community adopted the red-rooster-on-yellow flag in 1975; this
-is independently verified Community flag use. Kepulauan Riau, Chakma and Lai
+is independently verified Community flag use. Chakma and Lai
 retain a neutral legislature mark until a complete adopted flag and usable
 artwork are verified. Details and primary sources are in the flag review.
+
+
+### 13 November 2026 flag review
+
+- `kepulauan-riau.svg` follows [Kepulauan Riau Regulation 1/2005, Article 4(3)](https://bphn.go.id/data/documents/perda_pempov_kepulauan_riau_no._1_tahun_2005.pdf).
+  It depicts the 3:2 white flag with its centred emblem and uses a yellow
+  outline to represent the prescribed fringe at icon size. The regulation
+  does not specify the emblem scale. Emblem artwork is by the Government of
+  Riau Islands, vectorized by RaFaDa20631 and published as public domain on
+  [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Riau_Islands.svg).
+- [Montevideo's flag project](https://www.gub.uy/ministerio-educacion-cultura/comunicacion/calendario-actividades/proyecto-bandera-bandera-para-montevideo)
+  describes a proposal and says the department has no official flag. No
+  subsequent adoption was found in the department's publications.
+- [Aceh's provincial government](https://humas.acehprov.go.id/mualem-dek-fadh-dorong-pusat-tuntaskan-tiga-persoalan-strategis-aceh-dana-otsus-bendera-aceh-dan-lapangan-blang-padang/)
+  reported on 2 November that discussions with the national government
+  continued. The existing flag dispute remains unresolved.
+- Central Kalimantan, Central Java and Yogyakarta retain the neutral mark.
+  Available government records show an emblem, an event or official-use
+  banner, or emblem-use rules. An adopted general territorial flag and
+  matching artwork were not confirmed.
+- Eastern Cape, Free State, Northern Cape and Western Cape retain the neutral
+  mark. The [national archives](https://www.nationalarchives.gov.za/provincial-coats-arms)
+  identify their coats of arms. A current adopted flag was not confirmed for
+  any of the four provinces.
+- Chakma and Lai Autonomous Districts retain the neutral mark. The
+  [Chakma council's anniversary record](https://www.cadc.gov.in/2024/04/)
+  identifies the flag flown there as India's national flag. The
+  [Lai council site](https://ladc.mizoram.gov.in/page/brief-history-of-ladc)
+  identifies the council. Neither supplied an adopted district flag design.
+- Jeonnam–Gwangju Integrated Special City retains the neutral mark. A
+  successor flag was not verified, and the predecessor flags represent the
+  former jurisdictions.

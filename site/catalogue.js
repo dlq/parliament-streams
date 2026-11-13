@@ -1,6 +1,6 @@
 window.ParliamentStreamsPageReady = window.ParliamentStreamsI18n.startPage((pageSignal) => {
 
-const { countrySearchTerms, normalizeSearchText, sourceCount } = window.ParliamentStreamsMapI18n;
+const { countrySearchTerms, normalizeSearchText } = window.ParliamentStreamsMapI18n;
 
 const heroImages = [
   {
@@ -43,7 +43,7 @@ const heroImages = [
 
 const state = { channels: [], grouping: null, sortExplicit: false, generatedOn: "", locale: window.ParliamentStreamsPageLocale.current(), sort: { key: "source", direction: "ascending" } };
 const elements = {};
-const collapsedGroups = new Set();
+const groupOpenState = new Map();
 const { t, label, slug, jurisdictionName, jurisdictionMark, isPlaybackEnabled, playbackMode, playbackModeLabel, playbackModeDescription, formatDate, sourceNameMarkup, languageMarkup, contentLanguageTag, languageAttribute, escapeHtml } = window.ParliamentStreamsSourceUI.create(() => state.locale, () => state.channels);
 function bindElements() { Object.assign(elements, {
   stats: document.querySelector("#catalogue-stats"),
@@ -190,7 +190,11 @@ function groupPath(channel) {
   if (!placement) return [];
   return [
     ...placementPath(grouping.jurisdictions, placement.jurisdiction_id, "parent_id")
-      .map((id) => ({ key: `jurisdiction:${id}`, label: jurisdictionName(grouping.jurisdictions[id].label) })),
+      .map((id) => ({
+        key: `jurisdiction:${id}`,
+        label: jurisdictionName(grouping.jurisdictions[id].label),
+        collapsedByDefault: grouping.jurisdictions[id].kind === "subnational",
+      })),
     ...placementPath(grouping.institutions, placement.institution_id, "umbrella_id")
       .map((id) => ({ key: `institution:${id}`, label: grouping.institutions[id].label })),
     ...(placement.room_id ? [{ key: `room:${placement.room_id}`, label: grouping.rooms[placement.room_id].label }] : []),
@@ -233,8 +237,9 @@ function renderGroups(channels, revealMatches) {
   const root = { rows: [], groups: new Map(), count: 0 };
   for (const channel of channels) {
     let group = root;
-    for (const { key, label } of groupPath(channel)) {
-      if (!group.groups.has(key)) group.groups.set(key, { key, label, rows: [], groups: new Map(), count: 0 });
+    for (const node of groupPath(channel)) {
+      const { key } = node;
+      if (!group.groups.has(key)) group.groups.set(key, { ...node, rows: [], groups: new Map(), count: 0 });
       group = group.groups.get(key);
       group.count += 1;
     }
@@ -252,13 +257,11 @@ function renderGroups(channels, revealMatches) {
       }
       const headingLevel = Math.min(3 + depth, 6);
       const key = escapeHtml(child.key);
-      const open = revealMatches || !collapsedGroups.has(child.key);
+      const open = revealMatches || (groupOpenState.get(child.key) ?? !child.collapsedByDefault);
       return `<li class="catalogue-group" data-group="${key}">
         <details${open ? " open" : ""}>
           <summary class="catalogue-group-summary">
-            <h${headingLevel} class="catalogue-group-heading">${escapeHtml(child.label)}
-              <span>${escapeHtml(sourceCount(state.locale, child.count))}</span>
-            </h${headingLevel}>
+            <h${headingLevel} class="catalogue-group-heading">${escapeHtml(child.label)}</h${headingLevel}>
           </summary>
           <ul class="channel-list">${child.rows.map(renderSource).join("")}${renderChildren(child, depth + 1)}</ul>
         </details>
@@ -310,9 +313,7 @@ function renderList() {
   // temporarily opens matches and leaves the browse state intact.
   if (elements.list.dataset.searching === "false") {
     for (const details of elements.list.querySelectorAll(".catalogue-group > details")) {
-      const key = details.parentElement.dataset.group;
-      if (details.open) collapsedGroups.delete(key);
-      else collapsedGroups.add(key);
+      groupOpenState.set(details.parentElement.dataset.group, details.open);
     }
   }
   const searching = Boolean(elements.search.value.trim());
@@ -353,9 +354,13 @@ function mountPage() {
     state.sortExplicit = true;
     renderList();
   }));
-  renderList();
   const parameters = new URLSearchParams(location.search);
   const requested = parameters.get("source");
+  const linkedSource = state.channels.find((channel) => channel.id === requested);
+  if (linkedSource) {
+    for (const { key } of groupPath(linkedSource)) groupOpenState.set(key, true);
+  }
+  renderList();
   if (requested && requested !== window.ParliamentStreamsViewer.selectedId) window.ParliamentStreamsViewer.open(requested, { play: parameters.get("play") === "1" });
 }
 return (async () => {

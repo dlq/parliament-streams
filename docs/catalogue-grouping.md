@@ -14,12 +14,13 @@ way to browse those sources by jurisdiction and legislative body.
 | Room | Reviewed ID scoped to the institution that operates it | A stable venue when evidence distinguishes it. A room can serve multiple committees and have multiple viewing sources. |
 
 Maintain jurisdiction records with `id`, `kind`, `label`, optional
-`parent_id` for reviewed territorial nesting, and `search_association_ids`
+`parent_id` for reviewed catalogue nesting by government relationship, and `search_association_ids`
 for other discoverability links. An optional `region_code` supports locale
 labels and an optional map reference points to the corresponding geometry.
-Neither field determines jurisdiction identity. Ordinary regions can appear
-under their reviewed parent. Special-status territories can have their own
-top-level group and still be found by searching for an associated country.
+Neither field determines jurisdiction identity. The tree groups regions and territories with the national government
+responsible for relevant national or external affairs. This is a browse
+relationship. Each territory retains its own jurisdiction and legislature
+identity. A search association can link jurisdictions without nesting them.
 Membership in an international organization is a separate relationship
 maintained in `data/supranational.json`.
 
@@ -67,7 +68,7 @@ Each source has one row. Group counts use distinct source IDs, including after
 filtering. Search includes source text, localized jurisdiction labels, verified
 institution aliases, territorial ancestors and explicit search associations.
 A search for Canada can reveal Alberta. A search for the United Kingdom can
-reveal the Isle of Man in its own group. Search associations do not change
+reveal the Isle of Man group under the United Kingdom. Search associations do not change
 placement. Keep existing source URLs and reveal the selected source's group
 when following a direct link.
 
@@ -80,7 +81,7 @@ when following a direct link.
 | `cpac-ca` | Canada → shared broadcaster source | The catalogue identifies CPAC and its national scope. The generated inventory has no exact institution crosswalk for this source. |
 | `ontario-house-en`, `ontario-committee-1-en`, `ontario-committee-2-en` | Canada → Ontario → Legislative Assembly of Ontario → the applicable room, where reviewed | All three match `canada--ontario`. Keep the three source IDs. The committee feed labels alone do not establish permanent venue or committee identities. |
 | `argentina-corrientes-deputies-webcasts` | Argentina → Corrientes → provincial legislature → Chamber of Deputies | Both the umbrella and chamber are crosswalk matches, and the inventory explicitly links the chamber to its umbrella. Display one source row. |
-| `isle-of-man-tynwald-listen-watch` | Isle of Man → Tynwald | Exact crosswalk to `united-kingdom--isle-of-man`. The UK inventory research grouping can support a search association. The Isle of Man keeps its distinct jurisdiction ID and top-level display. |
+| `isle-of-man-tynwald-listen-watch` | United Kingdom → Isle of Man → Tynwald | Exact crosswalk to `united-kingdom--isle-of-man`. The Isle of Man retains its own jurisdiction ID and Crown Dependency status. |
 | `jalisco-canal-parlamento` | Mexico → Jalisco with provisional institution placement | The existing catalogue names Jalisco and its Congress. The generated inventory has no exact source match. Review that crosswalk before claiming a verified institution placement. |
 
 The Corrientes entry in the sidecar looks like this.
@@ -135,6 +136,26 @@ shared broadcaster scope and durable room assignments. Keep those questions
 in the inventory or review evidence, and keep playback and EPG admission tied
 to their existing source-specific checks.
 
+## Overseas and associated jurisdictions
+
+- The United Kingdom group includes the three Crown Dependencies and six
+  documented British Overseas Territories. They keep their own jurisdiction
+  IDs. [Crown Dependencies](https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man)
+  · [UK Overseas Territories](https://www.gov.uk/csv-preview/6aa9384ff1f8d2a39605f801/FCDO_UK_Overseas_Territories_-_11_Sep_2026.csv)
+- France includes French Polynesia and New Caledonia in the Catalogue tree.
+  [French Council of State](https://www.vie-publique.fr/files/rapport/pdf/295786.pdf)
+  · [New Caledonia](https://www.vie-publique.fr/questions-reponses/303309-nouvelle-caledonie-le-degel-du-corps-electoral-en-4-questions)
+- The United States includes Guam, Puerto Rico and the U.S. Virgin Islands.
+  [U.S. Department of the Interior](https://www.doi.gov/oia/islands/politicatypes)
+- The Netherlands group includes Sint Maarten because Dutch ministries handle
+  shared Kingdom foreign affairs and defence. Sint Maarten retains its own
+  identity as a constituent country.
+  [Government of the Netherlands](https://www.government.nl/themes/government-and-democracy/caribbean-parts-of-the-kingdom/responsibilities-of-the-netherlands-aruba-curacao-and-st-maarten)
+- The Cook Islands remains a top-level group and is discoverable via New Zealand.
+  The Cook Islands conducts its own foreign relations and New Zealand provides
+  assistance on request under free association.
+  [New Zealand Ministry of Foreign Affairs and Trade](https://www.mfat.govt.nz/en/countries-and-regions/australia-and-pacific/cook-islands)
+
 ## Maintaining the grouping data
 
 Edit `data/discovery/catalogue-grouping.json` to add or update stable jurisdiction
@@ -148,8 +169,9 @@ chamber can inherit that mapping through its reviewed umbrella relationship. A n
 unmatched source can appear provisionally in a known jurisdiction or in the
 flat fallback until its placement is reviewed.
 
-The catalogue starts with expanded groups. Each group can be collapsed on
-desktop and mobile. Search expands matching groups and clearing the query
+The catalogue opens country groups and starts subnational groups collapsed.
+Each group can be toggled on desktop and mobile. A direct source link opens
+its group path. Search expands matching groups and clearing the query
 restores the previous expansion state. Selecting a column sorts the flat
 list. **Group by jurisdiction** restores the grouped view with the current search
 and filters. A single source can carry its institution label in the row itself

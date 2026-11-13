@@ -137,7 +137,7 @@ async function assertPlaybackColumnAlignment(page) {
       range.selectNodeContents(element.firstChild);
       return range.getBoundingClientRect().y;
     };
-    return rows.map((row) => {
+    return rows.filter((row) => row.getClientRects().length).map((row) => {
       const placeholder = row.querySelector('.watch-action');
       const action = row.querySelector('.row-direct-watch') ?? placeholder;
       return {
@@ -721,7 +721,7 @@ try {
     }),
   }));
   await page.goto(baseUrl);
-  await page.waitForSelector(".channel-button");
+  await page.waitForSelector(".channel-button:visible");
   assert.equal(await page.locator('meta[property="og:image:width"]').getAttribute("content"), "1200");
   assert.equal(await page.locator('meta[property="og:image:height"]').getAttribute("content"), "630");
   assert.match(await page.locator('meta[property="og:image"]').getAttribute("content"), /parliament-streams-social\.png$/);
@@ -782,6 +782,13 @@ try {
   assert.deepEqual(await page.evaluate(() => ['zh-TW', 'zh-HK', 'zh-MO', 'zh-Hant-TW', 'zh-Hans-TW', 'cs-CZ', 'fi-FI', 'sv-FI'].map(window.ParliamentStreamsI18n.supportedLocale)), ['zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hant', 'zh-Hans', 'cs', 'fi', 'sv']);
   assert.deepEqual(await page.evaluate(() => [1, 2, 5].map((count) => window.ParliamentStreamsMapI18n.sourceCount('cs', count))), ['1 zdroj', '2 zdroje', '5 zdrojů']);
 
+  assert.equal(await page.locator('[data-channel-id="alberta-assembly-online"]').isVisible(), false);
+  assert.equal(await page.locator('[data-channel-id="canada-senate-senvu"]').isVisible(), true);
+  const directCatalogue = await context.newPage();
+  await directCatalogue.goto(`${baseUrl}index.html?lang=en&source=alberta-assembly-online`);
+  await directCatalogue.locator('[data-channel-id="alberta-assembly-online"]').waitFor();
+  await directCatalogue.close();
+
   const catalogueErrors = [];
   page.on("pageerror", (error) => catalogueErrors.push(error.message));
   for (const width of [1280, 320]) {
@@ -797,6 +804,8 @@ try {
     const albertaSummary = albertaGroup.locator(":scope > details > summary");
     const albertaSource = albertaGroup.locator('[data-channel-id="alberta-assembly-online"]');
     await albertaSummary.press("Space");
+    assert.equal(await albertaSource.isVisible(), true);
+    await albertaSummary.press("Space");
     assert.equal(await albertaSource.isVisible(), false);
     await canadaSummary.click();
     assert.equal(await albertaSummary.isVisible(), false);
@@ -804,7 +813,7 @@ try {
     await page.locator("#search").fill("Canada");
     assert.equal(await albertaSource.count(), 1);
     assert.equal(await albertaSource.isVisible(), true);
-    assert.match(await albertaSummary.innerText(), /Alberta.*1 source/s);
+    assert.equal(await albertaSummary.innerText(), "Alberta");
     assert.equal(await albertaGroup.evaluate((group) => {
       const national = group.parentElement.querySelector('[data-channel-id="canada-senate-senvu"]');
       return Boolean(national?.compareDocumentPosition(group) & Node.DOCUMENT_POSITION_FOLLOWING);
@@ -828,8 +837,6 @@ try {
     await canadaSummary.press("Enter");
     assert.equal(await albertaSummary.isVisible(), true);
     assert.equal(await albertaSource.isVisible(), false);
-    await albertaSummary.click();
-    assert.equal(await albertaSource.isVisible(), true);
   }
   assert.deepEqual(catalogueErrors, []);
   await page.setViewportSize({ width: 1280, height: 900 });
@@ -844,8 +851,19 @@ try {
   const rows = page.locator(".channel-button");
   assert.equal(await rows.count(), canonicalCatalogue.channels.length);
   assert.equal(await page.locator('[data-group="jurisdiction:ar-w"] [data-channel-id="argentina-corrientes-deputies-webcasts"]').count(), 1);
-  await page.locator("#search").fill("United Kingdom");
-  assert.equal(await page.locator('#channel-list > [data-group="jurisdiction:im"] [data-channel-id="isle-of-man-tynwald-listen-watch"]').count(), 1);
+  for (const [query, parent, territories] of [
+    ["United Kingdom", "gb", ["im", "je", "gg", "bm", "gi", "ky", "ms", "tc", "vg"]],
+    ["France", "fr", ["nc", "pf"]],
+    ["United States", "us", ["gu", "pr", "vi"]],
+    ["Netherlands", "nl", ["sx"]],
+  ]) {
+    await page.locator("#search").fill(query);
+    for (const territory of territories) {
+      const group = page.locator(`[data-group="jurisdiction:${parent}"] [data-group="jurisdiction:${territory}"]`);
+      assert.equal(await group.locator(":scope > details[open]").count(), 1, `${query} must reveal ${territory}`);
+      assert(await group.locator(".channel-button").first().isVisible());
+    }
+  }
   await page.locator("#search").fill("");
   assert.deepEqual(await page.locator(".channel-header .sort-button").allInnerTexts(), [
     "SOURCE",
@@ -870,6 +888,14 @@ try {
   await page.locator("#group-catalogue").click();
   assert.equal(await page.locator('[data-group="jurisdiction:ca"]').count(), 1);
   assert.equal(await rows.count(), canonicalCatalogue.channels.length);
+  const riauFlag = page.locator('[data-channel-id="indonesia-kepulauan-riau-recordings"] .jurisdiction-flag');
+  assert.match(await riauFlag.getAttribute("src"), /assets\/flags\/kepulauan-riau\.svg$/);
+  assert(await riauFlag.evaluate(async (img) => {
+    const flag = new Image();
+    flag.src = img.src;
+    await flag.decode();
+    return flag.naturalWidth > 0;
+  }));
   const navarreFlag = page.locator('[data-channel-id="navarre-parliament-live"] .jurisdiction-flag');
   assert.equal(await navarreFlag.count(), 1);
   assert.match(await navarreFlag.getAttribute("src"), /assets\/flags\/navarre\.svg$/);
@@ -948,7 +974,7 @@ try {
   await page.locator(".source-documentation > summary").nth(1).click();
   assert.match(await page.locator('[data-channel-id="australia-parliament-youtube"] .source-posture').getAttribute("title"), /intégration officielle/);
   assert.equal(
-    await page.locator('[data-channel-id="british-columbia-legislature-webcasts"] > span').nth(1).innerText(),
+    await page.locator('[data-channel-id="british-columbia-legislature-webcasts"] > span').nth(1).textContent(),
     "Colombie-Britannique",
   );
 
@@ -962,6 +988,7 @@ try {
   assert.match(await page.locator(".detail-note").last().innerText(), /Ce point d’accès public peut être lu/);
   assert.equal(await page.locator(".research-note-disclosure").getAttribute("open"), null);
 
+  await page.locator('[data-group="jurisdiction:ca-quebec"] > details:not([open]) > summary').click();
   await page.locator('[data-channel-id="quebec-canal01"]').click();
   await page.locator(".source-documentation > summary").first().click();
   await page.locator(".source-documentation > summary").nth(1).click();
@@ -975,6 +1002,7 @@ try {
   await page.locator(".research-note-disclosure summary").click();
   assert.equal(await quebecSummary.isVisible(), true);
 
+  await page.locator('[data-group="jurisdiction:gb-scotland"] > details:not([open]) > summary').click();
   await page.locator('[data-channel-id="scottish-parliament-tv"]').click();
   await page.locator(".source-documentation > summary").first().click();
   await page.locator(".source-documentation > summary").nth(1).click();
@@ -1015,9 +1043,9 @@ try {
   await page.evaluate(() => window.ParliamentStreamsLocaleReady);
   await page.setViewportSize({ width: 900, height: 800 });
   await page.reload();
-  await page.waitForSelector(".channel-button");
+  await page.waitForSelector(".channel-button:visible");
   assert.equal(await page.locator("#detail-panel").isVisible(), false);
-  await page.locator(".channel-button").first().click();
+  await page.locator(".channel-button:visible").first().click();
   await page.locator("#detail-title").waitFor();
   assert.equal(await page.locator("#detail-panel").isVisible(), true);
   assert.equal(await page.locator("#detail-panel").evaluate((element) => getComputedStyle(element).position), "fixed");
@@ -1035,13 +1063,13 @@ try {
 
   await page.setViewportSize({ width: 320, height: 800 });
   await page.reload();
-  await page.waitForSelector(".channel-button");
+  await page.waitForSelector(".channel-button:visible");
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
   assert.equal(await page.locator("#primary-navigation > a:visible").count(), 5);
   assert.equal(await page.locator("#primary-navigation [data-project-navigation]").isVisible(), true);
   assert((await page.locator("#primary-navigation > a:visible").first().boundingBox()).height >= 40);
   assert((await page.locator("#search").boundingBox()).y < 800);
-  await page.locator(".channel-button").first().click();
+  await page.locator(".channel-button:visible").first().click();
   await page.locator("#detail-title").waitFor();
   assert.equal(await page.locator("#detail-title").evaluate((element) => document.activeElement === element), true);
   assert.equal(await page.locator("#detail-panel").getAttribute("aria-labelledby"), "detail-title");

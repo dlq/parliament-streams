@@ -358,10 +358,8 @@
     "bm": {
       "kind": "subnational",
       "label": "Bermuda",
-      "region_code": "BM",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "BM"
     },
     "br": {
       "kind": "national",
@@ -797,10 +795,8 @@
     "gg": {
       "kind": "subnational",
       "label": "Guernsey",
-      "region_code": "GG",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "GG"
     },
     "gh": {
       "kind": "national",
@@ -810,10 +806,8 @@
     "gi": {
       "kind": "subnational",
       "label": "Gibraltar",
-      "region_code": "GI",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "GI"
     },
     "gr": {
       "kind": "national",
@@ -823,10 +817,8 @@
     "gu": {
       "kind": "subnational",
       "label": "Guam",
-      "region_code": "GU",
-      "search_association_ids": [
-        "us"
-      ]
+      "parent_id": "us",
+      "region_code": "GU"
     },
     "gy": {
       "kind": "national",
@@ -886,10 +878,8 @@
     "im": {
       "kind": "subnational",
       "label": "Isle of Man",
-      "region_code": "IM",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "IM"
     },
     "in": {
       "kind": "national",
@@ -934,10 +924,8 @@
     "je": {
       "kind": "subnational",
       "label": "Jersey",
-      "region_code": "JE",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "JE"
     },
     "jm": {
       "kind": "national",
@@ -1032,10 +1020,8 @@
     "ky": {
       "kind": "subnational",
       "label": "Cayman Islands",
-      "region_code": "KY",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "KY"
     },
     "lk": {
       "kind": "national",
@@ -1070,10 +1056,8 @@
     "ms": {
       "kind": "subnational",
       "label": "Montserrat",
-      "region_code": "MS",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "MS"
     },
     "mu": {
       "kind": "national",
@@ -1103,10 +1087,8 @@
     "nc": {
       "kind": "subnational",
       "label": "New Caledonia",
-      "region_code": "NC",
-      "search_association_ids": [
-        "fr"
-      ]
+      "parent_id": "fr",
+      "region_code": "NC"
     },
     "nl": {
       "kind": "national",
@@ -1150,10 +1132,8 @@
     "pf": {
       "kind": "subnational",
       "label": "French Polynesia",
-      "region_code": "PF",
-      "search_association_ids": [
-        "fr"
-      ]
+      "parent_id": "fr",
+      "region_code": "PF"
     },
     "pl": {
       "kind": "national",
@@ -1173,10 +1153,8 @@
     "pr": {
       "kind": "subnational",
       "label": "Puerto Rico",
-      "region_code": "PR",
-      "search_association_ids": [
-        "us"
-      ]
+      "parent_id": "us",
+      "region_code": "PR"
     },
     "pt": {
       "kind": "national",
@@ -1216,18 +1194,14 @@
     "sx": {
       "kind": "subnational",
       "label": "Sint Maarten",
-      "region_code": "SX",
-      "search_association_ids": [
-        "nl"
-      ]
+      "parent_id": "nl",
+      "region_code": "SX"
     },
     "tc": {
       "kind": "subnational",
       "label": "Turks and Caicos Islands",
-      "region_code": "TC",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "TC"
     },
     "th": {
       "kind": "national",
@@ -1366,18 +1340,14 @@
     "vg": {
       "kind": "subnational",
       "label": "British Virgin Islands",
-      "region_code": "VG",
-      "search_association_ids": [
-        "gb"
-      ]
+      "parent_id": "gb",
+      "region_code": "VG"
     },
     "vi": {
       "kind": "subnational",
       "label": "United States Virgin Islands",
-      "region_code": "VI",
-      "search_association_ids": [
-        "us"
-      ]
+      "parent_id": "us",
+      "region_code": "VI"
     },
     "za": {
       "kind": "national",
