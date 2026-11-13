@@ -5,6 +5,7 @@ import unittest
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import cast
+from urllib.parse import urlsplit
 
 from parliament_streams.catalogue import load_catalogue
 from parliament_streams.iptv import render_xmltv
@@ -68,8 +69,11 @@ class RetiredCollectorTests(unittest.TestCase):
         self.assertEqual(set(snapshot["sources"]), set(SCRAPERS))
         self.assertTrue(set(RETIRED_CHANNELS).isdisjoint(snapshot["sources"]))
         self.assertTrue(set(RETIRED_CHANNELS.values()).isdisjoint(snapshot["channels"]))
-        self.assertFalse(any("youtube.com" in url for url in seen))
-        harmony_requests = [url for url in seen if "parlvu.parl.gc.ca" in url]
+        hosts = {urlsplit(url).hostname or "" for url in seen}
+        self.assertFalse(
+            any(host == "youtube.com" or host.endswith(".youtube.com") for host in hosts)
+        )
+        harmony_requests = [url for url in seen if urlsplit(url).hostname == "parlvu.parl.gc.ca"]
         self.assertTrue(harmony_requests)
         self.assertTrue(all("/api/Data/GetUpcomingEvents?" in url for url in harmony_requests))
         self.assertTrue(

@@ -65,7 +65,7 @@ def _api_events(payload: str, now: datetime) -> list[ScheduleEvent]:
     except json.JSONDecodeError:
         # Keep recognizable protection/loading failures precise, but a successful
         # HTTP response with other HTML must not become a healthy empty API result.
-        if BOT_PROTECTION_PATTERN.search(payload) or "perfdrive.com" in payload.casefold():
+        if BOT_PROTECTION_PATTERN.search(payload):
             raise ValueError("official calendar returned a bot-protection page") from None
         if (
             "blazor.web.js" in payload.casefold() or "blazor-webassembly" in payload.casefold()

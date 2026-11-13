@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime, timedelta
+from datetime import UTC, datetime, time, timedelta
 from xml.etree import ElementTree
 
 from .common import (
@@ -26,6 +26,7 @@ SOURCE: ScraperSource = {
     "notes": (
         "Committee hearing XML. Record contract corroborated by unitedstates/congress "
         "committee_meetings.py. Dated no-hearing placeholders are skipped. "
+        "Midnight values can encode unannounced starts and are omitted. "
         "Institutional starts only, not a linear webcast guide."
     ),
 }
@@ -60,6 +61,9 @@ def parse(payload: str, now: datetime | None = None) -> ParsedSchedule:
         if not title:
             raise ValueError("Senate hearing lacks its subject")
         wall = datetime.strptime((row.findtext("date") or "").strip(), "%d-%b-%Y %I:%M %p")
+        # The Senate has published 12:00 AM in XML for a hearing listed as time TBA.
+        if wall.time() == time.min:
+            continue
         start = localize_source_time(wall, TIMEZONE)
         if start is None:
             raise ValueError("Ambiguous or nonexistent Senate hearing clock")

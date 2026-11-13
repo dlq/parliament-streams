@@ -229,6 +229,11 @@ class StructuredPriorityTests(unittest.TestCase):
         missing_committee = date_only.replace("00:00 AM", "10:00 AM")
         mixed = payload.replace("<hearings>", f"<hearings>{placeholder}")
         self.assertEqual(senate.parse(mixed, now=NOW), senate.parse(payload, now=NOW))
+        unannounced = payload.removeprefix("<hearings>").removesuffix("</hearings>")
+        unannounced = unannounced.replace("10:00 AM", "12:00 AM")
+        self.assertEqual(senate.parse(f"<hearings>{unannounced}</hearings>", now=NOW), {})
+        mixed = payload.replace("<hearings>", f"<hearings>{unannounced}")
+        self.assertEqual(senate.parse(mixed, now=NOW), senate.parse(payload, now=NOW))
         self.assertEqual(senate.parse(payload.replace("29-Oct-2026", "01-Jan-2020"), now=NOW), {})
         for body in (
             "<html/>",
