@@ -157,7 +157,8 @@ findings and implemented changes. Remaining verification:
 - The [grouping model](docs/catalogue-grouping.md) from
   [#79](https://github.com/dlq/parliament-streams/issues/79) supplies jurisdiction
   and institution groups, filtered counts, and parent-country search.
-- [ ] Evaluate keyboard-accessible expansion on desktop and mobile.
+- Groups can be collapsed with a pointer or keyboard. Search opens matching groups
+  and restores the prior expansion state when cleared.
 - [ ] Add dated schedule browsing and shareable filter state when event identifiers
   and timestamps support it. Missing coverage must remain distinct from no events.
   Jurisdiction/listing filters are now shareable. Complete the

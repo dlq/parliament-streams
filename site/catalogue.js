@@ -43,6 +43,7 @@ const heroImages = [
 
 const state = { channels: [], grouping: null, sortExplicit: false, generatedOn: "", locale: window.ParliamentStreamsPageLocale.current(), sort: { key: "source", direction: "ascending" } };
 const elements = {};
+const collapsedGroups = new Set();
 const { t, label, slug, jurisdictionName, jurisdictionMark, isPlaybackEnabled, playbackMode, playbackModeLabel, playbackModeDescription, formatDate, sourceNameMarkup, languageMarkup, contentLanguageTag, languageAttribute, escapeHtml } = window.ParliamentStreamsSourceUI.create(() => state.locale, () => state.channels);
 function bindElements() { Object.assign(elements, {
   stats: document.querySelector("#catalogue-stats"),
@@ -228,7 +229,7 @@ function groupingSearchTerms(channel) {
     entry.placement?.room_id ? grouping.rooms[entry.placement.room_id].label : "",
   ].join(" ");
 }
-function renderGroups(channels) {
+function renderGroups(channels, revealMatches) {
   const root = { rows: [], groups: new Map(), count: 0 };
   for (const channel of channels) {
     let group = root;
@@ -250,11 +251,17 @@ function renderGroups(channels) {
         return renderSource(child.rows[0]);
       }
       const headingLevel = Math.min(3 + depth, 6);
-      return `<li class="catalogue-group" data-group="${escapeHtml(child.key)}">
-        <h${headingLevel} class="catalogue-group-heading">${escapeHtml(child.label)}
-          <span>${escapeHtml(sourceCount(state.locale, child.count))}</span>
-        </h${headingLevel}>
-        <ul class="channel-list">${child.rows.map(renderSource).join("")}${renderChildren(child, depth + 1)}</ul>
+      const key = escapeHtml(child.key);
+      const open = revealMatches || !collapsedGroups.has(child.key);
+      return `<li class="catalogue-group" data-group="${key}">
+        <details${open ? " open" : ""}>
+          <summary class="catalogue-group-summary">
+            <h${headingLevel} class="catalogue-group-heading">${escapeHtml(child.label)}
+              <span>${escapeHtml(sourceCount(state.locale, child.count))}</span>
+            </h${headingLevel}>
+          </summary>
+          <ul class="channel-list">${child.rows.map(renderSource).join("")}${renderChildren(child, depth + 1)}</ul>
+        </details>
       </li>`;
     }).join("");
   }
@@ -299,8 +306,19 @@ function renderList() {
   elements.count.textContent = t("results", { shown: channels.length, total: state.channels.length });
   const grouped = state.grouping && !state.sortExplicit;
   elements.groupReset.hidden = !state.grouping || grouped;
+  // Read the previous disclosure state before replacing the list. Search
+  // temporarily opens matches and leaves the browse state intact.
+  if (elements.list.dataset.searching === "false") {
+    for (const details of elements.list.querySelectorAll(".catalogue-group > details")) {
+      const key = details.parentElement.dataset.group;
+      if (details.open) collapsedGroups.delete(key);
+      else collapsedGroups.add(key);
+    }
+  }
+  const searching = Boolean(elements.search.value.trim());
+  elements.list.dataset.searching = String(searching);
   elements.list.innerHTML = channels.length
-    ? grouped ? renderGroups(channels) : channels.map(renderSource).join("")
+    ? grouped ? renderGroups(channels, searching) : channels.map(renderSource).join("")
     : `<li><p class="detail-empty">${t("noResults")}</p></li>`;
   elements.list.querySelectorAll("[data-channel-id]").forEach((button) => button.addEventListener("click", () => {
     window.ParliamentStreamsViewer.open(button.dataset.channelId, { play: true, trigger: button });

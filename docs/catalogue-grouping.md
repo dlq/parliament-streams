@@ -148,7 +148,9 @@ chamber can inherit that mapping through its reviewed umbrella relationship. A n
 unmatched source can appear provisionally in a known jurisdiction or in the
 flat fallback until its placement is reviewed.
 
-The default catalogue uses expanded groups. Selecting a column sorts the flat
+The catalogue starts with expanded groups. Each group can be collapsed on
+desktop and mobile. Search expands matching groups and clearing the query
+restores the previous expansion state. Selecting a column sorts the flat
 list. **Group by jurisdiction** restores the grouped view with the current search
 and filters. A single source can carry its institution label in the row itself
 to keep groups compact.

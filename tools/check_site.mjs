@@ -790,10 +790,21 @@ try {
       await page.locator("#search").fill(search);
       assert.equal(await page.locator('[data-channel-id="argentina-neuquen-legislature-webcasts"]').count(), 1);
     }
+    await page.locator("#search").fill("");
+    const canadaGroup = page.locator('[data-group="jurisdiction:ca"]');
+    const albertaGroup = canadaGroup.locator('[data-group="jurisdiction:ca-ab"]');
+    const canadaSummary = canadaGroup.locator(":scope > details > summary");
+    const albertaSummary = albertaGroup.locator(":scope > details > summary");
+    const albertaSource = albertaGroup.locator('[data-channel-id="alberta-assembly-online"]');
+    await albertaSummary.press("Space");
+    assert.equal(await albertaSource.isVisible(), false);
+    await canadaSummary.click();
+    assert.equal(await albertaSummary.isVisible(), false);
+
     await page.locator("#search").fill("Canada");
-    const albertaGroup = page.locator('[data-group="jurisdiction:ca"] [data-group="jurisdiction:ca-ab"]');
-    assert.equal(await albertaGroup.locator('[data-channel-id="alberta-assembly-online"]').count(), 1);
-    assert.match(await albertaGroup.locator(":scope > h4").innerText(), /Alberta.*1 source/s);
+    assert.equal(await albertaSource.count(), 1);
+    assert.equal(await albertaSource.isVisible(), true);
+    assert.match(await albertaSummary.innerText(), /Alberta.*1 source/s);
     assert.equal(await albertaGroup.evaluate((group) => {
       const national = group.parentElement.querySelector('[data-channel-id="canada-senate-senvu"]');
       return Boolean(national?.compareDocumentPosition(group) & Node.DOCUMENT_POSITION_FOLLOWING);
@@ -812,6 +823,13 @@ try {
       await page.screenshot({ path: join(tmpdir(), `parliament-catalogue-canada-${width}.png`) });
     }
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false);
+    await page.locator("#search").fill("");
+    assert.equal(await albertaSummary.isVisible(), false);
+    await canadaSummary.press("Enter");
+    assert.equal(await albertaSummary.isVisible(), true);
+    assert.equal(await albertaSource.isVisible(), false);
+    await albertaSummary.click();
+    assert.equal(await albertaSource.isVisible(), true);
   }
   assert.deepEqual(catalogueErrors, []);
   await page.setViewportSize({ width: 1280, height: 900 });
