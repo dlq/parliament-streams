@@ -219,6 +219,16 @@ class StructuredPriorityTests(unittest.TestCase):
         self.assertEqual(
             senate.parse("<hearings><meeting><cmte_code/></meeting></hearings>", now=NOW), {}
         )
+        placeholder = (
+            "<meeting><cmte_code/><date>28-Oct-2026 00:00 AM</date>"
+            "<matter>No committee hearings scheduled.</matter><room/></meeting>"
+        )
+        self.assertEqual(senate.parse(f"<hearings>{placeholder}</hearings>", now=NOW), {})
+        date_only = placeholder.replace("No committee hearings scheduled.", "")
+        self.assertEqual(senate.parse(f"<hearings>{date_only}</hearings>", now=NOW), {})
+        missing_committee = date_only.replace("00:00 AM", "10:00 AM")
+        mixed = payload.replace("<hearings>", f"<hearings>{placeholder}")
+        self.assertEqual(senate.parse(mixed, now=NOW), senate.parse(payload, now=NOW))
         self.assertEqual(senate.parse(payload.replace("29-Oct-2026", "01-Jan-2020"), now=NOW), {})
         for body in (
             "<html/>",
@@ -228,6 +238,7 @@ class StructuredPriorityTests(unittest.TestCase):
             "<hearings><meeting/></hearings>",
             payload.replace("<matter>Hearing</matter>", ""),
             payload.replace("SSAF00", ""),
+            f"<hearings>{missing_committee}</hearings>",
             payload.replace("29-Oct-2026 10:00 AM", "01-Nov-2026 01:30 AM"),
         ):
             with self.assertRaises(ValueError):
