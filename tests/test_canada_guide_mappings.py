@@ -55,26 +55,34 @@ class QuebecWebcastBoundaryTests(unittest.TestCase):
 
 
 class OntarioCalendarTimezoneTests(unittest.TestCase):
-    def test_naive_exact_clock_uses_toronto_not_runner_timezone(self):
-        for raw, expected in [
-            ("2026-01-15T10:00:00", "2026-01-15T15:00:00Z"),
-            ("2026-10-26T10:00:00", "2026-10-26T14:00:00Z"),
-            ("2026-10-26T10:00:00+00:00", "2026-10-26T10:00:00Z"),
+    def test_publisher_card_clock_uses_toronto(self):
+        for day, expected in [
+            ("January 15, 2026", "2026-01-15T15:00:00Z"),
+            ("October 26, 2026", "2026-10-26T14:00:00Z"),
         ]:
-            with self.subTest(raw=raw):
-                html = f'<time datetime="{raw}"></time><h2>House sitting</h2>'
+            with self.subTest(day=day):
+                html = (
+                    f'<h2 id="calendar-view-heading">{day}</h2>'
+                    '<div class="calendar-event-filter-item" data-event-type="house-sitting">'
+                    '<div class="parliamentary-calendar-event" title="House in session: 10 a.m.">'
+                    "</div></div>"
+                )
                 event = ontario_calendar.parse(html, now=datetime(2026, 1, 1, tzinfo=UTC))[
                     "ontario-house-en"
                 ]["events"][0]
                 self.assertEqual(event["start"], expected)
                 self.assertNotIn("end", event)
 
-    def test_date_only_and_ambiguous_or_nonexistent_clocks_are_held(self):
-        for raw in ["2026-10-26", "2026-11-01T01:30:00", "2026-03-08T02:30:00"]:
-            with self.subTest(raw=raw):
-                html = f'<time datetime="{raw}"></time><h2>House sitting</h2>'
+    def test_missing_and_ambiguous_clocks_are_held(self):
+        for label in ("House in session", "House in session: 1:30 a.m."):
+            with self.subTest(label=label):
+                html = (
+                    '<h2 id="calendar-view-heading">November 1, 2026</h2>'
+                    '<div class="calendar-event-filter-item" data-event-type="house-sitting">'
+                    f'<div class="parliamentary-calendar-event" title="{label}"></div></div>'
+                )
                 self.assertEqual(
-                    ontario_calendar.parse(html, now=datetime(2026, 1, 1, tzinfo=UTC)), {}
+                    ontario_calendar.parse(html, now=datetime(2026, 11, 1, tzinfo=UTC)), {}
                 )
 
 

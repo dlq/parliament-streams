@@ -266,19 +266,35 @@ class ParserTests(unittest.TestCase):
         self.assertNotIn("quebec-canal02", result)
 
     def test_ontario_parser_handles_event_and_empty_calendar_states(self):
-        events = """
-        <time datetime="2026-01-15T14:00:00Z">ignored</time><h2>Morning <em>sitting</em></h2>
-        <time datetime="2026-01-15T16:00:00Z">ignored</time><h2>Question Period</h2>
-        """
-        scheduled = ontario_calendar.parse(events, datetime(2026, 1, 15, 15, tzinfo=UTC))
-        self.assertEqual(list(scheduled), ["ontario-house-en"])
-        self.assertIsNone(scheduled["ontario-house-en"]["current_event_title"])
-        self.assertEqual(scheduled["ontario-house-en"]["next_event_title"], "Question Period")
-
-        empty = ontario_calendar.parse(
-            "There are no events today", datetime(2026, 1, 15, tzinfo=UTC)
+        heading = (
+            '<h2 id="calendar-view-heading">November 16, 2026'
+            '<button aria-label="Date picker"></button></h2>'
         )
-        self.assertEqual(empty, {})
+        events = (
+            heading
+            + """
+        <div class="calendar-event-filter-item" data-event-type="tours">
+          <div class="parliamentary-calendar-event" title="House tour: 9 a.m."></div>
+        </div>
+        <div class="calendar-event-filter-item" data-event-type="house-sitting">
+          <div class="lao-pcalevent-card parliamentary-calendar-event"
+               title="House in session: 10:15 a.m.">
+            <div class="time">10:15 a.m.</div><div class="event-headline">House in session</div>
+          </div>
+        </div>
+        <h2>Unrelated House heading</h2>
+        """
+        )
+        now = datetime(2026, 11, 16, 13, tzinfo=UTC)
+        schedule = ontario_calendar.parse(events, now)["ontario-house-en"]
+        self.assertEqual(len(schedule["events"]), 1)
+        self.assertEqual(schedule["next_event_title"], "House in session")
+        self.assertEqual(schedule["next_event_start"], "2026-11-16T15:15:00Z")
+        self.assertEqual(
+            ontario_calendar.parse(heading + "<p>There are no events today</p>", now), {}
+        )
+        with self.assertRaisesRegex(ValueError, "recognizable events"):
+            ontario_calendar.parse(heading + "<p>Unexpected response</p>", now)
 
     def test_schedule_sources_use_current_reachable_calendar_urls(self):
         self.assertEqual(
