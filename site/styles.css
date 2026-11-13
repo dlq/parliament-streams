@@ -350,4 +350,16 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 #channel-list > .catalogue-group > details > summary { background: var(--green-wash); }
 .catalogue-group .catalogue-group .catalogue-group-summary { padding-inline-start: .9rem; }
 .catalogue-results-toolbar { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem 1rem; flex-wrap: wrap; }
-.catalogue-group-reset { border: 0; background: none; color: var(--red); text-decoration: underline; cursor: pointer; padding: .35rem 0; }
+.catalogue-group-reset {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: .85rem;
+  font-weight: 650;
+  font-variant-caps: all-small-caps;
+  text-decoration: underline;
+  text-underline-offset: .15em;
+  cursor: pointer;
+  padding: .35rem 0;
+}
+.catalogue-group-reset:hover { color: var(--green); }
