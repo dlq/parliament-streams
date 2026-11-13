@@ -1,6 +1,6 @@
 # Parliament Streams Plans
 
-This is the active roadmap, reviewed **29 October 2026**. Dated progress reports
+This is the active roadmap, reviewed **13 November 2026**. Dated progress reports
 and the previous detailed backlog are preserved in [roadmap history](docs/roadmap-history.md).
 Use [research status](docs/research-status.md) for evidence and
 [GitHub Actions](docs/github-actions.md) for implemented automation.
@@ -15,7 +15,8 @@ and actionable research questions. Each task should state the problem, relevant
 source or record IDs, evidence, and what would count as done. Large review queues
 can retain an umbrella issue, with smaller issues for independently useful work.
 
-Current queues: [rights evidence #13](https://github.com/dlq/parliament-streams/issues/13),
+Current queues: [candidate discovery #12](https://github.com/dlq/parliament-streams/issues/12),
+[rights evidence #13](https://github.com/dlq/parliament-streams/issues/13),
 [media accessibility #14](https://github.com/dlq/parliament-streams/issues/14),
 [monthly inventory source access #51](https://github.com/dlq/parliament-streams/issues/51),
 and [Taiwan schedule regression #53](https://github.com/dlq/parliament-streams/issues/53).
@@ -37,17 +38,11 @@ programme data and reuse rights are separate review questions.
 
 ## Current State
 
-The catalogue has **261 usable viewing sources** and the inventory has **940 eligible identity
-records**. The [current service baseline](reports/discovery/2026-10-25-institution-service-baseline.md)
-records exact matches and remaining per-body work. These are different units;
-neither total is a count of fully validated live streams. Completed work and
-older totals belong in the [changelog](CHANGELOG.md) and dated evidence.
-
-The desktop [shared viewer](docs/public-site.md#shared-viewer-and-navigation)
-now floats over the unchanged list width, with move/resize keyboard alternatives
-and uninterrupted playback during enhanced navigation between the five pages.
-The existing mobile sheet remains. Keep future page controllers within the
-abortable navigation lifecycle and retain normal HTML links/deep links.
+See the [service baseline](reports/discovery/2026-10-25-institution-service-baseline.md)
+for dated catalogue and inventory counts, exact matches and per-body evidence.
+The [shared viewer documentation](docs/public-site.md#shared-viewer-and-navigation)
+describes the desktop and mobile behavior. Preserve normal links and the abortable
+navigation lifecycle when changing page controllers.
 
 ## Next Milestones
 
@@ -68,15 +63,10 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
 
 ## Catalogue Work
 
-- [ ] Continue boundary identity/currentness checks beyond the 29 October map
-  corrections. The Korean mixed-source overlaps are resolved with one attributed
-  SGIS-derived snapshot for all nine mapped regions and their national context.
-  Swiss, Indonesian and Manx context now also share their regional source units;
-  preserve their pinned manifests, licensing and source-vintage limits.
-  Require country/region identifiers, complete component membership and source
-  vintage before adding outlines. Run `uv run tools/check_map_geometry.py` and
-  the geographic regression tests; valid topology alone does not prove the right
-  territory. See [map source corrections](site/assets/maps/ATTRIBUTION.md#29-october-2026-correctness-corrections).
+- [ ] Verify boundary identity, component membership, source vintage and
+  licensing before adding or replacing outlines. See the
+  [map attribution and validation notes](site/assets/maps/ATTRIBUTION.md).
+
 - [ ] Continue the [subnational authority recheck](reports/discovery/2026-10-29-subnational-authority-recheck.md):
   exact legislative organ, territorial tier, substantive enactment powers,
   legal rank, budget/scrutiny and operative grant dates. Evidence-presence checks
@@ -84,12 +74,9 @@ abortable navigation lifecycle and retain normal HTML links/deep links.
   narrower check. Prioritize Colombian text retrieval, special-status grants
   and older consolidations. Retain the three accepted Basque foral exceptions;
   do not admit ordinary provincial or municipal councils by analogy.
-- [ ] Resolve the nine unready feed variants retained in candidates after the
-  [catalogue separation](reports/discovery/2026-10-26-catalogue-research-separation.md);
-  keep publication gated on a supported viewing route.
-- [ ] Work through the named holds for France's Senate, Chile Sala IV, Rivera and
-  other unpublished discovery leads. Resolve the specific evidence gap for each;
-  a failed route or an identifier search without a result does not prove absence.
+- Review unpublished feed variants and named source holds through the
+  [candidate discovery queue #12](https://github.com/dlq/parliament-streams/issues/12).
+  Require a supported viewing route for publication.
 - [ ] Continue current-live, chamber/committee-room, language and source-condition
   checks for published viewing services. Selected historical recordings and parts
   of one sitting must retain their narrower scope.
@@ -109,18 +96,16 @@ event/broadcast JSON-LD, microdata/RDFa, embedded JSON and explicit machine-read
 HTML fields. Generic SEO graphs, upload dates and placeholder meeting bounds do
 not establish broadcast programmes. See [source selection](docs/schedules-and-iptv.md#source-selection).
 
-The [retention decision](reports/epg/2026-10-28-structured-collector-retirement.md)
-retires nine presentation-based collectors and their tests. After [five structured additions](reports/epg/2026-10-28-structured-collector-implementation.md),
-**26 collectors** cover **42 of 261 catalogue records** through 31
-metadata URLs. The 219 other records retain official schedule links. Bundestag is
-the sole documented hybrid exception, with source channel identity and explicit end timestamps cross-checking
-its printed start/range. Other retained HTML sources expose machine-readable event
-fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
+See the [collector retention review](reports/epg/2026-10-28-structured-collector-retirement.md)
+and [implementation evidence](reports/epg/2026-10-28-structured-collector-implementation.md)
+for dated coverage counts and source decisions.
 
-- [ ] Harden retained interfaces: European Parliament's pinned frontend route,
-  Portugal's fixed legislature/link discovery, Ontario's date/title scope and
-  UN Web TV's changed-page recognition. Seek supported structured replacements
-  before adding more presentation rules.
+Collector maintenance is tracked in
+[European Parliament #75](https://github.com/dlq/parliament-streams/issues/75),
+[Portugal #76](https://github.com/dlq/parliament-streams/issues/76),
+[Ontario #77](https://github.com/dlq/parliament-streams/issues/77), and
+[UN Web TV #78](https://github.com/dlq/parliament-streams/issues/78).
+
 - Track supported access and live-contract investigations in
   [Taiwan #53](https://github.com/dlq/parliament-streams/issues/53),
   [US Senate hearings XML #54](https://github.com/dlq/parliament-streams/issues/54),
@@ -136,13 +121,6 @@ fields. New Zealand's legacy HTML/status parser is removed; its JSON API stays.
 - [ ] Keep France's large agenda ZIP and PDF recurrence grids behind their specific
   cost/mapping holds.
   A future plain-HTML exception requires a concrete source-specific decision.
-
-Historical checkpoints: [stabilization](reports/epg/2026-10-28-collector-stabilization.md),
-[three additions](reports/epg/2026-10-28-priority-collectors.md),
-[pre-retirement ranking](reports/epg/2026-10-28-collector-maintainability.md), and
-[Taiwan hosted-access evidence](reports/epg/2026-10-27-taiwan-actions-access.md).
-The later retirement decision governs current scope, including removal of the
-French and Luxembourg collectors added earlier the same day.
 
 ## Rights And Permission Work
 
@@ -176,8 +154,8 @@ findings and implemented changes. Remaining verification:
 
 ### Group Subnational Sources In The Catalogue
 
-- [ ] Establish explicit country → legislature → chamber/room relationships before
-  grouping rows. Preserve territorial distinctions and easy access to national sources.
+- Define the [subnational data model #79](https://github.com/dlq/parliament-streams/issues/79)
+  before grouping rows. Preserve territorial distinctions and easy access to national sources.
 - [ ] Design keyboard-accessible desktop/mobile expansion, useful counts and direct
   links; search and filters should reveal matches inside their groups.
 - [ ] Add dated schedule browsing and shareable filter state when event identifiers
