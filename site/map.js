@@ -5,9 +5,15 @@ const { jurisdictionName: localizedJurisdictionName, message: mapMessage, source
 
 
 const appScriptUrl = document.currentScript?.src ?? window.location.href;
-const geometryUrl = new URL("./assets/maps/countries-110m.geojson?v=20261025-holds", appScriptUrl);
-const subnationalGeometryUrl = new URL("./assets/maps/documented-admin1.geojson?v=20261029-consistent", appScriptUrl);
-const lienchiangGeometryUrl = new URL("./assets/maps/lienchiang-odbl.geojson?v=20261025-holds", appScriptUrl);
+const mapAssetVersions = {}; // Populated from the assembled GeoJSON during publication.
+function mapAssetUrl(file) {
+  const url = new URL(`./assets/maps/${file}`, appScriptUrl);
+  if (mapAssetVersions[file]) url.searchParams.set("v", mapAssetVersions[file]);
+  return url;
+}
+const geometryUrl = mapAssetUrl("countries-110m.geojson");
+const subnationalGeometryUrl = mapAssetUrl("documented-admin1.geojson");
+const lienchiangGeometryUrl = mapAssetUrl("lienchiang-odbl.geojson");
 
 
 
@@ -39,7 +45,7 @@ async function loadVisibleCountryDetails() {
       || y1 * transform.k + transform.y < 0 || y0 * transform.k + transform.y > height) return;
     countryDetailRequests.add(code);
     try {
-      const url = new URL(`./assets/maps/countries/${code}.geojson?v=20261029-consistent`, appScriptUrl);
+      const url = mapAssetUrl(`countries/${code}.geojson`);
       const detail = await d3.json(url, { signal: pageSignal });
       if (pageSignal?.aborted) return;
       detailedCountries.set(code, detail);

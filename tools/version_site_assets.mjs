@@ -6,6 +6,28 @@ import { join, resolve } from "node:path";
 // generated vendor manifests. Editing an asset must change its browser cache key.
 const directory = resolve(process.argv[2] ?? "_site");
 const pages = (await readdir(directory)).filter((name) => name.endsWith(".html"));
+
+// Embed per-file map keys before hashing map.js for the HTML script URL.
+if (pages.includes("map.html")) {
+  const mapDirectory = join(directory, "assets", "maps");
+  const versions = {};
+  for (const folder of ["", "countries/"]) {
+    const entries = await readdir(join(mapDirectory, folder), { withFileTypes: true });
+    const files = entries.filter((entry) => entry.isFile() && entry.name.endsWith(".geojson"))
+      .map((entry) => entry.name).sort();
+    for (const name of files) {
+      const file = folder + name;
+      const content = await readFile(join(mapDirectory, file));
+      versions[file] = createHash("sha256").update(content).digest("hex").slice(0, 16);
+    }
+  }
+  const scriptPath = join(directory, "map.js");
+  const script = await readFile(scriptPath, "utf8");
+  const declaration = /^const mapAssetVersions = \{[^\n]*\};/m;
+  if (!declaration.test(script)) throw new Error("Map script lacks its asset version declaration");
+  await writeFile(scriptPath, script.replace(declaration, `const mapAssetVersions = ${JSON.stringify(versions)};`));
+}
+
 const localeDirectory = join(directory, "locales");
 const localeFiles = await readdir(localeDirectory).catch((error) => {
   if (error.code === "ENOENT") return [];
