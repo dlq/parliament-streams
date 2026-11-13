@@ -317,26 +317,43 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .data-colophon-byline a { color: var(--red); text-underline-offset: .15em; }
 
 .catalogue-group-summary {
-  display: list-item;
-  padding: .45rem .65rem;
+  display: grid;
+  grid-template-columns: .7rem minmax(0, 1fr);
+  align-items: center;
+  gap: .4rem;
+  min-height: 32px;
+  padding: .3rem .65rem;
   border-top: 1px solid var(--faint);
+  background: var(--wash);
+  list-style: none;
   cursor: pointer;
 }
-.catalogue-group-summary::marker { color: var(--green); }
+.catalogue-group-summary::-webkit-details-marker { display: none; }
+.catalogue-group-summary::before {
+  content: "+" / "";
+  color: var(--green);
+  font-size: 1rem;
+  line-height: 1;
+}
+.catalogue-group > details[open] > .catalogue-group-summary::before { content: "−" / ""; }
 .catalogue-group-heading {
-  display: inline-flex;
-  width: calc(100% - 1.15rem);
+  display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: .5rem 1rem;
+  gap: .5rem;
   margin: 0;
-  font: inherit;
-  font-weight: 700;
+  font: 650 .86rem/1.25 Inter, ui-sans-serif, system-ui, sans-serif;
+  font-variant-caps: small-caps;
   overflow-wrap: anywhere;
 }
-.catalogue-group-heading > span { flex-shrink: 0; font-size: .8rem; font-weight: 400; }
+.catalogue-group-heading > span {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 400;
+  font-variant-caps: normal;
+}
 #channel-list > .catalogue-group > details > summary { background: var(--green-wash); }
-.catalogue-group .catalogue-group .catalogue-group-summary { padding-inline-start: 1rem; }
-.catalogue-group .catalogue-group .catalogue-group .catalogue-group-summary { padding-inline-start: 1.35rem; }
+.catalogue-group .catalogue-group .catalogue-group-summary { padding-inline-start: .9rem; }
 .catalogue-results-toolbar { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem 1rem; flex-wrap: wrap; }
 .catalogue-group-reset { border: 0; background: none; color: var(--red); text-decoration: underline; cursor: pointer; padding: .35rem 0; }
