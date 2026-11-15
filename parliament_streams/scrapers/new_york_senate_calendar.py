@@ -19,6 +19,17 @@ CHANNEL_ID = "us-ny-senate-live"
 URL = "https://www.nysenate.gov/session/calendar-download"
 PAGE_URL = "https://www.nysenate.gov/events"
 TIMEZONE = "America/New_York"
+EVENT_PROPERTIES = {
+    "UID",
+    "SUMMARY",
+    "DTSTART",
+    "URL",
+    "LOCATION",
+    "STATUS",
+    "RRULE",
+    "RDATE",
+    "RECURRENCE-ID",
+}
 SOURCE: ScraperSource = {
     "id": "new-york-senate-calendar",
     "channel_ids": [CHANNEL_ID],
@@ -64,21 +75,10 @@ def _records(payload: str) -> list[dict[str, tuple[str, str]]]:
                 current = None
         elif stack == ["VCALENDAR"] and name == "VERSION":
             version = value == "2.0"
-        elif stack == ["VCALENDAR", "VEVENT"] and current is not None:
-            if name in {
-                "UID",
-                "SUMMARY",
-                "DTSTART",
-                "URL",
-                "LOCATION",
-                "STATUS",
-                "RRULE",
-                "RDATE",
-                "RECURRENCE-ID",
-            }:
-                if name in current:
-                    raise ValueError(f"Duplicate iCalendar {name}")
-                current[name] = (key, value)
+        elif stack == ["VCALENDAR", "VEVENT"] and current is not None and name in EVENT_PROPERTIES:
+            if name in current:
+                raise ValueError(f"Duplicate iCalendar {name}")
+            current[name] = (key, value)
     if stack or not version:
         raise ValueError("Invalid iCalendar version or incomplete components")
     return records
