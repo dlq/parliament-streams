@@ -20,7 +20,9 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
-      - run: python tools/diagnose_collector_access.py
+      - run: python -m pip install uv
+      - run: uv sync --locked
+      - run: uv run --locked python tools/diagnose_collector_access.py
       - uses: actions/upload-artifact@v5
         with:
           name: collector-access-${{ matrix.os }}

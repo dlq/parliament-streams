@@ -8,6 +8,7 @@ import platform
 import socket
 import ssl
 import subprocess
+import sys
 from datetime import UTC, datetime
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -78,6 +79,32 @@ def probe(name: str, url: str, extra: dict) -> dict:
     except (URLError, TimeoutError, ssl.SSLError, OSError) as error:
         result["error_type"] = type(error).__name__
     return result
+
+
+def verify_taiwan_window() -> dict:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from parliament_streams.schedule_collection import fetch_text
+    from parliament_streams.scrapers import taiwan_parliamentary_tv
+
+    now = datetime.now(UTC)
+    results = []
+    try:
+        for spec in taiwan_parliamentary_tv.request_specs(now):
+            results.append(fetch_text(spec, 20, 0))
+        parsed = taiwan_parliamentary_tv.parse(*results, now=now)
+        return {
+            "status": "ok",
+            "responses": len(results),
+            "events": {key: len(value["events"]) for key, value in parsed.items()},
+            "collected_at": now.isoformat(),
+        }
+    except (RuntimeError, ValueError) as error:
+        return {
+            "status": "error",
+            "responses": len(results),
+            "error": str(error)[:200],
+            "collected_at": now.isoformat(),
+        }
 
 
 def main() -> None:
@@ -159,6 +186,8 @@ def main() -> None:
             )
         except OSError:
             dns[host] = []
+    window = verify_taiwan_window()
+    print(json.dumps({"taiwan_window": window}), flush=True)
     report = {
         "checked_at": datetime.now(UTC).isoformat(),
         "platform": platform.system(),
@@ -166,6 +195,7 @@ def main() -> None:
         "ssl": ssl.OPENSSL_VERSION,
         "dns": dns,
         "results": results,
+        "taiwan_window": window,
     }
     Path("collector-access-diagnostic.json").write_text(json.dumps(report, indent=2) + "\n")
 
