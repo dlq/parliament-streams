@@ -1,0 +1,28 @@
+name: Diagnose collector access
+on:
+  push:
+    branches: [codex/collector-access-20261120]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - run: python tools/diagnose_collector_access.py
+      - uses: actions/upload-artifact@v5
+        with:
+          name: collector-access-${{ matrix.os }}
+          path: collector-access-diagnostic.json
+          retention-days: 7
