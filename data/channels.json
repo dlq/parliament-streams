@@ -4027,7 +4027,8 @@
           "scraper_status": "implemented",
           "url": "https://www.parliamentarytv.org.tw/api/get_program.php",
           "method": "GET",
-          "kind": "official_two_channel_programme_api"
+          "kind": "official_two_channel_programme_api",
+          "notes": "Access review 2026-11-20: CloudFront access varies across GitHub-hosted runners. One Linux API probe returned HTTP 200, but a subsequent complete three-day collection failed with HTTP 403 on fresh Linux and macOS runners. Six dated requests succeeded locally. Reliable hosted collection remains unresolved; the blocking rule requires publisher logs. Evidence: reports/epg/2026-11-20-hosted-access-comparison.md."
         }
       ],
       "permission": {
@@ -7268,7 +7269,8 @@
           "method": "GET",
           "kind": "session_icalendar",
           "scraper": "new-york-senate-calendar",
-          "scraper_status": "implemented"
+          "scraper_status": "implemented",
+          "notes": "Access review 2026-11-20: GitHub-hosted Linux and macOS received HTTP 403 with CF-Mitigated: challenge from Cloudflare on the official ICS export. The same collector request succeeded locally. The exact security rule requires publisher logs; supported automated access remains unresolved. Evidence: reports/epg/2026-11-20-hosted-access-comparison.md."
         }
       ],
       "permission": {

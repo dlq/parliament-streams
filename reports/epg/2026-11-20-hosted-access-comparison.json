@@ -1,0 +1,1246 @@
+{
+  "checked_on": "2026-11-20",
+  "diagnostic_run": "https://github.com/dlq/parliament-streams/actions/runs/44768740612",
+  "diagnostic_commit": "01ac7cb",
+  "local": {
+    "checked_at": "2026-11-20T15:59:26.416008+00:00",
+    "platform": "Darwin",
+    "python": "3.12.15",
+    "ssl": "OpenSSL 3.5.9 29 Sep 2026",
+    "dns": {
+      "www.nysenate.gov": [
+        "185.178.196.1",
+        "2a0a:6c80::1"
+      ],
+      "www.parliamentarytv.org.tw": [
+        "2600:9000:269f:2600:1e:8c3a:b0c0:93a1",
+        "2600:9000:269f:3400:1e:8c3a:b0c0:93a1",
+        "2600:9000:269f:4200:1e:8c3a:b0c0:93a1",
+        "2600:9000:269f:6600:1e:8c3a:b0c0:93a1",
+        "2600:9000:269f:8800:1e:8c3a:b0c0:93a1",
+        "2600:9000:269f:9c00:1e:8c3a:b0c0:93a1",
+        "2600:9000:269f:c600:1e:8c3a:b0c0:93a1",
+        "2600:9000:269f:e00:1e:8c3a:b0c0:93a1",
+        "3.161.213.23",
+        "3.161.213.33",
+        "3.161.213.53",
+        "3.161.213.55"
+      ]
+    },
+    "results": [
+      {
+        "name": "taiwan-home",
+        "url": "https://www.parliamentarytv.org.tw/",
+        "status": 200,
+        "final_url": "https://www.parliamentarytv.org.tw/",
+        "sample_sha256": "eed52eba83d4bb03c63fd4f2484d484ae68e2aa6ad966f5d3d4cdba1a97381ec",
+        "sample_bytes": 65536,
+        "headers": {
+          "Server": "Apache/2.4.71 (Amazon Linux)",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Via": "1.1 f4979fa9d388cee1327b2a7fad0fcbfa.cloudfront.net (CloudFront)",
+          "X-Cache": "Miss from cloudfront",
+          "X-Amz-Cf-Pop": "YUL62-P1"
+        },
+        "markers": [
+          "Cloudflare"
+        ],
+        "ical": false
+      },
+      {
+        "name": "taiwan-script",
+        "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+        "status": 200,
+        "final_url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+        "sample_sha256": "9eb9f646269bd4e78e31833e553d45c5f8d87bbd193d9c283a7b4fa6e1b3edf0",
+        "sample_bytes": 16522,
+        "headers": {
+          "Server": "Apache/2.4.71 (Amazon Linux)",
+          "Content-Type": "application/javascript",
+          "Via": "1.1 cedddf018b0456d4e84e339e4b25cc2e.cloudfront.net (CloudFront)",
+          "X-Cache": "Miss from cloudfront",
+          "X-Amz-Cf-Pop": "YUL62-P1"
+        },
+        "markers": [],
+        "ical": false
+      },
+      {
+        "name": "taiwan-collector",
+        "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+        "status": 200,
+        "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+        "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+        "sample_bytes": 2226,
+        "headers": {
+          "Server": "Apache/2.4.71 (Amazon Linux)",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Via": "1.1 821023b4a3a311c0d07e08ee75804660.cloudfront.net (CloudFront)",
+          "X-Cache": "Miss from cloudfront",
+          "X-Amz-Cf-Pop": "YUL62-P1"
+        },
+        "markers": [],
+        "json_type": "list",
+        "rows": 14
+      },
+      {
+        "name": "taiwan-ajax",
+        "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+        "status": 200,
+        "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+        "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+        "sample_bytes": 2226,
+        "headers": {
+          "Server": "Apache/2.4.71 (Amazon Linux)",
+          "Content-Type": "text/html; charset=UTF-8",
+          "Via": "1.1 1444171bfa6dc77903048694929271f2.cloudfront.net (CloudFront)",
+          "X-Cache": "Miss from cloudfront",
+          "X-Amz-Cf-Pop": "YUL62-P1"
+        },
+        "markers": [],
+        "json_type": "list",
+        "rows": 14
+      },
+      {
+        "name": "new-york-home",
+        "url": "https://www.nysenate.gov/",
+        "status": 200,
+        "final_url": "https://www.nysenate.gov/",
+        "sample_sha256": "63ebf3f55101503de1917698f013fbb97f60f8e29bbcb6b124dea318ec206e77",
+        "sample_bytes": 53295,
+        "headers": {
+          "Server": "cloudflare",
+          "Content-Type": "text/html; charset=utf-8",
+          "Via": "1.1 google"
+        },
+        "markers": [
+          "Cloudflare",
+          "country"
+        ],
+        "ical": false
+      },
+      {
+        "name": "new-york-events",
+        "url": "https://www.nysenate.gov/events",
+        "status": 200,
+        "final_url": "https://www.nysenate.gov/events",
+        "sample_sha256": "fcf92d10db754cb68f317c70cad6f962ff930da086c70e7da56dbf5a411b8101",
+        "sample_bytes": 41408,
+        "headers": {
+          "Server": "cloudflare",
+          "Content-Type": "text/html; charset=utf-8",
+          "Via": "1.1 google"
+        },
+        "markers": [
+          "Cloudflare"
+        ],
+        "ical": false
+      },
+      {
+        "name": "new-york-collector",
+        "url": "https://www.nysenate.gov/session/calendar-download",
+        "status": 200,
+        "final_url": "https://www.nysenate.gov/session/calendar-download",
+        "sample_sha256": "3e9e2578392cb6ea9010a5936200ca44c46add065b0467370826db4f5b6d49d7",
+        "sample_bytes": 28798,
+        "headers": {
+          "Server": "cloudflare",
+          "Content-Type": "text/calendar; charset=utf-8",
+          "Via": "1.1 google"
+        },
+        "markers": [],
+        "ical": true
+      },
+      {
+        "name": "new-york-calendar-headers",
+        "url": "https://www.nysenate.gov/session/calendar-download",
+        "status": 200,
+        "final_url": "https://www.nysenate.gov/session/calendar-download",
+        "sample_sha256": "3e9e2578392cb6ea9010a5936200ca44c46add065b0467370826db4f5b6d49d7",
+        "sample_bytes": 28798,
+        "headers": {
+          "Server": "cloudflare",
+          "Content-Type": "text/calendar; charset=utf-8",
+          "Via": "1.1 google"
+        },
+        "markers": [],
+        "ical": true
+      },
+      {
+        "name": "taiwan-curl-http1.1",
+        "exit_code": 0,
+        "transport": {
+          "http_code": 200,
+          "http_version": "1.1",
+          "remote_ip": "3.161.213.33",
+          "ssl_verify_result": 0,
+          "num_redirects": 0
+        },
+        "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+        "sample_bytes": 2226,
+        "headers": {},
+        "markers": [],
+        "json_type": "list",
+        "rows": 14
+      },
+      {
+        "name": "taiwan-curl-http2",
+        "exit_code": 0,
+        "transport": {
+          "http_code": 200,
+          "http_version": "2",
+          "remote_ip": "3.161.213.33",
+          "ssl_verify_result": 0,
+          "num_redirects": 0
+        },
+        "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+        "sample_bytes": 2226,
+        "headers": {},
+        "markers": [],
+        "json_type": "list",
+        "rows": 14
+      },
+      {
+        "name": "new-york-curl-http1.1",
+        "exit_code": 0,
+        "transport": {
+          "http_code": 200,
+          "http_version": "1.1",
+          "remote_ip": "185.178.196.1",
+          "ssl_verify_result": 0,
+          "num_redirects": 0
+        },
+        "sample_sha256": "3e9e2578392cb6ea9010a5936200ca44c46add065b0467370826db4f5b6d49d7",
+        "sample_bytes": 28798,
+        "headers": {},
+        "markers": [],
+        "ical": true
+      },
+      {
+        "name": "new-york-curl-http2",
+        "exit_code": 0,
+        "transport": {
+          "http_code": 403,
+          "http_version": "2",
+          "remote_ip": "185.178.196.1",
+          "ssl_verify_result": 0,
+          "num_redirects": 0
+        },
+        "sample_sha256": "fc17e123aa213290a622a5a5a480558895a40feee33c8c357a2a1591fd59af3e",
+        "sample_bytes": 5684,
+        "headers": {},
+        "markers": [
+          "Cloudflare"
+        ],
+        "ical": false
+      }
+    ]
+  },
+  "hosted": {
+    "collector-access-macos-latest": {
+      "checked_at": "2026-11-20T15:59:26.947674+00:00",
+      "platform": "Darwin",
+      "python": "3.11.9",
+      "ssl": "OpenSSL 3.0.13 30 Jan 2024",
+      "dns": {
+        "www.parliamentarytv.org.tw": [
+          "65.8.180.16",
+          "65.8.180.36",
+          "65.8.180.54",
+          "65.8.180.98"
+        ],
+        "www.nysenate.gov": [
+          "185.178.196.1"
+        ]
+      },
+      "results": [
+        {
+          "name": "taiwan-home",
+          "url": "https://www.parliamentarytv.org.tw/",
+          "status": 403,
+          "final_url": "https://www.parliamentarytv.org.tw/",
+          "sample_sha256": "3f14063d02f2b950d2a75d9bd8968a6dcb6256a1ba6b2c88cb65ab02418517ea",
+          "sample_bytes": 919,
+          "headers": {
+            "Server": "CloudFront",
+            "Content-Type": "text/html",
+            "Via": "1.1 159f8e80c584cde47fa87f8d8ff5fcde.cloudfront.net (CloudFront)",
+            "X-Cache": "Error from cloudfront",
+            "X-Amz-Cf-Pop": "SFO53-P9"
+          },
+          "markers": [
+            "Request blocked",
+            "The request could not be satisfied",
+            "Generated by cloudfront"
+          ],
+          "ical": false
+        },
+        {
+          "name": "taiwan-script",
+          "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+          "status": 403,
+          "final_url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+          "sample_sha256": "738eae58d25176c76d5cf95ca86766f7127f3db9f1f19bcbfd5794662770a5e4",
+          "sample_bytes": 919,
+          "headers": {
+            "Server": "CloudFront",
+            "Content-Type": "text/html",
+            "Via": "1.1 339b50639d9b4146fda74da7c1df3f92.cloudfront.net (CloudFront)",
+            "X-Cache": "Error from cloudfront",
+            "X-Amz-Cf-Pop": "SFO53-P9"
+          },
+          "markers": [
+            "Request blocked",
+            "The request could not be satisfied",
+            "Generated by cloudfront"
+          ],
+          "ical": false
+        },
+        {
+          "name": "taiwan-collector",
+          "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "status": 403,
+          "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "sample_sha256": "7056b8448dbc901f04a5c1ace4258f02393c60be823a8f58f826139fd97907fb",
+          "sample_bytes": 919,
+          "headers": {
+            "Server": "CloudFront",
+            "Content-Type": "text/html",
+            "Via": "1.1 ebf55ca9c2011caf25578fcdad5baea4.cloudfront.net (CloudFront)",
+            "X-Cache": "Error from cloudfront",
+            "X-Amz-Cf-Pop": "SFO53-P9"
+          },
+          "markers": [
+            "Request blocked",
+            "The request could not be satisfied",
+            "Generated by cloudfront"
+          ],
+          "ical": false
+        },
+        {
+          "name": "taiwan-ajax",
+          "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "status": 403,
+          "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "sample_sha256": "55cff6674b193f2a372771a8bb27358da5000aa26dffdd801f600e27cccce84c",
+          "sample_bytes": 919,
+          "headers": {
+            "Server": "CloudFront",
+            "Content-Type": "text/html",
+            "Via": "1.1 bb0594f2e9ea1308fed733a4ebfcc102.cloudfront.net (CloudFront)",
+            "X-Cache": "Error from cloudfront",
+            "X-Amz-Cf-Pop": "SFO53-P9"
+          },
+          "markers": [
+            "Request blocked",
+            "The request could not be satisfied",
+            "Generated by cloudfront"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-home",
+          "url": "https://www.nysenate.gov/",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/",
+          "sample_sha256": "778ff126b292783544f41f657984213369c7279b735ce48574d1fcbba975ed46",
+          "sample_bytes": 5588,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-events",
+          "url": "https://www.nysenate.gov/events",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/events",
+          "sample_sha256": "6cc130bc8a9a0c8213b2c1dd2a283265fd7833ba7787bb7fc91d8a38d9bab58f",
+          "sample_bytes": 5606,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-collector",
+          "url": "https://www.nysenate.gov/session/calendar-download",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/session/calendar-download",
+          "sample_sha256": "bd53e3e9890f97059b92755d171eff6099d4d367ccc9235175fb4e283e266f33",
+          "sample_bytes": 5706,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-calendar-headers",
+          "url": "https://www.nysenate.gov/session/calendar-download",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/session/calendar-download",
+          "sample_sha256": "8de235867f93a6d9c0846ebbb6c8ed7414046197fb3226256179cfbe6be10491",
+          "sample_bytes": 5727,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "taiwan-curl-http1.1",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 403,
+            "http_version": "1.1",
+            "remote_ip": "65.8.180.54",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "0c317fadf211495c4e8b802845a06d8f79a6dd282cb08668f4c97e1276c8013d",
+          "sample_bytes": 919,
+          "headers": {},
+          "markers": [
+            "Request blocked",
+            "The request could not be satisfied",
+            "Generated by cloudfront"
+          ],
+          "ical": false
+        },
+        {
+          "name": "taiwan-curl-http2",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 403,
+            "http_version": "2",
+            "remote_ip": "65.8.180.54",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "067664baa884ef2f39f3166152c56d3bc4122637a20fd0bb47819610cf7ddce5",
+          "sample_bytes": 919,
+          "headers": {},
+          "markers": [
+            "Request blocked",
+            "The request could not be satisfied",
+            "Generated by cloudfront"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-curl-http1.1",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 403,
+            "http_version": "1.1",
+            "remote_ip": "185.178.196.1",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "bf56c87e9b53013f42a0556bc9538622ef68bb7c52c0597b040fb3875ce08a2d",
+          "sample_bytes": 5684,
+          "headers": {},
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-curl-http2",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 403,
+            "http_version": "2",
+            "remote_ip": "185.178.196.1",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "edbc91ece9eab919bfd7ba06ca4dcc8f0c3d1500865cfc4f66684ec193248e67",
+          "sample_bytes": 5684,
+          "headers": {},
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        }
+      ]
+    },
+    "collector-access-ubuntu-latest": {
+      "checked_at": "2026-11-20T15:59:31.900206+00:00",
+      "platform": "Linux",
+      "python": "3.11.18",
+      "ssl": "OpenSSL 3.5.5 27 Jan 2026",
+      "dns": {
+        "www.nysenate.gov": [
+          "185.178.196.1",
+          "2a0a:6c80::1"
+        ],
+        "www.parliamentarytv.org.tw": [
+          "143.204.1.122",
+          "143.204.1.64",
+          "143.204.1.76",
+          "143.204.1.93",
+          "2600:9000:2000:2000:1e:8c3a:b0c0:93a1",
+          "2600:9000:2000:3600:1e:8c3a:b0c0:93a1",
+          "2600:9000:2000:5600:1e:8c3a:b0c0:93a1",
+          "2600:9000:2000:5e00:1e:8c3a:b0c0:93a1",
+          "2600:9000:2000:600:1e:8c3a:b0c0:93a1",
+          "2600:9000:2000:8400:1e:8c3a:b0c0:93a1",
+          "2600:9000:2000:9800:1e:8c3a:b0c0:93a1",
+          "2600:9000:2000:f000:1e:8c3a:b0c0:93a1"
+        ]
+      },
+      "results": [
+        {
+          "name": "taiwan-home",
+          "url": "https://www.parliamentarytv.org.tw/",
+          "status": 200,
+          "final_url": "https://www.parliamentarytv.org.tw/",
+          "sample_sha256": "eed52eba83d4bb03c63fd4f2484d484ae68e2aa6ad966f5d3d4cdba1a97381ec",
+          "sample_bytes": 65536,
+          "headers": {
+            "Server": "Apache/2.4.71 (Amazon Linux)",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Via": "1.1 72c969c05a55c9f561d81ee951899f80.cloudfront.net (CloudFront)",
+            "X-Cache": "Miss from cloudfront",
+            "X-Amz-Cf-Pop": "HIO52-P5"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "taiwan-script",
+          "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+          "status": 200,
+          "final_url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+          "sample_sha256": "9eb9f646269bd4e78e31833e553d45c5f8d87bbd193d9c283a7b4fa6e1b3edf0",
+          "sample_bytes": 16522,
+          "headers": {
+            "Server": "Apache/2.4.71 (Amazon Linux)",
+            "Content-Type": "application/javascript",
+            "Via": "1.1 1060b90484c0f94092a0f1bfc61f7e9e.cloudfront.net (CloudFront)",
+            "X-Cache": "Miss from cloudfront",
+            "X-Amz-Cf-Pop": "HIO52-P5"
+          },
+          "markers": [],
+          "ical": false
+        },
+        {
+          "name": "taiwan-collector",
+          "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "status": 200,
+          "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+          "sample_bytes": 2226,
+          "headers": {
+            "Server": "Apache/2.4.71 (Amazon Linux)",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Via": "1.1 e27e33d2ef7d91c8ffc1afbdd6d85df0.cloudfront.net (CloudFront)",
+            "X-Cache": "Miss from cloudfront",
+            "X-Amz-Cf-Pop": "HIO52-P5"
+          },
+          "markers": [],
+          "json_type": "list",
+          "rows": 14
+        },
+        {
+          "name": "taiwan-ajax",
+          "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "status": 200,
+          "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F20",
+          "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+          "sample_bytes": 2226,
+          "headers": {
+            "Server": "Apache/2.4.71 (Amazon Linux)",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Via": "1.1 3bbe2b9a1067c049fd5ff2d57048d36a.cloudfront.net (CloudFront)",
+            "X-Cache": "Miss from cloudfront",
+            "X-Amz-Cf-Pop": "HIO52-P5"
+          },
+          "markers": [],
+          "json_type": "list",
+          "rows": 14
+        },
+        {
+          "name": "new-york-home",
+          "url": "https://www.nysenate.gov/",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/",
+          "sample_sha256": "74bd2c822e0947c2c624b291258d5d8d3275822e4c0c8063ea44d46a77280f86",
+          "sample_bytes": 5588,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-events",
+          "url": "https://www.nysenate.gov/events",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/events",
+          "sample_sha256": "73702d11eab63f8ab75d861a7121f0b6bbb20e06238d0d4343289347f76839d4",
+          "sample_bytes": 5606,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-collector",
+          "url": "https://www.nysenate.gov/session/calendar-download",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/session/calendar-download",
+          "sample_sha256": "55a4f65aa2b376b296723a57f54418f8f5b1acd3c112c0731ab14b4734fabca5",
+          "sample_bytes": 5684,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-calendar-headers",
+          "url": "https://www.nysenate.gov/session/calendar-download",
+          "status": 403,
+          "final_url": "https://www.nysenate.gov/session/calendar-download",
+          "sample_sha256": "244cdd4471edaf5a81a796254fe14d6b8b8c4a59a348c68026beee55ed19769e",
+          "sample_bytes": 5705,
+          "headers": {
+            "Server": "cloudflare",
+            "Content-Type": "text/html; charset=UTF-8",
+            "CF-Mitigated": "challenge"
+          },
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "taiwan-curl-http1.1",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 200,
+            "http_version": "1.1",
+            "remote_ip": "143.204.1.64",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+          "sample_bytes": 2226,
+          "headers": {},
+          "markers": [],
+          "json_type": "list",
+          "rows": 14
+        },
+        {
+          "name": "taiwan-curl-http2",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 200,
+            "http_version": "2",
+            "remote_ip": "143.204.1.76",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "03b152f86b6899fc408ad76c5a9453b47ee4bf0193f03f769a80bc40d11d633e",
+          "sample_bytes": 2226,
+          "headers": {},
+          "markers": [],
+          "json_type": "list",
+          "rows": 14
+        },
+        {
+          "name": "new-york-curl-http1.1",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 403,
+            "http_version": "1.1",
+            "remote_ip": "185.178.196.1",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "5c46f0884a25ba8da4eab8a3bae5b3459f2bbc72a938fb7c87b058072666ddb5",
+          "sample_bytes": 5662,
+          "headers": {},
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        },
+        {
+          "name": "new-york-curl-http2",
+          "exit_code": 0,
+          "transport": {
+            "http_code": 403,
+            "http_version": "2",
+            "remote_ip": "185.178.196.1",
+            "ssl_verify_result": 0,
+            "num_redirects": 0
+          },
+          "sample_sha256": "f5ae329f6b0a4a00c92e072949849cbd265f5950744c8961741482b1599e8613",
+          "sample_bytes": 5641,
+          "headers": {},
+          "markers": [
+            "Cloudflare"
+          ],
+          "ical": false
+        }
+      ]
+    }
+  },
+  "followup": {
+    "run": "https://github.com/dlq/parliament-streams/actions/runs/44769010032",
+    "diagnostic_commit": "9ad2b5a",
+    "hosted": {
+      "collector-access-macos-latest": {
+        "checked_at": "2026-11-20T16:01:05.330511+00:00",
+        "platform": "Darwin",
+        "python": "3.11.9",
+        "ssl": "OpenSSL 3.0.13 30 Jan 2024",
+        "dns": {
+          "www.nysenate.gov": [
+            "185.178.196.1"
+          ],
+          "www.parliamentarytv.org.tw": [
+            "18.64.155.14",
+            "18.64.155.25",
+            "18.64.155.41",
+            "18.64.155.85"
+          ]
+        },
+        "results": [
+          {
+            "name": "taiwan-home",
+            "url": "https://www.parliamentarytv.org.tw/",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/",
+            "sample_sha256": "016df051de50300fb89ff00dfa14dfb156c418ae78608f8c8663c601e3256a5b",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 a2bd5f1d2eb6a4c2830cfc986857c8b6.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "ATL56-P2"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-script",
+            "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+            "sample_sha256": "10946329d9c784a463b24e7cc05bd08f8a0d3ccb84d5c62a6d86b8500605cd51",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 0ee4a87a9f0e7b4ec7616932a0def532.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "ATL56-P2"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-collector",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "sample_sha256": "74d33cfd05fe05751154f98bc1c222081268290b0858d439cf85c2a2b7c1e16f",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 322cca685728d321948b8b82048f35f4.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "ATL56-P2"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-ajax",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "sample_sha256": "7b651f9dbe7d15e95ad1b3c83d95b5068bf2ce1e3da1181d2158aa0a057ff52c",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 e467039d17db7ee1a832ffb07001fe18.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "ATL56-P2"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-home",
+            "url": "https://www.nysenate.gov/",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/",
+            "sample_sha256": "0d78563f8cc4afe87908e2589566abac247b0a5ab2ad4434391fde3d93249ac1",
+            "sample_bytes": 5588,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-events",
+            "url": "https://www.nysenate.gov/events",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/events",
+            "sample_sha256": "bc575194f4b1ab55526082bcdcbdbfa8fcf00a282efe4638a14910a7cfb1c9ee",
+            "sample_bytes": 5627,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-collector",
+            "url": "https://www.nysenate.gov/session/calendar-download",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/session/calendar-download",
+            "sample_sha256": "dc5e55db9ffe7c87271120957c9782d068e15fbc43bb0fb9a7ddbed4d2e4b207",
+            "sample_bytes": 5706,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-calendar-headers",
+            "url": "https://www.nysenate.gov/session/calendar-download",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/session/calendar-download",
+            "sample_sha256": "4f5f6d4223895b4205b6388274b4c8ffea9cb41515be5c4499db074c27b02fe6",
+            "sample_bytes": 5727,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-curl-http1.1",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "1.1",
+              "remote_ip": "18.64.155.41",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "717097fd3defd6979a8f1187fc93ffd0b685efeb8664818c9ede052fa1f46624",
+            "sample_bytes": 919,
+            "headers": {},
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-curl-http2",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "2",
+              "remote_ip": "18.64.155.25",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "3c706dfdd64061fcf3edc25dbe6ef31252112212b7ed85ac080c7a645874fdc7",
+            "sample_bytes": 919,
+            "headers": {},
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-curl-http1.1",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "1.1",
+              "remote_ip": "185.178.196.1",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "ab36a1a14cc5730794cf654019008beeb18fe179eb325ba74fa3080c430b535f",
+            "sample_bytes": 5684,
+            "headers": {},
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-curl-http2",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "2",
+              "remote_ip": "185.178.196.1",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "41258b890c581c87cb7639374e5c9bbe065ea9097afe90c6d46f2a139e1bc390",
+            "sample_bytes": 5684,
+            "headers": {},
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          }
+        ],
+        "taiwan_window": {
+          "status": "error",
+          "responses": 0,
+          "error": "HTTP 403",
+          "collected_at": "2026-11-20T16:01:05.161360+00:00"
+        }
+      },
+      "collector-access-ubuntu-latest": {
+        "checked_at": "2026-11-20T16:00:59.927989+00:00",
+        "platform": "Linux",
+        "python": "3.11.18",
+        "ssl": "OpenSSL 3.5.5 27 Jan 2026",
+        "dns": {
+          "www.nysenate.gov": [
+            "185.178.196.1",
+            "2a0a:6c80::1"
+          ],
+          "www.parliamentarytv.org.tw": [
+            "2600:9000:27f2:4e00:1e:8c3a:b0c0:93a1",
+            "2600:9000:27f2:7600:1e:8c3a:b0c0:93a1",
+            "2600:9000:27f2:8a00:1e:8c3a:b0c0:93a1",
+            "2600:9000:27f2:a600:1e:8c3a:b0c0:93a1",
+            "2600:9000:27f2:b000:1e:8c3a:b0c0:93a1",
+            "2600:9000:27f2:b200:1e:8c3a:b0c0:93a1",
+            "2600:9000:27f2:c200:1e:8c3a:b0c0:93a1",
+            "2600:9000:27f2:f200:1e:8c3a:b0c0:93a1",
+            "3.167.246.34",
+            "3.167.246.63",
+            "3.167.246.69",
+            "3.167.246.81"
+          ]
+        },
+        "results": [
+          {
+            "name": "taiwan-home",
+            "url": "https://www.parliamentarytv.org.tw/",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/",
+            "sample_sha256": "b333ce605d200566587cf5b03fd58925cc251b96b0b0ac2fa556f521314f0135",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 89b7d459598594ed258279eaca3e9af6.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "DFW59-P1"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-script",
+            "url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/js/ww_index.js?T=20250204",
+            "sample_sha256": "232b89f44800b839626c404701335914829eb80f8d5a4c34f4937355b078d125",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 f041921daafe6a7b83df0567968852c2.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "DFW59-P1"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-collector",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "sample_sha256": "82c392f9d1d6345ebc8c76f8c9b7ba6468c790c68505676ff84ea4eb84885e75",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 22578d94d87d05e12c7171566c9034b2.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "DFW59-P1"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-ajax",
+            "url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "status": 403,
+            "final_url": "https://www.parliamentarytv.org.tw/api/get_program.php?ch=ly1&date=2026%2F11%2F21",
+            "sample_sha256": "84aafa5fdbe0ade6a9a628e86e7a9a54fb5d74fcae8bbcf7bbc54031e313668c",
+            "sample_bytes": 919,
+            "headers": {
+              "Server": "CloudFront",
+              "Content-Type": "text/html",
+              "Via": "1.1 1bc1c48cea637e9a92fd8a7f509a7342.cloudfront.net (CloudFront)",
+              "X-Cache": "Error from cloudfront",
+              "X-Amz-Cf-Pop": "DFW59-P1"
+            },
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-home",
+            "url": "https://www.nysenate.gov/",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/",
+            "sample_sha256": "64002318848284531113e61fd85b26cfa89cb6740e514b3eed8f86c30f7ee1a5",
+            "sample_bytes": 5588,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-events",
+            "url": "https://www.nysenate.gov/events",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/events",
+            "sample_sha256": "d57fa378e00d17950a70b64a32a209beba5b5d2c61087e2f5ab0e7c2c5c6ae1b",
+            "sample_bytes": 5627,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-collector",
+            "url": "https://www.nysenate.gov/session/calendar-download",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/session/calendar-download",
+            "sample_sha256": "8208d6aa69841db00a0883323c2055d4bcb624215a479f33fc3c2d5cdb9dc0b3",
+            "sample_bytes": 5706,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-calendar-headers",
+            "url": "https://www.nysenate.gov/session/calendar-download",
+            "status": 403,
+            "final_url": "https://www.nysenate.gov/session/calendar-download",
+            "sample_sha256": "782a02f2123ea20b6da5cb44f1fb91c3344e5eb693997ddc157d27c9cb70a35b",
+            "sample_bytes": 5727,
+            "headers": {
+              "Server": "cloudflare",
+              "Content-Type": "text/html; charset=UTF-8",
+              "CF-Mitigated": "challenge"
+            },
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-curl-http1.1",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "1.1",
+              "remote_ip": "3.167.246.34",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "d5d9537ff3a3eadea147a6a103ee15ec40a136b4a6d96318dc98cdaa2514f911",
+            "sample_bytes": 919,
+            "headers": {},
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "taiwan-curl-http2",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "2",
+              "remote_ip": "3.167.246.34",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "40a5a02f18db87e426257c40e516e680cb6933f288ff8db6e37d438e010d9314",
+            "sample_bytes": 919,
+            "headers": {},
+            "markers": [
+              "Request blocked",
+              "The request could not be satisfied",
+              "Generated by cloudfront"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-curl-http1.1",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "1.1",
+              "remote_ip": "185.178.196.1",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "71ab7a3f83907b62df825adad3d4455ae2e17e7eb5aadc68e352172aa9eecb6e",
+            "sample_bytes": 5684,
+            "headers": {},
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          },
+          {
+            "name": "new-york-curl-http2",
+            "exit_code": 0,
+            "transport": {
+              "http_code": 403,
+              "http_version": "2",
+              "remote_ip": "185.178.196.1",
+              "ssl_verify_result": 0,
+              "num_redirects": 0
+            },
+            "sample_sha256": "9784b73a730c4012ed488063b312825c7928b364202e85477a996d9aeaaf59de",
+            "sample_bytes": 5663,
+            "headers": {},
+            "markers": [
+              "Cloudflare"
+            ],
+            "ical": false
+          }
+        ],
+        "taiwan_window": {
+          "status": "error",
+          "responses": 0,
+          "error": "HTTP 403",
+          "collected_at": "2026-11-20T16:00:59.875553+00:00"
+        }
+      }
+    }
+  }
+}

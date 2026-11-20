@@ -84,6 +84,7 @@ class EpgSource(TypedDict):
     url: str
     method: Literal["GET", "POST"]
     kind: str
+    notes: NotRequired[str]
 
 
 class ValidationHistoryEntry(TypedDict):

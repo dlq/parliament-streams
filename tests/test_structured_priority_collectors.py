@@ -180,10 +180,28 @@ class StructuredPriorityTests(unittest.TestCase):
             {},
         )
 
+    def test_harmony_untitled_event_does_not_discard_valid_publisher_schedules(self):
+        house, senate_id, bermuda = harmony.TARGETS
+        payload = harmony_payload([harmony_row(), harmony_row(Id=46159, Title="")])
+        valid = harmony_payload([harmony_row()])
+        with self.assertLogs(harmony.LOGGER, level="WARNING") as warnings:
+            result = harmony.parse(payload, valid, valid, now=NOW)
+        self.assertEqual(set(result), {house, senate_id, bermuda})
+        self.assertEqual(len(result[house]["events"]), 1)
+        self.assertEqual(result[house]["events"][0]["title"], "Committee")
+        self.assertIn("46159", warnings.output[0])
+        with (
+            self.assertLogs(harmony.LOGGER, level="WARNING"),
+            self.assertRaisesRegex(ValueError, "untitled events but no usable"),
+        ):
+            harmony.parse(harmony_payload([harmony_row(Title="")]), valid, valid, now=NOW)
+
     def test_harmony_rejects_bad_contract_and_ambiguous_clocks(self):
         for rows in (
             [harmony_row(EntityStatus=None)],
             [harmony_row(Id=None)],
+            [harmony_row(Title=None)],
+            [harmony_row(Title=[])],
             [harmony_row(ScheduledStart="2026-10-29")],
             [harmony_row(ScheduledStart="2026-11-01T01:30:00")],
             [harmony_row(EntityStatus=1)],

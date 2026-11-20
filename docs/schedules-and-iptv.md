@@ -197,6 +197,11 @@ Registered-parser coverage is not the same as a successful current collection.
 The published quality report keeps the source failure visible; an
 operator-supported feed or access arrangement is still needed.
 
+The [20 November collector review](../reports/epg/2026-11-20-collector-errors.md)
+records the Harmony blank-title fix and renewed local checks of the New York
+and Taiwan access holds. Harmony omits an explicitly untitled event with a
+warning while retaining valid schedules; an all-untitled result remains an error.
+
 The [renewed institution review](../reports/discovery/2026-10-25-institution-service-baseline.md)
 tracks source freshness, timezone/event mapping and programme-data rights
 separately. Gipuzkoa's officially linked RSS still contains February 2016 events;

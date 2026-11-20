@@ -275,6 +275,12 @@ workflow. An implemented source names a registered Python parser:
 }
 ```
 
+An EPG source can carry optional `notes` with dated access findings and a
+reference to the investigation report. Use this for publisher challenges,
+runner-dependent access and other operational limitations. The
+`scraper_status` field tracks whether the parser is implemented. Current
+collection outcomes and freshness are recorded in the schedule snapshot.
+
 Use `parliament-streams update` to persist a reviewed endpoint change; it
 validates the complete record and updates the catalogue JSON.
 Then run `make schedules` to test retrieval, parsing, and normalized output.

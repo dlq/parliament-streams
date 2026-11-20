@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from datetime import UTC, datetime, timedelta
 
 from .common import (
@@ -28,6 +29,8 @@ TARGETS = {
         "Atlantic/Bermuda",
     ),
 }
+LOGGER = logging.getLogger(__name__)
+
 QUERY = "en/api/Data/GetUpcomingEvents?lastModified=19700101000000000"
 SOURCE: ScraperSource = {
     "id": "harmony-json",
@@ -66,6 +69,7 @@ def _one(payload: str, channel: str, now: datetime) -> ParsedSchedule:
     ):
         raise ValueError("Harmony response lacks its watermark and four event groups")
     unique: dict[str, ScheduleEvent] = {}
+    untitled = 0
     for group in groups:
         for row in require_records(group, "Harmony event group"):
             status = row.get("EntityStatus")
@@ -76,12 +80,13 @@ def _one(payload: str, channel: str, now: datetime) -> ParsedSchedule:
             identity = row.get("Id")
             value = row.get("ScheduledStart")
             start = parse_iso(value) if isinstance(value, str) and "T" in value else None
-            title = clean_html(str(row.get("Title") or ""))
+            raw_title = row.get("Title")
+            title = clean_html(raw_title) if isinstance(raw_title, str) else None
             if (
                 isinstance(identity, bool)
                 or not str(identity or "").isdigit()
                 or start is None
-                or not title
+                or title is None
             ):
                 raise ValueError("Harmony event lacks ID, title or dated start")
             if start.tzinfo is None:
@@ -91,6 +96,10 @@ def _one(payload: str, channel: str, now: datetime) -> ParsedSchedule:
             if not now - timedelta(days=1) <= start <= now + timedelta(days=30):
                 continue
             if status == 0 and start < now:
+                continue
+            if not title:
+                untitled += 1
+                LOGGER.warning("Omitting untitled Harmony event %s from %s", identity, channel)
                 continue
             event: ScheduleEvent = {
                 "event_id": str(identity),
@@ -115,6 +124,8 @@ def _one(payload: str, channel: str, now: datetime) -> ParsedSchedule:
                 raise ValueError("Conflicting Harmony event ID")
             unique[key] = event
     if not unique:
+        if untitled:
+            raise ValueError("Harmony has untitled events but no usable events in the window")
         return {}
     events = sorted(unique.values(), key=lambda e: e["start"])
     current = next((e for e in events if e.get("status") == "live"), None)
