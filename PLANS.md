@@ -206,8 +206,10 @@ supported locale; key completeness does not establish linguistic quality.
 
 ## Deferred Search Visibility Follow-up
 
-- [ ] Revisit Search Console verification, sitemap submission and indexing of all
-  public pages when ready. Account setup or submission is not part of current work.
+- [x] Verified the `https://dlq.ca/parliament-streams/` URL-prefix property in
+  Google Search Console and submitted `sitemap.xml` on 2026-11-21.
+- [ ] Review Search Console indexing for all five public pages and initial search
+  performance once Google has processed the property and sitemap.
 - [ ] Prepare useful country/legislature pages and a concise About/methodology page
   only when they add substantive source information. Keep technical SEO and
   [search-visibility guidance](docs/search-visibility.md) current.
